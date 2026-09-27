@@ -60,7 +60,7 @@ Steam 语言设为 **English（英语）**，等待下载完成并退出游戏�
 ## 排错与反馈
 
 请提供游戏名称、补丁版本、Windows 环境、报错截图及前后台词，并说明是否安装其他补丁。
-AGE2 在游戏设置中选择中文；光子之花／光子旋律在安装前将 Steam 语言设为 English。
+已发布的 TDA00—03 与帝都燃烧补丁在游戏设置中选择中文；光子之花／光子旋律在安装前将 Steam 语言设为 English。
 不要混用不同作品的补丁。Steam Deck／Proton 不应视为已经验证的支持平台。
 
 [提交运行问题](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)

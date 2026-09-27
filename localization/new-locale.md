@@ -15,6 +15,8 @@ This repository contains reusable localization components, but it does **not** y
 | AGE2 | TDA00–03 and Imperial Capital Burns | EGPACK/FPD helpers, strict local-source/table joins for supported TDA layouts, shared QA rules, selected game builders and release notes | Establish a legal source baseline; adapt the table join to the game's schema; supply language-specific images/fonts; validate loose-overlay behavior and build-specific paths |
 | rUGP / AGES | 光子之花 and 光子旋律 | Read-only ICI/RIO catalogue and conservative CRsa extractor, narrow tested CRsa/RUO record primitives, selected Cr6Ti/CRip007/CRip008 codecs, guarded runtime components, stable public translation manifests, tests | Run the catalogue/text extraction against a legally owned supported build; bind the new translation to stable IDs/hashes; prove a safe writer and RUO/runtime route for each resource; perform real-game text/image/font QA |
 
+Kiminozo ~Enhanced Edition~ and Another Episode Collection+ have an [in-development project entry](../AGE2/games/kiminozo/README.md). Public full-text tables and a validated player build are not available yet; the existing AGE2 game builders must not be assumed to support it.
+
 Read the relevant workflow before creating files: [AGE2](../AGE2/docs/workflow.md) or [rUGP](../rUGP/docs/workflow.md). The current reproducibility boundary is summarized in the [research index](../docs/research/README.md).
 
 ## 2. Create a language identity

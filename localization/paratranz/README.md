@@ -9,6 +9,10 @@
 ParaTranz 改文经维护者确认并同步后，还需经过相应检查与打包，才会进入后续玩家版本。
 在线修订、GitHub 同步和补丁发布是不同步骤。
 
+## 君望协作状态
+
+[君望 Steam 本篇及附加篇](../../AGE2/games/kiminozo/README.md)仍在文本审核和资源制作中，尚未开放公开全文 ParaTranz 校对，也未接入下面的同步工作流。开放时再登记项目和同步范围，不复用其他作品的项目 ID。
+
 ## 手动同步操作
 
 帝都燃烧继续使用 `ParaTranz ICB pilot`。光子之花、光子旋律、TDA 使用 `ParaTranz PF PM TDA`，

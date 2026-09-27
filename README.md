@@ -150,6 +150,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 | 帝都燃烧篇 | [加入帝都燃烧篇校对](https://paratranz.cn/projects/20659) |
 | 光子之花 | [加入光子之花校对](https://paratranz.cn/projects/20660) |
 | 光子旋律 | [加入光子旋律校对](https://paratranz.cn/projects/20661) |
+| 君望本篇与附加篇 | 尚未开放公开全文校对；[查看制作进度](AGE2/games/kiminozo/README.md) |
 
 ---
 
