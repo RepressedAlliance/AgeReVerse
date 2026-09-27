@@ -14,7 +14,7 @@
 ## Runtime
 
 - clean baseline launches without an old RUO or font transaction contaminating the result;
-- one-variable differential probes before a bulk build;
+- one-variable differential probes to establish a new or changed write/runtime route before bulk use, or to investigate a relevant failure; reuse the evidence for an unchanged proven route;
 - host/private DLL/font hashes and architecture match;
 - hook count, selected resource ID, geometry and transaction status are observable;
 - no English/Japanese fallback, missing image, color-channel swap, alpha tear, stale state, or first-frame race;

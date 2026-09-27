@@ -23,7 +23,7 @@ resolve questions; re-freeze terminology and cross-scene consistency
         ↓
 AGE2 or rUGP binding, writeback, and automated validation
         ↓
-full-route in-game QA
+in-game QA: initial full-route coverage, then affected-area regression
         ↓
 maintainer's manual checks, corrections, and verification of fixes
         ↓
@@ -37,6 +37,14 @@ return findings to maintained text/terminology/source and release again
 Passing one stage never substitutes for the next. Fluent target text does not
 prove the Japanese was understood; static decoding does not prove runtime
 acceptance; a game launch does not prove complete text, image, and font coverage.
+
+Start verification with the checks directly affected by the change. Reuse prior
+results when their inputs, rules, and tools still apply. Expand or repeat checks
+for relevant failures, new evidence, dependency changes, or explicit delivery
+requirements; stop once the relevant checks pass and no issues remain. Do not
+add repeated hashes, baseline rebuilds, smoke tests, backups, rollback rehearsals,
+dry-runs, or acceptance tables merely for reassurance. Engine-required checks at
+write and installation time still run at those operations.
 
 ## 0. Freeze lawful inputs and stable identities
 
@@ -122,8 +130,9 @@ A `question` must not silently disappear before packaging. Consult as needed:
 - official setting material or established series usage;
 - control codes, locale slots, and image context.
 
-After resolution, update the text, shared glossary, game glossary, and every
-repeated occurrence. Keep genuinely unresolved items blocked rather than
+After resolution, follow [07 change-impact review](standards/07-change-impact.md)
+to check related occurrences, update affected text and glossaries, and preserve
+contextually justified differences. Keep genuinely unresolved items blocked rather than
 guessing from an English slot or from what merely sounds plausible.
 
 ## 5. Bind and write through the correct engine
@@ -143,7 +152,10 @@ record carrying the same class label.
 
 ## 6. Automated quality gates
 
-At minimum check:
+A release candidate must be covered by the applicable checks below. For routine
+edits, run affected checks and reuse still-applicable results for unchanged
+parts. Source-build, tool, or shared-dependency changes expand the affected scope;
+a local text edit does not require repeating the entire suite:
 
 - stable IDs, row counts, duplicates, and missing records;
 - source hashes against the frozen build;
@@ -160,11 +172,19 @@ evidence.
 
 ## 7. In-game QA
 
-Cover the title and settings screens, first dialogue, save/load, backlog, every
+When establishing coverage for a game, language, and resource implementation,
+cover the title and settings screens, first dialogue, save/load, backlog, every
 route and choice, speakers, achievements, fonts, each modified image family, and
 rollback. Image QA must detect more than visibility: colour swaps, tearing,
 alpha damage, wrong endpoints, English fallback, Japanese/translation route
 differences, and shared/common behavior all matter.
+
+For later local revisions, check the changed locations, necessary context, and
+affected functions rather than replaying every route for a sentence edit. Game
+build, writer, font, or shared-resource changes require broader relevant coverage.
+Investigate an unclear impact scope and run full regression where needed. Record
+existing coverage and why it remains applicable; missing checks are not passes.
+Package build, installation, and uninstall checks still follow engine rules.
 
 Each finding should identify game/build, route/date/scene, surrounding dialogue,
 screenshot, stable resource ID, and exact reproduction steps.
@@ -173,7 +193,7 @@ screenshot, stable resource ID, and exact reproduction steps.
 
 The final production step is the maintainer's manual review and correction of
 identified wording, terminology, missing text, layout, image text, and in-game
-display problems. Verify the fixes, rerun affected writeback and checks, and then
+display problems. Verify the fixes and related impacts under 07, rerun affected writeback and checks, and then
 publish the corresponding version. Player packages already include the manual
 corrections completed for that release; they are not unreviewed AI drafts.
 This does not claim complete professional Japanese-to-Chinese proofreading.
@@ -194,7 +214,7 @@ replace one generated file in a Release manually.
 3. Return to Japanese source and terminology to distinguish translation,
    binding, font, image, installation, and game-version problems.
 4. Fix maintained source or code—not only a generated EGPACK, RIO, or WebP.
-5. Rerun relevant automated checks and routes.
+5. Follow 07 to synchronize affected occurrences and rerun relevant automated checks and scenes.
 6. Document the fix and produce a new reproducible Release.
 
 ## 10. What becomes public
