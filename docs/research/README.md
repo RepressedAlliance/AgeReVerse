@@ -11,6 +11,7 @@
 | 查找公开的中文文本、术语、图片身份和字体资料 | [文本、术语、图片与字体资产地图](asset-map.md) |
 | 为韩语、俄语等建立新语言 | [完整工作流](../../localization/workflow.md) · [新语言指南](../../localization/new-locale.md) |
 | 研究 TDA／帝都的 `pack.bin`、EGPACK、WebP 与松散覆盖 | [AGE2](../../AGE2/README.md) |
+| 查看君望本篇及附加篇的文本审核、术语和 UI 图片制作 | [君望项目入口（制作中）](../../AGE2/games/kiminozo/README.md) |
 | 研究 Photon 的 ICI、RIO、CRsa、RUO、Cr6Ti、CRip 与 Hook | [rUGP](../../rUGP/README.md) |
 | 了解 8311、字体、图片异色/撕裂/回退等问题怎样攻克 | [rUGP 复盘索引](../../rUGP/docs/postmortems/README.md) |
 | 查看我们从前人项目学了什么、又改进了什么 | [参考项目比较](references.md) |

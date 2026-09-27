@@ -26,6 +26,7 @@ cracks, complete original assets, or an original Steam `pack.bin`.
 | --- | --- | --- |
 | TDA00–03 and The Imperial Capital Burns | Historical AGE2 test packages are preserved; version, font-license, official-fallback, and rollback remediation remains | Maintained text, inventories for 730 historical WebP paths, Imperial image copy, FPD/EGPACK tools, and loose-overlay findings |
 | 光子之花 and 光子旋律 | **BETA 0.1.1** ordinary releases, separate installers; see the [player guide](player-guide.md) | Maintained text, a 1,490-image 光子之花/光子旋律 authority and route map, ICI/RIO/CRsa/RUO/Cr6Ti/CRip tools, guarded runtime components, and postmortems |
+| Kimi ga Nozomu Eien ~Enhanced Edition~ and Another Episode Collection+ | **In development; no player package** | [Project structure, text review, terminology and UI/image work](../../AGE2/games/kiminozo/README.md) |
 
 The historical packages are identifiable and installable, but they are not
 marked recommended until the present release gate is satisfied. Follow the
@@ -37,7 +38,7 @@ localization asset, not an installer.
 | Directory | Responsibility |
 | --- | --- |
 | [`localization/`](../../localization/README.md) | Engine-neutral two-pass translation, terminology, image production, font checks, and new-locale workflow |
-| [`AGE2/`](../../AGE2/README.md) | TDA/Imperial game-bound text and image identities, FPD, EGPACK, WebP, loose overlays, tests, and postmortems |
+| [`AGE2/`](../../AGE2/README.md) | TDA/Imperial game-bound text and image identities, plus the in-development Kiminozo project, FPD, EGPACK, WebP, loose overlays, tests, and postmortems |
 | [`rUGP/`](../../rUGP/README.md) | Photon game-bound text and image identities, ICI, RIO, CRsa, RUO, Cr6Ti, CRip, runtime, and postmortems |
 | [`docs/`](../README.md) | Player, research, maintenance, legal, and English documentation |
 

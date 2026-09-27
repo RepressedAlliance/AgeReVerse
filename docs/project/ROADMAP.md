@@ -3,6 +3,10 @@
 This roadmap separates published player results, reusable components, and work
 that still requires exact game inputs or full-route validation.
 
+## Kiminozo in development
+
+[Kiminozo ~Enhanced Edition~ and Another Episode Collection+](../../AGE2/games/kiminozo/README.md) have a dedicated project structure. Remaining work includes the maintainer’s final review of revised text, consultation with the legacy translator, UI/image review, resource integration, packaging and in-game validation. No player package is released. Full legacy translations and private correspondence are not published.
+
 ## Published player results
 
 - TDA00 Simplified Chinese beta0.1

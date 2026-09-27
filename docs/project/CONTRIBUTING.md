@@ -8,6 +8,10 @@
 
 Contributions for Simplified Chinese or another locale are welcome. The project accepts durable source, reproducible tools, tests, documentation, and evidence-backed corrections; it does not accept extracted game dumps or unexplained generated output.
 
+## 君望参与入口
+
+君望本篇与附加篇的工作范围及目录见[项目入口](../../AGE2/games/kiminozo/README.md)。当前仍在最终文本审核和 UI、图片制作，尚未开放公开全文校对或发布补丁；可通过项目 QQ 群交流。涉及旧译的样例和纠错按已确认公开范围整理。
+
 ## Choose the correct boundary
 
 1. Human translation, terminology, review, and image-authoring policy belongs in `localization/`.

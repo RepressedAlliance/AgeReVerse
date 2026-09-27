@@ -10,6 +10,8 @@ This index separates three different claims:
 
 The first two are substantially present. The third is still partial and varies by game.
 
+Kiminozo ~Enhanced Edition~ and Another Episode Collection+ are also in development. See the [project entry](../../AGE2/games/kiminozo/README.md), [text organization](../../AGE2/games/kiminozo/translations/README.md), [terminology and baselines](../../AGE2/games/kiminozo/terminology/README.md), and [UI/images/fonts](../../AGE2/games/kiminozo/images/README.md). No Kiminozo player package or complete dialogue table is published.
+
 ## What came from prior work, and what was independently audited
 
 | Area | Prior work used | This project's contribution | Boundary |

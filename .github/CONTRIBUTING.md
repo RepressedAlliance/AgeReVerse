@@ -39,6 +39,10 @@
 各项目的具体贡献边界和许可证说明见 **[完整贡献者与致谢](../docs/project/CONTRIBUTORS.md)**、
 [参考项目比较](../docs/research/references.md)和[第三方来源](../docs/legal/THIRD_PARTY.md)。
 
+## 君望制作与旧译协作
+
+[君望 Steam 版及附加篇](../AGE2/games/kiminozo/README.md)正在进行文本审核与 UI、图片制作，尚未发布补丁或开放公开全文校对。感谢木之老师的 LE 旧译，以及对纠错、术语和用典的协助。公开记录遵守已确认范围，不上传旧译全文或私人通信。
+
 ## 参与项目
 
 欢迎懂日语、愿意校对或修改译文的朋友加入

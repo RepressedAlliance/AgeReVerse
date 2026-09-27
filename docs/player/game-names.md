@@ -11,6 +11,7 @@
 | 帝都燃烧、帝都燃烧篇 | The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse | マブラヴ オルタネイティヴ トータル・イクリプス 帝都燃ゆ / Teito Moyu | Windows x64 Steam 独立作品 |
 | 光子之花、PF | Muv-Luv photonflowers* | マブラヴ photonflowers* | Windows Steam，安装前设为 English |
 | 光子旋律、PM | Muv-Luv photonmelodies* | マブラヴ photonmelodies* | Windows Steam，安装前设为 English |
+| 君望、你所期望的永远、Kiminozo | Kimi ga Nozomu Eien ~Enhanced Edition~ / Another Episode Collection+ | 君が望む永遠 | Steam 本篇与附加篇，制作中，[尚未发布补丁](../../AGE2/games/kiminozo/README.md) |
 
 Muv-Luv 也常写成 MuvLuv、muvluv 或 Muv Luv，日文系列名为マブラヴ。搜索补丁时，可使用完整作品名加
 “汉化补丁”“简体中文”或 “Simplified Chinese patch”。日文检索可使用作品名加“中国語化”。
@@ -24,6 +25,7 @@ ATE／TE／全蚀／全蚀篇对应 Muv-Luv Alternative Total Eclipse Remastered
 - 帝都燃烧是独立作品；本项目的帝都补丁不能用于 Total Eclipse Remastered 正篇。
 - TDA00—03 每作有自己的安装程序；不能把 Steam 补丁当作旧版 Chronicles／编年史合集补丁。
 - 光子之花与光子旋律分别下载；不要因为都简称 Photon 就混用。
+- 君望以 Steam Enhanced Edition 及其附加篇为制作目标；LE 旧译用于对照，不表示兼容 LE、旧光盘版或第三方 EER／18+ 补丁。
 - 本页列出的补丁不涵盖 Muv-Luv 本篇、Alternative 本篇或 Dimensions 手游。
 
 ## 下载、校对与反馈

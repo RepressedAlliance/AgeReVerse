@@ -2,6 +2,14 @@
 
 [English overview](README.md) · [简体中文](../player/README.md) · [Research and localization](research-index.md) · [Report a bug](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
 
+## Kiminozo in development
+
+| Game | Status | Project |
+| --- | --- | --- |
+| Kimi ga Nozomu Eien ~Enhanced Edition~ and Another Episode Collection+ | **In development; no patch released** | [Scope and progress](../../AGE2/games/kiminozo/README.md) |
+
+Text review and UI/image localization are ongoing. The installation instructions for released games below do not apply to Kiminozo.
+
 ## AGE2 BETA · 2026-09-20
 
 | 游戏 | 版本 | 下载 |

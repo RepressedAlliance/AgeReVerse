@@ -7,6 +7,7 @@ body:
     id: game
     attributes:
       label: 游戏、章节与场景 / Game, chapter and scene
+      description: 君望请注明本篇 kiminozs 或附加篇 kiminoaz；目前尚无公开全文表，请仅引用本项目已公开样例。For Kiminozo, identify the component and use public project samples only.
     validations:
       required: true
   - type: input

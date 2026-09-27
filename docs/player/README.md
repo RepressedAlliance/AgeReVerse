@@ -2,6 +2,14 @@
 
 [返回首页](../../README.md) · [English](../en/player-guide.md) · [研究与制作入口](../research/README.md) · [提交 Bug](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
 
+## 君望 Steam 版
+
+| 游戏 | 当前状态 | 入口 |
+| --- | --- | --- |
+| 君望 Enhanced Edition 及 Another Episode Collection+ | **制作中，尚未发布补丁** | [项目介绍、范围与进度](../../AGE2/games/kiminozo/README.md) |
+
+君望正在进行文本审核和 UI、图片汉化。以下已发布作品的安装与恢复步骤不适用于君望。
+
 ## AGE2 BETA · 安装方式更新 2026-09-21
 
 | 游戏 | 版本 | 下载 |

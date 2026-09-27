@@ -33,6 +33,7 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 | 帝都燃烧篇 | [`translations/`](../../AGE2/games/imperial-capital-burns/translations/) | 5,564 行正文，另有 21 行辅助文字、18 个选项、91 个说话人和 UI 字符串表 |
 | 光子之花 | [`translations/`](../../rUGP/games/photonflowers/translations/) | 12,964 行 reviewed 文本；另有 69 行精确运行时绑定表，不把二者冒充成同一写入权威 |
 | 光子旋律 | [`translations/`](../../rUGP/games/photonmelodies/translations/) | 44,583 行 reviewed 文本；另有 151 行精确运行时绑定表 |
+| 君望及附加篇（在制） | [文本维护位置](../../AGE2/games/kiminozo/translations/README.md) · [术语与基线](../../AGE2/games/kiminozo/terminology/README.md) | 文本审核中，尚未公开正文数据表 |
 
 这些计数描述公开表中的记录，不自动等于“独立台词数”“全部已实机通过”或“可直接
 写回”。每个游戏 README 会说明其表是审校来源、精确 writer 输入还是历史快照。
@@ -53,6 +54,7 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 | 帝都燃烧篇 | 315 个路径、232 份唯一内容 | 历史玩家 Release | [逐项清单与可维护文案](../../AGE2/games/imperial-capital-burns/images/) |
 | 光子之花 | 636 项权威 | Photon V6 研究 Release | [图片权威](../../rUGP/evidence/photon/images/)与[游戏入口](../../rUGP/games/photonflowers/images/) |
 | 光子旋律 | 854 项权威 | Photon V6 研究 Release | [图片权威](../../rUGP/evidence/photon/images/)与[游戏入口](../../rUGP/games/photonmelodies/images/) |
+| 君望及附加篇（在制） | 尚未公开成品清单 | 暂无发布包 | [UI、图片与字体维护位置](../../AGE2/games/kiminozo/images/README.md) |
 
 五个 AGE2 历史包合计 **730 个 WebP 路径**；光子之花/光子旋律合计 **1,490 项**。路径数不等于
 独立绘制数：同一内容可能服务多个语言后缀或状态，也可能是官方 fallback。Photon V6
