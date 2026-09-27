@@ -4,7 +4,7 @@
 
 - Steam App ID：`889700`
 - 目标语言：简体中文（`zh-Hans`）
-- 玩家包：尚未发布
+- 玩家包：已发布 [BETA 0.1.2](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1.2)
 - 最新章节编辑表：13,025 条（包含系统文本与补提取消息）
 - 历史已审校文本：Alternative 6,033 行、Extra 6,931 行，共 12,964 行
 - 当前精确运行时绑定表：69 行
@@ -19,8 +19,8 @@
 源哈希连接。图片使用光子之花/光子旋律共用的 [Photon 清单](../../evidence/photon/README.md)，但
 光子之花有自己的输入哈希、运行时配置、安装包和实机 QA；光子旋律的成功不能替代光子之花。
 
-源码树和 1,490 图研究资产 Release 都不是玩家安装包。正式发布前仍需完成干净克隆
-构建、准确输入版本门、图片/字体许可、下载后安装与回滚，以及完整路线检查。
+玩家请使用上面的 BETA 0.1.2 安装包；源码树和 1,490 图研究资产 Release 不是玩家安装包。
+安装、恢复及已知问题见[玩家指南](../../../docs/player/README.md)。当前发布不代表全路线已人工遍历；后续构建仍需独立验证。
 
 ## English summary
 
