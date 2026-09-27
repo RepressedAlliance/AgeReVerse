@@ -1,6 +1,6 @@
 # rUGP quality gates
 
-光子之花/光子旋律 do not yet have a player-ready Release. These are mandatory gates for a future candidate and a description of narrow checks already enforced by individual components; their presence does not mean the complete route has passed.
+光子之花/光子旋律 have published BETA 0.1.2 player packages; see the [player guide](../../docs/player/README.md) for installation and known limitations. The requirements below guide subsequent candidates and component checks. Publication does not imply that every route has been manually traversed or that every requirement below has been demonstrated for every build.
 
 ## Static structure
 

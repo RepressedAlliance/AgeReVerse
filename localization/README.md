@@ -31,6 +31,10 @@
 [01—06 的顺序](standards/README.md)阅读：项目定位 → 源数据 → 表字段 → 剧情与术语
 → 初译 → 独立审核；其中前三项是开工准备，术语规范在翻译和审核中持续适用。
 
+## 君望制作位置
+
+[君望 Steam 版及附加篇](../AGE2/games/kiminozo/README.md)沿用本工作流，文本、[术语与基线](../AGE2/games/kiminozo/terminology/README.md)、UI 和图片分别在游戏项目下维护。目前仍在审核与制作，尚未导出公开正文表、作内术语 CSV 或安装包。
+
 ## 目录
 
 - [`glossaries/`](glossaries/)：系列通用表与七作现行术语表，按作品命名、集中维护。

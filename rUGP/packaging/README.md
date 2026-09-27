@@ -1,6 +1,10 @@
 # Photon packaging
 
-## BETA 0.1.1 releases
+## Current player releases: BETA 0.1.2
+
+Both games have separate BETA 0.1.2 packages. This update incorporates 24 光子之花 and 23 光子旋律 proofreading entries while retaining the BETA 0.1.1 images, fonts and runtime. See the [change scope, credits and known limitations](../../docs/project/photon-beta012-proofreading.md) and [player guide](../../docs/player/README.md). The installers create no backups and include no uninstaller.
+
+## BETA 0.1.1 release history
 
 The public player packages use uppercase **BETA** as ordinary releases.
 光子之花 **BETA 0.1.1**, internal build `2026.09.14-r4`, preserves the accepted R2

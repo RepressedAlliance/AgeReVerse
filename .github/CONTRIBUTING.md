@@ -5,7 +5,7 @@
 
 ## 项目维护与协助
 
-- **[imnotsureyi-sys](https://github.com/imnotsureyi-sys)／Yi Shen：**项目发起、翻译与术语
+- **[RepressedAlliance](https://github.com/RepressedAlliance) / 压抑同盟：**项目发起、翻译与术语
   决策、实机验证、资源整理、Release 发布，以及公开内容的最终审核与责任。
 - **[OpenAI Codex](https://openai.com/codex)：**在维护者指挥下协助代码、格式分析、翻译复核、
   术语整理、测试、文档和故障复盘。
@@ -39,6 +39,10 @@
 各项目的具体贡献边界和许可证说明见 **[完整贡献者与致谢](../docs/project/CONTRIBUTORS.md)**、
 [参考项目比较](../docs/research/references.md)和[第三方来源](../docs/legal/THIRD_PARTY.md)。
 
+## 君望制作与旧译协作
+
+[君望 Steam 版及附加篇](../AGE2/games/kiminozo/README.md)正在进行文本审核与 UI、图片制作，尚未发布补丁或开放公开全文校对。感谢木之老师的 LE 旧译，以及对纠错、术语和用典的协助。公开记录遵守已确认范围，不上传旧译全文或私人通信。
+
 ## 参与项目
 
 欢迎懂日语、愿意校对或修改译文的朋友加入
@@ -56,7 +60,7 @@
 
 ## English summary
 
-Yi Shen (`imnotsureyi-sys`) maintains and reviews the project. OpenAI Codex and image models assist
+[RepressedAlliance](https://github.com/RepressedAlliance) / 压抑同盟 maintains and reviews the project. OpenAI Codex and image models assist
 under maintainer supervision. The project thanks 主任保护协会 for demonstrating the AGE2 loose-file overlay approach
 that started our localization journey. Subsequent extraction, translation, tool development and patch
 production are our own work, with specific references documented separately. We credit GARbro,

@@ -30,7 +30,7 @@ Cr6Ti 参考范围的直接证据见
 | [thcrap](https://github.com/thpatch/thcrap) | 多语言补丁数据与运行时分层、模块化、更新与文档体系 | 大型运行时仓库对普通玩家入口较重；本项目首页只分流，AGE2 不因为 rUGP 需要 Hook 就继承 Hook |
 | [07th-Mod python-patcher](https://github.com/07th-mod/python-patcher) | 玩家安装体验、游戏扫描、配置数据、校验与安装器测试优先 | 安装器源码不能代替翻译/图片权威；本项目在同一仓库继续保存游戏专属可维护表、资产身份和发布门 |
 | [Committee of Zero SGHD Patch](https://github.com/CommitteeOfZero/sghd-patch) | `content/`、installer、launcher、字体工具和 edited-images 边界可见 | 其 README 明确是开发者构建页且有资产被移除；本项目额外维护独立玩家页、公开/本地/Release 三层资产政策和缺失复现步骤 |
-| [Tsukihimates Tsukihime Translation](https://github.com/Tsukihimates/Tsukihime-Translation) | `script/`、`images/`、`system_strings/`、工具和最终补丁入口简单直观，完整翻译活动可持续维护 | 单作仓库可以平铺，七作双引擎仓库不能。本项目把游戏资产放进各自引擎/游戏目录，并用 manifest/Release 管理大型二进制；“公开可见”不自动等于权利已解决 |
+| [Tsukihimates Tsukihime Translation](https://github.com/Tsukihimates/Tsukihime-Translation) | `script/`、`images/`、`system_strings/`、工具和最终补丁入口简单直观，完整翻译活动可持续维护 | 单作仓库可以平铺，多作双引擎仓库不能。本项目把游戏资产放进各自引擎/游戏目录，并用 manifest/Release 管理大型二进制；“公开可见”不自动等于权利已解决 |
 | [VNTranslationTools](https://github.com/arcusmaximus/VNTranslationTools) | 提取、可编辑中间表与写回是独立阶段，格式工具可跨项目复用 | 本项目再增加源哈希、语言身份、游戏版本和发布状态，避免把任意表当作授权 writer 输入 |
 | [Kuriimu2](https://github.com/FanTranslatorsInternational/Kuriimu2) | archive、image、text、font 插件边界清楚 | 本项目不会为了统一界面把 AGE2/rUGP 强塞进一个抽象；跨引擎只共享真正中立的翻译、图片和字体方法 |
 

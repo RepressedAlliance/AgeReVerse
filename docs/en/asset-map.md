@@ -34,6 +34,7 @@ by identity and hash.
 | The Imperial Capital Burns | [`translations/`](../../AGE2/games/imperial-capital-burns/translations/) | 5,564 main rows, plus auxiliary, choice, speaker, and UI tables |
 | 光子之花 | [`translations/`](../../rUGP/games/photonflowers/translations/) | 12,964 reviewed rows plus a separate 69-row exact runtime-bound table |
 | 光子旋律 | [`translations/`](../../rUGP/games/photonmelodies/translations/) | 44,583 reviewed rows plus a separate 151-row exact runtime-bound table |
+| Kiminozo and Another Episode Collection+ | [Text](../../AGE2/games/kiminozo/translations/README.md) and [terminology/baselines](../../AGE2/games/kiminozo/terminology/README.md) | In review; no public dialogue tables yet |
 
 Counts describe public records, not unique spoken lines, full in-game approval,
 or automatic writer authorization. Each game README states whether a table is a
@@ -54,6 +55,7 @@ Game-only terms remain with that game.
 | The Imperial Capital Burns | 315 / 232 | Historical player Release plus [manifest and maintained copy](../../AGE2/games/imperial-capital-burns/images/) |
 | 光子之花 | 636 authorities | Photon V6 research Release and [manifest](../../rUGP/evidence/photon/images/) |
 | 光子旋律 | 854 authorities | Photon V6 research Release and [manifest](../../rUGP/evidence/photon/images/) |
+| Kiminozo and Another Episode Collection+ | In development; no published inventory | [UI, images and fonts](../../AGE2/games/kiminozo/images/README.md); no player package |
 
 The five AGE2 packages contain 730 historical WebP paths; 光子之花/光子旋律 contain 1,490
 image authorities. A path count is not a count of independently redrawn images:

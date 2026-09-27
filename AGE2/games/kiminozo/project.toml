@@ -1,0 +1,20 @@
+schema_version = 1
+game_id = "kiminozo"
+display_name = "君望 / Kimi ga Nozomu Eien ~Enhanced Edition~"
+engine = "AGE2"
+steam_app_id = 1777440
+target_locales = ["zh-Hans"]
+development_status = "in-development"
+translation_authorities = []
+font_policy = "../../../localization/fonts/README.md"
+
+# Public data files and a release tag will be added when they are ready.
+# Documentation directories are not translation or image authority files.
+[components.main]
+resource_root = "kiminozs"
+display_name = "本篇"
+
+[components.additional]
+resource_root = "kiminoaz"
+display_name = "Another Episode Collection+"
+steam_app_id = 3112140

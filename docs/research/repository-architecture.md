@@ -5,13 +5,15 @@
 
 公开仓库是一棵可维护、可复核的源码树，不是开发工作站的镜像。
 
+君望 Steam 本篇及附加篇的项目位置为 [`AGE2/games/kiminozo/`](../../AGE2/games/kiminozo/README.md)，分别组织文本、术语与基线、UI 图片和字体。当前为制作中项目，尚无公开正文表或安装包。
+
 ## 五层结构
 
 ```text
 README.md                 中文首页：只做玩家 / 研究者分流
 docs/                     玩家、研究、项目维护、法律与英文入口
 localization/             跨引擎的人类本地化方法和通用工具
-AGE2/                     TDA / 帝都的完整独立技术与游戏资产树
+AGE2/                     TDA / 帝都技术与游戏资产；君望在制项目
 rUGP/                     Photon 的完整独立技术与游戏资产树
 ```
 
@@ -30,7 +32,7 @@ rUGP/                     Photon 的完整独立技术与游戏资产树
 - 某个 App ID、EXE/DLL 哈希或游戏版本门。
 
 这些内容必须放进对应游戏目录。`localization/` 可以定义表结构、两轮审核和图片 QA，
-但不能成为混杂七部游戏原始资源和 writer 输入的总仓库。逐项位置见[资产地图](asset-map.md)。
+但不能成为混杂各部游戏原始资源和 writer 输入的总仓库。逐项位置见[资产地图](asset-map.md)。
 
 ## Git、Release 与本地工作区
 

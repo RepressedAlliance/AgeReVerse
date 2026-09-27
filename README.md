@@ -9,7 +9,7 @@
 </p>
 
 提供帝都燃烧、TDA00—03、光子之花、光子旋律的 Steam 简体中文汉化补丁。
-**七部作品均已有 BETA 补丁下载**，持续完善译文、中文界面、字体与排版，并通过玩家反馈和协作校对更新。
+**七部作品已有 BETA 补丁下载，君望 Steam 版正在制作中**，持续完善译文、中文界面、字体与排版，并通过玩家反馈和协作校对更新。
 本项目非官方、非商业；另收录主任保护协会制作的 ATE 汉化原发布入口，方便查找。
 
 当前提供 **TDA00—03（Muv-Luv UNLIMITED: The Day After）、帝都燃烧篇
@@ -20,6 +20,7 @@
 Unofficial Simplified Chinese (zh-Hans) patches for the Windows Steam releases of
 Muv-Luv UNLIMITED: The Day After episodes 00–03, The Imperial Capital Burns,
 Muv-Luv photonflowers* and photonmelodies*. See the download table below for each game's release.
+Kimi ga Nozomu Eien ~Enhanced Edition~ and its Another Episode Collection+ are also in development; no Kiminozo patch has been released.
 These are Chinese localization patches, not English patches or full games.
 
 > [!IMPORTANT]
@@ -44,6 +45,7 @@ These are Chinese localization patches, not English patches or full games.
 | 帝都燃烧篇 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-BETA-0.2.1/TM-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-BETA-0.2.1) |
 | 光子之花 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1.2) |
 | 光子旋律 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.2) |
+| 君望（含 Another Episode Collection+） | **制作中，尚未发布** | [项目介绍与进度](AGE2/games/kiminozo/README.md) |
 
 ### 作品名称与常用简称
 
@@ -53,6 +55,7 @@ These are Chinese localization patches, not English patches or full games.
 | 帝都燃烧、帝都燃烧篇 | The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse；帝都燃ゆ；Teito Moyu |
 | 光子之花、PF | Muv-Luv photonflowers*；マブラヴ photonflowers* |
 | 光子旋律、PM | Muv-Luv photonmelodies*；マブラヴ photonmelodies* |
+| 君望、你所期望的永远、Kiminozo | Kimi ga Nozomu Eien ~Enhanced Edition~；君が望む永遠；附加篇 Another Episode Collection+ |
 
 各作对应不同补丁，请按作品下载。[完整名称与版本区别](docs/player/game-names.md)。
 
@@ -88,7 +91,7 @@ TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含
 
 ### 项目状态
 
-- **《君望》Steam版：**汉化正在制作中，目前在做文本校对和UI、图片汉化，暂未发布补丁。
+- **[《君望》Steam版](AGE2/games/kiminozo/README.md)：**汉化正在制作中，目前在做文本校对和UI、图片汉化，暂未发布补丁。项目范围、目录与进度见[君望项目入口](AGE2/games/kiminozo/README.md)。
 
 光子之花／光子旋律的技术来源分类、上游版本、82 项技术职责与完整路线演变，详细请见 **[技术来源分类与完整蓝图](docs/research/photon/README.md)**。
 
@@ -147,6 +150,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 | 帝都燃烧篇 | [加入帝都燃烧篇校对](https://paratranz.cn/projects/20659) |
 | 光子之花 | [加入光子之花校对](https://paratranz.cn/projects/20660) |
 | 光子旋律 | [加入光子旋律校对](https://paratranz.cn/projects/20661) |
+| 君望本篇与附加篇 | 尚未开放公开全文校对；[查看制作进度](AGE2/games/kiminozo/README.md) |
 
 ---
 
@@ -162,6 +166,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 | 全部公开成果与研究索引 | **[制作与研究入口](docs/research/README.md)** |
 | 翻译规则、术语、图片和字体流程 | [通用本地化工作区](localization/README.md) |
 | TDA／帝都的 AGE2、FPD、EGPACK 与松散覆盖 | [AGE2 工作区](AGE2/README.md) |
+| 君望本篇与附加篇的文本、术语和 UI 图片制作 | [君望项目（制作中）](AGE2/games/kiminozo/README.md) |
 | Photon 的 RIO、RUO、CRsa、图片和运行时 | [rUGP 工作区](rUGP/README.md) |
 | 文本、图片、字体和工具的具体位置 | [资产地图](docs/research/asset-map.md) |
 
@@ -182,6 +187,7 @@ The Chinese player downloads are listed in the first part of this README.
 | Korean, Russian or another target language | [Starting a new language](localization/new-locale.md) |
 | Ordered standards | [Standards and reading order](localization/standards/README.md) |
 | TDA / Imperial: FPD, EGPACK and loose overlays | [AGE2 workspace](AGE2/README.md) |
+| Kiminozo and Another Episode Collection+: work in progress | [Project scope and structure](AGE2/games/kiminozo/README.md) |
 | Photon: ICI, RIO, RUO and runtime tooling | [rUGP workspace](rUGP/README.md) |
 | Proofreading synchronization | [ParaTranz workflow](localization/paratranz/README.md) |
 
@@ -199,7 +205,7 @@ are reusable components; they do not yet provide a universal one-command finishe
 
 ## 贡献者与致谢
 
-项目由 [imnotsureyi-sys](https://github.com/imnotsureyi-sys)／Yi Shen 发起和维护。
+项目由 [RepressedAlliance](https://github.com/RepressedAlliance) / 压抑同盟 发起和维护。
 我们从“主任保护协会”那里学到了 **通过松散文件结构覆盖游戏资源的方法**。
 正是这份启发，让我们迈出了汉化的第一步，对此我们由衷感谢。
 后续资源提取、翻译、工具开发与补丁制作由本项目自行完成；具体技术参考与历史对照记录另行列明。

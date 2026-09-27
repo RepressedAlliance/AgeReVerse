@@ -2,6 +2,14 @@
 
 [返回首页](../../README.md) · [English](../en/player-guide.md) · [研究与制作入口](../research/README.md) · [提交 Bug](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
 
+## 君望 Steam 版
+
+| 游戏 | 当前状态 | 入口 |
+| --- | --- | --- |
+| 君望 Enhanced Edition 及 Another Episode Collection+ | **制作中，尚未发布补丁** | [项目介绍、范围与进度](../../AGE2/games/kiminozo/README.md) |
+
+君望正在进行文本审核和 UI、图片汉化。以下已发布作品的安装与恢复步骤不适用于君望。
+
 ## AGE2 BETA · 安装方式更新 2026-09-21
 
 | 游戏 | 版本 | 下载 |
@@ -52,7 +60,7 @@ Steam 语言设为 **English（英语）**，等待下载完成并退出游戏�
 ## 排错与反馈
 
 请提供游戏名称、补丁版本、Windows 环境、报错截图及前后台词，并说明是否安装其他补丁。
-AGE2 在游戏设置中选择中文；光子之花／光子旋律在安装前将 Steam 语言设为 English。
+已发布的 TDA00—03 与帝都燃烧补丁在游戏设置中选择中文；光子之花／光子旋律在安装前将 Steam 语言设为 English。
 不要混用不同作品的补丁。Steam Deck／Proton 不应视为已经验证的支持平台。
 
 [提交运行问题](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)

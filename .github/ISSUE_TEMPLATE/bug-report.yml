@@ -15,14 +15,16 @@ body:
         - The Imperial Capital Burns
         - 光子之花
         - 光子旋律
+        - 君望 Enhanced Edition（制作中 / In development）
+        - 君望 Another Episode Collection+（制作中 / In development）
     validations:
       required: true
   - type: input
     id: release
     attributes:
       label: 补丁版本或源码提交 / Release tag or source commit
-      description: 已发布的补丁填写版本或 Release tag；开发版本填写完整 commit SHA。Use the patch version or Release tag, or a full commit SHA for a development build.
-      placeholder: tda01-beta0.2.2，或 Photon 开发版本的完整 commit SHA
+      description: 已发布的补丁填写版本或 Release tag；开发版本填写完整 commit SHA；君望尚未发布补丁，仅受理本项目开发版本或文档问题。Use the patch version or Release tag, or a full commit SHA for a development build.
+      placeholder: 补丁的 Release tag，或开发版本／文档对应的完整 commit SHA
     validations:
       required: true
   - type: textarea
@@ -51,5 +53,5 @@ body:
       options:
         - label: 我拥有对应游戏，并且没有上传受版权保护的游戏容器或完整资源。
           required: true
-        - label: 我使用了对应的 Release 补丁包；如果书写 Photon 开发版本问题时，我填写了实际测试的 commit SHA。我没有把 GitHub 源码 ZIP 当作补丁包。
+        - label: 我已填写对应的 Release 补丁版本；如报告开发版本或文档问题，已填写对应的 commit SHA。我没有把 GitHub 源码 ZIP 当作补丁包。
           required: true

@@ -2,6 +2,14 @@
 
 [English overview](README.md) · [简体中文](../player/README.md) · [Research and localization](research-index.md) · [Report a bug](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
 
+## Kiminozo in development
+
+| Game | Status | Project |
+| --- | --- | --- |
+| Kimi ga Nozomu Eien ~Enhanced Edition~ and Another Episode Collection+ | **In development; no patch released** | [Scope and progress](../../AGE2/games/kiminozo/README.md) |
+
+Text review and UI/image localization are ongoing. The installation instructions for released games below do not apply to Kiminozo.
+
 ## AGE2 BETA · 2026-09-20
 
 | 游戏 | 版本 | 下载 |
@@ -26,12 +34,14 @@ The Simplified Chinese Windows / Steam patches are published as ordinary release
 
 | Game | Version | Download |
 | --- | --- | --- |
-| Muv-Luv 光子之花 | **BETA 0.1.1** | [下载汉化补丁](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1.1/MuvLuv_PF_CN_Patch_BETA_0.1.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1.1) |
-| Muv-Luv 光子旋律 | **BETA 0.1.1** | [下载汉化补丁](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1.1/MuvLuv_PM_CN_Patch_BETA_0.1.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.1) |
+| Muv-Luv 光子之花 | **BETA 0.1.2** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip) · [release](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1.2) |
+| Muv-Luv 光子旋律 | **BETA 0.1.2** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip) · [release](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.2) |
 
 Set the Steam game language to **English**, wait for downloads to finish, and close the game. Extract the ZIP, run its EXE, and click Install. No earlier patch or manual verification script is required.
 
-光子旋律 **BETA 0.1.1** fixes malformed display directives in 297 special-text entries, using the ordinary font to prevent Japanese leakage, duplicate text, and missing glyphs. Install directly over 光子旋律 BETA 0.1; no uninstall is needed. 光子之花 **BETA 0.1.1** adds 11 missing body/annotation glyphs, including those in 首席女伶 and 亟待收复. It also installs directly over 光子之花 BETA 0.1.
+**BETA 0.1.2** incorporates 24 光子之花 and 23 光子旋律 proofreading entries, with thanks to **柚子コショウ**, and retains the fixes described below. It supports direct upgrades from recognized older versions. Occasional English text in 光子之花 and embedded English in the 光子旋律 Resurrection ending movie remain unresolved; see the [change scope and credits](../project/photon-beta012-proofreading.md).
+
+光子旋律 **BETA 0.1.1** fixed malformed display directives in 297 special-text entries, using the ordinary font to prevent Japanese leakage, duplicate text, and missing glyphs. Install directly over 光子旋律 BETA 0.1; no uninstall is needed. 光子之花 **BETA 0.1.1** adds 11 missing body/annotation glyphs, including those in 首席女伶 and 亟待收复. It also installs directly over 光子之花 BETA 0.1.
 
 These packages retain R2 content and fix the backlog Return to Game button. They create **no backups** and include no uninstaller or rollback. To recover from an interrupted install or restore the original game, preserve saves, uninstall through Steam, remove patch leftovers from that specific game folder, and download the game again. Do not clear the Steam root, steamapps/common, userdata, or save folders. File verification alone may leave added patch files behind.
 
@@ -58,7 +68,7 @@ The following AGE2 packages are historical prerelease/test patches. They install
 
 These beta packages predate the repository's current release gate. They do not consistently include an install manifest, input-version hash check, uninstall tool or bundled font-license notice. An `install.bat` completing successfully proves that files were copied; it does not prove that an updated or repacked game is compatible.
 
-Use only the current historical versions listed on this page. Do not install the superseded `tda01-beta0.1`, `tda01-beta0.2`, `tda01-beta0.2.1`, or `tda03-beta0.1`: `tda01-beta0.2` introduced 603 invisible dialogue slots, while `tda03-beta0.1` carried TDA02's UI/achievement mapping.
+For new installations, use the current AGE2 packages at the top of this page; the following notes apply only to historical packages. Do not install the superseded `tda01-beta0.1`, `tda01-beta0.2`, `tda01-beta0.2.1`, or `tda03-beta0.1`: `tda01-beta0.2` introduced 603 invisible dialogue slots, while `tda03-beta0.1` carried TDA02's UI/achievement mapping.
 
 The historical builds also did not freeze and re-verify the Steam/in-game language selection used for every title. Surviving test machines contain both Japanese and English settings, so no uniform requirement can be inferred. Do not overwrite another title or language slot just to “make the patch appear.” If the game still shows Japanese or English, report the Steam language plus `UserConfig.language` and `MountedConfig.language` from that title's appmanifest; this guide will not guess a value before per-title retesting.
 
@@ -76,7 +86,7 @@ The historical builds also did not freeze and re-verify the Steam/in-game langua
 
 | Game | Loose-overlay destination |
 | --- | --- |
-| TDA00 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/tda00-BETA-0.2.1/TDA00-CN-BETA-0.2.1-Complete.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/tda00-BETA-0.2.1) |
+| TDA00 | `%LOCALAPPDATA%\ancr\tda00\data\root` |
 | TDA01 | `%LOCALAPPDATA%\ancr\tda01\data\root` |
 | TDA02 | `%LOCALAPPDATA%\ancr\tda02\data\root` |
 | TDA03 | `%LOCALAPPDATA%\ancr\tda03\data\root` |
@@ -94,7 +104,7 @@ Steam Deck instructions, when present, are inside the release package. Use the e
 
 ## Verify a download
 
-Four current packages publish a SHA-256 text file beside the ZIP. TDA03 beta0.1.6 has no separate checksum attachment; its GitHub-recorded ZIP digest is `4B6CA4A531E9D07315E84DC2E02D7D8008C9B78EA4466172B45CAD1CEBA5C67D`. On Windows PowerShell:
+Four of the historical packages publish a SHA-256 text file beside the ZIP. TDA03 beta0.1.6 has no separate checksum attachment; its GitHub-recorded ZIP digest is `4B6CA4A531E9D07315E84DC2E02D7D8008C9B78EA4466172B45CAD1CEBA5C67D`. On Windows PowerShell:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 "C:\Downloads\patch.zip"
@@ -117,7 +127,7 @@ Future packages are expected to carry a complete install manifest and tested rol
 ## Compatibility
 
 - Only the Steam title named by the release was tested. Other stores, consoles, mobile ports, future Steam updates and repacks are not assumed compatible.
-- Current AGE2 beta installers do not enforce the original `pack.bin` hash. The five historical releases did not preserve an exact Steam build/depot identity or original `pack.bin` SHA-256, so compatibility with the current Steam build cannot be established before installation. Back up the exact overlay root, test cautiously, and do not treat a successful copy as validation.
+- The historical AGE2 beta installers described above do not enforce the original `pack.bin` hash. The five historical releases did not preserve an exact Steam build/depot identity or original `pack.bin` SHA-256, so compatibility with the current Steam build cannot be established before installation. Back up the exact overlay root, test cautiously, and do not treat a successful copy as validation.
 - Do not layer two patches that replace the same text, image, font or cache paths.
 - Back up custom loose files before installing an update. A newer package may intentionally clean stale files in the exact title's `root`.
 

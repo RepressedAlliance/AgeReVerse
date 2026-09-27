@@ -1,8 +1,8 @@
-# AGE2：TDA 与帝都燃烧篇
+# AGE2：TDA 帝都燃烧与君望
 
 [返回首页](../README.md) · [游戏与汉化资产](games/README.md) · [工具](tools/) · [工作流](docs/workflow.md) · [问题复盘](docs/postmortems/README.md) · [测试](tests/)
 
-这里负责较新的 AGE2 移植体系，与 [rUGP](../rUGP/README.md) 完全独立。当前涉及 THE DAY AFTER episode:00–03 与 The Imperial Capital Burns／帝都燃烧篇。
+这里负责较新的 AGE2 移植体系，与 [rUGP](../rUGP/README.md) 完全独立。当前涉及 THE DAY AFTER episode:00–03 与 The Imperial Capital Burns／帝都燃烧篇；另已建立[君望 Steam 版项目入口](games/kiminozo/README.md)，文本及 UI、图片仍在制作，尚未发布补丁。下述已发布资源与运行方案属于 TDA 和帝都燃烧，不能直接视为君望已完成的支持。
 
 ## 独立中文通道与运行时修正
 
@@ -36,6 +36,7 @@ FPD 与 EGPACK 是两层不同格式：先从 `pack.bin` 的 FPD 目录找到文
 | TDA02 | [`games/tda02/translations/`](games/tda02/translations/) | [100 个 WebP 路径](games/tda02/images/) | beta0.1 |
 | TDA03 | [`games/tda03/translations/`](games/tda03/translations/) | [152 个 WebP 路径](games/tda03/images/) | beta0.1.6 |
 | 帝都燃烧篇 | [正文、选项、说话人、UI](games/imperial-capital-burns/translations/)与[作内术语](../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [315 个 WebP 路径及可维护文案](games/imperial-capital-burns/images/) | beta0.1 |
+| 君望及附加篇 | [文本](games/kiminozo/translations/)与[术语、基线](games/kiminozo/terminology/)整理中 | [UI、图片与字体制作中](games/kiminozo/images/) | 尚未发布 |
 
 这些表和图片清单是当前可维护的公开快照，不代表能够逐字节重建历史 Release。WebP
 数量表示 ZIP 中实际存在的路径，不等于全部为独立翻译图；公开表、旧分支与实际发布载荷
