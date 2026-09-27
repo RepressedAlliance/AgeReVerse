@@ -13,6 +13,11 @@
 | [TDA02](tda02/) | 1342410 | 6,589 行 | [100 项](tda02/images/) | 历史测试包 beta0.1 |
 | [TDA03](tda03/) | 789830 | 6,913 行 | [152 项](tda03/images/) | 历史测试包 beta0.1.6 |
 | [帝都燃烧篇](imperial-capital-burns/) | 2630300 | 5,564 行正文及辅助表 | [315 项](imperial-capital-burns/images/) | 历史测试包 beta0.1 |
+| [君望 Enhanced Edition](kiminozo/) | 1777440 | 文本审核中，正文尚未公开 | [UI、图片与字体制作中](kiminozo/images/) | 在制，尚未发布补丁 |
+
+君望项目同时整理 Another Episode Collection+（App ID 3112140）；本篇与附加篇分别管理。
+详见[项目范围及当前进度](kiminozo/README.md)。在制项目的清单可以暂不登记正文和图片权威文件，
+但必须说明状态；文档入口不充当已完成的数据表或发布清单。
 
 WebP 数量是对应历史 ZIP 中实际存在的图片成员数，不等于“独立翻译图片数”。同一内容
 可能同时覆盖 `_ja`、`_zh` 或无语言后缀路径，也可能是为保证 UI 完整而复制的官方

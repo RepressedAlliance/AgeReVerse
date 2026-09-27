@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[2]
 EXPECTED = {
     "AGE2": {
         "imperial-capital-burns",
+        "kiminozo",
         "tda00",
         "tda01",
         "tda02",
@@ -37,10 +38,23 @@ class GameProjectManifestTests(unittest.TestCase):
                 self.assertEqual(manifest["engine"], engine)
                 self.assertIsInstance(manifest["steam_app_id"], int)
                 self.assertEqual(manifest["target_locales"], ["zh-Hans"])
-                self.assertTrue(manifest["translation_authorities"])
-
                 relative_paths = list(manifest["translation_authorities"])
-                relative_paths.append(manifest["image_authority"])
+                if game_id == "kiminozo":
+                    self.assertEqual(manifest["development_status"], "in-development")
+                    self.assertEqual(manifest["translation_authorities"], [])
+                    self.assertNotIn("player_release_tag", manifest)
+                    self.assertNotIn("image_authority", manifest)
+                    self.assertEqual(manifest["steam_app_id"], 1777440)
+                    self.assertEqual(manifest["components"]["main"]["resource_root"], "kiminozs")
+                    self.assertEqual(manifest["components"]["additional"]["resource_root"], "kiminoaz")
+                    self.assertEqual(manifest["components"]["additional"]["steam_app_id"], 3112140)
+                    relative_paths.extend([
+                        "README.md", "translations/README.md",
+                        "terminology/README.md", "images/README.md",
+                    ])
+                else:
+                    self.assertTrue(manifest["translation_authorities"])
+                    relative_paths.append(manifest["image_authority"])
                 relative_paths.append(manifest["font_policy"])
                 for optional_key in ("terminology_authority", "terminology_common_authority", "terminology_baseline", "image_copy_authority"):
                     if optional_key in manifest:

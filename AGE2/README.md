@@ -1,8 +1,8 @@
-# AGE2：TDA 与帝都燃烧篇
+# AGE2：TDA 帝都燃烧与君望
 
 [返回首页](../README.md) · [游戏与汉化资产](games/README.md) · [工具](tools/) · [工作流](docs/workflow.md) · [问题复盘](docs/postmortems/README.md) · [测试](tests/)
 
-这里负责较新的 AGE2 移植体系，与 [rUGP](../rUGP/README.md) 完全独立。当前涉及 THE DAY AFTER episode:00–03 与 The Imperial Capital Burns／帝都燃烧篇。
+这里负责较新的 AGE2 移植体系，与 [rUGP](../rUGP/README.md) 完全独立。当前涉及 THE DAY AFTER episode:00–03 与 The Imperial Capital Burns／帝都燃烧篇；另已建立[君望 Steam 版项目入口](games/kiminozo/README.md)，文本及 UI、图片仍在制作，尚未发布补丁。下述已发布资源与运行方案属于 TDA 和帝都燃烧，不能直接视为君望已完成的支持。
 
 ## 独立中文通道与运行时修正
 
