@@ -2,9 +2,10 @@
 
 [返回本地化工作区](../README.md) · [完整工作流](../workflow.md) · [English workflow](../workflow.en.md)
 
-文件名前的 `01`—`06` 表示开工时的阅读和准备顺序。前三份用于确认项目与数据；
+文件名前的 `01`—`07` 表示规范的阅读和使用顺序。前三份用于确认项目与数据；
 正文工作的核心顺序是：**通读剧情并冻结术语 → 初译 → 独立二审 → 解决疑点并同步术语
-→ 技术写回与 QA → 玩家反馈复核**。编号不表示后读的规则可以覆盖前面的规则。
+→ 修改反查与联动复核 → 技术写回与 QA → 玩家反馈复核**。07 在修改时持续使用，
+不只在二审结束后执行。编号不表示后读的规则可以覆盖前面的规则。
 
 ## 按什么顺序读和用
 
@@ -16,19 +17,26 @@
 | 04 | [章节术语工作流](04-terminology.md) | 正文初译前，之后每批持续使用 | 通读剧情与人物关系、扫描全章专名、核对总表、冻结章节术语基线，并列出疑点 |
 | 05 | [简体中文初译规则](05-translation.md) | 按完整 scene 或自然剧情段初译时 | 产出候选译文、`translated / question / blocked` 状态、术语增量和下一批起点 |
 | 06 | [独立审核规则](06-review.md) | 每批候选完成后，独立重新阅读 JP 时 | 逐句给出 `keep / revise / question`，记录修改理由，复查全章一致性 |
+| 07 | [修改反查规则](07-change-impact.md) | 译文、术语或理解依据变化后 | 确认受影响范围、同步关联位置、记录例外与未决项，复核修改结果 |
 
 接手已有章节时先核验 01—03 的现有成果，再加载该章冻结术语进入当前批次。
 这些准备工作不用在每一批重新建一遍，但来源或版本发生变化时必须重新核验。
+
+验证从本次改动直接影响的项目开始。已有结果仍适用于当前输入、规则和工具时可以复用；
+只有相关失败、新证据、依赖变化或明确交付要求，才扩大或重复检查。相关检查通过且没有
+未解决问题后停止，不为增加信心重复哈希、重建基线，或额外叠加冒烟、备份、回滚演练、
+dry-run 和验收表。引擎规定的写入、安装前校验仍在实际操作时执行。
 
 ## 二审之后还要做什么
 
 1. **解决疑点：**按[完整工作流第 4 步](../workflow.md#4-解决-question-并再次冻结术语)
    补齐上下文、语音、截图或设定证据。`question` 有记录不代表已经解决；缺少依据的
-   `blocked` 项也不能交付定稿。修改术语后返回 04，更新基线并检查所有受影响位置。
+   `blocked` 项也不能交付定稿。修改术语后返回 04 更新基线；按 [07 修改反查](07-change-impact.md)
+   检查并同步受影响位置，再交给技术写回。
 2. **技术写回与自动检查：**定稿后按对应引擎的 [AGE2](../../AGE2/docs/quality.md)
    或 [rUGP](../../rUGP/docs/quality.md) 规则验证控制符、编码、容量、资源绑定与打包。
 3. **实机与反馈：**完成[实机 QA](../workflow.md#7-实机-qa)，玩家反馈再回到 JP、
-   术语和可维护源表复核，修正后重跑相关检查。
+   术语和可维护源表复核，修正后按 07 反查并重跑相关检查。
 
 初译自检不能代替独立二审，二审通过不能代替技术验证或实机检查。
 
@@ -56,12 +64,14 @@
 - 原 `TECHNICAL_QA_RULES.md` 的职责现在分别由 AGE2 与 rUGP 的技术规范承担。
 
 本次将现有项目清单、源数据和字段规范排为 01—03，补齐开工入口；04—06 延续以前
-“先术语、再初译、后独立审核”的使用顺序。完整阶段和交付要求以[完整工作流](../workflow.md)为准。
+“先术语、再初译、后独立审核”的使用顺序；07 补充修改后的关联检查与同步。
+完整阶段和交付要求以[完整工作流](../workflow.md)为准。
 
 ## English summary
 
 Read 01–03 to establish the game, authoritative source and table mapping. Then
 read the story and freeze terminology (04), translate complete scenes (05), and
 independently review each candidate against Japanese (06). Resolve questions and
-update terminology before engine writeback, automated checks and in-game QA.
+update terminology, then trace and resolve change impacts (07) before engine
+writeback, automated checks and in-game QA. Apply 07 whenever later edits occur.
 The numbers describe workflow order, not rule precedence.
