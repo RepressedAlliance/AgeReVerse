@@ -9,7 +9,7 @@
 
 | 名称 | 贡献 |
 | --- | --- |
-| [imnotsureyi-sys](https://github.com/imnotsureyi-sys)／Yi Shen | 项目发起、翻译与术语决策、实机验证、资源整理、Release 发布，以及对所有公开内容的最终审核与责任 |
+| [RepressedAlliance](https://github.com/RepressedAlliance) / 压抑同盟 | 项目发起、翻译与术语决策、实机验证、资源整理、Release 发布，以及对所有公开内容的最终审核与责任 |
 
 ## AI 辅助贡献
 
@@ -110,7 +110,7 @@ shared/common 端点和光子之花/光子旋律 1,490 图闭环均由本项目�
 
 ## English summary
 
-Yi Shen (`imnotsureyi-sys`) is the human maintainer and final reviewer. Material
+[RepressedAlliance](https://github.com/RepressedAlliance) / 压抑同盟 is the human maintainer and final reviewer. Material
 OpenAI Codex work is disclosed with the GitHub-recognized
 `Co-authored-by: Codex <codex@openai.com>` trailer. The project warmly thanks
 主任保护协会 for the AGE2 loose-file overlay approach that began this patch-making

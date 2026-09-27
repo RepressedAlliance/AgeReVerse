@@ -5,7 +5,7 @@
 
 ## 项目维护与协助
 
-- **[imnotsureyi-sys](https://github.com/imnotsureyi-sys)／Yi Shen：**项目发起、翻译与术语
+- **[RepressedAlliance](https://github.com/RepressedAlliance) / 压抑同盟：**项目发起、翻译与术语
   决策、实机验证、资源整理、Release 发布，以及公开内容的最终审核与责任。
 - **[OpenAI Codex](https://openai.com/codex)：**在维护者指挥下协助代码、格式分析、翻译复核、
   术语整理、测试、文档和故障复盘。
@@ -60,7 +60,7 @@
 
 ## English summary
 
-Yi Shen (`imnotsureyi-sys`) maintains and reviews the project. OpenAI Codex and image models assist
+[RepressedAlliance](https://github.com/RepressedAlliance) / 压抑同盟 maintains and reviews the project. OpenAI Codex and image models assist
 under maintainer supervision. The project thanks 主任保护协会 for demonstrating the AGE2 loose-file overlay approach
 that started our localization journey. Subsequent extraction, translation, tool development and patch
 production are our own work, with specific references documented separately. We credit GARbro,

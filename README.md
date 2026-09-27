@@ -205,7 +205,7 @@ are reusable components; they do not yet provide a universal one-command finishe
 
 ## 贡献者与致谢
 
-项目由 [imnotsureyi-sys](https://github.com/imnotsureyi-sys)／Yi Shen 发起和维护。
+项目由 [RepressedAlliance](https://github.com/RepressedAlliance) / 压抑同盟 发起和维护。
 我们从“主任保护协会”那里学到了 **通过松散文件结构覆盖游戏资源的方法**。
 正是这份启发，让我们迈出了汉化的第一步，对此我们由衷感谢。
 后续资源提取、翻译、工具开发与补丁制作由本项目自行完成；具体技术参考与历史对照记录另行列明。
