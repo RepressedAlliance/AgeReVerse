@@ -43,9 +43,16 @@ Co-authored-by: Codex <codex@openai.com>
 
 ## 文本提供与校对
 
-感谢 **“红桃皇后假说”** 为 **《樱花盛开之前》提供部分文本**。
-TDA 部分文本已经人工校对，感谢 ScRemilia、Tsubaki-G、X1AOFEI 及其他参与者；
-具体采用记录见[ParaTranz 校对同步说明](../../localization/paratranz/README.md)。
+| 公开署名 | 已有记录确认的贡献 | 依据 |
+| --- | --- | --- |
+| ScRm | TDA00 审核与校对；各篇文本纠错与修订 | [TDA00 BETA 0.2.1 发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-BETA-0.2.1) |
+| 骁飞、Tsubaki-G | 各篇文本纠错与修订 | [TDA01 BETA 0.3.3 发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-BETA-0.3.3) |
+| ScRemilia、Tsubaki-G、X1AOFEI | TDA ParaTranz 已采用记录中的校对与修正 | [署名记录](../../localization/paratranz/tda/contributors.json)与[同步说明](../../localization/paratranz/README.md) |
+| 柚子コショウ | 光子之花／光子旋律校对、用词与称呼反馈及修正建议 | [BETA 0.1.2 校对更新](photon-beta012-proofreading.md) |
+| 红桃皇后假说 | 为光子之花《樱花盛开之前》提供部分文本 | [贡献范围说明](../research/photon/README.md)；现有证据不支持把全章条数计为其贡献 |
+| 子冰 | 对 TDA01 提供反馈 | [TDA01 beta0.2.2 发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-beta0.2.2) |
+
+各行保留其来源中的公开署名，不据相似名字擅自合并身份，也不将名单视为去重人数。木之老师的君望协助及技术前人的贡献分别见下文。
 部分文本经过校对不代表全篇完成日中人工校对，也不表示所有修改已进入历史下载包。
 
 ## rUGP／AGES 技术前人

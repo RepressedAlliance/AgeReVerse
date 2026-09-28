@@ -1,4 +1,4 @@
-# 君望 Steam 版汉化
+# 君望／你所期望的永远 Steam 简体中文汉化计划（制作中）
 
 [返回首页](../../../README.md) · [AGE2 项目](../README.md) · [项目清单](project.toml)
 
