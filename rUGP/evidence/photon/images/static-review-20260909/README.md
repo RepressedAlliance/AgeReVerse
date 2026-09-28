@@ -108,7 +108,7 @@ V6 或较早人工预览替代。五处未同步项现已补齐；
 另一款游戏的安装基线。完整源码与封存配置现可重建这两款运行时 DLL；这仍不包含
 游戏本体、图片包或独立 PR 的未安装候选，也不自动成为可分发玩家补丁。
 
-文本／字体候选在 [PR #14](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/pull/14)，
-术语来源在 [PR #15](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/pull/15)，
-CRmt 素材工具在 [PR #16](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/pull/16)。
+文本／字体候选在 [PR #14](https://github.com/RepressedAlliance/AgeReVerse/pull/14)，
+术语来源在 [PR #15](https://github.com/RepressedAlliance/AgeReVerse/pull/15)，
+CRmt 素材工具在 [PR #16](https://github.com/RepressedAlliance/AgeReVerse/pull/16)。
 这些独立内容没有漏进静态图目录，也不应复制一份形成平行维护版本。

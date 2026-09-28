@@ -3,7 +3,7 @@
 CRmt 演出图片另见[家族指南](../../../docs/crmt-family.md)和[日英／汉化逐对象清单](../../../evidence/photon/crmt/README.md)。
 光子之花与光子旋律相同像素的不同物理目标仍分别记录，不以光子旋律通过代替光子之花验证。
 
-[返回光子之花](../README.md) · [1,490 图共用清单](../../../evidence/photon/images/manifest.json) · [路由闭环](../../../evidence/photon/routes/routes.json) · [研究资产 Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/photon-images-1490-20260824-v6)
+[返回光子之花](../README.md) · [1,490 图共用清单](../../../evidence/photon/images/manifest.json) · [路由闭环](../../../evidence/photon/routes/routes.json) · [研究资产 Release](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/photon-images-1490-20260824-v6)
 
 共用 Photon V6 清单中，`game = "PF"` 的项目有 **636 项**。每项保存稳定资源 ID、
 RIO 位置、尺寸、模式、官方源哈希、中文候选哈希、备份 PNG 或原生记录身份。

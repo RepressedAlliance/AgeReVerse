@@ -407,7 +407,7 @@ thcrap、07th-Mod、Committee of Zero、Tsukihimates、VNTranslationTools、Kuri
 | 光子之花 BETA 0.1 ZIP | `E8933FAB8D3E4285A82269653B3F58D738BA6B2803BC2C96B956D5D148EFCCC3` |
 | 光子旋律 BETA 0.1.1 ZIP | `85D9D023494570ABC7025F10F924517706E706B722B86515C43AD5D34C5D9BAF` |
 
-发布页：[光子之花 BETA 0.1](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1)、[光子旋律 BETA 0.1.1](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.1)。光子之花 GitHub UTC 发布时间为 9 月 9 日 17:36:54，对应悉尼 9 月 10 日凌晨。
+发布页：[光子之花 BETA 0.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1)、[光子旋律 BETA 0.1.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.1)。光子之花 GitHub UTC 发布时间为 9 月 9 日 17:36:54，对应悉尼 9 月 10 日凌晨。
 
 机器可读结果：[release-route-audit.json](evidence/release-route-audit.json)。复核脚本：[audit_routes.py（本地记录 L14）](evidence-index.md#l14)。脚本读取历史记录和正式载荷，并通过 `gh api` 获取 Release 身份；结果输出为独立核查文件，不修改游戏。
 

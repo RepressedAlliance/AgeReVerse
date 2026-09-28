@@ -1,4 +1,6 @@
-# Muv-Luv 系列 Steam 版汉化补完计划
+# AgeReVerse · 压抑同盟
+
+âge 游戏逆向研究、工具开发与中文本地化。AgeReVerse 结合 âge、Reverse（逆向）与 Verse（作品世界）的含义。
 
 <p align="center">
   <strong><a href="#游戏下载">补丁下载</a></strong> ·
@@ -38,13 +40,13 @@ These are Chinese localization patches, not English patches or full games.
 
 | 游戏 | 当前公开版本 | 下载与说明 |
 | --- | --- | --- |
-| TDA00 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/tda00-BETA-0.2.1/TDA00-CN-BETA-0.2.1-Complete.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/tda00-BETA-0.2.1) |
-| TDA01 | **BETA 0.3.3** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/tda01-BETA-0.3.3/TDA01-CN-BETA-0.3.3-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/tda01-BETA-0.3.3) |
-| TDA02 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/tda02-BETA-0.2.1/TDA02-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/tda02-BETA-0.2.1) |
-| TDA03 | **BETA 0.2.7** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/tda03-BETA-0.2.7/TDA03-CN-BETA-0.2.7-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/tda03-BETA-0.2.7) |
-| 帝都燃烧篇 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-BETA-0.2.1/TM-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-BETA-0.2.1) |
-| 光子之花 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1.2) |
-| 光子旋律 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.2) |
+| TDA00 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda00-BETA-0.2.1/TDA00-CN-BETA-0.2.1-Complete.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-BETA-0.2.1) |
+| TDA01 | **BETA 0.3.3** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda01-BETA-0.3.3/TDA01-CN-BETA-0.3.3-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-BETA-0.3.3) |
+| TDA02 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda02-BETA-0.2.1/TDA02-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda02-BETA-0.2.1) |
+| TDA03 | **BETA 0.2.7** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda03-BETA-0.2.7/TDA03-CN-BETA-0.2.7-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-BETA-0.2.7) |
+| 帝都燃烧篇 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-BETA-0.2.1/TM-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
+| 光子之花 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
+| 光子旋律 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
 | 君望（含 Another Episode Collection+） | **制作中，尚未发布** | [项目介绍与进度](AGE2/games/kiminozo/README.md) |
 
 ### 作品名称与常用简称
@@ -103,8 +105,8 @@ TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含
 安装遇到问题、发现错字或想交流，欢迎加入 **QQ 交流群：273626767**。
 不熟悉 GitHub 也可以直接进群反馈，尽量附上游戏名、补丁版本、截图和前后台词。
 
-- [报告安装、启动、文本、图片或字体问题](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
-- [提交有日文原文依据的翻译修正](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml)
+- [报告安装、启动、文本、图片或字体问题](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)
+- [提交有日文原文依据的翻译修正](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)
 - [查看参与方式、贡献者与致谢](.github/CONTRIBUTING.md)
 
 ### 关于 AI 翻译与人工校对

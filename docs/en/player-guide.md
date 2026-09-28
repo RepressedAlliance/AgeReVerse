@@ -1,6 +1,6 @@
 # Player download, installation, rollback, and troubleshooting guide
 
-[English overview](README.md) · [简体中文](../player/README.md) · [Research and localization](research-index.md) · [Report a bug](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
+[English overview](README.md) · [简体中文](../player/README.md) · [Research and localization](research-index.md) · [Report a bug](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)
 
 ## Kiminozo in development
 
@@ -14,11 +14,11 @@ Text review and UI/image localization are ongoing. The installation instructions
 
 | 游戏 | 版本 | 下载 |
 | --- | --- | --- |
-| TDA00 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/tda00-BETA-0.2.1/TDA00-CN-BETA-0.2.1-Complete.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/tda00-BETA-0.2.1) |
-| TDA01 | **BETA 0.3.3** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/tda01-BETA-0.3.3/TDA01-CN-BETA-0.3.3-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/tda01-BETA-0.3.3) |
-| TDA02 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/tda02-BETA-0.2.1/TDA02-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/tda02-BETA-0.2.1) |
-| TDA03 | **BETA 0.2.7** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/tda03-BETA-0.2.7/TDA03-CN-BETA-0.2.7-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/tda03-BETA-0.2.7) |
-| 帝都燃烧篇 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-BETA-0.2.1/TM-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-BETA-0.2.1) |
+| TDA00 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda00-BETA-0.2.1/TDA00-CN-BETA-0.2.1-Complete.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-BETA-0.2.1) |
+| TDA01 | **BETA 0.3.3** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda01-BETA-0.3.3/TDA01-CN-BETA-0.3.3-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-BETA-0.3.3) |
+| TDA02 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda02-BETA-0.2.1/TDA02-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda02-BETA-0.2.1) |
+| TDA03 | **BETA 0.2.7** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda03-BETA-0.2.7/TDA03-CN-BETA-0.2.7-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-BETA-0.2.7) |
+| 帝都燃烧篇 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-BETA-0.2.1/TM-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
 
 All five AGE2 downloads now include installation instructions, `root`, `game`, and an installer. Either run the installer or copy the five ready-made files inside `game` into the matching game directory after backing up its original EXE, and copy `root` into `%LOCALAPPDATA%\ancr\<game>\data` (tda00, tda01, tda02, tda03, or tm). Rename the old root first; keep user saves. No generation tool is needed. Launch from Steam and select Chinese.
 
@@ -34,8 +34,8 @@ The Simplified Chinese Windows / Steam patches are published as ordinary release
 
 | Game | Version | Download |
 | --- | --- | --- |
-| Muv-Luv 光子之花 | **BETA 0.1.2** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip) · [release](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1.2) |
-| Muv-Luv 光子旋律 | **BETA 0.1.2** | [下载汉化补丁](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip) · [release](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.2) |
+| Muv-Luv 光子之花 | **BETA 0.1.2** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip) · [release](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
+| Muv-Luv 光子旋律 | **BETA 0.1.2** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip) · [release](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
 
 Set the Steam game language to **English**, wait for downloads to finish, and close the game. Extract the ZIP, run its EXE, and click Install. No earlier patch or manual verification script is required.
 
@@ -56,11 +56,11 @@ the 1,490-image Photon research bundle as a game patch.
 
 | Game | Preserved version | Download |
 | --- | --- | --- |
-| THE DAY AFTER episode:00 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) |
-| THE DAY AFTER episode:01 | beta0.2.2 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) |
-| THE DAY AFTER episode:02 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) |
-| THE DAY AFTER episode:03 | beta0.1.6 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
-| The Imperial Capital Burns | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
+| THE DAY AFTER episode:00 | beta0.1 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) · [release](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-beta0.1) |
+| THE DAY AFTER episode:01 | beta0.2.2 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) · [release](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-beta0.2.2) |
+| THE DAY AFTER episode:02 | beta0.1 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) · [release](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda02-beta0.1) |
+| THE DAY AFTER episode:03 | beta0.1.6 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [release](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-beta0.1.6) |
+| The Imperial Capital Burns | beta0.1 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [release](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-beta0.1) |
 
 ## Before you install
 
@@ -119,7 +119,7 @@ The present beta packages do not all contain a complete per-file install manifes
 1. Close the game.
 2. Treat package rollback notes as historical. Never follow an instruction to delete the whole `%LOCALAPPDATA%\ancr\<game>\data` directory: TDA01 beta0.2.2 contains such obsolete advice. Do not delete `data\user`, saves or progress data.
 3. If you made a pre-install backup, move the patched title's exact `data\root` out of the way and restore that backup. Prefer moving/renaming to immediate permanent deletion.
-4. If no backup or complete manifest exists, do not guess at individual files and do not delete broad directories such as `%LOCALAPPDATA%\ancr`, a whole Proton prefix, `data\user`, or save/progress folders. Ask for title-specific help in a [bug report](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml).
+4. If no backup or complete manifest exists, do not guess at individual files and do not delete broad directories such as `%LOCALAPPDATA%\ancr`, a whole Proton prefix, `data\user`, or save/progress folders. Ask for title-specific help in a [bug report](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml).
 5. Steam **Verify integrity of game files** can repair files managed inside the Steam installation. It does **not** inspect or remove this patch's LocalAppData loose overlay, so verification is not a substitute for steps 2–4.
 
 Future packages are expected to carry a complete install manifest and tested rollback path under the current [release process](../project/release-process.md).
@@ -142,4 +142,4 @@ Start from one known patch on the correct title and reproduce the problem after 
 - exact error text and whether the problem is missing/English text, wrong speaker, tofu glyphs, clipping, a missing/torn/discolored image, startup failure or achievement behavior;
 - what rollback steps you tried. Do not report Steam verification alone as removing a LocalAppData patch.
 
-[Open a patch/runtime bug](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml). A wording preference should instead use the [translation correction form](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml) with Japanese source and context. Never upload complete game archives.
+[Open a patch/runtime bug](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml). A wording preference should instead use the [translation correction form](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml) with Japanese source and context. Never upload complete game archives.

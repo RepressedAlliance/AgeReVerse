@@ -1,6 +1,6 @@
 # 变更记录 / Changelog
 
-This file records repository and public-patch changes. Downloadable packages and their checksums remain attached to [GitHub Releases](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases).
+This file records repository and public-patch changes. Downloadable packages and their checksums remain attached to [GitHub Releases](https://github.com/RepressedAlliance/AgeReVerse/releases).
 
 ## Unreleased — repository architecture
 

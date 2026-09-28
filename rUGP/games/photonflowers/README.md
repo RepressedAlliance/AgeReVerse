@@ -4,7 +4,7 @@
 
 - Steam App ID：`889700`
 - 目标语言：简体中文（`zh-Hans`）
-- 玩家包：已发布 [BETA 0.1.2](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1.2)
+- 玩家包：已发布 [BETA 0.1.2](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2)
 - 最新章节编辑表：13,025 条（包含系统文本与补提取消息）
 - 历史已审校文本：Alternative 6,033 行、Extra 6,931 行，共 12,964 行
 - 当前精确运行时绑定表：69 行

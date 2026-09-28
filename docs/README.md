@@ -9,7 +9,7 @@
 - [安装、卸载与排错](player/README.md)
 - [君望 Steam 版及附加篇的制作进度](../AGE2/games/kiminozo/README.md)：尚未发布补丁
 - [机器可读的版本、文件名与 SHA-256 索引](player/release-index.json)
-- [GitHub Releases](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases)
+- [GitHub Releases](https://github.com/RepressedAlliance/AgeReVerse/releases)
 
 ## 本地化制作者
 

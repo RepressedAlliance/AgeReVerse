@@ -1,6 +1,6 @@
 # THE DAY AFTER episode:03
 
-[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6)
+[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-beta0.1.6)
 
 - Steam App ID：`789830`
 - 目标语言：简体中文（`zh-Hans`）

@@ -24,8 +24,8 @@
 
 下载：
 
-- [GitHub Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/photon-images-1490-20260824-v6)
-- [完整图片包 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/photon-images-1490-20260824-v6/MuvLuv_Photon_PF_PM_CN_Images_1490_20260824_v6.zip)
+- [GitHub Release](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/photon-images-1490-20260824-v6)
+- [完整图片包 ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/photon-images-1490-20260824-v6/MuvLuv_Photon_PF_PM_CN_Images_1490_20260824_v6.zip)
 - [V6 发布说明](release-notes.md)
 
 文件说明：

@@ -11,11 +11,11 @@
 
 | 游戏 | 当前保留版本 | 下载 |
 | --- | --- | --- |
-| THE DAY AFTER episode:00 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) |
-| THE DAY AFTER episode:01 | beta0.2.2 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) |
-| THE DAY AFTER episode:02 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) |
-| THE DAY AFTER episode:03 | beta0.1.6 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
-| 帝都燃烧篇 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
+| THE DAY AFTER episode:00 | beta0.1 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) · [发布页](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-beta0.1) |
+| THE DAY AFTER episode:01 | beta0.2.2 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) · [发布页](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-beta0.2.2) |
+| THE DAY AFTER episode:02 | beta0.1 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) · [发布页](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda02-beta0.1) |
+| THE DAY AFTER episode:03 | beta0.1.6 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [发布页](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-beta0.1.6) |
+| 帝都燃烧篇 | beta0.1 | [ZIP](https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [发布页](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-beta0.1) |
 
 <a id="玩家下载"></a>
 
@@ -75,7 +75,7 @@ Get-FileHash -Algorithm SHA256 "C:\Downloads\patch.zip"
 1. 完全退出游戏。
 2. 包内还原文字只能视为历史说明。绝不要照任何旧说明删除整个 `%LOCALAPPDATA%\ancr\<游戏>\data`；TDA01 beta0.2.2 包内确实存在这条已废弃建议。不得删除 `data\user`、存档或进度数据。
 3. 安装前做过备份时，先把该作准确的 `data\root` 移到别处，再恢复备份。优先使用可恢复的移动/改名，不要立即永久删除。
-4. 若既没有备份也没有完整清单，不要猜着逐项删除，更不要删除整个 `%LOCALAPPDATA%\ancr`、完整 Proton prefix、`data\user` 或任何存档/进度目录。请通过 [Bug 表单](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)询问该作的准确处理方法。
+4. 若既没有备份也没有完整清单，不要猜着逐项删除，更不要删除整个 `%LOCALAPPDATA%\ancr`、完整 Proton prefix、`data\user` 或任何存档/进度目录。请通过 [Bug 表单](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)询问该作的准确处理方法。
 5. Steam“验证游戏文件完整性”只能修复 Steam 安装目录内由 Steam 管理的文件，**不会**检查或删除本补丁位于 LocalAppData 的松散覆盖，因此不能代替第 2–4 步。
 
 今后按当前[发布流程](../project/release-process.md)制作的补丁应附完整安装清单和经过测试的回滚路线。
@@ -98,4 +98,4 @@ Get-FileHash -Algorithm SHA256 "C:\Downloads\patch.zip"
 - 准确错误文字，以及属于缺字/回退英文/说话人错误/裁切/图片异色撕裂不显示/启动报错/成就问题中的哪一类；
 - 已尝试的回滚步骤。不要把“只运行 Steam 验证”描述成已经移除 LocalAppData 补丁。
 
-[提交补丁或运行时 Bug](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)。译文偏好请改用[翻译修正表单](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml)，并附日文原文和语境。不要上传完整游戏资源。
+[提交补丁或运行时 Bug](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)。译文偏好请改用[翻译修正表单](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)，并附日文原文和语境。不要上传完整游戏资源。

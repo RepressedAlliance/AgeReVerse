@@ -289,7 +289,7 @@ def check_release_index(errors: list[str]) -> None:
         ):
             fail(errors, f"{label}: invalid ZIP asset_name")
         expected_url = (
-            "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/"
+            "https://github.com/RepressedAlliance/AgeReVerse/"
             f"releases/download/{tag}/{name}"
         )
         if url != expected_url or url in urls:
@@ -387,7 +387,7 @@ def check_release_index(errors: list[str]) -> None:
         ):
             fail(errors, f"{label}: invalid ZIP asset_name")
         expected_url = (
-            "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/"
+            "https://github.com/RepressedAlliance/AgeReVerse/"
             f"releases/download/{tag}/{name}"
         )
         if url != expected_url or url in urls:

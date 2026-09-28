@@ -3,7 +3,9 @@
   <a href="README.md"><img alt="English" src="https://img.shields.io/badge/English-Current-2F81F7?style=for-the-badge"></a>
 </p>
 
-# Muv-Luv Series Steam Community Localization
+# AgeReVerse
+
+Reverse engineering, tooling, and Chinese localization for âge games.
 
 This is an unofficial, non-commercial localization project for selected Steam
 Muv-Luv titles. It preserves Simplified Chinese test patches and publishes the
@@ -70,8 +72,8 @@ FatePackageManager, and mature patch projects supplied narrowly attributed
 technical precedents. See [contributors and acknowledgments](../project/CONTRIBUTORS.md)
 and the [reference comparison](../research/references.md).
 
-[Report a patch/runtime problem](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
-· [Suggest a translation correction](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml)
+[Report a patch/runtime problem](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)
+· [Suggest a translation correction](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)
 · [Contribute](../project/CONTRIBUTING.md)
 
 Original code is under the [MIT License](../../LICENSE). MIT does not
