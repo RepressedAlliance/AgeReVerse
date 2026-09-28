@@ -1,11 +1,13 @@
-# The Imperial Capital Burns／帝都燃烧篇
+# 帝都燃烧篇 Steam 简体中文汉化补丁
+
+The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse／帝都燃ゆ（Teito Moyu）。
 
 [返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [正文与 UI](translations/) · [术语](../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-beta0.1)
 
 - Steam App ID：`2630300`
 - 容器：FPD v2 `obb/pack.bin`
-- 补丁路线：LocalAppData 松散覆盖，不修改原始 `pack.bin`、EXE 或存档
-- 当前玩家包：历史测试版 beta0.1
+- 历史 beta0.1 补丁路线：LocalAppData 松散覆盖，不修改原始 `pack.bin`、EXE 或存档；当前版本安装方式以玩家指南为准。
+- 当前玩家包：[BETA 0.2.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1)；安装与恢复见[玩家指南](../../../docs/player/README.md)。
 - 历史 Release 图片：315 个 WebP 路径、232 份唯一内容
 
 ## 可维护汉化源

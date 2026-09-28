@@ -3,7 +3,11 @@
   <a href="README.md"><img alt="English" src="https://img.shields.io/badge/English-Current-2F81F7?style=for-the-badge"></a>
 </p>
 
-# AgeReVerse
+# âge Games Chinese Localization Project
+
+**AgeReVerse · RepressedAlliance / 压抑同盟**
+
+Steam Simplified Chinese patches for Muv-Luv UNLIMITED: The Day After (TDA00–03), The Imperial Capital Burns, photonflowers* (PF), and photonmelodies* (PM). Kimi ga Nozomu Eien ~Enhanced Edition~ (Kiminozo) and Another Episode Collection+ are in development, with no patch released yet.
 
 Reverse engineering, tooling, and Chinese localization for âge games.
 
@@ -75,6 +79,8 @@ and the [reference comparison](../research/references.md).
 [Report a patch/runtime problem](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)
 · [Suggest a translation correction](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)
 · [Contribute](../project/CONTRIBUTING.md)
+
+Human proofreading and feedback credits include ScRm, 骁飞, Tsubaki-G, 柚子コショウ and 子冰; ParaTranz records also credit ScRemilia and X1AOFEI. 红桃皇后假说 provided part of the text for *Before the Cherry Blossoms Bloom*, and 木之 assists with Kiminozo legacy translation review. See the [contributor list](../project/CONTRIBUTORS.md) for scope and sources.
 
 Original code is under the [MIT License](../../LICENSE). MIT does not
 automatically license game content, translation text, fonts, derivative images,

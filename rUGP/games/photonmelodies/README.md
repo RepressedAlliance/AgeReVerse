@@ -1,4 +1,6 @@
-# Muv-Luv 光子旋律♮
+# 光子旋律（PM）Steam 简体中文汉化补丁
+
+Muv-Luv photonmelodies*／マブラヴ photonmelodies*。AgeReVerse · 压抑同盟作品项目。
 
 [返回 rUGP 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/) · [图片](images/) · [完整工作流](../../../localization/workflow.md)
 
@@ -30,6 +32,11 @@ RUO 重定向，实机仍会触发 `InternalError(831)`；相同字节写回原�
 
 玩家包已发布 BETA 0.1.2，安装、恢复及已知问题见[玩家指南](../../../docs/player/README.md)。
 源码组件本身不等于安装包；当前发布不代表全路线已人工遍历，后续构建仍需独立验证。
+
+## 校对与致谢
+
+感谢 **柚子コショウ** 参与本作校对、提出用词与称呼问题并提供修正建议；详见[BETA 0.1.2 更新记录](../../../docs/project/photon-beta012-proofreading.md)。
+项目维护、技术参考与其他贡献见[贡献者总表](../../../docs/project/CONTRIBUTORS.md)。
 
 ## English summary
 

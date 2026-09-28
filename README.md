@@ -1,6 +1,8 @@
-# AgeReVerse · 压抑同盟
+# âge 社作品汉化补完计划
 
-âge 游戏逆向研究、工具开发与中文本地化。AgeReVerse 结合 âge、Reverse（逆向）与 Verse（作品世界）的含义。
+**AgeReVerse · 压抑同盟**
+
+âge 游戏逆向研究、工具开发与中文本地化。
 
 <p align="center">
   <strong><a href="#游戏下载">补丁下载</a></strong> ·
@@ -10,7 +12,7 @@
   <a href="#问题反馈">问题反馈</a>
 </p>
 
-提供帝都燃烧、TDA00—03、光子之花、光子旋律的 Steam 简体中文汉化补丁。
+提供 Muv-Luv 系列《TDA00—03》《帝都燃烧篇》《光子之花（PF）》《光子旋律（PM）》的 Steam 简体中文汉化补丁；《君望／你所期望的永远》Steam 版汉化正在制作中。
 **七部作品已有 BETA 补丁下载，君望 Steam 版正在制作中**，持续完善译文、中文界面、字体与排版，并通过玩家反馈和协作校对更新。
 本项目非官方、非商业；另收录主任保护协会制作的 ATE 汉化原发布入口，方便查找。
 
@@ -214,6 +216,8 @@ are reusable components; they do not yet provide a universal one-command finishe
 感谢 GARbro、AFHook／AFEditor、rugptools、alterdec、RioX、FatePackageManager
 及其他成熟补丁项目提供公开技术先例。OpenAI Codex 和图像模型
 在维护者指挥与审核下参与了部分代码、文档、分析、检查和图片工作。
+
+感谢 **ScRm** 对 TDA00 的审核与校对，以及 **ScRm、骁飞、Tsubaki-G** 对各篇文本的纠错与修订；感谢 **柚子コショウ** 参与 PF／PM 校对并提供修正建议，**红桃皇后假说** 提供《樱花盛开之前》的部分文本，**子冰** 对 TDA01 提供反馈，以及 **木之老师** 对君望旧译、术语和用典核对的帮助。ParaTranz 记录中的 ScRemilia、Tsubaki-G、X1AOFEI 也在[贡献者总表](docs/project/CONTRIBUTORS.md)中保留署名。
 
 完整贡献范围、责任边界与参考项目见 **[贡献者与致谢](docs/project/CONTRIBUTORS.md)** 和
 [研究参考](docs/research/references.md)。

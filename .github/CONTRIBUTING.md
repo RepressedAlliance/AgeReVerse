@@ -20,7 +20,7 @@
 具体技术参考与历史对照记录见下方及完整致谢页。
 
 感谢“红桃皇后假说”为 **《樱花盛开之前》提供部分文本**。
-感谢 ScRemilia、Tsubaki-G、X1AOFEI 及其他参与 TDA 人工校对、修正与反馈的朋友。
+感谢 ScRm 对 TDA00 的审核与校对，ScRm、骁飞、Tsubaki-G 对各篇文本的纠错与修订，以及 ParaTranz 记录中的 ScRemilia、Tsubaki-G、X1AOFEI。感谢柚子コショウ参与 PF／PM 校对和修正建议，以及子冰对 TDA01 的反馈。具体来源和范围见[贡献者总表](../docs/project/CONTRIBUTORS.md)。
 
 ## 技术参考
 

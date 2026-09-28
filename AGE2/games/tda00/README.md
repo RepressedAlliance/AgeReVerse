@@ -1,10 +1,12 @@
-# THE DAY AFTER episode:00
+# Muv-Luv TDA00 Steam 简体中文汉化补丁
+
+Muv-Luv UNLIMITED: The Day After episode:00／マブラヴ アンリミテッド ザ・デイアフター。
 
 [返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-beta0.1)
 
 - Steam App ID：`1407100`
 - 目标语言：简体中文（`zh-Hans`）
-- 当前玩家包：历史测试版 beta0.1
+- 当前玩家包：[BETA 0.2.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-BETA-0.2.1)；安装与恢复见[玩家指南](../../../docs/player/README.md)。
 - 可维护文本：3,713 行
 - 历史 Release 图片：70 个 WebP 路径、59 份唯一内容
 
@@ -22,3 +24,7 @@ The maintained 3,713-row table stores localized text plus stable identity and
 Japanese source hashes. The historical beta contains 70 WebP paths, inventoried
 under `images/`, but the public source is not yet a byte-identical rebuild of
 that release.
+
+## 校对与致谢
+
+感谢 **ScRm** 对 TDA00 的审核与校对。感谢 **ScRm、骁飞、Tsubaki-G** 对各篇文本的纠错与修订；ParaTranz 记录另保留 ScRemilia、Tsubaki-G、X1AOFEI 的署名。具体来源和贡献范围见[贡献者总表](../../../docs/project/CONTRIBUTORS.md)。
