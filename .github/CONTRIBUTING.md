@@ -51,8 +51,8 @@
 [光子旋律](https://paratranz.cn/projects/20661) 的 ParaTranz 项目。
 即使不懂日语，也欢迎反馈错字、语句不通顺、显示异常或游玩问题，加入 **QQ 群：273626767** 交流。
 
-- [报告补丁或运行问题](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
-- [提交翻译修正](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml)
+- [报告补丁或运行问题](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)
+- [提交翻译修正](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)
 - [阅读代码、文档和翻译贡献要求](../docs/project/CONTRIBUTING.md)
 
 欢迎使用中文或英文提交 Issue 和 Pull Request。请勿上传完整游戏资源、游戏容器、账号信息或

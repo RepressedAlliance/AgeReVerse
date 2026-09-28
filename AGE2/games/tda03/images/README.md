@@ -1,6 +1,6 @@
 # TDA03 图片
 
-[返回 TDA03](../README.md) · [逐项 Release 清单](release-inventory.json) · [历史补丁](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6)
+[返回 TDA03](../README.md) · [逐项 Release 清单](release-inventory.json) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-beta0.1.6)
 
 TDA03 beta0.1.6 ZIP 中有 **152 个 WebP 路径、90 份唯一字节内容**。文件名提示分布为：
 `_ja` 74、`_zh` 44、`_en` 17、无语言后缀 17。

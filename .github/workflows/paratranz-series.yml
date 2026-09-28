@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   pull:
-    if: github.repository == 'imnotsureyi-sys/muvluv-series-steam-cn-patch' && github.ref == 'refs/heads/main'
+    if: github.repository == 'RepressedAlliance/AgeReVerse' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:

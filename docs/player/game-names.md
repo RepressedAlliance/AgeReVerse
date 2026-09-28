@@ -30,7 +30,7 @@ ATE／TE／全蚀／全蚀篇对应 Muv-Luv Alternative Total Eclipse Remastered
 
 ## 下载、校对与反馈
 
-以[项目 Releases](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases)
+以[项目 Releases](https://github.com/RepressedAlliance/AgeReVerse/releases)
 中各作发布说明为准：版本、支持环境、安装文件、已知限制与校验信息分别列出。
 不要使用 `/releases/latest` 作为某一作品的固定入口：同一个仓库发布多部作品。
 

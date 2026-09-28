@@ -1,6 +1,6 @@
 # 帝都燃烧篇图片
 
-[返回游戏项目](../README.md) · [中文文案与排版](copy/) · [逐项 Release 清单](release-inventory.json) · [历史补丁](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1)
+[返回游戏项目](../README.md) · [中文文案与排版](copy/) · [逐项 Release 清单](release-inventory.json) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-beta0.1)
 
 帝都燃烧篇 beta0.1 ZIP 中有 **315 个 WebP 路径、232 份唯一字节内容**。文件名提示
 分布为：`_ja` 167、`_en` 74、无语言后缀 74。

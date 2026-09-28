@@ -4,7 +4,7 @@
 
 - Steam App ID：`889710`
 - 目标语言：简体中文（`zh-Hans`）
-- 玩家包：已发布 [BETA 0.1.2](https://github.com/RepressedAlliance/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.2)
+- 玩家包：已发布 [BETA 0.1.2](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2)
 - 最新章节编辑表：44,698 条（包含系统文本与补提取消息）
 - 历史已审校文本：Adoration + Resurrection 8,407 行、时空碎片 36,176 行，共 44,583 行
 - 当前精确运行时绑定表：151 行
