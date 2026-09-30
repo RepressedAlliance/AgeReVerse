@@ -13,7 +13,7 @@ Muv-Luv UNLIMITED: The Day After episode:00／マブラヴ アンリミテッド
 ## 玩家实机预览
 
 本作汉化范围覆盖正文、菜单、设置、字幕和图片文字，并持续补齐遗漏与显示问题。
-[查看五张中文实机截图](../../../docs/player/screenshots.md#tda00age2)：主界面、设置、长字幕、保留日语原作 furigana（振假名／旁注）表现形式的中文字幕和正文。
+[查看五张中文实机截图](../../../docs/player/screenshots.md#tda00age2)：主界面、设置、长字幕、保留日语原作振假名表现形式的中文字幕和正文。
 
 `translations/ja-zh-Hans.csv` 保存稳定身份、场景、记录类型、日文源字段 SHA-256 与
 中文译文，不批量镜像完整官方日文。贡献者需要从自己合法拥有的游戏提取准确 EGPACK，

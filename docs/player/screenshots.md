@@ -5,10 +5,10 @@
 ## 接近完整汉化，持续补完
 
 **本项目以完整汉化为目标，已发布的七部补丁接近完整覆盖剧情正文、菜单与设置、字幕及各类图片文字。**
-可编辑文本与嵌在图片中的文字一并进行中文化，包括标题、按钮、说明、地图、年表和其他图表文字，
+可编辑文本与嵌在图片中的文字一并进行中文化，包括标题、按钮、说明、地图、战术标注、年表、地点提示、手写道具和演出素材文字，
 同时完善中文字体、换行、长字幕和原作的特殊排版。
 
-各作资源和表现方式不同，以下选取 TDA00 与光子之花作为两个引擎的代表，并非每作都包含相同界面或内容。
+各作资源和表现方式不同，以下选取 TDA00、TDA03、光子之花和光子旋律，展示两个引擎中的不同汉化类型，并非每作都包含相同界面或内容。
 截图展示选定场景中的实际效果，不代表所有场景都已逐项验证。“接近完整汉化”也不等于全文人工校对；
 AI 翻译、制作阶段的人工审核，以及发布后的协作校对，详见[翻译与校对说明](../../README.md#关于-ai-翻译与人工校对)。
 
@@ -42,19 +42,41 @@ AI 翻译、制作阶段的人工审核，以及发布后的协作校对，详�
 
 [![TDA00 开场多行中文字幕](screenshots/tda00/subtitles-long.jpg)](screenshots/tda00/subtitles-long.jpg)
 
-### 保留原作 furigana 的字幕排版
+### 保留原作振假名的字幕排版
 
-**保留日语原作的 furigana（振假名／旁注）表现形式**：正文上方仍显示对应旁注。
+**保留日语原作的振假名表现形式**：正文上方仍显示对应旁注。
 本例将正文与旁注一并汉化，保留“地球”与“故乡”的双层表达；这里保留的是原作的表现形式。
 建议点击原图查看正文与旁注的排版效果。
 
-[![TDA00 中文字幕保留原作 furigana 排版，以故乡旁注呈现地球的双层表达](screenshots/tda00/subtitles-ruby.jpg)](screenshots/tda00/subtitles-ruby.jpg)
+[![TDA00 中文字幕保留原作振假名排版，以故乡旁注呈现地球的双层表达](screenshots/tda00/subtitles-ruby.jpg)](screenshots/tda00/subtitles-ruby.jpg)
 
 ### 正文汉化
 
 说话人名称、中文正文与长句换行。
 
 [![TDA00 中文正文与说话人名称](screenshots/tda00/dialogue.jpg)](screenshots/tda00/dialogue.jpg)
+
+<a id="tda03age2"></a>
+
+## TDA03（AGE2）
+
+### 场景地点提示
+
+“联合国宇宙总军轨道港 OSP-1400”的中文地点提示。
+
+[![TDA03 中文场景地点提示](screenshots/tda03/location-card.jpg)](screenshots/tda03/location-card.jpg)
+
+### 地球低轨道位置提示
+
+演出画面中的“地球低轨道1400km”位置提示。
+
+[![TDA03 地球低轨道的中文位置提示](screenshots/tda03/orbital-location.jpg)](screenshots/tda03/orbital-location.jpg)
+
+### 战术图中文标注与说明
+
+“核攻击”、基地名称与 NORAD 说明采用中文标注；画面保留原图中的日文。
+
+[![TDA03 战术图中文标注与说明，保留原日文](screenshots/tda03/tactical-map.jpg)](screenshots/tda03/tactical-map.jpg)
 
 <a id="光子之花pfrugp"></a>
 
@@ -101,6 +123,59 @@ AI 翻译、制作阶段的人工审核，以及发布后的协作校对，详�
 说话人名称、中文对白与多行排版。
 
 [![光子之花中文正文与多行排版](screenshots/photonflowers/dialogue.jpg)](screenshots/photonflowers/dialogue.jpg)
+
+### 《雨舞者》篇章标题
+
+篇章标题图片中的中文文字。
+
+[![光子之花雨舞者中文篇章标题](screenshots/photonflowers/rain-dancer-title.jpg)](screenshots/photonflowers/rain-dancer-title.jpg)
+
+### 剧情中的振假名
+
+正文与上方旁注一并汉化，保留日语原作的振假名表现形式与双层排版。
+
+[![光子之花中文正文与上方中文旁注](screenshots/photonflowers/dialogue-ruby.jpg)](screenshots/photonflowers/dialogue-ruby.jpg)
+
+### 日期提示
+
+“2001年12月25日”的日期卡。日期写法在中日文中相近，作为场景提示的补充画面展示。
+
+[![光子之花日期提示卡](screenshots/photonflowers/date-card.jpg)](screenshots/photonflowers/date-card.jpg)
+
+### 驾驶舱演出中的文字
+
+动态演出中的一帧，展示“通信”“状况解析”“佐渡岛周边”等中文标签。
+本图展示该帧文字的实际效果；CRmt／CRmti 图片资源的处理方法见[技术说明](../../rUGP/docs/crmt-family.md)。
+
+[![光子之花驾驶舱演出的中文状态与地图标签](screenshots/photonflowers/cockpit-hud.jpg)](screenshots/photonflowers/cockpit-hud.jpg)
+
+<a id="光子旋律pmrugp"></a>
+
+## 光子旋律（PM，rUGP）
+
+### 手写道具图片文字
+
+纸张上的姓名、军衔和手写旁注也进行中文处理，保留纸张、笔迹与涂鸦的画面风格。
+
+[![光子旋律手写名单与旁注中的中文文字](screenshots/photonmelodies/handwritten-note.jpg)](screenshots/photonmelodies/handwritten-note.jpg)
+
+### 游戏内操作菜单
+
+快速保存、快速读取、保存、读取、回看、自动播放等操作按钮。
+
+[![光子旋律中文游戏内操作菜单](screenshots/photonmelodies/ingame-menu.jpg)](screenshots/photonmelodies/ingame-menu.jpg)
+
+### 相册模式
+
+篇章页签、壁纸入口、页码和返回按钮的中文显示。
+
+[![光子旋律中文相册页签与操作按钮](screenshots/photonmelodies/gallery.jpg)](screenshots/photonmelodies/gallery.jpg)
+
+### 篇章选择
+
+《憧憬》《再诞》《趁闪耀的时空尚未消逝》的中文篇章标题与返回按钮。
+
+[![光子旋律中文篇章选择与标题](screenshots/photonmelodies/story-selection.jpg)](screenshots/photonmelodies/story-selection.jpg)
 
 ## 发现遗漏时
 
