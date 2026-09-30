@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong><a href="#游戏下载">补丁下载</a></strong> ·
-  <a href="#部分作品实机预览">实机预览</a> ·
+  <a href="#部分作品实机预览">汉化效果</a> ·
   <a href="#其他作者的汉化入口">ATE 汉化（其他作者）</a> ·
   <a href="docs/player/README.md">安装、卸载与排错</a> ·
   <a href="#research">制作与研究 / Research · English</a> ·
@@ -14,11 +14,15 @@
 </p>
 
 提供 Muv-Luv 系列《TDA00—03》《帝都燃烧篇》《光子之花（PF）》《光子旋律（PM）》的 Steam 简体中文汉化补丁；《君望／你所期望的永远》Steam 版汉化正在制作中。
+
 **七部作品已有 BETA 补丁下载，君望 Steam 版正在制作中**，持续完善译文、中文界面、字体与排版，并通过玩家反馈和协作校对更新。
+
 **已发布补丁接近完整汉化：汉化范围覆盖剧情正文、菜单与设置、字幕，以及标题、说明、图表等各类图片文字。**
 我们以游戏内可见内容的完整中文化为目标，文本、界面、字幕和图片都在制作与补完范围内。
+
 补丁仍为 BETA，可能存在遗漏、原文残留或显示问题；发现后会继续修正、补齐，更新到后续版本。
 各作的覆盖情况与已知问题不同，详见[汉化范围与实机截图](docs/player/screenshots.md)。
+
 本项目非官方、非商业；另收录主任保护协会制作的 ATE 汉化原发布入口，方便查找。
 
 当前提供 **TDA00—03（Muv-Luv UNLIMITED: The Day After）、帝都燃烧篇
@@ -58,20 +62,57 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
 | 光子旋律 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
 | 君望（含 Another Episode Collection+） | **制作中，尚未发布** | [项目介绍与进度](AGE2/games/kiminozo/README.md) |
 
-### 部分作品实机预览
+<a id="部分作品实机预览"></a>
 
-以 AGE2 的 **TDA00** 和 rUGP 的 **光子之花（PF）** 展示中文正文、界面及图片文字。
-以下为 2026-09-30 采集的游戏内画面；完整预览还包含字幕、注音排版、年表、手绘地图和机械说明图。
+### 接近完整汉化 · 实机展示
 
-| TDA00 · 中文正文 | TDA00 · 设置界面 |
+**正文、菜单、设置、字幕和图片文字，都属于我们的汉化范围。**
+下面用 **TDA00** 与 **光子之花（PF）** 展示不同类型的汉化效果；地图标记、机械说明、年表、
+故事标题和字幕中的注音排版，也有对应实机画面。
+
+#### 图片文字汉化
+
+图片中的文字也纳入汉化，包括手绘标记、机械说明、年表和故事选择按钮。
+
+| 光子之花 · 手绘地图文字 | 光子之花 · 机械说明图 |
 | --- | --- |
-| [![TDA00 中文正文与长句换行](docs/player/screenshots/tda00/dialogue.jpg)](docs/player/screenshots/tda00/dialogue.jpg) | [![TDA00 中文设置与语言选择](docs/player/screenshots/tda00/settings.jpg)](docs/player/screenshots/tda00/settings.jpg) |
+| [![光子之花手绘地图中的中文位置、地形与行动标记](docs/player/screenshots/photonflowers/map.jpg)](docs/player/screenshots/photonflowers/map.jpg) | [![光子之花机械说明图中的中文说明](docs/player/screenshots/photonflowers/mechanical-diagram.jpg)](docs/player/screenshots/photonflowers/mechanical-diagram.jpg) |
 
-| 光子之花 · 故事选择与图片标题 | 光子之花 · 中文正文 |
+| 光子之花 · 年表与篇章标题 | 光子之花 · 故事介绍与图片标题 |
 | --- | --- |
-| [![光子之花中文故事介绍与图片标题](docs/player/screenshots/photonflowers/story-selection.jpg)](docs/player/screenshots/photonflowers/story-selection.jpg) | [![光子之花中文正文与多行排版](docs/player/screenshots/photonflowers/dialogue.jpg)](docs/player/screenshots/photonflowers/dialogue.jpg) |
+| [![光子之花中文年表与篇章入口](docs/player/screenshots/photonflowers/timeline.jpg)](docs/player/screenshots/photonflowers/timeline.jpg) | [![光子之花中文故事介绍与图片标题](docs/player/screenshots/photonflowers/story-selection.jpg)](docs/player/screenshots/photonflowers/story-selection.jpg) |
 
-**[查看完整实机截图与汉化范围](docs/player/screenshots.md)**。点击图片可查看原图。
+#### 主界面、菜单与设置汉化
+
+篇章标题、菜单说明、设置选项和操作按钮都有中文化处理。
+
+| TDA00 · 主界面中文菜单说明 | TDA00 · 设置界面 |
+| --- | --- |
+| [![TDA00 主界面及各操作的中文说明](docs/player/screenshots/tda00/title.jpg)](docs/player/screenshots/tda00/title.jpg) | [![TDA00 中文设置与语言选择](docs/player/screenshots/tda00/settings.jpg)](docs/player/screenshots/tda00/settings.jpg) |
+
+| 光子之花 · 《赎罪》篇章标题与菜单 | 光子之花 · 设置与图像／文本语言选择 |
+| --- | --- |
+| [![光子之花赎罪篇中文标题与开始、继续、返回菜单](docs/player/screenshots/photonflowers/chapter-title.jpg)](docs/player/screenshots/photonflowers/chapter-title.jpg) | [![光子之花中文设置及图像与文本语言选择](docs/player/screenshots/photonflowers/settings.jpg)](docs/player/screenshots/photonflowers/settings.jpg) |
+
+#### 字幕、注音与正文汉化
+
+开场字幕、上方小字／注音、人物名称和剧情正文，以及长句换行与多行排版。
+
+| TDA00 · 多行长字幕 | TDA00 · 带注音的字幕 |
+| --- | --- |
+| [![TDA00 开场多行中文字幕](docs/player/screenshots/tda00/subtitles-long.jpg)](docs/player/screenshots/tda00/subtitles-long.jpg) | [![TDA00 字幕正文及上方小字和注音排版](docs/player/screenshots/tda00/subtitles-ruby.jpg)](docs/player/screenshots/tda00/subtitles-ruby.jpg) |
+
+<table>
+  <tr><th width="50%">TDA00 · 中文正文</th><th width="50%">光子之花 · 中文正文</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/tda00/dialogue.jpg"><img src="docs/player/screenshots/tda00/dialogue.jpg" alt="TDA00 中文正文、说话人名称与长句换行" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/dialogue.jpg"><img src="docs/player/screenshots/photonflowers/dialogue.jpg" alt="光子之花中文正文与多行排版" width="100%"></a></td>
+  </tr>
+</table>
+
+以上十二张为 **2026-09-30** 采集的游戏内画面，点击图片可查看原图。
+**接近完整汉化，持续补完遗漏。** 各作仍可能有原文残留或显示问题，发现后会继续修正、补齐；
+当前已知限制、校对说明与图片归属见[汉化范围与实机截图说明](docs/player/screenshots.md)。
 
 ### 作品名称与常用简称
 
