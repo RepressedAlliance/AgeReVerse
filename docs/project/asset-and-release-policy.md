@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | Original game file | Never track | Never redistribute as a replacement for the game |
 | Source identity/hash/locator | Track | Include in manifests where useful |
+| Selected in-game screenshots for player documentation | Track only the explicitly reviewed paths under `docs/player/screenshots/`, with a content-rights notice | Preview only; not installable resources |
 | Translation table | Track when needed for maintenance, with rights notice | May be embedded in a patch |
 | Localized/derived image | Prefer manifest plus reviewed release bundle | Distribute only when necessary and with an explicit content-rights notice |
 | Font | Track license/identity, not the binary by default | Bundle only if its license permits redistribution |
@@ -25,6 +26,13 @@ Every production item should answer:
 Absolute workstation paths are not provenance. Use logical game IDs, relative resource paths, hashes, and tool versions.
 
 ## Image publication
+
+The player preview contains twelve selected Steam screenshots captured on 2026-09-30:
+five for TDA00 and seven for photonflowers. The exact paths are allowlisted in
+`.github/scripts/verify_repository.py`; each must be a valid JPEG no larger than
+1 MiB and within the supported screenshot dimensions. This is a narrow documentation
+exception, not permission to commit extracted image collections, original game
+resources, or arbitrary binaries. See [the preview and its rights notice](../player/screenshots.md).
 
 Do not commit bulk official-language images merely to make comparison convenient. For a localized image, retain the smallest useful public set: a stable resource locator, input hash, output hash, dimensions/mode, translation copy, method, review status, and—when redistribution is justified—the final localized result or a release-bundle entry.
 

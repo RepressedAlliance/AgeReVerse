@@ -12,6 +12,11 @@ Muv-Luv photonflowers*／マブラヴ photonflowers*。AgeReVerse · 压抑同�
 - 当前精确运行时绑定表：69 行
 - Photon 图片权威：光子之花 636 项
 
+## 玩家实机预览
+
+本作汉化范围覆盖正文、菜单、设置、故事介绍和各类图片文字，包括年表、手绘地图与机械说明图。
+[查看七张中文实机截图](../../../docs/player/screenshots.md#光子之花pfrugp)。补丁仍为 BETA，部分页面偶发英文尚待修正，后续会继续补齐。
+
 [按章节命名的 CSV](translations/README.md) 是最新人工编辑入口。
 `text-data/history/reviewed/` 保留早期审校中文、稳定 ID 和日文源哈希，作为封存证据，不再人工编辑。
 `text-data/runtime/zh-Hans.csv` 保存偏移、容量、控制符、运行时值和写入路线，仍是原有 69 行

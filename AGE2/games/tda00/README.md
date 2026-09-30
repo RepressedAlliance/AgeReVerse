@@ -10,6 +10,11 @@ Muv-Luv UNLIMITED: The Day After episode:00／マブラヴ アンリミテッド
 - 可维护文本：3,713 行
 - 历史 Release 图片：70 个 WebP 路径、59 份唯一内容
 
+## 玩家实机预览
+
+本作汉化范围覆盖正文、菜单、设置、字幕和图片文字，并持续补齐遗漏与显示问题。
+[查看五张中文实机截图](../../../docs/player/screenshots.md#tda00age2)：主界面、设置、长字幕、带注音的字幕和正文。
+
 `translations/ja-zh-Hans.csv` 保存稳定身份、场景、记录类型、日文源字段 SHA-256 与
 中文译文，不批量镜像完整官方日文。贡献者需要从自己合法拥有的游戏提取准确 EGPACK，
 再由 [`build_changes.py`](../../tools/egpack/build_changes.py) 按哈希连接。

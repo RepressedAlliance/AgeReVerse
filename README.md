@@ -6,6 +6,7 @@
 
 <p align="center">
   <strong><a href="#游戏下载">补丁下载</a></strong> ·
+  <a href="#部分作品实机预览">实机预览</a> ·
   <a href="#其他作者的汉化入口">ATE 汉化（其他作者）</a> ·
   <a href="docs/player/README.md">安装、卸载与排错</a> ·
   <a href="#research">制作与研究 / Research · English</a> ·
@@ -14,6 +15,10 @@
 
 提供 Muv-Luv 系列《TDA00—03》《帝都燃烧篇》《光子之花（PF）》《光子旋律（PM）》的 Steam 简体中文汉化补丁；《君望／你所期望的永远》Steam 版汉化正在制作中。
 **七部作品已有 BETA 补丁下载，君望 Steam 版正在制作中**，持续完善译文、中文界面、字体与排版，并通过玩家反馈和协作校对更新。
+**已发布补丁接近完整汉化：汉化范围覆盖剧情正文、菜单与设置、字幕，以及标题、说明、图表等各类图片文字。**
+我们以游戏内可见内容的完整中文化为目标，文本、界面、字幕和图片都在制作与补完范围内。
+补丁仍为 BETA，可能存在遗漏、原文残留或显示问题；发现后会继续修正、补齐，更新到后续版本。
+各作的覆盖情况与已知问题不同，详见[汉化范围与实机截图](docs/player/screenshots.md)。
 本项目非官方、非商业；另收录主任保护协会制作的 ATE 汉化原发布入口，方便查找。
 
 当前提供 **TDA00—03（Muv-Luv UNLIMITED: The Day After）、帝都燃烧篇
@@ -26,6 +31,8 @@ Muv-Luv UNLIMITED: The Day After episodes 00–03, The Imperial Capital Burns,
 Muv-Luv photonflowers* and photonmelodies*. See the download table below for each game's release.
 Kimi ga Nozomu Eien ~Enhanced Edition~ and its Another Episode Collection+ are also in development; no Kiminozo patch has been released.
 These are Chinese localization patches, not English patches or full games.
+Localization covers dialogue, menus, settings, subtitles and text embedded in images,
+aiming for comprehensive Chinese coverage while remaining omissions and display issues are corrected.
 
 > [!IMPORTANT]
 > 使用补丁必须拥有对应游戏正版。本仓库不提供游戏本体、破解或完整原始资源。
@@ -50,6 +57,21 @@ These are Chinese localization patches, not English patches or full games.
 | 光子之花 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
 | 光子旋律 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
 | 君望（含 Another Episode Collection+） | **制作中，尚未发布** | [项目介绍与进度](AGE2/games/kiminozo/README.md) |
+
+### 部分作品实机预览
+
+以 AGE2 的 **TDA00** 和 rUGP 的 **光子之花（PF）** 展示中文正文、界面及图片文字。
+以下为 2026-09-30 采集的游戏内画面；完整预览还包含字幕、注音排版、年表、手绘地图和机械说明图。
+
+| TDA00 · 中文正文 | TDA00 · 设置界面 |
+| --- | --- |
+| [![TDA00 中文正文与长句换行](docs/player/screenshots/tda00/dialogue.jpg)](docs/player/screenshots/tda00/dialogue.jpg) | [![TDA00 中文设置与语言选择](docs/player/screenshots/tda00/settings.jpg)](docs/player/screenshots/tda00/settings.jpg) |
+
+| 光子之花 · 故事选择与图片标题 | 光子之花 · 中文正文 |
+| --- | --- |
+| [![光子之花中文故事介绍与图片标题](docs/player/screenshots/photonflowers/story-selection.jpg)](docs/player/screenshots/photonflowers/story-selection.jpg) | [![光子之花中文正文与多行排版](docs/player/screenshots/photonflowers/dialogue.jpg)](docs/player/screenshots/photonflowers/dialogue.jpg) |
+
+**[查看完整实机截图与汉化范围](docs/player/screenshots.md)**。点击图片可查看原图。
 
 ### 作品名称与常用简称
 

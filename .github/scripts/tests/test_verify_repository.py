@@ -3,6 +3,7 @@ from __future__ import annotations
 import importlib.util
 from pathlib import Path
 import unittest
+from tempfile import TemporaryDirectory
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "verify_repository.py"
@@ -73,6 +74,49 @@ class RepositoryPolicyHelperTests(unittest.TestCase):
             with self.subTest(relative=relative):
                 self.assertTrue(MODULE.is_forbidden_public_path(relative))
         self.assertFalse(MODULE.is_forbidden_public_path("rUGP/tools/README.md"))
+
+    def test_only_selected_player_screenshots_are_allowed(self) -> None:
+        for relative in MODULE.APPROVED_PLAYER_SCREENSHOTS:
+            self.assertTrue(MODULE.is_allowed_public_path(Path(relative)))
+            self.assertTrue(MODULE.is_allowed_public_path(MODULE.ROOT / relative))
+        for relative in (
+            "docs/player/screenshots/tda00/unreviewed.jpg",
+            "docs/player/screenshots/tda00/title.png",
+            "rUGP/games/photonflowers/images/dialogue.jpg",
+            "screenshots/tda00/title.jpg",
+            "docs/player/screenshots/tda00/../tda00/title.jpg",
+        ):
+            with self.subTest(relative=relative):
+                self.assertFalse(MODULE.is_allowed_public_path(Path(relative)))
+
+    def test_screenshot_exception_rejects_other_formats_and_invalid_bytes(self) -> None:
+        from PIL import Image
+
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "title.jpg"
+            for format_name in ("JPEG", "PNG"):
+                Image.new("RGB", (640, 360)).save(path, format=format_name)
+                errors = []
+                MODULE.check_player_screenshot(path, "title.jpg", errors)
+                self.assertEqual(bool(errors), format_name != "JPEG")
+            path.write_bytes(b"not an image")
+            errors = []
+            MODULE.check_player_screenshot(path, "title.jpg", errors)
+            self.assertTrue(errors)
+
+    def test_screenshot_exception_rejects_oversized_files_and_dimensions(self) -> None:
+        from PIL import Image
+
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "title.jpg"
+            Image.new("RGB", (1, 1)).save(path, format="JPEG")
+            errors = []
+            MODULE.check_player_screenshot(path, "title.jpg", errors)
+            self.assertTrue(errors)
+            path.write_bytes(b"x" * (1024 * 1024 + 1))
+            errors = []
+            MODULE.check_player_screenshot(path, "title.jpg", errors)
+            self.assertTrue(errors)
 
     def test_high_confidence_secret_markers_are_detected(self) -> None:
         samples = {
