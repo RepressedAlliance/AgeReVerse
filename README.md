@@ -17,8 +17,8 @@
 
 **七部作品已有 BETA 补丁下载，君望 Steam 版正在制作中**，持续完善译文、中文界面、字体与排版，并通过玩家反馈和协作校对更新。
 
-**已发布补丁接近完整汉化：汉化范围覆盖剧情正文、菜单与设置、字幕，以及标题、说明、图表等各类图片文字。**
-我们以游戏内可见内容的完整中文化为目标，文本、界面、字幕和图片都在制作与补完范围内。
+**以完整汉化为目标，已发布补丁接近完整覆盖：剧情正文、菜单与设置、字幕，以及标题、按钮、说明、地图、年表等图片中的文字，一并进行中文化。**
+汉化范围包含可编辑文本与嵌在图片中的文字，同时处理中文字体、换行、长字幕和原作的特殊排版。
 
 补丁仍为 BETA，可能存在遗漏、原文残留或显示问题；发现后会继续修正、补齐，更新到后续版本。
 各作的覆盖情况与已知问题不同，详见[汉化范围与实机截图](docs/player/screenshots.md)。
@@ -66,9 +66,9 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
 
 ### 接近完整汉化 · 实机展示
 
-**正文、菜单、设置、字幕和图片文字，都属于我们的汉化范围。**
+**正文、界面、字幕与图片文字一并汉化，目标是游戏内可见内容的完整中文化。**
 下面用 **TDA00** 与 **光子之花（PF）** 展示不同类型的汉化效果；地图标记、机械说明、年表、
-故事标题和字幕中的注音排版，也有对应实机画面。
+故事标题和原作的 furigana（振假名／旁注）排版，也有对应实机画面。
 
 #### 图片文字汉化
 
@@ -94,13 +94,15 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
 | --- | --- |
 | [![光子之花赎罪篇中文标题与开始、继续、返回菜单](docs/player/screenshots/photonflowers/chapter-title.jpg)](docs/player/screenshots/photonflowers/chapter-title.jpg) | [![光子之花中文设置及图像与文本语言选择](docs/player/screenshots/photonflowers/settings.jpg)](docs/player/screenshots/photonflowers/settings.jpg) |
 
-#### 字幕、注音与正文汉化
+#### 字幕、furigana 与正文汉化
 
-开场字幕、上方小字／注音、人物名称和剧情正文，以及长句换行与多行排版。
+开场字幕、人物名称和剧情正文均进行汉化，同时处理长句换行与多行排版。
+**保留日语原作的 furigana（振假名／旁注）表现形式**，在正文上方显示对应旁注；
+本例将正文与旁注一并汉化，保留“地球”与“故乡”的双层表达。
 
-| TDA00 · 多行长字幕 | TDA00 · 带注音的字幕 |
+| TDA00 · 多行长字幕 | TDA00 · 保留原作 furigana 表现形式 |
 | --- | --- |
-| [![TDA00 开场多行中文字幕](docs/player/screenshots/tda00/subtitles-long.jpg)](docs/player/screenshots/tda00/subtitles-long.jpg) | [![TDA00 字幕正文及上方小字和注音排版](docs/player/screenshots/tda00/subtitles-ruby.jpg)](docs/player/screenshots/tda00/subtitles-ruby.jpg) |
+| [![TDA00 开场多行中文字幕](docs/player/screenshots/tda00/subtitles-long.jpg)](docs/player/screenshots/tda00/subtitles-long.jpg) | [![TDA00 中文字幕保留原作 furigana 排版，以故乡旁注呈现地球的双层表达](docs/player/screenshots/tda00/subtitles-ruby.jpg)](docs/player/screenshots/tda00/subtitles-ruby.jpg) |
 
 <table>
   <tr><th width="50%">TDA00 · 中文正文</th><th width="50%">光子之花 · 中文正文</th></tr>
