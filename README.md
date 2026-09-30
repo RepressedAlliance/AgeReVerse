@@ -86,13 +86,13 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
 
 篇章标题、菜单说明、设置选项和操作按钮都有中文化处理。
 
-| TDA00 · 主界面中文菜单说明 | 光子之花 · 《赎罪》篇章标题与菜单 |
+| TDA00 · 主界面中文菜单说明 | TDA00 · 设置界面 |
 | --- | --- |
-| [![TDA00 主界面及各操作的中文说明](docs/player/screenshots/tda00/title.jpg)](docs/player/screenshots/tda00/title.jpg) | [![光子之花赎罪篇中文标题与开始、继续、返回菜单](docs/player/screenshots/photonflowers/chapter-title.jpg)](docs/player/screenshots/photonflowers/chapter-title.jpg) |
+| [![TDA00 主界面及各操作的中文说明](docs/player/screenshots/tda00/title.jpg)](docs/player/screenshots/tda00/title.jpg) | [![TDA00 中文设置与语言选择](docs/player/screenshots/tda00/settings.jpg)](docs/player/screenshots/tda00/settings.jpg) |
 
-| TDA00 · 设置界面 | 光子之花 · 设置与图像／文本语言选择 |
+| 光子之花 · 《赎罪》篇章标题与菜单 | 光子之花 · 设置与图像／文本语言选择 |
 | --- | --- |
-| [![TDA00 中文设置与语言选择](docs/player/screenshots/tda00/settings.jpg)](docs/player/screenshots/tda00/settings.jpg) | [![光子之花中文设置及图像与文本语言选择](docs/player/screenshots/photonflowers/settings.jpg)](docs/player/screenshots/photonflowers/settings.jpg) |
+| [![光子之花赎罪篇中文标题与开始、继续、返回菜单](docs/player/screenshots/photonflowers/chapter-title.jpg)](docs/player/screenshots/photonflowers/chapter-title.jpg) | [![光子之花中文设置及图像与文本语言选择](docs/player/screenshots/photonflowers/settings.jpg)](docs/player/screenshots/photonflowers/settings.jpg) |
 
 #### 字幕、注音与正文汉化
 
@@ -102,9 +102,13 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
 | --- | --- |
 | [![TDA00 开场多行中文字幕](docs/player/screenshots/tda00/subtitles-long.jpg)](docs/player/screenshots/tda00/subtitles-long.jpg) | [![TDA00 字幕正文及上方小字和注音排版](docs/player/screenshots/tda00/subtitles-ruby.jpg)](docs/player/screenshots/tda00/subtitles-ruby.jpg) |
 
-| TDA00 · 中文正文 | 光子之花 · 中文正文 |
-| --- | --- |
-| [![TDA00 中文正文、说话人名称与长句换行](docs/player/screenshots/tda00/dialogue.jpg)](docs/player/screenshots/tda00/dialogue.jpg) | [![光子之花中文正文与多行排版](docs/player/screenshots/photonflowers/dialogue.jpg)](docs/player/screenshots/photonflowers/dialogue.jpg) |
+<table>
+  <tr><th width="50%">TDA00 · 中文正文</th><th width="50%">光子之花 · 中文正文</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/tda00/dialogue.jpg"><img src="docs/player/screenshots/tda00/dialogue.jpg" alt="TDA00 中文正文、说话人名称与长句换行" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/dialogue.jpg"><img src="docs/player/screenshots/photonflowers/dialogue.jpg" alt="光子之花中文正文与多行排版" width="100%"></a></td>
+  </tr>
+</table>
 
 以上十二张为 **2026-09-30** 采集的游戏内画面，点击图片可查看原图。
 **接近完整汉化，持续补完遗漏。** 各作仍可能有原文残留或显示问题，发现后会继续修正、补齐；
