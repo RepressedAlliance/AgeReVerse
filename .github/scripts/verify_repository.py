@@ -44,6 +44,21 @@ TEXT_SUFFIXES = {
     ".toml", ".tsv", ".txt", ".yaml", ".yml",
 }
 ALLOWED_EXTENSIONLESS = {".gitattributes", ".gitignore", "LICENSE"}
+# Selected player-facing captures, not a general permission for game images.
+APPROVED_PLAYER_SCREENSHOTS = {
+    "docs/player/screenshots/tda00/title.jpg",
+    "docs/player/screenshots/tda00/settings.jpg",
+    "docs/player/screenshots/tda00/subtitles-long.jpg",
+    "docs/player/screenshots/tda00/subtitles-ruby.jpg",
+    "docs/player/screenshots/tda00/dialogue.jpg",
+    "docs/player/screenshots/photonflowers/story-selection.jpg",
+    "docs/player/screenshots/photonflowers/timeline.jpg",
+    "docs/player/screenshots/photonflowers/settings.jpg",
+    "docs/player/screenshots/photonflowers/map.jpg",
+    "docs/player/screenshots/photonflowers/mechanical-diagram.jpg",
+    "docs/player/screenshots/photonflowers/chapter-title.jpg",
+    "docs/player/screenshots/photonflowers/dialogue.jpg",
+}
 REQUIRED = {
     "README.md", "docs/en/README.md", "docs/project/CONTRIBUTING.md",
     "docs/project/ROADMAP.md", "LICENSE", "docs/legal/NOTICE.md",
@@ -194,10 +209,37 @@ def markdown_link_targets(text: str) -> set[str]:
     }
 
 
+def is_approved_player_screenshot(path: Path) -> bool:
+    if path.is_absolute():
+        try:
+            path = path.relative_to(ROOT)
+        except ValueError:
+            return False
+    return path.as_posix() in APPROVED_PLAYER_SCREENSHOTS
+
+
+def check_player_screenshot(path: Path, relative: str, errors: list[str]) -> None:
+    from PIL import Image
+
+    if path.stat().st_size > 1024 * 1024:
+        fail(errors, f"player screenshot exceeds 1 MiB: {relative}")
+        return
+    try:
+        with Image.open(path) as capture:
+            if capture.format != "JPEG":
+                raise ValueError("expected JPEG")
+            if not (320 <= capture.width <= 3840 and 180 <= capture.height <= 2160):
+                raise ValueError("unexpected screenshot dimensions")
+            capture.verify()
+    except (OSError, SyntaxError, ValueError) as exc:
+        fail(errors, f"invalid player screenshot: {relative}: {exc}")
+
+
 def is_allowed_public_path(path: Path) -> bool:
     return (
         path.suffix.casefold() in TEXT_SUFFIXES
         or path.name in ALLOWED_EXTENSIONLESS
+        or is_approved_player_screenshot(path)
     )
 
 
@@ -453,6 +495,9 @@ def main() -> int:
             fail(errors, f"tracked file exceeds 10 MiB policy: {relative}")
 
         if not is_allowed_public_path(path):
+            continue
+        if is_approved_player_screenshot(path):
+            check_player_screenshot(path, relative, errors)
             continue
         try:
             text = path.read_text(encoding="utf-8-sig")

@@ -7,6 +7,7 @@
 ## 玩家
 
 - [安装、卸载与排错](player/README.md)
+- [汉化范围与中文实机截图](player/screenshots.md)
 - [君望 Steam 版及附加篇的制作进度](../AGE2/games/kiminozo/README.md)：尚未发布补丁
 - [机器可读的版本、文件名与 SHA-256 索引](player/release-index.json)
 - [GitHub Releases](https://github.com/RepressedAlliance/AgeReVerse/releases)
