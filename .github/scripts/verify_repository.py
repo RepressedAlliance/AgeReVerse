@@ -58,6 +58,17 @@ APPROVED_PLAYER_SCREENSHOTS = {
     "docs/player/screenshots/photonflowers/mechanical-diagram.jpg",
     "docs/player/screenshots/photonflowers/chapter-title.jpg",
     "docs/player/screenshots/photonflowers/dialogue.jpg",
+    "docs/player/screenshots/photonflowers/rain-dancer-title.jpg",
+    "docs/player/screenshots/photonflowers/dialogue-ruby.jpg",
+    "docs/player/screenshots/photonflowers/date-card.jpg",
+    "docs/player/screenshots/photonflowers/cockpit-hud.jpg",
+    "docs/player/screenshots/tda03/orbital-location.jpg",
+    "docs/player/screenshots/tda03/location-card.jpg",
+    "docs/player/screenshots/tda03/tactical-map.jpg",
+    "docs/player/screenshots/photonmelodies/story-selection.jpg",
+    "docs/player/screenshots/photonmelodies/gallery.jpg",
+    "docs/player/screenshots/photonmelodies/handwritten-note.jpg",
+    "docs/player/screenshots/photonmelodies/ingame-menu.jpg",
 }
 REQUIRED = {
     "README.md", "docs/en/README.md", "docs/project/CONTRIBUTING.md",

@@ -17,7 +17,7 @@
 
 **七部作品已有 BETA 补丁下载，君望 Steam 版正在制作中**，持续完善译文、中文界面、字体与排版，并通过玩家反馈和协作校对更新。
 
-**以完整汉化为目标，已发布补丁接近完整覆盖：剧情正文、菜单与设置、字幕，以及标题、按钮、说明、地图、年表等图片中的文字，一并进行中文化。**
+**以完整汉化为目标，已发布补丁接近完整覆盖：剧情正文、菜单与设置、字幕，以及标题、按钮、说明、地图、年表、地点提示、手写道具和演出素材中的文字，一并进行中文化。**
 汉化范围包含可编辑文本与嵌在图片中的文字，同时处理中文字体、换行、长字幕和原作的特殊排版。
 
 补丁仍为 BETA，可能存在遗漏、原文残留或显示问题；发现后会继续修正、补齐，更新到后续版本。
@@ -67,42 +67,99 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
 ### 接近完整汉化 · 实机展示
 
 **正文、界面、字幕与图片文字一并汉化，目标是游戏内可见内容的完整中文化。**
-下面用 **TDA00** 与 **光子之花（PF）** 展示不同类型的汉化效果；地图标记、机械说明、年表、
-故事标题和原作的 furigana（振假名／旁注）排版，也有对应实机画面。
+下面选取 **TDA00、TDA03、光子之花（PF）与光子旋律（PM）** 的十八张实机画面，
+展示菜单、设置、手绘道具、地图与战术说明、地点提示、演出画面文字和振假名的中文处理。
 
-#### 图片文字汉化
+#### 图片文字：地图、图解、年表与手写道具
 
-图片中的文字也纳入汉化，包括手绘标记、机械说明、年表和故事选择按钮。
+图片中的文字也纳入汉化，包括手绘标记、机械说明、篇章标题、年表和道具上的手写文字。
+TDA03 战术图采用中文标注与说明，画面保留原图中的日文。
 
-| 光子之花 · 手绘地图文字 | 光子之花 · 机械说明图 |
-| --- | --- |
-| [![光子之花手绘地图中的中文位置、地形与行动标记](docs/player/screenshots/photonflowers/map.jpg)](docs/player/screenshots/photonflowers/map.jpg) | [![光子之花机械说明图中的中文说明](docs/player/screenshots/photonflowers/mechanical-diagram.jpg)](docs/player/screenshots/photonflowers/mechanical-diagram.jpg) |
+<table>
+  <tr><th width="50%">光子之花 · 手绘地图文字</th><th width="50%">光子之花 · 机械说明图</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/map.jpg"><img src="docs/player/screenshots/photonflowers/map.jpg" alt="光子之花中文位置、地形与行动标记" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/mechanical-diagram.jpg"><img src="docs/player/screenshots/photonflowers/mechanical-diagram.jpg" alt="光子之花机械示意图中的中文说明" width="100%"></a></td>
+  </tr>
+</table>
 
-| 光子之花 · 年表与篇章标题 | 光子之花 · 故事介绍与图片标题 |
-| --- | --- |
-| [![光子之花中文年表与篇章入口](docs/player/screenshots/photonflowers/timeline.jpg)](docs/player/screenshots/photonflowers/timeline.jpg) | [![光子之花中文故事介绍与图片标题](docs/player/screenshots/photonflowers/story-selection.jpg)](docs/player/screenshots/photonflowers/story-selection.jpg) |
+<table>
+  <tr><th width="50%">TDA03 · 战术图中文标注与说明</th><th width="50%">光子旋律 · 手写道具图片文字</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/tda03/tactical-map.jpg"><img src="docs/player/screenshots/tda03/tactical-map.jpg" alt="TDA03 战术图的核攻击、基地名称与 NORAD 中文说明，保留原日文" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/photonmelodies/handwritten-note.jpg"><img src="docs/player/screenshots/photonmelodies/handwritten-note.jpg" alt="光子旋律纸张上姓名、军衔与手写旁注的中文处理" width="100%"></a></td>
+  </tr>
+</table>
 
-#### 主界面、菜单与设置汉化
+<table>
+  <tr><th width="50%">光子之花 · 年表与篇章标题</th><th width="50%">光子之花 · 故事介绍与图片标题</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/timeline.jpg"><img src="docs/player/screenshots/photonflowers/timeline.jpg" alt="光子之花中文年表与篇章入口" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/story-selection.jpg"><img src="docs/player/screenshots/photonflowers/story-selection.jpg" alt="光子之花中文故事介绍与图片标题" width="100%"></a></td>
+  </tr>
+</table>
 
-篇章标题、菜单说明、设置选项和操作按钮都有中文化处理。
+#### 场景地点提示与动态演出中的文字
 
-| TDA00 · 主界面中文菜单说明 | TDA00 · 设置界面 |
-| --- | --- |
-| [![TDA00 主界面及各操作的中文说明](docs/player/screenshots/tda00/title.jpg)](docs/player/screenshots/tda00/title.jpg) | [![TDA00 中文设置与语言选择](docs/player/screenshots/tda00/settings.jpg)](docs/player/screenshots/tda00/settings.jpg) |
+场景切换时的地点文字、驾驶舱演出中的地图标签和状态说明，也有对应的中文处理。
+光子之花这张图为动态演出中的一帧，展示“通信”“状况解析”“佐渡岛周边”等中文文字。
 
-| 光子之花 · 《赎罪》篇章标题与菜单 | 光子之花 · 设置与图像／文本语言选择 |
-| --- | --- |
-| [![光子之花赎罪篇中文标题与开始、继续、返回菜单](docs/player/screenshots/photonflowers/chapter-title.jpg)](docs/player/screenshots/photonflowers/chapter-title.jpg) | [![光子之花中文设置及图像与文本语言选择](docs/player/screenshots/photonflowers/settings.jpg)](docs/player/screenshots/photonflowers/settings.jpg) |
+<table>
+  <tr><th width="50%">TDA03 · 场景地点提示</th><th width="50%">光子之花 · 驾驶舱演出文字</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/tda03/location-card.jpg"><img src="docs/player/screenshots/tda03/location-card.jpg" alt="联合国宇宙总军轨道港 OSP-1400 的中文地点提示" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/cockpit-hud.jpg"><img src="docs/player/screenshots/photonflowers/cockpit-hud.jpg" alt="光子之花驾驶舱演出中的通信、状况解析及佐渡岛周边中文标签" width="100%"></a></td>
+  </tr>
+</table>
 
-#### 字幕、furigana 与正文汉化
+#### 主界面、设置与游戏内操作菜单
 
-开场字幕、人物名称和剧情正文均进行汉化，同时处理长句换行与多行排版。
-**保留日语原作的 furigana（振假名／旁注）表现形式**，在正文上方显示对应旁注；
-本例将正文与旁注一并汉化，保留“地球”与“故乡”的双层表达。
+菜单说明、设置选项和操作按钮均纳入汉化；游玩中的快速保存、读取、回看等菜单也有中文显示。
 
-| TDA00 · 多行长字幕 | TDA00 · 保留原作 furigana 表现形式 |
-| --- | --- |
-| [![TDA00 开场多行中文字幕](docs/player/screenshots/tda00/subtitles-long.jpg)](docs/player/screenshots/tda00/subtitles-long.jpg) | [![TDA00 中文字幕保留原作 furigana 排版，以故乡旁注呈现地球的双层表达](docs/player/screenshots/tda00/subtitles-ruby.jpg)](docs/player/screenshots/tda00/subtitles-ruby.jpg) |
+<table>
+  <tr><th width="50%">TDA00 · 主界面中文菜单说明</th><th width="50%">TDA00 · 设置界面</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/tda00/title.jpg"><img src="docs/player/screenshots/tda00/title.jpg" alt="TDA00 主界面及操作的中文说明" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/tda00/settings.jpg"><img src="docs/player/screenshots/tda00/settings.jpg" alt="TDA00 中文设置与语言选择" width="100%"></a></td>
+  </tr>
+</table>
+
+<table>
+  <tr><th width="50%">光子旋律 · 游戏内操作菜单</th><th width="50%">光子之花 · 设置与语言选择</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/photonmelodies/ingame-menu.jpg"><img src="docs/player/screenshots/photonmelodies/ingame-menu.jpg" alt="光子旋律快速保存、读取、回看与自动播放等中文操作按钮" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/settings.jpg"><img src="docs/player/screenshots/photonflowers/settings.jpg" alt="光子之花中文设置及图像与文本语言选择" width="100%"></a></td>
+  </tr>
+</table>
+
+#### 开场字幕与篇章标题
+
+开场多行字幕和篇章标题图片也纳入汉化，并处理长句换行与排版。
+
+<table>
+  <tr><th width="50%">TDA00 · 多行长字幕</th><th width="50%">光子之花 · 《雨舞者》篇章标题</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/tda00/subtitles-long.jpg"><img src="docs/player/screenshots/tda00/subtitles-long.jpg" alt="TDA00 开场多行中文字幕" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/rain-dancer-title.jpg"><img src="docs/player/screenshots/photonflowers/rain-dancer-title.jpg" alt="光子之花雨舞者的中文篇章标题" width="100%"></a></td>
+  </tr>
+</table>
+
+#### 保留日语原作的振假名表现形式
+
+**保留日语原作的振假名表现形式**，正文与对应旁注一并汉化。
+TDA00 展示“地球／故乡”的双层表达；光子之花展示剧情正文与上方旁注的中文排版。
+
+<table>
+  <tr><th width="50%">TDA00 · 字幕中的振假名</th><th width="50%">光子之花 · 剧情中的振假名</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/screenshots/tda00/subtitles-ruby.jpg"><img src="docs/player/screenshots/tda00/subtitles-ruby.jpg" alt="TDA00 中文字幕保留原作振假名排版与地球、故乡的双层表达" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/screenshots/photonflowers/dialogue-ruby.jpg"><img src="docs/player/screenshots/photonflowers/dialogue-ruby.jpg" alt="光子之花中文剧情正文与上方中文旁注" width="100%"></a></td>
+  </tr>
+</table>
+
+#### 剧情正文与人物名称
+
+中文正文、说话人名称及长句换行与多行排版。
 
 <table>
   <tr><th width="50%">TDA00 · 中文正文</th><th width="50%">光子之花 · 中文正文</th></tr>
@@ -112,9 +169,9 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
   </tr>
 </table>
 
-以上十二张为 **2026-09-30** 采集的游戏内画面，点击图片可查看原图。
-**接近完整汉化，持续补完遗漏。** 各作仍可能有原文残留或显示问题，发现后会继续修正、补齐；
-当前已知限制、校对说明与图片归属见[汉化范围与实机截图说明](docs/player/screenshots.md)。
+以上画面采集于 **2026-09-30**，点击图片可查看原图。
+**接近完整汉化，持续补完遗漏。** 各作仍可能有原文残留或显示问题，发现后继续修正、补齐。
+[查看全部二十三张截图、各作已知限制与图片说明](docs/player/screenshots.md)。
 
 ### 作品名称与常用简称
 
