@@ -9,9 +9,11 @@ Release 另有 730 个 WebP 路径，均已建立逐项路径、尺寸、模式�
 
 君望本篇及附加篇的 UI 与图片仍在制作和复核中，参见[君望图片与字体入口](../AGE2/games/kiminozo/images/README.md)。尚无公开图片包，不计入上述已公开清单数量。
 
-中文制作原则是：先固定源图身份与允许修改区域，再得到无字底，最后使用锁定字体做
-确定性排字。GPT Image 2 只用于难以重建的无字底区域，不能让模型直接决定中文文案、
-字体、排版或最终像素权威。下文保留英文细则，方便其他语言团队直接复用。
+先阅读[图片汉化批量制作规范](image-production.md)，确定视觉要求与同套素材的字体、字号、
+间距和效果体系，再使用本页工具。通常先固定源图身份与允许修改区域，再得到无字底，
+最后使用锁定字体做确定性排字。清晰文案与数字必须锁定；模糊装饰文字等特殊情况见
+制作规范，不把生成候选自动视为定稿。下文的受限去字流程是无字底制作的工具约定。
+下文保留英文细则，方便其他语言团队直接复用。
 
 The objective is to replace readable text while preserving every unrelated pixel, alpha edge, state, and layout relationship as closely as the source permits.
 
