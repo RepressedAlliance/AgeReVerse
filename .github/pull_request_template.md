@@ -1,25 +1,11 @@
-## Scope
+## 改了什么，为什么
 
-- Game and engine:
-- Locale:
-- Resource/table identities changed:
+说明问题和修改后的效果。涉及具体作品时写明游戏／章节／资源位置；文档或通用工具无需填写无关游戏信息。
 
-## Evidence
+## 怎么验证的
 
-- Source-language/context basis:
-- Input hashes or supported build:
-- Before/after behavior:
+列出与本次改动直接相关的检查和结果；仅改文档可说明链接／内容核对。未完成但确实需要的验证，请说明原因。
 
-## Verification
+## 其他影响（适用时填写）
 
-- [ ] AGE2 tests pass when AGE2/shared workflow changed.
-- [ ] rUGP tests pass when rUGP/shared workflow changed.
-- [ ] Localization workflow tests pass when engine-neutral text/image/font tooling changed.
-- [ ] Repository policy check passes.
-- [ ] In-game route/menu/image/font behavior was tested where applicable.
-- [ ] No original game dump, generated package, credential, local path, or unlicensed font was added.
-- [ ] New/modified non-code assets have a stated provenance and rights boundary.
-
-## Release impact
-
-Describe whether packages must be rebuilt, which game/version hashes remain supported, and how rollback was tested.
+例如：需要重建补丁、影响哪些版本／语言槽、新素材来源与许可、仍需实机确认的内容。没有这些影响可删除本节。

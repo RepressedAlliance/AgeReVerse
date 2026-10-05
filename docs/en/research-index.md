@@ -1,6 +1,6 @@
 # Reverse-engineering and reproducibility index
 
-[English overview](README.md) · **[Asset map](asset-map.md)** · [English localization workflow](../../localization/workflow.en.md) · [AGE2](../../AGE2/README.md) · [AGE2 postmortems](../../AGE2/docs/postmortems/README.md) · [rUGP](../../rUGP/README.md) · [rUGP postmortems](../../rUGP/docs/postmortems/README.md) · [Prior work](../research/references.md)
+[English overview](README.md) · **[Asset map](asset-map.md)** · [English localization workflow](../../localization/text/workflow.en.md) · [AGE2](../../AGE2/README.md) · [AGE2 postmortems](../../AGE2/docs/postmortems/README.md) · [rUGP](../../rUGP/README.md) · [rUGP postmortems](../../rUGP/docs/postmortems/README.md) · [Prior work](../research/references.md)
 
 This index separates three different claims:
 
@@ -106,7 +106,7 @@ python .github/scripts/verify_repository.py
 Native Photon runtime reproduction additionally requires Zig 0.16.0 and the commands in [`rUGP/runtime/README.md`](../../rUGP/runtime/README.md). These four test suites require no copyrighted game archives. Conversely, passing them does not constitute player-package or in-game approval.
 
 For a legally held installation and a separately obtained clear-name Steam
-depot manifest, [`verify_steam_depot_manifest.py`](../../localization/tools/verify_steam_depot_manifest.py)
+depot manifest, [`verify_steam_depot_manifest.py`](../research/localization/tools/verify_steam_depot_manifest.py)
 provides a read-only file/chunk identity check shared by both engine paths. It
 does not authenticate Steam's signature or infer a missing build identity.
 

@@ -1,6 +1,6 @@
 # 光子之花 / 光子旋律中文图片资源
 
-[返回 Photon 证据入口](../README.md) · [完整资产地图](../../../../docs/research/asset-map.md) · [图片制作流程](../../../../localization/image-workflow.md)
+[返回 Photon 证据入口](../README.md) · [完整资产地图](../../../../docs/research/asset-map.md) · [图片制作流程](../../../../localization/images/tools.md)
 
 这里保存 Muv-Luv 光子之花与光子旋律中文图片资源备份的公开清单与校验报告。完整图片包体积较大，作为 GitHub Release 附件保存，不进入 Git 历史。
 

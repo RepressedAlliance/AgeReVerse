@@ -1,6 +1,6 @@
 # 现行术语表
 
-[返回本地化工作区](../README.md) · [术语维护规则](../standards/04-terminology.md)
+[返回本地化工作区](../README.md) · [术语维护规则](../text/04-terminology.md)
 
 这里集中存放系列通用表和七作现行术语表。点击文件即可在 GitHub 查看日文、中文和使用语境。
 校对某部作品时，使用 **系列通用表 + 本作表**。
@@ -38,7 +38,7 @@ python localization/tools/terminology.py photonflowers --term ミキ
 
 ## 查证与历史资料
 
-旧版本、恢复清单、审计记录及各作基线入口统一放在[术语查证与历史记录](../terminology-history/README.md)。
+旧版本、恢复清单、审计记录及各作基线入口统一放在[术语查证与历史记录](../../docs/research/localization/terminology-history/README.md)。
 候选、争议与历史译法不作为现行术语加载。
 
 ## English
@@ -46,4 +46,4 @@ python localization/tools/terminology.py photonflowers --term ミキ
 This folder contains the current shared glossary and seven game-specific glossaries.
 Use the shared table plus the target game's table, and respect each entry's `context`.
 These are the maintained source files, not duplicate exports. Historical evidence is kept
-in the [terminology records](../terminology-history/README.md).
+in the [terminology records](../../docs/research/localization/terminology-history/README.md).

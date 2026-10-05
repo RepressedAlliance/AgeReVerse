@@ -249,8 +249,8 @@ TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含
 
 已确认的审核与纠错会纳入对应发布包；具体变化见各作当前发布说明。
 
-详细步骤见 **[按顺序阅读的翻译规范](localization/standards/README.md)** 和
-[完整工作流](localization/workflow.md)。这些是制作流程，不代表每个历史测试包都已完成
+详细步骤见 **[按顺序阅读的翻译规范](localization/text/README.md)** 和
+[完整工作流](localization/text/workflow.md)。这些是制作流程，不代表每个历史测试包都已完成
 全文人工校对或全路线验证，译文仍可能存在错误。
 
 TDA 的部分文本已经过人工校对。已发布版本包含上述审核与修正；此后新增的校对和修改
@@ -309,9 +309,9 @@ The Chinese player downloads are listed in the first part of this README.
 | --- | --- |
 | Public results and current limitations | [Research index](docs/en/research-index.md) |
 | Text, image, font and tool locations | [Asset map](docs/en/asset-map.md) |
-| Translation and independent review | [Complete English workflow](localization/workflow.en.md) |
-| Korean, Russian or another target language | [Starting a new language](localization/new-locale.md) |
-| Ordered standards | [Standards and reading order](localization/standards/README.md) |
+| Translation and independent review | [Complete English workflow](localization/text/workflow.en.md) |
+| Korean, Russian or another target language | [Starting a new language](localization/text/new-locale.md) |
+| Ordered standards | [Standards and reading order](localization/text/README.md) |
 | TDA / Imperial: FPD, EGPACK and loose overlays | [AGE2 workspace](AGE2/README.md) |
 | Kiminozo and Another Episode Collection+: work in progress | [Project scope and structure](AGE2/games/kiminozo/README.md) |
 | Photon: ICI, RIO, RUO and runtime tooling | [rUGP workspace](rUGP/README.md) |

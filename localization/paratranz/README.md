@@ -1,54 +1,41 @@
-# ParaTranz 手动校对同步
+# ParaTranz：参与校对与反馈
 
-## 与补丁制作流程的关系
+[返回本地化](../README.md) · [文本流程](../text/README.md) · [维护者同步说明](sync.md)
 
-本项目通常先完成初译、独立复核、技术与实机检查，最后由维护者人工检查并修改发现的错误，
-确认修改结果后发布补丁。ParaTranz 主要承接发布后其他参与者的日文对照校对和持续修订，
-不代替发布前维护者已经做过的审核与修正。在制作品也可以提前开放协作，不能据此判断已发布安装包。
+发布前，我们完成文本初译、独立日文复核、技术与实机检查，最后由维护者人工检查、修改错误并复查，再发布版本。**玩家下载的文本已经包含这轮人工修改。** ParaTranz 通常接在发布后，让其他参与者继续对照日文校对、改错和讨论术语；在制作品提前开放也不表示已有安装包。
 
-ParaTranz 改文经维护者确认并同步后，还需经过相应检查与打包，才会进入后续玩家版本。
-在线修订、GitHub 同步和补丁发布是不同步骤。
+## 加入哪个项目
 
-## 君望协作状态
-
-[君望 Steam 本篇及附加篇](../../AGE2/games/kiminozo/README.md)仍在文本审核和资源制作中，尚未开放公开全文 ParaTranz 校对，也未接入下面的同步工作流。开放时再登记项目和同步范围，不复用其他作品的项目 ID。
-
-## 手动同步操作
-
-帝都燃烧继续使用 `ParaTranz ICB pilot`。光子之花、光子旋律、TDA 使用 `ParaTranz PF PM TDA`，
-在 Run workflow 中选择 main、项目及 dry_run。默认仅预检；取消 dry_run 才创建待审核 PR。
-Bot PR 如需 Approve and run，先检查文件范围再批准。通过检查后由维护者合并。
-
-| 选项 | 在线项目 | 文件 | 词条 | GitHub 去向 |
+| 作品 | 校对入口 | 文件数 | 当前平台词条 | 仓库中的去向 |
 | --- | --- | ---: | ---: | --- |
-| 光子之花 | [20660](https://paratranz.cn/projects/20660) | 13 | 13,025 | 光子之花章节中文列 |
-| 光子旋律 | [20661](https://paratranz.cn/projects/20661) | 45 | 44,698 | 光子旋律章节中文列 |
-| tda | [19505](https://paratranz.cn/projects/19505) | 12 | 26,696 | TDA00–03 正文及姓名/UI 校对资料 |
+| TDA00–03 | **[19505](https://paratranz.cn/projects/19505)** | 12 | 26,691＋5 条空结构 | 四作正文，及姓名／UI 补充资料 |
+| 帝都燃烧 | **[20659](https://paratranz.cn/projects/20659)** | 75 | 5,749 | 正文、姓名、选项和界面 |
+| PF／光子之花 | **[20660](https://paratranz.cn/projects/20660)** | 13 | 13,025 | 本作章节及系统中文表 |
+| PM／光子旋律 | **[20661](https://paratranz.cn/projects/20661)** | 45 | 44,698 | 本作章节及系统中文表 |
 
-TDA 正文为 25,780 条；另 916 条姓名/UI 进入 `tda/supplements.json`，仅用于校对和保留改文，
-尚未接入原生资源构建。5 条原生空结构保持空白，不当成漏译填充。在线文件不拆章、不移动或重建词条。
+2026-10-05 已逐个核对维护者现有四个线上项目。数字是当日快照；以项目实际文件为准，不用翻译率或“已审核”计数反推发布前维护者是否修改过文本。TDA 同步总数为 26,696，其中 5 条原生空结构保持空白，不当成漏译填充。
 
-## 同步规则
+君望本篇与附加篇仍在制作和文本审核，尚未开放公开全文 ParaTranz 校对，也未接入这四个项目的同步范围；[状态入口](../../AGE2/games/kiminozo/README.md)。
 
-- 单向 ParaTranz → GitHub PR，不写回平台、不改历史/审核状态、不自动合并、不发版。
-- 同项目有未处理的同步 PR 时跳过，三个项目互不阻塞。不同项目 PR 合并后可能需更新分支重新检查。
-- 保留人工译文，只对新导入文本执行既定中文军衔规范；两边同条不同改文停止整批，不用旧版覆盖。
-- 未翻译、有疑问、隐藏的修改暂缓，等状态变更后再同步。原生空结构必须保持原样。
-- 光子之花/光子旋律保留章节归属、姓名、注释、原文绑定、结束符和现有人工换行控制序列；正文禁止 `<03>`。
-  不自动翻译、不自动重排 `<0A>`，需要改换行控制序列时单独审查；文本变长仍须留意实机行宽。
-- 术语表、图片、字体和安装资源不由此工作流上传或构建。通用表/专表不会互相覆盖。
-- 历史审定账本校验其来源和决策链，不再要求未来措辞永远等于旧句子。硬性术语及结构回归仍保留。
+## 怎么参与
 
-## 权限和基线
+如果你看得懂日语，愿意对照原文校对、修改译文或讨论术语，欢迎进入对应项目。可以从熟悉的一句台词或一个场景开始，不必一次承担整章。登录后从项目文件进入；需要参与权限时联系维护者。
 
-复用已有 `PARATRANZ_ICB_TOKEN` Secret（名称来自首次试点），不另存明文凭据。
-含 Secret 的同步仅能手动运行 main，项目 ID 在代码中固定；普通 PR Quality 无 Secret 且只读。
-远端文本不作为 shell 或代码执行；提交路径由程序从本地限定目录产生，以 NUL 分隔、literal pathspec 暂存。
+结合前后文修改，保留稳定词条身份、必要控制符和已确认术语；使用[通用＋本作术语](../glossaries/README.md)，不套用其他作专表。难以确定的内容提出具体疑问，说明场景与依据。不要仅为换一种说法重写已经确认的文风。
 
-基线按在线文件 ID 分片，仅存 ID、来源摘要、两边译文摘要及状态，不含完整官方日英脚本。
-它用于关联同一条和发现双边冲突，不是冻结中文译法的白名单。变化的导出清单自动跟随正文更新。
-GitHub 只改、平台未改的条目保留 GitHub 文本；这不代表双方已经逐字一致，也不会反向覆盖平台。
+**看不懂日语也欢迎反馈。** 错字、漏翻、读起来不自然、图片残字、显示或安装问题，都可以加入 **QQ 群 273626767**，或通过[GitHub 反馈入口](../../docs/player/README.md#排错与反馈)说明作品、补丁版本、场景和现象，附截图更方便定位。
 
-初始光子之花/光子旋律逐条与线上一致。TDA 先采用此前已确认的 272 条人工优先合并，保留其余字段和既定修复，
-再建立基线。详见 `tda/initial-import.json`、`tda/first-merge-decisions.json` 和 `tda/contributors.json`。
-这次没有发布补丁，不能把 GitHub 同步当成已更新玩家安装。
+## 修改如何进入玩家版本
+
+ParaTranz 修订 → 维护者确认 → 同步回本作可维护中文表 → 相关结构／术语／显示检查 → 打包与人工收尾 → 后续版本发布。
+
+在线修改、GitHub 同步和玩家安装包更新是不同步骤。同步工具不自动翻译、不改在线审核状态、不覆盖双边冲突，也不自动合并或发布。图片、字体和资源构建不由 ParaTranz 同步处理。
+
+这里的四个子目录保存现有映射和摘要基线：它们用于关联词条、发现双方修改冲突，并非禁止改中文的白名单。日常参与从上方项目链接开始；维护者操作见[同步说明](sync.md)。
+
+<details>
+<summary>English · collaboration</summary>
+
+These four existing projects collect Japanese-to-Chinese corrections and player findings. The maintainer has already reviewed and corrected a patch before release. Further ParaTranz edits are reviewed, synchronized to maintained game tables, verified and included in a later package. An online revision does not update an installed patch. Use the matching game's glossary and preserve IDs/control codes; images and fonts follow separate authoring workflows.
+
+</details>

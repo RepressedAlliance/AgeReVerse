@@ -7,7 +7,8 @@ target_locales = ["zh-Hans"]
 terminology_common_authority = "../../../localization/glossaries/muv-luv.ja-zh-Hans.csv"
 terminology_authority = "../../../localization/glossaries/photonflowers.ja-zh-Hans.csv"
 terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
-development_status = "development-no-player-package"
+development_status = "published-beta"
+player_release_tag = "pf-BETA-0.1.2"
 translation_authorities = [
   "translations/樱花盛开之前.csv",
   "translations/和小武在一起！.csv",
@@ -23,6 +24,7 @@ translation_authorities = [
   "translations/小鸡潜降兵.csv",
   "translations/共通系统.csv",
 ]
+image_authority_scope = "historical-evidence"
 image_authority = "../../evidence/photon/images/manifest.json"
 image_filter = "PF"
 font_policy = "../../../localization/fonts/README.md"

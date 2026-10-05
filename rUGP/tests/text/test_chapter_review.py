@@ -47,7 +47,7 @@ class ChapterReviewTests(unittest.TestCase):
         corrections = {e['binding_id']: e for e in semantic['edits']}
         self.assertEqual(len(corrections), 3)
         corrected_seen = set()
-        alignment = json.loads((root.parent.parent/'localization/reviews/main-al-alignment-20260909.json').read_text(encoding='utf-8'))
+        alignment = json.loads((root.parent.parent/'docs/research/localization/reviews/main-al-alignment-20260909.json').read_text(encoding='utf-8'))
         alignment_edits = {e['id']: e for e in alignment['edits'] if e['column'] == 'translated_text'}
         alignment_seen = set()
         latest_seen = set()
@@ -126,7 +126,7 @@ class ChapterReviewTests(unittest.TestCase):
                 audited[edit['binding_id']] = edit
         self.assertEqual(len(audited), 170)
         current = {r['binding_id']:visible(r['translated_text']) for game in ['photonflowers','photonmelodies'] for r in read_chapters(root/'games'/game/'translations')}
-        alignment = json.loads((root.parent/'localization/reviews/main-al-alignment-20260909.json').read_text(encoding='utf-8'))
+        alignment = json.loads((root.parent/'docs/research/localization/reviews/main-al-alignment-20260909.json').read_text(encoding='utf-8'))
         aligned = {e['id']: e for e in alignment['edits'] if e['column'] == 'translated_text'}
         for record in records:
             identity = record['binding_id']

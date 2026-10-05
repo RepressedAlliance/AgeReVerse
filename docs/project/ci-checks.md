@@ -5,7 +5,7 @@
 
 - Linux 始终验证数据、脚本回归和公开仓库边界。
 - 纯译文、术语参考、同步基线、导出清单或 Markdown 不申请 Windows runner，也不编译 DLL。
-- AGE2/localization Python 改动增加 Windows 回归，检查编码、路径等平台差异。
+- AGE2/localization 及本地化研究 Python 改动增加 Windows 回归，检查编码、路径等平台差异；研究代码不单独触发 Photon DLL 构建。
 - 运行时、图片构建输入、工作流、未知路径保守地执行全部检查。
 - 删除与重命名按旧、新路径共同判断，不通过改名逃过运行时检查。
 
@@ -19,7 +19,7 @@
 - Quality 使用 pull_request、GitHub 托管临时 runner 和只读 contents 权限。
 - 不使用 pull_request_target 执行 PR 代码；不向 PR 检查传递 ParaTranz Secret。
 - checkout 不持久化凭据，降低受测脚本取得 Git 凭据的机会。
-- ParaTranz 发布工作流仍仅允许手动 main 分支写入明确的帝都燃烧文件白名单；不自动审核、合并或发版。
+- ParaTranz 同步工作流仅允许手动 main 分支写入对应项目的限定文件；帝都与 PF／PM／TDA 分开处理，不自动审核、合并或发版。
 - 陌生 PR 对工作流、权限、依赖和执行脚本的修改必须人工审查。测试通过并不保证没有恶意代码。
 
 Bot PR 如需 Approve and run，维护者先看文件范围再批准；所有必需检查通过后才合并。

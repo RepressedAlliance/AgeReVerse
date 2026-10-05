@@ -61,10 +61,10 @@ first translation; independently classify every row as
 `keep`/`revise`/`question`; resolve questions; bind through the correct engine;
 run in-game QA; and feed player reports back into maintained source.
 
-- [Complete English workflow](../../localization/workflow.en.md)
-- [Start Korean, Russian, or another locale](../../localization/new-locale.md)
-- [Localized image and Image 2 workflow](../../localization/image-workflow.md)
-- [Chinese workflow](../../localization/workflow.md)
+- [Complete English workflow](../../localization/text/workflow.en.md)
+- [Start Korean, Russian, or another locale](../../localization/text/new-locale.md)
+- [Localized image and Image 2 workflow](../../localization/images/tools.md)
+- [Chinese workflow](../../localization/text/workflow.md)
 
 ## Credits and participation
 

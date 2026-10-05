@@ -6,4 +6,4 @@
 
 本表为重建基线：来源为旧词库与本作 JP 哈希对齐结果，另完整承接原有 369 条草案。未做全作专名穷举或全部候选人工确认。
 
-状态和来源字段说明、原始表计数见 [统一入口](../../../../localization/glossaries/README.md) 与 [恢复说明](../../../../localization/terminology-history/recovery-20260908.md)。术语表不是无语境自动替换字典；基线中的旧译不代表当前采用译法。
+状态和来源字段说明、原始表计数见 [统一入口](../../../../localization/glossaries/README.md) 与 [恢复说明](../../../../docs/research/localization/terminology-history/recovery-20260908.md)。术语表不是无语境自动替换字典；基线中的旧译不代表当前采用译法。

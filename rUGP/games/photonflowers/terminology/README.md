@@ -6,4 +6,4 @@
 
 完整承接已找到的本作旧表和基线。原来以篇章合集保存的范围仍按原合集记录，不伪造逐章归属。
 
-状态和来源字段说明、原始表计数见 [统一入口](../../../../localization/glossaries/README.md) 与 [恢复说明](../../../../localization/terminology-history/recovery-20260908.md)。术语表不是无语境自动替换字典；基线中的旧译不代表当前采用译法。
+状态和来源字段说明、原始表计数见 [统一入口](../../../../localization/glossaries/README.md) 与 [恢复说明](../../../../docs/research/localization/terminology-history/recovery-20260908.md)。术语表不是无语境自动替换字典；基线中的旧译不代表当前采用译法。

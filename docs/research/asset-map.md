@@ -31,8 +31,8 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 | TDA02 | [`translations/ja-zh-Hans.csv`](../../AGE2/games/tda02/translations/ja-zh-Hans.csv) | 6,589 行 |
 | TDA03 | [`translations/ja-zh-Hans.csv`](../../AGE2/games/tda03/translations/ja-zh-Hans.csv) | 6,913 行 |
 | 帝都燃烧篇 | [`translations/`](../../AGE2/games/imperial-capital-burns/translations/) | 5,564 行正文，另有 21 行辅助文字、18 个选项、91 个说话人和 UI 字符串表 |
-| 光子之花 | [`translations/`](../../rUGP/games/photonflowers/translations/) | 12,964 行 reviewed 文本；另有 69 行精确运行时绑定表，不把二者冒充成同一写入权威 |
-| 光子旋律 | [`translations/`](../../rUGP/games/photonmelodies/translations/) | 44,583 行 reviewed 文本；另有 151 行精确运行时绑定表 |
+| 光子之花 | [`translations/`](../../rUGP/games/photonflowers/translations/) | 当前 13,025 条章节／系统中文记录；旧审校与精确绑定另作历史证据 |
+| 光子旋律 | [`translations/`](../../rUGP/games/photonmelodies/translations/) | 当前 44,698 条章节／系统中文记录；旧审校与精确绑定另作历史证据 |
 | 君望及附加篇（在制） | [文本维护位置](../../AGE2/games/kiminozo/translations/README.md) · [术语与基线](../../AGE2/games/kiminozo/terminology/README.md) | 文本审核中，尚未公开正文数据表 |
 
 这些计数描述公开表中的记录，不自动等于“独立台词数”“全部已实机通过”或“可直接
@@ -63,7 +63,7 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 
 图片制作的长期可维护内容不是某次批次目录，而是：资源身份、源哈希、中文文案、无字底
 权威、字体和排版参数、允许变化区域、输出哈希与审核结论。完整方法见
-[图片本地化工作流](../../localization/image-workflow.md)。
+[图片本地化工作流](../../localization/images/README.md)。字体按游戏运行时／图片制作集中于[字体目录](../../localization/fonts/README.md)，历史本地化调查与审核批次见[研究记录](localization/README.md)。
 
 ## 字体
 
@@ -76,9 +76,9 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 
 ## 新语言从哪里开始
 
-1. 阅读[完整工作流](../../localization/workflow.md)或
-   [English workflow](../../localization/workflow.en.md)。
-2. 按[新语言指南](../../localization/new-locale.md)建立 `ko`、`ru` 等独立目标。
+1. 阅读[完整工作流](../../localization/text/workflow.md)或
+   [English workflow](../../localization/text/workflow.en.md)。
+2. 按[新语言指南](../../localization/text/new-locale.md)建立 `ko`、`ru` 等独立目标。
 3. 从合法游戏本地提取源文字/源图并按公开哈希连接，不把中文改名成新语言源表。
 4. 把目标语言译文和作内图片文案放回对应游戏目录；把可跨游戏复用的新规则或工具贡献到
    `localization/`。

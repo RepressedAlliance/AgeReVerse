@@ -4,7 +4,7 @@ This checklist governs new releases. Historical AGE2 packages remain recorded se
 
 ## 1. Freeze inputs
 
-- Record the game, Steam build/depot identity where available, and SHA-256 of every modified source file. A separately obtained clear-name depot manifest may be checked with [`verify_steam_depot_manifest.py`](../../localization/tools/verify_steam_depot_manifest.py); the result proves content-map agreement, not Steam-signature authenticity.
+- Record the game, Steam build/depot identity where available, and SHA-256 of every modified source file. A separately obtained clear-name depot manifest may be checked with [`verify_steam_depot_manifest.py`](../research/localization/tools/verify_steam_depot_manifest.py); the result proves content-map agreement, not Steam-signature authenticity.
 - Freeze canonical translation/image manifests and the source commit.
 - Build in a fresh staging directory; never package a live game directory directly.
 

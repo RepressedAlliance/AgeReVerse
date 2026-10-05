@@ -1,0 +1,930 @@
+{
+  "schema": "age-reverse-font-catalog/v1",
+  "checked_on": "2026-10-05",
+  "scope": "TDA00-03, Imperial Capital Burns, PF and PM; runtime/config and known image-production font inputs",
+  "games": {
+    "tda00": {
+      "release_tag": "tda00-BETA-0.2.1",
+      "release_manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda00-BETA-0.2.1/tda00-release-manifest.json",
+      "verification": "font and config hashes match public release manifest",
+      "included_fonts": [
+        "age2:AGE2FallbackSC-Dash.ttf",
+        "age2:AGE2GenSekiSC-Regular.otf",
+        "age2:AGE2UISansSC-Dash.otf",
+        "age2:BWCKKT-Bold.ttf",
+        "age2:BWCKKT-Regular.ttf",
+        "age2:GenSekiGothic2TW-R.otf",
+        "age2:IBMPlexSansSC-Regular.otf",
+        "age2:MEBheiheiti.ttf",
+        "age2:NotoSansSC-500.ttf",
+        "age2:SweiSugarCJKsc-Medium.ttf",
+        "age2:SweiSugarCJKsc-SemiBold.ttf"
+      ],
+      "config_profile": "age2-five-game"
+    },
+    "tda01": {
+      "release_tag": "tda01-BETA-0.3.3",
+      "release_manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda01-BETA-0.3.3/tda01-release-manifest.json",
+      "verification": "font and config hashes match public release manifest",
+      "included_fonts": [
+        "age2:AGE2FallbackSC-Dash.ttf",
+        "age2:AGE2GenSekiSC-Regular.otf",
+        "age2:AGE2UISansSC-Dash.otf",
+        "age2:BWCKKT-Bold.ttf",
+        "age2:BWCKKT-Regular.ttf",
+        "age2:GenSekiGothic2TW-R.otf",
+        "age2:IBMPlexSansSC-Regular.otf",
+        "age2:MEBheiheiti.ttf",
+        "age2:NotoSansSC-500.ttf",
+        "age2:SweiSugarCJKsc-Medium.ttf",
+        "age2:SweiSugarCJKsc-SemiBold.ttf"
+      ],
+      "config_profile": "age2-five-game"
+    },
+    "tda02": {
+      "release_tag": "tda02-BETA-0.2.1",
+      "release_manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda02-BETA-0.2.1/tda02-release-manifest.json",
+      "verification": "font and config hashes match public release manifest",
+      "included_fonts": [
+        "age2:AGE2FallbackSC-Dash.ttf",
+        "age2:AGE2GenSekiSC-Regular.otf",
+        "age2:AGE2UISansSC-Dash.otf",
+        "age2:BWCKKT-Bold.ttf",
+        "age2:BWCKKT-Regular.ttf",
+        "age2:GenSekiGothic2TW-R.otf",
+        "age2:IBMPlexSansSC-Regular.otf",
+        "age2:MEBheiheiti.ttf",
+        "age2:NotoSansSC-500.ttf",
+        "age2:SweiSugarCJKsc-Medium.ttf",
+        "age2:SweiSugarCJKsc-SemiBold.ttf"
+      ],
+      "config_profile": "age2-five-game"
+    },
+    "tda03": {
+      "release_tag": "tda03-BETA-0.2.7",
+      "release_manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda03-BETA-0.2.7/tda03-release-manifest.json",
+      "verification": "font and config hashes match public release manifest",
+      "included_fonts": [
+        "age2:AGE2FallbackSC-Dash.ttf",
+        "age2:AGE2GenSekiSC-Regular.otf",
+        "age2:AGE2UISansSC-Dash.otf",
+        "age2:BWCKKT-Bold.ttf",
+        "age2:BWCKKT-Regular.ttf",
+        "age2:GenSekiGothic2TW-R.otf",
+        "age2:IBMPlexSansSC-Regular.otf",
+        "age2:MEBheiheiti.ttf",
+        "age2:NotoSansSC-500.ttf",
+        "age2:SweiSugarCJKsc-Medium.ttf",
+        "age2:SweiSugarCJKsc-SemiBold.ttf"
+      ],
+      "config_profile": "age2-five-game"
+    },
+    "imperial-capital-burns": {
+      "release_tag": "imperial-capital-burns-BETA-0.2.1",
+      "release_manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-BETA-0.2.1/tm-release-manifest.json",
+      "verification": "font and config hashes match public release manifest",
+      "included_fonts": [
+        "age2:AGE2FallbackSC-Dash.ttf",
+        "age2:AGE2GenSekiSC-Regular.otf",
+        "age2:AGE2UISansSC-Dash.otf",
+        "age2:BWCKKT-Bold.ttf",
+        "age2:BWCKKT-Regular.ttf",
+        "age2:GenSekiGothic2TW-R.otf",
+        "age2:IBMPlexSansSC-Regular.otf",
+        "age2:MEBheiheiti.ttf",
+        "age2:NotoSansSC-500.ttf",
+        "age2:SourceHanSansSC-Bold.otf",
+        "age2:SourceHanSansSC.otf",
+        "age2:SweiSugarCJKsc-Medium.ttf",
+        "age2:SweiSugarCJKsc-SemiBold.ttf"
+      ],
+      "config_profile": "age2-five-game"
+    },
+    "photonflowers": {
+      "release_tag": "pf-BETA-0.1.2",
+      "release_manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/pf-release-manifest.json",
+      "verification": "font read from downloaded ZIP whose hash matches public release manifest",
+      "runtime_face": "PhotonR2",
+      "included_fonts": [
+        "pf:PhotonR2-Regular.ttf"
+      ],
+      "note": "PF/PM share the face name but have different font bytes; use the game-specific package."
+    },
+    "photonmelodies": {
+      "release_tag": "pm-BETA-0.1.2",
+      "release_manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/pm-release-manifest.json",
+      "verification": "font read from downloaded ZIP whose hash matches public release manifest",
+      "runtime_face": "PhotonR2",
+      "included_fonts": [
+        "pm:PhotonR2-Regular.ttf"
+      ],
+      "note": "PF/PM share the face name but have different font bytes; use the game-specific package."
+    }
+  },
+  "runtime_fonts": {
+    "age2:AGE2FallbackSC-Dash.ttf": {
+      "file": "AGE2FallbackSC-Dash.ttf",
+      "sha256": "2992cdf0b376e2f165413332ff8ad66e9d5efc75090493cf69be43eed834b24d",
+      "bytes": 10589652,
+      "family": [
+        "AGE2 Fallback SC Dash"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.04;241114210130;non-release"
+      ],
+      "weight": 500,
+      "upstream_url": "https://github.com/notofonts/noto-cjk",
+      "license": "OFL-1.1",
+      "usage": "active-runtime",
+      "roles": [
+        "sub"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:AGE2GenSekiSC-Regular.otf": {
+      "file": "AGE2GenSekiSC-Regular.otf",
+      "sha256": "ed17b8117775a17910f6d9fa5dd0dcf3f10e45020513e44e744a8a0702fab51b",
+      "bytes": 16489640,
+      "family": [
+        "AGE2 GenSeki SC"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.100;PS 2.1;hotconv 16.6.51;makeotf.lib2.5.65220 DEVELOPMENT"
+      ],
+      "weight": 400,
+      "upstream_url": "https://github.com/ButTaiwan/genseki-font",
+      "license": "OFL-1.1",
+      "usage": "included-not-selected-by-Font_cn.cfg",
+      "roles": [],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:AGE2UISansSC-Dash.otf": {
+      "file": "AGE2UISansSC-Dash.otf",
+      "sha256": "50c9ae65fa238862e1374d399655e2168f4d1e8964fb40ef7174b533c0fcc098",
+      "bytes": 6975252,
+      "family": [
+        "AGE2 UI Sans SC Dash"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 1.000"
+      ],
+      "weight": 400,
+      "upstream_url": "https://github.com/IBM/plex",
+      "license": "OFL-1.1",
+      "usage": "active-runtime",
+      "roles": [
+        "Common"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:BWCKKT-Bold.ttf": {
+      "file": "BWCKKT-Bold.ttf",
+      "sha256": "9cd231ded039b40bd3e568f220d9a208bb23a890f4375e5d649fe1b367e59c4b",
+      "bytes": 3902604,
+      "family": [
+        "BWCKKT",
+        "白无常可可体"
+      ],
+      "subfamily": [
+        "Bold",
+        "粗体"
+      ],
+      "version": [
+        "Version 1.00 0701, 2021, initial release",
+        "Version 1.00 0701,2021,initial relrase"
+      ],
+      "weight": 700,
+      "upstream_url": "https://www.zcool.com.cn/work/ZNTk4NTI2ODA%3D.html",
+      "license": "publisher-statement",
+      "usage": "active-runtime",
+      "roles": [
+        "Message"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:BWCKKT-Regular.ttf": {
+      "file": "BWCKKT-Regular.ttf",
+      "sha256": "f3f9f46cb3f06aabe1dfeb4a20c0b2242b738644c6f1f0e4cc8b18283c241b3e",
+      "bytes": 3865528,
+      "family": [
+        "BWCKKT",
+        "白无常可可体"
+      ],
+      "subfamily": [
+        "Regular",
+        "常规"
+      ],
+      "version": [
+        "Version 1.00 0701, 2021, initial release"
+      ],
+      "weight": 400,
+      "upstream_url": "https://www.zcool.com.cn/work/ZNTk4NTI2ODA%3D.html",
+      "license": "publisher-statement",
+      "usage": "included-not-selected-by-Font_cn.cfg",
+      "roles": [],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:GenSekiGothic2TW-R.otf": {
+      "file": "GenSekiGothic2TW-R.otf",
+      "sha256": "bb3cccb9594a5a9c759a92bbbf147eb87826b8317d07d20f48ee7ebdcec684fa",
+      "bytes": 16501448,
+      "family": [
+        "GenSekiGothic2 TW R",
+        "源石黑體月 R"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.100;PS 2.1;hotconv 16.6.51;makeotf.lib2.5.65220 DEVELOPMENT"
+      ],
+      "weight": 400,
+      "upstream_url": "https://github.com/ButTaiwan/genseki-font",
+      "license": "OFL-1.1",
+      "usage": "included-not-selected-by-Font_cn.cfg",
+      "roles": [],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:IBMPlexSansSC-Regular.otf": {
+      "file": "IBMPlexSansSC-Regular.otf",
+      "sha256": "fc42109cec4e0af7efd4d4d7f6de138d00e87b8b48987432808e43af33580530",
+      "bytes": 6975144,
+      "family": [
+        "IBM Plex Sans SC"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 1.000"
+      ],
+      "weight": 400,
+      "upstream_url": "https://github.com/IBM/plex",
+      "license": "OFL-1.1",
+      "usage": "active-runtime",
+      "roles": [
+        "LanguageChoice"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:MEBheiheiti.ttf": {
+      "file": "MEBheiheiti.ttf",
+      "sha256": "66ca28693b9c9c8badaea877a4e9ea97af754dd21b8909406ebaee8c26dadbbc",
+      "bytes": 1706132,
+      "family": [
+        "美呗嘿嘿体(全字库)"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 3.000"
+      ],
+      "weight": 400,
+      "upstream_url": "https://www.zcool.com.cn/work/ZNTY3OTI5ODg%3D.html",
+      "license": "publisher-statement",
+      "usage": "active-runtime",
+      "roles": [
+        "Speaker"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:NotoSansSC-500.ttf": {
+      "file": "NotoSansSC-500.ttf",
+      "sha256": "e4844970769adc67f2dce64c1ba3f95a17d85976fc843b26ccc9d53bff7a4ef6",
+      "bytes": 10589584,
+      "family": [
+        "Noto Sans SC"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.04;241114210130;non-release"
+      ],
+      "weight": 500,
+      "upstream_url": "https://github.com/notofonts/noto-cjk",
+      "license": "OFL-1.1",
+      "usage": "active-runtime",
+      "roles": [
+        "Hud"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:SweiSugarCJKsc-Medium.ttf": {
+      "file": "SweiSugarCJKsc-Medium.ttf",
+      "sha256": "8a215f56715901d238c412c2ddd1fa140915cc1349260ee255bfc025894d7941",
+      "bytes": 28702024,
+      "family": [
+        "Swei Sugar CJK SC",
+        "獅尾加糖宋體SC-Medium"
+      ],
+      "subfamily": [
+        "Medium"
+      ],
+      "version": [
+        "Version 1.0"
+      ],
+      "weight": 500,
+      "upstream_url": "https://github.com/max32002/swei-sugar",
+      "license": "OFL-1.1",
+      "usage": "included-not-selected-by-Font_cn.cfg",
+      "roles": [],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:SweiSugarCJKsc-SemiBold.ttf": {
+      "file": "SweiSugarCJKsc-SemiBold.ttf",
+      "sha256": "b5280d9ca2bbe7638c7182f43e7c3a95b0a87d01bc98d7fb032d0f95a72aa0d5",
+      "bytes": 28698144,
+      "family": [
+        "Swei Sugar CJK SC",
+        "獅尾加糖宋體SC-SemiBold"
+      ],
+      "subfamily": [
+        "SemiBold"
+      ],
+      "version": [
+        "Version 1.0"
+      ],
+      "weight": 600,
+      "upstream_url": "https://github.com/max32002/swei-sugar",
+      "license": "OFL-1.1",
+      "usage": "included-not-selected-by-Font_cn.cfg",
+      "roles": [],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:SourceHanSansSC-Bold.otf": {
+      "file": "SourceHanSansSC-Bold.otf",
+      "sha256": "df560f379d55a0c9859add605dd67e0721955fde3cd76c41c5f8d6cba7823d41",
+      "bytes": 17878620,
+      "family": [
+        "Source Han Sans SC",
+        "思源黑体"
+      ],
+      "subfamily": [
+        "Bold"
+      ],
+      "version": [
+        "Version 2.001;hotconv 1.0.107;makeotfexe 2.5.65593"
+      ],
+      "weight": 700,
+      "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
+      "license": "OFL-1.1",
+      "usage": "included-not-selected-by-Font_cn.cfg",
+      "roles": [],
+      "games": [
+        "imperial-capital-burns"
+      ]
+    },
+    "age2:SourceHanSansSC.otf": {
+      "file": "SourceHanSansSC.otf",
+      "sha256": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256",
+      "bytes": 16529832,
+      "family": [
+        "Source Han Sans SC",
+        "思源黑体"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.005;addfeatures 5.0.0b21"
+      ],
+      "weight": 400,
+      "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
+      "license": "OFL-1.1",
+      "usage": "included-not-selected-by-Font_cn.cfg",
+      "roles": [],
+      "games": [
+        "imperial-capital-burns"
+      ]
+    },
+    "pf:PhotonR2-Regular.ttf": {
+      "file": "PhotonR2-Regular.ttf",
+      "sha256": "938a0046459decf03fc11dc4d7fb9d440287ebe162c2f55f5964fae661b0ec64",
+      "bytes": 1410172,
+      "family": [
+        "PhotonR2"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.06; PhotonR2 root-fix; explicit U+2060 zero advance"
+      ],
+      "weight": 400,
+      "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
+      "license": "OFL-1.1",
+      "usage": "active-runtime",
+      "games": [
+        "photonflowers"
+      ],
+      "roles": [
+        "GDI runtime face"
+      ]
+    },
+    "pm:PhotonR2-Regular.ttf": {
+      "file": "PhotonR2-Regular.ttf",
+      "sha256": "3d1cdf9b8c3ca71d09ecbf5a380fa7f6e9d2f2ee4bb020805711b42fa4322f3b",
+      "bytes": 1460112,
+      "family": [
+        "PhotonR2"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.09; PhotonR2 PM choice W550"
+      ],
+      "weight": 400,
+      "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
+      "license": "OFL-1.1",
+      "usage": "active-runtime",
+      "games": [
+        "photonmelodies"
+      ],
+      "roles": [
+        "GDI runtime face"
+      ]
+    }
+  },
+  "original_age2_fonts": {
+    "FOT-NewCinemaAStd-D.otf": {
+      "file": "FOT-NewCinemaAStd-D.otf",
+      "sha256": "b2e8c2ac15006139d6630434d3a65f5ccc6ec15fe426b653e2ae726bdd17c89a",
+      "bytes": 4698228,
+      "family": [
+        "FOT-NewCinemaA Std",
+        "FOT-NewCinemaA Std D",
+        "FOT-ニューシネマA Std",
+        "FOT-ニューシネマA Std D"
+      ],
+      "version": [
+        "Version 1.300;PS 1;hotconv 1.0.38;makeotf.lib1.6.5960"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "usage": "original-runtime",
+      "license": "original game commercial font; metadata only"
+    },
+    "FOT-SkipProN-D.otf": {
+      "file": "FOT-SkipProN-D.otf",
+      "sha256": "2a8ded134b230590d2495374871ca7e1f063a4e6af5a8acfa6fb1e4e66fd6ada",
+      "bytes": 9457352,
+      "family": [
+        "FOT-Skip ProN",
+        "FOT-Skip ProN D",
+        "FOT-スキップ ProN",
+        "FOT-スキップ ProN D"
+      ],
+      "version": [
+        "Version 2.000;PS 1;hotconv 16.6.54;makeotf.lib2.5.65590"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "usage": "original-runtime",
+      "license": "original game commercial font; metadata only"
+    },
+    "FOT-UDKakugo_LargePro-DB.otf": {
+      "file": "FOT-UDKakugo_LargePro-DB.otf",
+      "sha256": "69f431a49a605ddac683b701a986b71e16e0e05cc7b242d0948d73d7014bb30b",
+      "bytes": 3591416,
+      "family": [
+        "FOT-UDKakugo_Large Pro",
+        "FOT-UDKakugo_Large Pro DB",
+        "FOT-UD角ゴ_ラージ Pro",
+        "FOT-UD角ゴ_ラージ Pro DB"
+      ],
+      "version": [
+        "Version 1.200;PS 1;hotconv 1.0.38;makeotf.lib1.6.5960"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "usage": "original-runtime",
+      "license": "original game commercial font; metadata only"
+    },
+    "beatfont1.otf": {
+      "file": "beatfont1.otf",
+      "sha256": "b44ce5f27b2ab2eb6228f72117873784d1e12f57502bd94abbd492d8e3cd4228",
+      "bytes": 5552436,
+      "family": [
+        "FOT-UDKakugo_Large Pr6",
+        "FOT-UDKakugo_Large Pr6 R",
+        "FOT-UD角ゴ_ラージ Pr6",
+        "FOT-UD角ゴ_ラージ Pr6 R"
+      ],
+      "version": [
+        "Version 1.200;PS 1;hotconv 1.0.57;makeotf.lib2.0.21895"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "usage": "original-runtime",
+      "license": "original game commercial font; metadata only"
+    }
+  },
+  "image_font_inputs": {
+    "image:noto-sans-sc-vf": {
+      "file": "NotoSansSC-VF.ttf",
+      "sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "bytes": 17773244,
+      "family": [
+        "Noto Sans SC"
+      ],
+      "version": [
+        "Version 2.04;241114210130;non-release"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns",
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "used-in-image-production",
+      "license": "OFL-1.1"
+    },
+    "image:noto-serif-sc-vf": {
+      "file": "NotoSerifSC-VF.ttf",
+      "sha256": "a4aed9985a5916fbf6690456f8732a9fccd517938e353165d4142b4f11a39280",
+      "bytes": 25129160,
+      "family": [
+        "Noto Serif SC"
+      ],
+      "version": [
+        "Version 2.02;241114204558;non-release"
+      ],
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "used-in-image-production",
+      "license": "OFL-1.1"
+    },
+    "image:swei-sugar-medium": {
+      "file": "SweiSugarCJKsc-Medium.ttf",
+      "sha256": "8a215f56715901d238c412c2ddd1fa140915cc1349260ee255bfc025894d7941",
+      "bytes": 28702024,
+      "family": [
+        "Swei Sugar CJK SC",
+        "獅尾加糖宋體SC-Medium"
+      ],
+      "version": [
+        "Version 1.0"
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "usage": "date-and-location-cards",
+      "license": "OFL-1.1"
+    },
+    "image:zcool-kuaile-trial": {
+      "file": "ZCOOLKuaiLe-Regular.ttf",
+      "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+      "bytes": 1514968,
+      "family": [
+        "ZCOOL KuaiLe"
+      ],
+      "version": [
+        "Version 2.001"
+      ],
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "trial-only-adoption-not-confirmed",
+      "license": "OFL-1.1"
+    },
+    "image:simhei-historical": {
+      "file": "simhei.ttf",
+      "sha256": "9b1959db3b3abeb7efdaec26edf7dfe871a6039de8d614af7248575207be629e",
+      "bytes": 9745792,
+      "family": [
+        "SimHei",
+        "黑体"
+      ],
+      "version": [
+        "Version 5.05"
+      ],
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "historical-candidate-not-final-confirmation",
+      "license": "Windows font licensing; not OFL"
+    },
+    "image:noto-sans-sc-500": {
+      "runtime_catalog_id": "age2:NotoSansSC-500.ttf",
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "usage": "telops, voice labels, maps"
+    },
+    "image:photon-r2-subtitles": {
+      "file": "PhotonR2-Regular.ttf",
+      "sha256": "aadf895003ae6452e1fbdca1b64206b77d6f9a6eebe226c31d46d1247ad4830b",
+      "bytes": 1406624,
+      "family": [
+        "PhotonR2"
+      ],
+      "version": [
+        "Version 2.06; PhotonR2 root-fix; explicit U+2060 zero advance"
+      ],
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "historical baked subtitles; distinct from updated runtime fonts",
+      "license": "OFL-1.1"
+    },
+    "image:mashanzheng-new-batch": {
+      "file": "MaShanZheng-Regular.ttf",
+      "family": [
+        "Ma Shan Zheng"
+      ],
+      "version": [
+        "Version 2.003"
+      ],
+      "sha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "bytes": 5857936,
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "2026-10 omission-batch candidate; not release adoption",
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/googlefonts/mashanzheng"
+    },
+    "image:photoncn-new-batch": {
+      "file": "PhotonCN-Regular.ttf",
+      "family": [
+        "PhotonCN"
+      ],
+      "version": [
+        "Version 2.04; PhotonCN 1.0"
+      ],
+      "sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "bytes": 1397048,
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "2026-10 omission-batch candidate; not release adoption",
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/adobe-fonts/source-han-sans"
+    }
+  },
+  "limitations": [
+    "Image records identify production inputs and trials, not a verified font identity for every original bitmap.",
+    "Original commercial AGE2 font binaries are not redistributed.",
+    "A file included in a package is not necessarily selected by its active config.",
+    "Publisher statements for BWCKKT and MEB are not an OFL license; current upstream pages were not readable during this audit."
+  ],
+  "config_profiles": {
+    "age2-five-game": {
+      "original_configs": {
+        "Font.cfg": [
+          {
+            "Label": "Common",
+            "FamilyName": "beatfont1",
+            "File": "beatfont1.otf"
+          },
+          {
+            "Label": "Message",
+            "FamilyName": "message",
+            "File": "FOT-NewCinemaAStd-D.otf",
+            "LineBreak": "1.05"
+          },
+          {
+            "Label": "Speaker",
+            "FamilyName": "speaker",
+            "File": "FOT-SkipProN-D.otf"
+          },
+          {
+            "Label": "Hud",
+            "FamilyName": "hud",
+            "File": "FOT-UDKakugo_LargePro-DB.otf"
+          }
+        ],
+        "Font_en.cfg": [
+          {
+            "Label": "Common",
+            "FamilyName": "beatfont1",
+            "File": "beatfont1.otf"
+          },
+          {
+            "Label": "Message",
+            "FamilyName": "message",
+            "File": "FOT-UDKakugo_LargePro-DB.otf",
+            "LineBreak": "1.4"
+          },
+          {
+            "Label": "Speaker",
+            "FamilyName": "speaker",
+            "File": "FOT-SkipProN-D.otf"
+          },
+          {
+            "Label": "Hud",
+            "FamilyName": "hud",
+            "File": "FOT-UDKakugo_LargePro-DB.otf"
+          }
+        ]
+      },
+      "runtime_configs": {
+        "Font.cfg": [
+          {
+            "Label": "Common",
+            "FamilyName": "beatfont1",
+            "File": "beatfont1.otf"
+          },
+          {
+            "Label": "Message",
+            "FamilyName": "message",
+            "File": "FOT-NewCinemaAStd-D.otf",
+            "LineBreak": "1.05"
+          },
+          {
+            "Label": "Speaker",
+            "FamilyName": "speaker",
+            "File": "FOT-SkipProN-D.otf"
+          },
+          {
+            "Label": "Hud",
+            "FamilyName": "hud",
+            "File": "FOT-UDKakugo_LargePro-DB.otf"
+          },
+          {
+            "Label": "sub",
+            "FamilyName": "sub",
+            "File": "NotoSansSC-500.ttf"
+          }
+        ],
+        "Font_cn.cfg": [
+          {
+            "Label": "Common",
+            "FamilyName": "beatfont1",
+            "File": "AGE2UISansSC-Dash.otf"
+          },
+          {
+            "Label": "Message",
+            "FamilyName": "message",
+            "File": "BWCKKT-Bold.ttf",
+            "LineBreak": "1.05"
+          },
+          {
+            "Label": "Speaker",
+            "FamilyName": "speaker",
+            "File": "MEBheiheiti.ttf"
+          },
+          {
+            "Label": "Hud",
+            "FamilyName": "hud",
+            "File": "NotoSansSC-500.ttf"
+          },
+          {
+            "Label": "LanguageChoice",
+            "FamilyName": "LanguageChoice",
+            "File": "IBMPlexSansSC-Regular.otf"
+          },
+          {
+            "Label": "sub",
+            "FamilyName": "sub",
+            "File": "AGE2FallbackSC-Dash.ttf"
+          }
+        ],
+        "Font_en.cfg": [
+          {
+            "Label": "Common",
+            "FamilyName": "beatfont1",
+            "File": "beatfont1.otf"
+          },
+          {
+            "Label": "Message",
+            "FamilyName": "message",
+            "File": "FOT-UDKakugo_LargePro-DB.otf",
+            "LineBreak": "1.4"
+          },
+          {
+            "Label": "Speaker",
+            "FamilyName": "speaker",
+            "File": "FOT-SkipProN-D.otf"
+          },
+          {
+            "Label": "Hud",
+            "FamilyName": "hud",
+            "File": "FOT-UDKakugo_LargePro-DB.otf"
+          },
+          {
+            "Label": "sub",
+            "FamilyName": "sub",
+            "File": "NotoSansSC-500.ttf"
+          }
+        ]
+      }
+    }
+  }
+}

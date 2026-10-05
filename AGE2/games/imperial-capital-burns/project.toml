@@ -5,8 +5,8 @@ engine = "AGE2"
 steam_app_id = 2630300
 target_locales = ["zh-Hans"]
 terminology_common_authority = "../../../localization/glossaries/muv-luv.ja-zh-Hans.csv"
-development_status = "historical-test-release"
-player_release_tag = "imperial-capital-burns-beta0.1"
+development_status = "published-beta"
+player_release_tag = "imperial-capital-burns-BETA-0.2.1"
 translation_authorities = [
   "translations/main.ja-zh-Hans.csv",
   "translations/speakers.ja-zh-Hans.csv",
@@ -15,6 +15,7 @@ translation_authorities = [
 ]
 terminology_authority = "../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv"
 terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
+image_authority_scope = "historical-evidence"
 image_authority = "images/release-inventory.json"
 image_copy_authority = "images/copy/source-image-lock.v2.json"
 font_policy = "../../../localization/fonts/README.md"
