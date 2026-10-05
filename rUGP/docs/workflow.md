@@ -7,10 +7,10 @@ This is the required investigation/build sequence, not a claim that one public c
 Record SHA-256 and byte size of the executable, every RIO volume, ICI, original resource DLL, and existing RUO state. Work from a copy or read-only handle. A Steam update creates a new unsupported baseline until re-audited.
 
 When a matching clear-name Steam depot manifest is available, the
-engine-neutral [`verify_steam_depot_manifest.py`](../../localization/tools/verify_steam_depot_manifest.py)
+engine-neutral [`verify_steam_depot_manifest.py`](../../docs/research/localization/tools/verify_steam_depot_manifest.py)
 can additionally prove selected local files against its complete file/chunk
 map. This is a content check, not Steam-signature authentication; see the
-[source-baseline instructions](../../localization/new-locale.md#3-freeze-the-legal-source-baseline).
+[source-baseline instructions](../../localization/text/new-locale.md#3-freeze-the-legal-source-baseline).
 
 ## 2. Decode the catalog
 

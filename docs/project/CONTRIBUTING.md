@@ -1,75 +1,63 @@
 # 参与贡献
 
-[返回首页](../../README.md) · [贡献者与致谢](CONTRIBUTORS.md) · [完整本地化工作流](../../localization/workflow.md) · [资产地图](../research/asset-map.md)
+[返回首页](../../README.md) · [贡献者与致谢](CONTRIBUTORS.md) · [本地化制作](../../localization/README.md) · [资产地图](../research/asset-map.md)
 
-> English contributors can use the concise summaries in each major README and
-> open an Issue or Pull Request in English. The Chinese rules below are the
-> current project authority.
+欢迎反馈问题、校对译文、补充术语、完善文档和工具，也欢迎研究其他语言的本地化。**没有必须先完成整章、提交全套测试或提供安装包的参与资格要求。** 一个可说明、可复核的小修正也可以提交。中文和英文 Issue／PR 都欢迎。
 
-Contributions for Simplified Chinese or another locale are welcome. The project accepts durable source, reproducible tools, tests, documentation, and evidence-backed corrections; it does not accept extracted game dumps or unexplained generated output.
+懂日语可以从 [ParaTranz 对应项目](../../localization/paratranz/README.md)参与；不懂日语也欢迎反馈错字、残字、显示或安装问题，QQ群 **273626767**。
 
-## 君望参与入口
+## 从哪里开始
 
-君望本篇与附加篇的工作范围及目录见[项目入口](../../AGE2/games/kiminozo/README.md)。当前仍在最终文本审核和 UI、图片制作，尚未开放公开全文校对或发布补丁；可通过项目 QQ 群交流。涉及旧译的样例和纠错按已确认公开范围整理。
+| 内容 | 位置与方法 |
+| --- | --- |
+| 文本翻译／校对 | [文本流程](../../localization/text/README.md)与本作译文目录，保留身份、源摘要及控制符 |
+| 图片汉化 | [图片流程](../../localization/images/README.md)，按实际用途分组，制作方先自检、维护者最后审核 |
+| 字体／术语 | [字体](../../localization/fonts/README.md)、[现行术语](../../localization/glossaries/README.md)，按游戏与用途选择 |
+| 提取、写回、运行时 | AGE2 放 [AGE2](../../AGE2/README.md)，Photon／RIO 放 [rUGP](../../rUGP/README.md) |
+| 来源调查／历史资料 | [研究记录](../research/localization/README.md)，不混入现行制作清单 |
+| 新语言 | [新语言指南](../../localization/text/new-locale.md)，建立独立目标，不覆盖现有日文依据或中文 |
 
-## Choose the correct boundary
+不熟悉目录可以先提 Issue，维护者协助定位和整理。尚未完成的工具或研究结论也可以发 draft PR，说明可用范围与剩余问题；不要把未验证的功能写成已经支持。
 
-1. Human translation, terminology, review, and image-authoring policy belongs in `localization/`.
-2. FPD, EGPACK, AGE2 WebP/loose-overlay work belongs in `AGE2/`.
-3. RIO, ICI, RUO, CRsa, CRip/Cr6Ti, Photon runtime and packaging work belongs in `rUGP/`.
-4. A game-specific translation, manifest, or release note belongs under that engine's `games/<game>/` directory.
+## PR 需要说明什么
 
-AGE2 must not import rUGP code and rUGP must not import AGE2 code. Cross-engine code proposed at the repository root will be rejected unless it is truly engine-neutral human-workflow tooling.
+说明改了什么、为什么，以及直接相关的验证结果。译文修正给出游戏、场景和理解依据；图片修正展示对应位置；工具说明触发条件和修改后的行为。没有实机结果就如实说明，由维护者判断是否需要补测。
 
-完整官方文本、原始图片和游戏容器不进入 `localization/` 或其他公开目录。具体游戏的
-译文、图片文案、资源身份和源哈希跟随该游戏；跨引擎的方法、共用术语和通用 QA 工具
-才进入 `localization/`。详见[资产地图](../research/asset-map.md)。
+- 文档、入口和措辞：核对内容及链接，无需各游戏全套测试或回滚演练。
+- 译文、术语及同步数据：检查受影响的身份、结构、控制符与术语；改变实际显示时再查对应场景。
+- 工具行为：从对应现有测试开始。只有风险、失败或依赖变化需要时，才扩大验证；不为重复实现而新增测试。
+- 引擎／运行时／安装行为：按对应引擎要求做格式、平台和必要实机检查，不能用文档检查替代。
 
-## Locale and source-data rules
+CI 的必要检查仍需通过；[检查范围](ci-checks.md)按文件类型区分。历史审核账本用于保存决策链，不是冻结所有未来译文的白名单。格式、资源绑定、冲突检测与实际适用版本等必要约束保留。
 
-- Use BCP 47-style locale names in filenames and directories, for example `zh-Hans`, `ko`, or `ru`.
-- Preserve stable resource IDs, source hashes, control-code contracts, and row identity.
-- Translate from the authoritative source-language slot. Do not silently fall back to English, an old fan translation, OCR, or fuzzy matching.
-- Record a review status separately from the translated text.
-- Never commit credentials, API keys, workstation paths, or private source archives.
+## 工具怎样进入维护范围
 
-See [`localization/standards/`](../../localization/standards/) for detailed table and review rules.
+优先复用现有工具，小工具只解决明确需要。正式写入工具要防止错版本、错资源和覆盖输入，公开 CLI 与依赖，并验证相应输出；只读调查脚本可以先作为研究证据，不必假装是通用打包器。一次性探针和已放弃方案提炼为研究结论或必要回归，不放进日常工具目录。
 
-## Copyright and clean-room boundary
+## 公开内容与来源
 
-Do not submit complete game archives, executables, official fonts, audio/video, or bulk extracted images. A format fixture must be synthetic or independently constructed and small enough to demonstrate only the structure being tested. Where original bytes cannot be published, commit hashes, stable locators, dimensions, and a reproducible extraction recipe instead.
+不提交凭据、私人通信、工作站路径、完整游戏容器、官方二进制／字体或批量原始图片。结构测试使用小型合成素材；来源不可公开时保留可复核身份、摘要和提取方法。图片、字体及第三方素材说明实际来源与许可，代码 MIT 许可不能自动授权这些资源。详见[资产与发布规则](asset-and-release-policy.md)。
 
-Localized or derived images require the [asset and release policy](asset-and-release-policy.md). A code license does not license those images.
+君望旧译及校对材料遵守已确认的公开范围，不能因整理术语或样例而夹带完整文本或能重建全文的数据。[君望入口](../../AGE2/games/kiminozo/README.md)。
 
-## Tool quality bar
+## 常用检查
 
-A public tool must:
-
-- accept inputs and outputs through a documented CLI rather than hard-coded local paths;
-- fail closed on unsupported layouts, versions, hashes, or ambiguous matches;
-- avoid overwriting an input or existing output by default;
-- verify its own output and expose useful errors;
-- have a synthetic test or a documented reason why one is impossible;
-- run from a clean clone with declared dependencies.
-
-One-off probes and rejected experiments should be distilled into a postmortem or regression test, not promoted as supported tools.
-
-## Local checks
-
-Install Python 3.12 and the pinned dependencies:
+修改工具时安装仓库依赖，再运行相关测试；下面是各组入口，不是每个 PR 都必须逐条执行的清单。
 
 ```powershell
 python -m pip install -r requirements-dev.txt
+python -m unittest discover -s localization/tests -p "test_*.py" -v
 python -m unittest discover -s AGE2/tests -p "test_*.py" -v
 python -m unittest discover -s rUGP/tests -p "test_*.py" -v
-python -m unittest discover -s localization/tests -p "test_*.py" -v
-python -m unittest discover -s .github/scripts/tests -p "test_*.py" -v
-python -m compileall -q AGE2 rUGP localization .github/scripts
+python -m unittest discover -s docs/research/localization/tests -p "test_*.py" -v
 python .github/scripts/verify_repository.py
 ```
 
-Native Photon runtime changes also require Zig 0.16.0 and both pinned 光子之花/光子旋律 builds described in [`rUGP/runtime/README.md`](../../rUGP/runtime/README.md).
+Photon 原生代码构建按 [runtime README](../../rUGP/runtime/README.md)使用对应工具链；仅改中文文案、文档或共用图片流程不要求编译无关 DLL。
 
-## Pull requests
+<details>
+<summary>English · contributing</summary>
 
-Explain the affected game, engine, resource identity, before/after behavior, test evidence, and whether any new redistribution rights are required. Keep generated releases outside the commit. A correction to translation text should include enough Japanese context and scene identity for another reviewer to reproduce the decision.
+Small, reviewable corrections are welcome. There is no prerequisite to finish a chapter, run every engine suite or provide a patch package. Explain the problem, resulting behavior and relevant verification; document real limitations. Start with affected tests and expand only for a concrete dependency or risk. Draft PRs can share incomplete research with a clear scope. Preserve stable resource identity and control codes, and do not submit proprietary dumps, private material or credentials.
+
+</details>

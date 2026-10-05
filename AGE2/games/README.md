@@ -1,18 +1,18 @@
 # AGE2 游戏项目
 
-[返回 AGE2](../README.md) · [玩家指南](../../docs/player/README.md) · [完整资产地图](../../docs/research/asset-map.md) · [通用本地化工作流](../../localization/workflow.md)
+[返回 AGE2](../README.md) · [玩家指南](../../docs/player/README.md) · [完整资产地图](../../docs/research/asset-map.md) · [通用本地化工作流](../../localization/text/workflow.md)
 
 每个目录是一部独立游戏。`project.toml` 记录 Steam App ID、开发状态以及文本、图片和
-字体权威入口；`translations/` 保存可维护译文；`images/` 保存图片文案或 Release
-图片清单。历史补丁里的字体和 WebP 二进制继续留在 Release，不在 Git 中重复保存。
+字体权威入口；`translations/` 保存可维护译文；`images/` 保存图片文案或历史 Release
+图片清单。补丁里的字体和 WebP 二进制继续留在 Release，不在 Git 中重复保存。当前字体逐作配置见[字体目录](../../localization/fonts/README.md)。
 
 | 游戏 | App ID | 主要文本 | 历史 Release 中的 WebP | 玩家状态 |
 | --- | ---: | ---: | ---: | --- |
-| [TDA00](tda00/) | 1407100 | 3,713 行 | [70 项](tda00/images/) | 历史测试包 beta0.1 |
-| [TDA01](tda01/) | 1407090 | 8,565 行 | [93 项](tda01/images/) | 历史测试包 beta0.2.2 |
-| [TDA02](tda02/) | 1342410 | 6,589 行 | [100 项](tda02/images/) | 历史测试包 beta0.1 |
-| [TDA03](tda03/) | 789830 | 6,913 行 | [152 项](tda03/images/) | 历史测试包 beta0.1.6 |
-| [帝都燃烧篇](imperial-capital-burns/) | 2630300 | 5,564 行正文及辅助表 | [315 项](imperial-capital-burns/images/) | 历史测试包 beta0.1 |
+| [TDA00](tda00/) | 1407100 | 3,713 行 | [70 项](tda00/images/) | [BETA 0.2.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-BETA-0.2.1) |
+| [TDA01](tda01/) | 1407090 | 8,565 行 | [93 项](tda01/images/) | [BETA 0.3.3](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-BETA-0.3.3) |
+| [TDA02](tda02/) | 1342410 | 6,589 行 | [100 项](tda02/images/) | [BETA 0.2.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda02-BETA-0.2.1) |
+| [TDA03](tda03/) | 789830 | 6,913 行 | [152 项](tda03/images/) | [BETA 0.2.7](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-BETA-0.2.7) |
+| [帝都燃烧篇](imperial-capital-burns/) | 2630300 | 5,564 行正文及辅助表 | [315 项](imperial-capital-burns/images/) | [BETA 0.2.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
 | [君望 Enhanced Edition](kiminozo/) | 1777440 | 文本审核中，正文尚未公开 | [UI、图片与字体制作中](kiminozo/images/) | 在制，尚未发布补丁 |
 
 君望项目同时整理 Another Episode Collection+（App ID 3112140）；本篇与附加篇分别管理。

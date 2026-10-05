@@ -32,8 +32,8 @@ by identity and hash.
 | TDA02 | [`translations/ja-zh-Hans.csv`](../../AGE2/games/tda02/translations/ja-zh-Hans.csv) | 6,589 rows |
 | TDA03 | [`translations/ja-zh-Hans.csv`](../../AGE2/games/tda03/translations/ja-zh-Hans.csv) | 6,913 rows |
 | The Imperial Capital Burns | [`translations/`](../../AGE2/games/imperial-capital-burns/translations/) | 5,564 main rows, plus auxiliary, choice, speaker, and UI tables |
-| 光子之花 | [`translations/`](../../rUGP/games/photonflowers/translations/) | 12,964 reviewed rows plus a separate 69-row exact runtime-bound table |
-| 光子旋律 | [`translations/`](../../rUGP/games/photonmelodies/translations/) | 44,583 reviewed rows plus a separate 151-row exact runtime-bound table |
+| 光子之花 | [`translations/`](../../rUGP/games/photonflowers/translations/) | 13,025 maintained chapter/system rows; earlier reviewed/runtime bindings are historical evidence |
+| 光子旋律 | [`translations/`](../../rUGP/games/photonmelodies/translations/) | 44,698 maintained chapter/system rows; earlier reviewed/runtime bindings are historical evidence |
 | Kiminozo and Another Episode Collection+ | [Text](../../AGE2/games/kiminozo/translations/README.md) and [terminology/baselines](../../AGE2/games/kiminozo/terminology/README.md) | In review; no public dialogue tables yet |
 
 Counts describe public records, not unique spoken lines, full in-game approval,
@@ -67,7 +67,7 @@ mirrorable player patch.
 A maintainable image record consists of resource identity, source hash,
 localized copy, approved textless authority, font/layout parameters,
 allowed-change region, output hash, and review result. See the
-[localized-image workflow](../../localization/image-workflow.md).
+[localized-image workflow](../../localization/images/tools.md).
 
 ## Fonts and a new locale
 
@@ -76,8 +76,8 @@ Shared font provenance, licensing, and glyph-coverage rules live under
 engine-specific: AGE2 must verify loose paths/configuration, while rUGP must
 verify registration, family substitution, GDI requests, and the build gate.
 
-Start with the [complete English workflow](../../localization/workflow.en.md)
-and [new-locale guide](../../localization/new-locale.md). Extract lawful source
+Start with the [complete English workflow](../../localization/text/workflow.en.md)
+and [new-locale guide](../../localization/text/new-locale.md). Extract lawful source
 locally, join it by public identities and hashes, keep target text and game-bound
 image copy with the relevant game, and contribute only genuinely engine-neutral
 rules or tools back to `localization/`.

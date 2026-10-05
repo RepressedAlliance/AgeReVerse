@@ -38,7 +38,7 @@ AGE2/games/kiminozo/
 ```
 
 通用容器和文本工具沿用 [AGE2 工具目录](../../tools/)，通用流程沿用
-[本地化规范](../../../localization/standards/README.md)。君望专用配置、构建与安装入口，
+[本地化规范](../../../localization/text/README.md)。君望专用配置、构建与安装入口，
 会在资源方案确认后补入本目录并从此页链接；其他 AGE2 作品的工具通过测试，不能代替君望实测。
 
 ## 翻译来源与公开范围

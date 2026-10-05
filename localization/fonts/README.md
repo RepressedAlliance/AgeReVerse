@@ -1,60 +1,60 @@
-# 字体资产与发布规则
+# 字体：游戏文本与图片制作
 
-[返回本地化工作区](../README.md) · [字形覆盖工具](../tools/font_coverage.py) · [rUGP 字体复盘](../../rUGP/docs/postmortems/font-runtime.md) · [AGE2 失败方案复盘](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md)
+[返回本地化](../README.md) · **[游戏字体对应表](runtime.md)** · **[图片用字与样式](images.md)** · [精确版本目录](catalog.json)
 
-这里保存字体的选择、来源、许可证和构建规则，不把来源不明的字体二进制直接提交进
-Git。字体不是“把一个 TTF 复制进去”这么简单；至少要分别验证字符覆盖、字体家族名、
-引擎选字、运行时注册、排版尺寸和实际游戏显示。
+这里集中维护七作的字体选择与来源，游戏文本和图片烘焙用字分别登记。替换运行时字体不会改变已画进图片的文字，重画图片也不会修复正文的选字、字宽或换行。
 
-君望本篇及附加篇的字体已完成选型，最终配置、资源写入及游戏内验证仍在进行；参见[君望 UI、图片与字体](../../AGE2/games/kiminozo/images/README.md)。下表已有作品的发布配置不直接适用于君望。
+**核对范围：七作当前发布包中的运行时字体与配置已核对；图片制作字体尚未保证找全。** 图片目录目前整理的是已查明的输入、候选及采用记录，还没有逐批追溯全部最终成品。其余图片字体与实际采用关系留待后续专项整理，不把阶段性清单写成完整清单。
 
-## 当前方案
+## 当前发布版使用什么
 
-| 范围 | 当前候选 | Git 状态 | 发布要求 |
-| --- | --- | --- | --- |
-| TDA00–03、帝都燃烧篇 | Source Han Sans SC／思源黑体简体中文 | 不追踪二进制 | 固定上游版本与 SHA-256，字体和完整许可证一起进入 Release，并通过全量译文字形检查 |
-| 光子之花、光子旋律 | `PhotonCN-Regular.ttf` 候选及 rUGP 字体运行时 | 不追踪二进制 | 先证明其源字体、修改/子集化过程、家族名和再分发许可，再由版本锁定运行时加载 |
+| 游戏 | 核对版本 | 中文运行时方案 |
+| --- | --- | --- |
+| TDA00 | BETA 0.2.1 | 下列 AGE2 六个角色 |
+| TDA01 | BETA 0.3.3 | 同上 |
+| TDA02 | BETA 0.2.1 | 同上 |
+| TDA03 | BETA 0.2.7 | 同上 |
+| 帝都燃烧 | BETA 0.2.1 | 同上 |
+| PF | BETA 0.1.2 | PF 专用 `PhotonR2-Regular.ttf` |
+| PM | BETA 0.1.2 | PM 专用 `PhotonR2-Regular.ttf` |
 
-历史测试包曾携带字体但没有把许可证文件一并封装。这也是历史 Release 当前仍标记为
-rights review pending 的原因之一；新版本不能沿用这个缺口。
+AGE2 中文实际配置是：系统 **AGE2 UI Sans SC Dash**、正文 **白无常可可体粗**、姓名 **美呗嘿嘿体**、HUD **Noto Sans SC 500**、语言选择 **IBM Plex Sans SC Regular**、备用 **AGE2 Fallback SC Dash**。旧介绍中的“统一思源黑体候选”已经不能描述当前包。
 
-## 一个字体进入正式补丁前必须保存什么
+PF／PM 都请求 `PhotonR2` 家族，但两作字体字集和修正不同，**文件同名不代表内容相同，不能互换**。旧 `PhotonCN`、早期 PhotonR2 与当前发布包分别记录；详见[运行时对应表](runtime.md)。
 
-```text
-fonts/<family>/
-├─ README.md          字体用途、游戏与引擎选择方式
-├─ LICENSE.txt        上游完整许可证
-├─ source.json        上游 URL、版本、原始 SHA-256
-├─ build.ps1 / build.py（若修改或子集化）
-└─ coverage.json      对目标译文字符集的检查结果
-```
+## 怎么核对的
 
-只有许可证明确允许再分发时，字体二进制才进入 Release；是否进入 Git 还要考虑体积与历史
-膨胀。若字体经过改名、合并、子集化或修改 OpenType 表，必须同时公开可复现命令和输出
-哈希，不能只留下一个无法解释来源的成品。
+2026-10-05 逐作核对：AGE2 包内字体和三个实际配置的摘要与对应公开 release manifest 一致；PF／PM 从下载 ZIP 内安装器的嵌入包读取字体，ZIP 摘要与公开 manifest 一致。结果、版本、文件摘要、原版配置和全部随包字体见 [catalog.json](catalog.json)，对应发布入口以[玩家版本索引](../../docs/player/release-index.json)为准。
 
-## 字形覆盖
+“随包附带”与“被当前配置使用”分开：TDA 每包附带 11 个字体文件，帝都 13 个，其中中文配置直接选用 6 个角色；原版日／英配置及图片制作也需独立核对。查明附带的旧候选不等于建议继续打包它们。
 
-在仓库根目录执行：
+## 来源与复用
+
+| 字体家族 | 来源 |
+| --- | --- |
+| Noto Sans／Serif CJK | [Noto CJK](https://github.com/notofonts/noto-cjk)，OFL 1.1 |
+| 思源黑体、PhotonR2 派生基础 | [Source Han Sans](https://github.com/adobe-fonts/source-han-sans)，OFL 1.1 |
+| IBM Plex Sans SC、AGE2 UI Sans 派生基础 | [IBM Plex](https://github.com/IBM/plex)，OFL 1.1 |
+| 源石黑体、AGE2 GenSeki 派生基础 | [GenSeki](https://github.com/ButTaiwan/genseki-font)，OFL 1.1 |
+| 狮尾加糖宋体 | [Swei Sugar](https://github.com/max32002/swei-sugar)，OFL 1.1 |
+| 白无常可可体 | [作者发布页](https://www.zcool.com.cn/work/ZNTk4NTI2ODA%3D.html)，作者使用声明；不属于 OFL |
+| 美呗嘿嘿体 | [作者发布页](https://www.zcool.com.cn/work/ZNTY3OTI5ODg%3D.html)，作者使用声明；不属于 OFL |
+
+白无常／美呗的来源说明来自已发布包和维护者提供的作者说明，本次站酷页面未能读到正文，不宣称重新完整核验了授权。两款有已记录的缺字补充；旧来源文字中的“未修改字集”不能替代补充后的构建记录。此目录不重新授予字体许可，也不复制官方商业字体。
+
+制作时保存实际字体文件版本、来源、许可、修改／子集化方式与输出摘要；衍生字体的改名和许可证跟随实际来源。二进制继续随适当的发布包提供，Git 维护目录与配方，不重复提交整套大字体。
+
+## 覆盖与实机
 
 ```powershell
-python -m localization.tools.font_coverage `
-  X:\fonts\candidate.ttf `
-  AGE2/games/tda01/translations/ja-zh-Hans.csv `
-  --column cn_text
+python -m localization.tools.font_coverage work/TargetFont.ttf AGE2/games/tda01/translations/ja-zh-Hans.csv --column cn_text
 ```
 
-覆盖率通过只说明字体“含有这些字”，不说明游戏真的选中了它。AGE2 还要验证松散覆盖
-路径、XML／配置和所有 UI；rUGP 还要验证字体注册、家族替换、GDI 请求与 Hook 版本门。
+这只检查字符是否在字体 cmap 中。AGE2 还要核对配置、语言槽、松散覆盖和实际显示；rUGP 还要核对字体加载、家族替换和版本绑定；图片另查排版、笔画和视觉融合。需要补字时才用[子集扩展工具](../tools/extend_font_subset.py)，PM 度量专项见 [rUGP 字体工具](../../rUGP/tools/fonts/README.md)。新语言重新做其字符覆盖和排版检查。
 
-## 多语言团队
+<details>
+<summary>English · font inventory</summary>
 
-韩语、俄语等语言必须重新选择字体并重新跑覆盖检查。中文字体通过，不能推出其他文字
-系统也通过；同一字体文件在不同系统上的 fallback 行为也不能作为发布保证。
+The catalog covers the seven released games, original AGE2 roles, every bundled AGE2 font, the distinct PF/PM PhotonR2 binaries, and known image-authoring inputs. Runtime selection, bundled-but-unused fonts, image production and historical trials are separate. Source hashes identify files; they do not establish visual acceptance or grant redistribution rights. For another locale, check its own coverage, shaping, metrics and engine selection.
 
-## English summary
-
-Font binaries are license-gated release inputs, not unexplained repository
-artifacts. Record the upstream version, license, hashes, any modification or
-subsetting command, coverage result and engine-specific selection path before
-distribution.
+</details>

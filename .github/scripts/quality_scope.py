@@ -13,13 +13,15 @@ def classify(paths):
         data = (
             (path.startswith(('AGE2/games/', 'rUGP/games/')) and '/translations/' in path)
             or path.startswith(('AGE2/evidence/translations/', 'localization/glossaries/',
-                                'localization/references/', 'localization/reviews/',
+                                'docs/research/localization/references/', 'docs/research/localization/reviews/',
+                                'docs/research/localization/terminology-history/',
                                 'localization/paratranz/'))
+            or path == 'localization/fonts/catalog.json'
         ) and Path(path).suffix in ('.csv', '.tsv', '.json')
         if data or path.endswith('.md'):
             continue
         # AGE2/localization Python cannot change the Photon DLL; still test on Windows.
-        if path.startswith(('AGE2/', 'localization/')) and Path(path).suffix in ('.py', '.txt'):
+        if path.startswith(('AGE2/', 'localization/', 'docs/research/localization/')) and Path(path).suffix in ('.py', '.txt'):
             windows = True
             continue
         # Unknown files, workflows, runtime headers, image manifests and dependencies

@@ -1,77 +1,43 @@
-# 通用本地化工作区
+# 本地化制作
 
-[返回首页](../README.md) · **[中文完整工作流](workflow.md)** · **[English workflow](workflow.en.md)** · [规则顺序](standards/README.md) · [制作新语言](new-locale.md) · [资产地图](../docs/research/asset-map.md) · [图片流程](image-workflow.md) · [字体](fonts/README.md)
+[返回首页](../README.md) · [各游戏资产](../docs/research/asset-map.md) · [参与贡献](../docs/project/CONTRIBUTING.md)
 
-这里放不依赖具体引擎的本地化方法：翻译、术语、审核、图片制作、字体覆盖和新语言模板。FPD/EGPACK 工具属于 [AGE2](../AGE2/README.md)，RIO/RUO/Hook 属于 [rUGP](../rUGP/README.md)，不会混进本目录。
+从正在做的工作进入。文本和图片各有自己的分步流程，字体、术语和 ParaTranz 各自集中维护，不再增加 `common/` 层。
 
-## 最重要的内容在哪里
+**先读[翻译最高原则](principles.md)：目标是日译中；日文原版已有英文保留英文，日文只有确实更适合时才译成英文。官方英文版独有素材找对应日语语音听译成中文。正文翻译和图片制作一体适用。**
 
-| 内容 | 共用部分 | 游戏专属部分 |
+| 工作 | 入口 | 这里维护什么 |
 | --- | --- | --- |
-| 正文与 UI 文本 | [完整流程](workflow.md)、[初译规则](standards/05-translation.md)、[第二轮独立审核](standards/06-review.md)、[源数据规范](standards/02-source-data.md) | [AGE2 games](../AGE2/games/) · [rUGP games](../rUGP/games/) 下各自的 `translations/` |
-| 术语 | [通用总表与七作独立表](glossaries/README.md)、[维护规则](standards/04-terminology.md) | 每作仅加载通用 + 本作；候选和历史词库不生效，语境限制不可省略 |
-| 图片 | [批量制作与视觉规范](image-production.md)、[无字底、确定性排字与 QA 流程](image-workflow.md)、[`tools/images/`](tools/images/) | [五部 AGE2 WebP 清单](../AGE2/games/README.md) · [帝都图片文案](../AGE2/games/imperial-capital-burns/images/) · [Photon 图片身份与路由](../rUGP/evidence/photon/README.md) |
-| 字体 | [字体来源与发布规则](fonts/README.md)、[字形覆盖工具](tools/font_coverage.py) | 引擎实际选字和运行时问题分别记录在 [AGE2](../AGE2/docs/postmortems/font-glyph-substitution-retired.md) 与 [rUGP](../rUGP/docs/postmortems/font-runtime.md) |
-| 审核与反馈 | [审核规范](standards/06-review.md) | 各引擎的质量门与实机清单 |
+| 文本汉化 | **[text/](text/README.md)** | 已使用的两轮翻译流程、01—07 文本规范、新语言指南 |
+| 图片汉化 | **[images/](images/README.md)** | 五阶段：提取与分类 → 文案与样式 → 制作 → 自检返修 → 人工审核与交付 |
+| 字体 | **[fonts/](fonts/README.md)** | 七作原版／补丁字体、图片用字、来源和对应关系 |
+| 术语 | **[glossaries/](glossaries/README.md)** | 系列通用表和七作现行表；每作仅加载通用＋本作 |
+| 协作校对 | **[paratranz/](paratranz/README.md)** | 四个现有项目、参与方式、发布后改文回流与同步 |
+| 必要工具 | [tools/](tools/README.md) | 新语言表、字体覆盖、通用图片制作／校验、校对同步 |
+| 工具测试 | [tests/](tests/README.md) | 对应上述工具的数据与行为检查，使用合成输入 |
 
-仓库目前公开的是可维护文本表、图片文案/身份/哈希、确定性工具与技术结论。成品图、无字底和字体二进制只有在权利与许可证可以说明时才进入 Git；未审计的本地批次不会冒充正式资产。
+**本项目的文本有 AI 参与，但不是 AI 直出。** 初译后独立对照日文复核，解决疑点、统一术语，完成技术与实机检查；维护者再人工检查、修改错误并复查结果，完成后才发布。玩家下载的版本已经包含发布前的人工修改。ParaTranz 和玩家反馈继续推动后续版本修正，不能反过来理解为“先发布未经处理的生成稿”。详见[文本完整流程](text/workflow.md)。
 
-## 本项目实际采用的两轮流程
+图片流程采用相同的责任划分：制作方先逐图自检、修正，再交维护者人工审核；审核通过的具体成品才能进入引擎适配和版本制作。视觉检查、人工确认、实机确认和发布分别记录。
 
-1. **合法提取并锁定身份：**记录版本、语言槽、资源 ID/路径与源哈希。
-2. **先理解剧情并建立术语：**按 scene 阅读人物关系和前后文，冻结本章术语，不随机抽行翻译。
-3. **第一次翻译：**按完整剧情段生成候选译文；疑点标为 `question`，不能硬猜。
-4. **第二次独立审核：**重新阅读日文，逐句决定 `keep`、`revise` 或 `question`，不能只润色中文。
-5. **解决问题并再次冻结术语：**用后文、语音、截图、设定和实际调用补证据。
-6. **走正确引擎：**AGE2 与 rUGP 分别完成写回、格式验证、图片和字体检查。
-7. **实机检查与维护者人工收尾：**维护者检查并修改发现的错误，复查修改结果，完成后再发布对应版本。
-8. **发布后的协作校对：**玩家反馈和 ParaTranz 改文经确认后回到可维护源表，重跑相关检查，再纳入后续版本。
+## 具体素材放在哪里
 
-每一阶段的输入、输出、状态和完成门详见[完整工作流](workflow.md)。规范文件按
-[01—06 的顺序](standards/README.md)阅读：项目定位 → 源数据 → 表字段 → 剧情与术语
-→ 初译 → 独立审核；其中前三项是开工准备，术语规范在翻译和审核中持续适用。
+| 内容 | 位置 |
+| --- | --- |
+| 各作译文、图片文案和资源映射 | [AGE2/games/](../AGE2/games/README.md)、[rUGP/games/](../rUGP/games/README.md) 下对应作品 |
+| FPD／EGPACK／WebP 提取、写回、松散覆盖 | [AGE2 工具](../AGE2/README.md) |
+| RIO／CRsa／RUO／ICI、Photon 路由和运行时 | [rUGP 工具](../rUGP/tools/README.md) |
+| 历史词库、旧审核批次、来源调查 | [本地化研究记录](../docs/research/localization/README.md)；保留查证价值，不作为当前制作入口 |
 
-## 君望制作位置
+原始游戏图片、完整官方文本、私人校对材料、生成缓存和本地审核图库留在获准的制作环境。公开仓库维护方法、可公开的译文／术语、身份记录和工具；成品图和字体的发布范围依各自来源与许可判断。研究记录不会自动升级为现行术语或已发布成果。
 
-[君望 Steam 版及附加篇](../AGE2/games/kiminozo/README.md)沿用本工作流，文本、[术语与基线](../AGE2/games/kiminozo/terminology/README.md)、UI 和图片分别在游戏项目下维护。目前仍在审核与制作，尚未导出公开正文表、作内术语 CSV 或安装包。
+<details>
+<summary>English · localization and tooling</summary>
 
-## 目录
+Start with [text localization](text/workflow.en.md), [image localization](images/README.md#english-workflow), [font inventory](fonts/README.md), [glossaries](glossaries/README.md), or [ParaTranz collaboration](paratranz/README.md). Engine-neutral authoring stays here; extraction, encoding, runtime binding and packaging stay in AGE2 or rUGP. Historical evidence is under [research](../docs/research/localization/README.md).
 
-- [`glossaries/`](glossaries/)：系列通用表与七作现行术语表，按作品命名、集中维护。
-- [术语查证与历史记录](terminology-history/README.md)：旧表、来源证据与审计记录。
-- [`fonts/`](fonts/)：字体来源、许可证、覆盖与发布规则。
-- [`standards/`](standards/README.md)：按 01—06 编号的规范、使用顺序与冲突判断原则。
-- [`tools/`](tools/)：新语言表、字体覆盖、图片制作与校验工具。
-- [`tests/`](tests/)：不依赖游戏资源的合成测试。
-- [`image-production.md`](image-production.md)：图片汉化的批量制作原则、同套素材一致性、场景与非场景视觉验收。
-- [`image-workflow.md`](image-workflow.md)：无字底、Image API 辅助、确定性排字与图片 QA。
-- [`new-locale.md`](new-locale.md)：为 `ko`、`ru` 等新语言建立独立身份和工作表。
+Both text and image lettering follow the shared [translation principles](principles.md#english-summary): Japanese to Chinese, retaining English present in the Japanese original. English-edition-only assets are translated from their corresponding Japanese voice, not from the English edition's wording.
 
-## 开始制作其他语言
+The maintainer reviews and corrects the release candidate **before publication**. ParaTranz revisions are reviewed, integrated and verified for a later release; an online edit does not update an installed patch.
 
-使用 BCP 47 风格标识，如 `ko`、`ru`、`zh-Hans`。新语言必须新建文件或语言列，不能覆盖日文依据或现有中文。模板工具只保留稳定 ID、源哈希和明确选择的上下文，并把目标译文置空：
-
-```powershell
-python -m localization.tools.create_locale_template rUGP/games/photonflowers/text-data/history/reviewed/alternative.zh-Hans.csv work/ru/photonflowers-alternative.csv --target-locale ru --identity-column stable_id --source-hash-column source_text_sha256 --text-column translated_text
-```
-
-完整要求见[新语言指南](new-locale.md)。
-
-## 测试
-
-```powershell
-python -m pip install -r localization/requirements.txt
-python -m unittest discover -s localization/tests -p "test_*.py" -v
-python -m compileall -q localization
-```
-
-整仓检查见[贡献指南](../docs/project/CONTRIBUTING.md)。
-
-## English summary
-
-This directory contains the engine-neutral two-pass workflow: establish story
-context and terminology, produce a first translation, independently review
-each row as `keep`/`revise`/`question`, resolve questions, bind through the
-correct engine, and feed in-game/player findings back into maintained source.
-International teams should start with the [complete English workflow](workflow.en.md),
-[new-locale guide](new-locale.md), and [English asset map](../docs/en/asset-map.md).
+</details>

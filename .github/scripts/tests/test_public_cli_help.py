@@ -33,7 +33,7 @@ MODULE_COMMANDS = (
     "localization.tools.images.render_deterministic_localized_text",
     "localization.tools.images.verify_localized_image_invariants",
     "localization.tools.images.verify_localized_group_consistency",
-    "localization.tools.verify_steam_depot_manifest",
+    "docs.research.localization.tools.verify_steam_depot_manifest",
     "localization.tools.create_locale_template",
     "rUGP.packaging.steam_locale_preflight",
     "rUGP.tools.catalog.rio_inventory",

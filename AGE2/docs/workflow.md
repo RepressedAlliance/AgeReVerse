@@ -12,8 +12,8 @@ python -m pip install -r requirements-dev.txt
 
 First freeze the executable and `obb/pack.bin` identities. When you have the
 matching clear-name Steam depot manifest, use the engine-neutral
-[`verify_steam_depot_manifest.py`](../../localization/tools/verify_steam_depot_manifest.py)
-content check described in the [new-locale guide](../../localization/new-locale.md#3-freeze-the-legal-source-baseline).
+[`verify_steam_depot_manifest.py`](../../docs/research/localization/tools/verify_steam_depot_manifest.py)
+content check described in the [new-locale guide](../../localization/text/new-locale.md#3-freeze-the-legal-source-baseline).
 
 Obtain `Scrambler.cs` from the immutable FatePackageManager revision recorded in [`THIRD_PARTY.md`](../../docs/legal/THIRD_PARTY.md), verify its recorded SHA-256, and use your legally installed game:
 

@@ -174,7 +174,7 @@ class SeriesSyncTests(unittest.TestCase):
 
     def test_live_committed_project_coverage_and_source_fields(self):
         repo=Path(__file__).resolve().parents[2]
-        native=json.loads((repo/'localization/reviews/age2-native-clear-records-20260914.json').read_text(encoding='utf8'))
+        native=json.loads((repo/'docs/research/localization/reviews/age2-native-clear-records-20260914.json').read_text(encoding='utf8'))
         restored={r['game'].upper()+'|'+r['egpack']+'|'+r['id']:r for r in native['controls']+native['credits']}
         for slug,total in [('pf',13025),('pm',44698),('tda',26696)]:
             manifest=json.loads((repo/sync.folder(slug)/'manifest.json').read_text(encoding='utf8'))

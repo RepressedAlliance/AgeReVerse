@@ -25,7 +25,7 @@
 
 ## Hive 术语纠正
 
-本篇独立术语证据 `localization/references/main-al-independent-20260909/ml-independent-baseline.json` 中，`ハイヴ` 对应“巢穴(HIVE)”与“巢穴”，`佐渡島ハイヴ` 对应“佐渡岛巢穴”。AL 独立证据包含“Phase-4巢穴”“明斯克巢穴”；同时存在 `Original HIVE` 专名形式，不作全局机械替换。
+本篇独立术语证据 `docs/research/localization/references/main-al-independent-20260909/ml-independent-baseline.json` 中，`ハイヴ` 对应“巢穴(HIVE)”与“巢穴”，`佐渡島ハイヴ` 对应“佐渡岛巢穴”。AL 独立证据包含“Phase-4巢穴”“明斯克巢穴”；同时存在 `Original HIVE` 专名形式，不作全局机械替换。
 
 审核编号 022、资源 `add_telop_23_ck.webp` 的“名为 Hive 的巨大巢穴”没有保留英文的必要，修为：
 

@@ -175,7 +175,7 @@ PhotonCN 构建审计与构建器记录的基础输入及改造如下：
 
 PhotonCN／PhotonR2 是 **Noto Sans SC 的修改与引擎适配版**，保留上游版权和 OFL。基础字形与输入文件身份已固定，历史下载渠道未确认。栅格图片中的字体单独记录，不统一归为游戏运行时字体。
 
-证据：[基础字体构建审计（本地记录 L13）](evidence-index.md#l13)、[基础构建器（本地记录 L22）](evidence-index.md#l22)、[光子旋律补字说明](../../../localization/fonts/pm-er-20260909.md)。
+证据：[基础字体构建审计（本地记录 L13）](evidence-index.md#l13)、[基础构建器（本地记录 L22）](evidence-index.md#l22)、[光子旋律补字说明](../../../rUGP/docs/postmortems/pm-er-20260909.md)。
 
 ## 7. 其他组件的完整归属表
 
