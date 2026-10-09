@@ -1,0 +1,629 @@
+{
+  "schema": "photon-crsi-technical-layout/1",
+  "source_global_offset": 1715679260,
+  "source_sha256": "b4ba441300977b070e5275b9556047a54cf5f493365ee7152c197ca8d8e5b410",
+  "width": 1024,
+  "height": 600,
+  "frame_count": 1904,
+  "frame_index_origin": 0,
+  "end_semantics": "exclusive",
+  "status": "glyph-layout-reviewed; detected animation boundaries remain candidates",
+  "scope": "25 technical/price rows in ending eye, arm and leg scenes; opening notice is separate",
+  "text_file": "rebirth-text.zh-CN.csv",
+  "text_variant": "long",
+  "limitations": [
+    "Coordinates and reference frames apply only to this no-narration-caption resource",
+    "White core masks omit antialiasing/glow; they require expansion for removal",
+    "A detection span is a search window, not the actual display interval",
+    "Bright model details can bias fade detection; price blinking must be preserved",
+    "Spatial-only repair was rejected for visible grid and model damage; no production repair is approved"
+  ],
+  "overlays": [
+    {
+      "occurrence": "eye.eye.heading.title",
+      "group": "eye",
+      "text_id": "eye.heading",
+      "box_xyxy": [
+        608,
+        56,
+        927,
+        87
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white",
+      "text_part": 0,
+      "text_separator": "／"
+    },
+    {
+      "occurrence": "eye.eye.heading.detail",
+      "group": "eye",
+      "text_id": "eye.heading",
+      "box_xyxy": [
+        827,
+        91,
+        927,
+        122
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white",
+      "text_part": 1,
+      "text_separator": "／"
+    },
+    {
+      "occurrence": "eye.eye.starlight",
+      "group": "eye",
+      "text_id": "eye.starlight",
+      "box_xyxy": [
+        759,
+        126,
+        927,
+        157
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.infrared",
+      "group": "eye",
+      "text_id": "eye.infrared",
+      "box_xyxy": [
+        764,
+        161,
+        927,
+        192
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.recording",
+      "group": "eye",
+      "text_id": "eye.recording",
+      "box_xyxy": [
+        744,
+        196,
+        927,
+        227
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.focus",
+      "group": "eye",
+      "text_id": "eye.focus",
+      "box_xyxy": [
+        797,
+        231,
+        927,
+        262
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.zoom",
+      "group": "eye",
+      "text_id": "eye.zoom",
+      "box_xyxy": [
+        692,
+        266,
+        927,
+        297
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.pixels",
+      "group": "eye",
+      "text_id": "eye.pixels",
+      "box_xyxy": [
+        612,
+        301,
+        927,
+        332
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.face",
+      "group": "eye",
+      "text_id": "eye.face",
+      "box_xyxy": [
+        635,
+        336,
+        927,
+        367
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.stereo",
+      "group": "eye",
+      "text_id": "eye.stereo",
+      "box_xyxy": [
+        709,
+        371,
+        927,
+        402
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.stabilization",
+      "group": "eye",
+      "text_id": "eye.stabilization",
+      "box_xyxy": [
+        723,
+        406,
+        927,
+        437
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.gcode",
+      "group": "eye",
+      "text_id": "eye.gcode",
+      "box_xyxy": [
+        640,
+        441,
+        927,
+        472
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1065,
+        1202
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "eye.eye.price",
+      "group": "eye",
+      "text_id": "eye.price",
+      "box_xyxy": [
+        599,
+        502,
+        927,
+        542
+      ],
+      "reference_frames": [
+        1162,
+        1166,
+        1170,
+        1174,
+        1178,
+        1182
+      ],
+      "detection_span": [
+        1135,
+        1202
+      ],
+      "color": "magenta"
+    },
+    {
+      "occurrence": "arm.body.frame",
+      "group": "arm",
+      "text_id": "body.frame",
+      "box_xyxy": [
+        99,
+        266,
+        334,
+        297
+      ],
+      "reference_frames": [
+        1310,
+        1315,
+        1320,
+        1325,
+        1330,
+        1335,
+        1340
+      ],
+      "detection_span": [
+        1225,
+        1372
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "arm.body.muscle",
+      "group": "arm",
+      "text_id": "body.muscle",
+      "box_xyxy": [
+        99,
+        301,
+        405,
+        332
+      ],
+      "reference_frames": [
+        1310,
+        1315,
+        1320,
+        1325,
+        1330,
+        1335,
+        1340
+      ],
+      "detection_span": [
+        1225,
+        1372
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "arm.body.skin",
+      "group": "arm",
+      "text_id": "body.skin",
+      "box_xyxy": [
+        99,
+        336,
+        576,
+        367
+      ],
+      "reference_frames": [
+        1310,
+        1315,
+        1320,
+        1325,
+        1330,
+        1335,
+        1340
+      ],
+      "detection_span": [
+        1225,
+        1372
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "arm.arm.grip",
+      "group": "arm",
+      "text_id": "arm.grip",
+      "box_xyxy": [
+        99,
+        406,
+        461,
+        437
+      ],
+      "reference_frames": [
+        1310,
+        1315,
+        1320,
+        1325,
+        1330,
+        1335,
+        1340
+      ],
+      "detection_span": [
+        1225,
+        1372
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "arm.arm.punch",
+      "group": "arm",
+      "text_id": "arm.punch",
+      "box_xyxy": [
+        99,
+        441,
+        473,
+        472
+      ],
+      "reference_frames": [
+        1310,
+        1315,
+        1320,
+        1325,
+        1330,
+        1335,
+        1340
+      ],
+      "detection_span": [
+        1225,
+        1372
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "arm.arm.price",
+      "group": "arm",
+      "text_id": "arm.price",
+      "box_xyxy": [
+        97,
+        502,
+        429,
+        542
+      ],
+      "reference_frames": [
+        1315,
+        1325,
+        1330,
+        1335,
+        1340
+      ],
+      "detection_span": [
+        1295,
+        1372
+      ],
+      "color": "magenta"
+    },
+    {
+      "occurrence": "leg.body.frame",
+      "group": "leg",
+      "text_id": "body.frame",
+      "box_xyxy": [
+        691,
+        214,
+        927,
+        245
+      ],
+      "reference_frames": [
+        1615,
+        1620,
+        1625,
+        1630,
+        1635,
+        1640
+      ],
+      "detection_span": [
+        1525,
+        1672
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "leg.body.muscle",
+      "group": "leg",
+      "text_id": "body.muscle",
+      "box_xyxy": [
+        620,
+        249,
+        927,
+        280
+      ],
+      "reference_frames": [
+        1615,
+        1620,
+        1625,
+        1630,
+        1635,
+        1640
+      ],
+      "detection_span": [
+        1525,
+        1672
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "leg.body.skin",
+      "group": "leg",
+      "text_id": "body.skin",
+      "box_xyxy": [
+        452,
+        284,
+        927,
+        315
+      ],
+      "reference_frames": [
+        1615,
+        1620,
+        1625,
+        1630,
+        1635,
+        1640
+      ],
+      "detection_span": [
+        1525,
+        1672
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "leg.leg.jump",
+      "group": "leg",
+      "text_id": "leg.jump",
+      "box_xyxy": [
+        526,
+        354,
+        927,
+        385
+      ],
+      "reference_frames": [
+        1615,
+        1620,
+        1625,
+        1630,
+        1635,
+        1640
+      ],
+      "detection_span": [
+        1525,
+        1672
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "leg.leg.speed",
+      "group": "leg",
+      "text_id": "leg.speed",
+      "box_xyxy": [
+        393,
+        389,
+        927,
+        420
+      ],
+      "reference_frames": [
+        1615,
+        1620,
+        1625,
+        1630,
+        1635,
+        1640
+      ],
+      "detection_span": [
+        1525,
+        1672
+      ],
+      "color": "white"
+    },
+    {
+      "occurrence": "leg.leg.price",
+      "group": "leg",
+      "text_id": "leg.price",
+      "box_xyxy": [
+        545,
+        502,
+        927,
+        542
+      ],
+      "reference_frames": [
+        1625,
+        1630,
+        1635,
+        1640
+      ],
+      "detection_span": [
+        1595,
+        1672
+      ],
+      "color": "magenta"
+    }
+  ]
+}

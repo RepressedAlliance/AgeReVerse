@@ -48,6 +48,22 @@ ASS 时间向下取整到厘秒，以保持30fps各帧时刻的事件归属。�
 抽查中文排版及首尾边界；技术标签、价格和保密提示仍为原文，未完成音轨听校、
 游戏内同步验证或生产 CRsi 编码。该预览不可作为完成的汉化补丁。
 
+## 技术文字布局与清除研究
+
+技术文字的像素区域另见 `rebirth-ending-technical.layout.json`：
+25个出现位置覆盖眼部13行、手臂6行、腿部6行；眼部标题拆为两行，
+`body.*` 在手臂和腿部分别列出，保密提示不在该文件内。
+这些位置只适用于无旁白字幕长版；`detection_span` 是检索窗口，
+不是已验收的入出帧。参考帧提取的是字形核心，清除时还须处理抗锯齿和发光边缘。
+
+```powershell
+python -m rUGP.tools.video.overlay_masks --video '<原尺寸无字幕长版代理>' --layout rUGP/games/photonmelodies/video-localization/rebirth-ending-technical.layout.json --output-directory '<新的本机私有输出目录>'
+```
+
+分析器输出候选显示区间、逐帧强度与字形遮罩。价格包含闪烁，不能简单压成一个
+持续显示区间；明亮模型可能影响淡出检测。输出含游戏派生像素，不应提交或公开。
+单帧空间修补试片因网格和手腕损伤已否决；时序修复仍在本机评估，未成为生产素材。
+
 ## 必须保留的差异
 
 - 长版代号 **Fenice**，短版 **Falso**；长版从死亡与绝望中重生，

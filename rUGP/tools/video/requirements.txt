@@ -1,4 +1,7 @@
-# Optional offline native oracle; normal synthetic tests do not require these.
+# Optional offline native oracles and decoded-video glyph analysis.
+# Normal synthetic format tests do not require these.
 pefile>=2023.2.7
 unicorn>=2.1,<3
 Pillow>=10
+numpy>=1.26
+opencv-python>=4.8

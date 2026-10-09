@@ -185,6 +185,43 @@ CRsi 方法 `0x5814B0` 调用 `KERNEL32!MulDiv(frame,100000,rate)`；rate=3000
 不宣称不同资源逐帧对齐、原生播放同步或音频听校通过。
 原音频资源及游戏脚本未修改；MP4只是离线制作产物，未替代生产CRsi。
 
+### 技术标签清除与手臂段中文试片
+
+[`rebirth-ending-technical.layout.json`](../games/photonmelodies/video-localization/rebirth-ending-technical.layout.json)
+记录无旁白字幕长版的25行技术文字与价格：眼部13行、手臂6行、腿部6行。
+[`overlay_masks.py`](../tools/video/overlay_masks.py) 用多个参考帧分离固定字形，
+白字取跨帧交集抑制移动模型高光，闪烁的洋红价格取并集。
+25份字形核心和逐帧信号已用重构后的命令行工具完全复现，并查看字形联系表。
+它们是清除与时序制作的输入；阈值区间不是已验收的准确字幕边界，开场保密提示仍单独待做。
+
+手臂1290–1371帧的两种空间修补试片（Telea、Navier–Stokes）均有明显网格变形或
+手腕涂抹，已否决。扩大遮罩只能减少英文发光残留，不能解决背景重建。
+
+随后在本机以 [ProPainter](https://github.com/sczhou/ProPainter/tree/e870e79321c31b733e2031af5aa2fb1fe3ac7eec)
+评估时序修复：原帧1218–1381，裁块 `(64,240)–(640,560)`，164帧576×320，
+保持原像素尺寸。GPU为8 GiB RTX 4060 Laptop；私有环境使用 torch 2.5.1+cu124、
+torchvision 0.20.1，FP16、subvideo_length=30、neighbor_length=6、ref_stride=15。
+首轮完成耗时66.7秒。没有上传素材或更改共用视频环境。
+
+工具和三份v0.1.0权重仅保存在本机任务目录，遵循
+[S-Lab非商业许可](https://github.com/sczhou/ProPainter/blob/e870e79321c31b733e2031af5aa2fb1fe3ac7eec/LICENSE)。
+原生 OpenCV 路径接口不支持本工作区中文路径，适配器改用字节读写和内存编解码；
+权重以 `weights_only=True` 加载。上游源码未修改。
+[用户显存故障记录](https://github.com/sczhou/ProPainter/issues/51) 与官方显存说明
+支持先做原尺寸裁块评估，而不是直接处理整幅视频；该记录不证明本游戏的修复效果。
+
+首轮已合成1904帧、63.466667秒的本机预览，含22条中文旁白及手臂6行中文文字，
+配原音轨。164份修复裁块逐像素确认遮罩外与输入完全一致；裁块之外沿用原帧。
+按序查看手臂出现、完整文字、闪烁价格和淡出的14个采样点，英文去除和模型保留明显改善，
+但局部网格仍有弯折、弱条纹和软化。只把它视为可继续改进的候选，
+未声称完整观看、逐帧视觉验收、日语听校或游戏同步通过。
+
+首轮短窗口在片段中部看不到两端的无字画面；第二轮由适配器为 Transformer
+额外加入这两帧作为参考，完成耗时65.2秒。抽查1320、1330、1360帧后仍未达到
+生产验收结论，两轮164帧均确认遮罩外像素保持原值。
+[修复试片证据](../evidence/photon/video/rebirth-technical-repair-20261010.json)
+记录来源、参数、上游与权重身份、实际检查范围和剩余问题，不附游戏像素。
+
 ### 原生地址与完整帧表核对（离线）
 
 [`native_ruo.py`](../tools/video/native_ruo.py) 在版本锁定的 EXE 代码中运行
