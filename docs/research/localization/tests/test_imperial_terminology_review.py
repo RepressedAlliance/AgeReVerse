@@ -17,6 +17,11 @@ class ImperialTerminologyReviewTests(unittest.TestCase):
         cls.terms = read_table(ROOT / 'localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv')
         cls.baseline = read_baseline('imperial-capital-burns')
         cls.evidence = read_evidence('imperial-capital-burns')
+        folder = ROOT / 'AGE2/games/imperial-capital-burns/translations'
+        with (folder / 'main.ja-zh-Hans.csv').open(encoding='utf-8-sig', newline='') as stream:
+            cls.body = {x['id']: x for x in csv.DictReader(stream)}
+        with (folder / 'speakers.ja-zh-Hans.csv').open(encoding='utf-8-sig', newline='') as stream:
+            cls.speakers = list(csv.DictReader(stream))
 
     def test_current_tables_reconcile_and_all_terms_remain_in_parent_baseline(self):
         meta = self.review['after']
@@ -52,6 +57,50 @@ class ImperialTerminologyReviewTests(unittest.TestCase):
         self.assertEqual(changed[0]['after']['status'], 'excluded')
         for key in ('jp', 'cn', 'source', 'source_row', 'source_status', 'occurrences'):
             self.assertEqual(changed[0]['before'][key], changed[0]['after'][key])
+
+    def test_all_speaker_mappings_have_exact_adopted_chinese_and_actual_calls(self):
+        additions = [x for x in self.review['additions'] if x['source'] == 'imperial-speakers-20261009']
+        self.assertEqual(len(additions), len(self.speakers))
+        self.assertEqual(len(additions), 91)
+        for entry in additions:
+            speaker = self.speakers[int(entry['source_row']) - 2]
+            self.assertEqual((entry['jp'], entry['cn']), (speaker['expected_text'], speaker['replacement_text']))
+            calls = [x['id'] for x in self.body.values() if x['speaker_jp'] == entry['jp']]
+            self.assertEqual(entry['record_ids'], calls)
+            self.assertTrue(calls)
+            self.assertTrue(any((x['jp'], x['cn'], x['kind']) == (entry['jp'], entry['cn'], entry['kind']) for x in self.baseline))
+
+    def test_new_body_records_reference_current_adopted_text_and_unique_source_keys(self):
+        self.assertEqual(self.evidence[264:], self.review['source_additions'])
+        for entry, source in zip(self.review['additions'], self.review['source_additions']):
+            self.assertEqual((entry['jp'], entry['cn'], entry['source'], entry['source_row']),
+                             (source['jp'], source['cn'], source['source'], source['source_row']))
+            self.assertEqual(len(entry['record_ids']), len(set(entry['record_ids'])))
+            records = [self.body[x] for x in entry['record_ids']]
+            self.assertTrue(records)
+            self.assertEqual(source['occurrences'], str(len(records)))
+            self.assertEqual(entry['scenes'], list(dict.fromkeys(x['scene'] for x in records)))
+            if entry['source'] == 'imperial-body-20261009':
+                self.assertEqual(entry['source_row'], entry['record_ids'][0] + ':' + entry['jp'])
+                self.assertTrue(any(entry['cn'] in x['cn_text'] for x in records))
+        coverage = self.review['coverage']
+        self.assertEqual(coverage['current_body_rows'], len(self.body))
+        self.assertEqual(coverage['scenes'], len({x['scene'] for x in self.body.values()}))
+
+    def test_ambiguous_short_model_and_original_spelling_variants_keep_separate_scopes(self):
+        short = [x for x in self.baseline if x['jp'] == '７７式']
+        self.assertEqual(len(short), 1)
+        self.assertEqual(short[0]['kind'], 'context')
+        source = next(x for x in self.review['additions'] if x['jp'] == '７７式')
+        self.assertEqual(source['record_ids'], ['game_t00234'])
+        self.assertEqual(short[0]['chapter'], self.body['game_t00234']['scene'])
+        self.assertNotIn('７７式', self.terms)
+        for jp in ('７７式強化装備', '７７式気密装甲兜', '７４式長刀', '７４式訓練用近接長刀',
+                   '月詠真耶', '月詠真那', '斉御司', '斎御司経盛', '嵐山の嵐', 'あらしやまのあらし'):
+            self.assertIn(jp, self.terms)
+        self.assertEqual(self.terms['月詠真耶']['cn'], '月咏真耶')
+        self.assertEqual(self.terms['月詠真那']['cn'], '月咏真那')
+        self.assertEqual(self.terms['アラシヤマ・コントロール']['cn'], '岚山管制')
 
 
 if __name__ == '__main__':

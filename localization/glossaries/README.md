@@ -12,7 +12,7 @@ Muv-Luv七作使用 **系列通用表 + 本作表**；君望独立使用本作�
 | TDA01 | [tda01.ja-zh-Hans.csv](tda01.ja-zh-Hans.csv) | 89 |
 | TDA02 | [tda02.ja-zh-Hans.csv](tda02.ja-zh-Hans.csv) | 98 |
 | TDA03 | [tda03.ja-zh-Hans.csv](tda03.ja-zh-Hans.csv) | 115 |
-| 帝都燃烧篇 | [imperial-capital-burns.ja-zh-Hans.csv](imperial-capital-burns.ja-zh-Hans.csv) | 135 |
+| 帝都燃烧篇 | [imperial-capital-burns.ja-zh-Hans.csv](imperial-capital-burns.ja-zh-Hans.csv) | 306 |
 | 光子之花 | [photonflowers.ja-zh-Hans.csv](photonflowers.ja-zh-Hans.csv) | 313 |
 | 光子旋律 | [photonmelodies.ja-zh-Hans.csv](photonmelodies.ja-zh-Hans.csv) | 750 |
 | 君望（本篇及番外） | [kiminozo.ja-zh-Hans.csv](kiminozo.ja-zh-Hans.csv) | 167 |
