@@ -89,6 +89,8 @@
 
 基线是本作术语表的父集：保留全部本作确认术语的来源与适用范围，同时包含语境项、候选和待核问题。条目提升为术语后，不从基线删除。分开存放不表示内容互相排除；同一日文的多份来源或不同语境可以各保留一条记录。
 
+现行采用记录用独立来源标识保存，译法和完整使用限制对应现行术语表；不能只检查日文是否收录。旧来源中的译法、原状态和依据继续保留，其中“本作采用”“已确认”等措辞只描述当时的决定。历史差异不自动等于错译或弃用，仍须结合具体语境判断。
+
 | 字段 | 含义 |
 | --- | --- |
 | `jp` | 该来源记录中的日文词形；不同写法可分别保留 |
@@ -104,6 +106,19 @@
 `confirmed`表示该记录已确认；`contextual`表示须按语境和使用限制判断；`candidate`是候选；`question`仍有疑问；`excluded`不再采用。历史记录中的确认状态不自动证明它仍是当前译法。查现行采用译法时，先读通用表和本作表的`cn`、`context`，再用基线追溯依据。
 
 同一日文在不同语境下可以有不同中文；同一词的多份来源也应分别保留。基线记录数、不同日文词形数、现行术语数分开统计，都不能作为全文人工校对进度。
+
+“去重后的日文写法数”按`jp`文字完全一致去重，不按概念合并；全角和半角仍分别计数。原文写法不因检索方便而改写。
+
+可按类别查阅基线，不改动来源状态：
+
+```powershell
+python localization/tools/terminology.py tda00 --baseline --term ウィル
+python localization/tools/terminology.py photonflowers --baseline --group noise
+python localization/tools/terminology.py photonmelodies --baseline --group candidate
+python localization/tools/terminology.py kiminozo --check-baseline
+```
+
+`current`为现行采用记录；`reference`为历史或语境参考，历史`confirmed`也在此组；`candidate`和`question`保留候选与待核问题；`excluded`沿用原排除状态。`noise`仅归集旧依据已明确标为普通片假名／拟声或正则误命中的记录，不表示本轮重新审定。类别只是读取视图，不修改CSV，也不把未审候选自动提升为术语。缺少具体场景的资料如实注明；不能用来源行号冒充游戏台词编号。
 
 旧来源中的出现次数保留原口径；重建资料中TDA按含词记录数、Photon按匹配次数计，不直接横向比较。官方完整例句不随公开基线发布；历史路径和计数描述当时状态，当前入口以项目清单为准。
 

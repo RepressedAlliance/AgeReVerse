@@ -6,7 +6,8 @@ import tempfile
 import unittest
 from collections import Counter
 
-from localization.tools.terminology import GAMES, MUV_LUV_GAMES, ROOT, candidate_terms, load_game, read_table
+from localization.tools.terminology import (GAMES, MUV_LUV_GAMES, ROOT, baseline_consistency_errors,
+                                           baseline_group, candidate_terms, load_game, read_table)
 
 
 class TerminologyScopeTests(unittest.TestCase):
@@ -78,6 +79,26 @@ class TerminologyScopeTests(unittest.TestCase):
                 with (ROOT / engine / 'games' / game / 'terminology/baseline.ja-zh-Hans.csv').open(encoding='utf-8-sig', newline='') as stream:
                     baseline = {row['jp'] for row in csv.DictReader(stream)}
                 self.assertFalse(set(own) - baseline, '本作术语必须全部保留在基线中')
+
+    def test_baseline_consistency_requires_current_translation_and_scope(self):
+        terms = {'伍長': {'jp': '伍長', 'cn': '下士', 'context': '中文军衔；仅在军衔语境使用'}}
+        old = {'jp': '伍長', 'cn': '伍长', 'status': 'confirmed', 'basis': '旧来源已确认', 'source': 'legacy'}
+        self.assertTrue(baseline_consistency_errors(terms, [old]))
+        current = dict(old, cn='下士', basis=terms['伍長']['context'], source='current-glossary-20261009-tda00')
+        self.assertEqual(baseline_consistency_errors(terms, [old, current]), [])
+        self.assertTrue(baseline_consistency_errors(terms, [dict(current, basis='军衔')]))
+        self.assertTrue(baseline_consistency_errors(terms, [dict(current, cn='伍长')]))
+        self.assertTrue(baseline_consistency_errors(terms, [dict(current, status='candidate')]))
+        self.assertTrue(baseline_consistency_errors(terms, [current, dict(current)]))
+
+    def test_baseline_reading_groups_preserve_historical_status_and_candidates(self):
+        noise = {'source': 'pf-ex-baseline', 'status': 'contextual', 'basis': '类别：regex_address_false_positive'}
+        self.assertEqual(baseline_group(noise), 'noise')
+        self.assertEqual(noise['status'], 'contextual')
+        self.assertEqual(baseline_group(dict(noise, status='excluded')), 'excluded')
+        self.assertEqual(baseline_group({'source':'legacy', 'status':'confirmed', 'basis':'历史确认'}), 'reference')
+        self.assertEqual(baseline_group({'source':'pm-shard-baseline', 'status':'candidate', 'basis':'全文机械扫描候选'}), 'candidate')
+        self.assertEqual(baseline_group({'source':'legacy', 'status':'question', 'basis':'待核'}), 'question')
 
     def test_every_input_row_has_one_disposition_and_old_bytes_are_preserved(self):
         audit = json.loads((ROOT / "docs/research/localization/terminology-history/scope-audit-20260908.json").read_text(encoding="utf-8"))

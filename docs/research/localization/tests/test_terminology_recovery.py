@@ -27,6 +27,20 @@ class RecoveryTests(unittest.TestCase):
                 assert reader.fieldnames==COLS
                 cls.baselines[game]=list(reader)
             cls.current_baselines[game]=list(cls.baselines[game])
+            # Current decisions are appended as a separate, complete projection.
+            # Strip it before validating the sealed historical source records.
+            source=f'current-glossary-20261009-{game}'
+            current=[r for r in cls.baselines[game] if r['source']==source]
+            if current:
+                start=next(i for i,r in enumerate(cls.baselines[game]) if r['source']==source)
+                assert cls.baselines[game][start:]==current
+                own=read_table(ROOT/'localization/glossaries'/f'{game}.ja-zh-Hans.csv')
+                assert len(current)==len(own)
+                for row,term in zip(current,own.values()):
+                    assert (row['jp'],row['cn'])==(term['jp'],term['cn'])
+                    assert row['basis'].startswith(term['context'])
+                    assert row['status']=='confirmed'
+                cls.baselines[game]=cls.baselines[game][:start]
             # Remove only the documented append before checking the unchanged
             # historical projections and the September revision.
             if game in cls.additions['games']:
