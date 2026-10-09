@@ -21,9 +21,18 @@ class RecoveryTests(unittest.TestCase):
         cls.revision=json.loads((ROOT/'docs/research/localization/terminology-history/revision-20260920.json').read_text(encoding='utf-8'))
         cls.additions=json.loads((ROOT/'docs/research/localization/terminology-history/baseline-additions-20261009.json').read_text(encoding='utf-8'))
         cls.current_baselines={}
+        cls.imperial=json.loads((ROOT/'docs/research/localization/terminology-history/imperial-review-20261009.json').read_text(encoding='utf-8'))
         for game,engine in MUV_LUV_GAMES.items():
             cls.baselines[game]=read_evidence(game)
             cls.current_baselines[game]=list(cls.baselines[game])
+            if game == 'imperial-capital-burns':
+                count=cls.imperial['before']['source_records']
+                assert cls.baselines[game][count:]==cls.imperial['source_additions']
+                cls.baselines[game]=cls.baselines[game][:count]
+                for change in cls.imperial['evidence_changes']:
+                    assert cls.baselines[game].count(change['after'])==1
+                    position=cls.baselines[game].index(change['after'])
+                    cls.baselines[game][position]=change['before']
             # Current decisions are appended as a separate, complete projection.
             # Strip it before validating the sealed historical source records.
             source=f'current-glossary-20261009-{game}'
@@ -78,6 +87,8 @@ class RecoveryTests(unittest.TestCase):
                 expected_terms=self.revision['games'][game]['current_terms']
             # Current counts include already published spelling variants.
             expected_terms=self.additions['glossary_counts'].get(game,expected_terms)
+            if game == 'imperial-capital-burns':
+                expected_terms=self.imperial['after']['terms']
             self.assertEqual(len(read_table(ROOT/'localization/glossaries'/f'{game}.ja-zh-Hans.csv')),expected_terms)
             for row in rows:
                 self.assertIn(row['source'],{s['name'] for s in self.manifest['sources']})
