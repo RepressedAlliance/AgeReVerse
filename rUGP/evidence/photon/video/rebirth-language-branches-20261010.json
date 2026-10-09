@@ -1,0 +1,192 @@
+{
+  "schema": "photon-rebirth-video-language-investigation/1",
+  "date": "2026-10-10",
+  "status": "offline source classification in progress; no production scope change",
+  "source": "installed archive; some text records already contain the existing Chinese patch",
+  "target_cint_global_offset": 568804,
+  "indexed_crsa_records": 265,
+  "matching_blocks": [
+    {
+      "volume": "photonmelodies11.rio",
+      "volume_offset": 1339057352,
+      "global_offset": 1339057352,
+      "record_sha256": "0a8930eb3bbab9e6812b5551405f4dcf55d84ab1c468fc8e09d3149a67f0b607"
+    },
+    {
+      "volume": "photonmelodies11.rio",
+      "volume_offset": 1339182176,
+      "global_offset": 1339182176,
+      "record_sha256": "c1b5e0b080284cd026699ca24b15fabda91aa35c169a39dd613b54d7bb49ff0a"
+    },
+    {
+      "volume": "photonmelodies11.rio.002",
+      "volume_offset": 1205271640,
+      "global_offset": 3118816640,
+      "record_sha256": "09822c4af05e7dbe699cc65a234db4375fbc954e66813092415deb7913ea5be6"
+    },
+    {
+      "volume": "photonmelodies11.rio.002",
+      "volume_offset": 1539048336,
+      "global_offset": 3452593336,
+      "record_sha256": "025069c070f38e189e82be3dc2029aaba8820d03d30ad90efc94d82896eeef5e"
+    },
+    {
+      "volume": "photonmelodies11.rio.002",
+      "volume_offset": 1546789004,
+      "global_offset": 3460334004,
+      "record_sha256": "63a6b4b0c8d31a70042112c3c4982ba7bae51363236457218460a666bf44a779"
+    },
+    {
+      "volume": "photonmelodies11.rio.002",
+      "volume_offset": 1575487824,
+      "global_offset": 3489032824,
+      "record_sha256": "7f6e03b7968037a6deb9ecf7c3da555d9137d7b67f4b3457229daae69e1c8e08"
+    },
+    {
+      "volume": "photonmelodies11.rio.003",
+      "volume_offset": 693566480,
+      "global_offset": 4510119036,
+      "record_sha256": "176f2c0bf8c58019d395078c6d8b505a6ab0e4201db4737cbdb5139023799808"
+    },
+    {
+      "volume": "photonmelodies11.rio.003",
+      "volume_offset": 697313004,
+      "global_offset": 4513865560,
+      "record_sha256": "f1b92b438b9ae87de6c333c8e1cd3be61112faa8865e6097a4d6e8f899e3e997"
+    },
+    {
+      "volume": "photonmelodies11.rio.003",
+      "volume_offset": 831946220,
+      "global_offset": 4648498776,
+      "record_sha256": "1b5fab6034b38e75bdc2b5413da45deaff74629d5e051390294882c8446c91f0"
+    },
+    {
+      "volume": "photonmelodies11.rio.003",
+      "volume_offset": 1369366540,
+      "global_offset": 5185919096,
+      "record_sha256": "75c5a61a939a20674528b4a4efee97117d28d9565090b9f97625c2b2f4d0b3e8"
+    },
+    {
+      "volume": "photonmelodies11.rio.004",
+      "volume_offset": 243673416,
+      "global_offset": 6181647672,
+      "record_sha256": "dfa33eee4345767cc9f8908be061d4e6a03a1c1492a5bbc9f2f42d2350077cc6"
+    },
+    {
+      "volume": "photonmelodies11.rio.004",
+      "volume_offset": 1846911696,
+      "global_offset": 7784885952,
+      "record_sha256": "adb554db8f74fe1f2ecaa250c157bf7f092a3110083ae1ebdfa20858f31a234c"
+    }
+  ],
+  "native_exe_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+  "operations": [
+    {
+      "operation": 66,
+      "dispatch_va": "0x4c5b6b",
+      "compare_va": "0x5e5120",
+      "predicate": "equal"
+    },
+    {
+      "operation": 67,
+      "dispatch_va": "0x4c5b75",
+      "compare_va": "0x5e51e0",
+      "predicate": "not_equal"
+    }
+  ],
+  "mode_1_control_flow": {
+    "comparison_true": "next command at VM+4",
+    "comparison_false": "branch target at VM+0x1c",
+    "true_path_va": "0x4c5ba5 -> 0x4c5bb9 -> 0x4c5251",
+    "false_path_va": "0x4c5ba5 -> 0x4c5948 -> 0x4c595a"
+  },
+  "ending_branch": {
+    "script_global_offset": 7784885952,
+    "value_0": {
+      "command_order": 12,
+      "video_ref": 1904699576,
+      "crsi": 1715679260,
+      "narration_subtitles": false
+    },
+    "value_1": {
+      "command_order": 16,
+      "video_ref": 210804580,
+      "crsi": 27493704,
+      "narration_subtitles": true
+    }
+  },
+  "language_selection": {
+    "script_global_offset": 3452593336,
+    "choice_result_cint": 640004,
+    "choice_0_sets_568804_to": 1,
+    "choice_1_sets_568804_to": 0,
+    "english_button_orders": [
+      89,
+      91
+    ],
+    "japanese_button_orders": [
+      95,
+      97
+    ],
+    "button_images": [
+      {
+        "global_offset": 4494308036,
+        "visible_label": "English",
+        "dimensions": [
+          430,
+          330
+        ],
+        "png_sha256": "b0a75ef6056cf80e9b88dc24f7721aee70346ed6ebba3abf50f27e8844408d7d",
+        "visually_inspected": true
+      },
+      {
+        "global_offset": 4494406920,
+        "visible_label": "English",
+        "dimensions": [
+          430,
+          330
+        ],
+        "png_sha256": "0d1f8574086eba52a017a5ccc6428e992d47cdf12eafae89a6805bed509fb8d4",
+        "visually_inspected": true
+      },
+      {
+        "global_offset": 4494485908,
+        "visible_label": "日本語",
+        "dimensions": [
+          430,
+          330
+        ],
+        "png_sha256": "bc6b47807d37344b459474362ad46ed0961ed90da757d3d2630ad711278e2989",
+        "visually_inspected": true
+      },
+      {
+        "global_offset": 4494568396,
+        "visible_label": "日本語",
+        "dimensions": [
+          430,
+          330
+        ],
+        "png_sha256": "588de845c391bfcb667ee13374709c997ab2a53ef741fa8dd7bee26bf8c06e1b",
+        "visually_inspected": true
+      }
+    ],
+    "choice_result_writer": {
+      "helper": 1688099960,
+      "command_order": 9,
+      "operation": "OM_AskUserSelectEx"
+    },
+    "button_creation_helpers": [
+      1688067344,
+      1688658448,
+      1688659276
+    ]
+  },
+  "inference": "The no-narration variant is strongly indicated as the Japanese image-language branch; explicit numeric choice-ID assignment has not yet been proved.",
+  "production_consequence": "Keep the current all-Chinese graphic studies as drafts. Resolve original-English classification before further destructive text removal; narration still needs Japanese-audio review.",
+  "limitations": [
+    "No game process or UI was used",
+    "Button labels and script order alone do not prove automatic numeric choice-ID allocation",
+    "No full audiovisual or synchronization acceptance",
+    "This report does not designate the current Chinese graphic copies as approved production text"
+  ]
+}
