@@ -134,6 +134,37 @@
 
 ## 工具及验证
 
+### 原生地址与完整帧表核对（离线）
+
+[`native_ruo.py`](../tools/video/native_ruo.py) 在版本锁定的 EXE 代码中运行
+`0x5D9DE0` 及其哈希查询 `0x5DF070`，输入为候选 RUO 的真实31条映射，
+archive、卷表与哈希桶为模拟内存对象。所有映射的输出地址／长度均与封装值相同。
+原加载器 `0x5DE2F3..0x5DE30B` 的计算结果为6 GiB；应用现有补丁的单字节变更后
+为8 GiB。新增视频在 RUO 内偏移4,475,320，虚拟字节地址8,594,409,912，
+长度93,497,874。另验证未命中与禁用映射时保留原地址、无效卷索引返回失败、
+64位加法进位，以及 `0x5F4040` 文件视图未缓冲分支在该大地址下返回记录相对位置。
+
+[`native_crsi_table.py`](../tools/video/native_crsi_table.py) 执行原父反序列化
+`0x5830F0`、帧行初始化与 `0x582C70` 行读取。四段原视频及单帧替换候选共
+9,462条记录的 flags、位置、长度、模式及模式参数全部与解析器一致，
+尺寸、rate、帧数和最终游标也一致。候选的载荷区起点为28,584，
+比原长版无字幕记录的28,586少2字节，符合一个15字节行替换成13字节行的结果。
+
+这一核对显式模拟 MFC 的16位 ReadCount、缓冲区分配和 archive 的相对位置查询；
+没有运行真实文件打开、线程读缓冲或视频调用者。静态调用关系为
+`0x509530 → 0x5DEF70 → 0x5DE5C0 → 0x5D9DE0`；其中归档容器分支决定
+是否进入重定向解析，尚须结合实际资源父对象核实。
+因此上述通过结果**仍不等于 CRsi 流式读取链路或游戏播放已经验证**。
+[可公开证据](../evidence/photon/video/rebirth-native-addressing-20261010.json)
+记录输入标识、模拟边界和实际输出，不含游戏载荷。
+
+可对合法本地素材复现（需要同目录 requirements 的可选依赖）：
+
+```powershell
+python -m rUGP.tools.video.native_ruo --executable '<PM EXE>' --ruo '<候选 RUO>' --source-key 0xbc8c36d8
+python -m rUGP.tools.video.native_crsi_table --executable '<PM EXE>' '<完整 CRsi 记录>'
+```
+
 [`crsi.py`](../formats/video/crsi.py) 解析／重建限定父头与混合宽度帧表。
 [`crsi_literal.py`](../formats/video/crsi_literal.py) 是上述实验帧编码器。
 [`native_crsi.py`](../tools/video/native_crsi.py) 用合法本地 EXE 作为独立离线 oracle；
