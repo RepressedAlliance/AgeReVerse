@@ -6,7 +6,7 @@ from collections import Counter
 import unittest
 import tomllib
 
-from localization.tools.terminology import ROOT, MUV_LUV_GAMES, load_game, read_table
+from localization.tools.terminology import ROOT, MUV_LUV_GAMES, load_game, read_evidence, read_table
 
 COLS=['jp','cn','status','chapter','source','source_row','source_status','occurrences','basis']
 
@@ -22,10 +22,7 @@ class RecoveryTests(unittest.TestCase):
         cls.additions=json.loads((ROOT/'docs/research/localization/terminology-history/baseline-additions-20261009.json').read_text(encoding='utf-8'))
         cls.current_baselines={}
         for game,engine in MUV_LUV_GAMES.items():
-            with (ROOT/engine/'games'/game/'terminology/baseline.ja-zh-Hans.csv').open(encoding='utf-8',newline='') as stream:
-                reader=csv.DictReader(stream)
-                assert reader.fieldnames==COLS
-                cls.baselines[game]=list(reader)
+            cls.baselines[game]=read_evidence(game)
             cls.current_baselines[game]=list(cls.baselines[game])
             # Current decisions are appended as a separate, complete projection.
             # Strip it before validating the sealed historical source records.

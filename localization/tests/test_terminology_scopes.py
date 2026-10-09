@@ -6,8 +6,9 @@ import tempfile
 import unittest
 from collections import Counter
 
-from localization.tools.terminology import (GAMES, MUV_LUV_GAMES, ROOT, baseline_consistency_errors,
-                                           baseline_group, candidate_terms, load_game, read_baseline, read_table)
+from localization.tools.terminology import (BASELINE_COLUMNS, COMPACT_COLUMNS, GAMES, MUV_LUV_GAMES, ROOT,
+                                           baseline_consistency_errors, baseline_group, candidate_terms,
+                                           evidence_numbers, load_game, read_baseline, read_evidence, read_table)
 
 
 class TerminologyScopeTests(unittest.TestCase):
@@ -49,8 +50,7 @@ class TerminologyScopeTests(unittest.TestCase):
         self.assertEqual(effective['タケス']['cn'], '竹卡斯')
         self.assertEqual(effective['バトル・テッカ']['cn'], 'BattleTech')
         self.assertEqual(effective['ＳｍａｌｌＤｉｓｋ']['cn'], 'CD')
-        with (ROOT / 'AGE2/games/kiminozo/terminology/baseline.ja-zh-Hans.csv').open(encoding='utf-8', newline='') as stream:
-            rows = list(csv.DictReader(stream))
+        rows = read_evidence('kiminozo')
         self.assertEqual(len(rows), len({(row['source'], row['source_row']) for row in rows}))
         baseline = {row['jp']: row for row in rows if row['source'] != 'kiminozo-glossary-20261009'}
         confirmed = [row for row in rows if row['source'] == 'kiminozo-glossary-20261009']
@@ -89,10 +89,15 @@ class TerminologyScopeTests(unittest.TestCase):
                 current = [row for row in rows if baseline_group(row) == 'current']
                 for index, term in enumerate(terms.values(), 2):
                     row = next(row for row in current if row['jp'] == term['jp'])
-                    self.assertEqual(row['source_row'], str(index))
-                    self.assertEqual(row['source_status'], 'current-glossary')
-                    self.assertEqual(row['occurrences'], '')
-        pf = read_baseline('photonflowers')
+                    if 'kind' in row:
+                        self.assertEqual(row['basis'], term['context'])
+                        history = read_evidence(game)
+                        self.assertTrue(all(history[number-2]['jp'] == term['jp'] for number in evidence_numbers(row)))
+                    else:
+                        self.assertEqual(row['source_row'], str(index))
+                        self.assertEqual(row['source_status'], 'current-glossary')
+                        self.assertEqual(row['occurrences'], '')
+        pf = read_evidence('photonflowers')
         self.assertEqual(sum(baseline_group(row) == 'noise' for row in pf), 746)
         for game in ('tda01', 'tda02', 'tda03', 'photonflowers'):
             term = read_table(ROOT / 'localization/glossaries' / f'{game}.ja-zh-Hans.csv')['軌道降下兵']
@@ -118,6 +123,60 @@ class TerminologyScopeTests(unittest.TestCase):
         self.assertEqual(baseline_group({'source':'legacy', 'status':'confirmed', 'basis':'历史确认'}), 'reference')
         self.assertEqual(baseline_group({'source':'pm-shard-baseline', 'status':'candidate', 'basis':'全文机械扫描候选'}), 'candidate')
         self.assertEqual(baseline_group({'source':'legacy', 'status':'question', 'basis':'待核'}), 'question')
+
+    def _compact_fixture(self, root, sources, entries):
+        folder = root / 'AGE2/games/tda00'
+        (folder / 'terminology/history').mkdir(parents=True)
+        (folder / 'project.toml').write_text(
+            'terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"\n'
+            'terminology_evidence = "terminology/history/evidence-20261009.csv"\n', encoding='utf-8')
+        for path, columns, rows in [
+            (folder / 'terminology/baseline.ja-zh-Hans.csv', COMPACT_COLUMNS, entries),
+            (folder / 'terminology/history/evidence-20261009.csv', BASELINE_COLUMNS, sources),
+        ]:
+            with path.open('w', encoding='utf-8', newline='') as stream:
+                writer = csv.DictWriter(stream, fieldnames=columns)
+                writer.writeheader()
+                writer.writerows(rows)
+
+    def test_compact_baseline_merges_sources_and_retains_original_statuses(self):
+        old = dict(jp='伍長', cn='伍长', status='candidate', chapter='第一章', source='old',
+                   source_row='2', source_status='candidate', occurrences='2', basis='旧候选')
+        newer = dict(old, cn='下士', status='confirmed', source_row='3', source_status='confirmed', basis='后续审定')
+        entry = dict(jp='伍長', cn='下士', kind='term', chapter='第一章', basis='中文军衔；仅限军衔', evidence_rows='2;3')
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            self._compact_fixture(root, [old, newer], [entry])
+            self.assertEqual(read_baseline('tda00', root), [entry])
+            self.assertEqual(read_evidence('tda00', root), [old, newer])
+
+    def test_compact_baseline_rejects_wrong_evidence_and_missing_live_candidates(self):
+        source = dict(jp='名词', cn='', status='candidate', chapter='第一章', source='old',
+                      source_row='2', source_status='candidate', occurrences='', basis='尚待审定')
+        entry = dict(jp='其他', cn='', kind='candidate', chapter='第一章', basis='尚待审定', evidence_rows='2')
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            self._compact_fixture(root, [source], [entry])
+            with self.assertRaisesRegex(ValueError, 'Wrong JP evidence'):
+                read_baseline('tda00', root)
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            self._compact_fixture(root, [source], [])
+            with self.assertRaisesRegex(ValueError, 'silently omitted'):
+                read_baseline('tda00', root)
+
+    def test_compact_baseline_does_not_merge_different_meanings_or_promote_candidates(self):
+        source = dict(jp='词', cn='译法一', status='question', chapter='第一章', source='old',
+                      source_row='2', source_status='question', occurrences='', basis='仍有疑问')
+        for cn, kind, error in [('译法二', 'question', 'Different Chinese meanings'),
+                                ('译法一', 'candidate', 'source status changed'),
+                                ('译法一', 'context', 'source status changed')]:
+            with self.subTest(cn=cn, kind=kind), tempfile.TemporaryDirectory() as temp:
+                root = Path(temp)
+                entry = dict(jp='词', cn=cn, kind=kind, chapter='第一章', basis='仍有疑问', evidence_rows='2')
+                self._compact_fixture(root, [source], [entry])
+                with self.assertRaisesRegex(ValueError, error):
+                    read_baseline('tda00', root)
 
     def test_every_input_row_has_one_disposition_and_old_bytes_are_preserved(self):
         audit = json.loads((ROOT / "docs/research/localization/terminology-history/scope-audit-20260908.json").read_text(encoding="utf-8"))
