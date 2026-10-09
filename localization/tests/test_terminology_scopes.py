@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from collections import Counter
 
-from localization.tools.terminology import MUV_LUV_GAMES, ROOT, candidate_terms, load_game, read_table
+from localization.tools.terminology import GAMES, MUV_LUV_GAMES, ROOT, candidate_terms, load_game, read_table
 
 
 class TerminologyScopeTests(unittest.TestCase):
@@ -50,8 +50,14 @@ class TerminologyScopeTests(unittest.TestCase):
         self.assertEqual(effective['ＳｍａｌｌＤｉｓｋ']['cn'], 'CD')
         with (ROOT / 'AGE2/games/kiminozo/terminology/baseline.ja-zh-Hans.csv').open(encoding='utf-8', newline='') as stream:
             rows = list(csv.DictReader(stream))
-        baseline = {row['jp']: row for row in rows}
-        self.assertEqual(len(rows), len(baseline))
+        self.assertEqual(len(rows), len({(row['source'], row['source_row']) for row in rows}))
+        baseline = {row['jp']: row for row in rows if row['source'] != 'kiminozo-glossary-20261009'}
+        confirmed = [row for row in rows if row['source'] == 'kiminozo-glossary-20261009']
+        self.assertEqual(len(confirmed), len(own))
+        for row in confirmed:
+            term = list(own.values())[int(row['source_row']) - 2]
+            self.assertEqual((row['jp'], row['cn'], row['basis']), (term['jp'], term['cn'], term['context']))
+            self.assertEqual(row['status'], 'confirmed')
         self.assertEqual(baseline['名古屋打ち']['cn'], '小蜜蜂')
         self.assertEqual(baseline['名古屋打ち']['status'], 'question')
         self.assertEqual(baseline['女コス好きのニーソックスマニア']['cn'], '女COSER过膝袜的狂热爱好者')
@@ -64,6 +70,14 @@ class TerminologyScopeTests(unittest.TestCase):
         for row in rows:
             self.assertTrue(row['chapter'] and row['basis'] and row['source'] and row['source_row'])
             self.assertFalse(any(ord(c) < 32 for value in row.values() for c in value))
+
+    def test_each_game_glossary_is_subset_of_its_baseline(self):
+        for game, engine in GAMES.items():
+            with self.subTest(game=game):
+                own = read_table(ROOT / 'localization/glossaries' / f'{game}.ja-zh-Hans.csv')
+                with (ROOT / engine / 'games' / game / 'terminology/baseline.ja-zh-Hans.csv').open(encoding='utf-8-sig', newline='') as stream:
+                    baseline = {row['jp'] for row in csv.DictReader(stream)}
+                self.assertFalse(set(own) - baseline, '本作术语必须全部保留在基线中')
 
     def test_every_input_row_has_one_disposition_and_old_bytes_are_preserved(self):
         audit = json.loads((ROOT / "docs/research/localization/terminology-history/scope-audit-20260908.json").read_text(encoding="utf-8"))
