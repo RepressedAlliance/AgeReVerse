@@ -2,7 +2,7 @@
 
 Muv-Luv UNLIMITED: The Day After episode:01／マブラヴ アンリミテッド ザ・デイアフター。
 
-[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-beta0.2.2)
+[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/ja-zh-Hans.csv) · [术语与基线](terminology/README.md) · [图片](images/) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-beta0.2.2)
 
 - Steam App ID：`1407090`
 - 目标语言：简体中文（`zh-Hans`）

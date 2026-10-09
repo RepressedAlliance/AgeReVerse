@@ -15,6 +15,7 @@ translation_authorities = [
 ]
 terminology_authority = "../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv"
 terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
+terminology_evidence = "terminology/history/evidence-20261009.csv"
 image_authority_scope = "historical-evidence"
 image_authority = "images/release-inventory.json"
 image_copy_authority = "images/copy/source-image-lock.v2.json"

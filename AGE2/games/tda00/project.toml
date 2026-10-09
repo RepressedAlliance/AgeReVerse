@@ -7,6 +7,7 @@ target_locales = ["zh-Hans"]
 terminology_common_authority = "../../../localization/glossaries/muv-luv.ja-zh-Hans.csv"
 terminology_authority = "../../../localization/glossaries/tda00.ja-zh-Hans.csv"
 terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
+terminology_evidence = "terminology/history/evidence-20261009.csv"
 development_status = "published-beta"
 player_release_tag = "tda00-BETA-0.2.1"
 translation_authorities = ["translations/ja-zh-Hans.csv"]

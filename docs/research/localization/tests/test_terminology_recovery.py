@@ -6,7 +6,7 @@ from collections import Counter
 import unittest
 import tomllib
 
-from localization.tools.terminology import ROOT, GAMES, load_game, read_table
+from localization.tools.terminology import ROOT, MUV_LUV_GAMES, load_game, read_evidence, read_table
 
 COLS=['jp','cn','status','chapter','source','source_row','source_status','occurrences','basis']
 
@@ -19,11 +19,32 @@ class RecoveryTests(unittest.TestCase):
         cls.manifest=json.loads((ROOT/'docs/research/localization/terminology-history/recovery-20260908.json').read_text(encoding='utf-8'))
         cls.baselines={}
         cls.revision=json.loads((ROOT/'docs/research/localization/terminology-history/revision-20260920.json').read_text(encoding='utf-8'))
-        for game,engine in GAMES.items():
-            with (ROOT/engine/'games'/game/'terminology/baseline.ja-zh-Hans.csv').open(encoding='utf-8',newline='') as stream:
-                reader=csv.DictReader(stream)
-                assert reader.fieldnames==COLS
-                cls.baselines[game]=list(reader)
+        cls.additions=json.loads((ROOT/'docs/research/localization/terminology-history/baseline-additions-20261009.json').read_text(encoding='utf-8'))
+        cls.current_baselines={}
+        for game,engine in MUV_LUV_GAMES.items():
+            cls.baselines[game]=read_evidence(game)
+            cls.current_baselines[game]=list(cls.baselines[game])
+            # Current decisions are appended as a separate, complete projection.
+            # Strip it before validating the sealed historical source records.
+            source=f'current-glossary-20261009-{game}'
+            current=[r for r in cls.baselines[game] if r['source']==source]
+            if current:
+                start=next(i for i,r in enumerate(cls.baselines[game]) if r['source']==source)
+                assert cls.baselines[game][start:]==current
+                own=read_table(ROOT/'localization/glossaries'/f'{game}.ja-zh-Hans.csv')
+                assert len(current)==len(own)
+                for row,term in zip(current,own.values()):
+                    assert (row['jp'],row['cn'])==(term['jp'],term['cn'])
+                    assert row['basis'].startswith(term['context'])
+                    assert row['status']=='confirmed'
+                cls.baselines[game]=cls.baselines[game][:start]
+            # Remove only the documented append before checking the unchanged
+            # historical projections and the September revision.
+            if game in cls.additions['games']:
+                recorded=cls.additions['games'][game]
+                count=recorded['before_records']
+                assert cls.baselines[game][count:]==recorded['additions']
+                cls.baselines[game]=cls.baselines[game][:count]
             # Validate each explicitly reviewed change, then reconstruct the
             # sealed historical projection. Never rewrite its old hashes.
             if game in cls.revision['games']:
@@ -35,7 +56,7 @@ class RecoveryTests(unittest.TestCase):
                     else: current[position]=change['before']
 
     def test_all_seven_baselines_are_explicit_and_counts_reconcile(self):
-        for game,engine in GAMES.items():
+        for game,engine in MUV_LUV_GAMES.items():
             folder=ROOT/engine/'games'/game
             project=tomllib.loads((folder/'project.toml').read_text(encoding='utf-8'))
             self.assertEqual(project['terminology_baseline'],'terminology/baseline.ja-zh-Hans.csv')
@@ -55,6 +76,8 @@ class RecoveryTests(unittest.TestCase):
                 expected_terms=later[game]['after']
             if game in self.revision['games']:
                 expected_terms=self.revision['games'][game]['current_terms']
+            # Current counts include already published spelling variants.
+            expected_terms=self.additions['glossary_counts'].get(game,expected_terms)
             self.assertEqual(len(read_table(ROOT/'localization/glossaries'/f'{game}.ja-zh-Hans.csv')),expected_terms)
             for row in rows:
                 self.assertIn(row['source'],{s['name'] for s in self.manifest['sources']})
@@ -62,6 +85,30 @@ class RecoveryTests(unittest.TestCase):
                 self.assertIn(row['status'],{'confirmed','contextual','candidate','question','excluded'})
                 self.assertTrue(row['jp'] and row['source'] and row['source_row'])
                 self.assertFalse(any(ord(c)<32 for v in row.values() for c in v))
+
+    def test_current_glossary_additions_preserve_source_rows_and_scope(self):
+        totals={'tda02':2,'tda03':3,'photonflowers':15,'photonmelodies':4}
+        self.assertEqual(set(self.additions['games']),set(totals))
+        for game,engine in MUV_LUV_GAMES.items():
+            glossary_path=ROOT/'localization/glossaries'/f'{game}.ja-zh-Hans.csv'
+            with glossary_path.open(encoding='utf-8-sig',newline='') as stream:
+                glossary=list(csv.DictReader(stream))
+            rows=self.current_baselines[game]
+            self.assertTrue({r['jp'] for r in glossary}.issubset({r['jp'] for r in rows}))
+            self.assertEqual(len({(r['source'],r['source_row']) for r in rows}),len(rows))
+            if game not in totals:
+                continue
+            record=self.additions['games'][game]
+            self.assertEqual(record['glossary_path'],str(glossary_path.relative_to(ROOT)).replace('\\','/'))
+            self.assertEqual(len(record['additions']),totals[game])
+            for row in record['additions']:
+                source=glossary[int(row['source_row'])-2]
+                self.assertEqual((row['jp'],row['cn']),(source['jp'],source['cn']))
+                self.assertTrue(row['basis'].startswith(source['context']))
+                self.assertEqual(row['source'],f'glossary-20261009-{game}')
+                self.assertEqual(row['source_status'],'current-glossary')
+                self.assertEqual(row['status'],'contextual')
+                self.assertEqual(row['occurrences'],'')
 
     def test_every_original_row_and_original_status_survives(self):
         expected_counts={'tda00-draft':369,'imperial-old':185,'pf-ex-table':88,'pf-ex-baseline':945,'pf-al-table':98,'pm-shard-table':417,'pm-shard-baseline':2321,'pm-ar-table':341}
@@ -89,7 +136,7 @@ class RecoveryTests(unittest.TestCase):
         self.assertNotIn('タケルちゃん',load_game('tda00'))
 
     def test_candidates_are_not_automatically_promoted_and_bad_terms_stay_out(self):
-        for game in GAMES:
+        for game in MUV_LUV_GAMES:
             active=load_game(game)
             for jp in ['ァァ','ウチ','多分隊長']: self.assertNotIn(jp,active)
             self.assertEqual(active['レーザー級']['cn'],'光线级')

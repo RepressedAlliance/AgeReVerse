@@ -2,7 +2,7 @@
 
 The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse／帝都燃ゆ（Teito Moyu）。
 
-[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [正文与 UI](translations/) · [术语](../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-beta0.1)
+[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [正文与 UI](translations/) · [术语与基线](terminology/README.md) · [图片](images/) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-beta0.1)
 
 - Steam App ID：`2630300`
 - 容器：FPD v2 `obb/pack.bin`

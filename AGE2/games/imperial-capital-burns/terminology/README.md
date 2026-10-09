@@ -1,9 +1,44 @@
-# 帝都燃烧 术语与基线
+# 帝都燃烧篇术语与基线
 
-- [本作术语表](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv)：183 条，须按 context 使用。
-- [本作基线](baseline.ja-zh-Hans.csv)：264 条来源记录、185 个去重日文键；含候选、语境限定、争议及退出记录，不表示全部已确认。
-- [系列通用表](../../../../localization/glossaries/muv-luv.ja-zh-Hans.csv)：按需共同使用，不加载其他作品专表。
+[返回本作](../README.md) · [术语维护规则](../../../../localization/text/04-terminology.md)
 
-完整承接已找到的本作旧表和基线。原来以篇章合集保存的范围仍按原合集记录，不伪造逐章归属。
+- [本作术语表](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv)：183条，查当前采用译法及`context`使用限制。
+- [主基线](baseline.ja-zh-Hans.csv)：186条，183种日文写法，查现行译法、语境、候选和待核问题。
+- [原始来源](history/evidence-20261009.csv)：264条，保留原状态、译法和出现次数，供追溯。
+- [系列通用表](../../../../localization/glossaries/muv-luv.ja-zh-Hans.csv)：与本作表共同使用，不加载其他作品专表。
 
-状态和来源字段说明、原始表计数见 [统一入口](../../../../localization/glossaries/README.md) 与 [恢复说明](../../../../docs/research/localization/terminology-history/recovery-20260908.md)。术语表不是无语境自动替换字典；基线中的旧译不代表当前采用译法。
+数量按2026-10-09当前CSV统计。主表条目与来源记录分开计数，都不代表全文人工审核进度。
+
+## 如何使用
+
+先在本作术语表查采用译法，再按`context`确认人物、篇章、呼号或说话人范围。主基线用`kind`区分现行术语、参考、候选和问题；其他译法不能仅因日文相同就覆盖现行译文。同一日文可以随语境采用不同译法；表内没有做全局替换的授权。
+
+主表与来源表的字段、状态、编号和出现次数口径见[字段说明](../../../../localization/text/04-terminology.md#公开基线字段与状态)。主表的`evidence_rows`指向本目录来源CSV；来源表的`source_row`回指更早输入文件的原记录编号，二者不能混用，都不是游戏台词编号。
+
+## 原始来源与覆盖范围
+
+以下来源原样保存在[来源表](history/evidence-20261009.csv)，不与日常主表混排。
+
+本作基线承接已找到的旧术语表和详细基线，并保存后续修订记录。旧表以合集保存的篇章范围仍按原合集记录。它记录已找到的资料，不代表已经穷举本作全部专名或逐项审定所有候选。
+
+| 来源标识 | 本作含义 |
+| --- | --- |
+| `selected-imperial-capital-burns` | 先前暂定专表 |
+| `imperial-old` | 旧独立表，共185条来源记录 |
+
+来源的历史路径、提交与原始规模见[恢复说明](../../../../docs/research/localization/terminology-history/recovery-20260908.md)和[恢复清单](../../../../docs/research/localization/terminology-history/recovery-20260908.json)。其中旧路径描述当时的位置；当前术语和基线路径以本作`project.toml`为准。2026-09-20修订见[逐条记录](../../../../docs/research/localization/terminology-history/revision-20260920.json)。
+
+## 精简主基线的读法
+
+主表六列为`jp,cn,kind,chapter,basis,evidence_rows`。现行术语183条，其他来源／语境译法3条。每条现行术语只保留一条；相同日文、中文及类别合并来源，不同中文或候选／待核状态分别保留。
+
+`basis`保留完整使用限制；`chapter`是来源已知的篇章范围，不能代替使用限制。`evidence_rows`是本目录来源CSV的记录编号，以分号分隔，含表头从1计，不是游戏台词编号。旧来源的状态和出现次数原样保留，次数不跨来源相加。原已排除及明确误命中的资料只留在来源表，未审候选不自动确认。
+
+[整理明细](review-20261009.md)列出数量变化和资料限制。默认查主表；`--term`同时返回当前术语与关联来源，程序不必解析说明文字：
+
+```powershell
+python localization/tools/terminology.py imperial-capital-burns --baseline
+python localization/tools/terminology.py imperial-capital-burns --baseline --term おかっちませ
+python localization/tools/terminology.py imperial-capital-burns --baseline --history
+python localization/tools/terminology.py imperial-capital-burns --check-baseline
+```

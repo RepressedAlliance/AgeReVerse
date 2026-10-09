@@ -7,8 +7,11 @@ target_locales = ["zh-Hans"]
 development_status = "in-development"
 translation_authorities = []
 font_policy = "../../../localization/fonts/README.md"
+terminology_authority = "../../../localization/glossaries/kiminozo.ja-zh-Hans.csv"
+terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
+terminology_evidence = "terminology/history/evidence-20261009.csv"
 
-# Public data files and a release tag will be added when they are ready.
+# A release tag will be added when the patch is ready.
 # Documentation directories are not translation or image authority files.
 [components.main]
 resource_root = "kiminozs"
