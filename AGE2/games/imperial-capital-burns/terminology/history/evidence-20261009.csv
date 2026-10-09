@@ -94,7 +94,7 @@ jp,cn,status,chapter,source,source_row,source_status,occurrences,basis
 中隊,中队,contextual,全篇,imperial-old,15,legacy-table,31,主库术语表
 事前処置,战前处置,contextual,全篇,imperial-old,16,legacy-table,27,本章审定
 リンク,链路,contextual,全篇,imperial-old,17,legacy-table,25,主库术语表
-響,响,contextual,全篇,imperial-old,18,legacy-table,24,主库术语表
+響,响,excluded,全篇,imperial-old,18,legacy-table,24,主库术语表；2026-10-09全文定位复核：正文的24处命中为21处“影響”及“心に響いた”2处、“響き”1处；均非人名。退出本作术语及主基线，保留错误映射和核查依据供追溯。
 データリンク,数据链,contextual,全篇,imperial-old,19,legacy-table,24,主库术语表
 少尉,少尉,contextual,全篇,imperial-old,20,legacy-table,22,用户审定
 小型種,小型种,contextual,全篇,imperial-old,21,legacy-table,20,主库术语表

@@ -19,7 +19,7 @@ Muv-Luv七作使用“通用表 + 本作术语表”，君望独立使用本作�
 | [TDA01](../../../../AGE2/games/tda01/terminology/review-20261009.md) | [89 条](../../../../localization/glossaries/tda01.ja-zh-Hans.csv) | [196 条](../../../../AGE2/games/tda01/terminology/baseline.ja-zh-Hans.csv) | 189 | [484 条](../../../../AGE2/games/tda01/terminology/history/evidence-20261009.csv) |
 | [TDA02](../../../../AGE2/games/tda02/terminology/review-20261009.md) | [98 条](../../../../localization/glossaries/tda02.ja-zh-Hans.csv) | [220 条](../../../../AGE2/games/tda02/terminology/baseline.ja-zh-Hans.csv) | 206 | [544 条](../../../../AGE2/games/tda02/terminology/history/evidence-20261009.csv) |
 | [TDA03](../../../../AGE2/games/tda03/terminology/review-20261009.md) | [115 条](../../../../localization/glossaries/tda03.ja-zh-Hans.csv) | [261 条](../../../../AGE2/games/tda03/terminology/baseline.ja-zh-Hans.csv) | 242 | [624 条](../../../../AGE2/games/tda03/terminology/history/evidence-20261009.csv) |
-| [帝都燃烧](../../../../AGE2/games/imperial-capital-burns/terminology/review-20261009.md) | [183 条](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [186 条](../../../../AGE2/games/imperial-capital-burns/terminology/baseline.ja-zh-Hans.csv) | 183 | [264 条](../../../../AGE2/games/imperial-capital-burns/terminology/history/evidence-20261009.csv) |
+| [帝都燃烧](../../../../AGE2/games/imperial-capital-burns/terminology/review-20261009.md) | [135 条](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [185 条](../../../../AGE2/games/imperial-capital-burns/terminology/baseline.ja-zh-Hans.csv) | 182 | [264 条](../../../../AGE2/games/imperial-capital-burns/terminology/history/evidence-20261009.csv) |
 | [光子之花](../../../../rUGP/games/photonflowers/terminology/review-20261009.md) | [313 条](../../../../localization/glossaries/photonflowers.ja-zh-Hans.csv) | [566 条](../../../../rUGP/games/photonflowers/terminology/baseline.ja-zh-Hans.csv) | 447 | [1576 条](../../../../rUGP/games/photonflowers/terminology/history/evidence-20261009.csv) |
 | [光子旋律](../../../../rUGP/games/photonmelodies/terminology/review-20261009.md) | [750 条](../../../../localization/glossaries/photonmelodies.ja-zh-Hans.csv) | [2734 条](../../../../rUGP/games/photonmelodies/terminology/baseline.ja-zh-Hans.csv) | 2670 | [3660 条](../../../../rUGP/games/photonmelodies/terminology/history/evidence-20261009.csv) |
 | [君望（本篇及番外）](../../../../AGE2/games/kiminozo/terminology/review-20261009.md) | [167 条](../../../../localization/glossaries/kiminozo.ja-zh-Hans.csv) | [360 条](../../../../AGE2/games/kiminozo/terminology/baseline.ja-zh-Hans.csv) | 359 | [360 条](../../../../AGE2/games/kiminozo/terminology/history/evidence-20261009.csv) |
@@ -80,3 +80,11 @@ python localization/tools/terminology.py photonmelodies --check-baseline
 通用与本作出现同词异译时工具报错，不能以加载顺序覆盖。候选匹配采用片假名边界，避免ウィル命中ウィルス；单字人名仍须严格按人物/说话人语境判断。没有自动改写正文的操作。
 
 新增或修改术语先在本作基线记录出处、状态和适用范围，审定后再改对应使用表；有跨作依据才提升到通用表。新增语言建立独立文件，不覆盖简体中文。具体规则见 [章节术语工作流](../../../../localization/text/04-terminology.md)。
+
+<!-- imperial-review-20261009 -->
+## 帝都燃烧独立复核（2026-10-09）
+
+上述4545条／1683条是PR #50合并时的统计。帝都燃烧随后单独复核，当前改为135条术语、185条主基线和264条来源记录；其他作品数据未变。原183条中135条保留为术语，47条转为语境参考，“響→响”因命中普通词而退出使用表。
+
+逐条分类、当前定位和来源变更见[复核记录](imperial-review-20261009.json)；便于阅读的范围、例子及数量变化见[本作整理明细](../../../../AGE2/games/imperial-capital-burns/terminology/review-20261009.md)。这次整理不改正文译文，不把覆盖来源记录数当作全文译文审校进度。
+<!-- /imperial-review-20261009 -->
