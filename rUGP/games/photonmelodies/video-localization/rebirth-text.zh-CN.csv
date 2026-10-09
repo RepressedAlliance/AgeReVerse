@@ -1,4 +1,4 @@
-﻿id,variant,layer,source_text,target_text,long_witness_frame,short_witness_frame,status
+id,variant,layer,source_text,target_text,long_witness_frame,short_witness_frame,status
 notice.classified,both,notice,THE FOLLOWING INFORMATION IS CLASSIFIED:,以下资料的保密等级为：,180,180,draft_visual_source_checked
 notice.secret,both,notice,TOP SECRET,绝密,180,180,draft_visual_source_checked
 notice.clearance,both,notice,CLEARANCE AUTHORIZATION LEVEL 7,查阅权限：7级,180,180,draft_visual_source_checked
@@ -37,19 +37,19 @@ narration.rank,both,subtitle,A First Lieutenant of the EU Intelligence Corps.,�
 narration.codename,long,subtitle,Codename: Fenice.,代号：菲尼切。,360,,draft_visual_source_checked
 narration.codename,short,subtitle,Codename: Falso.,代号：伪面。,,360,draft_visual_source_checked
 narration.miracle,long,subtitle,A living miracle. A man who was resurrected from the depths of death and despair.,从死亡与绝望的深渊中重生的奇迹之人。,420,,draft_independent_asr_supported
-narration.miracle,short,subtitle,A living miracle. A man who stood before the abyss of death.,他是活着的奇迹，曾徘徊于死亡的深渊边缘。,,420,draft_visual_source_checked
+narration.miracle,short,subtitle,A living miracle. A man who stood before the abyss of death.,在死亡边缘挺过来的奇迹之人。,,420,draft_independent_asr_supported
 narration.abandon,long,subtitle,Forced to abandon his TSF during a covert operation,在绝密强袭作战中机体受损后，,540,,draft_japanese_profile_supported
-narration.abandon,short,subtitle,Forced to abandon his TSF during a covert operation,在一次秘密行动中，他被迫放弃战术机，,,540,draft_visual_source_checked
+narration.abandon,short,subtitle,Forced to abandon his TSF during a covert operation,在绝密强袭作战中机体受损后，,,540,draft_independent_asr_supported
 narration.beta,both,subtitle,he fell prey to the BETA,遭到BETA袭击，,600,600,draft_visual_source_checked
 narration.loss,both,subtitle,"losing his left eye, left arm, and both legs in the process.",失去了左眼、左臂和双腿。,660,660,draft_visual_source_checked
 narration.survival,both,subtitle,Following his survival,生还之后，,780,780,draft_visual_source_checked
 narration.wish,both,subtitle,Orlandi was determined to carry on his friend's dying wish.,奥兰迪决心继承挚友的遗志。,840,840,draft_visual_source_checked
 narration.volunteer,long,subtitle,"For this purpose, he volunteered to take part in the EU's",他自愿成为欧盟伤残军人战力恢复计划——,900,,draft_japanese_profile_supported
-narration.volunteer,short,subtitle,"For this purpose, he volunteered to take part in the EU's",为此，他自愿参加了欧盟的,,900,draft_visual_source_checked
+narration.volunteer,short,subtitle,"For this purpose, he volunteered to take part in the EU's",他自愿成为欧盟伤残军人战力恢复计划——,,900,draft_independent_asr_supported
 narration.project,long,subtitle,disabled veteran redevelopment program — the Cybrid Project.,“Cybrid计划”的受试者。,960,,draft_japanese_profile_supported
-narration.project,short,subtitle,disabled veteran redevelopment program — the Cybrid Project.,伤残军人再开发计划——Cybrid计划。,,960,draft_visual_source_checked
+narration.project,short,subtitle,disabled veteran redevelopment program — the Cybrid Project.,“Cybrid计划”的受试者。,,960,draft_independent_asr_supported
 narration.rebuild,long,subtitle,His entire body was surgically rebuilt using cutting-edge augmented parts,他接受了人体强化改造手术，,1080,,draft_independent_asr_supported
-narration.rebuild,short,subtitle,His entire body was surgically rebuilt using cutting-edge augmented parts.,他接受了全身改造手术，植入最先进的强化部件。,,1080,draft_visual_source_checked
+narration.rebuild,short,subtitle,His entire body was surgically rebuilt using cutting-edge augmented parts.,他接受了人体强化改造手术。,,1080,draft_independent_asr_supported
 narration.enhancement,long,subtitle,and further enhanced with Alternative IV technology.,并以Alternative 4的技术进一步强化。,1140,,draft_visual_source_checked
 narration.total,long,subtitle,The total price: Nine million euro.,总造价：900万欧元。,1200,,draft_visual_source_checked
 narration.total,short,subtitle,The total price: Six million euro.,总造价：600万欧元。,,1140,draft_visual_source_checked
@@ -57,7 +57,7 @@ narration.eye,both,subtitle,A multi-purpose optical sensor stands in place of hi
 narration.skeleton,both,subtitle,His skeleton is made of hyper ceramic.,骨骼由超陶瓷制成。,1440,1380,draft_visual_source_checked
 narration.muscle,both,subtitle,His muscles are carbonic actuators.,肌肉由碳素驱动器构成。,1500,1440,draft_visual_source_checked
 narration.crush,long,subtitle,He can crush reinforced concrete with his bare hands,他能击碎强化混凝土，,1560,,draft_independent_asr_supported
-narration.crush,short,subtitle,He can crush concrete with his bare hands,他能徒手击碎混凝土，,,1525,draft_visual_source_checked
+narration.crush,short,subtitle,He can crush concrete with his bare hands,他能击碎混凝土，,,1525,draft_independent_asr_supported
 narration.jump,long,subtitle,leap over a 20-meter wall,跃过20米高的墙壁，,1620,,draft_visual_source_checked
 narration.jump,short,subtitle,leap over a 10-meter wall,跃过10米高的墙壁，,,1560,draft_visual_source_checked
 narration.speed,long,subtitle,and run at a maximum speed of 120 kilometers an hour.,以最高瞬时时速120公里疾驰。,1680,,draft_visual_source_checked

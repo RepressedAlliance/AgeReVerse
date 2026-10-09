@@ -1,4 +1,4 @@
-"""Export the reviewed ending-caption frame ranges as a Chinese ASS draft.
+"""Export reviewed Rebirth caption frame ranges as a Chinese ASS draft.
 
 This is an offline preview track. It does not remove baked technical labels,
 encode CRsi, or establish the game's audio/video start-time relationship.
@@ -43,7 +43,7 @@ def build_ass(timeline: dict, rows: list[dict[str, str]], font: str) -> str:
         seconds, fraction = divmod(tail, 100)
         return f'{hours}:{minutes:02}:{seconds:02}.{fraction:02}'
 
-    lines = ['[Script Info]', 'Title: Rebirth ending Chinese subtitle draft',
+    lines = ['[Script Info]', f"Title: Rebirth {timeline['text_variant']} Chinese subtitle draft",
              'ScriptType: v4.00+', 'PlayResX: 1024', 'PlayResY: 600',
              'WrapStyle: 2', 'ScaledBorderAndShadow: yes', '', '[V4+ Styles]',
              'Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding',

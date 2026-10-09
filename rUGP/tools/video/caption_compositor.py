@@ -19,6 +19,12 @@ import numpy as np
 from .style_layers import render_layer
 
 
+SOURCES = {
+    27493704: dict(variant='long', frames=1905, captions=22, background=1715679260, background_frames=1904),
+    117665112: dict(variant='short', frames=1875, captions=21, background=1808635048, background_frames=1874),
+}
+
+
 def caption_mask(witness):
     crop = witness[505:589]
     small = cv2.resize(crop, (512, 42), interpolation=cv2.INTER_AREA)
@@ -67,20 +73,22 @@ def compose(source_video: Path, background_video: Path, timeline_path: Path,
         raise ValueError('video and report need distinct output paths')
     timeline = json.loads(timeline_path.read_text(encoding='utf-8'))
     profile = json.loads(profile_path.read_text(encoding='utf-8'))
-    if (timeline.get('schema'), timeline.get('source_global_offset'), timeline.get('frame_count')) != ('photon-crsi-caption-frames/1', 27493704, 1905):
+    source_id = timeline.get('source_global_offset')
+    spec = SOURCES.get(source_id)
+    if spec is None or (timeline.get('schema'), timeline.get('frame_count'), timeline.get('text_variant')) != ('photon-crsi-caption-frames/1', spec['frames'], spec['variant']):
         raise ValueError('unsupported source timeline')
     cues = timeline['captions']
-    if len(cues) != 22 or len({cue['id'] for cue in cues}) != 22:
-        raise ValueError('expected 22 unique ending captions')
+    if len(cues) != spec['captions'] or len({cue['id'] for cue in cues}) != spec['captions']:
+        raise ValueError(f"expected {spec['captions']} unique {spec['variant']} captions")
     previous_end = 0
     for cue in cues:
         start, end = cue['start_frame'], cue['end_frame']
-        if not previous_end <= start <= cue['witness_frame'] < end <= 1905:
+        if not previous_end <= start <= cue['witness_frame'] < end <= spec['frames']:
             raise ValueError('overlapping or out-of-range caption')
         previous_end = end
     with text_path.open(encoding='utf-8-sig', newline='') as stream:
         rows = [row for row in csv.DictReader(stream)
-                if row['layer'] == 'subtitle' and row['variant'] in ('long', 'both')]
+                if row['layer'] == 'subtitle' and row['variant'] in (spec['variant'], 'both')]
     text = {row['id']: row['target_text'] for row in rows}
     if len(text) != len(rows) or set(text) != {cue['id'] for cue in cues}:
         raise ValueError('caption text IDs do not match timeline')
@@ -115,8 +123,8 @@ def compose(source_video: Path, background_video: Path, timeline_path: Path,
             bands.append(frame[505:589].copy())
     finally:
         capture.release()
-    if len(bands) != 1904:
-        raise ValueError('expected 1904 background reference frames')
+    if len(bands) != spec['background_frames']:
+        raise ValueError(f"expected {spec['background_frames']} background reference frames")
     features, bands = np.stack(features), np.stack(bands)
     capture = open_video(source_video)
     try:
@@ -164,19 +172,19 @@ def compose(source_video: Path, background_video: Path, timeline_path: Path,
             encoder.stdin.write(frame.tobytes())
             number += 1
             if number % 300 == 0:
-                print(f'Composed {number}/1905 frames', flush=True)
+                print(f"Composed {number}/{spec['frames']} frames", flush=True)
     finally:
         capture.release()
         try:
             encoder.stdin.close()
         finally:
             result = encoder.wait()
-    if result or number != 1905 or outside:
+    if result or number != spec['frames'] or outside:
         raise ValueError(f'composition failed: ffmpeg={result}, frames={number}, outside-mask pixels={outside}')
     report = dict(status='caption composition candidate; language and motion acceptance pending',
         frame_count=number, changed_frames=changed, outside_allowed_changed_pixels=outside,
         typography=metrics, frame_alignment=records, target_rgb_sha256=hashes,
-        source_global_offset=27493704, background_global_offset=1715679260,
+        source_global_offset=source_id, background_global_offset=spec['background'],
         input_sha256={label: hashlib.sha256(path.read_bytes()).hexdigest() for label, path in
                       [('timeline', timeline_path), ('text', text_path), ('profile', profile_path)]},
         limitation='Adjacent Japanese frames approximate the caption background; no game playback verified')

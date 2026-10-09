@@ -1,0 +1,82 @@
+{
+  "schema": "photon-rebirth-opening-caption/1",
+  "date": "2026-10-10",
+  "status": "Composition, encoding and visual review complete; full native RGB verification running; runtime pending",
+  "source_global_offset": 117665112,
+  "background_global_offset": 1808635048,
+  "frames": 1875,
+  "captions": 21,
+  "scope": "Opening 600万 version; retain original-language technical artwork; translate added narration captions only.",
+  "audio": {
+    "bytes": 11024684,
+    "sha256": "a3fc2c60833a39084755fac826da70558f180abfe698b5da2297e2674ef03281"
+  },
+  "independent_asr": [
+    {
+      "file": "short-audio-sensevoice-review.json",
+      "bytes": 11074,
+      "sha256": "0dd6723187f8f52e604b4741a849b540b13d7cd60303c4c398a01fd130832b29",
+      "model": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17"
+    },
+    {
+      "file": "short-audio-turbo-review.json",
+      "bytes": 3019,
+      "sha256": "e1d9e123ce530009723e834a5be7cbad92d949a02c3b3c5c17b3db870c5e02cf",
+      "model": "deepdml/faster-whisper-large-v3-turbo-ct2"
+    }
+  ],
+  "wording_review": {
+    "revised_short_only_ids": [
+      "narration.miracle",
+      "narration.abandon",
+      "narration.volunteer",
+      "narration.project",
+      "narration.rebuild",
+      "narration.crush"
+    ],
+    "reasons": [
+      "Match 死の淵で踏みとどまった rather than long-version rebirth wording.",
+      "Match Japanese aircraft damage, disabled-veteran force-restoration program and volunteer test subject.",
+      "Remove unsupported whole-body/cutting-edge-components and bare-handed additions from English captions."
+    ],
+    "preserved_differences": [
+      "伪面",
+      "600万欧元",
+      "10米",
+      "100公里/时",
+      "混凝土",
+      "No Alternative 4 enhancement sentence"
+    ],
+    "limitation": "Independent local automatic speech recognition, source captions and existing official Japanese character context; no direct human listening."
+  },
+  "visual_review": {
+    "all_cues_witnessed": 21,
+    "boundary_comparisons": 84,
+    "adjacent_frame_samples": 20,
+    "motion_centers": [
+      1031,
+      1826,
+      198,
+      860
+    ],
+    "observed": "No obvious glyph residue, cut-off Chinese, broken grid or repair edge in inspected full-width strips; shared font/profile with ending.",
+    "outside_allowed_changed_pixels": 0,
+    "changed_frames": 1576,
+    "limitation": "Temporal background blending is approximate; inspected frame sequences are not human continuous playback."
+  },
+  "typography_profile": "rebirth-ending-style.json",
+  "timeline": "rebirth-opening-subtitles.frames.json",
+  "timeline_metadata_note": "Native clock metadata was added after composition without changing caption ranges or witnesses.",
+  "candidate": {
+    "output_bytes": 458510263,
+    "output_sha256": "5ad267a1ba05e0079c27926bb012b93110b3d58999ffba11a280d79ece78b4e5",
+    "frame_count": 1875,
+    "replaced_frames": 1586,
+    "retained_original_frames": 289,
+    "rate": 3000
+  },
+  "preview": {
+    "bytes": 34857853,
+    "sha256": "a81362ecd131a733d2cd35e1a842abf234494b73c8f1be3c58603350f26a11c7"
+  }
+}
