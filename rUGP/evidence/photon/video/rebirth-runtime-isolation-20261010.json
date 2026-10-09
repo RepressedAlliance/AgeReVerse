@@ -1,13 +1,14 @@
 {
   "schema": "photon-rebirth-runtime-isolation/1",
   "date": "2026-10-10",
-  "status": "v3 staged in isolated game; both runtime guards passed and title/load UI reached; ending playback not yet verified",
+  "status": "Isolated startup and save-directory repair confirmed; localized ending subsequently rendered through return to menu",
   "scope": {
     "identity": "muvluv_pm_vp1",
     "route": "Software\\AGES3 Applications\\age\\muvluv_pm_vp1\\rvmmPeculiarToTheApp",
     "formal_game_files_modified": false,
     "formal_v11_registry_written": false,
-    "save_slots_written": false,
+    "manual_save_requested": false,
+    "isolated_automatic_save_notification_observed": true,
     "video_candidate_installed": true,
     "installation_scope": "Private isolated game only; formal game unchanged"
   },
@@ -57,7 +58,10 @@
       "stopped_on_error": true
     },
     "completed_attempt": {
-      "target_before": {"subkeys": 0, "values": 0},
+      "target_before": {
+        "subkeys": 0,
+        "values": 0
+      },
       "method": "Enumerate and copy registry values and child keys without copying security descriptors",
       "destination_guard": "Refuse a nonempty target; refuse any already-existing destination child",
       "nonempty_guard_validation": "Independent execution against the command environment's existing 10-child vp1 key stopped before any copy or value write",
@@ -85,8 +89,14 @@
   "runtime_chain": {
     "initial_followup": "Outer guard passed after the registry repair; nested choice-glyph guard still expected the original executable identity.",
     "repair": "Rebind the nested private DLL's expected host hash and the outer DLL's expected private-DLL hash to the isolated files; retain guard logic.",
-    "private_dll_changed_field": {"offset": 201728, "bytes": 64},
-    "outer_dll_changed_field": {"offset": 277648, "bytes": 64},
+    "private_dll_changed_field": {
+      "offset": 201728,
+      "bytes": 64
+    },
+    "outer_dll_changed_field": {
+      "offset": 277648,
+      "bytes": 64
+    },
     "other_bytes_unchanged": true,
     "official_dll_unchanged": true,
     "isolated_executable_sha256": "a84d1705eef5fc93b6d3c23a8a4ed8c1882220a16740b0d549371383896e1421",
@@ -94,12 +104,17 @@
     "outer_dll_sha256": "01aead8bc6608f95399183d8a7c9b5e56b51a58b3043f0884304b5f87208a225",
     "ruo_sha256": "f33f941a390d9df32763170fa967ca29a1ac0e0f9f5d05c676144c638f02b236",
     "observed": "PID 168212 reached Chinese CAUTION, title and load UI without either guard error. It reported missing system data and showed empty normal/quick-load lists.",
-    "ending_video_played": false
+    "ending_video_played": true
   },
   "save_directory_diagnosis": {
     "original_source_written": false,
     "offline_decode": "All 38 copied normal saves decode into two blocks with valid full and partial group checksums and zero trailing bytes.",
-    "format": {"magic": "0x79d21e34", "key": "0x0732ce9a", "blocks": 2, "partial_group_checksum_present": true},
+    "format": {
+      "magic": "0x79d21e34",
+      "key": "0x0732ce9a",
+      "blocks": 2,
+      "partial_group_checksum_present": true
+    },
     "identity_observation": "Metadata contains age\\muvluv_pm_v11 and muvluv_pm_v11. No identity rejection was established; these fields were not edited.",
     "live_read_only_observation": {
       "process": 168212,
@@ -117,8 +132,16 @@
     },
     "correction": "Copy the original Rebirth normal saves 4 and 27 unchanged into the isolated app-data parent directory; preserve the previous Vmreg copies.",
     "rebirth_slots": [
-      {"slot": 4, "dialogue_index": 41, "sha256": "962ed9d6ae51b2779b8bc9c0e35a2a591a7ee3b5bbedcab0111d237e782b3bbd"},
-      {"slot": 27, "dialogue_index": 1, "sha256": "7aec74d497bd23965b785d26108b6674cf19974220469294c26ec6a27eca8fea"}
+      {
+        "slot": 4,
+        "dialogue_index": 41,
+        "sha256": "962ed9d6ae51b2779b8bc9c0e35a2a591a7ee3b5bbedcab0111d237e782b3bbd"
+      },
+      {
+        "slot": 27,
+        "dialogue_index": 1,
+        "sha256": "7aec74d497bd23965b785d26108b6674cf19974220469294c26ec6a27eca8fea"
+      }
     ],
     "both_slots_are_early_story": true,
     "post_correction_restart_result": "PID 168616 displays slots 4 and 27 as Resurrection after one normal restart. Slot 4 was loaded successfully into the matching indoor character scene without changing its v11 metadata identity. The initial loaded screenshots had no visible text box; no dialogue text was inferred from them."
@@ -134,8 +157,9 @@
     }
   ],
   "limitations": [
-    "Successful startup and load UI do not establish that the ending resource was opened or rendered.",
-    "The isolated host and runtime identity bindings are private validation setup, not a player deliverable.",
-    "v3 is installed only in the private game. Ending resource loading, continuous rendering and audiovisual acceptance remain outstanding."
-  ]
+    "Isolated host identity bindings are validation setup, not a player deliverable.",
+    "Ending playback and bounded audio/video measurement are recorded separately; direct human listening is not established.",
+    "Formal game and v11 registry were not modified."
+  ],
+  "ending_runtime_evidence": "rebirth-ending-runtime-20261010.json"
 }
