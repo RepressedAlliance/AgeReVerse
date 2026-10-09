@@ -1,0 +1,64 @@
+﻿id,variant,layer,source_text,target_text,long_witness_frame,short_witness_frame,status
+notice.classified,both,notice,THE FOLLOWING INFORMATION IS CLASSIFIED:,以下资料的保密等级为：,180,180,draft_visual_source_checked
+notice.secret,both,notice,TOP SECRET,绝密,180,180,draft_visual_source_checked
+notice.clearance,both,notice,CLEARANCE AUTHORIZATION LEVEL 7,查阅权限：7级,180,180,draft_visual_source_checked
+eye.heading,both,technical,Multi-purpose Optical Sensor includes:,多用途光学传感器／功能与参数：,1190,1190,draft_visual_source_checked
+eye.starlight,both,technical,Starlight Scope,微光夜视,1190,1190,draft_visual_source_checked
+eye.infrared,both,technical,Infrared Vision,红外视觉,1190,1190,draft_visual_source_checked
+eye.recording,both,technical,Video Recording,视频录制,1190,1190,draft_visual_source_checked
+eye.focus,both,technical,Auto-Focus,自动对焦,1190,1190,draft_visual_source_checked
+eye.zoom,long,technical,50x Optical Multiplier,光学放大倍率：50倍,1190,,draft_visual_source_checked
+eye.zoom,short,technical,30x Optical Multiplier,光学放大倍率：30倍,,1190,draft_visual_source_checked
+eye.pixels,long,technical,"Valid Pixels: 30,000,000 pixels",有效像素：3000万,1190,,draft_visual_source_checked
+eye.pixels,short,technical,"Valid Pixels: 20,000,000 pixels",有效像素：2000万,,1190,draft_visual_source_checked
+eye.face,both,technical,Facial Recognition System,人脸识别系统,1190,1190,draft_visual_source_checked
+eye.stereo,both,technical,3D Video Recording,立体视频录制,1190,1190,draft_visual_source_checked
+eye.stabilization,both,technical,Image Stabilization,影像防抖,1190,1190,draft_visual_source_checked
+eye.gcode,long,technical,G-Code Video Reservation,G-Code预约录像,1190,,draft_visual_source_checked
+eye.price,long,price,"Price: 2,500,000 EUR",价格：250万欧元,1190,,draft_visual_source_checked
+eye.price,short,price,"Price: 2,000,000 EUR",价格：200万欧元,,1190,draft_visual_source_checked
+body.frame,both,technical,Frame: Hyper Ceramic,骨架：超陶瓷,1320,1320,draft_visual_source_checked
+body.muscle,both,technical,Muscle: Carbonic Actuator,肌肉：碳素驱动器,1320,1320,draft_visual_source_checked
+body.skin,both,technical,Skin: Artificial Bio-Chemical Protective Skin,皮肤：人工生化防护皮肤,1320,1320,draft_visual_source_checked
+arm.grip,long,technical,Grip Strength: 400 kilogram-force,握力：400千克力,1320,,draft_visual_source_checked
+arm.grip,short,technical,Grip Strength: 350 kilogram-force,握力：350千克力,,1320,draft_visual_source_checked
+arm.punch,long,technical,Punching Impulse of Force: 2.0 ton,出拳冲击力：2.0吨,1320,,draft_visual_source_checked
+arm.punch,short,technical,Punching Impulse of Force: 1.5 ton,出拳冲击力：1.5吨,,1320,draft_visual_source_checked
+arm.price,long,price,"Price: 2,500,000 EUR",价格：250万欧元,1350,,draft_visual_source_checked
+arm.price,short,price,"Price: 1,500,000 EUR",价格：150万欧元,,1350,draft_visual_source_checked
+leg.jump,long,technical,Maximum Vertical Jump: 20 meters,最大垂直跳跃高度：20米,1650,,draft_visual_source_checked
+leg.jump,short,technical,Maximum Vertical Jump: 10 meters,最大垂直跳跃高度：10米,,1620,draft_visual_source_checked
+leg.speed,long,technical,Maximum Instantaneous Speed: 120 kilometer/h,最高瞬时速度：120公里／时,1650,,draft_visual_source_checked
+leg.speed,short,technical,Maximum Instantaneous Speed: 100 kilometer/h,最高瞬时速度：100公里／时,,1620,draft_visual_source_checked
+leg.price,long,price,"Price: 2,000,000 EUR * 2",价格：200万欧元 × 2,1650,,draft_visual_source_checked
+leg.price,short,price,"Price: 1,250,000 EUR * 2",价格：125万欧元 × 2,,1620,draft_visual_source_checked
+narration.name,both,subtitle,Silvio Orlandi.,西尔维奥·奥兰迪。,240,210,draft_visual_source_checked
+narration.rank,both,subtitle,A First Lieutenant of the EU Intelligence Corps.,欧盟情报军中尉。,300,300,draft_visual_source_checked
+narration.codename,long,subtitle,Codename: Fenice.,代号：菲尼切。,360,,draft_visual_source_checked
+narration.codename,short,subtitle,Codename: Falso.,代号：法尔索。,,360,draft_visual_source_checked
+narration.miracle,long,subtitle,A living miracle. A man who was resurrected from the depths of death and despair.,他是活着的奇迹，曾从死亡与绝望的深渊中重获新生。,420,,draft_visual_source_checked
+narration.miracle,short,subtitle,A living miracle. A man who stood before the abyss of death.,他是活着的奇迹，曾徘徊于死亡的深渊边缘。,,420,draft_visual_source_checked
+narration.abandon,both,subtitle,Forced to abandon his TSF during a covert operation,在一次秘密行动中，他被迫放弃战术机，,540,540,draft_visual_source_checked
+narration.beta,both,subtitle,he fell prey to the BETA,遭到BETA袭击，,600,600,draft_visual_source_checked
+narration.loss,both,subtitle,"losing his left eye, left arm, and both legs in the process.",失去了左眼、左臂和双腿。,660,660,draft_visual_source_checked
+narration.survival,both,subtitle,Following his survival,生还之后，,780,780,draft_visual_source_checked
+narration.wish,both,subtitle,Orlandi was determined to carry on his friend's dying wish.,奥兰迪决心继承挚友的遗志。,840,840,draft_visual_source_checked
+narration.volunteer,both,subtitle,"For this purpose, he volunteered to take part in the EU's",为此，他自愿参加了欧盟的,900,900,draft_visual_source_checked
+narration.project,both,subtitle,disabled veteran redevelopment program — the Cybrid Project.,伤残军人再开发计划——Cybrid计划。,960,960,draft_visual_source_checked
+narration.rebuild,long,subtitle,His entire body was surgically rebuilt using cutting-edge augmented parts,他接受了全身改造手术，植入最先进的强化部件，,1080,,draft_visual_source_checked
+narration.rebuild,short,subtitle,His entire body was surgically rebuilt using cutting-edge augmented parts.,他接受了全身改造手术，植入最先进的强化部件。,,1080,draft_visual_source_checked
+narration.enhancement,long,subtitle,and further enhanced with Alternative IV technology.,并以Alternative 4的技术进一步强化。,1140,,draft_visual_source_checked
+narration.total,long,subtitle,The total price: Nine million euro.,总造价：900万欧元。,1200,,draft_visual_source_checked
+narration.total,short,subtitle,The total price: Six million euro.,总造价：600万欧元。,,1140,draft_visual_source_checked
+narration.eye,both,subtitle,A multi-purpose optical sensor stands in place of his left eye.,左眼移植了多用途光学传感器。,1320,1260,draft_visual_source_checked
+narration.skeleton,both,subtitle,His skeleton is made of hyper ceramic.,骨骼由超陶瓷制成。,1440,1380,draft_visual_source_checked
+narration.muscle,both,subtitle,His muscles are carbonic actuators.,肌肉由碳素驱动器构成。,1500,1440,draft_visual_source_checked
+narration.crush,long,subtitle,He can crush reinforced concrete with his bare hands,他能徒手击碎强化混凝土，,1560,,draft_visual_source_checked
+narration.crush,short,subtitle,He can crush concrete with his bare hands,他能徒手击碎混凝土，,,1525,draft_visual_source_checked
+narration.jump,long,subtitle,leap over a 20-meter wall,跃过20米高的墙壁，,1620,,draft_visual_source_checked
+narration.jump,short,subtitle,leap over a 10-meter wall,跃过10米高的墙壁，,,1560,draft_visual_source_checked
+narration.speed,long,subtitle,and run at a maximum speed of 120 kilometers an hour.,以最高瞬时时速120公里疾驰。,1680,,draft_visual_source_checked
+narration.speed,short,subtitle,and run at a maximum speed of 100 kilometers an hour.,以最高瞬时时速100公里疾驰。,,1620,draft_visual_source_checked
+narration.man,long,subtitle,He is the nine million euro man.,造价900万欧元的男人。,1800,,draft_visual_source_checked
+narration.man,short,subtitle,He is the six million euro man.,造价600万欧元的男人。,,1740,draft_visual_source_checked
+narration.cybrid,both,subtitle,He is: The Cybrid.,他就是——Cybrid。,1830,1845,draft_visual_source_checked
