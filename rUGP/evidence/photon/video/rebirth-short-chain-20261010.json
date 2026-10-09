@@ -1,0 +1,246 @@
+{
+  "schema": "photon-crsi-short-chain/1",
+  "method": "Strict CRsa parsing and exact resource extraction; no game execution",
+  "scope": "6000000 EUR short sequence after the early flashback; separate from the 9000000 EUR ending sequence",
+  "scan": {
+    "valid_crsa_records": 265,
+    "matching_scripts": 1
+  },
+  "sources": [
+    {
+      "role": "prelude_dialogue",
+      "volume": "photonmelodies11.rio.003",
+      "volume_offset": 958394640,
+      "global_offset": 4774947196,
+      "record_bytes": 29575,
+      "record_sha256": "51fc396df2f24f432a04838c791d3894e8aad0433413326e2e71d251fb376e1b"
+    },
+    {
+      "role": "short_body_introduction",
+      "volume": "photonmelodies11.rio.003",
+      "volume_offset": 1369366540,
+      "global_offset": 5185919096,
+      "record_bytes": 1556,
+      "record_sha256": "75c5a61a939a20674528b4a4efee97117d28d9565090b9f97625c2b2f4d0b3e8"
+    },
+    {
+      "role": "following_briefing",
+      "volume": "photonmelodies11.rio.003",
+      "volume_offset": 1526866676,
+      "global_offset": 5343419232,
+      "record_bytes": 92286,
+      "record_sha256": "79ac072a3a18a1ea1deb5b7e82ab877fbfc6b488f591f05f3eaa25884569d8e3"
+    }
+  ],
+  "predecessor_jump": {
+    "order": 407,
+    "name": "CVmJump",
+    "target": 20080,
+    "fields": {
+      "target": {
+        "object": "CRsa",
+        "global_offset": 5185919096
+      }
+    }
+  },
+  "selected_commands": [
+    {
+      "order": 10,
+      "name": "CVmSound",
+      "target": 424,
+      "fields": {
+        "object": {
+          "object": "CPmBgm",
+          "global_offset": 5342501300
+        },
+        "kind": 2,
+        "options": 32,
+        "parameters": [
+          4096,
+          0,
+          1000
+        ],
+        "resource": {
+          "object": "COptimizedObs",
+          "global_offset": 5342501372
+        }
+      }
+    },
+    {
+      "order": 11,
+      "name": "CVmFlagOp",
+      "target": 456,
+      "fields": {
+        "a": {
+          "integer": 0
+        },
+        "b": {
+          "object": "CInt",
+          "global_offset": 568804
+        },
+        "jump": {
+          "kind": "object",
+          "name": "null"
+        },
+        "operation": 66,
+        "mode": 1,
+        "target": 644
+      }
+    },
+    {
+      "order": 12,
+      "name": "CVmCall",
+      "target": 508,
+      "fields": {
+        "script": {
+          "object": "CRsa",
+          "global_offset": 1339182176
+        },
+        "arguments": [
+          {
+            "object": "CPmVideoRef",
+            "global_offset": 1904699736
+          },
+          {
+            "integer": 2
+          }
+        ],
+        "bindings": [
+          [
+            0,
+            {
+              "object": "CRsi",
+              "global_offset": 1808635048
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "order": 15,
+      "name": "CVmFlagOp",
+      "target": 676,
+      "fields": {
+        "a": {
+          "integer": 0
+        },
+        "b": {
+          "object": "CInt",
+          "global_offset": 568804
+        },
+        "jump": {
+          "kind": "object",
+          "name": "null"
+        },
+        "operation": 67,
+        "mode": 1,
+        "target": 864
+      }
+    },
+    {
+      "order": 16,
+      "name": "CVmCall",
+      "target": 728,
+      "fields": {
+        "script": {
+          "object": "CRsa",
+          "global_offset": 1339182176
+        },
+        "arguments": [
+          {
+            "object": "CPmVideoRef",
+            "global_offset": 210804748
+          },
+          {
+            "integer": 2
+          }
+        ],
+        "bindings": [
+          [
+            0,
+            {
+              "object": "CRsi",
+              "global_offset": 117665112
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "order": 19,
+      "name": "CVmDirectionSync",
+      "target": 888,
+      "fields": {
+        "mode": 0,
+        "objects": []
+      }
+    },
+    {
+      "order": 20,
+      "name": "CVmCall",
+      "target": 932,
+      "fields": {
+        "script": {
+          "object": "CRsa",
+          "global_offset": 1685322196
+        },
+        "arguments": [
+          {
+            "integer": 0
+          },
+          {
+            "integer": 0
+          }
+        ],
+        "bindings": []
+      }
+    },
+    {
+      "order": 21,
+      "name": "CVmSound",
+      "target": 960,
+      "fields": {
+        "object": {
+          "kind": "object",
+          "name": "null"
+        },
+        "kind": 255,
+        "options": 32,
+        "parameters": [
+          4096,
+          0,
+          1000
+        ]
+      }
+    },
+    {
+      "order": 31,
+      "name": "CVmJump",
+      "target": 1344,
+      "fields": {
+        "target": {
+          "object": "CRsa",
+          "global_offset": 5343419232
+        }
+      }
+    }
+  ],
+  "audio": {
+    "class_name": "COptimizedObs",
+    "global_offset": 5342501372,
+    "volume": "photonmelodies11.rio.003",
+    "volume_offset": 1525948816,
+    "extent": 917859,
+    "sha256": "44359076046b504d9d15ed8354fe8c68ac6b266aabb301f39e617791db435d2e",
+    "decoder": "vgmstream r2117 win64",
+    "sample_rate": 44100,
+    "channels": 2,
+    "samples": 2756160,
+    "duration_seconds": 62.49795918367347
+  },
+  "limitations": [
+    "Static script sequence does not prove runtime playback or synchronization",
+    "Short audio has been decoded but not independently listened to",
+    "CInt@568804 semantic label is not established"
+  ]
+}

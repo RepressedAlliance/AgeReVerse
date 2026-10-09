@@ -35,7 +35,7 @@ leg.price,short,price,"Price: 1,250,000 EUR * 2",价格：125万欧元 × 2,,162
 narration.name,both,subtitle,Silvio Orlandi.,西尔维奥·奥兰迪。,240,210,draft_visual_source_checked
 narration.rank,both,subtitle,A First Lieutenant of the EU Intelligence Corps.,欧盟情报军中尉。,300,300,draft_visual_source_checked
 narration.codename,long,subtitle,Codename: Fenice.,代号：菲尼切。,360,,draft_visual_source_checked
-narration.codename,short,subtitle,Codename: Falso.,代号：法尔索。,,360,draft_visual_source_checked
+narration.codename,short,subtitle,Codename: Falso.,代号：伪面。,,360,draft_visual_source_checked
 narration.miracle,long,subtitle,A living miracle. A man who was resurrected from the depths of death and despair.,他是活着的奇迹，曾从死亡与绝望的深渊中重获新生。,420,,draft_visual_source_checked
 narration.miracle,short,subtitle,A living miracle. A man who stood before the abyss of death.,他是活着的奇迹，曾徘徊于死亡的深渊边缘。,,420,draft_visual_source_checked
 narration.abandon,both,subtitle,Forced to abandon his TSF during a covert operation,在一次秘密行动中，他被迫放弃战术机，,540,540,draft_visual_source_checked
