@@ -1,0 +1,99 @@
+{
+  "schema": "photon-rebirth-runtime-isolation/1",
+  "date": "2026-10-10",
+  "status": "Isolated desktop registry configuration prepared; game startup after repair and video playback not yet verified",
+  "scope": {
+    "identity": "muvluv_pm_vp1",
+    "route": "Software\\AGES3 Applications\\age\\muvluv_pm_vp1\\rvmmPeculiarToTheApp",
+    "formal_game_files_modified": false,
+    "formal_v11_registry_written": false,
+    "save_slots_written": false,
+    "video_candidate_installed": false
+  },
+  "observations": [
+    {
+      "context": "Independent 32-bit program launched by command tool",
+      "operation": "RegOpenKeyExW with KEY_QUERY_VALUE | KEY_SET_VALUE",
+      "default_view_result": 0,
+      "view32_result": 0,
+      "view64_result": 0
+    },
+    {
+      "context": "Same independent program launched by node_repl child_process",
+      "default_view_result": 0,
+      "view32_result": 0,
+      "view64_result": 0
+    },
+    {
+      "context": "Isolated game launched from Explorer, diagnostic DLL",
+      "regopen_result": 2,
+      "guard_status": 4,
+      "launches": 2,
+      "purpose": "First obtain the system error; then inspect the registry root and failing path prefix",
+      "same_user_sid_as_independent_check": true,
+      "same_fresh_hkcu_native_root_as_independent_check": true,
+      "first_failing_prefix": "Software\\AGES3 Applications\\age\\muvluv_pm_vp1",
+      "all_parent_prefixes_open": true,
+      "exited_after_diagnostics": true
+    },
+    {
+      "context": "Independent read-only context checker launched from Explorer",
+      "game_running": false,
+      "regopen_result": 2,
+      "first_failing_prefix": "Software\\AGES3 Applications\\age\\muvluv_pm_vp1",
+      "same_user_sid_and_native_root": true
+    }
+  ],
+  "finding": "The isolated registry identity created in the command environment was not visible to Explorer-launched processes. The same failure without the game rules out a game-only cause. The mechanism producing the context difference has not been identified.",
+  "repair": {
+    "context": "Task-local helper launched from Explorer",
+    "source": "Existing v11 configuration, opened read-only",
+    "destination": "Task-specific vp1 key only",
+    "first_attempt": {
+      "target_absent_before": true,
+      "created_new_target": true,
+      "RegCopyTreeW_result": 5,
+      "stopped_on_error": true
+    },
+    "completed_attempt": {
+      "target_before": {"subkeys": 0, "values": 0},
+      "method": "Enumerate and copy registry values and child keys without copying security descriptors",
+      "destination_guard": "Refuse a nonempty target; refuse any already-existing destination child",
+      "nonempty_guard_validation": "Independent execution against the command environment's existing 10-child vp1 key stopped before any copy or value write",
+      "subkeys_copied": 10,
+      "copy_result": 0,
+      "isolated_paths_written": [
+        "Installation.strAbsolutePath",
+        "Installation.strInstallSourcePath",
+        "Installation.strObjectOcean",
+        "Installation.strIciPath",
+        "rUGPBasic.strRugpPluginFolder",
+        "rvmmInstallation.strFontCachePath",
+        "rvmmInstallation.strVirtuaRegistryAbsolutePath"
+      ],
+      "steam_settings": {
+        "bUucUseSteamRemoteStorage": 0,
+        "nEnableWithoutSteamClient": 1,
+        "nEnableWithoutSteamLoggedOn": 1
+      },
+      "all_setting_calls_succeeded": true,
+      "route_open_after": 0,
+      "status": "prepared"
+    }
+  },
+  "references": [
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regcopytreew",
+      "scope": "RegCopyTreeW also copies security descriptors; this alone does not prove why the observed call returned error 5"
+    },
+    {
+      "url": "https://www.winehq.org/pipermail/wine-cvs/2016-February/111887.html",
+      "scope": "Independent implementation of registry value and child enumeration; not evidence of this Windows process's behavior"
+    }
+  ],
+  "limitations": [
+    "The post-repair check ran in the desktop helper, not a new game process.",
+    "The private game retains a diagnostic DLL; it is not a player deliverable.",
+    "The v3 RUO remains uninstalled. Resource loading, continuous rendering and audiovisual acceptance remain outstanding."
+  ]
+}
