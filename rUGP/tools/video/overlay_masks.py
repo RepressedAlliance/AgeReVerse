@@ -34,7 +34,7 @@ def analyze(video: Path, layout: dict) -> tuple[dict, dict]:
                 and 0 <= start < end <= count and references
                 and all(start <= frame < end for frame in references)):
             raise ValueError(f'invalid region or references: {name}')
-        if entry['color'] not in ('white', 'magenta'):
+        if entry['color'] not in ('white', 'magenta', 'cyan'):
             raise ValueError(f'unsupported glyph color: {name}')
         needed.update(range(start, end))
     if not needed:
@@ -64,6 +64,9 @@ def analyze(video: Path, layout: dict) -> tuple[dict, dict]:
             # Intersection suppresses moving highlights behind fixed white text.
             core = ((refs.min(axis=(0, 3)) > 190)
                     & (np.max(refs.max(axis=3) - refs.min(axis=3), axis=0) < 35))
+        elif entry['color'] == 'cyan':
+            core = ((refs[:, :, :, 1] - refs[:, :, :, 2]).min(axis=0) > 55)
+            core &= ((refs[:, :, :, 0] - refs[:, :, :, 2]).min(axis=0) > 70)
         else:
             # Union is needed because original price text flashes on and off.
             strength = np.minimum(refs[:, :, :, 0], refs[:, :, :, 2]) - refs[:, :, :, 1]
@@ -74,14 +77,23 @@ def analyze(video: Path, layout: dict) -> tuple[dict, dict]:
                 & ~cv2.dilate(core.astype(np.uint8), np.ones((3, 3), np.uint8)).astype(bool))
         if not ring.any():
             raise ValueError(f'no comparison ring: {entry["occurrence"]}')
-        signal = []
+        signal, coverage = [], []
         start, end = entry['detection_span']
         for number in range(start, end):
             crop = frames[number][y0:y1, x0:x1].astype(np.float32)
-            plane = (crop.min(axis=2) if entry['color'] == 'white' else
-                     np.minimum(crop[:, :, 0], crop[:, :, 2]) - crop[:, :, 1])
+            if entry['color'] == 'white':
+                plane = crop.min(axis=2)
+                visible = (plane > 80) & (crop.max(axis=2)-plane < 60)
+            elif entry['color'] == 'cyan':
+                plane = crop[:, :, 1] - crop[:, :, 2]
+                visible = plane > 25
+            else:
+                plane = np.minimum(crop[:, :, 0], crop[:, :, 2]) - crop[:, :, 1]
+                visible = crop[:, :, 2]-crop[:, :, 1] > 40
             signal.append(float(plane[core].mean() - plane[ring].mean()))
+            coverage.append(float(visible[core].mean()))
         signal = np.array(signal)
+        coverage = np.array(coverage)
         peak = float(np.percentile(signal, 90))
         active = np.where(signal > max(15, peak * .1))[0]
         full = np.where(signal > peak * .9)[0]
@@ -94,6 +106,7 @@ def analyze(video: Path, layout: dict) -> tuple[dict, dict]:
                             candidate_end=int(active[-1] + start + 1), peak=peak))
         arrays[f'mask_{index}'] = core
         arrays[f'signal_{index}'] = signal
+        arrays[f'coverage_{index}'] = coverage
     return dict(schema='photon-crsi-technical-analysis/1',
                 source_global_offset=layout['source_global_offset'],
                 status='candidate thresholds; inspect animation boundaries before production',

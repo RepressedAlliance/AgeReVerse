@@ -8,7 +8,7 @@
   "frame_index_origin": 0,
   "end_semantics": "exclusive",
   "status": "glyph-layout-reviewed; detected animation boundaries remain candidates",
-  "scope": "25 technical/price rows in ending eye, arm and leg scenes; opening notice is separate",
+  "scope": "28 technical/price/notice rows in the ending eye, arm, leg and opening notice scenes",
   "text_file": "rebirth-text.zh-CN.csv",
   "text_variant": "long",
   "limitations": [
@@ -16,7 +16,8 @@
     "White core masks omit antialiasing/glow; they require expansion for removal",
     "A detection span is a search window, not the actual display interval",
     "Bright model details can bias fade detection; price blinking must be preserved",
-    "Spatial-only repair was rejected for visible grid and model damage; no production repair is approved"
+    "Spatial-only repair was rejected for visible grid and model damage; no production repair is approved",
+    "Chinese target typography and signal-driven reveal/fade are draft; no final animation acceptance"
   ],
   "overlays": [
     {
@@ -43,7 +44,14 @@
       ],
       "color": "white",
       "text_part": 0,
-      "text_separator": "／"
+      "text_separator": "／",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 49,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.heading.detail",
@@ -69,7 +77,14 @@
       ],
       "color": "white",
       "text_part": 1,
-      "text_separator": "／"
+      "text_separator": "／",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 84,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.starlight",
@@ -93,7 +108,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 119,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.infrared",
@@ -117,7 +139,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 154,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.recording",
@@ -141,7 +170,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 189,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.focus",
@@ -165,7 +201,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 224,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.zoom",
@@ -189,7 +232,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 259,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.pixels",
@@ -213,7 +263,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 294,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.face",
@@ -237,7 +294,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 329,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.stereo",
@@ -261,7 +325,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 364,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.stabilization",
@@ -285,7 +356,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 399,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.gcode",
@@ -309,7 +387,14 @@
         1065,
         1202
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 434,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "eye.eye.price",
@@ -333,7 +418,14 @@
         1135,
         1202
       ],
-      "color": "magenta"
+      "color": "magenta",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 496,
+        "font_size": 44,
+        "ass_color": "6600F1"
+      }
     },
     {
       "occurrence": "arm.body.frame",
@@ -358,7 +450,14 @@
         1225,
         1372
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 7,
+        "x": 102,
+        "y": 259,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "arm.body.muscle",
@@ -383,7 +482,14 @@
         1225,
         1372
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 7,
+        "x": 102,
+        "y": 294,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "arm.body.skin",
@@ -408,7 +514,14 @@
         1225,
         1372
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 7,
+        "x": 102,
+        "y": 329,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "arm.arm.grip",
@@ -433,7 +546,14 @@
         1225,
         1372
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 7,
+        "x": 102,
+        "y": 399,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "arm.arm.punch",
@@ -458,7 +578,14 @@
         1225,
         1372
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 7,
+        "x": 102,
+        "y": 434,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "arm.arm.price",
@@ -481,7 +608,14 @@
         1295,
         1372
       ],
-      "color": "magenta"
+      "color": "magenta",
+      "target": {
+        "alignment": 7,
+        "x": 102,
+        "y": 496,
+        "font_size": 44,
+        "ass_color": "6600F1"
+      }
     },
     {
       "occurrence": "leg.body.frame",
@@ -505,7 +639,14 @@
         1525,
         1672
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 207,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "leg.body.muscle",
@@ -529,7 +670,14 @@
         1525,
         1672
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 242,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "leg.body.skin",
@@ -553,7 +701,14 @@
         1525,
         1672
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 277,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "leg.leg.jump",
@@ -577,7 +732,14 @@
         1525,
         1672
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 347,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "leg.leg.speed",
@@ -601,7 +763,14 @@
         1525,
         1672
       ],
-      "color": "white"
+      "color": "white",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 382,
+        "font_size": 30,
+        "ass_color": "FFFFFF"
+      }
     },
     {
       "occurrence": "leg.leg.price",
@@ -623,7 +792,99 @@
         1595,
         1672
       ],
-      "color": "magenta"
+      "color": "magenta",
+      "target": {
+        "alignment": 9,
+        "x": 922,
+        "y": 496,
+        "font_size": 44,
+        "ass_color": "6600F1"
+      }
+    },
+    {
+      "occurrence": "notice.classified",
+      "group": "notice",
+      "text_id": "notice.classified",
+      "box_xyxy": [
+        258,
+        156,
+        766,
+        252
+      ],
+      "reference_frames": [
+        100,
+        130,
+        150,
+        170
+      ],
+      "detection_span": [
+        0,
+        190
+      ],
+      "color": "cyan",
+      "target": {
+        "alignment": 5,
+        "x": 512,
+        "y": 200,
+        "font_size": 42,
+        "ass_color": "DC9600"
+      }
+    },
+    {
+      "occurrence": "notice.secret",
+      "group": "notice",
+      "text_id": "notice.secret",
+      "box_xyxy": [
+        258,
+        264,
+        766,
+        364
+      ],
+      "reference_frames": [
+        100,
+        130,
+        160
+      ],
+      "detection_span": [
+        0,
+        190
+      ],
+      "color": "magenta",
+      "target": {
+        "alignment": 5,
+        "x": 512,
+        "y": 307,
+        "font_size": 104,
+        "ass_color": "6600F1"
+      }
+    },
+    {
+      "occurrence": "notice.clearance",
+      "group": "notice",
+      "text_id": "notice.clearance",
+      "box_xyxy": [
+        258,
+        368,
+        766,
+        407
+      ],
+      "reference_frames": [
+        150,
+        160,
+        170
+      ],
+      "detection_span": [
+        0,
+        190
+      ],
+      "color": "cyan",
+      "target": {
+        "alignment": 5,
+        "x": 512,
+        "y": 385,
+        "font_size": 40,
+        "ass_color": "DC9600"
+      }
     }
   ]
 }

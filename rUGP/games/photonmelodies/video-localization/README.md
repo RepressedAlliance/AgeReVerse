@@ -2,7 +2,8 @@
 
 `rebirth-text.zh-CN.csv` 保存从原始离线画面核实的英文文字和中文初稿，
 包括保密提示、技术标签、部件价格及旁白字幕，共63行。
-此文件尚未接入打包器；已制成旁白中文字幕离线预览，完整画面汉化与音画验收仍未完成。
+此文件尚未接入打包器；已制成覆盖旁白、技术标签、价格和保密提示的离线中文初稿，
+画质修整、动画时序确认与音画验收仍未完成。
 
 ## 版本与帧号
 
@@ -27,7 +28,7 @@
 `layer` 区分 `notice`、`technical`、`price` 和 `subtitle`。
 `body.*` 技术标签在手臂、腿部两处复用，当前见证帧取手臂画面；
 实际制作须覆盖两处，不可按CSV行数当作画面出现次数。
-眼部标题的“／”用于标记标题与说明两行的排版意图，尚未固定像素布局。
+眼部标题的“／”用于分隔标题与说明两行，像素布局见下述 layout 文件。
 
 ## 旁白字幕离线预览
 
@@ -44,15 +45,15 @@
 python -m rUGP.tools.video.subtitle_track --timeline rUGP/games/photonmelodies/video-localization/rebirth-ending-subtitles.frames.json --text rUGP/games/photonmelodies/video-localization/rebirth-text.zh-CN.csv --output ending-subtitles.ass
 ```
 
-ASS 时间向下取整到厘秒，以保持30fps各帧时刻的事件归属。已输出本机1904帧预览，
-抽查中文排版及首尾边界；技术标签、价格和保密提示仍为原文，未完成音轨听校、
-游戏内同步验证或生产 CRsi 编码。该预览不可作为完成的汉化补丁。
+ASS 时间向下取整到厘秒，以保持30fps各帧时刻的事件归属。早期1904帧预览仅含
+中文旁白；最新预览还包含以下技术标签、价格和保密提示。未完成音轨听校、
+游戏内同步验证或生产 CRsi 编码，不能作为完成的汉化补丁。
 
 ## 技术文字布局与清除研究
 
 技术文字的像素区域另见 `rebirth-ending-technical.layout.json`：
-25个出现位置覆盖眼部13行、手臂6行、腿部6行；眼部标题拆为两行，
-`body.*` 在手臂和腿部分别列出，保密提示不在该文件内。
+28个出现位置覆盖眼部13行、手臂6行、腿部6行、保密提示3行；眼部标题拆为两行，
+`body.*` 在手臂和腿部分别列出。`target` 保存中文位置、字号、对齐和颜色。
 这些位置只适用于无旁白字幕长版；`detection_span` 是检索窗口，
 不是已验收的入出帧。参考帧提取的是字形核心，清除时还须处理抗锯齿和发光边缘。
 
@@ -63,6 +64,34 @@ python -m rUGP.tools.video.overlay_masks --video '<原尺寸无字幕长版代�
 分析器输出候选显示区间、逐帧强度与字形遮罩。价格包含闪烁，不能简单压成一个
 持续显示区间；明亮模型可能影响淡出检测。输出含游戏派生像素，不应提交或公开。
 单帧空间修补试片因网格和手腕损伤已否决；时序修复仍在本机评估，未成为生产素材。
+
+`technical_track.py` 用字形覆盖率驱动中文逐字出现，用强度驱动亮度和闪烁，
+两者分别计算，避免把开场呼吸亮度误当成打字进度。透明后缀保留整行宽度，
+使右对齐文字在逐字出现时不横向跳动。每个适用文字ID必须被布局覆盖。
+
+```powershell
+python -m rUGP.tools.video.technical_track --layout rUGP/games/photonmelodies/video-localization/rebirth-ending-technical.layout.json --analysis-directory '<overlay_masks 输出目录>' --text rUGP/games/photonmelodies/video-localization/rebirth-text.zh-CN.csv --output '<新的技术文字 ASS 文件>'
+```
+
+`compose_repairs.py` 将原尺寸修复裁块合成到无损代理，逐帧核对输入裁块与源视频相同、
+修复图中遮罩外像素完全相同，并拒绝遗漏输出、缩放输入和重叠时间范围。
+当前四段共659帧裁块，合成后仍为1904帧1024×600；30fps是名义离线时钟。
+这些检查证明合成范围，没有证明被修复区域的美术质量或游戏播放正确性。
+
+开场平滑蓝色背景单独用 `notice_background.py` 从同帧四周边界插值恢复，
+处理0–189帧的 `(224,136)–(800,432)` 文字及发光区域。字形遮罩会漏掉闪烁
+和发光孤岛，大块神经修复也产生了不应存在的亮块，因此这些开场候选没有采用。
+边界插值仅适用于这一简单背景，不适用于后面的模型和网格。
+
+```powershell
+python -m rUGP.tools.video.notice_background --video '<原尺寸无字幕长版代理>' --output-directory '<新的本机私有开场目录>'
+```
+
+最新本机预览 `ending-complete-text-draft-v4.mp4` 覆盖22条旁白和28处图中文字，
+保留1904帧、1024×600和原音轨内容（预览转为AAC）。按序查看40个采样点，
+开场先前漏出的英文和发光残块在这些采样中已消失，中文排版没有发现裁切。
+眼部、手臂和腿部仍有网格软化、弯折和条纹，模型细节及连续时序尚待验收。
+采样不等于完整视听检查；这些素材仍是制作草稿，尚未封装进游戏补丁。
 
 ## 必须保留的差异
 
