@@ -1,0 +1,137 @@
+{
+  "schema": "photon-rebirth-both-caption-package/1",
+  "date": "2026-10-10",
+  "status": "Both localized video resources packaged; each has isolated-game playback evidence",
+  "filename": "rebirth-both-caption-v1-photonmelodies11.rio.ruo1",
+  "bytes": 938230552,
+  "sha256": "1bbbd23e8977ee5c465b74625ec11733ff1191c27ac7ae7556015b3817b8c746",
+  "base_ruo_sha256": "dc54624ce621259bd4928a7b25e2db0c41eb148953a2ef738a44972a3badff66",
+  "inherited_redirects": 30,
+  "video_redirects": 2,
+  "total_redirects": 32,
+  "inherited_data_exact": true,
+  "replacement_readback_exact": true,
+  "native_address_checks": {
+    "117665112": {
+      "validation": "offline native resolver and stream-range arguments; synthetic archive and hash objects",
+      "limitations": [
+        "does not execute the complete video caller, file IO, rendering or game process"
+      ],
+      "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+      "resolver_entry": "0x5d9de0",
+      "hash_lookup_entry": "0x5df070",
+      "base_calculation_range": [
+        "0x5de2f3",
+        "0x5de30b"
+      ],
+      "unit_size": 4,
+      "original_volume_base_bytes": 6442450944,
+      "patched_volume_base_bytes": 8589934592,
+      "redirects_checked": 32,
+      "all_native_addresses_and_sizes_match": true,
+      "missing_key_preserves_original": true,
+      "disabled_overlay_preserves_original": true,
+      "invalid_volume_indices_rejected": [
+        0,
+        2
+      ],
+      "64_bit_addition_carry_verified": true,
+      "native_file_position_entry": "0x5f4040",
+      "unbuffered_relative_positions_verified": [
+        0,
+        26,
+        229255131,
+        458510263
+      ],
+      "selected_source_key": "0xa4bc4627",
+      "selected_ruo_byte_offset": 4475320,
+      "selected_virtual_byte_offset": 8594409912,
+      "selected_size": 458510263,
+      "native_stream_caller_range": {
+        "executed": [
+          "0x5dea1c",
+          "0x5deb00"
+        ],
+        "start": 8594409912,
+        "end": 9052920175,
+        "original_size_input": 90163517,
+        "replacement_size_used": true,
+        "stubs": [
+          "already-loaded archive handle",
+          "positive CFile runtime-type check"
+        ],
+        "limitation": "Starts after file creation; stops before bounded-file SetRange/Seek"
+      }
+    },
+    "27493704": {
+      "validation": "offline native resolver and stream-range arguments; synthetic archive and hash objects",
+      "limitations": [
+        "does not execute the complete video caller, file IO, rendering or game process"
+      ],
+      "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+      "resolver_entry": "0x5d9de0",
+      "hash_lookup_entry": "0x5df070",
+      "base_calculation_range": [
+        "0x5de2f3",
+        "0x5de30b"
+      ],
+      "unit_size": 4,
+      "original_volume_base_bytes": 6442450944,
+      "patched_volume_base_bytes": 8589934592,
+      "redirects_checked": 32,
+      "all_native_addresses_and_sizes_match": true,
+      "missing_key_preserves_original": true,
+      "disabled_overlay_preserves_original": true,
+      "invalid_volume_indices_rejected": [
+        0,
+        2
+      ],
+      "64_bit_addition_carry_verified": true,
+      "native_file_position_entry": "0x5f4040",
+      "unbuffered_relative_positions_verified": [
+        0,
+        26,
+        237622290,
+        475244580
+      ],
+      "selected_source_key": "0xa3644c23",
+      "selected_ruo_byte_offset": 462985584,
+      "selected_virtual_byte_offset": 9052920176,
+      "selected_size": 475244580,
+      "native_stream_caller_range": {
+        "executed": [
+          "0x5dea1c",
+          "0x5deb00"
+        ],
+        "start": 9052920176,
+        "end": 9528164756,
+        "original_size_input": 90171399,
+        "replacement_size_used": true,
+        "stubs": [
+          "already-loaded archive handle",
+          "positive CFile runtime-type check"
+        ],
+        "limitation": "Starts after file creation; stops before bounded-file SetRange/Seek"
+      }
+    }
+  },
+  "resources": [
+    {
+      "source": 117665112,
+      "sha256": "5ad267a1ba05e0079c27926bb012b93110b3d58999ffba11a280d79ece78b4e5",
+      "bytes": 458510263,
+      "frames": 1875,
+      "runtime_evidence": "rebirth-opening-runtime-20261010.json"
+    },
+    {
+      "source": 27493704,
+      "sha256": "d3e2579e4d0910f4b55ac808423128f31c8277b8675a367f72f9626f4aba1f90",
+      "bytes": 475244580,
+      "frames": 1905,
+      "runtime_evidence": "rebirth-ending-runtime-20261010.json"
+    }
+  ],
+  "installation_scope": "Private isolated game only; formal game, saves and v11 registry not modified; no publication",
+  "language_selection": "Chinese image-language option selects the Translation resources",
+  "limitation": "Ending was played from the earlier long-only package; the combined package preserves that exact resource and its new address/size was rechecked. No unnecessary second ending replay performed."
+}

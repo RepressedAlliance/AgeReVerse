@@ -12,7 +12,7 @@
 | 帧表 | `rebirth-opening-subtitles.frames.json` | `rebirth-ending-subtitles.frames.json` |
 | 私有预览 | `opening-caption-only-v1.mp4` | `ending-caption-only-draft-v3.mp4` |
 | 资源 | `opening-caption-only-v1-117665112.crsi` | `ending-caption-only-v3-27493704.crsi` |
-| 当前检查 | 字幕合成、画面抽查及编码完成；完整原生RGB核对进行中 | 离线核对完成；隔离游戏完整播放并返回菜单 |
+| 当前检查 | 完整原生RGB核对通过；隔离游戏完整播放并接回简报 | 离线核对完成；隔离游戏完整播放并返回菜单 |
 
 两版共用 `rebirth-ending-style.json` 的旁白样式：Noto Sans SC 2.04、22px、
 400字重、1.1px黑描边、固定基线与原宽高比例。分别保留原始1024×600尺寸、
@@ -30,10 +30,15 @@
 但测得画面时间轴约领先原音0.372秒。缺少未修改版同条件对照，不能把此数值解释为
 补丁引入的误差，也不声称已人工确认绝对同步。详见
 [结尾实机记录](../../../evidence/photon/video/rebirth-ending-runtime-20261010.json)。
+开头录制同法测得约0.423秒的固定起点差，未见累计漂移；两段均保留原始帧表及游戏音轨。
 
 双段候选 `rebirth-both-caption-v1-photonmelodies11.rio.ruo1` 为938,230,552字节，
 保留原补丁30条重定向及数据，新增两条视频后共32条；两条资源回读和原生地址／长度
-计算均已核对。短版原生核对及双段包的开头实机播放尚待完成。正式游戏、正式存档与
+计算均已核对。短版1875帧RGB及全部索引均已通过原生核对；双段包中的开头已完整播放并接回简报。
+详见[开头实机记录](../../../evidence/photon/video/rebirth-opening-runtime-20261010.json)和
+[双段封装记录](../../../evidence/photon/video/rebirth-both-caption-package-20261010.json)。
+使用时将游戏内“图像语言”设为“中文”，以选择对应字幕资源；旧存档可能将该项恢复为日文，
+本次槽4已实际观察到此行为，读档后需确认。正式游戏、正式存档与
 v11注册表未改动，候选未发布；隔离EXE及身份绑定DLL仅供验证，不属于交付包。
 
 ## 原音与文案核对

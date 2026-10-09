@@ -1,7 +1,7 @@
 {
   "schema": "photon-rebirth-opening-caption/1",
   "date": "2026-10-10",
-  "status": "Composition, encoding and visual review complete; full native RGB verification running; runtime pending",
+  "status": "Composition, encoding, full native RGB verification and bounded isolated-game playback checks complete",
   "source_global_offset": 117665112,
   "background_global_offset": 1808635048,
   "frames": 1875,
@@ -62,7 +62,12 @@
     "observed": "No obvious glyph residue, cut-off Chinese, broken grid or repair edge in inspected full-width strips; shared font/profile with ending.",
     "outside_allowed_changed_pixels": 0,
     "changed_frames": 1576,
-    "limitation": "Temporal background blending is approximate; inspected frame sequences are not human continuous playback."
+    "limitation": "Temporal background blending is approximate; inspected frame sequences are not human continuous playback.",
+    "full_size_composition_witnesses": [
+      "narration.volunteer",
+      "narration.speed",
+      "narration.miracle"
+    ]
   },
   "typography_profile": "rebirth-ending-style.json",
   "timeline": "rebirth-opening-subtitles.frames.json",
@@ -78,5 +83,57 @@
   "preview": {
     "bytes": 34857853,
     "sha256": "a81362ecd131a733d2cd35e1a842abf234494b73c8f1be3c58603350f26a11c7"
+  },
+  "native_verification": {
+    "schema": "photon-crsi-replacement-native/1",
+    "validation": "all native RGB frames and frame-table rows match; offline only",
+    "candidate_sha256": "5ad267a1ba05e0079c27926bb012b93110b3d58999ffba11a280d79ece78b4e5",
+    "build_report_sha256": "af641c2e198ad028a49ae9aac9f30484ed20f49f62b1d597f032da2b5167e138",
+    "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+    "frame_count": 1875,
+    "modes": {
+      "0x0575": 289,
+      "0x03ff": 1586
+    },
+    "tables": {
+      "validation": "offline parent and row deserialization; no game process",
+      "native_entry": "0x5830f0",
+      "native_row_entry": "0x582c70",
+      "stubs": [
+        "MFC ReadCount: observed 16-bit count",
+        "buffer allocation: bounded zero-filled memory",
+        "archive position: cursor relative to record start"
+      ],
+      "records": [
+        {
+          "record": "opening-caption-only-v1-117665112.crsi",
+          "sha256": "5ad267a1ba05e0079c27926bb012b93110b3d58999ffba11a280d79ece78b4e5",
+          "frames": 1875,
+          "table_end": 24979,
+          "dimensions": [
+            1024,
+            600
+          ],
+          "rate": 3000,
+          "all_native_rows_match": true
+        }
+      ]
+    },
+    "seconds": 1482.7808340999982,
+    "limitations": [
+      "No game process or streaming IO exercised",
+      "Pixel equality does not establish translation or visual acceptance"
+    ]
+  },
+  "runtime_evidence": "rebirth-opening-runtime-20261010.json",
+  "tests": {
+    "executed_and_passed": 12,
+    "modules": [
+      "test_subtitle_track",
+      "test_crsi",
+      "test_compact_crsi",
+      "test_native_reuse"
+    ],
+    "note": "Three optional dependency tests initially skipped in system Python, then all three passed in the configured video environment; count excludes duplicate/skipped invocations."
   }
 }

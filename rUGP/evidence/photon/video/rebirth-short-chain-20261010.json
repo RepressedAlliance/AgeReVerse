@@ -239,8 +239,8 @@
     "duration_seconds": 62.49795918367347
   },
   "limitations": [
-    "Static script sequence does not prove runtime playback or synchronization",
-    "Short audio has been decoded but not independently listened to",
-    "CInt@568804 semantic label is not established"
+    "This file records static chain evidence; later runtime results are in rebirth-opening-runtime-20261010.json.",
+    "Short audio was later independently transcribed by two local ASR systems; direct human listening is not established.",
+    "CInt@568804 language semantics were subsequently established in rebirth-language-branches-20261010.json."
   ]
 }
