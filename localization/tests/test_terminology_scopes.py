@@ -2,6 +2,8 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+import subprocess
+import sys
 import tempfile
 import unittest
 from collections import Counter
@@ -85,18 +87,18 @@ class TerminologyScopeTests(unittest.TestCase):
             with self.subTest(game=game):
                 terms = read_table(ROOT / 'localization/glossaries' / f'{game}.ja-zh-Hans.csv')
                 rows = read_baseline(game)
+                history = read_evidence(game)
                 self.assertEqual(baseline_consistency_errors(terms, rows), [])
+                self.assertTrue(all(set(row) == set(COMPACT_COLUMNS) for row in rows))
                 current = [row for row in rows if baseline_group(row) == 'current']
                 for index, term in enumerate(terms.values(), 2):
                     row = next(row for row in current if row['jp'] == term['jp'])
-                    if 'kind' in row:
-                        self.assertEqual(row['basis'], term['context'])
-                        history = read_evidence(game)
-                        self.assertTrue(all(history[number-2]['jp'] == term['jp'] for number in evidence_numbers(row)))
-                    else:
-                        self.assertEqual(row['source_row'], str(index))
-                        self.assertEqual(row['source_status'], 'current-glossary')
-                        self.assertEqual(row['occurrences'], '')
+                    self.assertEqual(row['basis'], term['context'])
+                    self.assertTrue(all(history[number-2]['jp'] == term['jp'] for number in evidence_numbers(row)))
+                for row in rows:
+                    if row['kind'] != 'term':
+                        for number in evidence_numbers(row):
+                            self.assertIn(history[number-2]['basis'], row['basis'], '合并来源不能省略原有使用条件')
         pf = read_evidence('photonflowers')
         self.assertEqual(sum(baseline_group(row) == 'noise' for row in pf), 746)
         for game in ('tda01', 'tda02', 'tda03', 'photonflowers'):
@@ -177,6 +179,16 @@ class TerminologyScopeTests(unittest.TestCase):
                 self._compact_fixture(root, [source], [entry])
                 with self.assertRaisesRegex(ValueError, error):
                     read_baseline('tda00', root)
+
+    def test_baseline_cli_returns_structured_current_terms_and_sources(self):
+        result = subprocess.run([sys.executable, '-X', 'utf8', str(ROOT/'localization/tools/terminology.py'),
+                                 'tda00', '--baseline', '--term', 'ウィル'],
+                                capture_output=True, text=True, encoding='utf-8', check=True)
+        data = json.loads(result.stdout)
+        self.assertEqual(data['current_term']['cn'], '威尔')
+        self.assertEqual(len([row for row in data['evidence'] if row['kind']=='term']), 1)
+        self.assertTrue(data['sources'])
+        self.assertTrue(all(row['jp']=='ウィル' and isinstance(row['evidence_row'], int) for row in data['sources']))
 
     def test_every_input_row_has_one_disposition_and_old_bytes_are_preserved(self):
         audit = json.loads((ROOT / "docs/research/localization/terminology-history/scope-audit-20260908.json").read_text(encoding="utf-8"))

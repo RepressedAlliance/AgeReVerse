@@ -47,7 +47,7 @@ python localization/tools/terminology.py kiminozo --term タケス
 旧版本、恢复清单、审计记录及各作基线入口统一放在[术语查证与历史记录](../../docs/research/localization/terminology-history/README.md)。
 候选、争议与历史译法不作为现行术语加载。
 
-八作基线都包含各自现行术语的中文和完整使用限制。七作旧基线保留历史记录，另列现行采用记录；可用`--baseline --term 日文`追溯依据，或用`--baseline --group candidate`只看候选。逐作改动、数量及尚缺具体篇章定位的资料见上述整理明细。
+八作主基线都包含各自现行术语的中文和完整使用限制，每条现行术语只列一次；相同译法合并来源，不同语境、候选和待核状态保留区别。主表六列用于阅读及程序处理，原始九列来源表另存于本作`terminology/history/`。可用`--baseline --term 日文`同时取得条目和关联来源，或用`--baseline --group candidate`只看候选；加`--history`读取原始来源。逐作改动、数量及尚缺具体篇章定位的资料见上述整理明细。
 
 ## English
 
