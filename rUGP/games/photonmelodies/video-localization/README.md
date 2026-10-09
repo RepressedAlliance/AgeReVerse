@@ -33,6 +33,23 @@
 参数顺序可用 `python -m rUGP.tools.video.caption_compositor --help` 查看；
 依赖见 `rUGP/tools/video/requirements.txt`，FFmpeg须在PATH中可用。
 
+## 离线游戏资源候选
+
+旁白v2已封装为 `CRsi@27493704` 的完整候选：1905帧、1024×600、原始时钟字段3000。
+1658帧有像素修改；另4帧为保持解码依赖而重新编码，243帧保留原有编码数据。
+新帧采用 `0x03ff` 的8位RGB无损模式，利用重复像素、上一行复制及预测差分缩小体积。
+资源为476,327,190字节（约454MiB）；独立帧较大，实际播放吞吐仍需验收。
+
+`rUGP.tools.video.encode_replacement` 从原始／编辑后的无损视频识别改动并补齐依赖帧；
+`rUGP.tools.video.verify_replacement` 使用原生帧表读取器和像素解码器，顺序核对完整资源
+与输入试片。本候选1905帧的RGB及全部帧表记录均已通过此离线核对。
+命令参数见各模块的 `--help`。编码完成不自动代表文案或画面验收通过。
+
+离线RUO候选复用现有封装器，保留已安装补丁的30条记录及其数据，仅新增此视频。
+原生资源解析、父级查找与读取范围参数也单独核对；档案注册查找、实际文件打开、
+Seek、渲染及音画同步未执行。候选未安装、未发布，具体结果见
+[完整资源证据](../../../evidence/photon/video/rebirth-caption-resource-20261010.json)。
+
 ## 视觉制作与一致性
 
 本演出沿用仓库的[图片汉化流程](../../../../localization/images/README.md)、

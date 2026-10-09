@@ -1,0 +1,173 @@
+{
+  "schema": "photon-rebirth-caption-resource/1",
+  "date": "2026-10-10",
+  "status": "complete offline candidate; not installed or approved for release",
+  "visual_draft": "rebirth-caption-only-draft-20261010.json",
+  "compact_codec": "rebirth-compact-lossless-20261010.json",
+  "source_global_offset": 27493704,
+  "crsi": {
+    "original_sha256": "e00ce4045070162925f593d1b3cef3e520f7d719690fb6daf718fd1d0aee7849",
+    "output_sha256": "03842c819cd462122489d2589a61d4bbe9a83e938c26d7adf252d6946fc19dcb",
+    "original_bytes": 90171399,
+    "output_bytes": 476327190,
+    "width": 1024,
+    "height": 600,
+    "rate": 3000,
+    "frame_count": 1905,
+    "replaced_frames": 1662,
+    "retained_original_frames": 243,
+    "replacement_mode": "0x03ff",
+    "statistics": {
+      "above_pixels": 97841468,
+      "repeat_pixels": 761096298,
+      "literal_pixels": 162195034
+    },
+    "seconds": 21.09963059999791
+  },
+  "changed_frames": 1658,
+  "dependency_closure_frames": [
+    858,
+    859,
+    1281,
+    1862
+  ],
+  "native_replay": {
+    "schema": "photon-crsi-replacement-native/1",
+    "validation": "all native RGB frames and frame-table rows match; offline only",
+    "candidate_sha256": "03842c819cd462122489d2589a61d4bbe9a83e938c26d7adf252d6946fc19dcb",
+    "build_report_sha256": "d251965a8b0d1bc099c129e110b54851951dd00c7b84e7506ba5c481738a0fb8",
+    "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+    "frame_count": 1905,
+    "modes": {
+      "0x0575": 243,
+      "0x03ff": 1662
+    },
+    "tables": {
+      "validation": "offline parent and row deserialization; no game process",
+      "native_entry": "0x5830f0",
+      "native_row_entry": "0x582c70",
+      "stubs": [
+        "MFC ReadCount: observed 16-bit count",
+        "buffer allocation: bounded zero-filled memory",
+        "archive position: cursor relative to record start"
+      ],
+      "records": [
+        {
+          "record": "ending-caption-only-v2-27493704.crsi",
+          "sha256": "03842c819cd462122489d2589a61d4bbe9a83e938c26d7adf252d6946fc19dcb",
+          "frames": 1905,
+          "table_end": 25277,
+          "dimensions": [
+            1024,
+            600
+          ],
+          "rate": 3000,
+          "all_native_rows_match": true
+        }
+      ]
+    },
+    "seconds": 1307.907159899998,
+    "limitations": [
+      "No game process or streaming IO exercised",
+      "Pixel equality does not establish translation or visual acceptance"
+    ]
+  },
+  "ruo": {
+    "file": "caption-only-v2-photonmelodies11.rio.ruo1",
+    "bytes": 480802888,
+    "sha256": "5d478653303cc4c3b2fe799f4dcce134dde9ece3fe897fcfa75aa06ceffa631c",
+    "base_sha256": "dc54624ce621259bd4928a7b25e2db0c41eb148953a2ef738a44972a3badff66",
+    "redirect_count": 31,
+    "inherited_redirects_unchanged": 30,
+    "inherited_data_exact": true,
+    "replacement_readback_exact": true,
+    "source_key": "0xa3644c23",
+    "record_offset": 4475320
+  },
+  "native_addressing": {
+    "redirects_checked": 31,
+    "all_native_addresses_and_sizes_match": true,
+    "patched_volume_base_bytes": 8589934592,
+    "selected_virtual_byte_offset": 8594409912,
+    "selected_size": 476327190,
+    "native_stream_caller_range": {
+      "executed": [
+        "0x5dea1c",
+        "0x5deb00"
+      ],
+      "start": 8594409912,
+      "end": 9070737102,
+      "original_size_input": 90171399,
+      "replacement_size_used": true,
+      "stubs": [
+        "already-loaded archive handle",
+        "positive CFile runtime-type check"
+      ],
+      "limitation": "Starts after file creation; stops before bounded-file SetRange/Seek"
+    }
+  },
+  "native_parent_routing": {
+    "status": "offline actual-directory parent chain and native routing predicate",
+    "source_global_offset": 27493704,
+    "toc_offset": 547476,
+    "chain": [
+      {
+        "class_name": "CRsi",
+        "flags": 49416,
+        "offset": 2741259299,
+        "size": 3837182634,
+        "decoded": false,
+        "is_root": false
+      },
+      {
+        "class_name": "CObjectOcean",
+        "flags": 49416,
+        "offset": 2763802149,
+        "size": 3887471098,
+        "decoded": false,
+        "is_root": false
+      },
+      {
+        "class_name": "CObjectOcean",
+        "flags": 49416,
+        "offset": 2763802150,
+        "size": 3887471098,
+        "decoded": false,
+        "is_root": false
+      },
+      {
+        "class_name": "CObjectOcean",
+        "flags": 49416,
+        "offset": 2735949647,
+        "size": 3887471098,
+        "decoded": false,
+        "is_root": false
+      },
+      {
+        "class_name": "CrelicUnitedGameProject",
+        "flags": 384,
+        "offset": 0,
+        "size": 0,
+        "decoded": false,
+        "is_root": true
+      }
+    ],
+    "selected_ancestor": 4,
+    "native_walk": "0x5de500",
+    "native_open_entry": "0x5def70",
+    "archive_lookup_branch_reached": "0x5defbf",
+    "limitation": "Stops before archive registry lookup; no streaming file or renderer exercised"
+  },
+  "reusable_tools": [
+    "rUGP.tools.video.caption_compositor",
+    "rUGP.tools.video.encode_replacement",
+    "rUGP.tools.video.verify_replacement"
+  ],
+  "limitations": [
+    "Caption wording still needs Japanese-audio review",
+    "Frame samples do not establish complete motion acceptance",
+    "Native replay is offline, not live streaming, rendering or synchronization",
+    "Archive registry lookup, actual file creation and bounded-file Seek are not exercised",
+    "Large independent-frame candidate; real playback throughput remains unverified"
+  ]
+}

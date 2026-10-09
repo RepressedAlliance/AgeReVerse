@@ -1,8 +1,9 @@
 """Offline, version-locked oracle for PM's RUO address resolver.
 
-Executes only the audited address/hash functions in Unicorn. Archive objects
-and hash buckets are synthetic; redirect values come from the supplied RUO.
-This does not prove the game's video caller uses this resolver.
+Executes audited address/hash functions and the stream caller's range-argument
+preparation in Unicorn. Archive objects and hash buckets are synthetic;
+redirect values come from the supplied RUO. Full caller lifecycle and file IO
+are outside this oracle.
 """
 from __future__ import annotations
 
@@ -10,7 +11,7 @@ import hashlib
 from pathlib import Path
 import struct
 
-from rUGP.formats.rio.crypto import EXTENT_OFFSET_BIAS, EXTENT_SIZE_BIAS
+from rUGP.formats.rio.crypto import EXTENT_OFFSET_BIAS, EXTENT_SIZE_BIAS, encode_extent_size
 from rUGP.formats.rio.ruo import Redirect
 from rUGP.tools.video.native_crsi import PM_EXE_SHA256
 
@@ -65,7 +66,9 @@ class NativeRuoResolver:
         def restrict_execution(_machine, address, _size, _context):
             allowed = ((0x5d9de0, 0x5d9f57), (0x5df070, 0x5df0ca),
                        (0x5de2f3, 0x5de30b), (0x5fc7f0, 0x5fc811),
-                       (0x5f4040, 0x5f40c3))
+                       (0x5f4040, 0x5f40c3), (0x5dea1c, 0x5deb05),
+                       (0x430dd0, 0x430dee), (0x5d6060, 0x5d6102),
+                       (0x1100300, 0x1100308))
             if not any(start <= address < end for start, end in allowed):
                 raise ValueError(f'unexpected native control flow: {address:#x}')
 
@@ -125,8 +128,42 @@ class NativeRuoResolver:
         return (self.u.reg_read(self.x86.UC_X86_REG_EDX) << 32 |
                 self.u.reg_read(self.x86.UC_X86_REG_EAX))
 
+    def caller_extent(self, source_key: int, original_size: int,
+                      volume_base_units: int) -> tuple[int, int]:
+        """Run the native stream caller through its bounded-file arguments.
 
-def verify(executable: Path, ruo: Path, selected_key: int) -> dict:
+        Starts at 0x5dea1c, after file creation. An already-loaded archive
+        handle and a positive CFile runtime-type check are explicit stubs.
+        Stops at 0x5deb00 before SetRange/Seek: no file IO is executed.
+        """
+        if not (0 <= source_key <= 0xffffffff and 0 < original_size <= 0xffffffff
+                and 0 <= volume_base_units <= 0xffffffffffffffff):
+            raise ValueError('argument outside native integer bounds')
+        handle, type_check = 0x1100000, 0x1100300
+        frame_base = self.STACK - 0x200
+        self.u.mem_write(handle, bytes(0x40))
+        self._words(handle, self.ARCHIVE)
+        self.u.mem_write(handle + 0x1c, b'\x04')  # already loaded handle
+        self._words(self.ARCHIVE + 0x1c, 2)  # 4-byte allocation units
+        self.u.mem_write(self.ARCHIVE + 0xc8, b'\x01')
+        self._words(self.ARCHIVE + 0xcc, 1)
+        self.u.mem_write(self.VOLUME + 0x60, struct.pack('<Q', volume_base_units))
+        self._words(self.NODE + 0x20, source_key, encode_extent_size(original_size))
+        self.u.mem_write(type_check, b'\xb8\x01\x00\x00\x00\xc2\x04\x00')
+        self._words(0x618d58, type_check)
+        self.u.mem_write(frame_base - 0x100, bytes(0x200))
+        self._words(frame_base + 0xc, handle, 0, 0, self.FILE_VIEW)
+        self.u.reg_write(self.x86.UC_X86_REG_EBP, frame_base)
+        self.u.reg_write(self.x86.UC_X86_REG_ESP, frame_base - 0x80)
+        self.u.reg_write(self.x86.UC_X86_REG_EBX, self.NODE)
+        self._run(0x5dea1c, 0x5deb00)
+        if self.u.reg_read(self.x86.UC_X86_REG_ECX) != self.FILE_VIEW:
+            raise ValueError('native caller selected an unexpected bounded file')
+        stack = self.u.reg_read(self.x86.UC_X86_REG_ESP)
+        return struct.unpack('<QQ', self.u.mem_read(stack, 16))
+
+
+def verify(executable: Path, ruo: Path, selected_key: int, *, original_size: int = 456) -> dict:
     """Compare all footer entries against native lookup and address arithmetic."""
     from rUGP.formats.rio.crypto import decode_extent_offset, decode_extent_size
     from rUGP.formats.rio.ruo import read_footer
@@ -169,9 +206,14 @@ def verify(executable: Path, ruo: Path, selected_key: int) -> dict:
     for relative in positions:
         if oracle.relative_position(virtual_start, selected_size, relative) != relative:
             raise ValueError('native bounded-file relative position mismatch')
+    # The real caller decodes the old size, applies the redirect, shifts units
+    # to bytes, and passes the replacement's full range to the bounded file.
+    caller_range = oracle.caller_extent(selected_key, original_size, patched_base)
+    if caller_range != (virtual_start, virtual_start + selected_size):
+        raise ValueError('native stream caller produced a wrong bounded-file range')
     return {
-        'validation': 'offline native address resolver; synthetic archive and hash objects',
-        'limitations': ['does not execute video caller, file IO, rendering or game process'],
+        'validation': 'offline native resolver and stream-range arguments; synthetic archive and hash objects',
+        'limitations': ['does not execute the complete video caller, file IO, rendering or game process'],
         'executable_sha256': PM_EXE_SHA256,
         'resolver_entry': '0x5d9de0',
         'hash_lookup_entry': '0x5df070',
@@ -191,6 +233,14 @@ def verify(executable: Path, ruo: Path, selected_key: int) -> dict:
         'selected_ruo_byte_offset': local_offset,
         'selected_virtual_byte_offset': patched_base * 4 + local_offset,
         'selected_size': selected_size,
+        'native_stream_caller_range': {
+            'executed': ['0x5dea1c', '0x5deb00'],
+            'start': caller_range[0], 'end': caller_range[1],
+            'original_size_input': original_size,
+            'replacement_size_used': True,
+            'stubs': ['already-loaded archive handle', 'positive CFile runtime-type check'],
+            'limitation': 'Starts after file creation; stops before bounded-file SetRange/Seek',
+        },
     }
 
 
@@ -202,8 +252,11 @@ def main() -> None:
     parser.add_argument('--executable', required=True, type=Path)
     parser.add_argument('--ruo', required=True, type=Path)
     parser.add_argument('--source-key', required=True, type=lambda value: int(value, 0))
+    parser.add_argument('--original-size', type=lambda value: int(value, 0), default=456,
+                        help='original extent length; default 456 is a synthetic override witness')
     args = parser.parse_args()
-    print(json.dumps(verify(args.executable, args.ruo, args.source_key), indent=2))
+    print(json.dumps(verify(args.executable, args.ruo, args.source_key,
+                            original_size=args.original_size), indent=2))
 
 
 if __name__ == '__main__':
