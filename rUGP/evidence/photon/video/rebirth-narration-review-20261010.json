@@ -14,9 +14,10 @@
     "local_asr_models": [
       "Systran/faster-whisper-small",
       "kotoba-tech/kotoba-whisper-v2.0-faster",
-      "deepdml/faster-whisper-large-v3-turbo-ct2"
+      "deepdml/faster-whisper-large-v3-turbo-ct2",
+      "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17"
     ],
-    "limitations": "All transcripts are automatic. Related Whisper models are not independent human review; agreement does not prove correctness.",
+    "limitations": "All transcripts are automatic. Three related Whisper models are supplemented by a separate SenseVoice architecture run directly on the original audio without candidate-text prompts. This is machine cross-checking, not human listening; agreement does not prove correctness.",
     "word_timestamps": "Kotoba native alignment crashed; segment timestamps used for diagnostic transcripts only"
   },
   "review_page": "local-internal/pm-rebirth-video/narration-audio-review.html",
@@ -32,12 +33,10 @@
       "question": "官方人物介绍明确受试者身份，已沿用正文的“受试者”译法；仍须对照结尾原音确认整句及时间。"
     },
     "narration.rebuild": {
-      "question": "确认原音是否仅描述人体强化改造手术，是否确有“最先进的强化部件”；三份转写均未识别出这一内容。",
-      "candidate": "他接受了人体强化改造手术，"
+      "question": "SenseVoice直接处理原音的结果与三套Whisper均支持人体强化改造手术。候选已删去缺少日语支持的“全身”“最先进的强化部件”；机器交叉核对不冒充人工听校。"
     },
     "narration.crush": {
-      "question": "确认原音是否明确说“徒手”；三份转写只有击碎强化混凝土这一能力。",
-      "candidate": "能够击碎强化混凝土，"
+      "question": "SenseVoice与三套Whisper均识别为击碎强化混凝土；候选已删去缺少日语支持的“徒手”。机器转写可能遗漏，最终仍按原音验收。"
     }
   },
   "current_targets": [
@@ -74,7 +73,7 @@
         380,
         491
       ],
-      "target_sha256": "6bc7d5abfad7bea8d09d607eb5fc3c81b6bb19d6e1d2c85c9ae916c5bb7ccd62",
+      "target_sha256": "066d03ed895c3e224497e7149ca31a478f98cdb6e3870463111ddaa0a5dfc5eb",
       "status": "pending_direct_audio_review"
     },
     {
@@ -146,7 +145,7 @@
         1036,
         1104
       ],
-      "target_sha256": "16fde52c8c7e0f6269ce3b88f329191c5d20779d7ed20aab319f3964baa0ea38",
+      "target_sha256": "852994528bdc67a1c8477423445389e821a31d6de7d8dd5293bfcb5fbb582792",
       "status": "pending_direct_audio_review"
     },
     {
@@ -200,7 +199,7 @@
         1534,
         1585
       ],
-      "target_sha256": "564a1dbd2fcc063f3b3f24b05239b0a2fe41198a6f27ec2be09ce552dfedba6a",
+      "target_sha256": "0539ff38aa24a26524d0c6c1412e582db0ed07611b234789688eea97b1ab8bff",
       "status": "pending_direct_audio_review"
     },
     {
@@ -251,5 +250,6 @@
     "scope": "Existing Chinese terminology only; not Japanese-audio approval"
   },
   "japanese_context": "rUGP/evidence/photon/video/rebirth-japanese-context-20261010.json",
-  "adoption": "Three ending CSV cues revised using official Japanese character context; review stills updated. The v2 video and packaged candidates remain unchanged. All 22 cues still require direct audio review."
+  "independent_asr": "rUGP/evidence/photon/video/rebirth-independent-asr-20261010.json",
+  "adoption": "Six ending cues revised across official-context and independent-ASR work. The v3 offline video contains current wording; v2 packaged resources remain unchanged. Final audio and game acceptance remain pending."
 }
