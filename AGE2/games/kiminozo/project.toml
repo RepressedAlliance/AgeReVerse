@@ -9,6 +9,7 @@ translation_authorities = []
 font_policy = "../../../localization/fonts/README.md"
 terminology_authority = "../../../localization/glossaries/kiminozo.ja-zh-Hans.csv"
 terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
+terminology_evidence = "terminology/history/evidence-20261009.csv"
 
 # A release tag will be added when the patch is ready.
 # Documentation directories are not translation or image authority files.
