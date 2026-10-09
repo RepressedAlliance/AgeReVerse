@@ -13,18 +13,20 @@
 系列通用表为 [muv-luv.ja-zh-Hans.csv](../../../../localization/glossaries/muv-luv.ja-zh-Hans.csv)，目前 **146 条**。
 Muv-Luv七作使用“通用表 + 本作术语表”，君望独立使用本作表，不继承其他作品的专表。基线用于查证和审校，不作为自动替换字典加载。
 
-| 作品 | 本作术语表 | 基线证据记录 | 基线去重日文键 |
+| 作品／本轮整理明细 | 本作术语表 | 基线证据记录 | 去重后的日文写法数 |
 | --- | ---: | ---: | ---: |
-| TDA00 | [135 条](../../../../localization/glossaries/tda00.ja-zh-Hans.csv) | [1006 条](../../../../AGE2/games/tda00/terminology/baseline.ja-zh-Hans.csv) | 366 |
-| TDA01 | [89 条](../../../../localization/glossaries/tda01.ja-zh-Hans.csv) | [573 条](../../../../AGE2/games/tda01/terminology/baseline.ja-zh-Hans.csv) | 191 |
-| TDA02 | [98 条](../../../../localization/glossaries/tda02.ja-zh-Hans.csv) | [642 条](../../../../AGE2/games/tda02/terminology/baseline.ja-zh-Hans.csv) | 208 |
-| TDA03 | [115 条](../../../../localization/glossaries/tda03.ja-zh-Hans.csv) | [739 条](../../../../AGE2/games/tda03/terminology/baseline.ja-zh-Hans.csv) | 244 |
-| 帝都燃烧 | [183 条](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [447 条](../../../../AGE2/games/imperial-capital-burns/terminology/baseline.ja-zh-Hans.csv) | 185 |
-| 光子之花 | [313 条](../../../../localization/glossaries/photonflowers.ja-zh-Hans.csv) | [1889 条](../../../../rUGP/games/photonflowers/terminology/baseline.ja-zh-Hans.csv) | 1193 |
-| 光子旋律 | [750 条](../../../../localization/glossaries/photonmelodies.ja-zh-Hans.csv) | [4410 条](../../../../rUGP/games/photonmelodies/terminology/baseline.ja-zh-Hans.csv) | 2672 |
+| [TDA00](../../../../AGE2/games/tda00/terminology/review-20261009.md) | [135 条](../../../../localization/glossaries/tda00.ja-zh-Hans.csv) | [1006 条](../../../../AGE2/games/tda00/terminology/baseline.ja-zh-Hans.csv) | 366 |
+| [TDA01](../../../../AGE2/games/tda01/terminology/review-20261009.md) | [89 条](../../../../localization/glossaries/tda01.ja-zh-Hans.csv) | [573 条](../../../../AGE2/games/tda01/terminology/baseline.ja-zh-Hans.csv) | 191 |
+| [TDA02](../../../../AGE2/games/tda02/terminology/review-20261009.md) | [98 条](../../../../localization/glossaries/tda02.ja-zh-Hans.csv) | [642 条](../../../../AGE2/games/tda02/terminology/baseline.ja-zh-Hans.csv) | 208 |
+| [TDA03](../../../../AGE2/games/tda03/terminology/review-20261009.md) | [115 条](../../../../localization/glossaries/tda03.ja-zh-Hans.csv) | [739 条](../../../../AGE2/games/tda03/terminology/baseline.ja-zh-Hans.csv) | 244 |
+| [帝都燃烧](../../../../AGE2/games/imperial-capital-burns/terminology/review-20261009.md) | [183 条](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [447 条](../../../../AGE2/games/imperial-capital-burns/terminology/baseline.ja-zh-Hans.csv) | 185 |
+| [光子之花](../../../../rUGP/games/photonflowers/terminology/review-20261009.md) | [313 条](../../../../localization/glossaries/photonflowers.ja-zh-Hans.csv) | [1889 条](../../../../rUGP/games/photonflowers/terminology/baseline.ja-zh-Hans.csv) | 1193 |
+| [光子旋律](../../../../rUGP/games/photonmelodies/terminology/review-20261009.md) | [750 条](../../../../localization/glossaries/photonmelodies.ja-zh-Hans.csv) | [4410 条](../../../../rUGP/games/photonmelodies/terminology/baseline.ja-zh-Hans.csv) | 2672 |
 | 君望（本篇及番外） | [167 条](../../../../localization/glossaries/kiminozo.ja-zh-Hans.csv) | [360 条](../../../../AGE2/games/kiminozo/terminology/baseline.ja-zh-Hans.csv) | 359 |
 
 上表按2026-10-09当前CSV统计；日期命名的恢复清单和修订记录保留当时的数量。
+
+“去重后的日文写法数”只合并`jp`文字完全相同的记录，不合并全角／半角或其他原文写法。同一日文在不同来源、状态和语境中可以留下多条记录，所以这一列小于基线记录数；不是删掉了这些资料。
 
 各作基线是本作术语的父集，保留全部本作术语的依据，并包含语境项、候选和待核记录。条目提升为术语后仍留在基线；同一日文的不同来源或语境可以分别记录。
 
@@ -42,7 +44,17 @@ Muv-Luv七作使用“通用表 + 本作术语表”，君望独立使用本作�
 
 旧“激光级”、拟声片段“ァァ”等可能出现在基线或历史表中，**不代表它们恢复为现行采用译法**。光线级、重光线级及壬姬遵循当前修正。
 
-2026-10-09补齐24条现行术语的基线记录：TDA02两条、TDA03三条、光子之花十五条、光子旋律四条。译法和使用限制沿用已收录的现行表，未改旧记录或正文；[补录记录](baseline-additions-20261009.json)保留来源版本和逐条内容。
+2026-10-09先补齐24条现行术语的基线记录：TDA02两条、TDA03三条、光子之花十五条、光子旋律四条。译法和使用限制沿用已收录的现行表，未改旧记录或正文；[补录记录](baseline-additions-20261009.json)保留来源版本和逐条内容。
+
+## 七作基线的现行决定同步（2026-10-09）
+
+随后逐作追加现行采用记录，共1683条，分别对应七作本作术语表的每一条。新增行保留现行中文及完整使用限制，并关联旧来源；旧基线记录原样保留。基线行数因此增加，术语条数和日文写法数没有增加，也没有修改游戏正文。
+
+原基线中有45项尚未记录现行中文：TDA00、TDA01、TDA02各1项，TDA03有4项，帝都燃烧3项，光子之花18项，光子旋律17项。这是按“作品×条目”统计的资料同步缺口，不是45处新的正文错译。各作整理明细逐项列出旧中文、现行采用及使用范围；现行表中43条失效资料路径和8条与现行中文不一致的说明也已修正，日文和中文列没有改变。
+
+读取工具将现行采用、历史／语境参考、候选、待核问题、原已排除及旧依据已注明的扫描误命中分开显示，原状态不回写。光子之花的746条普通表达／误命中沿用旧依据分类；其他候选仍需按语境审定，不因本轮整理而自动确认。
+
+TDA02、TDA03、光子之花、光子旋律共107项尚无具体篇章定位，各作明细列出了条目及现有资料限制。新增记录保留已知的本作／合集范围和使用限制，不把来源表行号当作游戏台词编号；未定位也不等于未出现。
 
 ## 来源与完整性
 
@@ -59,6 +71,9 @@ Muv-Luv七作使用“通用表 + 本作术语表”，君望独立使用本作�
 ```powershell
 python localization/tools/terminology.py photonflowers --term ミキ
 python localization/tools/terminology.py tda00 --term ウィル
+python localization/tools/terminology.py tda00 --baseline --term ウィル
+python localization/tools/terminology.py photonflowers --baseline --group noise
+python localization/tools/terminology.py photonmelodies --check-baseline
 ```
 
 通用与本作出现同词异译时工具报错，不能以加载顺序覆盖。候选匹配采用片假名边界，避免ウィル命中ウィルス；单字人名仍须严格按人物/说话人语境判断。没有自动改写正文的操作。

@@ -7,7 +7,7 @@ import unittest
 from collections import Counter
 
 from localization.tools.terminology import (GAMES, MUV_LUV_GAMES, ROOT, baseline_consistency_errors,
-                                           baseline_group, candidate_terms, load_game, read_table)
+                                           baseline_group, candidate_terms, load_game, read_baseline, read_table)
 
 
 class TerminologyScopeTests(unittest.TestCase):
@@ -79,6 +79,25 @@ class TerminologyScopeTests(unittest.TestCase):
                 with (ROOT / engine / 'games' / game / 'terminology/baseline.ja-zh-Hans.csv').open(encoding='utf-8-sig', newline='') as stream:
                     baseline = {row['jp'] for row in csv.DictReader(stream)}
                 self.assertFalse(set(own) - baseline, '本作术语必须全部保留在基线中')
+
+    def test_all_eight_baselines_preserve_current_translations_and_complete_scope(self):
+        for game in GAMES:
+            with self.subTest(game=game):
+                terms = read_table(ROOT / 'localization/glossaries' / f'{game}.ja-zh-Hans.csv')
+                rows = read_baseline(game)
+                self.assertEqual(baseline_consistency_errors(terms, rows), [])
+                current = [row for row in rows if baseline_group(row) == 'current']
+                for index, term in enumerate(terms.values(), 2):
+                    row = next(row for row in current if row['jp'] == term['jp'])
+                    self.assertEqual(row['source_row'], str(index))
+                    self.assertEqual(row['source_status'], 'current-glossary')
+                    self.assertEqual(row['occurrences'], '')
+        pf = read_baseline('photonflowers')
+        self.assertEqual(sum(baseline_group(row) == 'noise' for row in pf), 746)
+        for game in ('tda01', 'tda02', 'tda03', 'photonflowers'):
+            term = read_table(ROOT / 'localization/glossaries' / f'{game}.ja-zh-Hans.csv')['軌道降下兵']
+            self.assertIn('本作采用轨道空降兵', term['context'])
+            self.assertNotIn('本作采用轨道降下兵', term['context'])
 
     def test_baseline_consistency_requires_current_translation_and_scope(self):
         terms = {'伍長': {'jp': '伍長', 'cn': '下士', 'context': '中文军衔；仅在军衔语境使用'}}

@@ -47,6 +47,8 @@ python localization/tools/terminology.py kiminozo --term タケス
 旧版本、恢复清单、审计记录及各作基线入口统一放在[术语查证与历史记录](../../docs/research/localization/terminology-history/README.md)。
 候选、争议与历史译法不作为现行术语加载。
 
+八作基线都包含各自现行术语的中文和完整使用限制。七作旧基线保留历史记录，另列现行采用记录；可用`--baseline --term 日文`追溯依据，或用`--baseline --group candidate`只看候选。逐作改动、数量及尚缺具体篇章定位的资料见上述整理明细。
+
 ## English
 
 This folder contains the Muv-Luv shared glossary and eight game-specific glossaries.
