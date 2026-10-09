@@ -1,0 +1,54 @@
+{
+  "validation": "offline only; not installed or played in game",
+  "sources": [
+    {
+      "offset": 27493704,
+      "extent": 90171399,
+      "frames": 1905,
+      "sha256": "e00ce4045070162925f593d1b3cef3e520f7d719690fb6daf718fd1d0aee7849",
+      "byte_exact_roundtrip": true
+    },
+    {
+      "offset": 117665112,
+      "extent": 90163517,
+      "frames": 1875,
+      "sha256": "948bcdae76795e8246a9c4dd9ddba836c03a3010ecc3f34b0fefbff37ab8479c",
+      "byte_exact_roundtrip": true
+    },
+    {
+      "offset": 1715679260,
+      "extent": 92955780,
+      "frames": 1904,
+      "sha256": "b4ba441300977b070e5275b9556047a54cf5f493365ee7152c197ca8d8e5b410",
+      "byte_exact_roundtrip": true
+    },
+    {
+      "offset": 1808635048,
+      "extent": 92901554,
+      "frames": 1874,
+      "sha256": "2547f41fc0f3935adf449c005eac8f00824ce989ffb4dcfff306202dc1949f3d",
+      "byte_exact_roundtrip": true
+    }
+  ],
+  "native_continuous_frames": [
+    1134,
+    1135,
+    1136,
+    1137,
+    1138,
+    1139,
+    1140
+  ],
+  "native_encoded_frame": 1140,
+  "encoded_payload": 603070,
+  "max_channel_error": 3,
+  "source_key": "0xbc8c36d8",
+  "candidate_size": 93497874,
+  "base_ruo_sha256": "dc54624ce621259bd4928a7b25e2db0c41eb148953a2ef738a44972a3badff66",
+  "base_redirects": 30,
+  "merged_redirects": 31,
+  "inherited_data_identical": true,
+  "inherited_mappings_identical": true,
+  "replacement_readback": true,
+  "merged_ruo_sha256": "0ced4011a92cf62a741fe786f4c98d5a58e7f3e91f14705210a675be6175cace"
+}
