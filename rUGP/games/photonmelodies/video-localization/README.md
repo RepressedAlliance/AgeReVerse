@@ -2,7 +2,7 @@
 
 `rebirth-text.zh-CN.csv` 保存从原始离线画面核实的英文文字和中文初稿，
 包括保密提示、技术标签、部件价格及旁白字幕，共63行。
-此文件尚未接入打包器；成片制作、时间轴与音画验收仍未完成。
+此文件尚未接入打包器；已制成旁白中文字幕离线预览，完整画面汉化与音画验收仍未完成。
 
 ## 版本与帧号
 
@@ -20,13 +20,33 @@
 `short_witness_frame` 是对应**英文字幕版本**中人工查看、可辨读的0起始见证帧，
 不是入帧点、出帧点或字幕持续时间，也不可直接套用到无旁白字幕版本。
 状态 `draft_visual_source_checked` 表示已核实该见证画面的来源文字，
-中文仍为初稿。每条字幕的连续边界、快速出现的内容覆盖、日语音轨核对仍待完成。
+中文仍为初稿。长版22条旁白字幕的连续边界已单独核实；
+技术标签逐字动画的覆盖、日语音轨核对仍待完成。
 现有本机 ASR 是辅助线索，不是已听校的日语原稿，也不能作为精确时间轴。
 
 `layer` 区分 `notice`、`technical`、`price` 和 `subtitle`。
 `body.*` 技术标签在手臂、腿部两处复用，当前见证帧取手臂画面；
 实际制作须覆盖两处，不可按CSV行数当作画面出现次数。
 眼部标题的“／”用于标记标题与说明两行的排版意图，尚未固定像素布局。
+
+## 旁白字幕离线预览
+
+`rebirth-ending-subtitles.frames.json` 记录长版英文旁白的22个0起始、右端不含帧区间。
+逐帧检测后已查看每条的开始前一帧、开始帧、结束前一帧、结束帧。
+最后一条在1859帧仅有极弱压缩残影，该帧不计入字幕正文。
+
+原生 CRsi 默认时钟为 `MulDiv(frame, 100000, rate)`，本资源 rate=3000，
+对应30fps；播放控制器的覆盖值及音画起点仍未验证。
+两条长版视频存在局部帧差，不能把英文字幕版帧号当成无字幕版的精确画面对应。
+当前预览只把这些区间按默认时钟转成名义时间，叠加于无旁白字幕版本并配原音轨。
+
+```powershell
+python -m rUGP.tools.video.subtitle_track --timeline rUGP/games/photonmelodies/video-localization/rebirth-ending-subtitles.frames.json --text rUGP/games/photonmelodies/video-localization/rebirth-text.zh-CN.csv --output ending-subtitles.ass
+```
+
+ASS 时间向下取整到厘秒，以保持30fps各帧时刻的事件归属。已输出本机1904帧预览，
+抽查中文排版及首尾边界；技术标签、价格和保密提示仍为原文，未完成音轨听校、
+游戏内同步验证或生产 CRsi 编码。该预览不可作为完成的汉化补丁。
 
 ## 必须保留的差异
 
