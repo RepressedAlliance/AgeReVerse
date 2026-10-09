@@ -45,7 +45,7 @@
   ],
   "scope": "Only the ending (long) draft changes. Previously shared rows are split; short-version draft wording and source-English observations are preserved.",
   "adoption": "Revised CSV and review stills only. The v2 video, CRsi and RUO retain the earlier wording and must not be mistaken for this revision. No installation or publication.",
-  "subsequent_adoption": "The three context revisions are now included in offline video v3; see rebirth-independent-asr-20261010.json. Packaged CRsi/RUO remain v2.",
+  "subsequent_adoption": "The three context revisions are included in offline video and packaged resource v3; see rebirth-independent-asr-20261010.json and rebirth-caption-resource-v3-20261010.json. Not installed or game-accepted.",
   "visual_review": {
     "private_directory": "local-internal/pm-rebirth-video/narration-context-review",
     "witness_frames": [540, 900, 960],

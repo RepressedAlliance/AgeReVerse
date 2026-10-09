@@ -85,7 +85,7 @@
     "outside_allowed_changed_pixels": 0,
     "compared_to_v2": "Exactly 479 RGB frames in the six revised cue intervals differ; every other frame is identical. Includes the three official-context revisions from the preceding commit.",
     "visual_review": "All six revised full-size witness images were viewed: no observed clipping, inconsistent font size or obvious old-letter residue. Same narration style retained. Static review only.",
-    "game_resources": "CRsi/RUO are still the older v2; v3 has not been installed or published."
+    "game_resources": "Subsequently packaged and verified offline as v3; see rebirth-caption-resource-v3-20261010.json. Not installed or published."
   },
   "private_transcripts": true
 }

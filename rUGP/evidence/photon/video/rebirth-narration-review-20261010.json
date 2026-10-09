@@ -251,5 +251,6 @@
   },
   "japanese_context": "rUGP/evidence/photon/video/rebirth-japanese-context-20261010.json",
   "independent_asr": "rUGP/evidence/photon/video/rebirth-independent-asr-20261010.json",
-  "adoption": "Six ending cues revised across official-context and independent-ASR work. The v3 offline video contains current wording; v2 packaged resources remain unchanged. Final audio and game acceptance remain pending."
+  "packaged_resource": "rUGP/evidence/photon/video/rebirth-caption-resource-v3-20261010.json",
+  "adoption": "Six ending cues revised across official-context and independent-ASR work. Offline video and packaged v3 resource contain current wording. Not installed; final audiovisual and game acceptance remain pending."
 }

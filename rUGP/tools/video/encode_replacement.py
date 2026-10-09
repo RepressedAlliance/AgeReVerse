@@ -1,7 +1,8 @@
 """Build scoped CRsi replacements from source and edited lossless RGB videos.
 
 Run as ``python -m rUGP.tools.video.encode_replacement --help``. A complete
-native replay against ``target_rgb_sha256`` is required before installation;
+native RGB coverage against ``target_rgb_sha256`` is required before installation
+(full replay, or checked reuse of identical fully verified baseline frames);
 successful construction alone establishes neither decoding nor visual quality.
 """
 from __future__ import annotations
