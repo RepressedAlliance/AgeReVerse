@@ -23,13 +23,13 @@
   "private_transcripts": true,
   "priority_questions": {
     "narration.abandon": {
-      "question": "听清任务性质或地点，以及是否只说机体受损。自动识别不一致，当前“被迫放弃战术机”不能据此确认。"
+      "question": "官方日文人物介绍支持“绝密强袭作战中机体受损”，已据此修订草稿；仍须核对结尾原音的具体措辞及与下一句的衔接。"
     },
     "narration.volunteer": {
-      "question": "与下一句连听：是否明确志愿成为计划的受试者，而不只是“参加计划”。"
+      "question": "与下一句连听。官方人物介绍支持战力恢复计划及志愿受试者身份；当前两句已重排，须核对结尾原音与各句显示时机。"
     },
     "narration.project": {
-      "question": "确认伤残军人的具体称谓和“再战力化”含义；现稿“再开发”可能偏离原义，并可能遗漏受试者身份。"
+      "question": "官方人物介绍明确受试者身份，已沿用正文的“受试者”译法；仍须对照结尾原音确认整句及时间。"
     },
     "narration.rebuild": {
       "question": "确认原音是否仅描述人体强化改造手术，是否确有“最先进的强化部件”；三份转写均未识别出这一内容。",
@@ -83,7 +83,7 @@
         493,
         572
       ],
-      "target_sha256": "3749540d1abd171bfc8c5ac6752af4a3f181366fba0c03603e329a2602139471",
+      "target_sha256": "65a8bff26b97707cc4a04630aa3f3e2478532edd3968f491f3eb5d057199fd88",
       "status": "pending_direct_audio_review"
     },
     {
@@ -128,7 +128,7 @@
         866,
         938
       ],
-      "target_sha256": "840b39f76f7bfd48c280ff167854495c132e73fd3542b8c692d0ee7c23ab810a",
+      "target_sha256": "72644da3e7c499e1be01f0d634cd927e0f44d491fae7c8282da026203038c337",
       "status": "pending_direct_audio_review"
     },
     {
@@ -137,7 +137,7 @@
         938,
         1036
       ],
-      "target_sha256": "53fbb4c76fa1db31e921085a55b148b6a3d133632ace58af150260831ae030f0",
+      "target_sha256": "f44a4043f9d9cc8d685acb33714327d165013a2f33195e6e756b32df476cfe65",
       "status": "pending_direct_audio_review"
     },
     {
@@ -250,5 +250,6 @@
     "reference": "rUGP/games/photonmelodies/translations/再诞.csv",
     "scope": "Existing Chinese terminology only; not Japanese-audio approval"
   },
-  "adoption": "No proposed wording has replaced the candidate video; all 22 cues remain pending"
+  "japanese_context": "rUGP/evidence/photon/video/rebirth-japanese-context-20261010.json",
+  "adoption": "Three ending CSV cues revised using official Japanese character context; review stills updated. The v2 video and packaged candidates remain unchanged. All 22 cues still require direct audio review."
 }
