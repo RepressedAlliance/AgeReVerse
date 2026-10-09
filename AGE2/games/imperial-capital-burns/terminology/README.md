@@ -3,7 +3,7 @@
 [返回本作](../README.md) · [术语维护规则](../../../../localization/text/04-terminology.md)
 
 - [本作术语表](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv)：183条，查当前采用译法及`context`使用限制。
-- [本作基线](baseline.ja-zh-Hans.csv)：264条来源记录、185个不同日文词形，查语境、旧译、候选和处理依据。
+- [本作基线](baseline.ja-zh-Hans.csv)：447条来源记录、185种去重后的日文写法，查语境、旧译、候选和处理依据。
 - [系列通用表](../../../../localization/glossaries/muv-luv.ja-zh-Hans.csv)：与本作表共同使用，不加载其他作品专表。
 
 数量按2026-10-09当前CSV统计。基线保留同一词的不同来源，记录数和不同词形数都不是已确认术语数。
@@ -22,5 +22,20 @@
 | --- | --- |
 | `selected-imperial-capital-burns` | 先前暂定专表 |
 | `imperial-old` | 旧独立表，共185条来源记录 |
+| `current-glossary-20261009-imperial-capital-burns` | 截至本轮整理的183条现行采用记录，完整保留术语表使用限制；与旧来源分开读取 |
 
 来源的历史路径、提交与原始规模见[恢复说明](../../../../docs/research/localization/terminology-history/recovery-20260908.md)和[恢复清单](../../../../docs/research/localization/terminology-history/recovery-20260908.json)。其中旧路径描述当时的位置；当前术语和基线路径以本作`project.toml`为准。2026-09-20修订见[逐条记录](../../../../docs/research/localization/terminology-history/revision-20260920.json)。
+
+## 本轮基线整理
+
+本次在原有264条记录后追加183条现行采用记录；原有译法、状态和来源全部保留。记录数增加是为了把当前决定与历史证据分开，不是新增了183个术语。译法沿用现行术语表，没有修改游戏正文。
+
+[整理明细](review-20261009.md)列出原基线未同步的3项中文、说明修正及仍缺的定位。现行记录的`source_row`对应本版术语表记录编号（含表头）；`basis`先保留完整使用限制，再列出旧来源编号。
+
+```powershell
+python localization/tools/terminology.py imperial-capital-burns --baseline
+python localization/tools/terminology.py imperial-capital-burns --baseline --group current
+python localization/tools/terminology.py imperial-capital-burns --check-baseline
+```
+
+`current`查现行决定；`reference`查历史／语境参考；`candidate`、`question`、`excluded`分别查候选、疑问和排除记录。`noise`只筛出旧依据已明确记为普通片假名／拟声或正则误命中的记录，不改旧状态。

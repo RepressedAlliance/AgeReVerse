@@ -19,7 +19,7 @@ Muv-Luv七作使用“通用表 + 本作术语表”，君望独立使用本作�
 | TDA01 | [89 条](../../../../localization/glossaries/tda01.ja-zh-Hans.csv) | [573 条](../../../../AGE2/games/tda01/terminology/baseline.ja-zh-Hans.csv) | 191 |
 | TDA02 | [98 条](../../../../localization/glossaries/tda02.ja-zh-Hans.csv) | [642 条](../../../../AGE2/games/tda02/terminology/baseline.ja-zh-Hans.csv) | 208 |
 | TDA03 | [115 条](../../../../localization/glossaries/tda03.ja-zh-Hans.csv) | [739 条](../../../../AGE2/games/tda03/terminology/baseline.ja-zh-Hans.csv) | 244 |
-| 帝都燃烧 | [183 条](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [264 条](../../../../AGE2/games/imperial-capital-burns/terminology/baseline.ja-zh-Hans.csv) | 185 |
+| 帝都燃烧 | [183 条](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [447 条](../../../../AGE2/games/imperial-capital-burns/terminology/baseline.ja-zh-Hans.csv) | 185 |
 | 光子之花 | [313 条](../../../../localization/glossaries/photonflowers.ja-zh-Hans.csv) | [1576 条](../../../../rUGP/games/photonflowers/terminology/baseline.ja-zh-Hans.csv) | 1193 |
 | 光子旋律 | [750 条](../../../../localization/glossaries/photonmelodies.ja-zh-Hans.csv) | [3660 条](../../../../rUGP/games/photonmelodies/terminology/baseline.ja-zh-Hans.csv) | 2672 |
 | 君望（本篇及番外） | [167 条](../../../../localization/glossaries/kiminozo.ja-zh-Hans.csv) | [360 条](../../../../AGE2/games/kiminozo/terminology/baseline.ja-zh-Hans.csv) | 359 |
