@@ -11,7 +11,7 @@
 | 文本汉化 | **[text/](text/README.md)** | 已使用的两轮翻译流程、01—07 文本规范、新语言指南 |
 | 图片汉化 | **[images/](images/README.md)** | 五阶段：提取与分类 → 文案与样式 → 制作 → 自检返修 → 人工审核与交付 |
 | 字体 | **[fonts/](fonts/README.md)** | 七作原版／补丁字体、图片用字、来源和对应关系 |
-| 术语 | **[glossaries/](glossaries/README.md)** | 系列通用表和七作现行表；每作仅加载通用＋本作 |
+| 术语 | **[glossaries/](glossaries/README.md)** | Muv-Luv通用表、七作专表与君望专表；语境基线放在各作品的`terminology/`中 |
 | 协作校对 | **[paratranz/](paratranz/README.md)** | 四个现有项目、参与方式、发布后改文回流与同步 |
 | 必要工具 | [tools/](tools/README.md) | 新语言表、字体覆盖、通用图片制作／校验、校对同步 |
 | 工具测试 | [tests/](tests/README.md) | 对应上述工具的数据与行为检查，使用合成输入 |
@@ -24,7 +24,7 @@
 
 | 内容 | 位置 |
 | --- | --- |
-| 各作译文、图片文案和资源映射 | [AGE2/games/](../AGE2/games/README.md)、[rUGP/games/](../rUGP/games/README.md) 下对应作品 |
+| 各作译文、图片文案、资源映射和语境基线 | [AGE2/games/](../AGE2/games/README.md)、[rUGP/games/](../rUGP/games/README.md) 下对应作品 |
 | FPD／EGPACK／WebP 提取、写回、松散覆盖 | [AGE2 工具](../AGE2/README.md) |
 | RIO／CRsa／RUO／ICI、Photon 路由和运行时 | [rUGP 工具](../rUGP/tools/README.md) |
 | 历史词库、旧审核批次、来源调查 | [本地化研究记录](../docs/research/localization/README.md)；保留查证价值，不作为当前制作入口 |

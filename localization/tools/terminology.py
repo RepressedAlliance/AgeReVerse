@@ -9,8 +9,9 @@ import re
 import tomllib
 
 ROOT = Path(__file__).resolve().parents[2]
-GAMES = {**{g: "AGE2" for g in ("tda00", "tda01", "tda02", "tda03", "imperial-capital-burns")},
-         **{g: "rUGP" for g in ("photonflowers", "photonmelodies")}}
+MUV_LUV_GAMES = {**{g: "AGE2" for g in ("tda00", "tda01", "tda02", "tda03", "imperial-capital-burns")},
+                 **{g: "rUGP" for g in ("photonflowers", "photonmelodies")}}
+GAMES = {**MUV_LUV_GAMES, "kiminozo": "AGE2"}
 COLUMNS = ["jp", "cn", "context"]
 
 
@@ -32,15 +33,17 @@ def read_table(path: Path) -> dict[str, dict[str, str]]:
 
 
 def load_game(game: str, root: Path = ROOT) -> dict[str, dict[str, str]]:
-    """Load only common + this game's table, rejecting silent conflicts."""
+    """Load this game's table and only its explicitly applicable common table."""
     if game not in GAMES:
         raise ValueError(f"Unknown game: {game}")
     folder = root / GAMES[game] / "games" / game
     manifest = tomllib.loads((folder / "project.toml").read_text(encoding="utf-8"))
-    expected = {
-        "terminology_common_authority": root / "localization/glossaries/muv-luv.ja-zh-Hans.csv",
-        "terminology_authority": root / "localization/glossaries" / f"{game}.ja-zh-Hans.csv",
-    }
+    expected = {}
+    if game in MUV_LUV_GAMES:
+        expected["terminology_common_authority"] = root / "localization/glossaries/muv-luv.ja-zh-Hans.csv"
+    elif "terminology_common_authority" in manifest:
+        raise ValueError(f"Unreviewed common terminology scope: {game}")
+    expected["terminology_authority"] = root / "localization/glossaries" / f"{game}.ja-zh-Hans.csv"
     result = {}
     for key, correct_path in expected.items():
         path = (folder / manifest[key]).resolve()

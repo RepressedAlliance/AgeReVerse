@@ -10,33 +10,37 @@
 
 本篇／Alternative 的 [Steam 术语参考快照](../references/main-al-steam-20260909/README.md)单独存放，仅供查证，尚未加入生效术语表。
 
-系列通用表为 [muv-luv.ja-zh-Hans.csv](../../../../localization/glossaries/muv-luv.ja-zh-Hans.csv)，目前 **143 条**（新增4条军衔规则）。
-各作使用“通用表 + 本作术语表”，不继承其他作品的专表。基线用于查证和审校，不作为自动替换字典加载。
+系列通用表为 [muv-luv.ja-zh-Hans.csv](../../../../localization/glossaries/muv-luv.ja-zh-Hans.csv)，目前 **146 条**。
+Muv-Luv七作使用“通用表 + 本作术语表”，君望独立使用本作表，不继承其他作品的专表。基线用于查证和审校，不作为自动替换字典加载。
 
 | 作品 | 本作术语表 | 基线证据记录 | 基线去重日文键 |
 | --- | ---: | ---: | ---: |
-| TDA00 | [133 条](../../../../localization/glossaries/tda00.ja-zh-Hans.csv) | [870 条](../../../../AGE2/games/tda00/terminology/baseline.ja-zh-Hans.csv) | 365 |
-| TDA01 | [84 条](../../../../localization/glossaries/tda01.ja-zh-Hans.csv) | [480 条](../../../../AGE2/games/tda01/terminology/baseline.ja-zh-Hans.csv) | 187 |
-| TDA02 | [86 条](../../../../localization/glossaries/tda02.ja-zh-Hans.csv) | [534 条](../../../../AGE2/games/tda02/terminology/baseline.ja-zh-Hans.csv) | 198 |
-| TDA03 | [102 条](../../../../localization/glossaries/tda03.ja-zh-Hans.csv) | [616 条](../../../../AGE2/games/tda03/terminology/baseline.ja-zh-Hans.csv) | 236 |
+| TDA00 | [135 条](../../../../localization/glossaries/tda00.ja-zh-Hans.csv) | [871 条](../../../../AGE2/games/tda00/terminology/baseline.ja-zh-Hans.csv) | 366 |
+| TDA01 | [89 条](../../../../localization/glossaries/tda01.ja-zh-Hans.csv) | [484 条](../../../../AGE2/games/tda01/terminology/baseline.ja-zh-Hans.csv) | 191 |
+| TDA02 | [98 条](../../../../localization/glossaries/tda02.ja-zh-Hans.csv) | [544 条](../../../../AGE2/games/tda02/terminology/baseline.ja-zh-Hans.csv) | 208 |
+| TDA03 | [115 条](../../../../localization/glossaries/tda03.ja-zh-Hans.csv) | [624 条](../../../../AGE2/games/tda03/terminology/baseline.ja-zh-Hans.csv) | 244 |
 | 帝都燃烧 | [183 条](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [264 条](../../../../AGE2/games/imperial-capital-burns/terminology/baseline.ja-zh-Hans.csv) | 185 |
-| 光子之花 | [298 条](../../../../localization/glossaries/photonflowers.ja-zh-Hans.csv) | [1561 条](../../../../rUGP/games/photonflowers/terminology/baseline.ja-zh-Hans.csv) | 1178 |
-| 光子旋律 | [745 条](../../../../localization/glossaries/photonmelodies.ja-zh-Hans.csv) | [3656 条](../../../../rUGP/games/photonmelodies/terminology/baseline.ja-zh-Hans.csv) | 2668 |
+| 光子之花 | [313 条](../../../../localization/glossaries/photonflowers.ja-zh-Hans.csv) | [1576 条](../../../../rUGP/games/photonflowers/terminology/baseline.ja-zh-Hans.csv) | 1193 |
+| 光子旋律 | [750 条](../../../../localization/glossaries/photonmelodies.ja-zh-Hans.csv) | [3660 条](../../../../rUGP/games/photonmelodies/terminology/baseline.ja-zh-Hans.csv) | 2672 |
+| 君望（本篇及番外） | [167 条](../../../../localization/glossaries/kiminozo.ja-zh-Hans.csv) | [193 条](../../../../AGE2/games/kiminozo/terminology/baseline.ja-zh-Hans.csv) | 193 |
+
+上表按2026-10-09当前CSV统计；日期命名的恢复清单和修订记录保留当时的数量。
 
 基线保留同一词的不同来源、不同状态和语境，**记录数不等于已确认术语数**。同一个词也可在通用表和专表有各自的使用依据，两表行数不能直接相加。TDA01–03 是依据旧词库及本作日文重建的基线，不冒充旧的完整人工审定表。
 
 ## 应该看哪张表
 
-君望本篇及附加篇仍在制作中，术语与基线工作表尚未公开，不在上面的既有表统计及历史恢复范围内；当前状态见[君望术语与基线入口](../../../../AGE2/games/kiminozo/terminology/README.md)。
+君望本篇及附加篇仍在制作中，本轮首次公开术语和语境基线；来源及待核状态见[君望说明](../../../../AGE2/games/kiminozo/terminology/README.md)。这是独立整理的本作数据，不属于下述Muv-Luv七作历史恢复范围。
 
 - 查系列稳定译法：通用表。
 - 校对当前作品：本作术语表，必须连同 context 使用。
 - 查旧译、候选、篇章限制、争议和为什么没有采用：本作基线。
 
-术语表三列为 `jp,cn,context`。基线九列为 `jp,cn,status,chapter,source,source_row,source_status,occurrences,basis`。
-`confirmed`、`contextual`、`candidate`、`question`、`excluded` 分别表示确认、语境限定、候选、疑问、退出使用。原记录的状态另保存在 `source_status`，不会因这次整理被抹掉。空中文候选也予以保留。
+术语表三列为 `jp,cn,context`。基线九列、状态与来源编号的含义见[公开基线字段与状态](../../../../localization/text/04-terminology.md#公开基线字段与状态)。状态描述该条来源记录，不能代替当前术语表及实际语境。空中文候选保留为待查资料。
 
 旧“激光级”、拟声片段“ァァ”等可能出现在基线或历史表中，**不代表它们恢复为现行采用译法**。光线级、重光线级及壬姬遵循当前修正。
+
+2026-10-09补齐24条现行术语的基线记录：TDA02两条、TDA03三条、光子之花十五条、光子旋律四条。译法和使用限制沿用已收录的现行表，未改旧记录或正文；[补录记录](baseline-additions-20261009.json)保留来源版本和逐条内容。
 
 ## 来源与完整性
 
@@ -48,7 +52,7 @@
 
 ## 使用与维护
 
-每作 `project.toml` 明确指定 `terminology_common_authority`、`terminology_authority`、`terminology_baseline`。读取工具不会扫描、拼接其他作品或历史目录。
+每作`project.toml`明确指定`terminology_authority`、`terminology_baseline`；Muv-Luv七作另指定`terminology_common_authority`。君望不登记通用表。读取工具不会扫描、拼接其他作品或历史目录。
 
 ```powershell
 python localization/tools/terminology.py photonflowers --term ミキ

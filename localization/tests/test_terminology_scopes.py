@@ -6,13 +6,13 @@ import tempfile
 import unittest
 from collections import Counter
 
-from localization.tools.terminology import GAMES, ROOT, candidate_terms, load_game, read_table
+from localization.tools.terminology import MUV_LUV_GAMES, ROOT, candidate_terms, load_game, read_table
 
 
 class TerminologyScopeTests(unittest.TestCase):
     def test_seven_games_explicitly_load_only_common_and_own_table(self):
         common = read_table(ROOT / "localization/glossaries/muv-luv.ja-zh-Hans.csv")
-        for game, engine in GAMES.items():
+        for game, engine in MUV_LUV_GAMES.items():
             own = read_table(ROOT / "localization/glossaries" / f"{game}.ja-zh-Hans.csv")
             effective = load_game(game)
             self.assertEqual(set(effective), set(common) | set(own))
@@ -37,6 +37,33 @@ class TerminologyScopeTests(unittest.TestCase):
         self.assertEqual([r["jp"] for r in candidate_terms("レーザー級", glossary)], ["レーザー級"])
         self.assertEqual([r["jp"] for r in candidate_terms("ウィル", glossary)], ["ウィル"])
         self.assertEqual(candidate_terms("anything", {}), [])
+
+    def test_kiminozo_uses_own_terms_and_keeps_contextual_candidates_separate(self):
+        own = read_table(ROOT / "localization/glossaries/kiminozo.ja-zh-Hans.csv")
+        effective = load_game("kiminozo")
+        self.assertEqual(set(effective), set(own))
+        self.assertTrue(all(row['scope'] == 'kiminozo' for row in effective.values()))
+        self.assertNotIn('レーザー級', effective)
+        self.assertEqual(effective['竹尾タケオ']['cn'], '竹尾竹雄')
+        self.assertEqual(effective['タケス']['cn'], '竹卡斯')
+        self.assertEqual(effective['バトル・テッカ']['cn'], 'BattleTech')
+        self.assertEqual(effective['ＳｍａｌｌＤｉｓｋ']['cn'], 'CD')
+        with (ROOT / 'AGE2/games/kiminozo/terminology/baseline.ja-zh-Hans.csv').open(encoding='utf-8', newline='') as stream:
+            rows = list(csv.DictReader(stream))
+        baseline = {row['jp']: row for row in rows}
+        self.assertEqual(len(rows), len(baseline))
+        self.assertEqual(baseline['名古屋打ち']['cn'], '小蜜蜂')
+        self.assertEqual(baseline['名古屋打ち']['status'], 'question')
+        self.assertEqual(baseline['女コス好きのニーソックスマニア']['cn'], '女COSER过膝袜的狂热爱好者')
+        self.assertEqual(baseline['写ってます']['cn'], '一次性胶卷相机')
+        self.assertEqual(baseline['ジオ・フロント']['cn'], '地底都市')
+        self.assertEqual(baseline['ＳＤ']['cn'], 'CD')
+        for jp in ('アルファ０１', 'チャーリー０１', 'ブラヴォー０１'):
+            self.assertEqual(baseline[jp]['status'], 'candidate')
+            self.assertNotIn(jp, effective)
+        for row in rows:
+            self.assertTrue(row['chapter'] and row['basis'] and row['source'] and row['source_row'])
+            self.assertFalse(any(ord(c) < 32 for value in row.values() for c in value))
 
     def test_every_input_row_has_one_disposition_and_old_bytes_are_preserved(self):
         audit = json.loads((ROOT / "docs/research/localization/terminology-history/scope-audit-20260908.json").read_text(encoding="utf-8"))

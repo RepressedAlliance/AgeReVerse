@@ -620,3 +620,6 @@ jp,cn,status,chapter,source,source_row,source_status,occurrences,basis
 ヒビキ,响,confirmed,tda03,maintainer-20260920,3,confirmed,,2026-09-20 用户确认；localization/reviews/age2-terminology-20260920.json；仅在对应专名语境使用。
 ユズカ,柚香,confirmed,tda03,maintainer-20260920,4,confirmed,,2026-09-20 用户确认；localization/reviews/age2-terminology-20260920.json；仅在对应专名语境使用。
 シズク,雫,confirmed,tda03,maintainer-20260920,5,confirmed,,2026-09-20 用户确认；localization/reviews/age2-terminology-20260920.json；仅在对应专名语境使用。
+降下軌道兵団,轨道空降军团,contextual,tda03_t03026,glossary-20261009-tda03,113,current-glossary,,tda03_t03026，軌道降下兵団同一组织的异序写法；2026-09-20 用户确认优先对齐AL军团。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。
+リア・ゲグラン,蕾亚·盖斯克朗,contextual,本作；现行术语表未注明具体篇章,glossary-20261009-tda03,115,current-glossary,,2026-09-20 已审术语派生写法；同步ParaTranz后补入现行表。リア与レア在本作指同一人物；仅在对应人物/巢穴语境使用。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。
+ベルナデット・ル・ティグレ・ド・ラ・リヴィエール,贝尔纳黛特·勒·迪格雷·德·拉·里维埃,contextual,本作；现行术语表未注明具体篇章,glossary-20261009-tda03,116,current-glossary,,2026-09-20 系列已审术语派生写法；同步ParaTranz后补入现行表。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。

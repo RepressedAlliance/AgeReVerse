@@ -1,0 +1,307 @@
+{
+  "base_commit": "f02d44aab8ff156bc1dea0c60b45fcd725f56ab8",
+  "games": {
+    "tda02": {
+      "engine": "AGE2",
+      "glossary_path": "localization/glossaries/tda02.ja-zh-Hans.csv",
+      "before_records": 542,
+      "additions": [
+        {
+          "jp": "ゲグラン少佐",
+          "cn": "盖斯克朗少校",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-tda02",
+          "source_row": "98",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-20 已审术语派生写法；同步ParaTranz后补入现行表。リア与レア在本作指同一人物；仅在对应人物/巢穴语境使用。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "リア・ゲグラン",
+          "cn": "蕾亚·盖斯克朗",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-tda02",
+          "source_row": "99",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-20 已审术语派生写法；同步ParaTranz后补入现行表。リア与レア在本作指同一人物；仅在对应人物/巢穴语境使用。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        }
+      ]
+    },
+    "tda03": {
+      "engine": "AGE2",
+      "glossary_path": "localization/glossaries/tda03.ja-zh-Hans.csv",
+      "before_records": 621,
+      "additions": [
+        {
+          "jp": "降下軌道兵団",
+          "cn": "轨道空降军团",
+          "status": "contextual",
+          "chapter": "tda03_t03026",
+          "source": "glossary-20261009-tda03",
+          "source_row": "113",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "tda03_t03026，軌道降下兵団同一组织的异序写法；2026-09-20 用户确认优先对齐AL军团。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "リア・ゲグラン",
+          "cn": "蕾亚·盖斯克朗",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-tda03",
+          "source_row": "115",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-20 已审术语派生写法；同步ParaTranz后补入现行表。リア与レア在本作指同一人物；仅在对应人物/巢穴语境使用。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ベルナデット・ル・ティグレ・ド・ラ・リヴィエール",
+          "cn": "贝尔纳黛特·勒·迪格雷·德·拉·里维埃",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-tda03",
+          "source_row": "116",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-20 系列已审术语派生写法；同步ParaTranz后补入现行表。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        }
+      ]
+    },
+    "photonflowers": {
+      "engine": "rUGP",
+      "glossary_path": "localization/glossaries/photonflowers.ja-zh-Hans.csv",
+      "before_records": 1561,
+      "additions": [
+        {
+          "jp": "ユーロファイタス",
+          "cn": "尤罗法伊塔斯公司",
+          "status": "contextual",
+          "chapter": "雨舞者",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "300",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 用户审定；雨舞者中的公司及其派遣部队；不改变其他作品。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ダンサー",
+          "cn": "舞者",
+          "status": "contextual",
+          "chapter": "雨舞者",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "301",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 用户审定；雨舞者军事呼号；保留原编号。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "アクイラ",
+          "cn": "大鹫",
+          "status": "contextual",
+          "chapter": "小鸡潜降兵",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "302",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 用户审定；小鸡潜降兵单机及队伍呼号；复数队伍称呼为大鹫队。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ライトニング",
+          "cn": "闪电",
+          "status": "contextual",
+          "chapter": "继承",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "303",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 用户审定；继承军事呼号；保留原编号及全员范围。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ブートストラップ",
+          "cn": "布特斯特拉普",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "304",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "フェイズ４",
+          "cn": "四阶",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "305",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "スタブ",
+          "cn": "地下茎",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "306",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ヴァルキリー",
+          "cn": "女武神",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "307",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ヴァルキリーズ",
+          "cn": "女武神中队",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "308",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ブレード",
+          "cn": "刀刃",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "309",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "クラッカー",
+          "cn": "破击者",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "310",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "クレスト",
+          "cn": "纹章",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "311",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "エコー艦隊",
+          "cn": "回声舰队",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "312",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ウィスキー艦隊",
+          "cn": "威士忌舰队",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "313",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "スィアラーデルタ",
+          "cn": "西拉·德尔塔",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonflowers",
+          "source_row": "314",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        }
+      ]
+    },
+    "photonmelodies": {
+      "engine": "rUGP",
+      "glossary_path": "localization/glossaries/photonmelodies.ja-zh-Hans.csv",
+      "before_records": 3656,
+      "additions": [
+        {
+          "jp": "ハンター１",
+          "cn": "猎人1",
+          "status": "contextual",
+          "chapter": "时空的欠片",
+          "source": "glossary-20261009-photonmelodies",
+          "source_row": "747",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 用户审定；时空的欠片中明示的任务代号；不与本名混用。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ヴァルキリー",
+          "cn": "女武神",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonmelodies",
+          "source_row": "748",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 第二轮用户审定；仅本作对应专名语境；单机保留编号；集体称谓按中队语境；不改受保护旧译。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "ドリームコスト",
+          "cn": "DreamCost",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonmelodies",
+          "source_row": "749",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 用户审定；虚构游戏机全名；首次可注简称DC；保护樱花盛开之前既有译文。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        },
+        {
+          "jp": "プレスタ２",
+          "cn": "普雷斯塔2",
+          "status": "contextual",
+          "chapter": "本作；现行术语表未注明具体篇章",
+          "source": "glossary-20261009-photonmelodies",
+          "source_row": "751",
+          "source_status": "current-glossary",
+          "occurrences": "",
+          "basis": "2026-09-09 用户审定；原作虚构游戏机的简称；不改为现实PlayStation或另造Pbox。；2026-10-09 补录现行术语表已有条目，仅登记既有采用译法及使用限制，不代表本轮重新逐句审定。"
+        }
+      ]
+    }
+  },
+  "purpose": "补录现行术语表中尚无基线词形记录的条目；不修改现行术语、旧基线记录或剧情文本。",
+  "glossary_counts": {
+    "tda00": 135,
+    "tda01": 89,
+    "tda02": 98,
+    "tda03": 115,
+    "imperial-capital-burns": 183,
+    "photonflowers": 313,
+    "photonmelodies": 750
+  }
+}
