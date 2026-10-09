@@ -17,7 +17,7 @@ Muv-Luv七作使用“通用表 + 本作术语表”，君望独立使用本作�
 | --- | ---: | ---: | ---: |
 | [TDA00](../../../../AGE2/games/tda00/terminology/review-20261009.md) | [135 条](../../../../localization/glossaries/tda00.ja-zh-Hans.csv) | [382 条](../../../../AGE2/games/tda00/terminology/baseline.ja-zh-Hans.csv) | 363 |
 | [TDA01](../../../../AGE2/games/tda01/terminology/review-20261009.md) | [89 条](../../../../localization/glossaries/tda01.ja-zh-Hans.csv) | [196 条](../../../../AGE2/games/tda01/terminology/baseline.ja-zh-Hans.csv) | 189 |
-| [TDA02](../../../../AGE2/games/tda02/terminology/review-20261009.md) | [98 条](../../../../localization/glossaries/tda02.ja-zh-Hans.csv) | [642 条](../../../../AGE2/games/tda02/terminology/baseline.ja-zh-Hans.csv) | 208 |
+| [TDA02](../../../../AGE2/games/tda02/terminology/review-20261009.md) | [98 条](../../../../localization/glossaries/tda02.ja-zh-Hans.csv) | [220 条](../../../../AGE2/games/tda02/terminology/baseline.ja-zh-Hans.csv) | 206 |
 | [TDA03](../../../../AGE2/games/tda03/terminology/review-20261009.md) | [115 条](../../../../localization/glossaries/tda03.ja-zh-Hans.csv) | [739 条](../../../../AGE2/games/tda03/terminology/baseline.ja-zh-Hans.csv) | 244 |
 | [帝都燃烧](../../../../AGE2/games/imperial-capital-burns/terminology/review-20261009.md) | [183 条](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [447 条](../../../../AGE2/games/imperial-capital-burns/terminology/baseline.ja-zh-Hans.csv) | 185 |
 | [光子之花](../../../../rUGP/games/photonflowers/terminology/review-20261009.md) | [313 条](../../../../localization/glossaries/photonflowers.ja-zh-Hans.csv) | [1889 条](../../../../rUGP/games/photonflowers/terminology/baseline.ja-zh-Hans.csv) | 1193 |
