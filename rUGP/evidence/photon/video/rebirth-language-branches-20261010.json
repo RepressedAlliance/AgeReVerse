@@ -1,7 +1,7 @@
 {
   "schema": "photon-rebirth-video-language-investigation/1",
   "date": "2026-10-10",
-  "status": "offline source classification in progress; no production scope change",
+  "status": "Japanese/Translation video branch identified from script, labelled choice images, and native choice allocation",
   "source": "installed archive; some text records already contain the existing Chinese patch",
   "target_cint_global_offset": 568804,
   "indexed_crsa_records": 265,
@@ -181,12 +181,23 @@
       1688659276
     ]
   },
-  "inference": "The no-narration variant is strongly indicated as the Japanese image-language branch; explicit numeric choice-ID assignment has not yet been proved.",
-  "production_consequence": "Keep the current all-Chinese graphic studies as drafts. Resolve original-English classification before further destructive text removal; narration still needs Japanese-audio review.",
+  "native_choice_allocation": {
+    "handler": "0x548b70",
+    "command": 99,
+    "assignment": "0x548bcc reads list count at this+0xc; 0x548bcf stores it as new item ID at item+0x14",
+    "insertion": "0x5e2910 inserts the item and increments count",
+    "caller_script": 3127615628,
+    "caller_selection_order": 203,
+    "language_scene_call_order": 207,
+    "selection_completion": "0x54b460, message type 9: writes result then calls 0x54b5c0 at 0x54b567",
+    "clear": "0x54b5e4 calls 0x5482b0; 0x5482e0 zeros count at this+0xc",
+    "result": "Prior choice list is cleared after the caller selection. The language scene creates one English choice (ID 0), then one Japanese choice (ID 1). Alternative artwork branches are mutually exclusive."
+  },
+  "conclusion": "CInt@568804 value 0 selects Japanese image language and CRsi@1715679260; value 1 selects Translation and CRsi@27493704.",
+  "production_consequence": "Preserve English notice, technical labels, prices, and their original animation already present in the Japanese branch. Replace the Translation-branch added narration captions with reviewed Chinese. Prior all-Chinese graphic studies are research only. Japanese-audio review remains required.",
   "limitations": [
-    "No game process or UI was used",
-    "Button labels and script order alone do not prove automatic numeric choice-ID allocation",
+    "No game process or UI was used; language mapping is a static native/script result",
     "No full audiovisual or synchronization acceptance",
-    "This report does not designate the current Chinese graphic copies as approved production text"
+    "Existing Chinese narration wording remains draft"
   ]
 }
