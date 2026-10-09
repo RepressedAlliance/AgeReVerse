@@ -1,0 +1,254 @@
+{
+  "schema": "photon-rebirth-narration-review/1",
+  "date": "2026-10-10",
+  "status": "not approved; direct Japanese-audio review required",
+  "audio": {
+    "resource": "COptimizedObs",
+    "global_offset": 7785014604,
+    "bgm_global_offset": 7785014532,
+    "wav_sha256": "92db1716830bd62298961b103b63159ab6ba809c05c95481870501f02a5fe939",
+    "duration_seconds": 63.48771
+  },
+  "method": {
+    "audio_input": "Audio tool explicitly reported that this model does not support audio input",
+    "local_asr_models": [
+      "Systran/faster-whisper-small",
+      "kotoba-tech/kotoba-whisper-v2.0-faster",
+      "deepdml/faster-whisper-large-v3-turbo-ct2"
+    ],
+    "limitations": "All transcripts are automatic. Related Whisper models are not independent human review; agreement does not prove correctness.",
+    "word_timestamps": "Kotoba native alignment crashed; segment timestamps used for diagnostic transcripts only"
+  },
+  "review_page": "local-internal/pm-rebirth-video/narration-audio-review.html",
+  "private_transcripts": true,
+  "priority_questions": {
+    "narration.abandon": {
+      "question": "听清任务性质或地点，以及是否只说机体受损。自动识别不一致，当前“被迫放弃战术机”不能据此确认。"
+    },
+    "narration.volunteer": {
+      "question": "与下一句连听：是否明确志愿成为计划的受试者，而不只是“参加计划”。"
+    },
+    "narration.project": {
+      "question": "确认伤残军人的具体称谓和“再战力化”含义；现稿“再开发”可能偏离原义，并可能遗漏受试者身份。"
+    },
+    "narration.rebuild": {
+      "question": "确认原音是否仅描述人体强化改造手术，是否确有“最先进的强化部件”；三份转写均未识别出这一内容。",
+      "candidate": "他接受了人体强化改造手术，"
+    },
+    "narration.crush": {
+      "question": "确认原音是否明确说“徒手”；三份转写只有击碎强化混凝土这一能力。",
+      "candidate": "能够击碎强化混凝土，"
+    }
+  },
+  "current_targets": [
+    {
+      "id": "narration.name",
+      "frames": [
+        198,
+        248
+      ],
+      "target_sha256": "ea53b76ab8d205a085e581eb2841718af1a1696c767dcbdc0dbb4f257961d6ad",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.rank",
+      "frames": [
+        249,
+        321
+      ],
+      "target_sha256": "a4896a79aaba2ef83a62cd74aa237329f1cd58a8b9ced656edc6478637361927",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.codename",
+      "frames": [
+        321,
+        380
+      ],
+      "target_sha256": "dabee21caa10edd697d676f60bf85fa962a2ca70b8b604b1aff9782c5fcca1f4",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.miracle",
+      "frames": [
+        380,
+        491
+      ],
+      "target_sha256": "6bc7d5abfad7bea8d09d607eb5fc3c81b6bb19d6e1d2c85c9ae916c5bb7ccd62",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.abandon",
+      "frames": [
+        493,
+        572
+      ],
+      "target_sha256": "3749540d1abd171bfc8c5ac6752af4a3f181366fba0c03603e329a2602139471",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.beta",
+      "frames": [
+        572,
+        630
+      ],
+      "target_sha256": "6a1430bbfb802a02ff18b18d83febfd7dc7f29fd590a1d6ccefe91b0ba4d24b9",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.loss",
+      "frames": [
+        630,
+        726
+      ],
+      "target_sha256": "0a467cee4cf4e4fc548ed188e48c0a35920c3ce3ad279b920ea74513967e7314",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.survival",
+      "frames": [
+        731,
+        798
+      ],
+      "target_sha256": "9f2cfbe14ed2f955e69ed81e7a5e358194e591e91ccf35984104956f254f4630",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.wish",
+      "frames": [
+        799,
+        855
+      ],
+      "target_sha256": "ff9f38f9cb641daab56bf93542e4390b1389db2b65882c22b14a7a0f11f4b88f",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.volunteer",
+      "frames": [
+        866,
+        938
+      ],
+      "target_sha256": "840b39f76f7bfd48c280ff167854495c132e73fd3542b8c692d0ee7c23ab810a",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.project",
+      "frames": [
+        938,
+        1036
+      ],
+      "target_sha256": "53fbb4c76fa1db31e921085a55b148b6a3d133632ace58af150260831ae030f0",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.rebuild",
+      "frames": [
+        1036,
+        1104
+      ],
+      "target_sha256": "16fde52c8c7e0f6269ce3b88f329191c5d20779d7ed20aab319f3964baa0ea38",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.enhancement",
+      "frames": [
+        1104,
+        1184
+      ],
+      "target_sha256": "ae07e99adedb8297cc0bc41178e93c22b51f03b08bc20414b064069cb4c4225a",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.total",
+      "frames": [
+        1190,
+        1278
+      ],
+      "target_sha256": "7fb7299cdd1f0eab0f8081ac817fc5a40776964b2ddea1799b5115cdd2db58c0",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.eye",
+      "frames": [
+        1284,
+        1380
+      ],
+      "target_sha256": "9569674a81fef2f026350b95c93f48e0e412bce4a0e95e431859ab08137614dd",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.skeleton",
+      "frames": [
+        1381,
+        1453
+      ],
+      "target_sha256": "d8d8cd22f50f1e418949e1b23cc716d2a53b43f52547eaf6a9af3198d00494f2",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.muscle",
+      "frames": [
+        1454,
+        1534
+      ],
+      "target_sha256": "3874cf0daeebea79329bff852ba595fed59a74cea190bb4af0334c763966602c",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.crush",
+      "frames": [
+        1534,
+        1585
+      ],
+      "target_sha256": "564a1dbd2fcc063f3b3f24b05239b0a2fe41198a6f27ec2be09ce552dfedba6a",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.jump",
+      "frames": [
+        1585,
+        1647
+      ],
+      "target_sha256": "cbdbffe5aa0a9d026954f83da0a9a6d9e146819618c8844da24f67dac1aa32a2",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.speed",
+      "frames": [
+        1647,
+        1744
+      ],
+      "target_sha256": "59819c2112078699161233ec84cf697437f2d2542fb091ce0bcfaff01b4711e6",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.man",
+      "frames": [
+        1744,
+        1805
+      ],
+      "target_sha256": "59edb4e16c49480f3d1f5047b8d476a1c8e0aeea6a57eea3378bdc548ec18c37",
+      "status": "pending_direct_audio_review"
+    },
+    {
+      "id": "narration.cybrid",
+      "frames": [
+        1806,
+        1859
+      ],
+      "target_sha256": "5635df05788639fca7a10bcf06b3adc4c794078d942797d125d7fd100bf82194",
+      "status": "pending_direct_audio_review"
+    }
+  ],
+  "consistency": {
+    "existing_story_terms": [
+      "西尔维奥·奥兰迪",
+      "欧盟情报军中尉",
+      "菲尼切",
+      "Cybrid"
+    ],
+    "reference": "rUGP/games/photonmelodies/translations/再诞.csv",
+    "scope": "Existing Chinese terminology only; not Japanese-audio approval"
+  },
+  "adoption": "No proposed wording has replaced the candidate video; all 22 cues remain pending"
+}
