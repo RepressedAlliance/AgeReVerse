@@ -15,7 +15,7 @@ Muv-Luv七作使用“通用表 + 本作术语表”，君望独立使用本作�
 
 | 作品／本轮整理明细 | 本作术语表 | 基线证据记录 | 去重后的日文写法数 |
 | --- | ---: | ---: | ---: |
-| [TDA00](../../../../AGE2/games/tda00/terminology/review-20261009.md) | [135 条](../../../../localization/glossaries/tda00.ja-zh-Hans.csv) | [1006 条](../../../../AGE2/games/tda00/terminology/baseline.ja-zh-Hans.csv) | 366 |
+| [TDA00](../../../../AGE2/games/tda00/terminology/review-20261009.md) | [135 条](../../../../localization/glossaries/tda00.ja-zh-Hans.csv) | [382 条](../../../../AGE2/games/tda00/terminology/baseline.ja-zh-Hans.csv) | 363 |
 | [TDA01](../../../../AGE2/games/tda01/terminology/review-20261009.md) | [89 条](../../../../localization/glossaries/tda01.ja-zh-Hans.csv) | [573 条](../../../../AGE2/games/tda01/terminology/baseline.ja-zh-Hans.csv) | 191 |
 | [TDA02](../../../../AGE2/games/tda02/terminology/review-20261009.md) | [98 条](../../../../localization/glossaries/tda02.ja-zh-Hans.csv) | [642 条](../../../../AGE2/games/tda02/terminology/baseline.ja-zh-Hans.csv) | 208 |
 | [TDA03](../../../../AGE2/games/tda03/terminology/review-20261009.md) | [115 条](../../../../localization/glossaries/tda03.ja-zh-Hans.csv) | [739 条](../../../../AGE2/games/tda03/terminology/baseline.ja-zh-Hans.csv) | 244 |
