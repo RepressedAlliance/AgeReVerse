@@ -55,7 +55,8 @@ def parse(data: bytes) -> Sequence:
         flags, offset, reserved, mode = struct.unpack_from('<BIHH', data, pos)
         pos += 9
         codec = (mode >> 10) & 7
-        if flags not in (0, 1) or reserved or mode & ~0x05ff or codec not in (0, 1):
+        supported_mode = mode == 0x03ff or (not mode & ~0x05ff and codec in (0, 1))
+        if flags not in (0, 1) or reserved or not supported_mode:
             raise ValueError('unsupported CRsi frame flags, address extension or codec')
         parameter = None
         if codec == 1:

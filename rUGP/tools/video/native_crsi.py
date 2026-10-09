@@ -50,10 +50,10 @@ class NativeCrsiDecoder:
         self._call(0x403600, [])
         self._call(0x403a20, [])
 
-    def _call(self, entry: int, arguments: list[int]) -> None:
+    def _call(self, entry: int, arguments: list[int], *, instruction_limit: int = 100_000_000) -> None:
         self.u.mem_write(0x2f00000, struct.pack('<' + 'I'*(len(arguments)+1), 0x2ff0000, *arguments))
         self.u.reg_write(self.x86.UC_X86_REG_ESP, 0x2f00000)
-        self.u.emu_start(entry, 0x2ff0000, timeout=20_000_000, count=100_000_000)
+        self.u.emu_start(entry, 0x2ff0000, timeout=20_000_000, count=instruction_limit)
         if self.u.reg_read(self.x86.UC_X86_REG_EIP) != 0x2ff0000:
             raise ValueError('native decoder did not return within its execution limit')
 
@@ -76,6 +76,16 @@ class NativeCrsiDecoder:
                 raise ValueError('observed codec-1 requires even dimensions')
             self.u.mem_write(0x1400000, bytes.fromhex('0001000106070600010008000000'))
             self._call(0x5b8ad0 if frame.independent else 0x5b9450, [0x1000000, 0x1400000, *args])
+        elif frame.mode == 0x03ff and frame.parameter is None and frame.independent:
+            if width >= 1600:
+                raise ValueError('scalar decoder heap allocation is outside this oracle')
+            self.u.mem_write(0x1400000, bytes.fromhex('0001000108080800010000000000'))
+            self.u.reg_write(self.x86.UC_X86_REG_ECX, 0x1000000)
+            self.u.reg_write(self.x86.UC_X86_REG_EDX, len(frame.payload))
+            # Scalar full-RGB decoding needs more instructions than the MMX
+            # profiles. Execution still has a wall-clock and instruction bound.
+            self._call(0x57b490, [0x1400000, *args, 0, width | (height << 16), 1],
+                       instruction_limit=500_000_000)
         elif frame.mode == 0x16d and frame.parameter is None and frame.independent:
             self.u.mem_write(0x1400000, bytes.fromhex('0001000106060600010000000000'))
             self.u.reg_write(self.x86.UC_X86_REG_ECX, 0x1000000)

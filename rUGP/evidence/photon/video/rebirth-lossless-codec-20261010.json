@@ -1,0 +1,197 @@
+{
+  "status": "offline native codec and table proof; no installation or playback",
+  "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+  "native_leaf": "0x57b490",
+  "mode": "0x03ff",
+  "cases": [
+    {
+      "case": "extremes",
+      "dimensions": [
+        8,
+        1
+      ],
+      "payload_bytes": 37,
+      "encode_seconds": 0.0,
+      "total_seconds": 0.0,
+      "rgb_exact": true,
+      "native_alpha": 128,
+      "rgb_sha256": "4397b9c588421993675f7f4aca43a213176f208d8286913c443e374040c80a5e",
+      "payload_sha256": "2f58cdbae31e5b1d76147fb05df7219c8fcee0bbd399cb4ab1379f02bc59e450",
+      "payload_hex": "aaa54a80bfff0ffff2fffcbfff7fffbfffcffff5fff8bffdbffe3ffe7fff2ffe8bff97ff80"
+    },
+    {
+      "case": "black",
+      "dimensions": [
+        1,
+        1
+      ],
+      "payload_bytes": 4,
+      "encode_seconds": 0.0,
+      "total_seconds": 0.01599999999962165,
+      "rgb_exact": true,
+      "native_alpha": 128,
+      "rgb_sha256": "709e80c88487a2411e1ee4dfb9f22a861492d20c4765150c0c794abd70f8147c",
+      "payload_sha256": "1dd09c6f237459e5ef1cb36faedc97fdf77430d98beb5651f4a031214c6fff46"
+    },
+    {
+      "case": "white",
+      "dimensions": [
+        1,
+        1
+      ],
+      "payload_bytes": 5,
+      "encode_seconds": 0.0,
+      "total_seconds": 0.014999999999417923,
+      "rgb_exact": true,
+      "native_alpha": 128,
+      "rgb_sha256": "5ae7e6a42304dc6e4176210b83c43024f99a0bce9a870c3b6d2c95fc8ebfb74c",
+      "payload_sha256": "05ffd25dc031549e4fee8094e88d8bacefd4ca79878e68218fb288d1a76c75a2"
+    },
+    {
+      "case": "random_odd",
+      "dimensions": [
+        37,
+        9
+      ],
+      "payload_bytes": 1845,
+      "encode_seconds": 0.0,
+      "total_seconds": 0.01599999999962165,
+      "rgb_exact": true,
+      "native_alpha": 128,
+      "rgb_sha256": "610b08547969739142c60df08a972f2dd2db4073c86fa093a694e51b9ecc92ff",
+      "payload_sha256": "ef904c2ff6e358f74cba5dc9e98cb2cad7531c26fa1326377883934f38771fb9"
+    },
+    {
+      "case": "channel_ramps",
+      "dimensions": [
+        256,
+        3
+      ],
+      "payload_bytes": 657,
+      "encode_seconds": 0.0,
+      "total_seconds": 0.01599999999962165,
+      "rgb_exact": true,
+      "native_alpha": 128,
+      "rgb_sha256": "64baaf1a217b1876b16ccca0805510549df3d853e1e700693915c8811dc5cf55",
+      "payload_sha256": "2306baa6d75adb5c3fcf46240b41961dc2f66ebf6ec73280fc2460fedba2d29e"
+    },
+    {
+      "case": "preview_160",
+      "dimensions": [
+        1024,
+        600
+      ],
+      "payload_bytes": 368306,
+      "encode_seconds": 0.9680000000007567,
+      "total_seconds": 2.264999999999418,
+      "rgb_exact": true,
+      "native_alpha": 128,
+      "rgb_sha256": "068532d01ac95d88aa55ad34e93f573a22d2a6f4de9fb64040e504e05727bd49",
+      "payload_sha256": "17341ad07a818f64aa0065b0cdaff8e8c6c719181587b1cea5a9236ac3b1be94"
+    },
+    {
+      "case": "preview_1170",
+      "dimensions": [
+        1024,
+        600
+      ],
+      "payload_bytes": 926613,
+      "encode_seconds": 1.6409999999996217,
+      "total_seconds": 3.3280000000013388,
+      "rgb_exact": true,
+      "native_alpha": 128,
+      "rgb_sha256": "4171f8faa723e802f0838962d8e2282966037f1a7b4f05dafa5a00eea5f406d4",
+      "payload_sha256": "388d3fad332b5b9788ceafcc141cd73b1b0a9097f0ff751ea410219eec1691b3"
+    },
+    {
+      "case": "preview_1330",
+      "dimensions": [
+        1024,
+        600
+      ],
+      "payload_bytes": 769261,
+      "encode_seconds": 1.5159999999996217,
+      "total_seconds": 3.125,
+      "rgb_exact": true,
+      "native_alpha": 128,
+      "rgb_sha256": "7bcbaf5db398d6ea3b69d1d7763555013a07b3cd11e9668f848c8e327cf1b31c",
+      "payload_sha256": "ca951b4cfcb57efa95c43451c95ff03923cc69f5ed840b336a2989e7ba010c24"
+    },
+    {
+      "case": "preview_1630",
+      "dimensions": [
+        1024,
+        600
+      ],
+      "payload_bytes": 871104,
+      "encode_seconds": 1.625,
+      "total_seconds": 3.327999999997701,
+      "rgb_exact": true,
+      "native_alpha": 128,
+      "rgb_sha256": "d55d4508c1caa7cbbb8e44b4e78a3ceafcf11f91985db7cab82501669b740e0c",
+      "payload_sha256": "2dc00e53f5c612d99c9278916b3cc76de346389e56ee832271d539301164476e"
+    }
+  ],
+  "table": {
+    "validation": "offline parent and row deserialization; no game process",
+    "native_entry": "0x5830f0",
+    "native_row_entry": "0x582c70",
+    "stubs": [
+      "MFC ReadCount: observed 16-bit count",
+      "buffer allocation: bounded zero-filled memory",
+      "archive position: cursor relative to record start"
+    ],
+    "records": [
+      {
+        "record": "lossless-probe-1715679260.crsi",
+        "sha256": "4cef7adc12182f2c97f307df846bab82794fd7f2fa44a49d88429096e25e54d0",
+        "frames": 1904,
+        "table_end": 28584,
+        "dimensions": [
+          1024,
+          600
+        ],
+        "rate": 3000,
+        "all_native_rows_match": true
+      }
+    ]
+  },
+  "preserved_original_other_frames": 1903,
+  "limitation": "candidate deliberately inserts a sample image at frame 1140 for codec proof; not a production movie",
+  "dispatch": {
+    "status": "offline native mode dispatch plus scalar decoding verified",
+    "entry": "0x5767f0",
+    "exit": "0x5768d6",
+    "leaf": "0x57b490",
+    "mode": "0x03ff",
+    "calls": [
+      "surface reference",
+      "surface rectangle",
+      "surface reference",
+      "surface reference",
+      "surface pixels",
+      "surface stride",
+      "native scalar leaf with dispatch-generated 8/8/8 config"
+    ],
+    "dimensions": [
+      1024,
+      600
+    ],
+    "rgb_exact": true,
+    "rgb_sha256": "4171f8faa723e802f0838962d8e2282966037f1a7b4f05dafa5a00eea5f406d4",
+    "stubs": [
+      "surface reference getter",
+      "surface rectangle method",
+      "surface pixels method",
+      "surface stride method"
+    ],
+    "limitation": "surface objects simulated; file streaming, renderer lifecycle and playback not executed"
+  },
+  "source_global_offset": 1715679260,
+  "source_sha256": "b4ba441300977b070e5275b9556047a54cf5f493365ee7152c197ca8d8e5b410",
+  "limitations": [
+    "No actual game process or stream lifecycle executed",
+    "Literal-row payload size and full-sequence throughput remain unapproved",
+    "Source PNGs came from a lossy preview; exact RGB proof applies to their decoded pixels, not to an original master"
+  ]
+}
