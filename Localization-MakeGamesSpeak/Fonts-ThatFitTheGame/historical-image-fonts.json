@@ -1,0 +1,261 @@
+{
+  "schema": "age-reverse-historical-image-fonts/v1",
+  "checked_on": "2026-10-11",
+  "status": "in-progress",
+  "scope": "Recovered historical authoring inputs and uses. This file is being extended during the full seven-game audit; it is not a complete inventory yet. Historical trials are not added to current-release counts.",
+  "source_records": {
+    "timer-renderer": {
+      "record": "font-preview-20260905/build_timer_font_previews.py",
+      "sha256": "9e19ba1203e212192415800211eeb2344d31972dfd783f572e3760f90c6de22b",
+      "availability": "retained authoring definitions; absolute local paths omitted"
+    },
+    "timer-selected-trials": {
+      "record": "font-preview-20260905/output/preview-manifest.json",
+      "sha256": "8b3039986e41acca4df7c8c8b0b84a1352885ded225c502f0e6bc89aea6a4f80",
+      "availability": "retained authoring manifest for the final three preview choices"
+    },
+    "timer-font-downloads": {
+      "record": "font-preview-20260905/download-manifest.json",
+      "sha256": "1e873e96f86d1eeecea48ba8d0abeb8ea314e003792e957337b699dcd84c1437",
+      "availability": "retained upstream download identities; a download alone is not counted as use"
+    },
+    "equipment-light-draft": {
+      "record": "build_equipment_titles.py (historical revision before msyh.ttc change)",
+      "availability": "retained authoring call plus successful command result; old output/manifest overwritten",
+      "verification": "First execution failed on a syntax error; the syntax-only repair then produced 33 candidates before the font-path change. Failed execution is not the evidence of use."
+    }
+  },
+  "entries": [
+    {
+      "game": "photonmelodies",
+      "asset": "timer tutorial pm_rio000_651a84bc / G2990",
+      "output": "A-resource-han-rounded-medium.png",
+      "sha256": "06b90fdf6b59943d67c15e229f35478aff62eea1256d11c21b7788e9437aaf1f",
+      "font_ids": [
+        "image:resource-han-rounded-medium-trial"
+      ],
+      "font_sha256": "b2ec1727fbc04b70255db6cb71be0eca3b7a7167ef11655059c5576cc920143f",
+      "font_size_px": 22,
+      "fill_stroke_quarter_px": 0,
+      "method": "font-rendered-label-composited-on-preserved-tutorial",
+      "state": "historical-preview; adoption-not-inferred",
+      "verification": {
+        "method": "replay-to-retained-RGBA",
+        "changed_pixels": 0
+      },
+      "sources": [
+        "timer-renderer",
+        "timer-font-downloads"
+      ]
+    },
+    {
+      "game": "photonmelodies",
+      "asset": "timer tutorial pm_rio000_651a84bc / G2990",
+      "output": "B-chill-round-gothic-medium.png",
+      "sha256": "2818f243f9b27db3543c2cb267ade5f684dade4f1652eba01d4c995c6f87d20f",
+      "font_ids": [
+        "image:chill-round-gothic-medium-trial"
+      ],
+      "font_sha256": "7aaf168681f168b9f550734d9e25058ffe73213db07d7a50152d5446dd9e7094",
+      "font_size_px": 22,
+      "fill_stroke_quarter_px": 0,
+      "method": "font-rendered-label-composited-on-preserved-tutorial",
+      "state": "historical-preview; adoption-not-inferred",
+      "verification": {
+        "method": "replay-to-retained-RGBA",
+        "changed_pixels": 0
+      },
+      "sources": [
+        "timer-renderer",
+        "timer-font-downloads"
+      ]
+    },
+    {
+      "game": "photonmelodies",
+      "asset": "timer tutorial pm_rio000_651a84bc / G2990",
+      "output": "B-gensen-rounded-heavy.png",
+      "sha256": "15c9405ff76edb8ad820f91833d7c345c3a0f58ca61da687181aa403bd0662e5",
+      "font_ids": [
+        "image:gensen-rounded-2-tc-heavy-trial"
+      ],
+      "font_sha256": "59cd90cdaa37fb8883ee5e8ba983dbeaab083cf506c954f8c24174a0c180bef3",
+      "font_size_px": 22,
+      "fill_stroke_quarter_px": 0,
+      "method": "font-rendered-label-composited-on-preserved-tutorial",
+      "state": "historical-preview; adoption-not-inferred",
+      "verification": {
+        "method": "replay-to-retained-RGBA",
+        "changed_pixels": 0
+      },
+      "sources": [
+        "timer-renderer",
+        "timer-font-downloads"
+      ]
+    },
+    {
+      "game": "photonmelodies",
+      "asset": "timer tutorial pm_rio000_651a84bc / G2990",
+      "output": "C-lxgw-975-yuan-700.png",
+      "sha256": "4776babfb470981426417c9b875fbdbe18863b645be3d1ecd301c08314dec4b9",
+      "font_ids": [
+        "image:lxgw-975-yuan-700-trial"
+      ],
+      "font_sha256": "f392de4cba941f3c44c7770cfed7ac3c658b46b7e3a4b2546fe155010109d403",
+      "font_size_px": 22,
+      "fill_stroke_quarter_px": 0,
+      "method": "font-rendered-label-composited-on-preserved-tutorial",
+      "state": "historical-preview; adoption-not-inferred",
+      "verification": {
+        "method": "replay-to-retained-RGBA",
+        "changed_pixels": 0
+      },
+      "sources": [
+        "timer-renderer",
+        "timer-font-downloads"
+      ]
+    },
+    {
+      "game": "photonmelodies",
+      "asset": "timer tutorial pm_rio000_651a84bc / G2990",
+      "output": "C-zcool-kuaile-regular.png",
+      "sha256": "a1e5a05e0eb975b19a5b9ea41c8557b9dd95170d15bd1dea5862e3b8f69521a9",
+      "font_ids": [
+        "image:zcool-kuaile-trial"
+      ],
+      "font_sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+      "font_size_px": 24,
+      "fill_stroke_quarter_px": 0,
+      "method": "font-rendered-label-composited-on-preserved-tutorial",
+      "state": "historical-preview; adoption-not-inferred",
+      "verification": {
+        "method": "replay-to-retained-RGBA",
+        "changed_pixels": 0
+      },
+      "sources": [
+        "timer-renderer",
+        "timer-font-downloads"
+      ]
+    },
+    {
+      "game": "photonmelodies",
+      "asset": "timer tutorial pm_rio000_651a84bc / G2990",
+      "output": "A-maoken-tangyuan.png",
+      "sha256": "a283c2b0f12c10c01ca7e0ba55ea64612cf1e81f3818ed6ec06b06ae0c2f159d",
+      "font_ids": [
+        "image:maoken-tangyuan-trial"
+      ],
+      "font_sha256": "ea4e2e85cc49ed7a0ea9f2347a9c5e6e9c3ea1a1c9130280796cceb77e0dc800",
+      "font_size_px": 22,
+      "fill_stroke_quarter_px": 0,
+      "method": "font-rendered-label-composited-on-preserved-tutorial",
+      "state": "historical-preview; adoption-not-inferred",
+      "verification": {
+        "method": "replay-to-retained-RGBA",
+        "changed_pixels": 0
+      },
+      "sources": [
+        "timer-renderer",
+        "timer-selected-trials"
+      ]
+    },
+    {
+      "game": "photonmelodies",
+      "asset": "timer tutorial pm_rio000_651a84bc / G2990",
+      "output": "B-xiaolai.png",
+      "sha256": "765a975d44c08f3f763cb793f18c251f91ade7eba9342b32f9cad257e94409f3",
+      "font_ids": [
+        "image:xiaolai"
+      ],
+      "font_sha256": "e2f68daf0e72777a8cf58bc83de1b98634b251e537ddbfca24b0ae50d1802da2",
+      "font_size_px": 22,
+      "fill_stroke_quarter_px": 1,
+      "method": "font-rendered-label-composited-on-preserved-tutorial",
+      "state": "historical-preview; adoption-not-inferred",
+      "verification": {
+        "method": "replay-to-retained-RGBA",
+        "changed_pixels": 0
+      },
+      "sources": [
+        "timer-renderer",
+        "timer-selected-trials"
+      ]
+    },
+    {
+      "game": "photonmelodies",
+      "asset": "timer tutorial pm_rio000_651a84bc / G2990",
+      "output": "C-yomeng-script.png",
+      "sha256": "0fc1b9deeedebfe3660ed30164779b1e8bd19c5e13c45767d81dad5e402e5799",
+      "font_ids": [
+        "image:yomeng-script-trial"
+      ],
+      "font_sha256": "a873ebcf8a87f6bd8a16141559e56307623fe50b54b5d5522297449a75f1c1d2",
+      "font_size_px": 22,
+      "fill_stroke_quarter_px": 2,
+      "method": "font-rendered-label-composited-on-preserved-tutorial",
+      "state": "historical-preview; adoption-not-inferred",
+      "verification": {
+        "method": "replay-to-retained-RGBA",
+        "changed_pixels": 0
+      },
+      "sources": [
+        "timer-renderer",
+        "timer-selected-trials"
+      ]
+    },
+    {
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "group": "equipment-title shared-mask draft",
+      "reader_group_ids": [
+        2278,
+        2280,
+        2288,
+        2596,
+        2597,
+        2598,
+        2599,
+        2600,
+        2602,
+        2603,
+        2604,
+        2605,
+        2606,
+        2651,
+        2652,
+        2751,
+        2752,
+        4294,
+        4295,
+        4296,
+        4297,
+        4298,
+        4299,
+        4324,
+        4325,
+        4326,
+        4327,
+        4328,
+        4329,
+        4330,
+        4331,
+        4366,
+        4367
+      ],
+      "font_ids": [
+        "image:yahei-light-historical"
+      ],
+      "method": "font-typesetting; five-shared-label-masks",
+      "state": "rendered-and-superseded-before-current-release",
+      "verification": {
+        "method": "historical-code-and-successful-execution",
+        "output_rgba_not_available": true,
+        "historical_font_hash_not_available": true
+      },
+      "sources": [
+        "equipment-light-draft"
+      ]
+    }
+  ]
+}

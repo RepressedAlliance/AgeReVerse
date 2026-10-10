@@ -1502,6 +1502,237 @@
       "upstream_url": "https://github.com/max32002/swei-sugar",
       "license_url": "https://openfontlicense.org/open-font-license-official-text/",
       "identity_basis": "Selected retained font bytes match the SHA-256 recorded in mentaiko-box-v2/render-report.json."
+    },
+    "image:resource-han-rounded-medium-trial": {
+      "file": "ResourceHanRoundedCN-Medium.ttf",
+      "sha256": "b2ec1727fbc04b70255db6cb71be0eca3b7a7167ef11655059c5576cc920143f",
+      "bytes": 14423652,
+      "family": [
+        "Resource Han Rounded CN Medium"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "0.990"
+      ],
+      "copyright": [
+        "Copyright © 2018—2019 Cyano Hao. Portions © 2014, 2015, 2018 Adobe (http://www.adobe.com/)."
+      ],
+      "authors": "Cyano Hao / Adobe",
+      "weight_class": 500,
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "Historical PM remaining-time lettering candidate; not the current published lettering. See historical-image-fonts.json.",
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/CyanoHao/Resource-Han-Rounded",
+      "license_url": "https://github.com/CyanoHao/Resource-Han-Rounded/blob/master/OFL-License.txt",
+      "state": "rendered-historical-trial; not-current-release",
+      "identity_basis": "The retained authoring font and recovered renderer reproduce every RGBA pixel of the matching retained timer trial. Exact output and font hashes are in historical-image-fonts.json."
+    },
+    "image:chill-round-gothic-medium-trial": {
+      "file": "ChillRoundGothic_Medium.ttf",
+      "sha256": "7aaf168681f168b9f550734d9e25058ffe73213db07d7a50152d5446dd9e7094",
+      "bytes": 12528572,
+      "family": [
+        "Chill Round Gothic Medium"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 3.700"
+      ],
+      "copyright": [
+        "© 2014-2021 Adobe, with Reserved Font Name 'Source'.\n© 2023 ChillType, with Reserved Font Name 'ChillRounded'."
+      ],
+      "authors": "ChillType / Warren2060 / Adobe",
+      "weight_class": 500,
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "Historical PM remaining-time lettering candidate; not the current published lettering. See historical-image-fonts.json.",
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/Warren2060/ChillRoundGothic",
+      "license_url": "https://github.com/Warren2060/ChillRoundGothic/blob/main/License.txt",
+      "state": "rendered-historical-trial; not-current-release",
+      "identity_basis": "The retained authoring font and recovered renderer reproduce every RGBA pixel of the matching retained timer trial. Exact output and font hashes are in historical-image-fonts.json."
+    },
+    "image:gensen-rounded-2-tc-heavy-trial": {
+      "file": "GenSenRounded2TC-H.otf",
+      "sha256": "59cd90cdaa37fb8883ee5e8ba983dbeaab083cf506c954f8c24174a0c180bef3",
+      "bytes": 15690048,
+      "family": [
+        "GenSenRounded2 TC H",
+        "源泉圓體丹 H"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.100;PS 2.1;hotconv 16.6.51;makeotf.lib2.5.65220 DEVELOPMENT"
+      ],
+      "copyright": [],
+      "authors": "ButTaiwan / Adobe",
+      "weight_class": 900,
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "Historical PM remaining-time lettering candidate; not the current published lettering. See historical-image-fonts.json.",
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/ButTaiwan/gensen-font",
+      "license_url": "https://github.com/ButTaiwan/gensen-font",
+      "state": "rendered-historical-trial; not-current-release",
+      "identity_basis": "The retained authoring font and recovered renderer reproduce every RGBA pixel of the matching retained timer trial. Exact output and font hashes are in historical-image-fonts.json.",
+      "license_evidence": {
+        "record": "GenSenRounded2TC/SIL_Open_Font_License_1.1.txt",
+        "sha256": "a6e4f868df1b9eec9284d26f35808a9a08f0733b8fd96109e509d6eac29f2aca",
+        "copyright_notice": "Copyright 2014-2019 Adobe; Reserved Font Name Source. The retained binary has no name-ID-0 entry; this is the notice from its retained distribution license."
+      }
+    },
+    "image:lxgw-975-yuan-700-trial": {
+      "file": "LXGW975YuanSC-700W.ttf",
+      "sha256": "f392de4cba941f3c44c7770cfed7ac3c658b46b7e3a4b2546fe155010109d403",
+      "bytes": 14884594,
+      "family": [
+        "LXGW 975 Yuan SC 400W",
+        "霞鹜975圆体SC 400W"
+      ],
+      "subfamily": [
+        "Bold"
+      ],
+      "version": [
+        "Version 26.207;July 26, 2026"
+      ],
+      "copyright": [
+        "Copyright 2020-2026 LXGW (https://github.com/lxgw/975Yuan), with Reserved Font Name '霞鹜', '霞鶩', '落霞孤鹜', '落霞孤鶩' and 'LXGW'.\nCopyright 2014-2025 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. Source is a trademark of Adobe in the United States and/or other countries.\nCopyright 2024-2026 Tamcy (https://github.com/chiron-fonts/chiron-go-round-tc).\nCopyright 2024-2026 Takushun Wu (https://github.com/takushun-wu/), with Reserved Font Name 'WenYuan Rounded', '文渊圆体'.\nCopyright 2020 Chun yu Yao (https://github.com/max32002/swei-gothic)\nCopyright 2019 Ek Type (www.ektype.in)"
+      ],
+      "authors": "LXGW and the copyright holders listed in the retained font",
+      "weight_class": 700,
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "Historical PM remaining-time lettering candidate; not the current published lettering. See historical-image-fonts.json.",
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/lxgw/975Yuan",
+      "license_url": "https://github.com/lxgw/975Yuan/blob/main/OFL.txt",
+      "state": "rendered-historical-trial; not-current-release",
+      "identity_basis": "The retained authoring font and recovered renderer reproduce every RGBA pixel of the matching retained timer trial. Exact output and font hashes are in historical-image-fonts.json."
+    },
+    "image:maoken-tangyuan-trial": {
+      "file": "MaoKenTangYuan-beta0.12-20210702.ttf",
+      "sha256": "ea4e2e85cc49ed7a0ea9f2347a9c5e6e9c3ea1a1c9130280796cceb77e0dc800",
+      "bytes": 2881764,
+      "family": [
+        "MaoKenTang",
+        "MaoKenTangYuan (beta)",
+        "猫啃网糖圆体",
+        "猫啃网糖圆体 (测试版)"
+      ],
+      "subfamily": [
+        "Reg",
+        "Regular"
+      ],
+      "version": [
+        "Version 0.13b",
+        "Version 0.13beta;20210702 ",
+        "版本 0.12测试",
+        "版本 0.12测试版；20210702"
+      ],
+      "copyright": [
+        "[Kosugi Maru]\nCopyright",
+        "[Kosugi Maru]\nCopyright© 2010 MOTOYA CO.,LTD.\n\n[Varela Round]\nCopyright© 2011-2016 The Varela Round Project Authors (https://github.com/alefalefalef/Varela-Round-Hebrew/), with Reserved Font Names 'Varela' and 'Varela Round'.\n\n[jf open huninn]\nCopyright© 2020 The jf open huninn font is redistributed by justfont CO.,LTD, with Reserved Font Names 'open huninn' and 'huninn' under SIL Open Font License. The Hanzi part of this project was derived from Kosugi Maru under Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0).\n\n[MaoKen TangYuan]\nCopyright© 2020 Maoken, NFSL2001. The MaoKen TangYuan font is redistributed by maoken.com, with Reserved Font Names 'TangYuan' and 'Tang Yuan' under SIL Open Font License."
+      ],
+      "authors": "Maoken / NFSL2001; MOTOYA, Varela Round and justfont contributors",
+      "weight_class": 400,
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "Historical PM remaining-time lettering candidate; not the current published lettering. See historical-image-fonts.json.",
+      "license": "OFL-1.1",
+      "upstream_url": "https://www.maoken.com/tangyuan",
+      "license_url": "https://www.maoken.com/freefonts/6058.html",
+      "state": "rendered-historical-trial; not-current-release",
+      "identity_basis": "The retained authoring font and recovered renderer reproduce every RGBA pixel of the matching retained timer trial. Exact output and font hashes are in historical-image-fonts.json.",
+      "version_note": "Filename and publisher use beta 0.12 / 20210702; SFNT language records also say 0.13beta. All observed version strings are preserved rather than silently normalised.",
+      "license_evidence": {
+        "record": "TangYuan/LICENSE.txt",
+        "sha256": "9d2362d6fc06f1e8b1513e57135a9fb9995f49a4922379b4a381da0acd53a61b"
+      }
+    },
+    "image:yomeng-script-trial": {
+      "file": "YomengScript.ttf",
+      "sha256": "a873ebcf8a87f6bd8a16141559e56307623fe50b54b5d5522297449a75f1c1d2",
+      "bytes": 10959732,
+      "family": [
+        "Yomeng Script",
+        "有夢體",
+        "有梦体"
+      ],
+      "subfamily": [
+        "Regular"
+      ],
+      "version": [
+        "Version 0.9.1"
+      ],
+      "copyright": [
+        "Copyright 2025 Thoms Liu (https://github.com/l-thoms/YomengScript-Font)\nCopyright 2020 The Yomogi Project Authors (https://github.com/satsuyako/YomogiFont), all rights reserved."
+      ],
+      "authors": "Thoms Liu / The Yomogi Project Authors",
+      "weight_class": 400,
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "Historical PM remaining-time lettering candidate; not the current published lettering. See historical-image-fonts.json.",
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/l-thoms/YomengScript-Font",
+      "license_url": "https://github.com/l-thoms/YomengScript-Font/blob/main/OFL.txt",
+      "state": "rendered-historical-trial; not-current-release",
+      "identity_basis": "The retained authoring font and recovered renderer reproduce every RGBA pixel of the matching retained timer trial. Exact output and font hashes are in historical-image-fonts.json."
+    },
+    "image:yahei-light-historical": {
+      "file": "msyhl.ttc",
+      "sha256": "7e9bdf90bb5d3fe1b5975fc8ae31944b8fa674122261f92c28d4ec0b9c482fa1",
+      "bytes": 12189612,
+      "family": [
+        "Microsoft YaHei Light",
+        "微软雅黑 Light"
+      ],
+      "version": [
+        "Version 6.25"
+      ],
+      "copyright": [
+        "© 2024  Microsoft Corporation. All Rights Reserved. Portions © 2024 Beijing Founder Electronics Co. Ltd. All Rights Reserved.",
+        "© 2024 微软公司版权所有 © 2024 北京北大方正电子有限公司部分版权所有"
+      ],
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "Superseded 33-equipment-title draft in the September reinventory. The successful render preceded the change to regular Microsoft YaHei; not the current released font.",
+      "license": "Windows font licensing; not OFL",
+      "upstream_url": "https://learn.microsoft.com/en-us/typography/font-list/microsoft-yahei",
+      "identity_basis": "Historical authoring call, syntax repair and successful 33-candidate output identify msyhl.ttc with Pillow default collection index 0. Historical candidates and their manifest were overwritten before the change to msyh.ttc; the inspected hash/version identifies today's retained reference, not proven historical bytes.",
+      "collection_faces": [
+        {
+          "index": 0,
+          "family": [
+            "Microsoft YaHei Light",
+            "微软雅黑 Light"
+          ],
+          "weight_class": 290
+        },
+        {
+          "index": 1,
+          "family": [
+            "Microsoft YaHei UI Light"
+          ],
+          "weight_class": 290
+        }
+      ],
+      "historical_collection_index": 0,
+      "state": "rendered-superseded-draft; historical-binary-hash-not-retained"
     }
   },
   "limitations": [
@@ -1659,5 +1890,6 @@
     "age2-released-image-fonts.json",
     "photon-released-image-fonts.json"
   ],
-  "unreleased_image_registry": "unreleased-image-fonts.json"
+  "unreleased_image_registry": "unreleased-image-fonts.json",
+  "historical_image_registry": "historical-image-fonts.json"
 }

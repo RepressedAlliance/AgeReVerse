@@ -35,7 +35,12 @@
     "released_image_files": 3720,
     "photon_unique_image_contents": 1562,
     "unreleased_image_registry": "unreleased-image-fonts.json",
-    "selected_local_candidate_files": 365
+    "selected_local_candidate_files": 365,
+    "historical_audit": {
+      "status": "in-progress",
+      "register": "historical-image-fonts.json",
+      "note": "Full seven-game history is being independently inventoried. Current-release and selected-October registers are completed subsets, not the full requested scope."
+    }
   },
   "evidence_sources": {
     "e01": {
@@ -932,6 +937,40 @@
       "release_adoption": "not-released",
       "local_registry": "unreleased-image-fonts.json",
       "note": "Per-asset use is in the local registry. Cake differences inherit Ma Shan Zheng; newspaper/bookstore mix Noto Sans and Serif. Vector-drawn black lettering, generated scroll/flame/yellow lettering and corrected original strokes do not acquire a guessed font. The earlier yellow Noto prototype is separately marked superseded.",
+      "evidence": []
+    },
+    {
+      "id": "photon-timer-historical-font-trials",
+      "games": [
+        "photonmelodies"
+      ],
+      "scope": "Retained remaining-time tutorial font previews, including superseded rounds",
+      "font_ids": [
+        "image:chill-round-gothic-medium-trial",
+        "image:gensen-rounded-2-tc-heavy-trial",
+        "image:lxgw-975-yuan-700-trial",
+        "image:maoken-tangyuan-trial",
+        "image:resource-han-rounded-medium-trial",
+        "image:xiaolai",
+        "image:yomeng-script-trial",
+        "image:zcool-kuaile-trial"
+      ],
+      "state": "historical-rendered-trials; current-adoption-not-inferred",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "photon-equipment-light-superseded",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "scope": "33 equipment/selection-title draft images; five shared masks",
+      "font_ids": [
+        "image:yahei-light-historical"
+      ],
+      "state": "historical-rendered-draft; replaced-by-regular-yahei",
+      "detail_registry": "historical-image-fonts.json",
       "evidence": []
     }
   ],

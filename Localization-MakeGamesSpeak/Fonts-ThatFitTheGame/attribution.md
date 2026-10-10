@@ -19,6 +19,12 @@
 | 小赖 Xiaolai | [LXGW](https://github.com/lxgw/kose-font)，瀬戸のぞみ及上游衍生贡献者 | OFL 1.1；PM 当前发布版的 11 个计时状态及 10 张内嵌教程文字 |
 | 马善政 Ma Shan Zheng | [The MaShanZheng Project Authors](https://github.com/googlefonts/mashanzheng) | OFL 1.1；毛笔标题、指示、颁发式及蛋糕文字制作 |
 | 站酷快乐体 ZCOOL KuaiLe | [The ZCOOL KuaiLe Project Authors](https://github.com/googlefonts/zcool-kuaile) | OFL 1.1；标题字体试样，未据此确认最终采用 |
+| 资源圆体 Resource Han Rounded CN | [Cyano Hao](https://github.com/CyanoHao/Resource-Han-Rounded)，基于 Adobe 思源黑体 | OFL 1.1；PM 倒计时教程 Medium 历史试样，非当前发布选型 |
+| 寒蝉圆黑 Chill Round Gothic | [ChillType／Warren2060](https://github.com/Warren2060/ChillRoundGothic)，基于 Adobe 思源黑体 | OFL 1.1；PM 倒计时教程 Medium 历史试样；与寒蝉全圆体区分 |
+| 源泉圆体丹 GenSenRounded2 TC H | [ButTaiwan](https://github.com/ButTaiwan/gensen-font)，基于 Adobe 思源黑体 | OFL 1.1；PM 倒计时教程 Heavy 历史试样；保留字库包内许可身份 |
+| 霞鹜 975 圆体 SC 700W | [LXGW](https://github.com/lxgw/975Yuan)，及思源、狮尾圆体、昭源环方、文渊圆体与 Ek Type 贡献者 | OFL 1.1；PM 倒计时教程历史试样；按实际 700W 输入登记 |
+| 猫啃网糖圆体 MaoKen TangYuan | [猫啃网／夜煞之乐 NFSL2001](https://www.maoken.com/tangyuan)，及 MOTOYA、Varela Round、justfont 上游贡献者 | OFL 1.1；PM 倒计时教程历史试样；保留 20210702 文件与其完整版权声明 |
+| 有梦体 Yomeng Script | [Thoms Liu](https://github.com/l-thoms/YomengScript-Font)，基于 Satsuyako／Yomogi Project 的 Yomogi | OFL 1.1；PM 倒计时教程历史试样；精确输入为 0.9.1 |
 
 这里列的是家族和贡献来源，精确文件的版权字符串、版本和摘要见 [catalog.json](catalog.json)。旧霞鹜文楷 GB 已从与历史摘要相符的保留副本确认版本 1.522；得意黑由 2.0.1 原存档同样确认，不拿最新版替代历史输入。上游最新页面也不能替代历史文件自己的版权与保留字体名声明。运行时另有 IBM Plex、源石、白无常可可体、美呗嘿嘿体等，见[字体总入口](README.md#来源与复用)，不要把运行时选型自动算成图片用字。
 
@@ -27,6 +33,8 @@
 ## Windows 字体也如实登记
 
 楷体 KaiTi、宋体 SimSun、MS Mincho、微软雅黑 Microsoft YaHei 出现在实际图片制作或候选中；SimHei、MS Gothic 还有字体比较记录。它们是 Windows 授权字体，**不能统称为开源字体，也不在本仓库附送字体文件**。
+
+微软雅黑 Light 也实际用于一轮 33 张装备标题候选，后来被常规版替换；两种输入分别登记。旧稿被覆盖而没有保留历史字体摘要的，明确说明证据限制，不把现存常规版配方倒推给旧稿。新增字体与素材的逐项对应见[历史图片用字记录](historical-image-fonts.json)；七作完整清查尚未结束。
 
 Microsoft 的[字体再分发说明](https://learn.microsoft.com/en-us/typography/fonts/font-faq)区分渲染后的图形和字体软件：在适用授权条件下，词句的图片可以用于游戏；这不等于允许复制字体文件、转换字体格式，或把逐字导出的字形库作为游戏字体分发。新制作优先选来源与许可明确的开源字体；确需其他字体时，记录具体授权依据和交付方式，不因“系统装了”就推定任何使用方式都获准。
 
