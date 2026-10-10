@@ -1,8 +1,8 @@
 {
   "schema": "age-reverse-historical-image-fonts/v1",
   "checked_on": "2026-10-11",
-  "status": "in-progress",
-  "scope": "Historical retained material variants, font trials and superseded inputs across the seven games; current release adoption is recorded separately. Additional history discovery remains in progress.",
+  "status": "retained-scope-font-attribution-reconciled",
+  "scope": "Recovered material variants, font trials and superseded inputs across the seven games, supplementing the other historical registers. Current release adoption is separate; retained-scope reconciliation and explicit evidence limitations are indexed in audit-scope.json.",
   "source_records": {
     "timer-renderer": {
       "record": "font-preview-20260905/build_timer_font_previews.py",

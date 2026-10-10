@@ -755,13 +755,16 @@
         "Version 2.001"
       ],
       "games": [
-        "photonflowers",
         "photonmelodies"
       ],
-      "usage": "trial-only-adoption-not-confirmed",
+      "usage": "Historical PM countdown tutorial trial at 24px, replayed to retained RGBA; current release uses Xiaolai. Other title-font comparisons do not establish adoption.",
       "license": "OFL-1.1",
       "upstream_url": "https://github.com/googlefonts/zcool-kuaile",
-      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "comparison_games": [
+        "photonflowers",
+        "photonmelodies"
+      ]
     },
     "image:simhei-historical": {
       "file": "simhei.ttf",
@@ -780,15 +783,18 @@
       ],
       "authors": "Beijing ZhongYi Electronics Co.; supplied with licensed Microsoft products",
       "games": [
-        "photonflowers",
-        "photonmelodies"
+        "photonflowers"
       ],
       "license": "Windows font licensing; not OFL",
       "upstream_url": "https://learn.microsoft.com/en-us/typography/font-list/simhei",
       "license_url": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
       "usage": "PF G2685: the single 制 character in a historical 制作／著作 credit repair. Other original glyphs and the âge mark were preserved. Exact candidate absent from the current PF/PM release registers. Also appears in historical comparison/selection records; those labels do not establish additional game-image use.",
       "state": "rendered-historical-local-candidate; not-current-release",
-      "identity_basis": "Retained authoring manifest records the exact font and candidate hashes. Replaying the first-character cell with that font reproduces the entire retained RGBA candidate exactly."
+      "identity_basis": "Retained authoring manifest records the exact font and candidate hashes. Replaying the first-character cell with that font reproduces the entire retained RGBA candidate exactly.",
+      "comparison_games": [
+        "photonflowers",
+        "photonmelodies"
+      ]
     },
     "image:noto-sans-sc-500": {
       "runtime_catalog_id": "age2:NotoSansSC-500.ttf",
@@ -822,8 +828,7 @@
         "Version 2.06; PhotonR2 root-fix; explicit U+2060 zero advance"
       ],
       "games": [
-        "photonflowers",
-        "photonmelodies"
+        "photonflowers"
       ],
       "usage": "28 unique current PF delegated subtitle PNG contents use this historical PhotonR2 hash. The F29 orbital-wipe family instead uses Noto Sans SC: 90 production rows, 44 distinct current image contents across PF/PM.",
       "license": "OFL-1.1",
@@ -1432,7 +1437,8 @@
             "標準"
           ]
         }
-      ]
+      ],
+      "evidence_role": "font-comparison-only; no localized-material-use claim"
     },
     "image:noto-sans-sc-static-bold-700": {
       "file": "NotoSansSC-Bold-700.ttf",

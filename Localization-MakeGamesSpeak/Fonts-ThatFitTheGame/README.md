@@ -2,9 +2,9 @@
 
 **Fonts & Typography: Don't Let Fonts Give Your Patch Away**
 
-[返回本地化](../README.md) · **[游戏字体对应表](runtime.md)** · **[图片用字与样式](images.md)** · [字体致谢与许可](attribution.md) · [新图片登记](registration.md) · [精确版本目录](catalog.json)
+[返回本地化](../README.md) · **[七作图片用字总表](audit.md)** · [游戏字体对应表](runtime.md) · [图片用字与样式](images.md) · [字体致谢与许可](attribution.md) · [新图片登记](registration.md) · [精确版本目录](catalog.json)
 
-**七作全部图片用字的清查仍在进行。** 下列发布清单和已选候选是已核对的部分；完整清查还覆盖旧批次、返修、局部稿、提供字层与生成底稿。新追回的历史用途列在[历史图片用字记录](historical-image-fonts.json)，逐图旧版本见[历史素材版本表](historical-image-variants.json)，已从当前目录移除的早期制作另见 [Git 历史用字表](historical-git-image-fonts.json)和 [PF／PM 早期 CRmt 排字表](historical-crmt-image-fonts.json)。旧试样不算进当前发布版。
+**七作图片用字已完成本次可访问资料的追溯。** [总表](audit.md)按作品和字体汇总当前发布、旧稿、返修、局部稿、提供字层与生成底稿：37 项输入／字重／版本中，36 项有素材排字或底稿用途，1 项仅有比较用途。逐图记录与证据边界集中列在总表，旧试样不算进当前发布版。
 
 <details>
 <summary><strong>English · Don't Let Fonts Give Your Patch Away — expand here</strong></summary>
@@ -13,7 +13,7 @@ The catalog covers the seven released games, original AGE2 roles, every bundled 
 
 The October 11 audit traces 3,720 current release image files to their font or original/generated lettering sources, and records 365 selected local candidates separately. It also identifies missing authoring inputs, including Swei SemiBold, an unpatched MEB image font and a static Noto Sans 700 instance. Read the [image usage table](images.md), [credits](attribution.md) and [registration policy](registration.md). This is provenance within the listed file scope, not new visual/runtime approval. Historical font-byte and rendering limitations remain explicit.
 
-The full historical audit is still in progress. The [historical variant register](historical-image-variants.json) recovers 1,933 game/output contents from material-level authoring records, including 557 contents also present in the current release register. These overlapping records must not be added to the release count. Superseded font metadata is checked against the actual layer replacement code.
+The [audit overview](audit.md) reconciles the retained release, historical, partial and supplied-layer records, including typography prototypes provided for generation. It lists 36 material-use inputs plus one comparison-only entry. The [historical variant register](historical-image-variants.json) recovers 1,933 game/output contents, including 557 also present in the current release register; these overlapping counts must not be added. Early Git-only font trials and the 56-image PhotonCN CRmt batch have separate registers. Superseded font metadata is checked against actual layer replacement code. Unavailable historical bytes and browser-loading evidence remain explicit limitations.
 
 </details>
 

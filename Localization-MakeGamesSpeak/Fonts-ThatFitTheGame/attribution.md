@@ -2,7 +2,7 @@
 
 **Image Font Credits & Licensing: Credit the Letters, Keep Their Story**
 
-[字体入口](README.md) · [游戏／素材对应](images.md) · [精确文件身份](catalog.json) · [以后如何登记](registration.md)
+[字体入口](README.md) · [七作用字总表](audit.md) · [游戏／素材对应](images.md) · [精确文件身份](catalog.json) · [以后如何登记](registration.md)
 
 感谢下列字体作者与维护者。七作的图片制作、返修与试样使用了这些字体；具体用途和状态按[使用记录](image-font-usage.json)区分，感谢不表示所有候选都已发布，也不暗示作者参与或认可本补丁。
 
@@ -20,7 +20,7 @@
 | 得意黑 Smiley Sans | [atelierAnchor](https://github.com/atelier-anchor/smiley-sans) | OFL 1.1；PF EX 标题历史制作／回放 |
 | 小赖 Xiaolai | [LXGW](https://github.com/lxgw/kose-font)，瀬戸のぞみ及上游衍生贡献者 | OFL 1.1；PM 当前发布版的 11 个计时状态及 10 张内嵌教程文字 |
 | 马善政 Ma Shan Zheng | [The MaShanZheng Project Authors](https://github.com/googlefonts/mashanzheng) | OFL 1.1；毛笔标题、指示、颁发式及蛋糕文字制作 |
-| 站酷快乐体 ZCOOL KuaiLe | [The ZCOOL KuaiLe Project Authors](https://github.com/googlefonts/zcool-kuaile) | OFL 1.1；标题字体试样，未据此确认最终采用 |
+| 站酷快乐体 ZCOOL KuaiLe | [The ZCOOL KuaiLe Project Authors](https://github.com/googlefonts/zcool-kuaile) | OFL 1.1；PM 倒计时教程字体试样，最终采用小赖 |
 | 资源圆体 Resource Han Rounded CN | [Cyano Hao](https://github.com/CyanoHao/Resource-Han-Rounded)，基于 Adobe 思源黑体 | OFL 1.1；PM 倒计时教程 Medium 历史试样，非当前发布选型 |
 | 寒蝉圆黑 Chill Round Gothic | [ChillType／Warren2060](https://github.com/Warren2060/ChillRoundGothic)，基于 Adobe 思源黑体 | OFL 1.1；PM 倒计时教程 Medium 历史试样；与寒蝉全圆体区分 |
 | 源泉圆体丹 GenSenRounded2 TC H | [ButTaiwan](https://github.com/ButTaiwan/gensen-font)，基于 Adobe 思源黑体 | OFL 1.1；PM 倒计时教程 Heavy 历史试样；保留字库包内许可身份 |
@@ -36,7 +36,7 @@
 
 楷体 KaiTi、宋体 SimSun、MS Mincho、微软雅黑 Microsoft YaHei、黑体 SimHei 出现在实际图片制作或候选中；MS Gothic 还有字体比较记录。它们是 Windows 授权字体，**不能统称为开源字体，也不在本仓库附送字体文件**。SimHei 的版权记录为北京中易，精确文件身份和 Microsoft 产品附带许可说明见目录，不把“Windows 自带”写成开源授权。
 
-微软雅黑 Light 也实际用于一轮 33 张装备标题候选，后来被常规版替换；两种输入分别登记。旧稿被覆盖而没有保留历史字体摘要的，明确说明证据限制，不把现存常规版配方倒推给旧稿。新增字体与素材的逐项对应见[历史图片用字记录](historical-image-fonts.json)；七作完整清查尚未结束。
+微软雅黑 Light 也实际用于一轮 33 张装备标题候选，后来被常规版替换；两种输入分别登记。旧稿被覆盖而没有保留历史字体摘要的，明确说明证据限制，不把现存常规版配方倒推给旧稿。字体与素材的逐项对应见[历史图片用字记录](historical-image-fonts.json)，本次七作清查的完整索引见[总表](audit.md)。
 
 PM 早期设置页及“保存”按钮还使用过 **BIZ UDGothic／BIZ UDPGothic 的 Regular、Bold**，设计／发行来源为 TypeBank／Morisawa；[Microsoft 字体页](https://learn.microsoft.com/en-us/typography/font-list/biz-udgothic)列明这两个 TTC 中的四种字体。实际输入的历史摘要与现存 Windows 文件一致，文件许可声明为 Microsoft 产品附带字体条款。旧脚本误写的“开源候选”已在本目录纠正；另有 [Morisawa／Google Fonts 的 OFL 发行](https://github.com/googlefonts/morisawa-biz-ud-gothic)，但它不替代当时实际读取的 Windows 文件身份与许可。
 

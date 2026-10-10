@@ -25,9 +25,9 @@
     "unreleased_image_registry": "unreleased-image-fonts.json",
     "selected_local_candidate_files": 365,
     "historical_audit": {
-      "status": "in-progress",
+      "status": "retained-scope-font-attribution-reconciled",
       "register": "historical-image-fonts.json",
-      "note": "The independent retained-file and session inventories are complete for the discovered scope. Material/recipe classification and remaining historical bindings are still being reconciled; inventory completion alone is not completion of font attribution.",
+      "note": "Retained sources, material bindings, historical revisions, supplied layers and generation inputs have been reconciled for the independently inventoried scope. Historical missing bytes and font-loading precision limits remain explicit; no exhaustive claim is made about unavailable records.",
       "material_variant_register": "historical-image-variants.json",
       "material_variants_from_authoring_records": 1933,
       "git_history": {
@@ -52,7 +52,13 @@
       }
     },
     "retained_roots_examined": 108,
-    "session_files_examined": 610
+    "session_files_examined": 610,
+    "audit_scope_registry": "audit-scope.json",
+    "registered_font_input_records": 37,
+    "material_font_input_records": 36,
+    "comparison_only_font_inputs": [
+      "image:ms-gothic-trial"
+    ]
   },
   "evidence_sources": {
     "e01": {

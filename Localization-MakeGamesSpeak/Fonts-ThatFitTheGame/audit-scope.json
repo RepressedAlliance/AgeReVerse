@@ -1,0 +1,291 @@
+{
+  "schema": "age-reverse-image-font-audit-scope/v1",
+  "checked_on": "2026-10-11",
+  "status": "retained-scope-font-attribution-reconciled",
+  "scope_games": [
+    "tda00",
+    "tda01",
+    "tda02",
+    "tda03",
+    "imperial-capital-burns",
+    "photonflowers",
+    "photonmelodies"
+  ],
+  "scope": "Current patch image manifests, retained old production batches and revisions, selected and partial local work, supplied text layers, and typography prototypes used as generation inputs. Untouched original-game lettering is recorded as original rather than assigned an invented font.",
+  "inventory": {
+    "retained_roots": 108,
+    "retained_file_records": 1016675,
+    "session_files_examined": 610,
+    "reachable_Git_text_versions_examined": 21918,
+    "renderer_or_font_API_source_versions_classified": 832,
+    "source_roles": {
+      "material-renderer-or-production-helper": 526,
+      "dependency-or-original-tool": 6,
+      "review-portal-or-stylesheet; not-an-image-typography-output": 90,
+      "font-comparison-sheet": 17,
+      "runtime-component-font-comparison-page": 1,
+      "promotional-image": 15,
+      "boot-HTML-font-declaration; historical-browser-loading-not-replayed": 6,
+      "other-game-or-task": 164,
+      "this-audit": 7
+    },
+    "in_scope_generation_orchestration_calls_reviewed": 227,
+    "counting_note": "Files include originals and repeated histories; orchestration calls include loops, revisions and failures. None of these counts is a count of distinct localized images."
+  },
+  "font_inputs": {
+    "registered_inputs_faces_and_versions": 37,
+    "with_material_typography_or_prototype_use": 36,
+    "comparison_only": [
+      "image:ms-gothic-trial"
+    ],
+    "material_record_crosswalk": {
+      "image:noto-sans-sc-vf": [
+        "age2-released-image-fonts.json",
+        "historical-git-image-fonts.json",
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:noto-serif-sc-vf": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:swei-sugar-medium": [
+        "age2-released-image-fonts.json"
+      ],
+      "image:zcool-kuaile-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:simhei-historical": [
+        "historical-image-fonts.json",
+        "historical-image-variants.json"
+      ],
+      "image:noto-sans-sc-500": [
+        "age2-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:photon-r2-subtitles": [
+        "photon-released-image-fonts.json"
+      ],
+      "image:mashanzheng-new-batch": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:photoncn-new-batch": [
+        "historical-crmt-image-fonts.json"
+      ],
+      "image:source-han-sans-bold": [
+        "age2-released-image-fonts.json",
+        "historical-image-fonts.json"
+      ],
+      "image:source-han-serif-bold": [
+        "age2-released-image-fonts.json"
+      ],
+      "image:source-han-serif-heavy": [
+        "age2-released-image-fonts.json"
+      ],
+      "image:xiaolai": [
+        "historical-image-fonts.json",
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:smiley-sans": [
+        "historical-image-variants.json"
+      ],
+      "image:lxgw-wenkai-gb": [
+        "historical-image-variants.json"
+      ],
+      "image:kaiti": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:yahei-regular": [
+        "historical-git-image-fonts.json",
+        "historical-image-fonts.json",
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:yahei-bold": [
+        "historical-image-fonts.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:simsun": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:ms-mincho": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:noto-sans-sc-static-bold-700": [
+        "photon-released-image-fonts.json"
+      ],
+      "image:meb-heiheiti-note": [
+        "unreleased-image-fonts.json"
+      ],
+      "image:swei-sugar-semibold": [
+        "unreleased-image-fonts.json"
+      ],
+      "image:resource-han-rounded-medium-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:chill-round-gothic-medium-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:gensen-rounded-2-tc-heavy-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:lxgw-975-yuan-700-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:maoken-tangyuan-trial": [
+        "historical-image-fonts.json",
+        "historical-image-variants.json"
+      ],
+      "image:yomeng-script-trial": [
+        "historical-image-fonts.json",
+        "historical-image-variants.json"
+      ],
+      "image:yahei-light-historical": [
+        "historical-image-fonts.json"
+      ],
+      "image:biz-udgothic-regular-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:biz-udpgothic-regular-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:biz-udgothic-bold-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:biz-udpgothic-bold-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:noto-sans-jp-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:dengxian-bold-history": [
+        "historical-git-image-fonts.json"
+      ]
+    },
+    "note": "Input count is not a family count or a count of fonts shipped in the present release. Mixed, inherited and generated layers retain their own methods."
+  },
+  "registries": [
+    {
+      "file": "age2-released-image-fonts.json",
+      "items": 859,
+      "unit": "current-release-files",
+      "sha256": "9312cf7045f60d2dc80c7aaf521fa11f68974c07f62deee60f3512d0829798ce",
+      "hash_domain": "UTF-8 JSON contents with LF newlines, as published by Git"
+    },
+    {
+      "file": "photon-released-image-fonts.json",
+      "items": 2861,
+      "unit": "current-release-files",
+      "sha256": "d27cdfd2db787482c54e90f79cb21374df6615b85b65efde125c5434d507013e",
+      "hash_domain": "UTF-8 JSON contents with LF newlines, as published by Git"
+    },
+    {
+      "file": "unreleased-image-fonts.json",
+      "items": 365,
+      "unit": "selected-local-candidates",
+      "sha256": "93038ff31ad856178d107403b77697d5db3039c5e4bfb22c07ccdd6a425f06df",
+      "hash_domain": "UTF-8 JSON contents with LF newlines, as published by Git"
+    },
+    {
+      "file": "historical-image-fonts.json",
+      "items": 235,
+      "unit": "specifically-recovered-historical-font-records",
+      "sha256": "635351b1ad0f5a685de861c305f759b2b865ec1e307b284aa30f5ceb78adf99f",
+      "hash_domain": "UTF-8 JSON contents with LF newlines, as published by Git"
+    },
+    {
+      "file": "historical-image-variants.json",
+      "items": 1933,
+      "unit": "historical-game-output-contents",
+      "sha256": "819dbd21c593cbf634ac27aa82043acdd64c4809eccc768aff136d035cb6a1d0",
+      "hash_domain": "UTF-8 JSON contents with LF newlines, as published by Git"
+    },
+    {
+      "file": "historical-git-image-fonts.json",
+      "items": 279,
+      "unit": "Git-recovered-material-output-records",
+      "sha256": "5b80c60b86956499380dc14f6ef265d3704c41cb373e5f8b7279bcfb1e4f5159",
+      "hash_domain": "UTF-8 JSON contents with LF newlines, as published by Git"
+    },
+    {
+      "file": "historical-crmt-image-fonts.json",
+      "items": 56,
+      "unit": "early-CRmt-design-assets",
+      "sha256": "3884bb2d0abd03dc63340e48152c2c52957dcf0b1289be18328d4416ae0111ad",
+      "hash_domain": "UTF-8 JSON contents with LF newlines, as published by Git"
+    }
+  ],
+  "count_relationships": {
+    "current_release_files": 3720,
+    "photon_release_distinct_contents": 1562,
+    "selected_local_candidate_files": 365,
+    "historical_variant_contents_also_in_release": 557,
+    "note": "These sets overlap. Historical registers also overlap each other and must not be summed into an all-time image total."
+  },
+  "input_review_examples": [
+    {
+      "material": "PF/PM early CRmt U0483",
+      "method": "PhotonCN typeset draft supplied for generation refinement",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "record": "historical-crmt-image-fonts.json"
+    },
+    {
+      "material": "PM calendar thumbnail G1049",
+      "method": "Supplied caption traced to Noto Sans SC static 700; generation/compositing does not remove the original input attribution",
+      "font_ids": [
+        "image:noto-sans-sc-static-bold-700"
+      ],
+      "record": "photon-released-image-fonts.json"
+    },
+    {
+      "material": "Sakura chapter white/pink logo trial",
+      "method": "Official Japanese image supplied to generation; later chroma/palette revisions inherit generated Chinese lettering",
+      "font_ids": []
+    },
+    {
+      "material": "PF school gold-sign second revision",
+      "method": "Generated replacements supersede stale KaiTi metadata; KaiTi remains recorded for earlier drafts and retained black-banner lettering",
+      "font_ids": [],
+      "record": "historical-image-variants.json"
+    },
+    {
+      "material": "Model prompts that request a Noto-like style",
+      "method": "Style wording alone is not a provided font file and does not establish that exact font was rendered",
+      "font_ids": []
+    }
+  ],
+  "limits": [
+    {
+      "id": "historical-font-bytes",
+      "detail": "Some old Windows renders identify their input file but did not retain its old hash or TTC index. Present-day inspection cannot supply missing historic byte identity."
+    },
+    {
+      "id": "HTML-font-loading",
+      "detail": "Ten AGE2 boot-notice textures are attributed from authoring records and Noto Sans declarations; historic browser loading/fallback is not replayed."
+    },
+    {
+      "id": "historical-rendering-replay",
+      "detail": "Selected samples were replayed where needed to resolve identity; no claim is made that every historical output was pixel-replayed. One sound-only Photon tutorial keeps its old-layout replay limitation."
+    },
+    {
+      "id": "author-license-page",
+      "detail": "The MEB author page was not readable in this audit. Existing source and author-use notices are retained; this is not a fresh complete authorization verification."
+    },
+    {
+      "id": "availability",
+      "detail": "This conclusion applies to the enumerated retained records and reachable Git history as of the audit date. Deleted records and unprovided private material cannot be reconstructed by visual font guessing."
+    }
+  ],
+  "privacy": "Only sanitized identities, material relationships and evidence hashes are published. Private conversations, local paths, original art and font binaries stay out of Git."
+}
