@@ -638,7 +638,20 @@
         "photonmelodies"
       ],
       "usage": "used-in-image-production",
-      "license": "OFL-1.1"
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/notofonts/noto-cjk",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "copyright": [
+        "© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100.0,
+          "default": 100.0,
+          "max": 900.0
+        }
+      ]
     },
     "image:noto-serif-sc-vf": {
       "file": "NotoSerifSC-VF.ttf",
@@ -652,10 +665,28 @@
       ],
       "games": [
         "photonflowers",
-        "photonmelodies"
+        "photonmelodies",
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
       ],
       "usage": "used-in-image-production",
-      "license": "OFL-1.1"
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/notofonts/noto-cjk",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "copyright": [
+        "© 2017-2023 Adobe (http://www.adobe.com/)."
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200.0,
+          "default": 200.0,
+          "max": 900.0
+        }
+      ]
     },
     "image:swei-sugar-medium": {
       "file": "SweiSugarCJKsc-Medium.ttf",
@@ -676,7 +707,12 @@
         "imperial-capital-burns"
       ],
       "usage": "date-and-location-cards",
-      "license": "OFL-1.1"
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/max32002/swei-sugar",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "copyright": [
+        "Chun Yu Yao"
+      ]
     },
     "image:zcool-kuaile-trial": {
       "file": "ZCOOLKuaiLe-Regular.ttf",
@@ -693,7 +729,9 @@
         "photonmelodies"
       ],
       "usage": "trial-only-adoption-not-confirmed",
-      "license": "OFL-1.1"
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/googlefonts/zcool-kuaile",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
     },
     "image:simhei-historical": {
       "file": "simhei.ttf",
@@ -711,7 +749,11 @@
         "photonmelodies"
       ],
       "usage": "historical-candidate-not-final-confirmation",
-      "license": "Windows font licensing; not OFL"
+      "license": "Windows font licensing; not OFL",
+      "copyright": [
+        "© Beijing ZhongYi Electronics Co., 1995-2005, All rights reserved",
+        "字体数据由北京中易中标电子信息技术有限公司提供。"
+      ]
     },
     "image:noto-sans-sc-500": {
       "runtime_catalog_id": "age2:NotoSansSC-500.ttf",
@@ -739,7 +781,9 @@
         "photonmelodies"
       ],
       "usage": "historical baked subtitles; distinct from updated runtime fonts",
-      "license": "OFL-1.1"
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
     },
     "image:mashanzheng-new-batch": {
       "file": "MaShanZheng-Regular.ttf",
@@ -755,9 +799,13 @@
         "photonflowers",
         "photonmelodies"
       ],
-      "usage": "2026-10 omission-batch candidate; not release adoption",
+      "usage": "historical brush titles/pointer/ceremony and 2026-10 G1952 cake production; not proof of release adoption",
       "license": "OFL-1.1",
-      "upstream_url": "https://github.com/googlefonts/mashanzheng"
+      "upstream_url": "https://github.com/googlefonts/mashanzheng",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "copyright": [
+        "Copyright 2018 The MaShanZheng Project Authors (https://github.com/googlefonts/mashanzheng)"
+      ]
     },
     "image:photoncn-new-batch": {
       "file": "PhotonCN-Regular.ttf",
@@ -773,9 +821,487 @@
         "photonflowers",
         "photonmelodies"
       ],
-      "usage": "2026-10 omission-batch candidate; not release adoption",
+      "usage": "G4267/G4268 map recipe-v1; superseded by Noto Serif recipe-v3; distinct from runtime",
       "license": "OFL-1.1",
-      "upstream_url": "https://github.com/adobe-fonts/source-han-sans"
+      "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "copyright": [
+        "© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. PhotonCN is a renamed and metric-normalized Modified Version for the PF/PM localization project."
+      ]
+    },
+    "image:source-han-sans-bold": {
+      "file": "SourceHanSansSC-Bold.otf",
+      "sha256": "df560f379d55a0c9859add605dd67e0721955fde3cd76c41c5f8d6cba7823d41",
+      "bytes": 17878620,
+      "family": [
+        "Source Han Sans SC",
+        "思源黑体"
+      ],
+      "version": [
+        "Version 2.001;hotconv 1.0.107;makeotfexe 2.5.65593"
+      ],
+      "copyright": [
+        "© 2014-2019 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+      ],
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "usage": "historical AGE2 telops, UI and date/location production",
+      "license": "OFL-1.1",
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+    },
+    "image:source-han-serif-bold": {
+      "file": "SourceHanSerifCN-Bold.otf",
+      "sha256": "4ee555ae58b3d22f6a95c2c494f2c36b7cccfc1d2224635f6461a03756f0e3c1",
+      "bytes": 12094680,
+      "family": [
+        "Source Han Serif CN",
+        "思源宋体 CN"
+      ],
+      "version": [
+        "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0"
+      ],
+      "copyright": [
+        "© 2017-2024 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+      ],
+      "games": [
+        "tda02"
+      ],
+      "usage": "additional introduction-card production",
+      "license": "OFL-1.1",
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "upstream_url": "https://github.com/adobe-fonts/source-han-serif",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+    },
+    "image:source-han-serif-heavy": {
+      "file": "SourceHanSerifCN-Heavy.otf",
+      "sha256": "053e911fdb1a55d4d8512a1f11203f1fb9a7291e34bc260474b8c80358c69fa6",
+      "bytes": 11862952,
+      "family": [
+        "Source Han Serif CN Heavy",
+        "思源宋体 CN Heavy"
+      ],
+      "version": [
+        "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0"
+      ],
+      "copyright": [
+        "© 2017-2024 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+      ],
+      "games": [
+        "tda02",
+        "tda03"
+      ],
+      "usage": "additional introduction-card production",
+      "license": "OFL-1.1",
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "upstream_url": "https://github.com/adobe-fonts/source-han-serif",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+    },
+    "image:xiaolai": {
+      "file": "Xiaolai-Regular.ttf",
+      "sha256": "e2f68daf0e72777a8cf58bc83de1b98634b251e537ddbfca24b0ae50d1802da2",
+      "bytes": 22220806,
+      "family": [
+        "Xiaolai",
+        "シャオライ",
+        "小賴字體",
+        "小赖字体"
+      ],
+      "version": [
+        "Version 3.126;September 10, 2025"
+      ],
+      "copyright": [
+        "Copyright 2020-2024 LXGW (https://github.com/lxgw/kose-font)\r\nCopyright 2014 Nozomi Seto (https://ja.osdn.net/projects/setofont/)"
+      ],
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "countdown text production; static review record explicitly not installed",
+      "license": "OFL-1.1",
+      "identity_basis": "inspected font bytes match individual-audit-progress.json recorded font_sha256",
+      "upstream_url": "https://github.com/lxgw/kose-font",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+    },
+    "image:smiley-sans": {
+      "file": "SmileySans-Oblique.ttf",
+      "sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4",
+      "bytes": 2629764,
+      "family": [
+        "Smiley Sans Oblique",
+        "得意黑"
+      ],
+      "version": [
+        "Version 2.0.1"
+      ],
+      "copyright": [
+        "Copyright © 2022–2024 atelierAnchor. All rights reserved."
+      ],
+      "games": [
+        "photonflowers"
+      ],
+      "usage": "historical EX title production and exact recovery records",
+      "license": "OFL-1.1",
+      "identity_basis": "v2.0.1 archive font bytes match historical exact-recovery audit hash",
+      "upstream_url": "https://github.com/atelier-anchor/smiley-sans",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+    },
+    "image:lxgw-wenkai-gb": {
+      "file": "LXGWWenKaiGB-Medium.ttf",
+      "sha256": "b885c51ec0d3f325974013801dfcefda1a9ba0bf385c607cf5f2582dafa2e5ab",
+      "bytes": 25745488,
+      "family": [
+        "LXGW WenKai GB Medium"
+      ],
+      "version": [],
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "historical handwritten pointer, Sakitan title and EX title production",
+      "license": "OFL-1.1",
+      "identity_basis": "hash and size from historical exact-recovery audit and production recipes; matching binary unavailable in current audit; version string not reconstructed from latest upstream",
+      "upstream_url": "https://github.com/lxgw/LxgwWenkaiGB",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+    },
+    "image:kaiti": {
+      "file": "simkai.ttf",
+      "sha256": "95b3e69321f4e55f6ecf36b29d1e31a0c1205acfde0117df6472a17494c3cbd2",
+      "bytes": 11779732,
+      "family": [
+        "KaiTi",
+        "楷体"
+      ],
+      "version": [
+        "Version 5.03"
+      ],
+      "copyright": [
+        "© Beijing ZhongYi Electronics Co., 1995-2005, All rights reserved",
+        "字体数据由北京中易中标电子信息技术有限公司提供。"
+      ],
+      "games": [
+        "photonflowers",
+        "photonmelodies",
+        "imperial-capital-burns"
+      ],
+      "usage": "historical Photon story cards; AGE2 letter and shop partial production",
+      "license": "Windows font licensing; not OFL",
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes"
+    },
+    "image:yahei-regular": {
+      "file": "msyh.ttc",
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+      "bytes": 19704352,
+      "family": [
+        "Microsoft YaHei",
+        "Microsoft YaHei UI",
+        "微软雅黑"
+      ],
+      "version": [
+        "Version 6.31"
+      ],
+      "copyright": [
+        "© 2024  Microsoft Corporation. All Rights Reserved. Portions © 2024 Beijing Founder Electronics Co. Ltd. All Rights Reserved.",
+        "© 2024 微软公司版权所有 © 2024 北京北大方正电子有限公司部分版权所有"
+      ],
+      "games": [
+        "imperial-capital-burns"
+      ],
+      "usage": "production-note options only; no final adoption",
+      "license": "Windows font licensing; not OFL",
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "collection_faces": [
+        {
+          "index": 0,
+          "family": [
+            "Microsoft YaHei",
+            "微软雅黑"
+          ],
+          "subfamily": [
+            "Arrunta",
+            "Navadno",
+            "Normaali",
+            "Normal",
+            "Normale",
+            "Normalny",
+            "Normál",
+            "Normálne",
+            "Regular",
+            "Standaard",
+            "Standard",
+            "obyčejné",
+            "Κανονικά",
+            "Обычный"
+          ]
+        },
+        {
+          "index": 1,
+          "family": [
+            "Microsoft YaHei UI"
+          ],
+          "subfamily": [
+            "Arrunta",
+            "Navadno",
+            "Normaali",
+            "Normal",
+            "Normale",
+            "Normalny",
+            "Normál",
+            "Normálne",
+            "Regular",
+            "Standaard",
+            "Standard",
+            "obyčejné",
+            "Κανονικά",
+            "Обычный"
+          ]
+        }
+      ]
+    },
+    "image:yahei-bold": {
+      "file": "msyhbd.ttc",
+      "sha256": "4508821b3dffe01f0ef5e5326a3e60df705a44633858811f67b6982dce3f6ee6",
+      "bytes": 16883552,
+      "family": [
+        "Microsoft YaHei",
+        "Microsoft YaHei UI",
+        "微软雅黑"
+      ],
+      "version": [
+        "Version 6.31"
+      ],
+      "copyright": [
+        "© 2024  Microsoft Corporation. All Rights Reserved. Portions © 2024 Beijing Founder Electronics Co. Ltd. All Rights Reserved.",
+        "© 2024 微软公司版权所有 © 2024 北京北大方正电子有限公司部分版权所有"
+      ],
+      "games": [
+        "imperial-capital-burns"
+      ],
+      "usage": "production-note options and shop partial production",
+      "license": "Windows font licensing; not OFL",
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "collection_faces": [
+        {
+          "index": 0,
+          "family": [
+            "Microsoft YaHei",
+            "微软雅黑"
+          ],
+          "subfamily": [
+            "Bold",
+            "Fet",
+            "Fett",
+            "Félkövér",
+            "Gras",
+            "Grassetto",
+            "Halvfet",
+            "Kalın",
+            "Krepko",
+            "Lihavoitu",
+            "Lodia",
+            "Negreta",
+            "Negrita",
+            "Negrito",
+            "Pogrubiony",
+            "Tučné",
+            "Vet",
+            "fed",
+            "tučné",
+            "Έντονα",
+            "Полужирный"
+          ]
+        },
+        {
+          "index": 1,
+          "family": [
+            "Microsoft YaHei UI"
+          ],
+          "subfamily": [
+            "Bold",
+            "Fet",
+            "Fett",
+            "Félkövér",
+            "Gras",
+            "Grassetto",
+            "Halvfet",
+            "Kalın",
+            "Krepko",
+            "Lihavoitu",
+            "Lodia",
+            "Negreta",
+            "Negrita",
+            "Negrito",
+            "Pogrubiony",
+            "Tučné",
+            "Vet",
+            "fed",
+            "tučné",
+            "Έντονα",
+            "Полужирный"
+          ]
+        }
+      ]
+    },
+    "image:simsun": {
+      "file": "simsun.ttc",
+      "sha256": "1526ac24375f51f6eb73bc2d3f8072dbe4a80a3a65217677c9d9a84f67dab2ab",
+      "bytes": 18316748,
+      "family": [
+        "NSimSun",
+        "SimSun",
+        "宋体",
+        "新宋体"
+      ],
+      "version": [
+        "Version 5.24"
+      ],
+      "copyright": [
+        "© Copyright ZHONGYI Electronic Co. 2001, 2020, 2022"
+      ],
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "historical story/time-card candidate production; release adoption not established",
+      "license": "Windows font licensing; not OFL",
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "collection_faces": [
+        {
+          "index": 0,
+          "family": [
+            "SimSun",
+            "宋体"
+          ],
+          "subfamily": [
+            "Regular",
+            "常规"
+          ]
+        },
+        {
+          "index": 1,
+          "family": [
+            "NSimSun",
+            "新宋体"
+          ],
+          "subfamily": [
+            "Regular",
+            "常规"
+          ]
+        }
+      ]
+    },
+    "image:ms-mincho": {
+      "file": "msmincho.ttc",
+      "sha256": "ceb8d745001f56b61ce768d84172d35bdf68e498423c9320dcb22e7c900944c2",
+      "bytes": 10091072,
+      "family": [
+        "MS Mincho",
+        "MS PMincho",
+        "ＭＳ 明朝",
+        "ＭＳ Ｐ明朝"
+      ],
+      "version": [
+        "Version 5.32"
+      ],
+      "copyright": [
+        "© 2023 data:RICOH Industrial Solutions Inc. typeface:Morisawa Inc.",
+        "© 2023 data:リコーインダストリアルソリューションズ株式会社 typeface:株式会社モリサワ"
+      ],
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "historical training-day card candidate production; release adoption not established",
+      "license": "Windows font licensing; not OFL",
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "collection_faces": [
+        {
+          "index": 0,
+          "family": [
+            "MS Mincho",
+            "ＭＳ 明朝"
+          ],
+          "subfamily": [
+            "Regular",
+            "標準"
+          ]
+        },
+        {
+          "index": 1,
+          "family": [
+            "MS PMincho",
+            "ＭＳ Ｐ明朝"
+          ],
+          "subfamily": [
+            "Regular",
+            "標準"
+          ]
+        }
+      ]
+    },
+    "image:ms-gothic-trial": {
+      "file": "msgothic.ttc",
+      "sha256": "4bde3e6392b96910fb59094c6c1a4dbfae18fee78d0bf13dc30616837c4f95db",
+      "bytes": 8990160,
+      "family": [
+        "MS Gothic",
+        "MS PGothic",
+        "MS UI Gothic",
+        "ＭＳ ゴシック",
+        "ＭＳ Ｐゴシック"
+      ],
+      "version": [
+        "Version 5.32"
+      ],
+      "copyright": [
+        "© 2017 data:RICOH Co.,Ltd. typeface:RYOBI IMAGIX CO.",
+        "© 2017 data:株式会社リコー typeface:リョービイマジクス(株)"
+      ],
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "usage": "credit font-fit comparison only; not final artwork confirmation",
+      "license": "Windows font licensing; not OFL",
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "collection_faces": [
+        {
+          "index": 0,
+          "family": [
+            "MS Gothic",
+            "ＭＳ ゴシック"
+          ],
+          "subfamily": [
+            "Regular",
+            "標準"
+          ]
+        },
+        {
+          "index": 1,
+          "family": [
+            "MS UI Gothic"
+          ],
+          "subfamily": [
+            "Regular",
+            "標準"
+          ]
+        },
+        {
+          "index": 2,
+          "family": [
+            "MS PGothic",
+            "ＭＳ Ｐゴシック"
+          ],
+          "subfamily": [
+            "Regular",
+            "標準"
+          ]
+        }
+      ]
     }
   },
   "limitations": [
@@ -926,5 +1452,7 @@
         ]
       }
     }
-  }
+  },
+  "image_audit_checked_on": "2026-10-11",
+  "image_usage_registry": "image-font-usage.json"
 }
