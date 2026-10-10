@@ -121,7 +121,7 @@ AGE2 候选中有 311 张使用 Noto Sans SC 静态 500、7 张 Noto Sans SC 可
 
 Photon 已批准的本地范围为 37 张修改与 1 张核对后沿用的 G2506。蛋糕 G1952 及其 G2463／G2792 差分继承马善政字层；书店／报纸混用 Noto Sans／Serif；其他食品、说明纸、拟声字和地图按各自制作器登记。手绘矢量、生成墨迹、原字形局部修正分别记录；范围外素材和地图旧 PhotonCN v1 也保留其待处理／被替换状态。这轮没有替换当前公开补丁。
 
-PF／PM 旧制作中还找到 **SimHei 5.05**、**MS Gothic 5.32** 人物／署名字体比较和 **ZCOOL KuaiLe 2.001** 标题试样。它们单独登记为比较／试样，不能由“试过”推定最终采用。SimHei、MS Gothic 属 Windows 字体；ZCOOL 为 OFL 字体，来源见[上游](https://github.com/googlefonts/zcool-kuaile)。
+PF／PM 的旧字体比较记录还出现 **SimHei 5.05**、**MS Gothic 5.32**。SimHei 后来确实用于前述 PF 单字修订；MS Gothic 只有比较证据，没有确认游戏素材用途。**ZCOOL KuaiLe 2.001** 则确认用于 PM 倒计时教程的 24px 试样，最终改用小赖。SimHei、MS Gothic 属 Windows 字体；ZCOOL 为 OFL 字体，来源见[上游](https://github.com/googlefonts/zcool-kuaile)。
 
 对照表、审核页标题用过 Arial、Consolas、Segoe UI、微软雅黑；AGE2 正文字体比较还试过多种霞鹜、狮尾、寒蝉及日文字体。它们不是因此就成了游戏图片字体。原图保留、原字形搬用、模型绘制字样也分别记录方法，不另造字体身份。原版商业字体及运行时方案见[运行时表](runtime.md)。
 
