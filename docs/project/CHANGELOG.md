@@ -6,7 +6,7 @@ This file records repository and public-patch changes. Downloadable packages and
 
 - 完成光子之花／光子旋律全量 CRsa 漏项复核：补译并写回 40 处对白／提示，逐项审校 265 个批注字段，保持 260 个兵装名参数不变；加入哈希锁定的光子旋律固定长度分卷构建器，并记录光子之花／光子旋律实机字体、排版和 831／8311 验收。
 - 将仓库首页收束为普通玩家与研究/本地化制作者两个独立入口，下载细节完整下沉到玩家 README，并加入可见的中英文切换按钮。
-- 新增中英文文本/术语/图片/字体资产地图，明确 `localization-make-games-speak/`、各游戏目录、本仓库 Releases 与本地忽略工作区的边界，并同时索引五作 730 个 AGE2 WebP 路径与光子之花/光子旋律 1,490 项图片权威。
+- 新增中英文文本/术语/图片/字体资产地图，明确 `Localization-Make-Games-Speak/`、各游戏目录、本仓库 Releases 与本地忽略工作区的边界，并同时索引五作 730 个 AGE2 WebP 路径与光子之花/光子旋律 1,490 项图片权威。
 - 新增完整英文两轮本地化工作流，使韩语、俄语等团队不必依赖中文摘要即可复现剧情/术语、初译、`keep/revise/question`、写回、QA 与玩家反馈闭环。
 - 更新 Codex 贡献说明为 GitHub 可识别的 `Co-authored-by: Codex <codex@openai.com>`，并重写对主任保护协会的致谢，准确表达其 AGES 汉化思路是本项目开始制作补丁的起点。
 - 重新逐项比较 GARbro、AFHook、rugptools、FatePackageManager 与成熟翻译项目，把采用的优点和主动补足的缺点写入长期参考文档。

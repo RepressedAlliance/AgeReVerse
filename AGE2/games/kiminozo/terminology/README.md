@@ -1,14 +1,14 @@
 # 君望术语与基线
 
-[返回项目入口](../README.md) · [现行术语总入口](../../../../localization-make-games-speak/glossaries-keep-it-consistent/README.md) · [字段与状态](../../../../localization-make-games-speak/text-ai-translation-worth-reading/04-terminology.md#公开基线字段与状态)
+[返回项目入口](../README.md) · [现行术语总入口](../../../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/README.md) · [字段与状态](../../../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/04-terminology.md#公开基线字段与状态)
 
 | 文件 | 2026-10-09数据记录数（不含表头） | 用途 |
 | --- | ---: | --- |
-| [本作术语表](../../../../localization-make-games-speak/glossaries-keep-it-consistent/kiminozo.ja-zh-Hans.csv) | 167 | 已采用的专名、昵称及固定表达例外，含适用范围与定位 |
+| [本作术语表](../../../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/kiminozo.ja-zh-Hans.csv) | 167 | 已采用的专名、昵称及固定表达例外，含适用范围与定位 |
 | [主基线](baseline.ja-zh-Hans.csv) | 360 | 现行术语167条，语境参考186条，待核问题3条，候选3条，其他来源／语境译法1条；359种日文写法 |
 | [原始来源](history/evidence-20261009.csv) | 360 | 保留原状态、来源编号及依据，通过主表的evidence_rows关联 |
 
-术语表集中放在`localization-make-games-speak/glossaries-keep-it-consistent/`，基线留在本目录，两者由[项目清单](../project.toml)登记。**基线是术语的父集**：确认术语的依据也保存在基线中；条目提升为术语后，不从基线删除。分开存放不表示条目互相排除。君望独立使用本作表，不继承Muv-Luv通用术语或其他作品专表。
+术语表集中放在`Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/`，基线留在本目录，两者由[项目清单](../project.toml)登记。**基线是术语的父集**：确认术语的依据也保存在基线中；条目提升为术语后，不从基线删除。分开存放不表示条目互相排除。君望独立使用本作表，不继承Muv-Luv通用术语或其他作品专表。
 
 ## 收录与使用
 
@@ -24,7 +24,7 @@
 同一日文可以保留多条不同依据。例如`セルヅオ越後`既有“塞尔吉奥·越后”的确认定名，也保留整句语境译法供查证，因此360条记录对应359种日文写法。
 
 ```powershell
-python localization-make-games-speak/tools-let-tools-handle-repetition/terminology.py kiminozo --term タケス
+python Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/terminology.py kiminozo --term タケス
 ```
 
 工具只读取本作术语，基线及候选不会自动加载或替换正文。表的条目数不是全篇审校完成度。
@@ -54,8 +54,8 @@ python localization-make-games-speak/tools-let-tools-handle-repetition/terminolo
 [整理明细](review-20261009.md)列出数量变化和资料限制。默认查主表；`--term`同时返回当前术语与关联来源，程序不必解析说明文字：
 
 ```powershell
-python localization-make-games-speak/tools-let-tools-handle-repetition/terminology.py kiminozo --baseline
-python localization-make-games-speak/tools-let-tools-handle-repetition/terminology.py kiminozo --baseline --term ほんとうのたからもの
-python localization-make-games-speak/tools-let-tools-handle-repetition/terminology.py kiminozo --baseline --history
-python localization-make-games-speak/tools-let-tools-handle-repetition/terminology.py kiminozo --check-baseline
+python Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/terminology.py kiminozo --baseline
+python Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/terminology.py kiminozo --baseline --term ほんとうのたからもの
+python Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/terminology.py kiminozo --baseline --history
+python Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/terminology.py kiminozo --check-baseline
 ```

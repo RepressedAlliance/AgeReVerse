@@ -14,10 +14,10 @@
 
 ## 本地化制作者
 
-- [通用本地化工作区](../localization-make-games-speak/README.md)：文本、术语、图片、字体与审核
-- [第一次翻译—第二次审核—玩家反馈完整流程](../localization-make-games-speak/text-ai-translation-worth-reading/workflow.md)
-- [Complete English localization workflow](../localization-make-games-speak/text-ai-translation-worth-reading/workflow.en.md)
-- [制作新语言版本](../localization-make-games-speak/text-ai-translation-worth-reading/new-locale.md)
+- [通用本地化工作区](../Localization-Make-Games-Speak/README.md)：文本、术语、图片、字体与审核
+- [第一次翻译—第二次审核—玩家反馈完整流程](../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/workflow.md)
+- [Complete English localization workflow](../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/workflow.en.md)
+- [制作新语言版本](../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/new-locale.md)
 - [文本、术语、图片与字体资产地图](research/asset-map.md)
 - [AGE2 工作流](../AGE2/docs/workflow.md)
 - [rUGP 工作流](../rUGP/docs/workflow.md)

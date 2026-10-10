@@ -24,7 +24,7 @@ import sys
 from typing import Any, Mapping
 
 from importlib import import_module
-_localization_safe_output = import_module('localization-make-games-speak.tools-let-tools-handle-repetition.safe_output')
+_localization_safe_output = import_module('Localization-Make-Games-Speak.Tools-Let-Tools-Handle-Repetition.safe_output')
 OutputSafetyError = _localization_safe_output.OutputSafetyError
 write_new_files = _localization_safe_output.write_new_files
 

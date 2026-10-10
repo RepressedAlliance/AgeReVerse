@@ -26,7 +26,7 @@ class MainAlAlignmentTests(unittest.TestCase):
 
     def test_common_rank_rules_are_available_to_all_seven_games(self):
         from importlib import import_module
-        _localization_terminology = import_module('localization-make-games-speak.tools-let-tools-handle-repetition.terminology')
+        _localization_terminology = import_module('Localization-Make-Games-Speak.Tools-Let-Tools-Handle-Repetition.terminology')
         MUV_LUV_GAMES = _localization_terminology.MUV_LUV_GAMES
         load_game = _localization_terminology.load_game
         expected = {'少佐':'少校','中佐':'中校','大佐':'上校','大尉':'上尉',

@@ -2,7 +2,7 @@
 
 Muv-Luv photonflowers*／マブラヴ photonflowers*。AgeReVerse · 压抑同盟作品项目。
 
-[返回 rUGP 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/) · [术语与基线](terminology/README.md) · [图片](images/) · [完整工作流](../../../localization-make-games-speak/text-ai-translation-worth-reading/workflow.md)
+[返回 rUGP 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/) · [术语与基线](terminology/README.md) · [图片](images/) · [完整工作流](../../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/workflow.md)
 
 - Steam App ID：`889700`
 - 目标语言：简体中文（`zh-Hans`）

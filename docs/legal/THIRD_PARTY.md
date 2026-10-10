@@ -46,11 +46,11 @@ TDA 汉化，并要求在发布时致谢其提供汉化思路。该公开补丁�
 ## 构建依赖
 
 - Python 依赖分别固定在 `AGE2/requirements.txt`、`rUGP/requirements.txt` 和
-  `localization-make-games-speak/requirements.txt`；根开发文件汇总三者。
+  `Localization-Make-Games-Speak/requirements.txt`；根开发文件汇总三者。
 - Photon 原生构建使用 [Zig](https://ziglang.org/) 0.16.0，不将编译器提交到仓库。
 - GitHub Actions 在 `.github/workflows/quality.yml` 中锁定到不可变提交。
 - 字体是带许可证的 Release 输入；当前 Git 不追踪字体二进制，详见
-  [`localization-make-games-speak/fonts-that-fit-the-game/`](../../localization-make-games-speak/fonts-that-fit-the-game/README.md)。
+  [`Localization-Make-Games-Speak/Fonts-That-Fit-The-Game/`](../../Localization-Make-Games-Speak/Fonts-That-Fit-The-Game/README.md)。
 
 新增依赖必须记录准确版本、上游 URL、许可证、是否复制代码/数据，以及采用它的可复现
 或安全理由。

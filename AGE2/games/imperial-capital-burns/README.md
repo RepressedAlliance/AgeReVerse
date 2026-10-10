@@ -18,7 +18,7 @@ The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse／帝都燃ゆ（
   [`choices.ja-zh-Hans.csv`](translations/choices.ja-zh-Hans.csv) 与
   [`ui-strings.ja-zh-Hans.tsv`](translations/ui-strings.ja-zh-Hans.tsv)：说话人、选项和系统
   UI 权威。
-- [帝都燃烧篇现行术语表](../../../localization-make-games-speak/glossaries-keep-it-consistent/imperial-capital-burns.ja-zh-Hans.csv)：本作专用术语，集中维护于 `localization-make-games-speak/glossaries-keep-it-consistent/`。
+- [帝都燃烧篇现行术语表](../../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/imperial-capital-burns.ja-zh-Hans.csv)：本作专用术语，集中维护于 `Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/`。
 - [`images/copy/`](images/copy/)：启动提示、常用 UI、角色名、telop、日期/地点卡的中文
   文案、排版和源图锁。
 - [`images/release-inventory.json`](images/release-inventory.json)：历史 beta0.1 中 315 个

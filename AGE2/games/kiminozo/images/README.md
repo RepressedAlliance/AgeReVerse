@@ -1,6 +1,6 @@
 # 君望 UI 图片与字体
 
-[返回项目入口](../README.md) · [通用字体政策](../../../../localization-make-games-speak/fonts-that-fit-the-game/README.md)
+[返回项目入口](../README.md) · [通用字体政策](../../../../Localization-Make-Games-Speak/Fonts-That-Fit-The-Game/README.md)
 
 此处维护君望 UI、图片文案、资源对应及最终采用的字体配置。图片汉化正在制作与复核，
 当前还没有可供构建的公开资源清单，也未发布字体或图片二进制。

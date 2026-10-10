@@ -1,11 +1,11 @@
 # 光子之花术语与基线
 
-[返回本作](../README.md) · [术语维护规则](../../../../localization-make-games-speak/text-ai-translation-worth-reading/04-terminology.md)
+[返回本作](../README.md) · [术语维护规则](../../../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/04-terminology.md)
 
-- [本作术语表](../../../../localization-make-games-speak/glossaries-keep-it-consistent/photonflowers.ja-zh-Hans.csv)：313条，查当前采用译法及`context`使用限制。
+- [本作术语表](../../../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/photonflowers.ja-zh-Hans.csv)：313条，查当前采用译法及`context`使用限制。
 - [主基线](baseline.ja-zh-Hans.csv)：566条，447种日文写法，查现行译法、语境、候选和待核问题。
 - [原始来源](history/evidence-20261009.csv)：1576条，保留原状态、译法和出现次数，供追溯。
-- [系列通用表](../../../../localization-make-games-speak/glossaries-keep-it-consistent/muv-luv.ja-zh-Hans.csv)：与本作表共同使用，不加载其他作品专表。
+- [系列通用表](../../../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/muv-luv.ja-zh-Hans.csv)：与本作表共同使用，不加载其他作品专表。
 
 数量按2026-10-09当前CSV统计。主表条目与来源记录分开计数，都不代表全文人工审核进度。
 
@@ -13,7 +13,7 @@
 
 先在本作术语表查采用译法，再按`context`确认人物、篇章、呼号或说话人范围。主基线用`kind`区分现行术语、参考、候选和问题；其他译法不能仅因日文相同就覆盖现行译文。同一日文可以随语境采用不同译法；表内没有做全局替换的授权。
 
-主表与来源表的字段、状态、编号和出现次数口径见[字段说明](../../../../localization-make-games-speak/text-ai-translation-worth-reading/04-terminology.md#公开基线字段与状态)。主表的`evidence_rows`指向本目录来源CSV；来源表的`source_row`回指更早输入文件的原记录编号，二者不能混用，都不是游戏台词编号。
+主表与来源表的字段、状态、编号和出现次数口径见[字段说明](../../../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/04-terminology.md#公开基线字段与状态)。主表的`evidence_rows`指向本目录来源CSV；来源表的`source_row`回指更早输入文件的原记录编号，二者不能混用，都不是游戏台词编号。
 
 ## 原始来源与覆盖范围
 
@@ -45,8 +45,8 @@
 [整理明细](review-20261009.md)列出数量变化和资料限制。默认查主表；`--term`同时返回当前术语与关联来源，程序不必解析说明文字：
 
 ```powershell
-python localization-make-games-speak/tools-let-tools-handle-repetition/terminology.py photonflowers --baseline
-python localization-make-games-speak/tools-let-tools-handle-repetition/terminology.py photonflowers --baseline --term YOKOHAMAスカイウォーカー
-python localization-make-games-speak/tools-let-tools-handle-repetition/terminology.py photonflowers --baseline --history
-python localization-make-games-speak/tools-let-tools-handle-repetition/terminology.py photonflowers --check-baseline
+python Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/terminology.py photonflowers --baseline
+python Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/terminology.py photonflowers --baseline --term YOKOHAMAスカイウォーカー
+python Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/terminology.py photonflowers --baseline --history
+python Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/terminology.py photonflowers --check-baseline
 ```

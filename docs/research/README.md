@@ -1,6 +1,6 @@
 # 逆向研究与攻克记录
 
-[返回首页](../../README.md) · [English](../en/research-index.md) · **[资产地图](asset-map.md)** · [多语言工作流](../../localization-make-games-speak/text-ai-translation-worth-reading/workflow.md) · [参考项目](references.md) · [贡献者与致谢](../project/CONTRIBUTORS.md) · [仓库边界](repository-architecture.md)
+[返回首页](../../README.md) · [English](../en/research-index.md) · **[资产地图](asset-map.md)** · [多语言工作流](../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/workflow.md) · [参考项目](references.md) · [贡献者与致谢](../project/CONTRIBUTORS.md) · [仓库边界](repository-architecture.md)
 
 这里不是“最后成功代码”的目录列表，而是结论—证据—限制的索引。每篇复盘尽量保留：最初现象、错误假设、实验方法、根因、最终方案、回归测试，以及仍不能证明的部分。
 
@@ -8,9 +8,9 @@
 
 | 目标 | 入口 |
 | --- | --- |
-| 学习文本翻译、图片汉化、字体、一致性和多人校对方法 | **[游戏本地化｜让游戏说你的语言](../../localization-make-games-speak/README.md)** |
+| 学习文本翻译、图片汉化、字体、一致性和多人校对方法 | **[游戏本地化｜让游戏说你的语言](../../Localization-Make-Games-Speak/README.md)** |
 | 查找公开的中文文本、术语、图片身份和字体资料 | [文本、术语、图片与字体资产地图](asset-map.md) |
-| 为韩语、俄语等建立新语言 | [完整工作流](../../localization-make-games-speak/text-ai-translation-worth-reading/workflow.md) · [新语言指南](../../localization-make-games-speak/text-ai-translation-worth-reading/new-locale.md) |
+| 为韩语、俄语等建立新语言 | [完整工作流](../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/workflow.md) · [新语言指南](../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/new-locale.md) |
 | 研究 TDA／帝都的 `pack.bin`、EGPACK、WebP 与松散覆盖 | [AGE2](../../AGE2/README.md) |
 | 查看君望本篇及附加篇的文本审核、术语和 UI 图片制作 | [君望项目入口（制作中）](../../AGE2/games/kiminozo/README.md) |
 | 研究 Photon 的 ICI、RIO、CRsa、RUO、Cr6Ti、CRip 与 Hook | [rUGP](../../rUGP/README.md) |
@@ -67,7 +67,7 @@ ICI 目录元数据
 | EGPACK 文本槽 | 支持的 TDA 布局可导出字段、按稳定身份生成变更并验证只有授权字节变化 | [EGPACK 工具](../../AGE2/tools/egpack/) |
 | [松散覆盖边界](../../AGE2/docs/postmortems/loose-overlay-boundary.md) | 补丁保持 `root/...` 相对路径写入 LocalAppData，游戏优先于 `pack.bin` 读取；Steam 验证不会清理这一层 | [AGE2 工作流](../../AGE2/docs/workflow.md) |
 | [结构性空槽](../../AGE2/docs/postmortems/structural-empty-records.md) | 一部分空记录是引擎结构，不是漏译；必须以源身份和字段类型判断，不能按“空白数量”盲补 | 文本导出器与审计表 |
-| [失败的字形替换](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md) | 用近似字或字形偷换掩盖缺字会破坏文本权威，现已改为真实字体覆盖门 | [字体检查](../../localization-make-games-speak/tools-let-tools-handle-repetition/font_coverage.py) |
+| [失败的字形替换](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md) | 用近似字或字形偷换掩盖缺字会破坏文本权威，现已改为真实字体覆盖门 | [字体检查](../../Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/font_coverage.py) |
 | [公开快照与发布包对齐](../../AGE2/docs/postmortems/public-snapshot-release-alignment.md) | 可维护表、旧分支和历史 ZIP 不是天然同一权威，必须逐作以哈希和载荷审计对齐 | [对齐审计](../../AGE2/evidence/translations/snapshots/authority-alignment-audit.md) |
 | [TDA03 UI/成就映射](../../AGE2/docs/postmortems/tda03-achievement-uistring.md) | 早期包误用 TDA02 映射；逐作身份验证与实机成就检查必须成为发布门 | 专项复盘与测试 |
 
@@ -87,7 +87,7 @@ ICI 目录元数据
 python -m pip install -r requirements-dev.txt
 python -m unittest discover -s AGE2/tests -p "test_*.py" -v
 python -m unittest discover -s rUGP/tests -p "test_*.py" -v
-python -m unittest discover -s localization-make-games-speak/tests-catch-problems-before-players -p "test_*.py" -v
+python -m unittest discover -s Localization-Make-Games-Speak/Tests-Catch-Problems-Before-Players -p "test_*.py" -v
 python -m unittest discover -s .github/scripts/tests -p "test_*.py" -v
 python -m compileall -q AGE2 rUGP localization .github/scripts
 python .github/scripts/verify_repository.py

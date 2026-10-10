@@ -12,11 +12,11 @@ class QualityScopeTests(unittest.TestCase):
         paths = ['AGE2/games/imperial-capital-burns/translations/main.ja-zh-Hans.csv',
                  'rUGP/games/photonmelodies/translations/章节.csv',
                  'AGE2/evidence/translations/snapshots/imperial-capital-burns.json',
-                 'localization-make-games-speak/paratranz-keep-improving-together/imperial-capital-burns/baseline.json']
+                 'Localization-Make-Games-Speak/ParaTranz-Keep-Improving-Together/imperial-capital-burns/baseline.json']
         self.assertEqual({'windows': False, 'runtime': False}, scope.classify(paths))
 
     def test_localization_code_requires_windows(self):
-        self.assertEqual({'windows': True, 'runtime': False}, scope.classify(['localization-make-games-speak/tools-let-tools-handle-repetition/sync_icb_paratranz.py']))
+        self.assertEqual({'windows': True, 'runtime': False}, scope.classify(['Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/sync_icb_paratranz.py']))
 
     def test_runtime_and_unknown_paths_require_full_checks(self):
         for path in ['rUGP/runtime/include/photon_speaker_aliases.h',
@@ -26,7 +26,7 @@ class QualityScopeTests(unittest.TestCase):
                 self.assertEqual({'windows': True, 'runtime': True}, scope.classify([path]))
 
     def test_code_disguised_under_data_path_is_not_exempt(self):
-        self.assertTrue(scope.classify(['localization-make-games-speak/paratranz-keep-improving-together/helper.py'])['windows'])
+        self.assertTrue(scope.classify(['Localization-Make-Games-Speak/ParaTranz-Keep-Improving-Together/helper.py'])['windows'])
 
     def test_mixed_and_deleted_runtime_files_keep_full_checks(self):
         self.assertTrue(scope.classify(['docs/example.md', 'rUGP/runtime/removed.c'])['runtime'])
