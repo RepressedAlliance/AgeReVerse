@@ -29,7 +29,8 @@
       "HTML preview files and embedded images",
       "text files over 12 MB"
     ],
-    "release_scope": "This image audit does not re-certify every released bitmap; runtime release verification remains dated 2026-10-05 in catalog.json."
+    "release_scope": "AGE2 current public package images are now checked individually in age2-released-image-fonts.json; Photon release tracing is still in progress. Historical and local-only groups below retain their separate states.",
+    "age2_released_image_registry": "age2-released-image-fonts.json"
   },
   "evidence_sources": {
     "e01": {
@@ -326,7 +327,7 @@
         "image:noto-sans-sc-vf"
       ],
       "production_state": "production-recorded",
-      "release_adoption": "not-established-by-this-image-font-audit",
+      "release_adoption": "confirmed-in-listed-AGE2-releases; see per-file registry",
       "note": "UI rendering uses Noto Sans SC VF; comparison-sheet text is a separate output.",
       "evidence": [
         "e01"
@@ -349,7 +350,7 @@
         "image:swei-sugar-medium"
       ],
       "production_state": "production-recorded",
-      "release_adoption": "not-established-by-this-image-font-audit",
+      "release_adoption": "confirmed-in-listed-AGE2-releases; see per-file registry",
       "note": "Swei Medium is passed to card renderer; date-only original art may be retained without new font rendering.",
       "evidence": [
         "e02"
@@ -373,7 +374,7 @@
         "image:noto-sans-sc-500"
       ],
       "production_state": "production-recorded",
-      "release_adoption": "not-established-by-this-image-font-audit",
+      "release_adoption": "confirmed-in-listed-AGE2-releases; see per-file registry",
       "note": "Static 500 input, separately from runtime font selection.",
       "evidence": [
         "e03",
@@ -417,7 +418,7 @@
         "image:source-han-serif-heavy"
       ],
       "production_state": "production-recorded",
-      "release_adoption": "not-established-by-this-image-font-audit",
+      "release_adoption": "confirmed-in-listed-AGE2-releases; see per-file registry",
       "note": "Bold at 80px in TDA02; Heavy for smaller unit/port/altitude text. Two weights within this material group.",
       "evidence": [
         "e07"
@@ -790,10 +791,6 @@
   ],
   "gaps": [
     {
-      "id": "release-binding",
-      "detail": "Some local candidates are explicitly not installed, partial, superseded or waiting for human acceptance. No blanket claim that production fonts occur in current player releases."
-    },
-    {
       "id": "historical-windows-bytes",
       "detail": "For Windows references without a historical font hash, current inspected file/version is an audit reference only; historical byte identity and collection face index remain unverified."
     },
@@ -804,6 +801,10 @@
     {
       "id": "subtitle-provenance",
       "detail": "The historical baked-subtitle PhotonR2 identity is retained from the previous catalog. This audit does not reconstruct every subtitle rendering command."
+    },
+    {
+      "id": "photon-release-binding",
+      "detail": "Photon current player-package image binding remains in progress. Local candidate state is not used as a substitute for checking released files."
     }
   ]
 }
