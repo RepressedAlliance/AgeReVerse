@@ -11,25 +11,13 @@
     "photonmelodies"
   ],
   "coverage": {
-    "record_files_examined": 35034,
-    "batches": {
-      "legacy-tools": 933,
-      "legacy-local-tools": 5,
-      "legacy-photon-images": 20287,
-      "legacy-photon-staging": 659,
-      "photon-reinventory": 8234,
-      "age2-production": 2451,
-      "age2-omissions": 2239,
-      "photon-omissions": 226
-    },
-    "method": "Filename references across retained authoring scripts, recipes, state and review records; then material-specific cross-checks and font metadata inspection. Comparison sheets, runtime packages, source fonts and original retained art are separated. Counts include historical duplicates; they are not image counts.",
+    "record_files_examined": 1016675,
+    "method": "Independent inventory of all retained project/worktree, historical authoring, supplied-layer and installed-overlay roots identified from project records and session metadata. Font references and rendering APIs are searched in text formats without a size cutoff; authoring outputs, source scripts, recipes and conversations are then checked per material. File counts include originals, duplicate histories and tool records and are not localized-image counts.",
     "excluded_from_font_discovery": [
-      "game binaries and raw original image pixels",
-      "dependency trees",
-      "HTML preview files and embedded images",
-      "text files over 12 MB"
+      "dependency and version-control internals; retained project, original-asset and historical-output directories are not excluded",
+      "raw image pixels are inventoried but never used to guess a font identity"
     ],
-    "release_scope": "All standalone WebP/AVIF files in five current AGE2 public manifests (859) and all PNG files in the PF/PM BETA 0.1.2 embedded manifests (2861), with duplicate Photon bytes sharing image records. Untouched base-game resources and unenumerated native resource records are outside this file-level scope. Historical and local-only groups retain their separate states.",
+    "release_scope": "All standalone WebP/AVIF files in five current AGE2 public manifests (859) and all PNG files in the PF/PM BETA 0.1.2 embedded manifests (2861). AGE2 EPK files in these packages are string resources, EGPACK files are text tables and GUT files are resource declarations; no additional image container was found in this checked set. Original base-game artwork not carried by the patches is not counted as newly typeset work. Historical and local-only materials are investigated separately.",
     "age2_released_image_registry": "age2-released-image-fonts.json",
     "photon_released_image_registry": "photon-released-image-fonts.json",
     "released_image_files": 3720,
@@ -39,8 +27,23 @@
     "historical_audit": {
       "status": "in-progress",
       "register": "historical-image-fonts.json",
-      "note": "Full seven-game history is being independently inventoried. Current-release and selected-October registers are completed subsets, not the full requested scope."
-    }
+      "note": "The independent retained-file and session inventories are complete for the discovered scope. Material/recipe classification and remaining historical bindings are still being reconciled; inventory completion alone is not completion of font attribution."
+    },
+    "earlier_discovery_subset": {
+      "record_files_examined": 35034,
+      "batches": {
+        "legacy-tools": 933,
+        "legacy-local-tools": 5,
+        "legacy-photon-images": 20287,
+        "legacy-photon-staging": 659,
+        "photon-reinventory": 8234,
+        "age2-production": 2451,
+        "age2-omissions": 2239,
+        "photon-omissions": 226
+      }
+    },
+    "retained_roots_examined": 108,
+    "session_files_examined": 610
   },
   "evidence_sources": {
     "e01": {
@@ -980,9 +983,48 @@
       ],
       "scope": "PF G2685 historical first-character credit correction",
       "font_ids": [
-        "image:simhei-credit-historical"
+        "image:simhei-historical"
       ],
       "state": "historical-local-candidate; not-current-release",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "early-history-yahei-bold",
+      "games": [
+        "photonmelodies"
+      ],
+      "scope": "PM July right-click: 54 initial rendered button candidates",
+      "font_ids": [
+        "image:yahei-bold"
+      ],
+      "state": "historical",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "early-history-yahei-regular",
+      "games": [
+        "photonmelodies"
+      ],
+      "scope": "PM July right-click: four 54-state rendering revisions, each with paired dry-run/write reports",
+      "font_ids": [
+        "image:yahei-regular"
+      ],
+      "state": "historical",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "early-history-source-han-sans-bold",
+      "games": [
+        "tda00"
+      ],
+      "scope": "TDA00 early seven name labels and nine OP captions; successive revisions share font and overwrite output paths",
+      "font_ids": [
+        "image:source-han-sans-bold"
+      ],
+      "state": "historical",
       "detail_registry": "historical-image-fonts.json",
       "evidence": []
     }

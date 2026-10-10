@@ -774,16 +774,21 @@
       "version": [
         "Version 5.05"
       ],
+      "copyright": [
+        "© Beijing ZhongYi Electronics Co., 1995-2005, All rights reserved",
+        "字体数据由北京中易中标电子信息技术有限公司提供。"
+      ],
+      "authors": "Beijing ZhongYi Electronics Co.; supplied with licensed Microsoft products",
       "games": [
         "photonflowers",
         "photonmelodies"
       ],
-      "usage": "historical-candidate-not-final-confirmation",
       "license": "Windows font licensing; not OFL",
-      "copyright": [
-        "© Beijing ZhongYi Electronics Co., 1995-2005, All rights reserved",
-        "字体数据由北京中易中标电子信息技术有限公司提供。"
-      ]
+      "upstream_url": "https://learn.microsoft.com/en-us/typography/font-list/simhei",
+      "license_url": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+      "usage": "PF G2685: the single 制 character in a historical 制作／著作 credit repair. Other original glyphs and the âge mark were preserved. Exact candidate absent from the current PF/PM release registers. Also appears in historical comparison/selection records; those labels do not establish additional game-image use.",
+      "state": "rendered-historical-local-candidate; not-current-release",
+      "identity_basis": "Retained authoring manifest records the exact font and candidate hashes. Replaying the first-character cell with that font reproduces the entire retained RGBA candidate exactly."
     },
     "image:noto-sans-sc-500": {
       "runtime_catalog_id": "age2:NotoSansSC-500.ttf",
@@ -1733,32 +1738,6 @@
       ],
       "historical_collection_index": 0,
       "state": "rendered-superseded-draft; historical-binary-hash-not-retained"
-    },
-    "image:simhei-credit-historical": {
-      "file": "simhei.ttf",
-      "sha256": "9b1959db3b3abeb7efdaec26edf7dfe871a6039de8d614af7248575207be629e",
-      "bytes": 9745792,
-      "family": [
-        "SimHei",
-        "黑体"
-      ],
-      "version": [
-        "Version 5.05"
-      ],
-      "copyright": [
-        "© Beijing ZhongYi Electronics Co., 1995-2005, All rights reserved",
-        "字体数据由北京中易中标电子信息技术有限公司提供。"
-      ],
-      "authors": "Beijing ZhongYi Electronics Co.; supplied with licensed Microsoft products",
-      "games": [
-        "photonflowers"
-      ],
-      "license": "Windows font licensing; not OFL",
-      "upstream_url": "https://learn.microsoft.com/en-us/typography/font-list/simhei",
-      "license_url": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
-      "usage": "PF G2685: the single 制 character in a historical 制作／著作 credit repair. Other original glyphs and the âge mark were preserved. Exact candidate absent from the current PF/PM release registers.",
-      "state": "rendered-historical-local-candidate; not-current-release",
-      "identity_basis": "Retained authoring manifest records the exact font and candidate hashes. Replaying the first-character cell with that font reproduces the entire retained RGBA candidate exactly."
     }
   },
   "limitations": [
