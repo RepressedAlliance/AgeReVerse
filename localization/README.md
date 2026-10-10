@@ -6,7 +6,7 @@
 
 **先读[翻译最高原则](principles.md)：目标是日译中；日文原版已有英文保留英文，日文只有确实更适合时才译成英文。官方英文版独有素材找对应日语语音听译成中文。正文翻译和图片制作一体适用。**
 
-完整汉化包括有依据的原文保留：无官方中文译名的曲目、真实人员署名及已确认保留的原画／日期标记等按最高原则处理，不能仅因仍有日文就判漏译。
+**大部分日文需要翻译，但不是所有日文都要替换。** 根据内容用途、玩家理解和原作表现区分应译与保留范围；同一段文字或图片也可以部分翻译、部分保留。曲名、署名、原画与日期标记等是帮助理解的例子，新的内容同样按这一原则判断，不能仅因仍有日文就判漏译。
 
 | 工作 | 入口 | 这里维护什么 |
 | --- | --- | --- |
@@ -39,6 +39,8 @@
 Start with [text localization](text/workflow.en.md), [image localization](images/README.md#english-workflow), [font inventory](fonts/README.md), [glossaries](glossaries/README.md), or [ParaTranz collaboration](paratranz/README.md). Engine-neutral authoring stays here; extraction, encoding, runtime binding and packaging stay in AGE2 or rUGP. Historical evidence is under [research](../docs/research/localization/README.md).
 
 Both text and image lettering follow the shared [translation principles](principles.md#english-summary): Japanese to Chinese, retaining English present in the Japanese original. English-edition-only assets are translated from their corresponding Japanese voice, not from the English edition's wording.
+
+Most Japanese text needs translation, but retention depends on function, player understanding and the original presentation. Assess each relevant part; familiar examples are not an exhaustive list of what may remain unchanged.
 
 The maintainer reviews and corrects the release candidate **before publication**. ParaTranz revisions are reviewed, integrated and verified for a later release; an online edit does not update an installed patch.
 

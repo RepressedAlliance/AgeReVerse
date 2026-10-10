@@ -21,7 +21,7 @@ both the first pass and independent review check the Japanese audio. Do not
 invent a Japanese source by back-translating English or approve an English-based
 fallback when the necessary Japanese evidence is missing.
 
-Identify intentional retention before the first pass: original song titles without a verified official Chinese name, real staff/actor/company credits, and specifically approved artwork and date/calendar notation, including Japanese weekday symbols. Translate role labels, gallery captions and story/operation text separately. Pass on the retention scope, reason and maintainer confirmation for independent review; completing localization does not mean removing every Japanese character.
+Before the first pass, distinguish translation from intentional retention by function, player understanding and the original presentation. Most Japanese text needs translation. Wording used primarily for identification or presentation may remain when this preserves its role without obstructing necessary understanding; wording already suitable in Chinese may also remain. Assess different parts of a line or image separately. Song titles, credits and date notation are examples, not an exhaustive list; apply the shared principles to new material too. Pass on the retention scope, reason and confirmation for independent review. Completing localization does not mean removing every Japanese character.
 
 ```text
 lawful extraction and stable source identity
