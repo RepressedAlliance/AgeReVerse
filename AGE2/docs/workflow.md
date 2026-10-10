@@ -13,7 +13,7 @@ python -m pip install -r requirements-dev.txt
 First freeze the executable and `obb/pack.bin` identities. When you have the
 matching clear-name Steam depot manifest, use the engine-neutral
 [`verify_steam_depot_manifest.py`](../../docs/research/localization/tools/verify_steam_depot_manifest.py)
-content check described in the [new-locale guide](../../localization/text/new-locale.md#3-freeze-the-legal-source-baseline).
+content check described in the [new-locale guide](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md#3-freeze-the-legal-source-baseline).
 
 Obtain `Scrambler.cs` from the immutable FatePackageManager revision recorded in [`THIRD_PARTY.md`](../../docs/legal/THIRD_PARTY.md), verify its recorded SHA-256, and use your legally installed game:
 
@@ -70,7 +70,7 @@ Before shipping a font, verify its target-language cmap and then perform
 layout/in-game checks:
 
 ```powershell
-python -m localization.tools.font_coverage "X:\fonts\TargetFont.ttf" `
+python -m Localization-MakeGamesSpeak.Tools-LetToolsHandleRepetition.font_coverage "X:\fonts\TargetFont.ttf" `
   AGE2/games/tda00/translations/ja-zh-Hans.csv --column cn_text `
   --output "X:\work\font-coverage.json"
 ```

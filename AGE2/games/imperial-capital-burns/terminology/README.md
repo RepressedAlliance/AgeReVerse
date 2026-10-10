@@ -1,11 +1,11 @@
 # 帝都燃烧篇术语与基线
 
-[返回本作](../README.md) · [术语维护规则](../../../../localization/text/04-terminology.md)
+[返回本作](../README.md) · [术语维护规则](../../../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/04-terminology.md)
 
-- [本作术语表](../../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv)：306条，查当前采用译法和使用限制。
+- [本作术语表](../../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/imperial-capital-burns.ja-zh-Hans.csv)：306条，查当前采用译法和使用限制。
 - [主基线](baseline.ja-zh-Hans.csv)：405条，401种日文写法，包含全部本作术语及其他语境／历史译法。
 - [来源记录](history/evidence-20261009.csv)：491条，用于追溯，不与主表重复计数。
-- [系列通用表](../../../../localization/glossaries/muv-luv.ja-zh-Hans.csv)：与本作表共同使用，不加载其他作品专表。
+- [系列通用表](../../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv)：与本作表共同使用，不加载其他作品专表。
 
 数量按2026-10-09当前CSV统计，不代表全文译文的人工审核进度。
 
@@ -15,7 +15,7 @@
 
 主表六列为`jp,cn,kind,chapter,basis,evidence_rows`。当前有306条`term`、96条`context`和3条`reference`。`reference`保留“兵士级”“战时特别法”“战术机”等旧来源译法，不覆盖现行采用。“乳歯”是对候补生的戏称，“九段に向かった”是维护者审定的整句处理，均留在语境基线；“悪酔い”有明确的强化装备设定含义，继续作为术语。
 
-字段和状态见[共用说明](../../../../localization/text/04-terminology.md#公开基线字段与状态)。`evidence_rows`指向本目录来源CSV的记录编号，含表头从1计；`source_row`指向原输入记录，两者不能混用。
+字段和状态见[共用说明](../../../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/04-terminology.md#公开基线字段与状态)。`evidence_rows`指向本目录来源CSV的记录编号，含表头从1计；`source_row`指向原输入记录，两者不能混用。
 
 ## 来源与覆盖范围
 
@@ -38,8 +38,8 @@
 [整理明细](review-20261009.md)列出分类及补录的具体变化。程序按本作`project.toml`读取，查询示例：
 
 ```powershell
-python localization/tools/terminology.py imperial-capital-burns --baseline
-python localization/tools/terminology.py imperial-capital-burns --baseline --term 悪酔い
-python localization/tools/terminology.py imperial-capital-burns --baseline --history
-python localization/tools/terminology.py imperial-capital-burns --check-baseline
+python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py imperial-capital-burns --baseline
+python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py imperial-capital-burns --baseline --term 悪酔い
+python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py imperial-capital-burns --baseline --history
+python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py imperial-capital-burns --check-baseline
 ```

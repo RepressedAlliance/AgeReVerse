@@ -3,6 +3,8 @@
 [返回玩家首页](../README.md) · [公开的制作与研究成果](../docs/research/README.md) ·
 [完整贡献指南](../docs/project/CONTRIBUTING.md)
 
+想学习或复用我们的制作方法，从 **[游戏本地化｜让游戏说你的语言](../Localization-MakeGamesSpeak/README.md)** 开始；文本、图片、字体、全文一致性、多人校对、工具与测试各有入口，可在原页展开英文说明。
+
 ## 项目维护与协助
 
 - **[RepressedAlliance](https://github.com/RepressedAlliance) / 压抑同盟：**项目发起、翻译与术语

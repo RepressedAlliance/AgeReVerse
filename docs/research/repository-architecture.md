@@ -12,7 +12,7 @@
 ```text
 README.md                 中文玩家首页，研究者内容在独立部分
 docs/                     玩家、研究、项目维护、法律与英文入口
-localization/             跨引擎的人类本地化方法和通用工具
+Localization-MakeGamesSpeak/  跨引擎的本地化方法、工具和测试
 AGE2/                     TDA / 帝都技术与游戏资产；君望在制项目
 rUGP/                     Photon 的完整独立技术与游戏资产树
 ```
@@ -20,24 +20,27 @@ rUGP/                     Photon 的完整独立技术与游戏资产树
 ## 本地化制作目录
 
 ```text
-localization/
-  text/                   已有文本工作流与 01—07 规范
-  images/                 全量提取至人工审核、引擎交付的分步流程
-  fonts/                  游戏文本与图片字体的对应、来源和版本
-  glossaries/             通用＋本作的现行术语
-  paratranz/              项目入口、参与方式和必要同步状态
-  tools/  tests/          当前制作所需的共用工具和对应检查
+Localization-MakeGamesSpeak/
+  Text-AITranslationWorthReading/    让 AI 翻译值得读下去；文本工作流与 01—07 规范
+  Images-MakeItLookNative/           让中文长在原画里；五阶段制作与审核
+  Fonts-ThatFitTheGame/              别让字体出卖补丁；字体、来源和实际用途
+  Glossaries-KeepItConsistent/        十万字也不乱套；基线、术语与全文一致性
+  ParaTranz-KeepImprovingTogether/    一起磨好译文；发布后多人校对与同步
+  Tools-LetToolsHandleRepetition/    把时间留给翻译；按任务使用的共用工具
+  Tests-CatchProblemsBeforePlayers/  先替玩家发现问题；工具的对应回归检查
 docs/research/localization/
                           保留的旧词库、审核记录与研究工具
 ```
 
-字体直接集中于 `fonts/`，不增加 `common/`。各作源表与资源绑定仍留在对应引擎的游戏目录；图片步骤不重复实现引擎提取器。工具按实际使用需求复用，不把所有步骤都做成自动化脚本。
+目录名同时标明主题与读者能解决的问题。字体直接集中于 `Fonts-ThatFitTheGame/`；各作源表与资源绑定仍留在对应引擎的游戏目录。术语入口讲解基线到全文一致性的方法，具体语境基线留在各作品的 `terminology/` 中。图片步骤不重复实现引擎提取器；工具按实际使用需求复用。
+
+从仓库根目录运行工具时使用文档中的 `python -m` 命令。含连字符的目录由 Python 的 `importlib.import_module` 加载，包内使用相对导入；公开命令的 `--help` 与对应测试持续检查这些入口。历史研究目录 `docs/research/localization/` 保留原位置。
 
 结构参考了 [Tsukihime Translation](https://github.com/Tsukihimates/Tsukihime-Translation) 对脚本、图片及工具的区分、[VNTranslationTools](https://github.com/arcusmaximus/VNTranslationTools) 的提取／插入接口，以及 [07th-Mod](https://wiki.07th-mod.com/developer/overview/patch-folder-structure/) 对补丁目录和部署资源的组织。这里借鉴的是职责分开维护；具体阶段、样式和人工审核要求以本项目实际制作过程为依据。
 
 `AGE2/` 与 `rUGP/` 分别拥有自己的 `games/`、工具、测试、证据和事故记录，互不 import。
 只有术语、翻译/审核方法、语言命名、图片制作与字体覆盖等真正不依赖引擎的内容进入
-`localization/`。
+`Localization-MakeGamesSpeak/`。
 
 ## 游戏专属内容为什么跟随引擎
 
@@ -49,7 +52,7 @@ docs/research/localization/
 - Cr6Ti、CRip007、CRip008 或其他编码模板；
 - 某个 App ID、EXE/DLL 哈希或游戏版本门。
 
-这些内容必须放进对应游戏目录。`localization/` 可以定义表结构、两轮审核和图片 QA，
+这些内容必须放进对应游戏目录。`Localization-MakeGamesSpeak/` 可以定义表结构、两轮审核和图片 QA，
 但不能成为混杂各部游戏原始资源和 writer 输入的总仓库。逐项位置见[资产地图](asset-map.md)。
 
 ## Git、Release 与本地工作区
@@ -97,7 +100,7 @@ AGE2 当前不需要运行时 Hook；rUGP 也不能继承 AGE2 的松散覆盖�
 
 ## English summary
 
-The root README is only an audience router. `localization/` owns genuinely
+The root README puts Chinese player downloads first and exposes the reusable localization guide separately. `Localization-MakeGamesSpeak/` owns
 engine-neutral human workflow and QA; `AGE2/` and `rUGP/` independently own
 their game-bound text, image identities, formats, tools, tests, and incident
 records. Git stores maintainable source and evidence, this repository's Releases

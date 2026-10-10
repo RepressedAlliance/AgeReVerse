@@ -1,6 +1,8 @@
 # Reverse-engineering and reproducibility index
 
-[English overview](README.md) · **[Asset map](asset-map.md)** · [English localization workflow](../../localization/text/workflow.en.md) · [AGE2](../../AGE2/README.md) · [AGE2 postmortems](../../AGE2/docs/postmortems/README.md) · [rUGP](../../rUGP/README.md) · [rUGP postmortems](../../rUGP/docs/postmortems/README.md) · [Prior work](../research/references.md)
+[English overview](README.md) · **[Asset map](asset-map.md)** · [English localization workflow](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.en.md) · [AGE2](../../AGE2/README.md) · [AGE2 postmortems](../../AGE2/docs/postmortems/README.md) · [rUGP](../../rUGP/README.md) · [rUGP postmortems](../../rUGP/docs/postmortems/README.md) · [Prior work](../research/references.md)
+
+For a practical guide to translation, images, fonts, consistency, collaboration and reusable tools, start with **[Game Localization — Make Games Speak Your Language](../../Localization-MakeGamesSpeak/README.md)**. Its English overview and section explanations expand in place.
 
 This index separates three different claims:
 
@@ -97,7 +99,7 @@ From a clean checkout with Python 3.12:
 python -m pip install -r requirements-dev.txt
 python -m unittest discover -s AGE2/tests -p "test_*.py" -v
 python -m unittest discover -s rUGP/tests -p "test_*.py" -v
-python -m unittest discover -s localization/tests -p "test_*.py" -v
+python -m unittest discover -s Localization-MakeGamesSpeak/Tests-CatchProblemsBeforePlayers -p "test_*.py" -v
 python -m unittest discover -s .github/scripts/tests -p "test_*.py" -v
 python -m compileall -q AGE2 rUGP localization .github/scripts
 python .github/scripts/verify_repository.py

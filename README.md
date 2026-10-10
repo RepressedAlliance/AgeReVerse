@@ -9,6 +9,7 @@
   <a href="#部分作品实机预览">汉化效果</a> ·
   <a href="#其他作者的汉化入口">ATE 汉化（其他作者）</a> ·
   <a href="docs/player/README.md">安装、卸载与排错</a> ·
+  <a href="Localization-MakeGamesSpeak/README.md">学做汉化 / Localization</a> ·
   <a href="#research">制作与研究 / Research · English</a> ·
   <a href="#问题反馈">问题反馈</a>
 </p>
@@ -61,6 +62,8 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
 | 光子之花 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
 | 光子旋律 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
 | 君望（含 Another Episode Collection+） | **制作中，尚未发布** | [项目介绍与进度](AGE2/games/kiminozo/README.md) |
+
+> **也想让喜欢的游戏说你的语言？** [游戏本地化｜让游戏说你的语言 · Make Games Speak Your Language](Localization-MakeGamesSpeak/README.md)：公开 AI 辅助文本翻译、图片汉化、字体排版、全文一致性和多人校对的方法，各入口可原地展开英文说明。
 
 <a id="部分作品实机预览"></a>
 
@@ -249,8 +252,8 @@ TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含
 
 已确认的审核与纠错会纳入对应发布包；具体变化见各作当前发布说明。
 
-详细步骤见 **[按顺序阅读的翻译规范](localization/text/README.md)** 和
-[完整工作流](localization/text/workflow.md)。这些是制作流程，不代表每个历史测试包都已完成
+详细步骤见 **[按顺序阅读的翻译规范](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/README.md)** 和
+[完整工作流](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md)。这些是制作流程，不代表每个历史测试包都已完成
 全文人工校对或全路线验证，译文仍可能存在错误。
 
 TDA 的部分文本已经过人工校对。已发布版本包含上述审核与修正；此后新增的校对和修改
@@ -290,7 +293,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 | 内容 | 入口 |
 | --- | --- |
 | 全部公开成果与研究索引 | **[制作与研究入口](docs/research/README.md)** |
-| 翻译规则、术语、图片和字体流程 | [通用本地化工作区](localization/README.md) |
+| 学习并复用文本、图片、字体、一致性和多人校对方法 | **[游戏本地化｜让游戏说你的语言](Localization-MakeGamesSpeak/README.md)** |
 | TDA／帝都的 AGE2、FPD、EGPACK 与松散覆盖 | [AGE2 工作区](AGE2/README.md) |
 | 君望本篇与附加篇的文本、术语和 UI 图片制作 | [君望项目（制作中）](AGE2/games/kiminozo/README.md) |
 | Photon 的 RIO、RUO、CRsa、图片和运行时 | [rUGP 工作区](rUGP/README.md) |
@@ -307,15 +310,16 @@ The Chinese player downloads are listed in the first part of this README.
 
 | Topic | English-friendly starting point |
 | --- | --- |
+| Learn and adapt the localization method | **[Game Localization — Make Games Speak Your Language](Localization-MakeGamesSpeak/README.md)** |
 | Public results and current limitations | [Research index](docs/en/research-index.md) |
 | Text, image, font and tool locations | [Asset map](docs/en/asset-map.md) |
-| Translation and independent review | [Complete English workflow](localization/text/workflow.en.md) |
-| Korean, Russian or another target language | [Starting a new language](localization/text/new-locale.md) |
-| Ordered standards | [Standards and reading order](localization/text/README.md) |
+| Translation and independent review | [Complete English workflow](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.en.md) |
+| Korean, Russian or another target language | [Starting a new language](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md) |
+| Ordered standards | [Standards and reading order](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/README.md) |
 | TDA / Imperial: FPD, EGPACK and loose overlays | [AGE2 workspace](AGE2/README.md) |
 | Kiminozo and Another Episode Collection+: work in progress | [Project scope and structure](AGE2/games/kiminozo/README.md) |
 | Photon: ICI, RIO, RUO and runtime tooling | [rUGP workspace](rUGP/README.md) |
-| Proofreading synchronization | [ParaTranz workflow](localization/paratranz/README.md) |
+| Proofreading synchronization | [ParaTranz workflow](Localization-MakeGamesSpeak/ParaTranz-KeepImprovingTogether/README.md) |
 
 AI participates in translation across the project. The workflow establishes Japanese story context
 and terminology before a first translation, then independently reviews each candidate, resolves
