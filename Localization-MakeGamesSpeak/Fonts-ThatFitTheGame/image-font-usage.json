@@ -1,0 +1,1096 @@
+{
+  "schema": "age-reverse-image-font-usage/v1",
+  "checked_on": "2026-10-11",
+  "scope_games": [
+    "tda00",
+    "tda01",
+    "tda02",
+    "tda03",
+    "imperial-capital-burns",
+    "photonflowers",
+    "photonmelodies"
+  ],
+  "coverage": {
+    "record_files_examined": 1016675,
+    "method": "Independent inventory of all retained project/worktree, historical authoring, supplied-layer and installed-overlay roots identified from project records and session metadata. Font references and rendering APIs are searched in text formats without a size cutoff; authoring outputs, source scripts, recipes and conversations are then checked per material. File counts include originals, duplicate histories and tool records and are not localized-image counts.",
+    "excluded_from_font_discovery": [
+      "dependency and version-control internals; retained project, original-asset and historical-output directories are not excluded",
+      "raw image pixels are inventoried but never used to guess a font identity"
+    ],
+    "release_scope": "All standalone WebP/AVIF files in five current AGE2 public manifests (859) and all PNG files in the PF/PM BETA 0.1.2 embedded manifests (2861). AGE2 EPK files in these packages are string resources, EGPACK files are text tables and GUT files are resource declarations; no additional image container was found in this checked set. Original base-game artwork not carried by the patches is not counted as newly typeset work. Historical and local-only materials are investigated separately.",
+    "age2_released_image_registry": "age2-released-image-fonts.json",
+    "photon_released_image_registry": "photon-released-image-fonts.json",
+    "released_image_files": 3720,
+    "photon_unique_image_contents": 1562,
+    "unreleased_image_registry": "unreleased-image-fonts.json",
+    "selected_local_candidate_files": 365,
+    "historical_audit": {
+      "status": "retained-scope-font-attribution-reconciled",
+      "register": "historical-image-fonts.json",
+      "note": "Retained sources, material bindings, historical revisions, supplied layers and generation inputs have been reconciled for the independently inventoried scope. Historical missing bytes and font-loading precision limits remain explicit; no exhaustive claim is made about unavailable records.",
+      "material_variant_register": "historical-image-variants.json",
+      "material_variants_from_authoring_records": 1933,
+      "git_history": {
+        "text_blobs_examined": 21918,
+        "source": "retained reachable Git history across all local refs",
+        "register": "historical-git-image-fonts.json",
+        "recorded_material_outputs": 279
+      },
+      "crmt_register": "historical-crmt-image-fonts.json"
+    },
+    "earlier_discovery_subset": {
+      "record_files_examined": 35034,
+      "batches": {
+        "legacy-tools": 933,
+        "legacy-local-tools": 5,
+        "legacy-photon-images": 20287,
+        "legacy-photon-staging": 659,
+        "photon-reinventory": 8234,
+        "age2-production": 2451,
+        "age2-omissions": 2239,
+        "photon-omissions": 226
+      }
+    },
+    "retained_roots_examined": 108,
+    "session_files_examined": 610,
+    "audit_scope_registry": "audit-scope.json",
+    "registered_font_input_records": 37,
+    "material_font_input_records": 36,
+    "comparison_only_font_inputs": [
+      "image:ms-gothic-trial"
+    ]
+  },
+  "evidence_sources": {
+    "e01": {
+      "batch": "age2-production",
+      "record": "build_refresh_ui.py",
+      "sha256": "cb279a3361f7f4b2300c80dc7f481fb1ec8c6c11447fbcb4af2123cab5682411",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e02": {
+      "batch": "age2-production",
+      "record": "build_review_images.py",
+      "sha256": "9c591cc0e444b02de8361e9e053e344ed48ca8e58a10f68a1b5e74bf980deaed",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e03": {
+      "batch": "age2-production",
+      "record": "build_review_images.py",
+      "sha256": "9c591cc0e444b02de8361e9e053e344ed48ca8e58a10f68a1b5e74bf980deaed",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e04": {
+      "batch": "age2-production",
+      "record": "align_master_label_with_ate.py",
+      "sha256": "54b7b0348b332a96cc08ab37fbb8c91fc96d090b88df76689663d5aadac5e95c",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e05": {
+      "batch": "age2-production",
+      "record": "build_refresh_images.py",
+      "sha256": "1d0391b2df05af6fe63b919a62d5d8bab8f603ddce5df49fa7c9db8db3861589",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e06": {
+      "batch": "age2-production",
+      "record": "build_refresh_manual.py",
+      "sha256": "0aa59e3ea2b7c70e2c1fac054c9c4f0d5c8c47ca39e823fc61c0aea213c91979",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e07": {
+      "batch": "age2-production",
+      "record": "finish_caption_cards.py",
+      "sha256": "4e427c15b3a97a1b5c01c009f300507fc16dba56f7d95988e020a2bd3c3ecd3f",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e08": {
+      "batch": "legacy-tools",
+      "record": "rio/stage_followup23_typography_core_v1.py",
+      "sha256": "beb6e61f32443d92d07e6a82ceb760bc519560dfb98e4651e90cf2d3142f3b23",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e09": {
+      "batch": "photon-reinventory",
+      "record": "static_image_reinventory_20260905/focus_envelope_evidence.json",
+      "sha256": "332654f833b7a08f7eb7d1435e072d59490c176c1522086c8f9ad9904b965635",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e10": {
+      "batch": "legacy-tools",
+      "record": "rio/build_pm_handwritten_pointer.py",
+      "sha256": "719acb8ed7144d8b0e29536a9c1851465365a37831eea2dd2fcf30e2e531496c",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e11": {
+      "batch": "legacy-tools",
+      "record": "rio/build_pm_sakitan_title_screens.py",
+      "sha256": "5e99f1d3c70e6e98d7c0f18faf5a66f2d28c915f48ef10b2e31c7bef605fb532",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e12": {
+      "batch": "legacy-photon-images",
+      "record": "production_batch_v1/followup23_targeted_final_review_v4/assets/pf_rio000_0x1cfcd0e8/branch_qa.json",
+      "sha256": "9ed2b93e979aa9ba857d38d7605287f266ef37ae0f3ec6f616b42da97e0227e4",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e13": {
+      "batch": "legacy-tools",
+      "record": "rio/stage_followup23_ex_titles_v4.py",
+      "sha256": "4af85067f16f643e0503a363fcda3608b13975869b21620163e7bcda9da3e1e8",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e14": {
+      "batch": "photon-reinventory",
+      "record": "formal_png_exact_recovery_v1/final_audit_v1/report.v1.json",
+      "sha256": "f081fd45a66a6ef7763c0b4c9a12822f4ff8edea67240b493fd6424de772194f",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e15": {
+      "batch": "legacy-photon-images",
+      "record": "production_batch_v1/families/black_white_intertitles/pf_rio000_0x1ad8246c/qa.json",
+      "sha256": "a21124be542ae70092d2656fe4375b6c6086caaa268e65f2cf2c761880275887",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e16": {
+      "batch": "legacy-photon-images",
+      "record": "production_batch_v1/families/remaining_small_styles_v1/assets/pm_rio000_0x64e21260_crip008/profile.json",
+      "sha256": "715cc1c8b2a6f371186eafd645f0c53119e6ff37559833ea31285f0db364832e",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e17": {
+      "batch": "photon-reinventory",
+      "record": "static_image_reinventory_20260905/repairs_20260908/ceremony_v3/draft.json",
+      "sha256": "20fe505d0460a19851bf07df1b09e74915b985857299784def168a39bdaeff9f",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e18": {
+      "batch": "photon-reinventory",
+      "record": "static_image_reinventory_20260905/individual-audit-progress.json",
+      "sha256": "a06e425613828e3708e359cdfac4e0ee6be609b16a59ddf2da451e98d74f9cee",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e19": {
+      "batch": "photon-reinventory",
+      "record": "static_image_reinventory_20260905/build_f28_first_repairs.py",
+      "sha256": "7b2c08287c8f48b180a97271bede9ac8fb47c507898b87e4c8a516f3f767dc9d",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e20": {
+      "batch": "photon-reinventory",
+      "record": "static_image_reinventory_20260905/build_f28_remaining_repairs.py",
+      "sha256": "6af5750ecfd0675fddacf8b5e61346643c8644814054587d270c397fd8e43989",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e21": {
+      "batch": "photon-reinventory",
+      "record": "static_image_reinventory_20260905/repairs_20260906/story_text/F28/manifest.json",
+      "sha256": "a9dc0cfe6512e9b1e879a74fecc9200ea217cc0c9434622c9c7ae416ef793771",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e22": {
+      "batch": "photon-reinventory",
+      "record": "static_image_reinventory_20260905/repairs_20260906/portrait_reuse_correction_v1/credit_font_fit.json",
+      "sha256": "7d75b0aa3657ea0a3ef9a19374e60ef95bb483b722fdc741b27e99298d76a536",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e23": {
+      "batch": "photon-reinventory",
+      "record": "static_image_reinventory_20260905/repairs_20260908/ex_title_lettering_v3/fonts/ZCOOLKuaiLe-Regular.ttf",
+      "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+      "availability": "font identity only; binary not redistributed"
+    },
+    "e24": {
+      "batch": "photon-omissions",
+      "record": "candidates/G1952/recipe-v1.json",
+      "sha256": "c52a2573055c962f6fec974ba0c7e75600ae6f8989ce518bbb14c6b5e00dd876",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e25": {
+      "batch": "photon-omissions",
+      "record": "production-list.json",
+      "sha256": "ab96c12abb00f93211c9756d83fd86103a3b6968e026a937578e4db3a317d8f1",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e26": {
+      "batch": "photon-omissions",
+      "record": "candidates/G4267/recipe-v1.json",
+      "sha256": "6da74f2647d688fc36c634977437731dc4ed144c03fdb949c042a8a99a34fff6",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e27": {
+      "batch": "photon-omissions",
+      "record": "candidates/G4268/recipe-v1.json",
+      "sha256": "6da74f2647d688fc36c634977437731dc4ed144c03fdb949c042a8a99a34fff6",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e28": {
+      "batch": "photon-omissions",
+      "record": "produce_map.py",
+      "sha256": "d211f162adc34c814ad60133d16bb6ef56f9ec638f40eb75d8c3a04f723d87b9",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e29": {
+      "batch": "photon-omissions",
+      "record": "production-list.json",
+      "sha256": "ab96c12abb00f93211c9756d83fd86103a3b6968e026a937578e4db3a317d8f1",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e30": {
+      "batch": "photon-omissions",
+      "record": "produce_bookstore.py",
+      "sha256": "c2e8ffceaaf0e7af612c8e66a9636986b66a52ea43525434d5fb8080c5943ac2",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e31": {
+      "batch": "photon-omissions",
+      "record": "produce_newspaper.py",
+      "sha256": "32d24cd377816ecf479258f73e148340dd912c3a230f3e8ce9283114ddee9db2",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e32": {
+      "batch": "age2-omissions",
+      "record": "letter-editable-source-v1/layout.json",
+      "sha256": "4c563e16b00fe66652347d24eadcde845e09ac7cb3ef95bbdb6df2db8986c2a9",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e33": {
+      "batch": "age2-omissions",
+      "record": "register_letter.py",
+      "sha256": "262800b3313e7996ed7950ba9e38e7ee10f5f071216e819c07c8ee1ebe3ab49c",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e34": {
+      "batch": "age2-omissions",
+      "record": "store-snack-copy-1932-v2/layers.json",
+      "sha256": "75897125285921500073375c83aa300181217b1cc788ff7418116d2bf1ecf299",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e35": {
+      "batch": "age2-omissions",
+      "record": "store-repeated-salt-1932-v1/review.json",
+      "sha256": "c4ec2cf3bd608d7ddc8bd14ec671ce22a1c2e3d01b137560264cbc2e9678b225",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e36": {
+      "batch": "age2-omissions",
+      "record": "record_store_repeated_salt.py",
+      "sha256": "fe7a11d5fa65e1b5bd730e2a0f1e4db811a1812e80decfa127fe3f479a78eef4",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e37": {
+      "batch": "age2-omissions",
+      "record": "production-note-2011-options-v1/review.json",
+      "sha256": "722dc0dbdf70563e6f363cfe4749977dd8e97e0f05cf164745fc6286d22027bb",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e38": {
+      "batch": "age2-omissions",
+      "record": "production-note-2011-options-v2/review.json",
+      "sha256": "e05da1f092439ae9a6f03b1c0387c09b789801114dea8729d92a1ea2ec746f9d",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e39": {
+      "batch": "age2-omissions",
+      "record": "production-note-2011-options-v3/review.json",
+      "sha256": "a92a6237f7cb75f3dc120a0eb0e152dba072092b14e038dad82644a46a40b96b",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e40": {
+      "batch": "age2-omissions",
+      "record": "prepare_credit_roles.py",
+      "sha256": "6a7507522feb7b76d83dfb694a4b036641bfaf3ecdad4a7f7fac5983426eacd4",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e41": {
+      "batch": "age2-omissions",
+      "record": "prepare_order_ui.py",
+      "sha256": "bb55241dfd01587a4ca822cf0b7b4010355052f52c9b7d957ce4dde4f4b6cfbf",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e42": {
+      "batch": "age2-omissions",
+      "record": "render_store_door_labels.py",
+      "sha256": "604571078c4398457cb2306071e0e7bf3bdd9589763ea2b60c3e273eb34b1aa3",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e43": {
+      "batch": "age2-omissions",
+      "record": "build_gekishin.py",
+      "sha256": "2fe354659064db25eba0b3262eb139e03465eaf939eff7e4b050f6b1bc3352ea",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e44": {
+      "batch": "age2-omissions",
+      "record": "prepare_dormitory.py",
+      "sha256": "97fb7221a0897f3ed9cc78bcbc1ea4a053e09bd8966f0741220c657266bfd29b",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e45": {
+      "batch": "age2-omissions",
+      "record": "prepare_ice_wrapper.py",
+      "sha256": "b38d54fb08311d5f7e1796c3287b3c36a8b0a52d67e383bc150b06bad4651908",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    },
+    "e46": {
+      "batch": "age2-omissions",
+      "record": "prepare_counter_hud.py",
+      "sha256": "90a31948efb3822eb2552f58e65e0c4b00a06e99e58c91328b6de4fd1ffbf503",
+      "availability": "maintainer-held production record; sanitized attribution summary published here"
+    }
+  },
+  "usages": [
+    {
+      "id": "age2-ui",
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "materials": [
+        "menu UI groups"
+      ],
+      "font_ids": [
+        "image:noto-sans-sc-vf"
+      ],
+      "production_state": "production-recorded",
+      "release_adoption": "confirmed-in-listed-AGE2-releases; see per-file registry",
+      "note": "UI rendering uses Noto Sans SC VF; comparison-sheet text is a separate output.",
+      "evidence": [
+        "e01"
+      ]
+    },
+    {
+      "id": "age2-cards",
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "materials": [
+        "date/location cards",
+        "TDA story cards"
+      ],
+      "font_ids": [
+        "image:swei-sugar-medium"
+      ],
+      "production_state": "production-recorded",
+      "release_adoption": "confirmed-in-listed-AGE2-releases; see per-file registry",
+      "note": "Swei Medium is passed to card renderer; date-only original art may be retained without new font rendering.",
+      "evidence": [
+        "e02"
+      ]
+    },
+    {
+      "id": "age2-telop",
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "materials": [
+        "telops",
+        "voice labels",
+        "maps"
+      ],
+      "font_ids": [
+        "image:noto-sans-sc-500"
+      ],
+      "production_state": "production-recorded",
+      "release_adoption": "confirmed-in-listed-AGE2-releases; see per-file registry",
+      "note": "Static 500 input, separately from runtime font selection.",
+      "evidence": [
+        "e03",
+        "e04"
+      ]
+    },
+    {
+      "id": "age2-early",
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "materials": [
+        "early telops and date/location/UI production"
+      ],
+      "font_ids": [
+        "image:source-han-sans-bold"
+      ],
+      "production_state": "historical-production",
+      "release_adoption": "confirmed-for-boot-notices-HUD-and-supplementary-captions; some-early-telop-location-recipes-superseded",
+      "note": "Source Han Sans Bold remains in current AGE2 releases. Source choice varies by material; later Noto/Swei replacements do not supersede every use of this font.",
+      "evidence": [
+        "e05",
+        "e06"
+      ]
+    },
+    {
+      "id": "tda-introduction",
+      "games": [
+        "tda02",
+        "tda03"
+      ],
+      "materials": [
+        "four additional introduction cards"
+      ],
+      "font_ids": [
+        "image:source-han-serif-bold",
+        "image:source-han-serif-heavy"
+      ],
+      "production_state": "production-recorded",
+      "release_adoption": "confirmed-in-listed-AGE2-releases; see per-file registry",
+      "note": "Bold at 80px in TDA02; Heavy for smaller unit/port/altitude text. Two weights within this material group.",
+      "evidence": [
+        "e07"
+      ]
+    },
+    {
+      "id": "photon-general",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "menu/button/character/info groups"
+      ],
+      "font_ids": [
+        "image:noto-sans-sc-vf"
+      ],
+      "production_state": "adopted-in-current-release",
+      "release_adoption": "confirmed-in-PF-PM-BETA-0.1.2; see per-file registry",
+      "note": "Per-group weights, not a single weight for every game asset.",
+      "evidence": [
+        "e08"
+      ],
+      "release_registry": "photon-released-image-fonts.json"
+    },
+    {
+      "id": "photon-serif",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "black intertitles",
+        "credits",
+        "envelope",
+        "scene text"
+      ],
+      "font_ids": [
+        "image:noto-serif-sc-vf"
+      ],
+      "production_state": "adopted-in-current-release",
+      "release_adoption": "confirmed-in-PF-PM-BETA-0.1.2; see per-file registry",
+      "note": "Weights are group-specific; original handwriting and reused glyphs remain distinct from new typesetting.",
+      "evidence": [
+        "e09"
+      ],
+      "release_registry": "photon-released-image-fonts.json"
+    },
+    {
+      "id": "photon-lxgw",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "pm:rio000:0x64e21260:crip008",
+        "PM Sakitan title screens",
+        "PF EX title candidates"
+      ],
+      "font_ids": [
+        "image:lxgw-wenkai-gb"
+      ],
+      "production_state": "historical-superseded-family",
+      "release_adoption": "not-used-by-the-current-EX-title-and-pointer-families",
+      "note": "Historical recipes and exact replay are preserved. Current EX titles use generated lettering; the current PM pointer is Ma Shan Zheng. No current released PNG binding uses this input.",
+      "evidence": [
+        "e10",
+        "e11",
+        "e12"
+      ]
+    },
+    {
+      "id": "pf-smiley",
+      "games": [
+        "photonflowers"
+      ],
+      "materials": [
+        "PF EX titles, including pf:rio000:0x1cfb9f84"
+      ],
+      "font_ids": [
+        "image:smiley-sans"
+      ],
+      "production_state": "historical-superseded-family",
+      "release_adoption": "not-used-by-the-current-EX-title-and-pointer-families",
+      "note": "Historical EX title recipes and exact replay; the current EX title family uses recorded generated lettering, not this old font recipe.",
+      "evidence": [
+        "e13",
+        "e14"
+      ]
+    },
+    {
+      "id": "photon-brush",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "brush intertitles",
+        "pm:rio000:0x64e21260:crip008",
+        "PF ceremony G1972"
+      ],
+      "font_ids": [
+        "image:mashanzheng-new-batch"
+      ],
+      "production_state": "adopted-in-current-release",
+      "release_adoption": "confirmed-in-PF-PM-BETA-0.1.2; see per-file registry",
+      "note": "Current brush/story cards, PM handwritten pointer and PF G1972 ceremony / G2787 smaller reuse. The separate October cake candidate is not proof of another release.",
+      "evidence": [
+        "e15",
+        "e16",
+        "e17"
+      ],
+      "release_registry": "photon-released-image-fonts.json"
+    },
+    {
+      "id": "pm-timer",
+      "games": [
+        "photonmelodies"
+      ],
+      "materials": [
+        "countdown groups G1294–G1304",
+        "embedded tutorial groups G2990–G2999"
+      ],
+      "font_ids": [
+        "image:xiaolai"
+      ],
+      "production_state": "adopted-in-current-release",
+      "release_adoption": "confirmed-in-PF-PM-BETA-0.1.2; see per-file registry",
+      "note": "21 unique current PM PNGs: 11 countdown states and 10 embedded tutorials. Release package hashes supersede the earlier static-review not_installed flag. G3000 sound-only tutorial instead keeps the older Noto Sans timer and adds a Noto Sans label.",
+      "evidence": [
+        "e18"
+      ],
+      "release_registry": "photon-released-image-fonts.json"
+    },
+    {
+      "id": "photon-windows-cards",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "F28 naval/story/time cards"
+      ],
+      "font_ids": [
+        "image:kaiti",
+        "image:simsun",
+        "image:ms-mincho"
+      ],
+      "production_state": "adopted-in-current-release",
+      "release_adoption": "confirmed-in-PF-PM-BETA-0.1.2; see per-file registry",
+      "note": "Current F28 and retained transferred lettering use KaiTi, SimSun and MS Mincho. School gold was later generated, while G1961/G2803 retain the separate KaiTi black banner. Old Windows filenames do not prove historical bytes or TTC indices.",
+      "evidence": [
+        "e19",
+        "e20",
+        "e21"
+      ],
+      "release_registry": "photon-released-image-fonts.json"
+    },
+    {
+      "id": "photon-fit-trials",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "portrait/credit font fitting",
+        "EX title lettering trials"
+      ],
+      "font_ids": [
+        "image:simhei-historical",
+        "image:ms-gothic-trial",
+        "image:zcool-kuaile-trial"
+      ],
+      "production_state": "comparison-or-trial",
+      "release_adoption": "comparison-only; no-current-released-PNG-binding",
+      "note": "Comparison results do not identify the font of a final portrait or title.",
+      "evidence": [
+        "e22",
+        "e23"
+      ]
+    },
+    {
+      "id": "cake-g1952",
+      "games": [
+        "photonflowers"
+      ],
+      "materials": [
+        "G1952"
+      ],
+      "font_ids": [
+        "image:mashanzheng-new-batch"
+      ],
+      "production_state": "local-static-review-passed",
+      "release_adoption": "not-released-local-October-batch",
+      "note": "Recipe-v1 final_review supersedes its original pending status; runtime_tested=false.",
+      "evidence": [
+        "e24",
+        "e25"
+      ],
+      "local_registry": "unreleased-image-fonts.json"
+    },
+    {
+      "id": "map-old",
+      "games": [
+        "photonmelodies"
+      ],
+      "materials": [
+        "G4267",
+        "G4268"
+      ],
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "production_state": "superseded",
+      "release_adoption": "not-released-local-October-batch",
+      "note": "Recipe-v1 is replaced by Noto Serif recipe-v3 in the production list.",
+      "evidence": [
+        "e26",
+        "e27"
+      ],
+      "local_registry": "unreleased-image-fonts.json"
+    },
+    {
+      "id": "map-current",
+      "games": [
+        "photonmelodies"
+      ],
+      "materials": [
+        "G4267",
+        "G4268"
+      ],
+      "font_ids": [
+        "image:noto-serif-sc-vf"
+      ],
+      "production_state": "local-static-review-passed",
+      "release_adoption": "not-released-local-October-batch",
+      "note": "Selected map v3: weight 500, size 16, supersampling 8; not a released-package assertion.",
+      "evidence": [
+        "e28",
+        "e29"
+      ],
+      "local_registry": "unreleased-image-fonts.json"
+    },
+    {
+      "id": "photon-mixed-scene",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "bookstore group",
+        "G2594 newspaper"
+      ],
+      "font_ids": [
+        "image:noto-sans-sc-vf",
+        "image:noto-serif-sc-vf"
+      ],
+      "production_state": "production-recorded",
+      "release_adoption": "not-released-local-October-batch",
+      "note": "Mixed-font assets require both entries: newspaper serif 800 and sans 900; bookstore selects by text segment.",
+      "evidence": [
+        "e30",
+        "e31"
+      ],
+      "local_registry": "unreleased-image-fonts.json"
+    },
+    {
+      "id": "age2-letter",
+      "games": [
+        "imperial-capital-burns"
+      ],
+      "materials": [
+        "audit 2315, reversed letter"
+      ],
+      "font_ids": [
+        "image:kaiti"
+      ],
+      "production_state": "static-reviewed-human-acceptance-pending",
+      "release_adoption": "not-released-local-October-batch",
+      "note": "Editable-source layout-v6 uses KaiTi; register_letter explicitly leaves final aesthetic acceptance pending and runtime unverified.",
+      "evidence": [
+        "e32",
+        "e33"
+      ],
+      "local_registry": "unreleased-image-fonts.json"
+    },
+    {
+      "id": "age2-shop",
+      "games": [
+        "imperial-capital-burns"
+      ],
+      "materials": [
+        "audit 1932, shop packaging"
+      ],
+      "font_ids": [
+        "image:kaiti",
+        "image:yahei-bold"
+      ],
+      "production_state": "partial-not-final",
+      "release_adoption": "not-released-local-October-batch",
+      "note": "KaiTi simplified glyph repairs are carried into repeated-salt cumulative v1; the two new badges use YaHei Bold. Whole resource remains pending.",
+      "evidence": [
+        "e34",
+        "e35",
+        "e36"
+      ],
+      "local_registry": "unreleased-image-fonts.json"
+    },
+    {
+      "id": "age2-production-note",
+      "games": [
+        "imperial-capital-burns"
+      ],
+      "materials": [
+        "audit 2011, production-note options"
+      ],
+      "font_ids": [
+        "image:yahei-regular",
+        "image:yahei-bold"
+      ],
+      "production_state": "options-not-approved",
+      "release_adoption": "not-released-local-October-batch",
+      "note": "v1/v3 regular; v2 bold. None is registered as a final adopted game image.",
+      "evidence": [
+        "e37",
+        "e38",
+        "e39"
+      ],
+      "local_registry": "unreleased-image-fonts.json"
+    },
+    {
+      "id": "age2-omission-serif",
+      "games": [
+        "tda00",
+        "tda01",
+        "tda02",
+        "tda03",
+        "imperial-capital-burns"
+      ],
+      "materials": [
+        "credit roles",
+        "order UI",
+        "store door labels",
+        "Gekishin lettering"
+      ],
+      "font_ids": [
+        "image:noto-serif-sc-vf"
+      ],
+      "production_state": "production-recorded",
+      "release_adoption": "not-released-local-October-batch",
+      "note": "Scope is individual recipes, not all omitted images in all games; credits specify weight 600, size 38.",
+      "evidence": [
+        "e40",
+        "e41",
+        "e42",
+        "e43"
+      ],
+      "local_registry": "unreleased-image-fonts.json"
+    },
+    {
+      "id": "age2-omission-sans",
+      "games": [
+        "imperial-capital-burns"
+      ],
+      "materials": [
+        "dormitory",
+        "ice-wrapper small print",
+        "counter HUD"
+      ],
+      "font_ids": [
+        "image:noto-sans-sc-vf",
+        "image:noto-sans-sc-500"
+      ],
+      "production_state": "production-recorded",
+      "release_adoption": "not-released-local-October-batch",
+      "note": "VF for dormitory/wrapper; static 500 for counter HUD. Fonts are not interchangeable from family name alone.",
+      "evidence": [
+        "e44",
+        "e45",
+        "e46"
+      ],
+      "local_registry": "unreleased-image-fonts.json"
+    },
+    {
+      "id": "photon-yahei",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "equipment title glyphs",
+        "CRip008 copied-glyph selection HUD",
+        "Chinese language buttons"
+      ],
+      "font_ids": [
+        "image:yahei-regular",
+        "image:yahei-bold"
+      ],
+      "production_state": "adopted-in-current-release",
+      "release_adoption": "confirmed-in-PF-PM-BETA-0.1.2; see per-file registry",
+      "release_registry": "photon-released-image-fonts.json",
+      "note": "18 unique regular-face contents, including two copied-glyph HUD revisions; eight bold-face Chinese language buttons. Windows fonts, not OFL. Separate from AGE2 local production-note options.",
+      "evidence": []
+    },
+    {
+      "id": "photon-delegated-subtitles",
+      "games": [
+        "photonflowers"
+      ],
+      "materials": [
+        "delegated subtitle repairs"
+      ],
+      "font_ids": [
+        "image:photon-r2-subtitles"
+      ],
+      "production_state": "adopted-in-current-release",
+      "release_adoption": "confirmed-in-PF-PM-BETA-0.1.2; see per-file registry",
+      "release_registry": "photon-released-image-fonts.json",
+      "note": "28 unique current PNG contents use the recorded historical PhotonR2 font SHA-256, not the later expanded runtime binary.",
+      "evidence": []
+    },
+    {
+      "id": "photon-orbital-subtitles",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "orbital-wipe subtitle family"
+      ],
+      "font_ids": [
+        "image:noto-sans-sc-vf"
+      ],
+      "production_state": "adopted-in-current-release",
+      "release_adoption": "confirmed-in-PF-PM-BETA-0.1.2; see per-file registry",
+      "release_registry": "photon-released-image-fonts.json",
+      "note": "The F29 manifest has 90 production rows but 44 distinct current image contents. These use Noto Sans, with shifted/revised master glyphs; not PhotonR2.",
+      "evidence": []
+    },
+    {
+      "id": "pm-calendar-supplied-caption",
+      "games": [
+        "photonmelodies"
+      ],
+      "materials": [
+        "G1049 calendar thumbnail"
+      ],
+      "font_ids": [
+        "image:noto-sans-sc-static-bold-700"
+      ],
+      "production_state": "adopted-in-current-release",
+      "release_adoption": "confirmed-in-PF-PM-BETA-0.1.2; see per-file registry",
+      "release_registry": "photon-released-image-fonts.json",
+      "note": "A supplied raster caption matches the kit alpha mask; the kit statically instantiates Noto Sans SC at wght=700. Actual thumbnail composition and bounded colour conversions are recorded per image.",
+      "evidence": []
+    },
+    {
+      "id": "tda01-box-semibold",
+      "games": [
+        "tda01"
+      ],
+      "materials": [
+        "omission-795; mentaiko-box-v2"
+      ],
+      "font_ids": [
+        "image:swei-sugar-semibold"
+      ],
+      "production_state": "registered-static-candidate",
+      "release_adoption": "not-released",
+      "local_registry": "unreleased-image-fonts.json",
+      "note": "Chinese parenthetical label uses Swei Sugar SemiBold, distinct from the Medium release-card input; selected file hash matches the renderer report.",
+      "evidence": []
+    },
+    {
+      "id": "tda03-folded-note",
+      "games": [
+        "tda03"
+      ],
+      "materials": [
+        "omission-1629; folded-note-v8"
+      ],
+      "font_ids": [
+        "image:meb-heiheiti-note"
+      ],
+      "production_state": "registered-static-candidate",
+      "release_adoption": "not-released",
+      "local_registry": "unreleased-image-fonts.json",
+      "note": "Actual MEB image input hash matches the selected retained file; different bytes from the patched runtime font. Author-statement licensing, not OFL.",
+      "evidence": []
+    },
+    {
+      "id": "photon-omission-current-families",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "materials": [
+        "37 selected October modified assets"
+      ],
+      "font_ids": [
+        "image:noto-sans-sc-vf",
+        "image:noto-serif-sc-vf",
+        "image:mashanzheng-new-batch"
+      ],
+      "production_state": "registered-static-candidate",
+      "release_adoption": "not-released",
+      "local_registry": "unreleased-image-fonts.json",
+      "note": "Per-asset use is in the local registry. Cake differences inherit Ma Shan Zheng; newspaper/bookstore mix Noto Sans and Serif. Vector-drawn black lettering, generated scroll/flame/yellow lettering and corrected original strokes do not acquire a guessed font. The earlier yellow Noto prototype is separately marked superseded.",
+      "evidence": []
+    },
+    {
+      "id": "photon-timer-historical-font-trials",
+      "games": [
+        "photonmelodies"
+      ],
+      "scope": "Retained remaining-time tutorial font previews, including superseded rounds",
+      "font_ids": [
+        "image:chill-round-gothic-medium-trial",
+        "image:gensen-rounded-2-tc-heavy-trial",
+        "image:lxgw-975-yuan-700-trial",
+        "image:maoken-tangyuan-trial",
+        "image:resource-han-rounded-medium-trial",
+        "image:xiaolai",
+        "image:yomeng-script-trial",
+        "image:zcool-kuaile-trial"
+      ],
+      "state": "historical-rendered-trials; current-adoption-not-inferred",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "photon-equipment-light-superseded",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "scope": "33 equipment/selection-title draft images; five shared masks",
+      "font_ids": [
+        "image:yahei-light-historical"
+      ],
+      "state": "historical-rendered-draft; replaced-by-regular-yahei",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "pf-credit-simhei-historical",
+      "games": [
+        "photonflowers"
+      ],
+      "scope": "PF G2685 historical first-character credit correction",
+      "font_ids": [
+        "image:simhei-historical"
+      ],
+      "state": "historical-local-candidate; not-current-release",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "early-history-yahei-bold",
+      "games": [
+        "photonmelodies"
+      ],
+      "scope": "PM July right-click: 54 initial rendered button candidates",
+      "font_ids": [
+        "image:yahei-bold"
+      ],
+      "state": "historical",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "early-history-yahei-regular",
+      "games": [
+        "photonmelodies"
+      ],
+      "scope": "PM July right-click: four 54-state rendering revisions, each with paired dry-run/write reports",
+      "font_ids": [
+        "image:yahei-regular"
+      ],
+      "state": "historical",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "early-history-source-han-sans-bold",
+      "games": [
+        "tda00"
+      ],
+      "scope": "TDA00 early seven name labels and nine OP captions; successive revisions share font and overwrite output paths",
+      "font_ids": [
+        "image:source-han-sans-bold"
+      ],
+      "state": "historical",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "early-git-font-trials",
+      "games": [
+        "photonmelodies"
+      ],
+      "scope": "PM July screen-mode label searches, right-click Save states, TTC face comparisons, clean-plate and shadow revisions",
+      "font_ids": [
+        "image:biz-udgothic-bold-history",
+        "image:biz-udgothic-regular-history",
+        "image:biz-udpgothic-bold-history",
+        "image:biz-udpgothic-regular-history",
+        "image:dengxian-bold-history",
+        "image:noto-sans-jp-history",
+        "image:noto-sans-sc-vf",
+        "image:yahei-regular"
+      ],
+      "state": "historical",
+      "detail_registry": "historical-git-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "historical-crmt-typesetting",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "scope": "56 early CRmt Chinese designs, subsequent typography corrections and the U0483 generation edit target",
+      "state": "historical-font-rendered-designs; later-versions-separately-recorded",
+      "detail_registry": "historical-crmt-image-fonts.json",
+      "evidence": []
+    }
+  ],
+  "gaps": [
+    {
+      "id": "historical-windows-bytes",
+      "detail": "For Windows references without a historical font hash, current inspected file/version is an audit reference only; historical byte identity and collection face index remain unverified."
+    },
+    {
+      "id": "age2-html-font-loading",
+      "detail": "Ten AGE2 boot-notice textures have source/HTML font declarations. Historical browser font loading and fallback were not replayed."
+    },
+    {
+      "id": "old-sound-timer-layout",
+      "detail": "One Photon sound-only tutorial inherits historical Noto Sans countdown lettering. Its composition and font profile are retained, but that older timer layout has not been pixel-replayed."
+    }
+  ],
+  "lettering_methods": "Generated/painted lettering and original glyph reuse are explicit methods without an inferred font identity. Fonts in inherited or supplied raster layers remain linked to their source where the retained records establish them."
+}

@@ -2,18 +2,24 @@
 
 **Fonts & Typography: Don't Let Fonts Give Your Patch Away**
 
-[返回本地化](../README.md) · **[游戏字体对应表](runtime.md)** · **[图片用字与样式](images.md)** · [精确版本目录](catalog.json)
+[返回本地化](../README.md) · **[七作图片用字总表](audit.md)** · [游戏字体对应表](runtime.md) · [图片用字与样式](images.md) · [字体致谢与许可](attribution.md) · [新图片登记](registration.md) · [精确版本目录](catalog.json)
+
+**七作图片用字已完成本次可访问资料的追溯。** [总表](audit.md)按作品和字体汇总当前发布、旧稿、返修、局部稿、提供字层与生成底稿：37 项输入／字重／版本中，36 项有素材排字或底稿用途，1 项仅有比较用途。逐图记录与证据边界集中列在总表，旧试样不算进当前发布版。
 
 <details>
 <summary><strong>English · Don't Let Fonts Give Your Patch Away — expand here</strong></summary>
 
 The catalog covers the seven released games, original AGE2 roles, every bundled AGE2 font, the distinct PF/PM PhotonR2 binaries, and known image-authoring inputs. Runtime selection, bundled-but-unused fonts, image production and historical trials are separate. Source hashes identify files; they do not establish visual acceptance or grant redistribution rights. For another locale, check its own coverage, shaping, metrics and engine selection.
 
+The October 11 audit traces 3,720 current release image files to their font or original/generated lettering sources, and records 365 selected local candidates separately. It also identifies missing authoring inputs, including Swei SemiBold, an unpatched MEB image font and a static Noto Sans 700 instance. Read the [image usage table](images.md), [credits](attribution.md) and [registration policy](registration.md). This is provenance within the listed file scope, not new visual/runtime approval. Historical font-byte and rendering limitations remain explicit.
+
+The [audit overview](audit.md) reconciles the retained release, historical, partial and supplied-layer records, including typography prototypes provided for generation. It lists 36 material-use inputs plus one comparison-only entry. The [historical variant register](historical-image-variants.json) recovers 1,933 game/output contents, including 557 also present in the current release register; these overlapping counts must not be added. Early Git-only font trials and the 56-image PhotonCN CRmt batch have separate registers. Superseded font metadata is checked against actual layer replacement code. Unavailable historical bytes and browser-loading evidence remain explicit limitations.
+
 </details>
 
 译文进入游戏以后，还要放得下、看得清，并贴合作品原有的气质。这里集中维护七作的字体选择与来源，游戏文本和图片烘焙用字分别登记。替换运行时字体不会改变已画进图片的文字，重画图片也不会修复正文的选字、字宽或换行。
 
-**核对范围：七作当前发布包中的运行时字体与配置已核对；图片制作字体尚未保证找全。** 图片目录目前整理的是已查明的输入、候选及采用记录，还没有逐批追溯全部最终成品。其余图片字体与实际采用关系留待后续专项整理，不把阶段性清单写成完整清单。
+**核对范围：运行时按 2026-10-05 的七作发布包核对；图片追溯更新于 2026-10-11。** 五作 AGE2 的 859 个独立图片文件和 PF／PM 的 2,861 个 PNG 文件，均对应到实际字体或原版／生成字样来源；另列 365 项本地在制成品。目录目前登记 37 项具体图片字体输入／试样，区分当前采用、历史替换与在制方案；同一 TTC 中实际使用过的字体索引也分别记录，不把输入项数称为家族数。详情与历史字体版本、HTML 加载和旧计时排版的限制见[图片用字表](images.md)，不以来源核对代替人工视觉审核和实机验证。
 
 ## 当前发布版使用什么
 
@@ -45,13 +51,16 @@ PF／PM 都请求 `PhotonR2` 家族，但两作字体字集和修正不同，**�
 | 思源黑体、PhotonR2 派生基础 | [Source Han Sans](https://github.com/adobe-fonts/source-han-sans)，OFL 1.1 |
 | IBM Plex Sans SC、AGE2 UI Sans 派生基础 | [IBM Plex](https://github.com/IBM/plex)，OFL 1.1 |
 | 源石黑体、AGE2 GenSeki 派生基础 | [GenSeki](https://github.com/ButTaiwan/genseki-font)，OFL 1.1 |
-| 狮尾加糖宋体 | [Swei Sugar](https://github.com/max32002/swei-sugar)，OFL 1.1 |
+| 狮尾加糖宋体 Medium／SemiBold | [Swei Sugar](https://github.com/max32002/swei-sugar)，OFL 1.1；分别用于发布卡片和在制纸箱括注 |
+| 思源宋体、霞鹜文楷 GB、得意黑、小赖、马善政、站酷快乐体 | [图片字体致谢与许可](attribution.md)，逐项列作者、上游和实际用途；均为 OFL 1.1 |
 | 白无常可可体 | [作者发布页](https://www.zcool.com.cn/work/ZNTk4NTI2ODA%3D.html)，作者使用声明；不属于 OFL |
 | 美呗嘿嘿体 | [作者发布页](https://www.zcool.com.cn/work/ZNTY3OTI5ODg%3D.html)，作者使用声明；不属于 OFL |
 
 白无常／美呗的来源说明来自已发布包和维护者提供的作者说明，本次站酷页面未能读到正文，不宣称重新完整核验了授权。两款有已记录的缺字补充；旧来源文字中的“未修改字集”不能替代补充后的构建记录。此目录不重新授予字体许可，也不复制官方商业字体。
 
 制作时保存实际字体文件版本、来源、许可、修改／子集化方式与输出摘要；衍生字体的改名和许可证跟随实际来源。二进制继续随适当的发布包提供，Git 维护目录与配方，不重复提交整套大字体。
+
+图片制作还用过楷体、宋体、MS Mincho、微软雅黑常规／粗体／Light、SimHei，以及 PM 早期试稿的 BIZ UDGothic／UDPGothic、等线粗体；MS Gothic 另有比较记录。实际使用的 Windows 字体文件不归入开源字体。新图片和返修必须按[登记规范](registration.md)补齐实际用字与来源；只制作图片和随包分发字体文件的许可要求分别处理。
 
 ## 覆盖与实机
 
