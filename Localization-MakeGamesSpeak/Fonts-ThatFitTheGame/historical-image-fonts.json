@@ -7094,6 +7094,8 @@
     "entries": 235,
     "july_pm_button_records": 209,
     "july_pm_report_rows": 486,
-    "early_tda00_retained_outputs": 16
-  }
+    "early_tda00_retained_outputs": 16,
+    "material_variants_from_authoring_records": 1933
+  },
+  "variant_register": "historical-image-variants.json"
 }

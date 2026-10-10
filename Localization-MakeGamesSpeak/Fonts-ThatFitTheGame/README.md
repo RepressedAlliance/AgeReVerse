@@ -4,7 +4,7 @@
 
 [返回本地化](../README.md) · **[游戏字体对应表](runtime.md)** · **[图片用字与样式](images.md)** · [字体致谢与许可](attribution.md) · [新图片登记](registration.md) · [精确版本目录](catalog.json)
 
-**七作全部图片用字的清查仍在进行。** 下列发布清单和已选候选是已核对的部分；完整清查还覆盖旧批次、返修、局部稿、提供字层与生成底稿。新追回的历史用途另列在[历史图片用字记录](historical-image-fonts.json)，不把旧试样算进当前发布版。
+**七作全部图片用字的清查仍在进行。** 下列发布清单和已选候选是已核对的部分；完整清查还覆盖旧批次、返修、局部稿、提供字层与生成底稿。新追回的历史用途列在[历史图片用字记录](historical-image-fonts.json)，保留制作清单中的逐图旧版本另见[历史素材版本表](historical-image-variants.json)，不把旧试样算进当前发布版。
 
 <details>
 <summary><strong>English · Don't Let Fonts Give Your Patch Away — expand here</strong></summary>
@@ -12,6 +12,8 @@
 The catalog covers the seven released games, original AGE2 roles, every bundled AGE2 font, the distinct PF/PM PhotonR2 binaries, and known image-authoring inputs. Runtime selection, bundled-but-unused fonts, image production and historical trials are separate. Source hashes identify files; they do not establish visual acceptance or grant redistribution rights. For another locale, check its own coverage, shaping, metrics and engine selection.
 
 The October 11 audit traces 3,720 current release image files to their font or original/generated lettering sources, and records 365 selected local candidates separately. It also identifies missing authoring inputs, including Swei SemiBold, an unpatched MEB image font and a static Noto Sans 700 instance. Read the [image usage table](images.md), [credits](attribution.md) and [registration policy](registration.md). This is provenance within the listed file scope, not new visual/runtime approval. Historical font-byte and rendering limitations remain explicit.
+
+The full historical audit is still in progress. The [historical variant register](historical-image-variants.json) recovers 1,933 game/output contents from material-level authoring records, including 557 contents also present in the current release register. These overlapping records must not be added to the release count. Superseded font metadata is checked against the actual layer replacement code.
 
 </details>
 

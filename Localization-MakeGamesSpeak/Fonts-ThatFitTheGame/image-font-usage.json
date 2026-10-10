@@ -27,7 +27,9 @@
     "historical_audit": {
       "status": "in-progress",
       "register": "historical-image-fonts.json",
-      "note": "The independent retained-file and session inventories are complete for the discovered scope. Material/recipe classification and remaining historical bindings are still being reconciled; inventory completion alone is not completion of font attribution."
+      "note": "The independent retained-file and session inventories are complete for the discovered scope. Material/recipe classification and remaining historical bindings are still being reconciled; inventory completion alone is not completion of font attribution.",
+      "material_variant_register": "historical-image-variants.json",
+      "material_variants_from_authoring_records": 1933
     },
     "earlier_discovery_subset": {
       "record_files_examined": 35034,
