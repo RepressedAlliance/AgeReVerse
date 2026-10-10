@@ -43,7 +43,7 @@
 
 ```powershell
 python -m docs.research.localization.tools.export_main_al_reference --local-results <本地结果目录> --output <新的输出目录>
-python -m unittest Localization-Make-Games-Speak.Tests-Catch-Problems-Before-Players.test_main_al_reference -v
+python -m unittest Localization-MakeGamesSpeak.Tests-CatchProblemsBeforePlayers.test_main_al_reference -v
 ```
 
 导出采用字段白名单，排除完整例句、正文及本机路径，并拒绝覆盖既有导出文件。没有修改发布约定或启用新的生效术语字典。

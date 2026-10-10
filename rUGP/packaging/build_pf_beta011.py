@@ -10,7 +10,7 @@ import shutil
 import zipfile
 
 from importlib import import_module
-_localization_extend_font_subset = import_module('Localization-Make-Games-Speak.Tools-Let-Tools-Handle-Repetition.extend_font_subset')
+_localization_extend_font_subset = import_module('Localization-MakeGamesSpeak.Tools-LetToolsHandleRepetition.extend_font_subset')
 extend = _localization_extend_font_subset.extend
 from rUGP.packaging import build_photon_cn_beta01 as ab
 from rUGP.packaging.build_photon_player import write_json

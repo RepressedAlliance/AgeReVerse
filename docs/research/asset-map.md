@@ -1,24 +1,24 @@
 # 文本、术语、图片与字体资产地图
 
 [返回研究入口](README.md) · [English](../en/asset-map.md) ·
-[通用本地化工作区](../../Localization-Make-Games-Speak/README.md) ·
+[通用本地化工作区](../../Localization-MakeGamesSpeak/README.md) ·
 [内容与发布政策](../project/asset-and-release-policy.md)
 
 本页回答两个问题：项目真正可维护的文字、图片和字体资料在哪里，以及为什么它们没有
-全部堆进 `Localization-Make-Games-Speak/`。
+全部堆进 `Localization-MakeGamesSpeak/`。
 
 ## 归类规则
 
 | 内容 | 公开位置 | 原因 |
 | --- | --- | --- |
-| 两轮翻译方法、审核状态、语言命名、共用术语、图片与字体通用工具 | `Localization-Make-Games-Speak/` | 不依赖某个引擎或某个资源槽，可由其他语言和其他游戏复用 |
+| 两轮翻译方法、审核状态、语言命名、共用术语、图片与字体通用工具 | `Localization-MakeGamesSpeak/` | 不依赖某个引擎或某个资源槽，可由其他语言和其他游戏复用 |
 | 某作正文、选项、说话人、UI 译文和作内术语 | `AGE2/games/<game>/` 或 `rUGP/games/<game>/` | 稳定 ID、源哈希、场景、语言槽和写回契约都绑定具体游戏 |
 | 某作图片文案、路径、尺寸、源图锁和成品身份 | 对应游戏的 `images/`；跨光子之花/光子旋律的联合权威放 `rUGP/evidence/photon/` | 图片是否显示由游戏路径、父对象、语言端点和编码共同决定，不能脱离引擎保存 |
 | FPD、EGPACK、ICI、RIO、CRsa、RUO、Cr6Ti、CRip 和 Hook | 对应的 `AGE2/` 或 `rUGP/` | 这些是完全不同的格式与运行时体系 |
 | 大型、已审核且允许分发的成品图片或玩家包 | 同一 GitHub 仓库的 Releases，并在 Git 中保存 manifest、哈希和来源说明 | 避免数千个二进制膨胀 Git 历史，同时保持版本、下载和源码集中在一个仓库 |
 | 完整官方原文、原始图片、游戏容器、临时候选、失败批次、模型原始响应 | 贡献者本地、受 `.gitignore` 保护的 `work/` 等目录 | 合法输入和制作中间物不是公开项目资产；可复现结论应提升为工具、清单、配方或复盘 |
 
-因此，**原始日文文本和原始图片不应搬进 `Localization-Make-Games-Speak/`**。公开表使用稳定 ID 和源字段
+因此，**原始日文文本和原始图片不应搬进 `Localization-MakeGamesSpeak/`**。公开表使用稳定 ID 和源字段
 SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在本地按哈希连接。这样既能
 复现工作，也不会把公开仓库变成游戏原始资源镜像。
 
@@ -39,9 +39,9 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 写回”。每个游戏 README 会说明其表是审校来源、精确 writer 输入还是历史快照。
 
 共用系列术语放在
-[`Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/muv-luv.ja-zh-Hans.csv`](../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/muv-luv.ja-zh-Hans.csv)；
+[`Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv`](../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv)；
 只在单作成立的术语跟随游戏，例如
-[帝都燃烧篇术语](../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/imperial-capital-burns.ja-zh-Hans.csv)。
+[帝都燃烧篇术语](../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/imperial-capital-burns.ja-zh-Hans.csv)。
 
 ## 当前公开图片资料
 
@@ -63,12 +63,12 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 
 图片制作的长期可维护内容不是某次批次目录，而是：资源身份、源哈希、中文文案、无字底
 权威、字体和排版参数、允许变化区域、输出哈希与审核结论。完整方法见
-[图片本地化工作流](../../Localization-Make-Games-Speak/Images-Make-It-Look-Native/README.md)。字体按游戏运行时／图片制作集中于[字体目录](../../Localization-Make-Games-Speak/Fonts-That-Fit-The-Game/README.md)，历史本地化调查与审核批次见[研究记录](localization/README.md)。
+[图片本地化工作流](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/README.md)。字体按游戏运行时／图片制作集中于[字体目录](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md)，历史本地化调查与审核批次见[研究记录](localization/README.md)。
 
 ## 字体
 
 字体的共用选择、许可证、来源和字形覆盖规则放在
-[`Localization-Make-Games-Speak/Fonts-That-Fit-The-Game/`](../../Localization-Make-Games-Speak/Fonts-That-Fit-The-Game/README.md)。具体游戏如何选中字体仍属于
+[`Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/`](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md)。具体游戏如何选中字体仍属于
 引擎层：AGE2 要验证松散路径和配置，rUGP 要验证注册、家族替换、GDI 请求和版本门。
 
 仓库不收来源不明的字体二进制。允许再分发的字体应连同完整许可证、上游版本、SHA-256、
@@ -76,9 +76,9 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 
 ## 新语言从哪里开始
 
-1. 阅读[完整工作流](../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/workflow.md)或
-   [English workflow](../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/workflow.en.md)。
-2. 按[新语言指南](../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/new-locale.md)建立 `ko`、`ru` 等独立目标。
+1. 阅读[完整工作流](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md)或
+   [English workflow](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.en.md)。
+2. 按[新语言指南](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md)建立 `ko`、`ru` 等独立目标。
 3. 从合法游戏本地提取源文字/源图并按公开哈希连接，不把中文改名成新语言源表。
 4. 把目标语言译文和作内图片文案放回对应游戏目录；把可跨游戏复用的新规则或工具贡献到
-   `Localization-Make-Games-Speak/`。
+   `Localization-MakeGamesSpeak/`。

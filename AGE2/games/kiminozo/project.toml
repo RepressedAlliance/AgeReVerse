@@ -6,8 +6,8 @@ steam_app_id = 1777440
 target_locales = ["zh-Hans"]
 development_status = "in-development"
 translation_authorities = []
-font_policy = "../../../Localization-Make-Games-Speak/Fonts-That-Fit-The-Game/README.md"
-terminology_authority = "../../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/kiminozo.ja-zh-Hans.csv"
+font_policy = "../../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md"
+terminology_authority = "../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/kiminozo.ja-zh-Hans.csv"
 terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
 terminology_evidence = "terminology/history/evidence-20261009.csv"
 

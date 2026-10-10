@@ -93,7 +93,7 @@ python -m rUGP.tools.text.build_crsa_native_increment `
 `763146584CF0710223441356B4395E279021B0806C196614377A7A0174AE074A`，采用
 SIL Open Font License 1.1；最终字体继续附带项目现有的字体许可文件。
 
-[`extend_font_subset.py`](../../../Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/extend_font_subset.py)拒绝覆盖输入，
+[`extend_font_subset.py`](../../../Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/extend_font_subset.py)拒绝覆盖输入，
 核对基底和供体哈希，并确认原字形轮廓、提示、水平／垂直度量、cmap GID、GSUB／
 GPOS、名称和许可表都没有变化。结果从 4,715 个字形增加为 4,716 个，只新增
 `U+4F36`。字体 SHA-256 为

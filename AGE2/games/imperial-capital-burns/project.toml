@@ -4,7 +4,7 @@ display_name = "The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse"
 engine = "AGE2"
 steam_app_id = 2630300
 target_locales = ["zh-Hans"]
-terminology_common_authority = "../../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/muv-luv.ja-zh-Hans.csv"
+terminology_common_authority = "../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv"
 development_status = "published-beta"
 player_release_tag = "imperial-capital-burns-BETA-0.2.1"
 translation_authorities = [
@@ -13,10 +13,10 @@ translation_authorities = [
   "translations/choices.ja-zh-Hans.csv",
   "translations/ui-strings.ja-zh-Hans.tsv",
 ]
-terminology_authority = "../../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/imperial-capital-burns.ja-zh-Hans.csv"
+terminology_authority = "../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/imperial-capital-burns.ja-zh-Hans.csv"
 terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
 terminology_evidence = "terminology/history/evidence-20261009.csv"
 image_authority_scope = "historical-evidence"
 image_authority = "images/release-inventory.json"
 image_copy_authority = "images/copy/source-image-lock.v2.json"
-font_policy = "../../../Localization-Make-Games-Speak/Fonts-That-Fit-The-Game/README.md"
+font_policy = "../../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md"

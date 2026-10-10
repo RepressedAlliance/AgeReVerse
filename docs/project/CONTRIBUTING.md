@@ -1,21 +1,21 @@
 # 参与贡献
 
-[返回首页](../../README.md) · [贡献者与致谢](CONTRIBUTORS.md) · [本地化制作](../../Localization-Make-Games-Speak/README.md) · [资产地图](../research/asset-map.md)
+[返回首页](../../README.md) · [贡献者与致谢](CONTRIBUTORS.md) · [本地化制作](../../Localization-MakeGamesSpeak/README.md) · [资产地图](../research/asset-map.md)
 
 欢迎反馈问题、校对译文、补充术语、完善文档和工具，也欢迎研究其他语言的本地化。**没有必须先完成整章、提交全套测试或提供安装包的参与资格要求。** 一个可说明、可复核的小修正也可以提交。中文和英文 Issue／PR 都欢迎。
 
-懂日语可以从 [ParaTranz 对应项目](../../Localization-Make-Games-Speak/ParaTranz-Keep-Improving-Together/README.md)参与；不懂日语也欢迎反馈错字、残字、显示或安装问题，QQ群 **273626767**。
+懂日语可以从 [ParaTranz 对应项目](../../Localization-MakeGamesSpeak/ParaTranz-KeepImprovingTogether/README.md)参与；不懂日语也欢迎反馈错字、残字、显示或安装问题，QQ群 **273626767**。
 
 ## 从哪里开始
 
 | 内容 | 位置与方法 |
 | --- | --- |
-| 文本翻译／校对 | [文本流程](../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/README.md)与本作译文目录，保留身份、源摘要及控制符 |
-| 图片汉化 | [图片流程](../../Localization-Make-Games-Speak/Images-Make-It-Look-Native/README.md)，按实际用途分组，制作方先自检、维护者最后审核 |
-| 字体／术语 | [字体](../../Localization-Make-Games-Speak/Fonts-That-Fit-The-Game/README.md)、[现行术语](../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/README.md)，按游戏与用途选择 |
+| 文本翻译／校对 | [文本流程](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/README.md)与本作译文目录，保留身份、源摘要及控制符 |
+| 图片汉化 | [图片流程](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/README.md)，按实际用途分组，制作方先自检、维护者最后审核 |
+| 字体／术语 | [字体](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md)、[现行术语](../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/README.md)，按游戏与用途选择 |
 | 提取、写回、运行时 | AGE2 放 [AGE2](../../AGE2/README.md)，Photon／RIO 放 [rUGP](../../rUGP/README.md) |
 | 来源调查／历史资料 | [研究记录](../research/localization/README.md)，不混入现行制作清单 |
-| 新语言 | [新语言指南](../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/new-locale.md)，建立独立目标，不覆盖现有日文依据或中文 |
+| 新语言 | [新语言指南](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md)，建立独立目标，不覆盖现有日文依据或中文 |
 
 不熟悉目录可以先提 Issue，维护者协助定位和整理。尚未完成的工具或研究结论也可以发 draft PR，说明可用范围与剩余问题；不要把未验证的功能写成已经支持。
 
@@ -46,7 +46,7 @@ CI 的必要检查仍需通过；[检查范围](ci-checks.md)按文件类型区�
 
 ```powershell
 python -m pip install -r requirements-dev.txt
-python -m unittest discover -s Localization-Make-Games-Speak/Tests-Catch-Problems-Before-Players -p "test_*.py" -v
+python -m unittest discover -s Localization-MakeGamesSpeak/Tests-CatchProblemsBeforePlayers -p "test_*.py" -v
 python -m unittest discover -s AGE2/tests -p "test_*.py" -v
 python -m unittest discover -s rUGP/tests -p "test_*.py" -v
 python -m unittest discover -s docs/research/localization/tests -p "test_*.py" -v

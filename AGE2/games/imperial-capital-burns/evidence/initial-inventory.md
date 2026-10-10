@@ -51,7 +51,7 @@
 | 非正文可翻译 | `root/assets/data/gui/textures/**/_en.webp` → `_ja.webp` | 本作内 44 对素材实际存在；与 TDA 白名单交集一致 | 字节复制白名单 |
 | 非正文可翻译 | `root/assets/data_spec/gui/textures/**/_en.webp` → `_ja.webp` | 实包提取确认本作优先加载这一层；122 对 JP/EN 字节不同的非正文 UI 素材 | 按 TDA 做法把 EN 字节原样复制到 JA 槽 |
 | 非正文可翻译 | `root/assets/data_spec/adv/game/chr/00no_text_telop/add_telop_*` | JP 脚本实际引用 74 个编号，JP 基础图为透明占位 | JP 语音证据 + 1280×720 中文 WebP |
-| 非正文可翻译 | `root/assets/data/gui/font/*` | 简中缺字需覆盖 | 当时复制 TDA font payload；现行构建还必须通过 [`Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/font_coverage.py`](../../../../Localization-Make-Games-Speak/Tools-Let-Tools-Handle-Repetition/font_coverage.py) 的字形检查，并把已审核字体许可证纳入 manifest |
+| 非正文可翻译 | `root/assets/data/gui/font/*` | 简中缺字需覆盖 | 当时复制 TDA font payload；现行构建还必须通过 [`Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/font_coverage.py`](../../../../Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/font_coverage.py) 的字形检查，并把已审核字体许可证纳入 manifest |
 | 正文暂缓 | `root/assets/data_spec/adv/game/scr/*.egpack` | ADV 场景对白、旁白、多语言表 | 正文阶段按 JP 槽使用 `AGE2/tools/egpack/` |
 | 正文暂缓 | speaker 名称字段 | 与场景正文共同出现，用户指定同正文处理 | 正文阶段统一术语与姓名 |
 | 无需翻译 | 日期/地点图片卡、地图、图解、HUD | 用户明确本阶段不处理 | 不进入 payload |

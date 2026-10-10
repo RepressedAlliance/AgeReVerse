@@ -7,7 +7,7 @@ import unittest
 import tomllib
 
 from importlib import import_module
-_localization_terminology = import_module('Localization-Make-Games-Speak.Tools-Let-Tools-Handle-Repetition.terminology')
+_localization_terminology = import_module('Localization-MakeGamesSpeak.Tools-LetToolsHandleRepetition.terminology')
 ROOT = _localization_terminology.ROOT
 MUV_LUV_GAMES = _localization_terminology.MUV_LUV_GAMES
 load_game = _localization_terminology.load_game
@@ -46,7 +46,7 @@ class RecoveryTests(unittest.TestCase):
             if current:
                 start=next(i for i,r in enumerate(cls.baselines[game]) if r['source']==source)
                 assert cls.baselines[game][start:]==current
-                own=read_table(ROOT/'Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent'/f'{game}.ja-zh-Hans.csv')
+                own=read_table(ROOT/'Localization-MakeGamesSpeak/Glossaries-KeepItConsistent'/f'{game}.ja-zh-Hans.csv')
                 assert len(current)==len(own)
                 for row,term in zip(current,own.values()):
                     assert (row['jp'],row['cn'])==(term['jp'],term['cn'])
@@ -95,7 +95,7 @@ class RecoveryTests(unittest.TestCase):
             expected_terms=self.additions['glossary_counts'].get(game,expected_terms)
             if game == 'imperial-capital-burns':
                 expected_terms=self.imperial['after']['terms']
-            self.assertEqual(len(read_table(ROOT/'Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent'/f'{game}.ja-zh-Hans.csv')),expected_terms)
+            self.assertEqual(len(read_table(ROOT/'Localization-MakeGamesSpeak/Glossaries-KeepItConsistent'/f'{game}.ja-zh-Hans.csv')),expected_terms)
             for row in rows:
                 self.assertIn(row['source'],{s['name'] for s in self.manifest['sources']})
                 self.assertEqual(set(row),set(COLS))
@@ -107,7 +107,7 @@ class RecoveryTests(unittest.TestCase):
         totals={'tda02':2,'tda03':3,'photonflowers':15,'photonmelodies':4}
         self.assertEqual(set(self.additions['games']),set(totals))
         for game,engine in MUV_LUV_GAMES.items():
-            glossary_path=ROOT/'Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent'/f'{game}.ja-zh-Hans.csv'
+            glossary_path=ROOT/'Localization-MakeGamesSpeak/Glossaries-KeepItConsistent'/f'{game}.ja-zh-Hans.csv'
             with glossary_path.open(encoding='utf-8-sig',newline='') as stream:
                 glossary=list(csv.DictReader(stream))
             rows=self.current_baselines[game]

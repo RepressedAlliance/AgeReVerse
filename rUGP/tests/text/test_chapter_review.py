@@ -202,7 +202,7 @@ class ChapterReviewTests(unittest.TestCase):
                 self.assertNotIn("鸡奸", text)
                 if "【壬姬】" in text:
                     self.assertNotIn("美纪", text)
-        with (root.parent / "Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/muv-luv.ja-zh-Hans.csv").open(encoding="utf-8-sig", newline="") as stream:
+        with (root.parent / "Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv").open(encoding="utf-8-sig", newline="") as stream:
             glossary = {r["jp"]:r["cn"] for r in csv.DictReader(stream)}
         for term in ("光線級", "レーザー級"):
             self.assertEqual(glossary[term], "光线级")

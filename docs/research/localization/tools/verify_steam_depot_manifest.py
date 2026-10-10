@@ -16,7 +16,7 @@ import struct
 from typing import Any, Iterable, Mapping
 
 from importlib import import_module
-_localization_safe_output = import_module('Localization-Make-Games-Speak.Tools-Let-Tools-Handle-Repetition.safe_output')
+_localization_safe_output = import_module('Localization-MakeGamesSpeak.Tools-LetToolsHandleRepetition.safe_output')
 write_new_files = _localization_safe_output.write_new_files
 
 

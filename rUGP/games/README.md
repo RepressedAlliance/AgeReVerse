@@ -1,6 +1,6 @@
 # rUGP 游戏项目
 
-[返回 rUGP](../README.md) · [完整本地化工作流](../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/workflow.md) · [Photon 图片证据](../evidence/photon/README.md)
+[返回 rUGP](../README.md) · [完整本地化工作流](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md) · [Photon 图片证据](../evidence/photon/README.md)
 
 光子之花与光子旋律使用同一套经审查格式和运行时，但仍是两个独立游戏项目。每部游戏都有自己的
 Steam App ID、文本表、输入哈希、运行时配置、打包结果和实机 QA；一作通过不能自动

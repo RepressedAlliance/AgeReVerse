@@ -10,7 +10,7 @@ from fontTools.ttLib import TTFont
 from fontTools.ttLib.tables.DefaultTable import DefaultTable
 
 from importlib import import_module
-_localization_extend_font_subset = import_module('Localization-Make-Games-Speak.Tools-Let-Tools-Handle-Repetition.extend_font_subset')
+_localization_extend_font_subset = import_module('Localization-MakeGamesSpeak.Tools-LetToolsHandleRepetition.extend_font_subset')
 sha = _localization_extend_font_subset.sha
 from rUGP.tools.fonts.repair_pm_vertical_metrics import repair
 

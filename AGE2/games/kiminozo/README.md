@@ -28,7 +28,7 @@ UI 和图片汉化正在制作与复核，字体已完成选型；资源整合�
 
 ## 术语与基线
 
-截至2026-10-09，公开整理了[本作术语表167条](../../../Localization-Make-Games-Speak/Glossaries-Keep-It-Consistent/kiminozo.ja-zh-Hans.csv)和
+截至2026-10-09，公开整理了[本作术语表167条](../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/kiminozo.ja-zh-Hans.csv)和
 [基线360条记录](terminology/baseline.ja-zh-Hans.csv)。术语集中维护，基线留在本目录；
 [使用说明](terminology/README.md)列出来源、状态及适用范围。
 
@@ -47,7 +47,7 @@ AGE2/games/kiminozo/
 ```
 
 通用容器和文本工具沿用 [AGE2 工具目录](../../tools/)，通用流程沿用
-[本地化规范](../../../Localization-Make-Games-Speak/Text-AI-Translation-Worth-Reading/README.md)。君望专用配置、构建与安装入口，
+[本地化规范](../../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/README.md)。君望专用配置、构建与安装入口，
 会在资源方案确认后补入本目录并从此页链接；其他 AGE2 作品的工具通过测试，不能代替君望实测。
 
 ## 翻译来源与公开范围

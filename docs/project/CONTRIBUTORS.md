@@ -16,7 +16,7 @@
 | 工具 | 贡献范围 | 责任边界 |
 | --- | --- | --- |
 | [OpenAI Codex](https://openai.com/codex) | 在维护者指挥下协助仓库架构、代码实现、格式分析、日文语境翻译与逐项复核、术语整理、测试、文档、清单生成及故障复盘；包括光子之花／光子旋律 CRsa 漏提取字段审计和批注绑定修复 | AI 辅助工作与人工复核分别记录，不宣称完成未实际执行的人工听校或全路线验证；维护者负责最终审核与发布 |
-| OpenAI 图像模型／GPT Image 系列 | 在部分图片工作中辅助生成无字底或候选视觉修改 | 仅是图片制作的一步；文案、布局、身份、像素检查和最终入包仍须人工审核，具体可复现边界见[图片工作流](../../Localization-Make-Games-Speak/Images-Make-It-Look-Native/tools.md) |
+| OpenAI 图像模型／GPT Image 系列 | 在部分图片工作中辅助生成无字底或候选视觉修改 | 仅是图片制作的一步；文案、布局、身份、像素检查和最终入包仍须人工审核，具体可复现边界见[图片工作流](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/tools.md) |
 
 GitHub 已为 OpenAI Codex 提供可识别的 [`@codex`](https://github.com/codex) 身份。由
 Codex 实质参与且经维护者审核的提交使用：
@@ -47,7 +47,7 @@ Co-authored-by: Codex <codex@openai.com>
 | --- | --- | --- |
 | ScRm | TDA00 审核与校对；各篇文本纠错与修订 | [TDA00 BETA 0.2.1 发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-BETA-0.2.1) |
 | 骁飞、Tsubaki-G | 各篇文本纠错与修订 | [TDA01 BETA 0.3.3 发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-BETA-0.3.3) |
-| ScRemilia、Tsubaki-G、X1AOFEI | TDA ParaTranz 已采用记录中的校对与修正 | [署名记录](../../Localization-Make-Games-Speak/ParaTranz-Keep-Improving-Together/tda/contributors.json)与[同步说明](../../Localization-Make-Games-Speak/ParaTranz-Keep-Improving-Together/README.md) |
+| ScRemilia、Tsubaki-G、X1AOFEI | TDA ParaTranz 已采用记录中的校对与修正 | [署名记录](../../Localization-MakeGamesSpeak/ParaTranz-KeepImprovingTogether/tda/contributors.json)与[同步说明](../../Localization-MakeGamesSpeak/ParaTranz-KeepImprovingTogether/README.md) |
 | 柚子コショウ | 光子之花／光子旋律校对、用词与称呼反馈及修正建议 | [BETA 0.1.2 校对更新](photon-beta012-proofreading.md) |
 | 红桃皇后假说 | 为光子之花《樱花盛开之前》提供部分文本 | [贡献范围说明](../research/photon/README.md)；现有证据不支持把全章条数计为其贡献 |
 | 子冰 | 对 TDA01 提供反馈 | [TDA01 beta0.2.2 发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-beta0.2.2) |
@@ -112,8 +112,8 @@ shared/common 端点和光子之花/光子旋律 1,490 图闭环均由本项目�
 ## TDA ParaTranz 校对贡献
 
 此次带入此前确认的人工优先改文，感谢 ScRemilia、Tsubaki-G、X1AOFEI 及维护者参与校对。
-逐项采用记录见 `Localization-Make-Games-Speak/ParaTranz-Keep-Improving-Together/tda/first-merge-decisions.json`，计数及署名依据见
-`Localization-Make-Games-Speak/ParaTranz-Keep-Improving-Together/tda/contributors.json`。计数可以重叠，不表示独占作者权或全篇已审核。
+逐项采用记录见 `Localization-MakeGamesSpeak/ParaTranz-KeepImprovingTogether/tda/first-merge-decisions.json`，计数及署名依据见
+`Localization-MakeGamesSpeak/ParaTranz-KeepImprovingTogether/tda/contributors.json`。计数可以重叠，不表示独占作者权或全篇已审核。
 
 ## English summary
 
