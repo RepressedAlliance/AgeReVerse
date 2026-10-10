@@ -35,7 +35,8 @@
         "source": "retained reachable Git history across all local refs",
         "register": "historical-git-image-fonts.json",
         "recorded_material_outputs": 279
-      }
+      },
+      "crmt_register": "historical-crmt-image-fonts.json"
     },
     "earlier_discovery_subset": {
       "record_files_examined": 35034,
@@ -1054,6 +1055,20 @@
       ],
       "state": "historical",
       "detail_registry": "historical-git-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "historical-crmt-typesetting",
+      "games": [
+        "photonflowers",
+        "photonmelodies"
+      ],
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "scope": "56 early CRmt Chinese designs, subsequent typography corrections and the U0483 generation edit target",
+      "state": "historical-font-rendered-designs; later-versions-separately-recorded",
+      "detail_registry": "historical-crmt-image-fonts.json",
       "evidence": []
     }
   ],

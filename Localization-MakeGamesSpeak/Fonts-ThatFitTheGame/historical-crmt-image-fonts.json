@@ -1,0 +1,1117 @@
+{
+  "schema": "age-reverse-historical-crmt-image-fonts/v1",
+  "checked_on": "2026-10-11",
+  "scope_games": [
+    "photonflowers",
+    "photonmelodies"
+  ],
+  "material_namespace": "Historical PF/PM CRmt unique-image U identifiers. The batch namespace includes both games; it is not expanded into guessed per-game resource offsets.",
+  "status": "historical-font-use-confirmed",
+  "summary": {
+    "distinct_design_assets": 56,
+    "low_risk_v2_assets": 39,
+    "custom_v1_assets": 17,
+    "complete_surviving_per_image_render_reports": 2
+  },
+  "font_input": {
+    "id": "image:photoncn-new-batch",
+    "sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+    "bytes": 1397048,
+    "license": "OFL-1.1",
+    "identity": "Frozen copy of the project PhotonCN input; the recorded hash matches the registered historical file."
+  },
+  "verification": "Both batch invocations explicitly pass the frozen PhotonCN file; each has a separate successful output result and explicit material list. The failed low-risk v1 execution is not counted as a successful batch. These historical font-based layouts were later revised, reused as generation input or replaced, independently of present release adoption.",
+  "source_records": {
+    "frozen-font": {
+      "record": "font-inputs-20260902.v1 / copy result",
+      "timestamp": "2026-09-01T20:24:02.955Z",
+      "retained_text_sha256": "4dffde7c9f2cbcf213d5ddc21658c188fc67300ce18c29c977f66e79033c90e4",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "low-risk-list": {
+      "record": "localization-batch-plan-low-risk-20260902.v1.json / asset list",
+      "timestamp": "2026-09-01T21:07:14.770Z",
+      "retained_text_sha256": "1d87e63aaf8abd66ec7c294554f16bbd512ef2f99b0962d1abdc15a062fa325d",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "low-risk-command": {
+      "record": "render_localization_batch.py / low-risk v2 invocation",
+      "timestamp": "2026-09-01T21:09:02.375Z",
+      "retained_text_sha256": "f4df409feed7ca5b1379134ca0354325c26a4edb965666438e5d6067d35e0b01",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "low-risk-success": {
+      "record": "localized-pngs-low-risk-20260902.v2 / successful result",
+      "timestamp": "2026-09-01T21:09:11.917Z",
+      "retained_text_sha256": "9404853e4b0cf6b0fe0946513c1477eb28b69403a4b83efb99bdd9c66260fea5",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "low-risk-v1-failure": {
+      "record": "localized-pngs-low-risk-20260902.v1 / failed result",
+      "timestamp": "2026-09-01T21:08:26.949Z",
+      "retained_text_sha256": "f64df70047ae7581518d9f8ea63e945f8fcf55cd6aafc20ca0f6919737a71640",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "custom-list": {
+      "record": "localization-batch-plan-custom-20260902.v1.json / asset list",
+      "timestamp": "2026-09-01T21:19:31.279Z",
+      "retained_text_sha256": "3c055c9fb79e3936d2c57167254206224d5072ee86da81d93f11efec78ae3cc6",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "custom-command": {
+      "record": "render_localization_batch.py / custom v1 invocation",
+      "timestamp": "2026-09-01T21:19:46.246Z",
+      "retained_text_sha256": "60c9079ef0fd7bf17879b90e79a70b58f89168d83fcc7112333598d8531b006b",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "custom-success": {
+      "record": "localized-pngs-custom-20260902.v1 / successful result",
+      "timestamp": "2026-09-01T21:19:53.074Z",
+      "retained_text_sha256": "5c6c90f41b834d4be4d951a48aa0dee59098d4e7f2ac1d3ad1d9a2fb767b31f3",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "custom-output-list": {
+      "record": "localized-pngs-custom-20260902.v1 / output listing",
+      "timestamp": "2026-09-01T21:19:58.718Z",
+      "retained_text_sha256": "64b9ed535d22a31ff44c70f934106551cd6229ac34e699ee1e6d0ccd99dfac47",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "correction-command": {
+      "record": "localization-specs-beta-correction-20260902.v1 / invocation",
+      "timestamp": "2026-09-01T21:21:33.761Z",
+      "retained_text_sha256": "4d64f8f47a8fe3f9ec3c8d1a9c9dd2b399a7fe4f399ad28776ecd8fefb08152d",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "correction-success": {
+      "record": "localized-pngs-beta-correction-20260902.v1 / successful result",
+      "timestamp": "2026-09-01T21:21:35.879Z",
+      "retained_text_sha256": "11529f8185d2ca0ab072fe245f36df42bf22991118532cf2b54cbba5d4bf33cd",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "u0329-correction-command": {
+      "record": "localization-specs-U0329-correction-20260902.v1 / invocation",
+      "timestamp": "2026-09-01T21:10:24.104Z",
+      "retained_text_sha256": "dcbd338a19f589197b70e5e70475f35d5b557c0e3c4fea7c21b51f5caf0cd2f2",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "low-risk-visual-record": {
+      "record": "localization-visual-qa-low-risk-20260902.v1.json",
+      "timestamp": "2026-09-01T21:21:53.391Z",
+      "retained_text_sha256": "41ee63582d5f71b88d7e367ce7b63bf6f821a2c1f3169d7faf11c39391e2dd03",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "u0006-render-report": {
+      "record": "U0006.zh-Hans.render.json / retained report",
+      "timestamp": "2026-09-02T19:34:59.313Z",
+      "retained_text_sha256": "0e8f120c11043576042686bbf07deb7d0d1fd2e6aa654830c25f0b43448bedc7",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "u0479-render-report": {
+      "record": "U0479.zh-Hans.render.json / retained report",
+      "timestamp": "2026-09-06T04:22:20.284Z",
+      "retained_text_sha256": "6790943b6f24d80a4b7a57cf3344a649b3e1c58089f3e5a71d7fe3ced76432db",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "u0483-render-fragment": {
+      "record": "U0483.zh-Hans.render.json / retained font-and-operation fragment",
+      "timestamp": "2026-09-03T03:07:25.024Z",
+      "retained_text_sha256": "c03095c76f5abff512ece86f446dea853feef22a64861be3809556869113f9cf",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "u0483-generation-prompt": {
+      "record": "U0483 targeted scanline refinement / prompt",
+      "timestamp": "2026-09-03T03:04:06.012Z",
+      "retained_text_sha256": "aab0a966117c950b063eb10f4ceea7d72d00c53e64f2a8a451670e421cf9b6b3",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    },
+    "u0483-generation-input": {
+      "record": "U0483 targeted scanline refinement / reference input",
+      "timestamp": "2026-09-03T03:04:17.828Z",
+      "retained_text_sha256": "db2b9f014d934cf58823e6e6e2f9e9cc92ef6ea1bdf77e49076467cefc7debfb",
+      "availability": "maintainer-retained authoring transcript; private conversation and paths are not republished"
+    }
+  },
+  "entries": [
+    {
+      "asset_id": "U0001",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0002",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0003",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0004",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0005",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0006",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0145",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0146",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0212",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0213",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0214",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0327",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0328",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0329",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0389",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0477",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0478",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0487",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0488",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0489",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0490",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0491",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0492",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0493",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0507",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0620",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0621",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0667",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0823",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0825",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0826",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0827",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0828",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0829",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0830",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0831",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0832",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0833",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0834",
+      "batch": "low-risk-v2",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "low-risk-list",
+        "low-risk-command",
+        "low-risk-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0108",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0215",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0388",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0391",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0392",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0479",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0480",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0481",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0482",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0483",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0484",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0485",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0486",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0508",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0665",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0666",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    },
+    {
+      "asset_id": "U0804",
+      "batch": "custom-v1",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "state": "historical-font-rendered-design; not-a-current-release-adoption-claim",
+      "sources": [
+        "custom-list",
+        "custom-command",
+        "custom-success",
+        "frozen-font"
+      ],
+      "output_identity": "Original batch output not reconstructed from a modern image. Specific recorded hashes are listed separately where a complete report survives."
+    }
+  ],
+  "specific_render_reports": [
+    {
+      "asset_id": "U0006",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "renderer_sha256": "fc245c4548daac0aa20b023f6dec06b65850889af7884622dbead1937ca6ef19",
+      "spec_sha256": "5e1a806291b01f4a90d797c8937b2c2b78bb93a8ee672730ab1cb174f6d30a92",
+      "recorded_output": {
+        "file": "U0006.zh-Hans.png",
+        "png_sha256": "ff74a8c1847cb5ba70c75176b5b55d8cf70bcf7836f71344062b524582cdcab9",
+        "rgba_sha256": "fabaf4f1724d5cd4598e43ee784e51e495e4d10af23edfe9582273cd4c287d23"
+      },
+      "sources": [
+        "u0006-render-report"
+      ],
+      "verification": "Complete historical rendering report retained; output hashes are reported evidence, not a claim that a modern file or a replay matched them."
+    },
+    {
+      "asset_id": "U0479",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "renderer_sha256": "fc245c4548daac0aa20b023f6dec06b65850889af7884622dbead1937ca6ef19",
+      "spec_sha256": "55f4ffe3c38f50e4784f6c4126f8afd184c45c25240ae096a6556584bb33d61f",
+      "recorded_output": {
+        "file": "U0479.zh-Hans.png",
+        "png_sha256": "aadbb33629d8b7c93546018c2839cb85b37aabe5a3f4a8616e49a503ed2a1397",
+        "rgba_sha256": "fd2458b9dce479f4106840454c8e2062b8801771f5c410736d990f1f42dea4fa"
+      },
+      "sources": [
+        "u0479-render-report"
+      ],
+      "verification": "Complete historical rendering report retained; output hashes are reported evidence, not a claim that a modern file or a replay matched them."
+    }
+  ],
+  "corrections": [
+    {
+      "assets": [
+        "U0329"
+      ],
+      "sources": [
+        "u0329-correction-command",
+        "low-risk-visual-record"
+      ],
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "recorded_png_sha256": "8603484803a30207feb672d9640cfcb647cfa60591cfea670d2e7a46fa380dde",
+      "state": "historical-font-rendered-revision"
+    },
+    {
+      "assets": [
+        "U0483",
+        "U0484",
+        "U0486"
+      ],
+      "sources": [
+        "correction-command",
+        "correction-success"
+      ],
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "state": "historical-font-rendered-revision"
+    }
+  ],
+  "generation_reference": [
+    {
+      "asset_id": "U0483",
+      "input": "image-gallery-20260903.v2/images/zh/U0483.png",
+      "font_ids": [
+        "image:photoncn-new-batch"
+      ],
+      "font_sha256": "b807475c9f60d34711703bacc6d919af1e619bd92273236e274a2495d2abc25b",
+      "sources": [
+        "u0483-render-fragment",
+        "u0483-generation-prompt",
+        "u0483-generation-input"
+      ],
+      "method": "Existing PhotonCN lettering draft supplied as generation edit target. The prompt preserves Chinese wording and placement while repairing backing panels; this records the input, not an exact claim about every final generated glyph."
+    }
+  ]
+}

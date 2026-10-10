@@ -879,7 +879,7 @@
         "photonflowers",
         "photonmelodies"
       ],
-      "usage": "G4267/G4268 map recipe-v1; superseded by Noto Serif recipe-v3; distinct from runtime",
+      "usage": "Historical PF/PM 56-image CRmt deterministic design batch, including the U0483 draft supplied for later generation refinement; also PM G4267/G4268 map recipe-v1 superseded by Noto Serif recipe-v3. Distinct from present runtime input.",
       "license": "OFL-1.1",
       "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
       "license_url": "https://openfontlicense.org/open-font-license-official-text/",

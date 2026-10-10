@@ -4,7 +4,7 @@
 
 [返回本地化](../README.md) · **[游戏字体对应表](runtime.md)** · **[图片用字与样式](images.md)** · [字体致谢与许可](attribution.md) · [新图片登记](registration.md) · [精确版本目录](catalog.json)
 
-**七作全部图片用字的清查仍在进行。** 下列发布清单和已选候选是已核对的部分；完整清查还覆盖旧批次、返修、局部稿、提供字层与生成底稿。新追回的历史用途列在[历史图片用字记录](historical-image-fonts.json)，逐图旧版本见[历史素材版本表](historical-image-variants.json)，已从当前目录移除的早期制作另见 [Git 历史用字表](historical-git-image-fonts.json)。旧试样不算进当前发布版。
+**七作全部图片用字的清查仍在进行。** 下列发布清单和已选候选是已核对的部分；完整清查还覆盖旧批次、返修、局部稿、提供字层与生成底稿。新追回的历史用途列在[历史图片用字记录](historical-image-fonts.json)，逐图旧版本见[历史素材版本表](historical-image-variants.json)，已从当前目录移除的早期制作另见 [Git 历史用字表](historical-git-image-fonts.json)和 [PF／PM 早期 CRmt 排字表](historical-crmt-image-fonts.json)。旧试样不算进当前发布版。
 
 <details>
 <summary><strong>English · Don't Let Fonts Give Your Patch Away — expand here</strong></summary>
