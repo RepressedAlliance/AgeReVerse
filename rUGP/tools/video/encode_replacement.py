@@ -17,16 +17,25 @@ import cv2
 import numpy as np
 
 from rUGP.formats.video.crsi import parse, rebuild
-from .compact_encoder import encode_rgb
 
 
 def build(original: Path, source_video: Path, edited_video: Path,
-          output: Path, report_path: Path) -> dict:
+          output: Path, report_path: Path, *, codec_library: Path | None = None) -> dict:
     for path in (output, report_path):
         if path.exists():
             raise FileExistsError(path)
     if output.resolve() == report_path.resolve():
         raise ValueError('resource and report need distinct output paths')
+    if codec_library is None:
+        from .compact_encoder import encode_rgb
+        encoder = encode_rgb
+        counts = dict(above_pixels=0, repeat_pixels=0, literal_pixels=0)
+    else:
+        from .portable_codec import Codec
+        codec = Codec(codec_library)
+        def encoder(rgb, width, height):
+            return codec.encode_lossless(rgb, width, height), {}
+        counts = None  # C API does not collect pixel-opcode statistics.
     data = original.read_bytes()
     sequence = parse(data)
     source = cv2.VideoCapture(str(source_video))
@@ -35,7 +44,6 @@ def build(original: Path, source_video: Path, edited_video: Path,
     replacements = {}
     changed, closure, hashes = [], [], []
     dirty = False
-    counts = dict(above_pixels=0, repeat_pixels=0, literal_pixels=0)
     try:
         for capture in (source, edited):
             if not capture.isOpened():
@@ -54,10 +62,11 @@ def build(original: Path, source_video: Path, edited_video: Path,
             if frame.independent:
                 dirty = False
             if different or dirty:
-                replacement, statistics = encode_rgb(rgb, sequence.width, sequence.height)
+                replacement, statistics = encoder(rgb, sequence.width, sequence.height)
                 replacements[index] = replacement
-                for key, value in statistics.items():
-                    counts[key] += value
+                if counts is not None:
+                    for key, value in statistics.items():
+                        counts[key] += value
                 (changed if different else closure).append(index)
                 dirty = True
             if (index + 1) % 300 == 0:
@@ -80,6 +89,7 @@ def build(original: Path, source_video: Path, edited_video: Path,
         replaced_frames=len(replacements),
         retained_original_frames=len(sequence.frames)-len(replacements),
         replacement_mode='0x03ff', statistics=counts,
+        encoder_backend='portable-c' if codec_library is not None else 'numba',
         target_rgb_sha256=hashes, seconds=time.perf_counter()-started,
         limitation='Videos are decoded by frame index; audio and in-game streaming are not exercised.')
     with output.open('xb') as stream:
@@ -94,8 +104,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ('original', 'source_video', 'edited_video', 'output', 'report'):
         parser.add_argument(name, type=Path)
+    parser.add_argument('--codec-library', type=Path, help='explicit C codec shared library; avoids the Numba encoder')
     args = parser.parse_args()
-    report = build(args.original, args.source_video, args.edited_video, args.output, args.report)
+    report = build(args.original, args.source_video, args.edited_video, args.output, args.report,
+                   codec_library=args.codec_library)
     print(json.dumps({key: report[key] for key in
                       ('frame_count', 'replaced_frames', 'retained_original_frames', 'output_bytes', 'seconds')}))
 

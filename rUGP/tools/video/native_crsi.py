@@ -71,10 +71,14 @@ class NativeCrsiDecoder:
             raise ValueError('dependent frame requires a preceding decoded surface')
         self.u.mem_write(0x1000000, frame.payload + bytes(32))
         args = [0x1800000+(height-1)*width*4, width*4, 0, width | (height << 16)]
-        if frame.mode == 0x575 and frame.parameter == 8:
+        if ((frame.mode == 0x575 and frame.parameter == 8) or
+            (frame.mode in (0x56d, 0x52c, 0x524) and frame.parameter == 32767)):
             if width % 2 or height % 2:
                 raise ValueError('observed codec-1 requires even dimensions')
-            self.u.mem_write(0x1400000, bytes.fromhex('0001000106070600010008000000'))
+            config = bytearray(bytes.fromhex('0001000106070600010008000000'))
+            config[4:7] = bytes(((frame.mode & 7)+1, ((frame.mode >> 3)&7)+1, ((frame.mode >> 6)&7)+1))
+            struct.pack_into('<H', config, 10, frame.parameter)
+            self.u.mem_write(0x1400000, bytes(config))
             self._call(0x5b8ad0 if frame.independent else 0x5b9450, [0x1000000, 0x1400000, *args])
         elif frame.mode == 0x03ff and frame.parameter is None and frame.independent:
             if width >= 1600:
