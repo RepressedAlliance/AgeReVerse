@@ -32,7 +32,7 @@
 
 ## Windows 字体也如实登记
 
-楷体 KaiTi、宋体 SimSun、MS Mincho、微软雅黑 Microsoft YaHei 出现在实际图片制作或候选中；SimHei、MS Gothic 还有字体比较记录。它们是 Windows 授权字体，**不能统称为开源字体，也不在本仓库附送字体文件**。
+楷体 KaiTi、宋体 SimSun、MS Mincho、微软雅黑 Microsoft YaHei、黑体 SimHei 出现在实际图片制作或候选中；MS Gothic 还有字体比较记录。它们是 Windows 授权字体，**不能统称为开源字体，也不在本仓库附送字体文件**。SimHei 的版权记录为北京中易，精确文件身份和 Microsoft 产品附带许可说明见目录，不把“Windows 自带”写成开源授权。
 
 微软雅黑 Light 也实际用于一轮 33 张装备标题候选，后来被常规版替换；两种输入分别登记。旧稿被覆盖而没有保留历史字体摘要的，明确说明证据限制，不把现存常规版配方倒推给旧稿。新增字体与素材的逐项对应见[历史图片用字记录](historical-image-fonts.json)；七作完整清查尚未结束。
 

@@ -23,6 +23,17 @@
       "record": "build_equipment_titles.py (historical revision before msyh.ttc change)",
       "availability": "retained authoring call plus successful command result; old output/manifest overwritten",
       "verification": "First execution failed on a syntax error; the syntax-only repair then produced 33 candidates before the font-path change. Failed execution is not the evidence of use."
+    },
+    "credit-repair-renderer": {
+      "record": "static_image_reinventory_20260905/build_reuse_scope_correction.py",
+      "sha256": "ef067c8b70366949698ad04a7c4b2077ac2f76d646c80a2a82e351540865711b",
+      "availability": "maintainer-held source; actual SimHei rendering is distinct from review-sheet labels"
+    },
+    "credit-repair-manifest": {
+      "record": "portrait_reuse_correction_v1/draft_manifest.json",
+      "sha256": "892d034f19281573ceca08eba915d94505448f580b3246738cde0acbc2662a8f",
+      "pointer": "/credit_rows/0",
+      "availability": "maintainer-held source; paths omitted"
     }
   },
   "entries": [
@@ -255,6 +266,35 @@
       },
       "sources": [
         "equipment-light-draft"
+      ]
+    },
+    {
+      "game": "photonflowers",
+      "asset": "pf:rio002:0x3b89454c / G2685",
+      "output": "G2685_simplified_credit.png",
+      "sha256": "4a1da1a348707e17cea99cd9c2863352e2fa10ec3700bc1d2d71024d835025d4",
+      "font_ids": [
+        "image:simhei-credit-historical"
+      ],
+      "font_sha256": "9b1959db3b3abeb7efdaec26edf7dfe871a6039de8d614af7248575207be629e",
+      "text": "制",
+      "font_size_px": 20,
+      "supersample": 8,
+      "edit_box": [
+        20,
+        0,
+        39,
+        20
+      ],
+      "method": "single-character-font-rendering; remaining-original-glyphs-preserved",
+      "state": "historical-local-candidate; exact-bytes-absent-from-current-release",
+      "verification": {
+        "method": "replay-to-retained-RGBA",
+        "changed_pixels": 0
+      },
+      "sources": [
+        "credit-repair-renderer",
+        "credit-repair-manifest"
       ]
     }
   ]

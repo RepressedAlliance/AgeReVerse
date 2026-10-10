@@ -972,6 +972,19 @@
       "state": "historical-rendered-draft; replaced-by-regular-yahei",
       "detail_registry": "historical-image-fonts.json",
       "evidence": []
+    },
+    {
+      "id": "pf-credit-simhei-historical",
+      "games": [
+        "photonflowers"
+      ],
+      "scope": "PF G2685 historical first-character credit correction",
+      "font_ids": [
+        "image:simhei-credit-historical"
+      ],
+      "state": "historical-local-candidate; not-current-release",
+      "detail_registry": "historical-image-fonts.json",
+      "evidence": []
     }
   ],
   "gaps": [
