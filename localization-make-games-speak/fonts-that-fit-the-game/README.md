@@ -1,8 +1,17 @@
-# 字体：游戏文本与图片制作
+# 字体排版｜别让字体出卖你的补丁
+
+**Fonts & Typography — Don't Let Fonts Give Your Patch Away**
 
 [返回本地化](../README.md) · **[游戏字体对应表](runtime.md)** · **[图片用字与样式](images.md)** · [精确版本目录](catalog.json)
 
-这里集中维护七作的字体选择与来源，游戏文本和图片烘焙用字分别登记。替换运行时字体不会改变已画进图片的文字，重画图片也不会修复正文的选字、字宽或换行。
+<details>
+<summary><strong>English · Don't Let Fonts Give Your Patch Away — expand here</strong></summary>
+
+The catalog covers the seven released games, original AGE2 roles, every bundled AGE2 font, the distinct PF/PM PhotonR2 binaries, and known image-authoring inputs. Runtime selection, bundled-but-unused fonts, image production and historical trials are separate. Source hashes identify files; they do not establish visual acceptance or grant redistribution rights. For another locale, check its own coverage, shaping, metrics and engine selection.
+
+</details>
+
+译文进入游戏以后，还要放得下、看得清，并贴合作品原有的气质。这里集中维护七作的字体选择与来源，游戏文本和图片烘焙用字分别登记。替换运行时字体不会改变已画进图片的文字，重画图片也不会修复正文的选字、字宽或换行。
 
 **核对范围：七作当前发布包中的运行时字体与配置已核对；图片制作字体尚未保证找全。** 图片目录目前整理的是已查明的输入、候选及采用记录，还没有逐批追溯全部最终成品。其余图片字体与实际采用关系留待后续专项整理，不把阶段性清单写成完整清单。
 
@@ -51,10 +60,3 @@ python -m localization-make-games-speak.tools-let-tools-handle-repetition.font_c
 ```
 
 这只检查字符是否在字体 cmap 中。AGE2 还要核对配置、语言槽、松散覆盖和实际显示；rUGP 还要核对字体加载、家族替换和版本绑定；图片另查排版、笔画和视觉融合。需要补字时才用[子集扩展工具](../tools-let-tools-handle-repetition/extend_font_subset.py)，PM 度量专项见 [rUGP 字体工具](../../rUGP/tools/fonts/README.md)。新语言重新做其字符覆盖和排版检查。
-
-<details>
-<summary>English · font inventory</summary>
-
-The catalog covers the seven released games, original AGE2 roles, every bundled AGE2 font, the distinct PF/PM PhotonR2 binaries, and known image-authoring inputs. Runtime selection, bundled-but-unused fonts, image production and historical trials are separate. Source hashes identify files; they do not establish visual acceptance or grant redistribution rights. For another locale, check its own coverage, shaping, metrics and engine selection.
-
-</details>

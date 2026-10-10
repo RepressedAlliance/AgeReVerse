@@ -1,8 +1,30 @@
-# 文本汉化
+# 文本翻译｜让 AI 翻译值得读下去
+
+**Text Translation — Make AI Translation Worth Reading**
 
 [返回本地化](../README.md) · **[翻译最高原则](../principles.md)** · [完整工作流](workflow.md) · [English workflow](workflow.en.md) · [新语言指南](new-locale.md)
 
-沿用本项目已经使用的文本流程：通读剧情并建立术语 → 按场景初译 → 独立日文对照二审 → 解决疑点与联动修改 → 技术写回和实机检查 → 维护者人工修正、复查 → 发布。各阶段的输入、输出和状态见[完整工作流](workflow.md)。
+<details>
+<summary><strong>English · Make AI Translation Worth Reading — expand here</strong></summary>
+
+Natural-sounding lines still need accurate story context, consistent characters and correct connections between scenes. The method below separates drafting, independent review, adopted changes and final human corrections. Read the [complete English workflow](workflow.en.md) for the full stages and the [consistency guide](../glossaries-keep-it-consistent/README.md#english) for maintaining decisions across batches.
+
+Read 01–03 to establish the game, authoritative source and table mapping. Then
+read the story and freeze terminology (04), translate complete scenes (05), and
+independently review each candidate against Japanese (06). Resolve questions and
+update terminology, then trace and resolve change impacts (07) before engine
+writeback, automated checks and in-game QA. Apply 07 whenever later edits occur.
+The numbers describe workflow order, not rule precedence.
+
+Before these steps, apply the shared [translation principles](../principles.md#english-summary)
+to both text and images, including Japanese-voice transcription for assets
+exclusive to the official English edition.
+
+</details>
+
+一句话读着顺，不代表放进整部作品仍然正确。这里讲怎样让 AI 参与长篇翻译，同时守住原意、人物关系、语气和前后呼应。
+
+沿用本项目已经使用的文本流程：通读剧情并建立术语 → 按场景初译 → 独立日文对照二审 → 解决疑点与联动修改 → 技术写回和实机检查 → 维护者人工修正、复查 → 发布。各阶段的输入、输出和状态见[完整工作流](workflow.md)。术语表如何形成、修改怎样影响全文，另见[术语与全文一致性](../glossaries-keep-it-consistent/README.md)。
 
 先按最高原则确定语言来源与处理：日译中，保留日文原版已有英文；日文改用英文需有适当理由。官方英文版独有素材用对应日语语音听译，初译和二审都核对语音，不改成英译中。图片文案也使用同一原则。
 
@@ -67,23 +89,10 @@ dry-run 和验收表。引擎规定的写入、安装前校验仍在实际操作
 - 原 `REVIEW_RULES.md` 要求候选完成后重新阅读 JP、逐句审核，对应现在的 06。
 - 原 `TECHNICAL_QA_RULES.md` 的职责现在分别由 AGE2 与 rUGP 的技术规范承担。
 
-本次将现有项目清单、源数据和字段规范排为 01—03，补齐开工入口；04—06 延续以前
+项目清单、源数据和字段规范排为 01—03，用于确认开工条件；04—06 延续
 “先术语、再初译、后独立审核”的使用顺序；07 补充修改后的关联检查与同步。
 完整阶段和交付要求以[完整工作流](workflow.md)为准。
 
-译文仍跟随各作品放在 [AGE2](../../AGE2/games/README.md) 或 [rUGP](../../rUGP/games/README.md) 的游戏目录，现行术语集中于 [glossaries/](../glossaries-keep-it-consistent/README.md)。图片文案可复用日文识读、术语和二审要求，但图片制作另走[图片流程](../images-make-it-look-native/README.md)。
+译文仍跟随各作品放在 [AGE2](../../AGE2/games/README.md) 或 [rUGP](../../rUGP/games/README.md) 的游戏目录，现行术语及其维护方法集中于[术语与全文一致性](../glossaries-keep-it-consistent/README.md)。图片文案可复用日文识读、术语和二审要求，但图片制作另走[图片流程](../images-make-it-look-native/README.md)。
 
 发布后的其他参与者主要通过 [ParaTranz](../paratranz-keep-improving-together/README.md) 校对，改文经确认后回到源表、完成相关验证，再进入新版本。它不替代已经完成的发布前人工修改。
-
-## English summary
-
-Read 01–03 to establish the game, authoritative source and table mapping. Then
-read the story and freeze terminology (04), translate complete scenes (05), and
-independently review each candidate against Japanese (06). Resolve questions and
-update terminology, then trace and resolve change impacts (07) before engine
-writeback, automated checks and in-game QA. Apply 07 whenever later edits occur.
-The numbers describe workflow order, not rule precedence.
-
-Before these steps, apply the shared [translation principles](../principles.md#english-summary)
-to both text and images, including Japanese-voice transcription for assets
-exclusive to the official English edition.

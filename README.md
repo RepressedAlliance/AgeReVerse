@@ -9,6 +9,7 @@
   <a href="#部分作品实机预览">汉化效果</a> ·
   <a href="#其他作者的汉化入口">ATE 汉化（其他作者）</a> ·
   <a href="docs/player/README.md">安装、卸载与排错</a> ·
+  <a href="localization-make-games-speak/README.md">学做汉化 / Localization</a> ·
   <a href="#research">制作与研究 / Research · English</a> ·
   <a href="#问题反馈">问题反馈</a>
 </p>
@@ -61,6 +62,8 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
 | 光子之花 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
 | 光子旋律 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
 | 君望（含 Another Episode Collection+） | **制作中，尚未发布** | [项目介绍与进度](AGE2/games/kiminozo/README.md) |
+
+> **也想让喜欢的游戏说你的语言？** [游戏本地化｜让游戏说你的语言 · Make Games Speak Your Language](localization-make-games-speak/README.md)：公开 AI 辅助文本翻译、图片汉化、字体排版、全文一致性和多人校对的方法，各入口可原地展开英文说明。
 
 <a id="部分作品实机预览"></a>
 
@@ -290,7 +293,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 | 内容 | 入口 |
 | --- | --- |
 | 全部公开成果与研究索引 | **[制作与研究入口](docs/research/README.md)** |
-| 翻译规则、术语、图片和字体流程 | [通用本地化工作区](localization-make-games-speak/README.md) |
+| 学习并复用文本、图片、字体、一致性和多人校对方法 | **[游戏本地化｜让游戏说你的语言](localization-make-games-speak/README.md)** |
 | TDA／帝都的 AGE2、FPD、EGPACK 与松散覆盖 | [AGE2 工作区](AGE2/README.md) |
 | 君望本篇与附加篇的文本、术语和 UI 图片制作 | [君望项目（制作中）](AGE2/games/kiminozo/README.md) |
 | Photon 的 RIO、RUO、CRsa、图片和运行时 | [rUGP 工作区](rUGP/README.md) |
@@ -307,6 +310,7 @@ The Chinese player downloads are listed in the first part of this README.
 
 | Topic | English-friendly starting point |
 | --- | --- |
+| Learn and adapt the localization method | **[Game Localization — Make Games Speak Your Language](localization-make-games-speak/README.md)** |
 | Public results and current limitations | [Research index](docs/en/research-index.md) |
 | Text, image, font and tool locations | [Asset map](docs/en/asset-map.md) |
 | Translation and independent review | [Complete English workflow](localization-make-games-speak/text-ai-translation-worth-reading/workflow.en.md) |

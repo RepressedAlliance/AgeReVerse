@@ -66,7 +66,7 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 - 按 route／scene 顺序阅读当前章节及必要前后文；
 - 记录人物关系、身份差、称谓、口癖和当前情绪；
 - 扫描人名、组织、军衔、机体、武器、作战名、地名和固定梗；
-- 与 [`glossaries/muv-luv.ja-zh-Hans.csv`](../glossaries-keep-it-consistent/muv-luv.ja-zh-Hans.csv)
+- 与[系列通用术语表](../glossaries-keep-it-consistent/muv-luv.ja-zh-Hans.csv)
   合并已有决定；
 - 新词先进入术语候选，不在正文里各自临时发明译名；
 - 拿不准的剧情、说话人、称谓或术语先标为 `question`。

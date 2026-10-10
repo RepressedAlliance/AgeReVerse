@@ -1,8 +1,23 @@
-# 图片汉化：按步骤制作与审核
+# 图片汉化｜让中文长在原画里
+
+**Image Localization — Make It Look Like It Was Always There**
 
 [返回本地化](../README.md) · **[翻译最高原则](../principles.md)** · [视觉制作规范](production.md) · [字体目录](../fonts-that-fit-the-game/README.md) · [现有工具用法](tools.md)
 
-目标是让中文像原图本来就有的一部分：**视觉自然、空间关系正确，清楚的信息准确，同套素材一致，无关画面保持原样。** 这套步骤整理自本项目实际的图片提取、全量分类、UI／场景制作、返修及维护者审核过程。
+<details>
+<summary><strong>English · Make It Look Like It Was Always There — expand here</strong></summary>
+
+## English workflow
+
+Five stages: extract and classify all images; confirm copy and style; produce images; self-review and repair; obtain human review and deliver through the engine. Follow the shared [translation principles](../principles.md#english-summary): translate Japanese into Chinese, preserve English present in the Japanese original, use English for Japanese only when justified, and translate English-edition-only assets from their corresponding Japanese voice.
+
+Most Japanese lettering needs translation, but determine the translation and retention regions by function, player understanding and the original presentation first. Remove old lettering and its effects only where translation is needed, then author Chinese using reproducible typography, drawing or constrained image editing as appropriate. Match perspective, material, lighting and occlusion. Review every output at full-frame, native and magnified scales, then obtain the maintainer's review of the exact final candidate. Bind the approved output through the appropriate engine, test in game, and complete the maintainer's final corrections before release.
+
+The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference, not a guaranteed ranking. A capable alternative still needs representative-image validation. Clear copy, prices and plot information are fixed; only unresolved decorative text may be reconstructed with an explicit record. Preserve unrelated pixels and distinguish authoring, human approval, engine verification and publication.
+
+</details>
+
+一块按钮、一张手写便条、一幅嵌着文字的场景，都有自己的字形、材质和空间关系。目标是让中文像原图本来就有的一部分：**视觉自然、空间关系正确，清楚的信息准确，同套素材一致，无关画面保持原样。** 这套步骤整理自本项目实际的图片提取、全量分类、UI／场景制作、返修及维护者审核过程。
 
 大部分日文文案需要翻译，但不是看到日文就必须改图。先按[内容用途、玩家理解和原作表现](../principles.md#如何判断是否需要翻译)确定应译与保留区域，再安排制作；保留原图或部分文字也可以是经过核查的正确结果。
 
@@ -29,11 +44,3 @@
 复用游戏现有清单或字段，不要求每作另造一套庞大表。至少能找到：游戏与源资源身份、分类／组、原文与已采用文案、保留／拟写决定、字体或绘制方式、当前成品、检查结果、维护者意见和最终交付位置。原图、候选和审核页留在本地制作目录，公开范围见[制作规范](production.md#9-复用返修与公开)。
 
 “已制作”“已自检”“人工已确认”“实机已确认”“已发布”是不同事实，不能用一个 `done` 混称。也不能用文件存在、OCR 通过或模型档位替代查看图片。
-
-## English workflow
-
-Five stages: extract and classify all images; confirm copy and style; produce images; self-review and repair; obtain human review and deliver through the engine. Follow the shared [translation principles](../principles.md#english-summary): translate Japanese into Chinese, preserve English present in the Japanese original, use English for Japanese only when justified, and translate English-edition-only assets from their corresponding Japanese voice.
-
-Most Japanese lettering needs translation, but determine the translation and retention regions by function, player understanding and the original presentation first. Remove old lettering and its effects only where translation is needed, then author Chinese using reproducible typography, drawing or constrained image editing as appropriate. Match perspective, material, lighting and occlusion. Review every output at full-frame, native and magnified scales, then obtain the maintainer's review of the exact final candidate. Bind the approved output through the appropriate engine, test in game, and complete the maintainer's final corrections before release.
-
-The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference, not a guaranteed ranking. A capable alternative still needs representative-image validation. Clear copy, prices and plot information are fixed; only unresolved decorative text may be reconstructed with an explicit record. Preserve unrelated pixels and distinguish authoring, human approval, engine verification and publication.

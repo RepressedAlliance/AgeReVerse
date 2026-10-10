@@ -42,7 +42,7 @@ localization asset, not an installer.
 
 | Directory | Responsibility |
 | --- | --- |
-| [`localization-make-games-speak/`](../../localization-make-games-speak/README.md) | Engine-neutral two-pass translation, terminology, image production, font checks, and new-locale workflow |
+| **[Game Localization — Make Games Speak Your Language](../../localization-make-games-speak/README.md)** | Practical text, image, typography, consistency and community-proofreading guides, plus reusable tools and their tests |
 | [`AGE2/`](../../AGE2/README.md) | TDA/Imperial game-bound text and image identities, plus the in-development Kiminozo project, FPD, EGPACK, WebP, loose overlays, tests, and postmortems |
 | [`rUGP/`](../../rUGP/README.md) | Photon game-bound text and image identities, ICI, RIO, CRsa, RUO, Cr6Ti, CRip, runtime, and postmortems |
 | [`docs/`](../README.md) | Player, research, maintenance, legal, and English documentation |

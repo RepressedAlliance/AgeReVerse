@@ -8,6 +8,7 @@
 
 | 目标 | 入口 |
 | --- | --- |
+| 学习文本翻译、图片汉化、字体、一致性和多人校对方法 | **[游戏本地化｜让游戏说你的语言](../../localization-make-games-speak/README.md)** |
 | 查找公开的中文文本、术语、图片身份和字体资料 | [文本、术语、图片与字体资产地图](asset-map.md) |
 | 为韩语、俄语等建立新语言 | [完整工作流](../../localization-make-games-speak/text-ai-translation-worth-reading/workflow.md) · [新语言指南](../../localization-make-games-speak/text-ai-translation-worth-reading/new-locale.md) |
 | 研究 TDA／帝都的 `pack.bin`、EGPACK、WebP 与松散覆盖 | [AGE2](../../AGE2/README.md) |

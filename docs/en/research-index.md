@@ -2,6 +2,8 @@
 
 [English overview](README.md) · **[Asset map](asset-map.md)** · [English localization workflow](../../localization-make-games-speak/text-ai-translation-worth-reading/workflow.en.md) · [AGE2](../../AGE2/README.md) · [AGE2 postmortems](../../AGE2/docs/postmortems/README.md) · [rUGP](../../rUGP/README.md) · [rUGP postmortems](../../rUGP/docs/postmortems/README.md) · [Prior work](../research/references.md)
 
+For a practical guide to translation, images, fonts, consistency, collaboration and reusable tools, start with **[Game Localization — Make Games Speak Your Language](../../localization-make-games-speak/README.md)**. Its English overview and section explanations expand in place.
+
 This index separates three different claims:
 
 1. **Documented observation** — a result was seen on an exact legal game build and its reusable conclusion was recorded.

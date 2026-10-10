@@ -1,4 +1,6 @@
-# 帝都燃烧 ParaTranz Action 试点
+# 帝都燃烧：ParaTranz 校对同步数据
+
+[返回多人校对](../README.md) · [维护者同步说明](../sync.md)
 
 项目固定为 [20659](https://paratranz.cn/projects/20659)，初始范围 75 个文件、5,749 条。
 只拉取正文、姓名、选项、界面四份既有中文表。术语表、图片、辅助资源以及 TDA/光子之花/光子旋律
@@ -6,7 +8,7 @@
 
 ## 使用
 
-合并工作流 PR 后，在 Actions → **ParaTranz ICB pilot** → **Run workflow** 操作。
+维护者在 Actions → **ParaTranz ICB pilot** → **Run workflow** 操作。
 默认 `dry_run=true`：实际联网校验并计算候选差异，但不会推送或创建同步 PR。
 关闭 dry_run 后，仅 main 分支运行可创建 `[ParaTranz] 帝都燃烧校对同步` PR，仍须人工合并。
 已有同步 PR 待处理时不重复创建。试点无定时任务，不会自动合并、审核或发布补丁。
