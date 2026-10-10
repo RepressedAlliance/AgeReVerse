@@ -6,6 +6,7 @@
 
 | 资料 | 用途 |
 | --- | --- |
+| [原文保留核对](original-retention-20261010.md) | TDA00–03、帝都燃烧、PF／PM 的署名、曲名与原画保留依据，以及君望、PF／PM 七曜日期图的既有决定 |
 | [references](references) | 2026-09-09 本篇／AL Steam 来源核验和独立术语发现；参考研究，不是当前七作术语表 |
 | [reviews](reviews) | 旧审核批次、修复依据和人工校对过程；不代表此后所有译文必须等于旧句子 |
 | [terminology-history/](terminology-history/README.md) | 旧混合表、逐作恢复和范围审计；当前表在 [glossaries](../../../localization/glossaries/README.md) |
