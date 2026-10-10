@@ -11,6 +11,7 @@
 | 字体 | 作者／维护项目与上游 | 许可与本项目用途 |
 | --- | --- | --- |
 | Noto Sans SC、Noto Serif SC | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；七作 UI、卡片、说明、地图和场景排字；另有从可变字体导出的静态 700，用于 PM 日历缩略图字幕 |
+| Noto Sans JP | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；PM 早期设置页“画面模式”排字试稿；历史字体摘要与保留文件一致，代表图重放一致 |
 | 思源黑体 Source Han Sans SC | [Adobe Fonts](https://github.com/adobe-fonts/source-han-sans)，Adobe 及项目贡献者 | OFL 1.1；AGE2 发布说明页、部分 HUD／字幕及历史制作方案，以及 PhotonCN／PhotonR2 的派生基础 |
 | 思源宋体 Source Han Serif CN | [Adobe Fonts](https://github.com/adobe-fonts/source-han-serif)，Adobe 及项目贡献者 | OFL 1.1；TDA02／03 四张介绍卡的 Bold／Heavy |
 | 狮尾加糖宋体 Swei Sugar | [max32002](https://github.com/max32002/swei-sugar)，基于思源／Noto 宋体的衍生项目 | OFL 1.1；五作日期、地点和剧情卡 Medium；TDA01 在制明太子纸箱中文括注 SemiBold |
@@ -35,6 +36,10 @@
 楷体 KaiTi、宋体 SimSun、MS Mincho、微软雅黑 Microsoft YaHei、黑体 SimHei 出现在实际图片制作或候选中；MS Gothic 还有字体比较记录。它们是 Windows 授权字体，**不能统称为开源字体，也不在本仓库附送字体文件**。SimHei 的版权记录为北京中易，精确文件身份和 Microsoft 产品附带许可说明见目录，不把“Windows 自带”写成开源授权。
 
 微软雅黑 Light 也实际用于一轮 33 张装备标题候选，后来被常规版替换；两种输入分别登记。旧稿被覆盖而没有保留历史字体摘要的，明确说明证据限制，不把现存常规版配方倒推给旧稿。新增字体与素材的逐项对应见[历史图片用字记录](historical-image-fonts.json)；七作完整清查尚未结束。
+
+PM 早期设置页及“保存”按钮还使用过 **BIZ UDGothic／BIZ UDPGothic 的 Regular、Bold**，设计／发行来源为 TypeBank／Morisawa；[Microsoft 字体页](https://learn.microsoft.com/en-us/typography/font-list/biz-udgothic)列明这两个 TTC 中的四种字体。实际输入的历史摘要与现存 Windows 文件一致，文件许可声明为 Microsoft 产品附带字体条款。旧脚本误写的“开源候选”已在本目录纠正；另有 [Morisawa／Google Fonts 的 OFL 发行](https://github.com/googlefonts/morisawa-biz-ud-gothic)，但它不替代当时实际读取的 Windows 文件身份与许可。
+
+同轮设置页试稿的 **等线粗体 DengXian Bold** 来源为北京北大方正电子有限公司，并随 Microsoft 产品提供；[Office 字体清单](https://support.microsoft.com/en-us/office/fonts/cloud-fonts-in-office)列有 `dengb.ttf`。它也是非 OFL 输入。旧排字结果确认使用该文件，但未保存当时字体摘要，现存 1.22 的摘要只作核对参考。具体旧稿、TTC 索引及证据区别见 [Git 历史用字表](historical-git-image-fonts.json)。
 
 Microsoft 的[字体再分发说明](https://learn.microsoft.com/en-us/typography/fonts/font-faq)区分渲染后的图形和字体软件：在适用授权条件下，词句的图片可以用于游戏；这不等于允许复制字体文件、转换字体格式，或把逐字导出的字形库作为游戏字体分发。新制作优先选来源与许可明确的开源字体；确需其他字体时，记录具体授权依据和交付方式，不因“系统装了”就推定任何使用方式都获准。
 

@@ -1738,6 +1738,196 @@
       ],
       "historical_collection_index": 0,
       "state": "rendered-superseded-draft; historical-binary-hash-not-retained"
+    },
+    "image:biz-udgothic-regular-history": {
+      "file": "BIZ-UDGothicR.ttc",
+      "sha256": "11cf9a40c90bf67fe9de86c9d852c7a8986dcf87fb16d86b510abf118df41673",
+      "bytes": 5027432,
+      "family": [
+        "BIZ UDGothic",
+        "BIZ UDゴシック"
+      ],
+      "style": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.02"
+      ],
+      "copyright": [
+        "Font © Copyright 2019 Morisawa Inc. All rights reserved.",
+        "Font ? Copyright 2019 Morisawa Inc. All rights reserved."
+      ],
+      "authors": "TypeBank Co., Ltd. / Morisawa Inc.; supplied with licensed Microsoft products",
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "July PM Options screen-mode and/or right-click Save image trials and superseded revisions; see historical-git-image-fonts.json for individual bindings",
+      "state": "rendered-historical-trials-and-revisions; not-current-release-input",
+      "historical_collection_index": 0,
+      "license": "Windows font licensing; not OFL for the actual Microsoft-supplied binary",
+      "upstream_url": "https://learn.microsoft.com/en-us/typography/font-list/biz-udgothic",
+      "license_url": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+      "identity_basis": "July route inventory records this exact font binary hash, matching retained metadata. Representative fixed-width Regular/Bold and Noto JP replays agree; each material separately records the collection index and its evidence.",
+      "historical_font_sha256": "11cf9a40c90bf67fe9de86c9d852c7a8986dcf87fb16d86b510abf118df41673",
+      "license_correction": "The old recipe called this Windows TTC an open-license candidate. Its retained name table instead declares Microsoft-supplied font terms. The separately distributed Google Fonts/Morisawa OFL build does not replace the identity or license of this input.",
+      "separate_ofl_project_url": "https://github.com/googlefonts/morisawa-biz-ud-gothic"
+    },
+    "image:biz-udpgothic-regular-history": {
+      "file": "BIZ-UDGothicR.ttc",
+      "sha256": "11cf9a40c90bf67fe9de86c9d852c7a8986dcf87fb16d86b510abf118df41673",
+      "bytes": 5027432,
+      "family": [
+        "BIZ UDPGothic",
+        "BIZ UDPゴシック"
+      ],
+      "style": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.02"
+      ],
+      "copyright": [
+        "Font © Copyright 2019 Morisawa Inc. All rights reserved.",
+        "Font ? Copyright 2019 Morisawa Inc. All rights reserved."
+      ],
+      "authors": "TypeBank Co., Ltd. / Morisawa Inc.; supplied with licensed Microsoft products",
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "July PM Options screen-mode and/or right-click Save image trials and superseded revisions; see historical-git-image-fonts.json for individual bindings",
+      "state": "rendered-historical-trials-and-revisions; not-current-release-input",
+      "historical_collection_index": 1,
+      "license": "Windows font licensing; not OFL for the actual Microsoft-supplied binary",
+      "upstream_url": "https://learn.microsoft.com/en-us/typography/font-list/biz-udgothic",
+      "license_url": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+      "identity_basis": "July route inventory records this exact font binary hash, matching retained metadata. Representative fixed-width Regular/Bold and Noto JP replays agree; each material separately records the collection index and its evidence.",
+      "historical_font_sha256": "11cf9a40c90bf67fe9de86c9d852c7a8986dcf87fb16d86b510abf118df41673",
+      "license_correction": "The old recipe called this Windows TTC an open-license candidate. Its retained name table instead declares Microsoft-supplied font terms. The separately distributed Google Fonts/Morisawa OFL build does not replace the identity or license of this input.",
+      "separate_ofl_project_url": "https://github.com/googlefonts/morisawa-biz-ud-gothic"
+    },
+    "image:biz-udgothic-bold-history": {
+      "file": "BIZ-UDGothicB.ttc",
+      "sha256": "b273799cfece7fce3c4eb7562c3adb3098396e341684a5b2aad8ee69257a563f",
+      "bytes": 4998076,
+      "family": [
+        "BIZ UDGothic",
+        "BIZ UDゴシック"
+      ],
+      "style": [
+        "Bold"
+      ],
+      "version": [
+        "Version 2.02"
+      ],
+      "copyright": [
+        "Font © Copyright 2019 Morisawa Inc. All rights reserved.",
+        "Font ? Copyright 2019 Morisawa Inc. All rights reserved."
+      ],
+      "authors": "TypeBank Co., Ltd. / Morisawa Inc.; supplied with licensed Microsoft products",
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "July PM Options screen-mode and/or right-click Save image trials and superseded revisions; see historical-git-image-fonts.json for individual bindings",
+      "state": "rendered-historical-trials-and-revisions; not-current-release-input",
+      "historical_collection_index": 0,
+      "license": "Windows font licensing; not OFL for the actual Microsoft-supplied binary",
+      "upstream_url": "https://learn.microsoft.com/en-us/typography/font-list/biz-udgothic",
+      "license_url": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+      "identity_basis": "July route inventory records this exact font binary hash, matching retained metadata. Representative fixed-width Regular/Bold and Noto JP replays agree; each material separately records the collection index and its evidence.",
+      "historical_font_sha256": "b273799cfece7fce3c4eb7562c3adb3098396e341684a5b2aad8ee69257a563f",
+      "license_correction": "The old recipe called this Windows TTC an open-license candidate. Its retained name table instead declares Microsoft-supplied font terms. The separately distributed Google Fonts/Morisawa OFL build does not replace the identity or license of this input.",
+      "separate_ofl_project_url": "https://github.com/googlefonts/morisawa-biz-ud-gothic"
+    },
+    "image:biz-udpgothic-bold-history": {
+      "file": "BIZ-UDGothicB.ttc",
+      "sha256": "b273799cfece7fce3c4eb7562c3adb3098396e341684a5b2aad8ee69257a563f",
+      "bytes": 4998076,
+      "family": [
+        "BIZ UDPGothic",
+        "BIZ UDPゴシック"
+      ],
+      "style": [
+        "Bold"
+      ],
+      "version": [
+        "Version 2.02"
+      ],
+      "copyright": [
+        "Font © Copyright 2019 Morisawa Inc. All rights reserved.",
+        "Font ? Copyright 2019 Morisawa Inc. All rights reserved."
+      ],
+      "authors": "TypeBank Co., Ltd. / Morisawa Inc.; supplied with licensed Microsoft products",
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "July PM Options screen-mode and/or right-click Save image trials and superseded revisions; see historical-git-image-fonts.json for individual bindings",
+      "state": "rendered-historical-trials-and-revisions; not-current-release-input",
+      "historical_collection_index": 1,
+      "license": "Windows font licensing; not OFL for the actual Microsoft-supplied binary",
+      "upstream_url": "https://learn.microsoft.com/en-us/typography/font-list/biz-udgothic",
+      "license_url": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+      "identity_basis": "July route inventory records this exact font binary hash, matching retained metadata. Representative fixed-width Regular/Bold and Noto JP replays agree; each material separately records the collection index and its evidence.",
+      "historical_font_sha256": "b273799cfece7fce3c4eb7562c3adb3098396e341684a5b2aad8ee69257a563f",
+      "license_correction": "The old recipe called this Windows TTC an open-license candidate. Its retained name table instead declares Microsoft-supplied font terms. The separately distributed Google Fonts/Morisawa OFL build does not replace the identity or license of this input.",
+      "separate_ofl_project_url": "https://github.com/googlefonts/morisawa-biz-ud-gothic"
+    },
+    "image:noto-sans-jp-history": {
+      "file": "NotoSansJP-VF.ttf",
+      "sha256": "5113756f8a3b5d01b2211025e267c50121e3b36f465b7bbaf3cdaf4c3430bfd0",
+      "bytes": 9590844,
+      "family": [
+        "Noto Sans JP"
+      ],
+      "style": [
+        "Regular"
+      ],
+      "version": [
+        "Version 2.04;241114210129;non-release"
+      ],
+      "copyright": [
+        "© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+      ],
+      "authors": "Adobe / Google and Noto CJK contributors",
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "July PM Options screen-mode and/or right-click Save image trials and superseded revisions; see historical-git-image-fonts.json for individual bindings",
+      "state": "rendered-historical-trials-and-revisions; not-current-release-input",
+      "historical_collection_index": 0,
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/notofonts/noto-cjk",
+      "license_url": "https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE",
+      "identity_basis": "July route inventory records this exact font binary hash, matching retained metadata. Representative fixed-width Regular/Bold and Noto JP replays agree; each material separately records the collection index and its evidence.",
+      "historical_font_sha256": "5113756f8a3b5d01b2211025e267c50121e3b36f465b7bbaf3cdaf4c3430bfd0"
+    },
+    "image:dengxian-bold-history": {
+      "file": "Dengb.ttf",
+      "sha256": "236df24be867e527bdf810d00eb5c38f18244e776238a9f5ca937363267a9169",
+      "bytes": 16450596,
+      "family": [
+        "DengXian",
+        "等线"
+      ],
+      "style": [
+        "Bold"
+      ],
+      "version": [
+        "Version 1.22"
+      ],
+      "copyright": [
+        "Copyright(c) Beijing Founder Electronics Co.,Ltd.2012"
+      ],
+      "authors": "Beijing Founder Electronics Co., Ltd.; supplied with licensed Microsoft products",
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "July PM Options screen-mode and/or right-click Save image trials and superseded revisions; see historical-git-image-fonts.json for individual bindings",
+      "state": "rendered-historical-trials-and-revisions; not-current-release-input",
+      "historical_collection_index": 0,
+      "license": "Windows font licensing; not OFL for the actual Microsoft-supplied binary",
+      "upstream_url": "https://support.microsoft.com/en-us/office/fonts/cloud-fonts-in-office",
+      "license_url": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+      "identity_basis": "Actual DengXian Bold inputs are recorded in the first Options search results. Historical font bytes were not hashed in that result; the inspected hash/version is a retained audit reference, not a proven historical binary hash."
     }
   },
   "limitations": [

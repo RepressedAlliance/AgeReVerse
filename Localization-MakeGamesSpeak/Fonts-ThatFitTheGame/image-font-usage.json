@@ -29,7 +29,13 @@
       "register": "historical-image-fonts.json",
       "note": "The independent retained-file and session inventories are complete for the discovered scope. Material/recipe classification and remaining historical bindings are still being reconciled; inventory completion alone is not completion of font attribution.",
       "material_variant_register": "historical-image-variants.json",
-      "material_variants_from_authoring_records": 1933
+      "material_variants_from_authoring_records": 1933,
+      "git_history": {
+        "text_blobs_examined": 21918,
+        "source": "retained reachable Git history across all local refs",
+        "register": "historical-git-image-fonts.json",
+        "recorded_material_outputs": 279
+      }
     },
     "earlier_discovery_subset": {
       "record_files_examined": 35034,
@@ -1028,6 +1034,26 @@
       ],
       "state": "historical",
       "detail_registry": "historical-image-fonts.json",
+      "evidence": []
+    },
+    {
+      "id": "early-git-font-trials",
+      "games": [
+        "photonmelodies"
+      ],
+      "scope": "PM July screen-mode label searches, right-click Save states, TTC face comparisons, clean-plate and shadow revisions",
+      "font_ids": [
+        "image:biz-udgothic-bold-history",
+        "image:biz-udgothic-regular-history",
+        "image:biz-udpgothic-bold-history",
+        "image:biz-udpgothic-regular-history",
+        "image:dengxian-bold-history",
+        "image:noto-sans-jp-history",
+        "image:noto-sans-sc-vf",
+        "image:yahei-regular"
+      ],
+      "state": "historical",
+      "detail_registry": "historical-git-image-fonts.json",
       "evidence": []
     }
   ],
