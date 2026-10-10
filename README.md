@@ -249,8 +249,8 @@ TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含
 
 已确认的审核与纠错会纳入对应发布包；具体变化见各作当前发布说明。
 
-详细步骤见 **[按顺序阅读的翻译规范](localization/text/README.md)** 和
-[完整工作流](localization/text/workflow.md)。这些是制作流程，不代表每个历史测试包都已完成
+详细步骤见 **[按顺序阅读的翻译规范](localization-make-games-speak/text-ai-translation-worth-reading/README.md)** 和
+[完整工作流](localization-make-games-speak/text-ai-translation-worth-reading/workflow.md)。这些是制作流程，不代表每个历史测试包都已完成
 全文人工校对或全路线验证，译文仍可能存在错误。
 
 TDA 的部分文本已经过人工校对。已发布版本包含上述审核与修正；此后新增的校对和修改
@@ -290,7 +290,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 | 内容 | 入口 |
 | --- | --- |
 | 全部公开成果与研究索引 | **[制作与研究入口](docs/research/README.md)** |
-| 翻译规则、术语、图片和字体流程 | [通用本地化工作区](localization/README.md) |
+| 翻译规则、术语、图片和字体流程 | [通用本地化工作区](localization-make-games-speak/README.md) |
 | TDA／帝都的 AGE2、FPD、EGPACK 与松散覆盖 | [AGE2 工作区](AGE2/README.md) |
 | 君望本篇与附加篇的文本、术语和 UI 图片制作 | [君望项目（制作中）](AGE2/games/kiminozo/README.md) |
 | Photon 的 RIO、RUO、CRsa、图片和运行时 | [rUGP 工作区](rUGP/README.md) |
@@ -309,13 +309,13 @@ The Chinese player downloads are listed in the first part of this README.
 | --- | --- |
 | Public results and current limitations | [Research index](docs/en/research-index.md) |
 | Text, image, font and tool locations | [Asset map](docs/en/asset-map.md) |
-| Translation and independent review | [Complete English workflow](localization/text/workflow.en.md) |
-| Korean, Russian or another target language | [Starting a new language](localization/text/new-locale.md) |
-| Ordered standards | [Standards and reading order](localization/text/README.md) |
+| Translation and independent review | [Complete English workflow](localization-make-games-speak/text-ai-translation-worth-reading/workflow.en.md) |
+| Korean, Russian or another target language | [Starting a new language](localization-make-games-speak/text-ai-translation-worth-reading/new-locale.md) |
+| Ordered standards | [Standards and reading order](localization-make-games-speak/text-ai-translation-worth-reading/README.md) |
 | TDA / Imperial: FPD, EGPACK and loose overlays | [AGE2 workspace](AGE2/README.md) |
 | Kiminozo and Another Episode Collection+: work in progress | [Project scope and structure](AGE2/games/kiminozo/README.md) |
 | Photon: ICI, RIO, RUO and runtime tooling | [rUGP workspace](rUGP/README.md) |
-| Proofreading synchronization | [ParaTranz workflow](localization/paratranz/README.md) |
+| Proofreading synchronization | [ParaTranz workflow](localization-make-games-speak/paratranz-keep-improving-together/README.md) |
 
 AI participates in translation across the project. The workflow establishes Japanese story context
 and terminology before a first translation, then independently reviews each candidate, resolves

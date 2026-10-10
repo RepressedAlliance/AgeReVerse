@@ -14,7 +14,7 @@ other UI surfaces, images, runtime font choices, or complete routes are fault-fr
 
 ## Repair
 
-The existing `localization.tools.extend_font_subset` appends the 11 glyphs from
+The existing `localization-make-games-speak.tools-let-tools-handle-repetition.extend_font_subset` appends the 11 glyphs from
 the locked OFL Noto Sans SC donor at weight 400. The 4,715 original glyphs,
 outlines, metrics, character mappings, and shaping tables are preserved; the
 new font contains 4,726 glyphs. The family remains PhotonR2.

@@ -23,7 +23,10 @@ import stat
 import sys
 from typing import Any, Mapping
 
-from localization.tools.safe_output import OutputSafetyError, write_new_files
+from importlib import import_module
+_localization_safe_output = import_module('localization-make-games-speak.tools-let-tools-handle-repetition.safe_output')
+OutputSafetyError = _localization_safe_output.OutputSafetyError
+write_new_files = _localization_safe_output.write_new_files
 
 
 SCHEMA = "rugp-steam-locale-preflight/v1"

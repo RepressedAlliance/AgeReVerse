@@ -10,7 +10,7 @@ When a matching clear-name Steam depot manifest is available, the
 engine-neutral [`verify_steam_depot_manifest.py`](../../docs/research/localization/tools/verify_steam_depot_manifest.py)
 can additionally prove selected local files against its complete file/chunk
 map. This is a content check, not Steam-signature authentication; see the
-[source-baseline instructions](../../localization/text/new-locale.md#3-freeze-the-legal-source-baseline).
+[source-baseline instructions](../../localization-make-games-speak/text-ai-translation-worth-reading/new-locale.md#3-freeze-the-legal-source-baseline).
 
 ## 2. Decode the catalog
 
@@ -22,7 +22,7 @@ Route only a strictly identified record to `formats/images/` or `formats/rio/`. 
 
 ## 4. Author content
 
-Translate from Japanese source authority and follow [`../localization/`](../../localization/). For images, approve a textless layer and deterministic typography before encoding. Preserve source codec where supported; a successful kind=3 test proves the implemented kind=3 subset, not every flag/profile in the world.
+Translate from Japanese source authority and follow [`../localization-make-games-speak/`](../../localization-make-games-speak/). For images, approve a textless layer and deterministic typography before encoding. Preserve source codec where supported; a successful kind=3 test proves the implemented kind=3 subset, not every flag/profile in the world.
 
 ## 5. Encode and prove round trips
 

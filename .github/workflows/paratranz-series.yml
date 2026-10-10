@@ -48,14 +48,14 @@ jobs:
           fi
       - name: Test synchronization boundaries
         if: steps.pending.outputs.exists != 'true'
-        run: python -m unittest localization.tests.test_sync_icb_paratranz localization.tests.test_sync_series_paratranz -v
+        run: python -m unittest localization-make-games-speak.tests-catch-problems-before-players.test_sync_icb_paratranz localization-make-games-speak.tests-catch-problems-before-players.test_sync_series_paratranz -v
       - name: Pull only the selected project
         if: steps.pending.outputs.exists != 'true'
         env:
           # Reuse the existing encrypted token. Its name reflects the first ICB pilot.
           PARATRANZ_TOKEN: ${{ secrets.PARATRANZ_ICB_TOKEN }}
         run: |
-          python -m localization.tools.sync_series_paratranz --project "$SYNC_PROJECT" --apply --report "$RUNNER_TEMP/report.md" --paths "$RUNNER_TEMP/paths"
+          python -m localization-make-games-speak.tools-let-tools-handle-repetition.sync_series_paratranz --project "$SYNC_PROJECT" --apply --report "$RUNNER_TEMP/report.md" --paths "$RUNNER_TEMP/paths"
           cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
       - name: Validate text and public boundaries
         if: steps.pending.outputs.exists != 'true'

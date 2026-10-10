@@ -9,7 +9,9 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib import TTFont
 from fontTools.ttLib.tables.DefaultTable import DefaultTable
 
-from localization.tools.extend_font_subset import sha
+from importlib import import_module
+_localization_extend_font_subset = import_module('localization-make-games-speak.tools-let-tools-handle-repetition.extend_font_subset')
+sha = _localization_extend_font_subset.sha
 from rUGP.tools.fonts.repair_pm_vertical_metrics import repair
 
 

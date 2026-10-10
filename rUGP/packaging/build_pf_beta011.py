@@ -9,7 +9,9 @@ import json
 import shutil
 import zipfile
 
-from localization.tools.extend_font_subset import extend
+from importlib import import_module
+_localization_extend_font_subset = import_module('localization-make-games-speak.tools-let-tools-handle-repetition.extend_font_subset')
+extend = _localization_extend_font_subset.extend
 from rUGP.packaging import build_photon_cn_beta01 as ab
 from rUGP.packaging.build_photon_player import write_json
 from rUGP.packaging.build_player_exe import build

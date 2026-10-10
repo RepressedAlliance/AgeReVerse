@@ -25,7 +25,10 @@ class MainAlAlignmentTests(unittest.TestCase):
         self.assertNotEqual(rows['tda03_t99999']['cn_text'], rows['tda03_t05504']['cn_text'])
 
     def test_common_rank_rules_are_available_to_all_seven_games(self):
-        from localization.tools.terminology import MUV_LUV_GAMES, load_game
+        from importlib import import_module
+        _localization_terminology = import_module('localization-make-games-speak.tools-let-tools-handle-repetition.terminology')
+        MUV_LUV_GAMES = _localization_terminology.MUV_LUV_GAMES
+        load_game = _localization_terminology.load_game
         expected = {'少佐':'少校','中佐':'中校','大佐':'上校','大尉':'上尉',
                     '曹長':'上士','臨時曹長':'临时上士','軍曹':'中士','伍長':'下士'}
         for game in MUV_LUV_GAMES:

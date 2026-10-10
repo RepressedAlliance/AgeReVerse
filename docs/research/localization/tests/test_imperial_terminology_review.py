@@ -4,17 +4,21 @@ import json
 from collections import Counter
 import unittest
 
-from localization.tools.terminology import (
-    ROOT, baseline_consistency_errors, load_game, read_baseline, read_evidence,
-    read_table,
-)
+from importlib import import_module
+_localization_terminology = import_module('localization-make-games-speak.tools-let-tools-handle-repetition.terminology')
+ROOT = _localization_terminology.ROOT
+baseline_consistency_errors = _localization_terminology.baseline_consistency_errors
+load_game = _localization_terminology.load_game
+read_baseline = _localization_terminology.read_baseline
+read_evidence = _localization_terminology.read_evidence
+read_table = _localization_terminology.read_table
 
 
 class ImperialTerminologyReviewTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.review = json.loads((ROOT / 'docs/research/localization/terminology-history/imperial-review-20261009.json').read_text(encoding='utf-8'))
-        cls.terms = read_table(ROOT / 'localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv')
+        cls.terms = read_table(ROOT / 'localization-make-games-speak/glossaries-keep-it-consistent/imperial-capital-burns.ja-zh-Hans.csv')
         cls.baseline = read_baseline('imperial-capital-burns')
         cls.evidence = read_evidence('imperial-capital-burns')
         folder = ROOT / 'AGE2/games/imperial-capital-burns/translations'

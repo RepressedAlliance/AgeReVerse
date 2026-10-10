@@ -12,7 +12,7 @@
 ```text
 README.md                 中文玩家首页，研究者内容在独立部分
 docs/                     玩家、研究、项目维护、法律与英文入口
-localization/             跨引擎的人类本地化方法和通用工具
+localization-make-games-speak/             跨引擎的人类本地化方法和通用工具
 AGE2/                     TDA / 帝都技术与游戏资产；君望在制项目
 rUGP/                     Photon 的完整独立技术与游戏资产树
 ```
@@ -20,7 +20,7 @@ rUGP/                     Photon 的完整独立技术与游戏资产树
 ## 本地化制作目录
 
 ```text
-localization/
+localization-make-games-speak/
   text/                   已有文本工作流与 01—07 规范
   images/                 全量提取至人工审核、引擎交付的分步流程
   fonts/                  游戏文本与图片字体的对应、来源和版本
@@ -37,7 +37,7 @@ docs/research/localization/
 
 `AGE2/` 与 `rUGP/` 分别拥有自己的 `games/`、工具、测试、证据和事故记录，互不 import。
 只有术语、翻译/审核方法、语言命名、图片制作与字体覆盖等真正不依赖引擎的内容进入
-`localization/`。
+`localization-make-games-speak/`。
 
 ## 游戏专属内容为什么跟随引擎
 
@@ -49,7 +49,7 @@ docs/research/localization/
 - Cr6Ti、CRip007、CRip008 或其他编码模板；
 - 某个 App ID、EXE/DLL 哈希或游戏版本门。
 
-这些内容必须放进对应游戏目录。`localization/` 可以定义表结构、两轮审核和图片 QA，
+这些内容必须放进对应游戏目录。`localization-make-games-speak/` 可以定义表结构、两轮审核和图片 QA，
 但不能成为混杂各部游戏原始资源和 writer 输入的总仓库。逐项位置见[资产地图](asset-map.md)。
 
 ## Git、Release 与本地工作区
@@ -97,7 +97,7 @@ AGE2 当前不需要运行时 Hook；rUGP 也不能继承 AGE2 的松散覆盖�
 
 ## English summary
 
-The root README is only an audience router. `localization/` owns genuinely
+The root README is only an audience router. `localization-make-games-speak/` owns genuinely
 engine-neutral human workflow and QA; `AGE2/` and `rUGP/` independently own
 their game-bound text, image identities, formats, tools, tests, and incident
 records. Git stores maintainable source and evidence, this repository's Releases
