@@ -9,3 +9,5 @@
 ## 其他影响（适用时填写）
 
 例如：需要重建补丁、影响哪些版本／语言槽、新素材来源与许可、仍需实机确认的内容。没有这些影响可删除本节。
+
+图片排字涉及用字时，附[字体使用记录与声明](../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/registration.md)的更新或已有条目引用。

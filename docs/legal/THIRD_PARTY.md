@@ -55,6 +55,12 @@ TDA 汉化，并要求在发布时致谢其提供汉化思路。该公开补丁�
 新增依赖必须记录准确版本、上游 URL、许可证、是否复制代码/数据，以及采用它的可复现
 或安全理由。
 
+## 图片制作使用的字体
+
+七作汉化图片的字体来源、作者与许可集中在[图片字体致谢](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/attribution.md)，[使用表](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/images.md)区分实际制作、历史试样、被替换和局部未完成方案。除 Noto／思源／狮尾外，已补入霞鹜文楷 GB、得意黑、小赖、马善政等遗漏来源；楷体、宋体、MS Mincho、微软雅黑等 Windows 字体独立标明，不称作开源字体。
+
+新图与返修须同步[用字登记](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/registration.md)。公开登记是项目的归纳与致谢要求；单纯渲染图片和分发字体软件的许可义务分别处理，随字体软件交付时保留其实际版权与完整许可，不能以本页替代。
+
 ## English summary
 
 The project distinguishes design study, external dependencies and copied code.

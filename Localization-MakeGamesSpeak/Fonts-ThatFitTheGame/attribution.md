@@ -20,7 +20,7 @@
 | 马善政 Ma Shan Zheng | [The MaShanZheng Project Authors](https://github.com/googlefonts/mashanzheng) | OFL 1.1；毛笔标题、指示、颁发式及蛋糕文字制作 |
 | 站酷快乐体 ZCOOL KuaiLe | [The ZCOOL KuaiLe Project Authors](https://github.com/googlefonts/zcool-kuaile) | OFL 1.1；标题字体试样，未据此确认最终采用 |
 
-这里列的是家族和贡献来源，精确文件的版权字符串、版本和摘要见 [catalog.json](catalog.json)。旧霞鹜文楷 GB 的版本字符串没有恢复，保留其历史摘要，不以最新版代替。上游最新页面也不能替代历史文件自己的版权与保留字体名声明。运行时另有 IBM Plex、源石、白无常可可体、美呗嘿嘿体等，见[字体总入口](README.md#来源与复用)，不要把运行时选型自动算成图片用字。
+这里列的是家族和贡献来源，精确文件的版权字符串、版本和摘要见 [catalog.json](catalog.json)。旧霞鹜文楷 GB 已从与历史摘要相符的保留副本确认版本 1.522；得意黑由 2.0.1 原存档同样确认，不拿最新版替代历史输入。上游最新页面也不能替代历史文件自己的版权与保留字体名声明。运行时另有 IBM Plex、源石、白无常可可体、美呗嘿嘿体等，见[字体总入口](README.md#来源与复用)，不要把运行时选型自动算成图片用字。
 
 ## Windows 字体也如实登记
 

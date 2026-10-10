@@ -25,7 +25,7 @@ The usage registry links seven-game material groups to exact font identities and
 | PF／PM 菜单、按钮、人物卡、说明等 | Noto Sans SC 可变字体 | 初期代表组与后续重排均有记录；具体字重随已确认组配置，不固定全作 700 |
 | PF／PM 黑色章节标题、信用／书信、部分场景文字 | Noto Serif SC 可变字体 | 按组记录粗细、字距与效果；不会影响 GDI 正文 |
 | PF／PM 烘焙字幕 | 制作当时的 PhotonR2 | 旧输入摘要 `aadf8950…ad4830b`；不同于后来扩字的运行时文件 |
-| PF EX 标题、PM《樱花盛开之前》标题／手写指示旧稿 | LXGWWenKaiGB-Medium.ttf | 霞鹜文楷 GB；存在制作与回放证据，旧文件摘要可追溯，版本字符串缺失；部分后来改用其他字体 |
+| PF EX 标题、PM《樱花盛开之前》标题／手写指示旧稿 | LXGWWenKaiGB-Medium.ttf | 霞鹜文楷 GB 1.522；保留副本的摘要与旧配方、回放证据一致；部分后来改用其他字体 |
 | PF EX 标题旧制作／精确回放 | SmileySans-Oblique.ttf | 得意黑 2.0.1；原存档字体摘要与回放记录一致，不把每个历史候选都写成当前定稿 |
 | PF／PM 毛笔标题、PM 手写指示、PF 证书颁发式 G1972 | MaShanZheng-Regular.ttf | 马善政 2.003；早期已用于制作，不只是 10 月新下载的候选 |
 | PM 剩余时间 G1294–G1304、教程内嵌 G2990–G2999 | Xiaolai-Regular.ttf | 小赖 3.126；11 个倒计时状态与 10 张教程图共用字形，保留数字与秒字；审核记录明确未安装 |

@@ -956,16 +956,22 @@
       "sha256": "b885c51ec0d3f325974013801dfcefda1a9ba0bf385c607cf5f2582dafa2e5ab",
       "bytes": 25745488,
       "family": [
-        "LXGW WenKai GB Medium"
+        "LXGW WenKai GB Medium",
+        "霞鹜文楷 GB Medium"
       ],
-      "version": [],
+      "version": [
+        "Version 1.522; March 17, 2026"
+      ],
+      "copyright": [
+        "Copyright 2022-2026 LXGW (https://github.com/lxgw/LxgwWenkaiGB)\nCopyright 2020 The Klee Project Authors (https://github.com/fontworks-fonts/Klee)"
+      ],
       "games": [
         "photonflowers",
         "photonmelodies"
       ],
       "usage": "historical handwritten pointer, Sakitan title and EX title production",
       "license": "OFL-1.1",
-      "identity_basis": "hash and size from historical exact-recovery audit and production recipes; matching binary unavailable in current audit; version string not reconstructed from latest upstream",
+      "identity_basis": "retained duplicate bytes match historical exact-recovery and recipe SHA-256; version 1.522 recovered from this matching binary",
       "upstream_url": "https://github.com/lxgw/LxgwWenkaiGB",
       "license_url": "https://openfontlicense.org/open-font-license-official-text/"
     },

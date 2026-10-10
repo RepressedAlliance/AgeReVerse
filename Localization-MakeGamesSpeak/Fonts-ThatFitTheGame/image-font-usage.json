@@ -794,10 +794,6 @@
       "detail": "Some local candidates are explicitly not installed, partial, superseded or waiting for human acceptance. No blanket claim that production fonts occur in current player releases."
     },
     {
-      "id": "lxgw-version",
-      "detail": "Historical LXGW WenKai GB Medium hash and size survive; matching binary/version string is unavailable. A new upstream font must not silently replace that identity."
-    },
-    {
       "id": "historical-windows-bytes",
       "detail": "For Windows references without a historical font hash, current inspected file/version is an audit reference only; historical byte identity and collection face index remain unverified."
     },
