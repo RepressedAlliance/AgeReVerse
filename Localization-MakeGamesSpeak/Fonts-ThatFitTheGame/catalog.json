@@ -651,6 +651,19 @@
           "default": 100.0,
           "max": 900.0
         }
+      ],
+      "current_released_image_files": {
+        "imperial-capital-burns": 95,
+        "pf": 890,
+        "pm": 1279,
+        "tda00": 35,
+        "tda01": 35,
+        "tda02": 35,
+        "tda03": 35
+      },
+      "current_release_registries": [
+        "age2-released-image-fonts.json",
+        "photon-released-image-fonts.json"
       ]
     },
     "image:noto-serif-sc-vf": {
@@ -686,6 +699,13 @@
           "default": 200.0,
           "max": 900.0
         }
+      ],
+      "current_released_image_files": {
+        "pf": 160,
+        "pm": 158
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
       ]
     },
     "image:swei-sugar-medium": {
@@ -712,6 +732,16 @@
       "license_url": "https://openfontlicense.org/open-font-license-official-text/",
       "copyright": [
         "Chun Yu Yao"
+      ],
+      "current_released_image_files": {
+        "imperial-capital-burns": 62,
+        "tda00": 9,
+        "tda01": 19,
+        "tda02": 19,
+        "tda03": 17
+      },
+      "current_release_registries": [
+        "age2-released-image-fonts.json"
       ]
     },
     "image:zcool-kuaile-trial": {
@@ -764,7 +794,17 @@
         "tda03",
         "imperial-capital-burns"
       ],
-      "usage": "telops, voice labels, maps"
+      "usage": "telops, voice labels, maps",
+      "current_released_image_files": {
+        "imperial-capital-burns": 131,
+        "tda00": 8,
+        "tda01": 23,
+        "tda02": 32,
+        "tda03": 47
+      },
+      "current_release_registries": [
+        "age2-released-image-fonts.json"
+      ]
     },
     "image:photon-r2-subtitles": {
       "file": "PhotonR2-Regular.ttf",
@@ -780,10 +820,16 @@
         "photonflowers",
         "photonmelodies"
       ],
-      "usage": "historical baked subtitles; distinct from updated runtime fonts",
+      "usage": "28 unique current PF delegated subtitle PNG contents use this historical PhotonR2 hash. The F29 orbital-wipe family instead uses Noto Sans SC: 90 production rows, 44 distinct current image contents across PF/PM.",
       "license": "OFL-1.1",
       "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
-      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "current_released_image_files": {
+        "pf": 28
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
+      ]
     },
     "image:mashanzheng-new-batch": {
       "file": "MaShanZheng-Regular.ttf",
@@ -799,12 +845,19 @@
         "photonflowers",
         "photonmelodies"
       ],
-      "usage": "historical brush titles/pointer/ceremony and 2026-10 G1952 cake production; not proof of release adoption",
+      "usage": "Current PF/PM brush titles, story cards, PM pointer, PF G1972 ceremony and its smaller G2787 reuse; also local October G1952 cake candidate.",
       "license": "OFL-1.1",
       "upstream_url": "https://github.com/googlefonts/mashanzheng",
       "license_url": "https://openfontlicense.org/open-font-license-official-text/",
       "copyright": [
         "Copyright 2018 The MaShanZheng Project Authors (https://github.com/googlefonts/mashanzheng)"
+      ],
+      "current_released_image_files": {
+        "pf": 6,
+        "pm": 6
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
       ]
     },
     "image:photoncn-new-batch": {
@@ -850,11 +903,21 @@
         "tda03",
         "imperial-capital-burns"
       ],
-      "usage": "historical AGE2 telops, UI and date/location production",
+      "usage": "Current AGE2 boot notices, HUD and supplementary captions; some early telop/location recipes were superseded, not the entire font input.",
       "license": "OFL-1.1",
       "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
       "upstream_url": "https://github.com/adobe-fonts/source-han-sans",
-      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "current_released_image_files": {
+        "imperial-capital-burns": 4,
+        "tda00": 3,
+        "tda01": 17,
+        "tda02": 7,
+        "tda03": 9
+      },
+      "current_release_registries": [
+        "age2-released-image-fonts.json"
+      ]
     },
     "image:source-han-serif-bold": {
       "file": "SourceHanSerifCN-Bold.otf",
@@ -877,7 +940,13 @@
       "license": "OFL-1.1",
       "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
       "upstream_url": "https://github.com/adobe-fonts/source-han-serif",
-      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "current_released_image_files": {
+        "tda02": 2
+      },
+      "current_release_registries": [
+        "age2-released-image-fonts.json"
+      ]
     },
     "image:source-han-serif-heavy": {
       "file": "SourceHanSerifCN-Heavy.otf",
@@ -901,7 +970,14 @@
       "license": "OFL-1.1",
       "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
       "upstream_url": "https://github.com/adobe-fonts/source-han-serif",
-      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "current_released_image_files": {
+        "tda02": 1,
+        "tda03": 2
+      },
+      "current_release_registries": [
+        "age2-released-image-fonts.json"
+      ]
     },
     "image:xiaolai": {
       "file": "Xiaolai-Regular.ttf",
@@ -922,11 +998,17 @@
       "games": [
         "photonmelodies"
       ],
-      "usage": "countdown text production; static review record explicitly not installed",
+      "usage": "Current PM BETA 0.1.2 countdown G1294–G1304 and embedded tutorials G2990–G2999; 21 unique PNG contents. The old not-installed review flag is not the final release state.",
       "license": "OFL-1.1",
       "identity_basis": "inspected font bytes match individual-audit-progress.json recorded font_sha256",
       "upstream_url": "https://github.com/lxgw/kose-font",
-      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "current_released_image_files": {
+        "pm": 23
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
+      ]
     },
     "image:smiley-sans": {
       "file": "SmileySans-Oblique.ttf",
@@ -945,7 +1027,7 @@
       "games": [
         "photonflowers"
       ],
-      "usage": "historical EX title production and exact recovery records",
+      "usage": "Superseded PF EX title font recipes and exact recovery evidence; current EX title family uses recorded generated lettering.",
       "license": "OFL-1.1",
       "identity_basis": "v2.0.1 archive font bytes match historical exact-recovery audit hash",
       "upstream_url": "https://github.com/atelier-anchor/smiley-sans",
@@ -969,7 +1051,7 @@
         "photonflowers",
         "photonmelodies"
       ],
-      "usage": "historical handwritten pointer, Sakitan title and EX title production",
+      "usage": "Superseded Photon pointer, Sakitan/EX title font recipes and exact replay evidence; current EX titles use generated lettering and PM pointer uses Ma Shan Zheng.",
       "license": "OFL-1.1",
       "identity_basis": "retained duplicate bytes match historical exact-recovery and recipe SHA-256; version 1.522 recovered from this matching binary",
       "upstream_url": "https://github.com/lxgw/LxgwWenkaiGB",
@@ -995,9 +1077,16 @@
         "photonmelodies",
         "imperial-capital-burns"
       ],
-      "usage": "historical Photon story cards; AGE2 letter and shop partial production",
+      "usage": "Current PF/PM story/naval captions, PF G1149 subtitle and its PM G1401 transfer, retained school black-banner lettering; local AGE2 letter and shop partial layers.",
       "license": "Windows font licensing; not OFL",
-      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes"
+      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "current_released_image_files": {
+        "pf": 18,
+        "pm": 21
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
+      ]
     },
     "image:yahei-regular": {
       "file": "msyh.ttc",
@@ -1016,9 +1105,11 @@
         "© 2024 微软公司版权所有 © 2024 北京北大方正电子有限公司部分版权所有"
       ],
       "games": [
-        "imperial-capital-burns"
+        "imperial-capital-burns",
+        "photonflowers",
+        "photonmelodies"
       ],
-      "usage": "production-note options only; no final adoption",
+      "usage": "Current Photon equipment titles and two copied-glyph CRip008 selection-HUD images; local AGE2 production-note options are separate.",
       "license": "Windows font licensing; not OFL",
       "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
       "collection_faces": [
@@ -1067,6 +1158,13 @@
             "Обычный"
           ]
         }
+      ],
+      "current_released_image_files": {
+        "pf": 18,
+        "pm": 18
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
       ]
     },
     "image:yahei-bold": {
@@ -1086,9 +1184,11 @@
         "© 2024 微软公司版权所有 © 2024 北京北大方正电子有限公司部分版权所有"
       ],
       "games": [
-        "imperial-capital-burns"
+        "imperial-capital-burns",
+        "photonflowers",
+        "photonmelodies"
       ],
-      "usage": "production-note options and shop partial production",
+      "usage": "Eight current Photon Chinese language buttons; local AGE2 production-note options and shop partial labels are separate.",
       "license": "Windows font licensing; not OFL",
       "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
       "collection_faces": [
@@ -1151,6 +1251,13 @@
             "Полужирный"
           ]
         }
+      ],
+      "current_released_image_files": {
+        "pf": 4,
+        "pm": 4
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
       ]
     },
     "image:simsun": {
@@ -1173,7 +1280,7 @@
         "photonflowers",
         "photonmelodies"
       ],
-      "usage": "historical story/time-card candidate production; release adoption not established",
+      "usage": "Current Photon story/time cards; Windows face identity is retained separately from unverified historical font bytes.",
       "license": "Windows font licensing; not OFL",
       "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
       "collection_faces": [
@@ -1199,6 +1306,13 @@
             "常规"
           ]
         }
+      ],
+      "current_released_image_files": {
+        "pf": 4,
+        "pm": 10
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
       ]
     },
     "image:ms-mincho": {
@@ -1221,7 +1335,7 @@
       "games": [
         "photonmelodies"
       ],
-      "usage": "historical training-day card candidate production; release adoption not established",
+      "usage": "Current PM training-day suffixes; Windows face identity is retained separately from unverified historical font bytes.",
       "license": "Windows font licensing; not OFL",
       "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
       "collection_faces": [
@@ -1247,6 +1361,12 @@
             "標準"
           ]
         }
+      ],
+      "current_released_image_files": {
+        "pm": 16
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
       ]
     },
     "image:ms-gothic-trial": {
@@ -1308,6 +1428,80 @@
           ]
         }
       ]
+    },
+    "image:noto-sans-sc-static-bold-700": {
+      "file": "NotoSansSC-Bold-700.ttf",
+      "sha256": "89229557e03ab57457afa09362bf70af4174bd41ba7662d93dc82c3105cd82d0",
+      "bytes": 10585960,
+      "family": [
+        "Noto Sans SC"
+      ],
+      "version": [
+        "Version 2.04;241114210130;non-release"
+      ],
+      "copyright": [
+        "© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+      ],
+      "games": [
+        "photonmelodies"
+      ],
+      "usage": "PM calendar thumbnail G1049 supplied caption; fontTools static instance at wght=700, separate from the variable input and AGE2 static weight 500",
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/notofonts/noto-cjk",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "derived_from": "image:noto-sans-sc-vf",
+      "modification": "fontTools instantiateVariableFont, wght=700, updateFontNames=True; renderer supersampling 8 at 17px",
+      "identity_basis": "font bytes inspected in the retained caption kit; supplied caption alpha is identical to the kit render, with measured colour differences; adopted thumbnail is linked to the actual composer output",
+      "current_released_image_files": {
+        "pm": 2
+      },
+      "current_release_registries": [
+        "photon-released-image-fonts.json"
+      ]
+    },
+    "image:meb-heiheiti-note": {
+      "file": "MEBheiheiti.ttf",
+      "sha256": "7f59303f823221cb03f3ee2a020a9e1f09dbdd6c30102d12af2baadf0362174b",
+      "bytes": 1715100,
+      "family": [
+        "美呗嘿嘿体(全字库)"
+      ],
+      "version": [
+        "Version 3.000"
+      ],
+      "copyright": [
+        " Copyright(c) Chengdu Meierbei Network Technology Co.,Ltd. 成都美尔贝科技股份有限公司 "
+      ],
+      "games": [
+        "tda03"
+      ],
+      "usage": "Local October TDA03 folded-note-v8 hand-lettering approximation; static candidate, runtime unverified. Distinct bytes from the current runtime patched font.",
+      "license": "publisher-statement; not OFL",
+      "upstream_url": "https://www.zcool.com.cn/work/ZNTY3OTI5ODg%3D.html",
+      "identity_basis": "Selected retained font bytes match the SHA-256 recorded in folded-note-v8/render-report.json; the authoring review explicitly names MEB heiheiti. Publisher page could not be independently read during the audit; existing source statement is retained, not re-certified."
+    },
+    "image:swei-sugar-semibold": {
+      "file": "SweiSugarCJKsc-SemiBold.ttf",
+      "sha256": "b5280d9ca2bbe7638c7182f43e7c3a95b0a87d01bc98d7fb032d0f95a72aa0d5",
+      "bytes": 28698144,
+      "family": [
+        "Swei Sugar CJK SC",
+        "獅尾加糖宋體SC-SemiBold"
+      ],
+      "version": [
+        "Version 1.0"
+      ],
+      "copyright": [
+        "Chun Yu Yao"
+      ],
+      "games": [
+        "tda01"
+      ],
+      "usage": "Local October TDA01 mentaiko-box-v2 Chinese parenthetical label; distinct from the Medium date/location-card input.",
+      "license": "OFL-1.1",
+      "upstream_url": "https://github.com/max32002/swei-sugar",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "identity_basis": "Selected retained font bytes match the SHA-256 recorded in mentaiko-box-v2/render-report.json."
     }
   },
   "limitations": [
@@ -1460,5 +1654,10 @@
     }
   },
   "image_audit_checked_on": "2026-10-11",
-  "image_usage_registry": "image-font-usage.json"
+  "image_usage_registry": "image-font-usage.json",
+  "released_image_registries": [
+    "age2-released-image-fonts.json",
+    "photon-released-image-fonts.json"
+  ],
+  "unreleased_image_registry": "unreleased-image-fonts.json"
 }

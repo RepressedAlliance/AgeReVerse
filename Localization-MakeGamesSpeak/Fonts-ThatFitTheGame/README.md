@@ -9,13 +9,13 @@
 
 The catalog covers the seven released games, original AGE2 roles, every bundled AGE2 font, the distinct PF/PM PhotonR2 binaries, and known image-authoring inputs. Runtime selection, bundled-but-unused fonts, image production and historical trials are separate. Source hashes identify files; they do not establish visual acceptance or grant redistribution rights. For another locale, check its own coverage, shaping, metrics and engine selection.
 
-The October 11 image audit adds missing authoring fonts and material-specific evidence, including LXGW WenKai GB, Smiley Sans, Xiaolai, Ma Shan Zheng, Source Han Serif and Windows fonts. Read the [image usage table](images.md), [credits](attribution.md) and [registration policy](registration.md). Production evidence is distinct from release adoption; unresolved identities and bindings remain explicit.
+The October 11 audit traces 3,720 current release image files to their font or original/generated lettering sources, and records 365 selected local candidates separately. It also identifies missing authoring inputs, including Swei SemiBold, an unpatched MEB image font and a static Noto Sans 700 instance. Read the [image usage table](images.md), [credits](attribution.md) and [registration policy](registration.md). This is provenance within the listed file scope, not new visual/runtime approval. Historical font-byte and rendering limitations remain explicit.
 
 </details>
 
 译文进入游戏以后，还要放得下、看得清，并贴合作品原有的气质。这里集中维护七作的字体选择与来源，游戏文本和图片烘焙用字分别登记。替换运行时字体不会改变已画进图片的文字，重画图片也不会修复正文的选字、字宽或换行。
 
-**核对范围：运行时按 2026-10-05 的七作发布包核对；图片按 2026-10-11 保留的制作记录回查。** 图片现已补齐 21 项具体输入／试样身份和 22 组用途，补入原先漏记的霞鹜文楷 GB、得意黑、小赖、思源宋体及 Windows 用字，纠正马善政仅为候选的旧描述。详情见[图片表](images.md)；历史版本缺失、生成字样及未证明的发布绑定仍明确保留，不宣称每张发布图都已追溯完毕。
+**核对范围：运行时按 2026-10-05 的七作发布包核对；图片追溯更新于 2026-10-11。** 五作 AGE2 的 859 个独立图片文件和 PF／PM 的 2,861 个 PNG 文件，均对应到实际字体或原版／生成字样来源；另列 365 项本地在制成品。目录共登记 24 项具体图片字体输入／试样，区分当前采用、历史替换与在制方案。详情与历史字体版本、HTML 加载和旧计时排版的限制见[图片用字表](images.md)，不以来源核对代替人工视觉审核和实机验证。
 
 ## 当前发布版使用什么
 
@@ -47,7 +47,7 @@ PF／PM 都请求 `PhotonR2` 家族，但两作字体字集和修正不同，**�
 | 思源黑体、PhotonR2 派生基础 | [Source Han Sans](https://github.com/adobe-fonts/source-han-sans)，OFL 1.1 |
 | IBM Plex Sans SC、AGE2 UI Sans 派生基础 | [IBM Plex](https://github.com/IBM/plex)，OFL 1.1 |
 | 源石黑体、AGE2 GenSeki 派生基础 | [GenSeki](https://github.com/ButTaiwan/genseki-font)，OFL 1.1 |
-| 狮尾加糖宋体 | [Swei Sugar](https://github.com/max32002/swei-sugar)，OFL 1.1 |
+| 狮尾加糖宋体 Medium／SemiBold | [Swei Sugar](https://github.com/max32002/swei-sugar)，OFL 1.1；分别用于发布卡片和在制纸箱括注 |
 | 思源宋体、霞鹜文楷 GB、得意黑、小赖、马善政、站酷快乐体 | [图片字体致谢与许可](attribution.md)，逐项列作者、上游和实际用途；均为 OFL 1.1 |
 | 白无常可可体 | [作者发布页](https://www.zcool.com.cn/work/ZNTk4NTI2ODA%3D.html)，作者使用声明；不属于 OFL |
 | 美呗嘿嘿体 | [作者发布页](https://www.zcool.com.cn/work/ZNTY3OTI5ODg%3D.html)，作者使用声明；不属于 OFL |

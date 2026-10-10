@@ -10,17 +10,19 @@
 
 | 字体 | 作者／维护项目与上游 | 许可与本项目用途 |
 | --- | --- | --- |
-| Noto Sans SC、Noto Serif SC | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；七作 UI、卡片、说明、地图和场景排字，按素材选择字重 |
-| 思源黑体 Source Han Sans SC | [Adobe Fonts](https://github.com/adobe-fonts/source-han-sans)，Adobe 及项目贡献者 | OFL 1.1；AGE2 早期图片方案，以及 PhotonCN／PhotonR2 的派生基础 |
+| Noto Sans SC、Noto Serif SC | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；七作 UI、卡片、说明、地图和场景排字；另有从可变字体导出的静态 700，用于 PM 日历缩略图字幕 |
+| 思源黑体 Source Han Sans SC | [Adobe Fonts](https://github.com/adobe-fonts/source-han-sans)，Adobe 及项目贡献者 | OFL 1.1；AGE2 发布说明页、部分 HUD／字幕及历史制作方案，以及 PhotonCN／PhotonR2 的派生基础 |
 | 思源宋体 Source Han Serif CN | [Adobe Fonts](https://github.com/adobe-fonts/source-han-serif)，Adobe 及项目贡献者 | OFL 1.1；TDA02／03 四张介绍卡的 Bold／Heavy |
-| 狮尾加糖宋体 Swei Sugar | [max32002](https://github.com/max32002/swei-sugar)，基于思源／Noto 宋体的衍生项目 | OFL 1.1；五作日期、地点和剧情卡 Medium |
+| 狮尾加糖宋体 Swei Sugar | [max32002](https://github.com/max32002/swei-sugar)，基于思源／Noto 宋体的衍生项目 | OFL 1.1；五作日期、地点和剧情卡 Medium；TDA01 在制明太子纸箱中文括注 SemiBold |
 | 霞鹜文楷 GB LXGW WenKai GB | [LXGW](https://github.com/lxgw/LxgwWenkaiGB)，基于 FONTWORKS Klee One | OFL 1.1；PF EX 标题、PM 标题与手写指示历史制作 |
 | 得意黑 Smiley Sans | [atelierAnchor](https://github.com/atelier-anchor/smiley-sans) | OFL 1.1；PF EX 标题历史制作／回放 |
-| 小赖 Xiaolai | [LXGW](https://github.com/lxgw/kose-font)，瀬戸のぞみ及上游衍生贡献者 | OFL 1.1；PM 倒计时文字静态审核稿 |
+| 小赖 Xiaolai | [LXGW](https://github.com/lxgw/kose-font)，瀬戸のぞみ及上游衍生贡献者 | OFL 1.1；PM 当前发布版的 11 个计时状态及 10 张内嵌教程文字 |
 | 马善政 Ma Shan Zheng | [The MaShanZheng Project Authors](https://github.com/googlefonts/mashanzheng) | OFL 1.1；毛笔标题、指示、颁发式及蛋糕文字制作 |
 | 站酷快乐体 ZCOOL KuaiLe | [The ZCOOL KuaiLe Project Authors](https://github.com/googlefonts/zcool-kuaile) | OFL 1.1；标题字体试样，未据此确认最终采用 |
 
 这里列的是家族和贡献来源，精确文件的版权字符串、版本和摘要见 [catalog.json](catalog.json)。旧霞鹜文楷 GB 已从与历史摘要相符的保留副本确认版本 1.522；得意黑由 2.0.1 原存档同样确认，不拿最新版替代历史输入。上游最新页面也不能替代历史文件自己的版权与保留字体名声明。运行时另有 IBM Plex、源石、白无常可可体、美呗嘿嘿体等，见[字体总入口](README.md#来源与复用)，不要把运行时选型自动算成图片用字。
+
+美呗嘿嘿体也实际用于 **TDA03 在制折叠便笺 1629**，因此另记图片输入；其文件版权署名为成都美尔贝科技股份有限公司，[作者发布页](https://www.zcool.com.cn/work/ZNTY3OTI5ODg%3D.html)与仓库已有[来源声明](../../AGE2/packaging/windows/MEBheiheiti-source.txt)一并保留。它依据作者使用声明维护，**不是 OFL／开源字体**；本次未能读取发布页正文，不声称重新完整核验授权。图片输入与发布包补字后的运行时文件摘要不同，分别登记。
 
 ## Windows 字体也如实登记
 
