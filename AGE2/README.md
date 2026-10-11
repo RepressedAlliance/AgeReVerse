@@ -6,15 +6,15 @@
 
 ## 独立中文通道与运行时修正
 
-2026-09-17 更新：[中文运行时技术说明](runtime/README.md)介绍中文语言通道、独立图片与
+[中文运行时技术说明](runtime/README.md)介绍中文语言通道、独立图片与
 字体选择、正文排版保护、语言切换缓存以及存档中文摘要修正；
 [Windows 安装工具](packaging/windows/README.md)提供版本校验、程序差分和安装恢复。
-本次公开技术源码，未发布新的玩家安装包，也不代表五部全路线已经实机验收。
+源码组件与玩家发布版分别维护，适用版本及尚需确认的内容见[使用范围](docs/limitations.md)。
 
 ## 先看懂资源层级
 
 ```text
-pack.bin                         FPD 外层容器（TDA00 为 v1，其余本轮样本为 v2）
+pack.bin                         FPD 外层容器（TDA00 为 v1，其余已支持样本为 v2）
 └─ root/assets/...
    ├─ localized/*.egpack        多语言正文与结构字段
    ├─ gui/**/*.webp             可直接查看的图片
@@ -35,12 +35,12 @@ FPD 与 EGPACK 是两层不同格式：先从 `pack.bin` 的 FPD 目录找到文
 | TDA01 | [`games/tda01/translations/`](games/tda01/translations/) | [93 个 WebP 路径](games/tda01/images/) | beta0.2.2 |
 | TDA02 | [`games/tda02/translations/`](games/tda02/translations/) | [100 个 WebP 路径](games/tda02/images/) | beta0.1 |
 | TDA03 | [`games/tda03/translations/`](games/tda03/translations/) | [152 个 WebP 路径](games/tda03/images/) | beta0.1.6 |
-| 帝都燃烧篇 | [正文、选项、说话人、UI](games/imperial-capital-burns/translations/)与[作内术语](../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [315 个 WebP 路径及可维护文案](games/imperial-capital-burns/images/) | beta0.1 |
+| 帝都燃烧篇 | [正文、选项、说话人、UI](games/imperial-capital-burns/translations/)与[作内术语](../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/imperial-capital-burns.ja-zh-Hans.csv) | [315 个 WebP 路径及可维护文案](games/imperial-capital-burns/images/) | beta0.1 |
 | 君望及附加篇 | [文本](games/kiminozo/translations/)与[术语、基线](games/kiminozo/terminology/)整理中 | [UI、图片与字体制作中](games/kiminozo/images/) | 尚未发布 |
 
 这些表和图片清单是当前可维护的公开快照，不代表能够逐字节重建历史 Release。WebP
 数量表示 ZIP 中实际存在的路径，不等于全部为独立翻译图；公开表、旧分支与实际发布载荷
-之间的差异保留在[对齐审计](evidence/translations/snapshots/authority-alignment-audit.md)中。
+之间的差异保留在[快照与发布兼容性](evidence/translations/snapshots/compatibility.md)中。
 
 ## 工具按层分开
 

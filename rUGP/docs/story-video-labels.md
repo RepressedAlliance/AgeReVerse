@@ -18,7 +18,7 @@ CRsi 容器和 RUO 重定向复用现有实现，不另造一种视频格式。
 
 ## 画面制作
 
-共用 Noto Sans SC 2.04 可变字体，身份见[字体目录](../../localization/fonts/images.md)。
+共用 Noto Sans SC 2.04 可变字体，身份见[字体目录](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/images.md)。
 输入字体 SHA-256 为 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`。
 制作器显式接收字体路径，输出报告记录实际散列，不依赖系统默认字体。
 

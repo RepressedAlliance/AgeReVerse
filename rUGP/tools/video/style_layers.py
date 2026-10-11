@@ -6,6 +6,7 @@ Outputs are static full-text layers; video reveal/fade timing is a separate step
 from __future__ import annotations
 
 from pathlib import Path
+from importlib import import_module
 
 
 def role_for(spec: dict, profile: dict) -> dict:
@@ -19,9 +20,12 @@ def role_for(spec: dict, profile: dict) -> dict:
 
 def render_layer(text: str, role: dict, profile: dict, font_path: Path):
     from PIL import Image, ImageFilter
-    from localization.tools.images.render_deterministic_localized_text import (
-        load_variable_font, render_tracking_mask, tint,
+    typography = import_module(
+        'Localization-MakeGamesSpeak.Tools-LetToolsHandleRepetition.images.render_deterministic_localized_text'
     )
+    load_variable_font = typography.load_variable_font
+    render_tracking_mask = typography.render_tracking_mask
+    tint = typography.tint
 
     if profile.get('schema') != 'photon-crsi-style-study/1' or profile.get('supersample') != 8 or profile.get('scale_x') != 1:
         raise ValueError('unsupported video style profile')

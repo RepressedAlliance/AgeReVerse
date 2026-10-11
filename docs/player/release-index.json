@@ -425,5 +425,14 @@
     }
   ],
   "age2_updated_date": "2026-09-21",
-  "photon_updated_date": "2026-09-26"
+  "photon_updated_date": "2026-09-26",
+  "section_usage": {
+    "age2_player_packages": "Current AGE2 packages; see age2_updated_date and the player guide.",
+    "photon_player_packages": "Current Photon packages; see photon_updated_date and the player guide.",
+    "player_packages": "Historical AGE2 test ZIP identities and limitations; not the current download list.",
+    "obsolete_releases": "Superseded historical release identities.",
+    "research_assets": "Research bundles; not player installers.",
+    "distribution_review": "Recorded findings for historical player_packages and research_assets, not blanket approval or rejection of later packages.",
+    "audited_date": "Date of the historical package review; current package sections have separate update dates."
+  }
 }

@@ -1,6 +1,8 @@
 # Reverse-engineering and reproducibility index
 
-[English overview](README.md) · **[Asset map](asset-map.md)** · [English localization workflow](../../localization/text/workflow.en.md) · [AGE2](../../AGE2/README.md) · [AGE2 postmortems](../../AGE2/docs/postmortems/README.md) · [rUGP](../../rUGP/README.md) · [rUGP postmortems](../../rUGP/docs/postmortems/README.md) · [Prior work](../research/references.md)
+[English overview](README.md) · **[Asset map](asset-map.md)** · [English localization workflow](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.en.md) · [AGE2](../../AGE2/README.md) · [AGE2 postmortems](../../AGE2/docs/postmortems/README.md) · [rUGP](../../rUGP/README.md) · [rUGP postmortems](../../rUGP/docs/postmortems/README.md) · [Prior work](../research/references.md)
+
+For a practical guide to translation, images, fonts, consistency, collaboration and reusable tools, start with **[Game Localization — Make Games Speak Your Language](../../Localization-MakeGamesSpeak/README.md)**. Its English overview and section explanations expand in place.
 
 This index separates three different claims:
 
@@ -36,10 +38,10 @@ See [`THIRD_PARTY.md`](../legal/THIRD_PARTY.md) for license observations and the
 | [CRip008](../../rUGP/docs/postmortems/crip008.md) | Header framing, MSB integer stream, draw rectangle, predictor and kind-specific alpha behavior were reconstructed from samples plus native behavior | [`formats/images/`](../../rUGP/formats/images/), especially [`test_crip008_encode.py`](../../rUGP/tests/formats/images/test_crip008_encode.py) | One passing kind/profile does not authorize every CRip008 flag/profile |
 | [Photon font runtime](../../rUGP/docs/postmortems/font-runtime.md) | File coverage, family selection, registry routes, GDI requests and image-rasterized text are separate layers | [`runtime/`](../../rUGP/runtime/), [`test_build.py`](../../rUGP/tests/runtime/test_build.py) | CI proves reproducible binaries and static contracts; actual GDI/game behavior still requires the pinned 32-bit game build |
 | [42 shared/common images](../../rUGP/docs/postmortems/shared-common-images.md) | 1,448 translation peers and 42 authenticated common endpoints have different semantic routes | [Photon V6 evidence](../../rUGP/evidence/photon/images/), [route closure](../../rUGP/evidence/photon/routes/README.md), [metadata-only binding audit](../../rUGP/tools/provenance/README.md), verifier, generated runtime tables and runtime source | Route authority does not by itself prove transport fit or visual correctness |
-| [ICI resize metadata](../../rUGP/docs/postmortems/ici-resize-metadata.md) | Resizing requires two `CInstallSource` sizes, bitmap growth and preservation of unknown wrapper metadata bits | Recorded clean/candidate differential and independent static decoding; the reusable invariant is documented | The corrected candidates were never launched in AGES and remain release-false; no general production writer is claimed |
+| [ICI resize metadata](../../rUGP/docs/postmortems/ici-resize-metadata.md) | Resizing requires two `CInstallSource` sizes, bitmap growth and preservation of unknown wrapper metadata bits | Recorded clean/candidate differential and independent static decoding; the reusable invariant is documented | Static repair method only; no in-game-confirmed general production writer is claimed |
 | [Image transport/runtime](../../rUGP/docs/postmortems/image-transport-runtime.md) | Correct pixels, semantic endpoint, physical extent/parent and final decoded surface are separate gates | 1,490-route closure, native-capacity census, controlled one-record runtime probes and guarded runtime design | Semantic ownership is complete; clean-install transport and full visual approval remain partial |
 
-The [postmortem index](../../rUGP/docs/postmortems/README.md) states what each incident does and does not prove.
+The [technical cases](../../rUGP/docs/postmortems/README.md) describe reusable fixes and their version scope. Open issues and coverage gaps are listed for [Photon](../../rUGP/docs/limitations.md) and [AGE2](../../AGE2/docs/limitations.md).
 
 ## rUGP extraction and packaging boundary
 
@@ -61,7 +63,7 @@ GARbro remains a useful GUI/source reference and may list supported rUGP variant
 
 The existing Photon package builder is therefore accurately described as a reproducible transformation of **already sealed, hash-locked input roots**, not yet as the complete public extraction/localization pipeline. See [`rUGP/packaging/README.md`](../../rUGP/packaging/README.md).
 
-A separate strict [Steam locale preflight](../../rUGP/packaging/README.md#steam-locale-preflight-for-a-future-installer) now proves the observed 光子之花/光子旋律 app IDs and dual `english` language fields and retains an in-memory seal for immediate pre-write revalidation. It deliberately grants no write authorization and does not infer a policy for Muv-Luv or Alternative.
+A separate strict [Steam locale preflight](../../rUGP/packaging/README.md#steam-locale-preflight) now proves the observed 光子之花/光子旋律 app IDs and dual `english` language fields and retains an in-memory seal for immediate pre-write revalidation. It deliberately grants no write authorization and does not infer a policy for Muv-Luv or Alternative.
 
 ## AGE2 research map and boundary
 
@@ -97,9 +99,9 @@ From a clean checkout with Python 3.12:
 python -m pip install -r requirements-dev.txt
 python -m unittest discover -s AGE2/tests -p "test_*.py" -v
 python -m unittest discover -s rUGP/tests -p "test_*.py" -v
-python -m unittest discover -s localization/tests -p "test_*.py" -v
+python -m unittest discover -s Localization-MakeGamesSpeak/Tests-CatchProblemsBeforePlayers -p "test_*.py" -v
 python -m unittest discover -s .github/scripts/tests -p "test_*.py" -v
-python -m compileall -q AGE2 rUGP localization .github/scripts
+python -m compileall -q AGE2 rUGP Localization-MakeGamesSpeak .github/scripts
 python .github/scripts/verify_repository.py
 ```
 

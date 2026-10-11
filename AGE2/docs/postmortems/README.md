@@ -1,8 +1,12 @@
-# AGE2 incident index
+# AGE2 技术案例与适用范围
 
-These notes preserve failures that changed the production rules. They are not
-bug anecdotes: each entry names the wrong assumption, evidence, repair,
-regression gate and remaining boundary.
+从问题中提炼可复用的方法：格式边界、资源选择、文字布局与版本兼容性。各项说明实现与仍有的限制。
+
+- [图片字幕排版](caption-layout.md)：原版演出坐标、可见字形对齐与行距。
+- [UI 与场景图布局](image-layout.md)：跨作尺寸、光晕锚点、地图补注与覆盖漏项。
+- [语言缓存与资源读取](language-switch-cache.md)：相同文字切换字形、原生内存生命周期与文件长度。
+- [细横线显示](horizontal-bar.md)：字符存在但缩放后不可见的字体修正。
+- [当前范围与待确认事项](../limitations.md)：内容、显示与发布版本的实际边界。
 
 - [`tda03-achievement-uistring.md`](tda03-achievement-uistring.md): a TDA02
   `uistring.epk` was accidentally shipped in TDA03 beta0.1–beta0.1.5, breaking
@@ -20,5 +24,4 @@ regression gate and remaining boundary.
   a maintained translation table, runtime authority and historical ZIP are
   separate claims; the current AGE2 end-to-end rebuild remains partial.
 
-New notes should use the same structure: symptom, unsafe assumption, controlled
-comparison, root cause, correction, automated check, in-game check and limits.
+New technical notes should explain the observable behavior, cause, usable correction and remaining support limits. Keep game-specific parameters scoped to the corresponding assets.

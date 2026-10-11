@@ -1,15 +1,16 @@
 # 逆向研究与攻克记录
 
-[返回首页](../../README.md) · [English](../en/research-index.md) · **[资产地图](asset-map.md)** · [多语言工作流](../../localization/text/workflow.md) · [参考项目](references.md) · [贡献者与致谢](../project/CONTRIBUTORS.md) · [仓库边界](repository-architecture.md)
+[返回首页](../../README.md) · [English](../en/research-index.md) · **[资产地图](asset-map.md)** · [多语言工作流](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md) · [参考项目](references.md) · [贡献者与致谢](../project/CONTRIBUTORS.md) · [仓库边界](repository-architecture.md)
 
-这里不是“最后成功代码”的目录列表，而是结论—证据—限制的索引。每篇复盘尽量保留：最初现象、错误假设、实验方法、根因、最终方案、回归测试，以及仍不能证明的部分。
+从资源提取、文本写回到图片显示，这里按实际问题介绍可复用的方法、工具和案例。每篇案例说明现象、原因、解决方法、适用版本与剩余限制，方便其他制作者判断能否用于自己的项目。
 
 ## 先按目标进入
 
 | 目标 | 入口 |
 | --- | --- |
+| 学习文本翻译、图片汉化、字体、一致性和多人校对方法 | **[游戏本地化｜让游戏说你的语言](../../Localization-MakeGamesSpeak/README.md)** |
 | 查找公开的中文文本、术语、图片身份和字体资料 | [文本、术语、图片与字体资产地图](asset-map.md) |
-| 为韩语、俄语等建立新语言 | [完整工作流](../../localization/text/workflow.md) · [新语言指南](../../localization/text/new-locale.md) |
+| 为韩语、俄语等建立新语言 | [完整工作流](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md) · [新语言指南](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md) |
 | 研究 TDA／帝都的 `pack.bin`、EGPACK、WebP 与松散覆盖 | [AGE2](../../AGE2/README.md) |
 | 查看君望本篇及附加篇的文本审核、术语和 UI 图片制作 | [君望项目入口（制作中）](../../AGE2/games/kiminozo/README.md) |
 | 研究 Photon 的 ICI、RIO、CRsa、RUO、Cr6Ti、CRip 与 Hook | [rUGP](../../rUGP/README.md) |
@@ -51,6 +52,7 @@ ICI 目录元数据
 | [Cr6Ti](../../rUGP/docs/postmortems/cr6ti.md) | 对象序列化长度与 RIO 放置填充不是同一个数；遗留样本还存在明确配置差异 | [图片格式](../../rUGP/formats/images/) |
 | [CRip007](../../rUGP/docs/postmortems/crip007.md) | 已审查灰度路线通过保持头部契约并使用 8 位通道，避免抗锯齿量化损失 | 编解码器与独立回读测试 |
 | [CRip008](../../rUGP/docs/postmortems/crip008.md) | 从样本与原生行为重建了头部、MSB 整数流、绘制矩形、预测器及 kind 特有透明度 | [图片格式](../../rUGP/formats/images/)与 kind 2/3 测试 |
+| [CRsi 剧情影片](../../rUGP/docs/crsi-format.md) | 帧索引、空间／帧间预测和颜色编码组成独立视频格式；复用图片研究中的部分码字，不等于 CRip008 图片序列 | [C 核心与制作工具](../../rUGP/tools/video/README.md)、[两作资源范围](../../rUGP/docs/photon-video-scope.md) |
 | [字体运行时](../../rUGP/docs/postmortems/font-runtime.md) | 字体文件覆盖、家族选择、注册、GDI 请求和图片内文字是不同层，必须分别验证 | [运行时源码](../../rUGP/runtime/)与可复现构建测试 |
 | [42 个 shared/common 图片](../../rUGP/docs/postmortems/shared-common-images.md) | 1,448 个 translation peer 与 42 个 common endpoint 使用不同语义路由，不能简单覆盖同一槽 | [1,490 图清单](../../rUGP/evidence/photon/images/)与[路由闭环](../../rUGP/evidence/photon/routes/) |
 | [ICI 尺寸元数据](../../rUGP/docs/postmortems/ici-resize-metadata.md) | 改尺寸涉及两个 `CInstallSource` 大小、bitmap 增长和未知包装位；只改一处会留下不一致 | 差分记录和独立静态解码；候选未获实机批准 |
@@ -66,11 +68,13 @@ ICI 目录元数据
 | EGPACK 文本槽 | 支持的 TDA 布局可导出字段、按稳定身份生成变更并验证只有授权字节变化 | [EGPACK 工具](../../AGE2/tools/egpack/) |
 | [松散覆盖边界](../../AGE2/docs/postmortems/loose-overlay-boundary.md) | 补丁保持 `root/...` 相对路径写入 LocalAppData，游戏优先于 `pack.bin` 读取；Steam 验证不会清理这一层 | [AGE2 工作流](../../AGE2/docs/workflow.md) |
 | [结构性空槽](../../AGE2/docs/postmortems/structural-empty-records.md) | 一部分空记录是引擎结构，不是漏译；必须以源身份和字段类型判断，不能按“空白数量”盲补 | 文本导出器与审计表 |
-| [失败的字形替换](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md) | 用近似字或字形偷换掩盖缺字会破坏文本权威，现已改为真实字体覆盖门 | [字体检查](../../localization/tools/font_coverage.py) |
-| [公开快照与发布包对齐](../../AGE2/docs/postmortems/public-snapshot-release-alignment.md) | 可维护表、旧分支和历史 ZIP 不是天然同一权威，必须逐作以哈希和载荷审计对齐 | [对齐审计](../../AGE2/evidence/translations/snapshots/authority-alignment-audit.md) |
+| [失败的字形替换](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md) | 用近似字或字形偷换掩盖缺字会破坏文本权威，现已改为真实字体覆盖门 | [字体检查](../../Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/font_coverage.py) |
+| [公开快照与发布包对齐](../../AGE2/docs/postmortems/public-snapshot-release-alignment.md) | 可维护表、旧分支和历史 ZIP 不是天然同一权威，必须逐作以哈希和载荷审计对齐 | [快照与发布兼容性](../../AGE2/evidence/translations/snapshots/compatibility.md) |
 | [TDA03 UI/成就映射](../../AGE2/docs/postmortems/tda03-achievement-uistring.md) | 早期包误用 TDA02 映射；逐作身份验证与实机成就检查必须成为发布门 | 专项复盘与测试 |
 
-## 证据等级
+## 怎样判断适用范围
+
+尚未解决的问题集中在 [AGE2](../../AGE2/docs/limitations.md) 与 [Photon](../../rUGP/docs/limitations.md)；已处理案例保留其受影响版本。下面几种检查回答的问题不同：
 
 - **合成测试通过：**证明代码处理了明确构造的分支。
 - **独立解码/往返通过：**证明编码结果可由第二实现还原。
@@ -78,7 +82,7 @@ ICI 目录元数据
 - **锁定版本实机通过：**才证明目标游戏在该版本、路线和环境下接受结果。
 - **可发布：**还需安装、卸载、字体许可、内容权利和完整路线 QA；技术成功不自动等于可分发。
 
-## 本地复核
+## 运行公开工具检查
 
 在仓库根目录运行：
 
@@ -86,9 +90,9 @@ ICI 目录元数据
 python -m pip install -r requirements-dev.txt
 python -m unittest discover -s AGE2/tests -p "test_*.py" -v
 python -m unittest discover -s rUGP/tests -p "test_*.py" -v
-python -m unittest discover -s localization/tests -p "test_*.py" -v
+python -m unittest discover -s Localization-MakeGamesSpeak/Tests-CatchProblemsBeforePlayers -p "test_*.py" -v
 python -m unittest discover -s .github/scripts/tests -p "test_*.py" -v
-python -m compileall -q AGE2 rUGP localization .github/scripts
+python -m compileall -q AGE2 rUGP Localization-MakeGamesSpeak .github/scripts
 python .github/scripts/verify_repository.py
 ```
 

@@ -18,12 +18,12 @@ The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse／帝都燃ゆ（
   [`choices.ja-zh-Hans.csv`](translations/choices.ja-zh-Hans.csv) 与
   [`ui-strings.ja-zh-Hans.tsv`](translations/ui-strings.ja-zh-Hans.tsv)：说话人、选项和系统
   UI 权威。
-- [帝都燃烧篇现行术语表](../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv)：本作专用术语，集中维护于 `localization/glossaries/`。
+- [帝都燃烧篇现行术语表](../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/imperial-capital-burns.ja-zh-Hans.csv)：本作专用术语，集中维护于 `Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/`。
 - [`images/copy/`](images/copy/)：启动提示、常用 UI、角色名、telop、日期/地点卡的中文
   文案、排版和源图锁。
 - [`images/release-inventory.json`](images/release-inventory.json)：历史 beta0.1 中 315 个
   WebP 成员的尺寸、模式和 SHA-256。
-- [`evidence/initial-inventory.md`](evidence/initial-inventory.md)：最初格式盘点与实现边界。
+- [`evidence/resource-layout.md`](evidence/resource-layout.md)：资源层级、格式识别与处理入口。
 - [`releases/beta0.1.md`](releases/beta0.1.md)：该历史版本的范围与安装说明。
 
 译文以日文文本和语音为依据，不以英语槽或模糊匹配兜底。历史范围包括正文、说话人、

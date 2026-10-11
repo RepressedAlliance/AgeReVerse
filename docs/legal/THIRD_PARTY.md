@@ -46,14 +46,22 @@ TDA 汉化，并要求在发布时致谢其提供汉化思路。该公开补丁�
 ## 构建依赖
 
 - Python 依赖分别固定在 `AGE2/requirements.txt`、`rUGP/requirements.txt` 和
-  `localization/requirements.txt`；根开发文件汇总三者。
+  `Localization-MakeGamesSpeak/requirements.txt`；根开发文件汇总三者。
 - Photon 原生构建使用 [Zig](https://ziglang.org/) 0.16.0，不将编译器提交到仓库。
 - GitHub Actions 在 `.github/workflows/quality.yml` 中锁定到不可变提交。
 - 字体是带许可证的 Release 输入；当前 Git 不追踪字体二进制，详见
-  [`localization/fonts/`](../../localization/fonts/README.md)。
+  [`Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/`](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md)。
 
 新增依赖必须记录准确版本、上游 URL、许可证、是否复制代码/数据，以及采用它的可复现
 或安全理由。
+
+## 图片制作使用的字体
+
+七作汉化图片的字体来源、作者与许可集中在[图片字体致谢](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/attribution.md)，[使用表](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/images.md)区分实际制作、历史试样、被替换和局部未完成方案。除 Noto／思源／狮尾外，已补入霞鹜文楷 GB、得意黑、小赖、马善政等遗漏来源；楷体、宋体、MS Mincho、微软雅黑等 Windows 字体独立标明，不称作开源字体。
+
+当前发布图逐项关联实际采用的字层与字体；本地在制另列狮尾 SemiBold、美呗嘿嘿体等输入。美呗依据作者使用声明维护，不能归入 OFL；Noto Sans 静态 700 则记录其可变字体来源与导出方式。同名文件、旧候选和生成替换不代替实际采用关系，详见上述用字表中的发布与在制清单。
+
+新图与返修须同步[用字登记](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/registration.md)。公开登记是项目的归纳与致谢要求；单纯渲染图片和分发字体软件的许可义务分别处理，随字体软件交付时保留其实际版权与完整许可，不能以本页替代。
 
 ## English summary
 

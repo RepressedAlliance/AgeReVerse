@@ -5,13 +5,13 @@
 [asset and release policy](../project/asset-and-release-policy.md)
 
 This page identifies the maintained localization assets and explains why they
-do not all belong in `localization/`.
+do not all belong in `Localization-MakeGamesSpeak/`.
 
 ## Placement rule
 
 | Material | Public location | Reason |
 | --- | --- | --- |
-| Two-pass method, review states, locale naming, shared terminology, generic image/font tools | `localization/` | Reusable without a particular engine or resource slot |
+| Two-pass method, review states, locale naming, shared terminology, generic image/font tools | `Localization-MakeGamesSpeak/` | Reusable without a particular engine or resource slot |
 | A game's dialogue, choices, speakers, UI translation, and game-only terms | `AGE2/games/<game>/` or `rUGP/games/<game>/` | Stable IDs, hashes, scenes, locale slots, and writer contracts are game-bound |
 | Image copy, paths, dimensions, source locks, and localized identities | The game's `images/`; joint 光子之花/光子旋律 authority under `rUGP/evidence/photon/` | Display depends on game paths, parents, locale endpoints, and codecs |
 | FPD, EGPACK, ICI, RIO, CRsa, RUO, Cr6Ti, CRip, and Hook code | The corresponding `AGE2/` or `rUGP/` tree | They are unrelated format/runtime families |
@@ -19,7 +19,7 @@ do not all belong in `localization/`.
 | Complete official text/images, containers, temporary candidates, failed batches, raw model responses | Ignored local work directories | Lawful inputs and scratch output are not public project assets; durable results become tools, manifests, recipes, or postmortems |
 
 Complete Japanese scripts and original images therefore do **not** move into
-`localization/`. Public tables retain stable IDs and source-field SHA-256 values.
+`Localization-MakeGamesSpeak/`. Public tables retain stable IDs and source-field SHA-256 values.
 A localizer extracts the source from a lawfully owned copy and joins it locally
 by identity and hash.
 
@@ -41,7 +41,7 @@ or automatic writer authorization. Each game README states whether a table is a
 review source, an exact writer input, or a historical snapshot.
 
 Shared series terminology lives in the
-[Muv-Luv glossary](../../localization/glossaries/muv-luv.ja-zh-Hans.csv).
+[Muv-Luv glossary](../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv).
 Game-only terms remain with that game.
 
 ## Image material
@@ -67,17 +67,17 @@ mirrorable player patch.
 A maintainable image record consists of resource identity, source hash,
 localized copy, approved textless authority, font/layout parameters,
 allowed-change region, output hash, and review result. See the
-[localized-image workflow](../../localization/images/tools.md).
+[localized-image workflow](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/tools.md).
 
 ## Fonts and a new locale
 
 Shared font provenance, licensing, and glyph-coverage rules live under
-[`localization/fonts/`](../../localization/fonts/README.md). Actual selection is
+[`Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/`](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md). Actual selection is
 engine-specific: AGE2 must verify loose paths/configuration, while rUGP must
 verify registration, family substitution, GDI requests, and the build gate.
 
-Start with the [complete English workflow](../../localization/text/workflow.en.md)
-and [new-locale guide](../../localization/text/new-locale.md). Extract lawful source
+Start with the [complete English workflow](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.en.md)
+and [new-locale guide](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md). Extract lawful source
 locally, join it by public identities and hashes, keep target text and game-bound
 image copy with the relevant game, and contribute only genuinely engine-neutral
-rules or tools back to `localization/`.
+rules or tools back to `Localization-MakeGamesSpeak/`.

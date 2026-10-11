@@ -82,9 +82,9 @@ Kotoba结果。不同模型支持删去英文字幕新增的“全身”“最�
 
 ## 视觉制作与一致性
 
-本演出沿用仓库的[图片汉化流程](../../../../localization/images/README.md)、
-[视觉制作规范](../../../../localization/images/production.md)及
-[图片字体目录](../../../../localization/fonts/images.md)。中文须自然融入原演出，
+本演出沿用仓库的[图片汉化流程](../../../../Localization-MakeGamesSpeak/Images-MakeItLookNative/README.md)、
+[视觉制作规范](../../../../Localization-MakeGamesSpeak/Images-MakeItLookNative/production.md)及
+[图片字体目录](../../../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/images.md)。中文须自然融入原演出，
 文字准确、能显示和编码通过均不能单独证明成品美观。
 
 - 开场保密卡、技术标签、价格、旁白按视觉功能分组。每组统一字体文件及版本、
@@ -123,7 +123,7 @@ Noto Sans SC 2.04 输入。技术标签统一25px／400字重，价格38px／400
 ## 图中文字的来源确认
 
 统一样式之前还须确认哪些原字应当替换。当前28处中文图文是制作研究，
-不能据此认定原片的英文都属于英文版翻译。按[翻译原则](../../../../localization/principles.md)，
+不能据此认定原片的英文都属于英文版翻译。按[翻译原则](../../../../Localization-MakeGamesSpeak/principles.md)，
 日文原作已有的英文应保留；它们不应进入去字、补网格及重新排字的生产范围。
 
 离线脚本与原生比较分支已确定：结尾的 `CInt@568804` 为0时调用无旁白字幕视频

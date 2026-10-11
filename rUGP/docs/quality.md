@@ -25,6 +25,6 @@
 - 光子之花 and 光子旋律 pass independently;
 - reproducible runtime build hash and package member hashes;
 - no workstation path, credential, PDB, source archive, or rejected candidate;
-- installer refuses unknown inputs and supports exact rollback/Steam recovery;
+- installer refuses unknown inputs and explains Steam recovery; the current player installer does not create backups or provide rollback;
 - 光子之花/光子旋律 installer validates the confirmed Steam `english` route in both locale fields and rechecks the same manifest seal immediately before its first write;
 - image/text/font manifests bind every installed byte.

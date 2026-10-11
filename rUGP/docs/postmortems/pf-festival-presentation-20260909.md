@@ -1,12 +1,12 @@
 # 光子之花 festival thumbnail translated, animated presentation missed
 
-The user observed Chinese in the album thumbnail G2498 (Cr6Ti, 210×123), but
+Chinese appeared in the album thumbnail G2498 (Cr6Ti, 210×123), but
 Japanese festival signs inside the animated presentation. The full background
 G2018 and partial frame G2019 (both CRip008, 800×600 canvas) already had correctly
 installed and authenticated Chinese sidecars. Thumbnail success did not exercise
 the same decoder family or geometry.
 
-A local diagnostic build using the existing native trace captured:
+The actual decoder arguments distinguish archive payload from caller extent:
 
 | Resource | Archive payload | Decoder extent | Archive FNV-1a | Live FNV-1a | Result before fix |
 | --- | ---: | ---: | --- | --- | --- |
@@ -16,8 +16,7 @@ A local diagnostic build using the existing native trace captured:
 Extending each archive FNV with exactly three zero bytes produces the observed
 live FNV. The full image was missed three times. The partial call's target and
 clip both equal `(74,114)–(306,367)`, matching the archive's 232×253 draw extent.
-Both use pitch 3200 and an 800×600 destination canvas. Native tracing was removed
-from the installed runtime after the capture; logs and game data remain local.
+Both use pitch 3200 and an 800×600 destination canvas. The caller extent and rectangle must be authenticated together.
 
 The existing padding retry was restricted to 120–130 KB date-card payloads. 光子之花
 now retries exactly two/three trailing bytes for the same 800×600 canvas family,
@@ -39,8 +38,6 @@ pre-commit no-write and outside-rectangle byte checks. Four-byte padding, change
 payloads and a shifted partial rectangle are rejected. It does not execute the
 proprietary decoder; private inputs are not shipped in Git or run in CI.
 
-The installed normal build is recorded in the current runtime sync evidence.
-光子旋律 rebuilt byte-for-byte identical to the user's already accepted album fix.
-The user replayed the same presentation after installation and confirmed that
-both the background and animated signs are now correct. This closes these two
-observed resources' live acceptance, not every CRip008 partial format.
+The corrected background and animated signs were confirmed in that presentation.
+The support boundary remains those two observed resources and the exact partial
+rectangle, not every CRip008 partial format.

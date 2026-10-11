@@ -42,14 +42,14 @@ localization asset, not an installer.
 
 | Directory | Responsibility |
 | --- | --- |
-| [`localization/`](../../localization/README.md) | Engine-neutral two-pass translation, terminology, image production, font checks, and new-locale workflow |
+| **[Game Localization — Make Games Speak Your Language](../../Localization-MakeGamesSpeak/README.md)** | Practical text, image, typography, consistency and community-proofreading guides, plus reusable tools and their tests |
 | [`AGE2/`](../../AGE2/README.md) | TDA/Imperial game-bound text and image identities, plus the in-development Kiminozo project, FPD, EGPACK, WebP, loose overlays, tests, and postmortems |
 | [`rUGP/`](../../rUGP/README.md) | Photon game-bound text and image identities, ICI, RIO, CRsa, RUO, Cr6Ti, CRip, runtime, and postmortems |
 | [`docs/`](../README.md) | Player, research, maintenance, legal, and English documentation |
 
 See the **[text, terminology, image, and font asset map](asset-map.md)** for
 actual counts and placement rules. Engine-neutral methods live in
-`localization/`; anything bound to a game resource ID, locale slot, path, or
+`Localization-MakeGamesSpeak/`; anything bound to a game resource ID, locale slot, path, or
 codec lives under that game's `AGE2/games/` or `rUGP/games/` directory. Complete
 official source assets are extracted locally from a contributor's lawful copy
 and are never committed.
@@ -61,10 +61,10 @@ first translation; independently classify every row as
 `keep`/`revise`/`question`; resolve questions; bind through the correct engine;
 run in-game QA; and feed player reports back into maintained source.
 
-- [Complete English workflow](../../localization/text/workflow.en.md)
-- [Start Korean, Russian, or another locale](../../localization/text/new-locale.md)
-- [Localized image and Image 2 workflow](../../localization/images/tools.md)
-- [Chinese workflow](../../localization/text/workflow.md)
+- [Complete English workflow](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.en.md)
+- [Start Korean, Russian, or another locale](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md)
+- [Localized image and Image 2 workflow](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/tools.md)
+- [Chinese workflow](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md)
 
 ## Credits and participation
 

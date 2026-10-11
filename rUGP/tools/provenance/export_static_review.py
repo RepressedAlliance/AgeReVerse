@@ -10,7 +10,9 @@ from pathlib import Path
 import re
 
 from PIL import Image
-from localization.tools.safe_output import write_new_files
+from importlib import import_module
+_localization_safe_output = import_module('Localization-MakeGamesSpeak.Tools-LetToolsHandleRepetition.safe_output')
+write_new_files = _localization_safe_output.write_new_files
 
 SCHEMA = "photon-static-review-v1"
 SHA = re.compile(r"[0-9A-F]{64}")

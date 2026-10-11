@@ -39,13 +39,13 @@ jobs:
       - name: Test rUGP
         run: python -m unittest discover -s rUGP/tests -p "test_*.py" -v
       - name: Test localization workflow
-        run: python -m unittest discover -s localization/tests -p "test_*.py" -v
+        run: python -m unittest discover -s Localization-MakeGamesSpeak/Tests-CatchProblemsBeforePlayers -p "test_*.py" -v
       - name: Test retained localization research
         run: python -m unittest discover -s docs/research/localization/tests -p "test_*.py" -v
       - name: Test repository policy helpers
         run: python -m unittest discover -s .github/scripts/tests -p "test_*.py" -v
       - name: Compile Python sources
-        run: python -m compileall -q AGE2 rUGP localization docs/research/localization .github/scripts
+        run: python -m compileall -q AGE2 rUGP Localization-MakeGamesSpeak docs/research/localization .github/scripts
       - name: Verify repository policy
         run: python .github/scripts/verify_repository.py
 
@@ -67,7 +67,7 @@ jobs:
       - name: Windows regression tests
         shell: pwsh
         run: |
-          foreach ($suite in @('AGE2/tests', 'rUGP/tests', 'localization/tests', 'docs/research/localization/tests', '.github/scripts/tests')) {
+          foreach ($suite in @('AGE2/tests', 'rUGP/tests', 'Localization-MakeGamesSpeak/Tests-CatchProblemsBeforePlayers', 'docs/research/localization/tests', '.github/scripts/tests')) {
             python -m unittest discover -s $suite -p 'test_*.py' -v
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           }

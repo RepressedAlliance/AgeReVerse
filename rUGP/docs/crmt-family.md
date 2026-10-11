@@ -110,7 +110,7 @@ python -m rUGP.tools.images.replace_crmt `
 - 光子旋律诊断曾依赖 8 GiB RUO 地址空间修正。诊断启动器通过不自动说明正式 DLL 通过；必须分别锁定 DLL、RUO 与 EXE 身份验证。
 
 RUO 应合并进同一现有补丁映射，逐条检查未修改目标的旧映射／payload 不变。不要生成第二份补丁覆盖掉正文或其他图片。
-此 PR 不修改运行时 DLL，也不发布 EXE、RUO、诊断注入器或玩家安装包。
+这些工具生成独立候选记录；与运行时、RUO 和玩家包的集成另见[打包说明](../packaging/README.md)。
 
 ## 测试和发布边界
 

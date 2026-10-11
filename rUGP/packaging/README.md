@@ -22,7 +22,7 @@ identities are admitted for direct upgrades. See the
 [special-text correction](../docs/postmortems/pm-special-text-20260911.md).
 `build_photon_player.py` rejects translated or rebound backlog action arguments.
 
-## 2026.09.10 player installer candidate
+## Player installer and delivery assembly
 
 `build_photon_player.py` consumes a separately assembled and verified 光子之花/光子旋律
 snapshot, builds the union of changes needed by stock and known previous bases,
@@ -64,7 +64,7 @@ python -m rUGP.packaging.verify_player_installer --output "X:\verification\playe
 
 The final combination still requires game-level QA. Installer verification and
 historical scene acceptance are not a claim that every scene in a new build has
-been played. See the [Beta0.1 follow-up audit](../docs/postmortems/beta01-followup-20260910.md).
+been played. See the [component limits and unresolved items](../docs/limitations.md).
 
 ## Historical Beta0.1 builder
 
@@ -113,7 +113,7 @@ the same sealed authorities, epoch, pinned dependencies, and recorded build
 environment; it is not an unsupported promise that arbitrary Python/zlib
 installations produce byte-identical DEFLATE streams.
 
-## Steam locale preflight for a future installer
+## Steam locale preflight
 
 [`steam_locale_preflight.py`](steam_locale_preflight.py) is the public,
 read-only gate for the two Photon routes this project has actually observed:
@@ -137,8 +137,7 @@ not transferable write authorization: the same in-memory observation must pass
 configuration. Muv-Luv and Muv-Luv Alternative deliberately fail closed because
 their distinct routing policies have not been promoted into this component.
 
-The historical packages were not retrofitted with this gate, and the current
-Photon source tree is not a player release. Any future one-click Photon
-installer must internalize the same checks without requiring end users to
-install Python. The current player installer's deliberate no-backup policy and
-failure checks are described above; historical rollback tooling is unchanged.
+The current player installer performs the language checks internally; players
+do not install Python or run this CLI. The read-only Python interface is for
+development and reuse. It does not retrofit previously published archives.
+The current installer's no-backup policy and failure handling are described above.

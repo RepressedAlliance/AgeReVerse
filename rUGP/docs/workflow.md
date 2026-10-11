@@ -10,7 +10,7 @@ When a matching clear-name Steam depot manifest is available, the
 engine-neutral [`verify_steam_depot_manifest.py`](../../docs/research/localization/tools/verify_steam_depot_manifest.py)
 can additionally prove selected local files against its complete file/chunk
 map. This is a content check, not Steam-signature authentication; see the
-[source-baseline instructions](../../localization/text/new-locale.md#3-freeze-the-legal-source-baseline).
+[source-baseline instructions](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md#3-freeze-the-legal-source-baseline).
 
 ## 2. Decode the catalog
 
@@ -22,7 +22,7 @@ Route only a strictly identified record to `formats/images/` or `formats/rio/`. 
 
 ## 4. Author content
 
-Translate from Japanese source authority and follow [`../localization/`](../../localization/). For images, approve a textless layer and deterministic typography before encoding. Preserve source codec where supported; a successful kind=3 test proves the implemented kind=3 subset, not every flag/profile in the world.
+Translate from Japanese source authority and follow [`../Localization-MakeGamesSpeak/`](../../Localization-MakeGamesSpeak/). For images, approve a textless layer and deterministic typography before encoding. Preserve source codec where supported; a successful kind=3 test proves the implemented kind=3 subset, not every flag/profile in the world.
 
 ## 5. Encode and prove round trips
 
@@ -38,4 +38,4 @@ Prefer a native/in-place or RUO route where the authenticated translation/common
 
 ## 7. Package from a clean root
 
-The Photon builder accepts explicit clean, sealed-runtime, stock-fixed, final-PF and final-PM roots. It validates pinned hashes, requires a fixed `SOURCE_DATE_EPOCH`, records the Python/NumPy/zlib environment, creates deterministic block deltas and ZIP metadata, and emits 光子之花/光子旋律 as separate packages. A future player installer must additionally run and immediately revalidate the strict [Steam locale preflight](../packaging/README.md#steam-locale-preflight-for-a-future-installer); a saved JSON report alone is not write authorization. See [`../packaging/README.md`](../packaging/README.md).
+The Photon builder accepts explicit clean, sealed-runtime, stock-fixed, final-PF and final-PM roots. It validates pinned hashes, requires a fixed `SOURCE_DATE_EPOCH`, records the Python/NumPy/zlib environment, creates deterministic block deltas and ZIP metadata, and emits 光子之花/光子旋律 as separate packages. The player installer must run and immediately revalidate the strict [Steam locale preflight](../packaging/README.md#steam-locale-preflight); a saved JSON report alone is not write authorization. See [`../packaging/README.md`](../packaging/README.md).

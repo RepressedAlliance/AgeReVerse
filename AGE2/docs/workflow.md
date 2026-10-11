@@ -13,7 +13,7 @@ python -m pip install -r requirements-dev.txt
 First freeze the executable and `obb/pack.bin` identities. When you have the
 matching clear-name Steam depot manifest, use the engine-neutral
 [`verify_steam_depot_manifest.py`](../../docs/research/localization/tools/verify_steam_depot_manifest.py)
-content check described in the [new-locale guide](../../localization/text/new-locale.md#3-freeze-the-legal-source-baseline).
+content check described in the [new-locale guide](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md#3-freeze-the-legal-source-baseline).
 
 Obtain `Scrambler.cs` from the immutable FatePackageManager revision recorded in [`THIRD_PARTY.md`](../../docs/legal/THIRD_PARTY.md), verify its recorded SHA-256, and use your legally installed game:
 
@@ -40,6 +40,8 @@ python AGE2/tools/egpack/extract_egpack_manifest.py "X:\work\fpd-extract" `
 Select the authoritative source-language slot by field key, not by the nearest readable byte sequence.
 
 ## 3. Prepare exact changes
+
+The example below targets an existing JP slot, as used by historical test patches. Current AGE2 BETA packages use a separate Chinese slot; this field-level join does not create that slot or reproduce the current installers. See the [packaging guide](../packaging/windows/README.md).
 
 The EGPACK writer's change CSV is `relative_path,id,slot,expected_text,replacement_text`. `expected_text` is an optimistic lock; if the installed version differs, the build stops. Preserve the format's control sequences explicitly. Do not pass a game's maintained translation snapshot directly to the repacker; first bind it to the legal local manifest with the strict converter:
 
@@ -70,7 +72,7 @@ Before shipping a font, verify its target-language cmap and then perform
 layout/in-game checks:
 
 ```powershell
-python -m localization.tools.font_coverage "X:\fonts\TargetFont.ttf" `
+python -m Localization-MakeGamesSpeak.Tools-LetToolsHandleRepetition.font_coverage "X:\fonts\TargetFont.ttf" `
   AGE2/games/tda00/translations/ja-zh-Hans.csv --column cn_text `
   --output "X:\work\font-coverage.json"
 ```

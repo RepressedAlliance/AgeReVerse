@@ -19,4 +19,4 @@
 
 光子之花部分页面偶发显示英文的问题尚未彻底解决；光子旋律《再诞》片尾动画内嵌的英文说明尚未汉化。这次更新不包含未验证的运行库候选，也不宣称全路线已经人工遍历。
 
-逐行校对变更记录见 `rUGP/evidence/photon/text/paratranz-20260926.json`；历史拉丁词审校时的“保护章节”指当时那一轮操作，后续获授权的校对变更独立记录，历史校验仍通过逆向恢复当时字节验证。
+维护译文见[光子之花](../../rUGP/games/photonflowers/translations/README.md)与[光子旋律](../../rUGP/games/photonmelodies/translations/README.md)。后续校对是否进入下载包，以相应 Release 说明为准。

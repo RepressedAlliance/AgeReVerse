@@ -1,21 +1,21 @@
-# Photon 已审校文本证据
+# Photon 历史审校文本与来源绑定
 
-这里绑定四组故事共 **57,547 行**已审校简体中文，同时省略完整官方日文。它面向继续
-审核、其他语言移植和未来构建，不声称每一行都已接入当前运行时；光子之花 69 行、光子旋律 151 行
-精确写入契约仍由各自 `text-data/runtime/zh-Hans.csv` 负责。
+[现行文字资产](../../../../games/README.md) · [章节维护方式](../../../../docs/chapter-texts.md)
 
-| 公开表 | 行数 |
+本目录的 manifest 绑定四组故事共 **57,547 行**历史审校中文，不包含完整官方日文。它用于来源比较、导出和回归，不是当前玩家包的文本版本索引。继续修改请从各作 `translations/` 与 `text-data/` 进入；69／151 行的旧精确运行时契约也不代表两作只汉化了这些文字。
+
+| 历史表 | 行数 |
 | --- | ---: |
 | [光子之花 / Alternative](../../../../games/photonflowers/text-data/history/reviewed/alternative.zh-Hans.csv) | 6,033 |
 | [光子之花 / Extra](../../../../games/photonflowers/text-data/history/reviewed/extra.zh-Hans.csv) | 6,931 |
 | [光子旋律 / Adoration + Resurrection](../../../../games/photonmelodies/text-data/history/reviewed/adoration-resurrection.zh-Hans.csv) | 8,407 |
 | [光子旋律 / Shard of Spacetime](../../../../games/photonmelodies/text-data/history/reviewed/shard-of-spacetime/) | 36,176 |
 
-公开行保存调用顺序、稳定 ID、RIO 分卷、CRsa 场景、日文源字段 SHA-256 与中文译文。
-说话人和完整日文只作为私有导出验证输入，不写入公开 CSV。导出器拒绝顺序缺口、重复
-身份、RIO/scene 不一致、空必需字段、内嵌 `U+0000`、源哈希漂移和行数漂移。
+行内保存调用顺序、稳定 ID、RIO 分卷、CRsa 场景、日文源字段摘要和中文译文。说话人与完整原文是本地合法输入，不写入这些公开 CSV。导出器检查顺序、唯一身份、RIO／场景关联、必需字段、内嵌 NUL、源摘要与预期行数。
 
-给定与 manifest 哈希完全相符的合法私有对照表，可运行：
+## 按既定来源导出
+
+输入必须与对应 manifest 的源身份一致，输出使用不存在的新文件：
 
 ```powershell
 python -m rUGP.tools.text.export_reviewed_translation `
@@ -25,12 +25,8 @@ python -m rUGP.tools.text.export_reviewed_translation `
   --expect-id-prefix pf --expect-rows 6033
 ```
 
-时空碎片按 RIO 分卷拆为三个文件，避免单文件逼近仓库 10 MiB 硬门。测试按 manifest
-顺序重新连接并验证历史合并身份；临时合并文件必须留在忽略的工作目录。
+《时空的欠片》按 RIO 分卷拆为三个文件；需要比较时按 manifest 顺序连接，临时合并文件放在忽略目录。现行译文可继续接受校对，历史快照的固定身份用于回归，不冻结后续修改。
 
-## English summary
+## English
 
-This authority binds 57,547 reviewed Simplified Chinese rows using stable IDs
-and exact Japanese source hashes without mirroring the complete official
-script. Reviewed rows remain distinct from the smaller exact runtime-binding
-contracts.
+These manifests bind 57,547 historical reviewed Chinese rows for source comparison and regression. They do not identify the current player text. Edit the maintained game tables; the small legacy runtime contracts describe specific bindings, not the total amount translated.

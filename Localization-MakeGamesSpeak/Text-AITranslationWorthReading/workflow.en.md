@@ -1,0 +1,271 @@
+# Complete localization workflow: first translation to player feedback
+
+[中文](workflow.md) · [Localization workspace](../README.md) ·
+[Start a new language](new-locale.md) · [Asset map](../../docs/en/asset-map.md) ·
+[Image workflow](../Images-MakeItLookNative/README.md) · [Ordered standards](README.md) ·
+[Translation principles](../principles.md#english-summary)
+
+This is the process developed while working on the TDA, The Imperial Capital
+Burns, and Photon texts. Its core is not “ask an AI to translate a whole
+spreadsheet.” Story comprehension, terminology, first translation, independent
+review, engine binding, in-game QA, and player feedback are separate stages with
+different evidence.
+
+The Chinese patch and its image lettering share the same governing policy:
+translate Japanese into Chinese, preserve English present in the Japanese
+original, and use English for Japanese only when it better serves the meaning
+and context, with a recorded reason. For assets exclusive to the official
+English edition, locate their corresponding Japanese voice and translate what
+is actually heard into Chinese. Record the audio location and uncertainties;
+both the first pass and independent review check the Japanese audio. Do not
+invent a Japanese source by back-translating English or approve an English-based
+fallback when the necessary Japanese evidence is missing.
+
+Before the first pass, distinguish translation from intentional retention by function, player understanding and the original presentation. Most Japanese text needs translation. Wording used primarily for identification or presentation may remain when this preserves its role without obstructing necessary understanding; wording already suitable in Chinese may also remain. Assess different parts of a line or image separately. Song titles, credits and date notation are examples, not an exhaustive list; apply the shared principles to new material too. Pass on the retention scope, reason and confirmation for independent review. Completing localization does not mean removing every Japanese character.
+
+```text
+lawful extraction and stable source identity
+        ↓
+read the story; establish relationships and terminology
+        ↓
+first translation by complete scene
+        ↓
+independent review: keep / revise / question
+        ↓
+resolve questions; re-freeze terminology and cross-scene consistency
+        ↓
+AGE2 or rUGP binding, writeback, and automated validation
+        ↓
+in-game QA: initial full-route coverage, then affected-area regression
+        ↓
+maintainer's manual checks, corrections, and verification of fixes
+        ↓
+complete production and publish the test release
+        ↓
+post-release player reports and ParaTranz community proofreading
+        ↓
+return findings to maintained text/terminology/source and release again
+```
+
+Passing one stage never substitutes for the next. Fluent target text does not
+prove the Japanese was understood; static decoding does not prove runtime
+acceptance; a game launch does not prove complete text, image, and font coverage.
+
+Start verification with the checks directly affected by the change. Reuse prior
+results when their inputs, rules, and tools still apply. Expand or repeat checks
+for relevant failures, new evidence, dependency changes, or explicit delivery
+requirements; stop once the relevant checks pass and no issues remain. Do not
+add repeated hashes, baseline rebuilds, smoke tests, backups, rollback rehearsals,
+dry-runs, or acceptance tables merely for reassurance. Engine-required checks at
+write and installation time still run at those operations.
+
+## 0. Freeze lawful inputs and stable identities
+
+1. Extract source data from a game copy you lawfully own.
+2. Record the game/build, Steam App ID, resource path, object identity or offset,
+   and SHA-256 of every relevant source.
+3. Do not use an absolute workstation path or a mutable spreadsheet row number
+   as the only identity.
+4. A public table may retain the exact source-field hash without mirroring the
+   complete official script. Other contributors re-extract locally and join by
+   stable identity plus hash.
+5. Keep AGE2 and rUGP extraction, writer, and runtime paths independent.
+
+Output: source manifest, stable IDs, hashes, scene order, and a list of still
+unidentified structural questions.
+
+## 1. Understand the story and establish terminology first
+
+Do not start with randomly sampled rows. Before bulk translation:
+
+- read the current route/scene in order and enough surrounding material;
+- record character relationships, status differences, forms of address,
+  speech habits, and current emotion;
+- inventory names, organizations, ranks, machines, weapons, operations,
+  locations, and recurring jokes;
+- merge already established series terminology;
+- put a new term into a candidate list instead of inventing a different answer
+  every time it appears;
+- mark uncertain story, speaker, address, or term decisions as `question`.
+
+The glossary is a story-understanding tool established before the first pass,
+not merely a cleanup table produced after translation.
+
+Output: scene summary, relationship/address notes, frozen terminology baseline,
+and unresolved questions.
+
+## 2. First translation: produce candidates
+
+Translate complete scenes or natural story blocks in stable resource order.
+Every maintained row should retain the equivalent of:
+
+| Field | Purpose |
+| --- | --- |
+| `id` / `stable_id` | Identity that survives sorting and export |
+| `resource_file` / `egpack` / `rio_file` | Route back to the game resource |
+| `scene`, `speaker_jp` | Story and speaker context |
+| `source_text_sha256` | Actual source text field; listening-based cases also record the Japanese audio location without inventing a JP text slot |
+| target text | First-pass candidate |
+| status | `translated`, `question`, or `blocked` |
+
+This pass aims for accurate source understanding and natural target-language
+writing. It does not perform engine writeback. English slots, old translations,
+OCR, and machine translation can reveal discrepancies but cannot replace the
+Japanese source. English-edition-only assets use the corresponding Japanese
+voice as the source; English already present in the Japanese original is retained
+under the shared policy.
+
+Output: candidate text, terminology additions, questions, batch range, and the
+next stable starting point.
+
+## 3. Second pass: independent review
+
+The second pass is not target-language polishing. The reviewer rereads the
+Japanese, context, and character relationships; for listening-based cases, the
+reviewer listens to the Japanese audio again rather than merely accepting the
+first-pass transcript. The reviewer assigns exactly one result:
+
+- `keep`: retain the candidate;
+- `revise`: supply corrected text and the material reason;
+- `question`: evidence remains insufficient; state what is needed.
+
+Use another reviewer, another agent conversation, or at least a genuinely
+independent pass when possible. Never default an entire batch to `keep`, and do
+not make preference-only rewrites without source support. `revise` and
+`question` are review results, not first-pass statuses.
+
+Output: row-level decisions, before/after text, reasons, unresolved questions,
+and review statistics.
+
+## 4. Resolve questions and re-freeze terminology
+
+A `question` must not silently disappear before packaging. Consult as needed:
+
+- later scenes and other occurrences of the same expression;
+- Japanese voice, speaker, expression, and staging;
+- screenshots and the actual resource call site;
+- official setting material or established series usage;
+- control codes, locale slots, and image context.
+
+After resolution, follow [07 change-impact review](07-change-impact.md)
+to check related occurrences, update affected text and glossaries, and preserve
+contextually justified differences. Keep genuinely unresolved items blocked rather than
+guessing from an English slot or from what merely sounds plausible.
+
+## 5. Bind and write through the correct engine
+
+Only semantically reviewed text enters the engine layer:
+
+- **AGE2:** extract required FPD members from a lawful `pack.bin`; build exact
+  EGPACK changes; handle UI, WebP, and fonts; publish as a LocalAppData loose
+  overlay.
+- **rUGP:** locate CRsa, Cr6Ti, CRip, and related objects through ICI/RIO;
+  select a proven static RUO route or an exact-build guarded runtime; verify
+  capacity, parents, endpoints, and constraints such as error 8311.
+
+Record input hash, output hash, tool version, and the fields permitted to change.
+Extraction does not imply repacking, and one passing record does not prove every
+record carrying the same class label.
+
+## 6. Automated quality gates
+
+A release candidate must be covered by the applicable checks below. For routine
+edits, run affected checks and reuse still-applicable results for unchanged
+parts. Source-build, tool, or shared-dependency changes expand the affected scope;
+a local text edit does not require repeating the entire suite:
+
+- stable IDs, row counts, duplicates, and missing records;
+- source hashes against the frozen build;
+- control codes, encoding, capacity, offsets, and parent references;
+- terminology consistency and retired translations;
+- font coverage across every maintained target string;
+- image dimensions, mode, alpha, hashes, and state/family layout;
+- package members, destinations, and rollback information;
+- absence of original containers, workstation paths, secrets, test images, and
+  fonts without provenance.
+
+Automated tests prove only their explicit assertions; they are not in-game
+evidence.
+
+## 7. In-game QA
+
+When establishing coverage for a game, language, and resource implementation,
+cover the title and settings screens, first dialogue, save/load, backlog, every
+route and choice, speakers, achievements, fonts, each modified image family, and
+rollback. Image QA must detect more than visibility: colour swaps, tearing,
+alpha damage, wrong endpoints, English fallback, Japanese/translation route
+differences, and shared/common behavior all matter.
+
+For later local revisions, check the changed locations, necessary context, and
+affected functions rather than replaying every route for a sentence edit. Game
+build, writer, font, or shared-resource changes require broader relevant coverage.
+Investigate an unclear impact scope and run full regression where needed. Record
+existing coverage and why it remains applicable; missing checks are not passes.
+Package build, installation, and uninstall checks still follow engine rules.
+
+Each finding should identify game/build, route/date/scene, surrounding dialogue,
+screenshot, stable resource ID, and exact reproduction steps.
+
+## 8. Maintainer's final checks before release
+
+The final production step is the maintainer's manual review and correction of
+identified wording, terminology, missing text, layout, image text, and in-game
+display problems. Verify the fixes and related impacts under 07, rerun affected writeback and checks, and then
+publish the corresponding version. Player packages already include the manual
+corrections completed for that release; they are not unreviewed AI drafts.
+This does not claim complete professional Japanese-to-Chinese proofreading.
+Record the actual coverage and unresolved issues for each version.
+
+## 9. Post-release feedback and ParaTranz proofreading
+
+ParaTranz primarily supports community proofreading and revisions after release,
+separately from the maintainer's pre-release checks and corrections. Works in
+progress may also open collaboration early. Accepted edits must be checked and
+packaged for a later release; syncing them to GitHub does not update installed patches.
+
+A player report is a third layer of real-environment evidence, not permission to
+replace one generated file in a Release manually.
+
+1. Confirm the game, patch version, locale selection, and other installed mods.
+2. Use the screenshot, scene, and surrounding dialogue to find the stable ID.
+3. Return to Japanese source and terminology to distinguish translation,
+   binding, font, image, installation, and game-version problems.
+4. Fix maintained source or code—not only a generated EGPACK, RIO, or WebP.
+5. Follow 07 to synchronize affected occurrences and rerun relevant automated checks and scenes.
+6. Document the fix and produce a new reproducible Release.
+
+## 10. What becomes public
+
+Publish:
+
+- stable translation tables, glossaries, and durable review states;
+- image copy, lawful textless/localized authorities or manifests, hashes, and
+  production method;
+- font source, license, coverage report, and reproducible build method;
+- codecs, package tools, tests, incident reports, and reproducible commands.
+
+Do not publish by default:
+
+- original game containers or complete official resources;
+- transient prompts, chat logs, failed batches, and personal notes;
+- workstation paths, credentials, or fonts without explainable provenance;
+- intermediate output that cannot reproduce or explain the final result.
+
+Record an image-generation/edit request only when it materially affects a
+reproducible visual result. Ordinary text translation does not require every
+prompt; rules, maintained data state, and verification tools are more useful.
+
+## 11. Apply the method to Korean, Russian, or another locale
+
+Reuse the stages and identities, not Chinese prose conventions:
+
+1. Re-extract lawful source and join it by the published hashes.
+2. Create separate `ko`, `ru`, or other target files; never overwrite Japanese
+   evidence or `zh-Hans` output.
+3. Establish locale-specific terminology, address, punctuation, typography,
+   line breaking, and font policy.
+4. Complete both passes, question resolution, engine binding, in-game QA, and
+   the maintainer's manual corrections before release, followed by community revisions.
+
+Continue with the [new-locale guide](new-locale.md) and the
+[asset map](../../docs/en/asset-map.md).
