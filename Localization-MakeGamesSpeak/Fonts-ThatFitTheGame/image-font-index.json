@@ -1,6 +1,15 @@
 {
   "schema": "age-reverse-image-font-index/v1",
   "updated_on": "2026-10-12",
+  "video_font_usage": {
+    "registry": "image-font-usage.json",
+    "section": "video_material_groups",
+    "groups": 3,
+    "candidate_crsi_resources": 5,
+    "font_ids": ["image:noto-sans-sc-vf"],
+    "release_adoption": "not-released",
+    "counting": "Video groups and frames are separate from standalone image-file counts."
+  },
   "scope_games": [
     "tda00",
     "tda01",
