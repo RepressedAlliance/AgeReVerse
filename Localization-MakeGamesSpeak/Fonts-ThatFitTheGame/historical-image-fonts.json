@@ -308,7 +308,9 @@
       "state": "rendered-and-superseded-before-current-release",
       "sources": [
         "equipment-light-draft"
-      ]
+      ],
+      "historical_font_hash_available": false,
+      "output_availability": "historical-record-only"
     },
     {
       "game": "photonflowers",
@@ -354,7 +356,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/0/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -375,7 +379,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/1/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -396,7 +402,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/2/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -417,7 +425,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/3/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -438,7 +448,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/4/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -459,7 +471,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/5/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -480,7 +494,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/6/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -501,7 +517,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/7/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -522,7 +540,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/8/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -543,7 +563,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/9/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -564,7 +586,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/10/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -585,7 +609,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/11/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -606,7 +632,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/12/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -627,7 +655,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/13/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -648,7 +678,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/14/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -669,7 +701,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/15/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -690,7 +724,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/16/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -711,7 +747,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/17/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -732,7 +770,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/18/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -753,7 +793,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/19/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -774,7 +816,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/20/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -795,7 +839,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/21/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -816,7 +862,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/22/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -837,7 +885,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/23/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -858,7 +908,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/24/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -879,7 +931,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/25/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -900,7 +954,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/26/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -921,7 +977,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/27/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -942,7 +1000,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/28/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -963,7 +1023,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/29/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -984,7 +1046,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/30/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1005,7 +1069,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/31/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1026,7 +1092,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/32/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1047,7 +1115,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/33/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1068,7 +1138,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/34/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1089,7 +1161,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/35/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1110,7 +1184,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/36/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1131,7 +1207,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/37/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1152,7 +1230,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/38/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1173,7 +1253,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/39/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1194,7 +1276,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/40/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1215,7 +1299,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/41/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1236,7 +1322,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/42/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1257,7 +1345,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/43/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1278,7 +1368,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/44/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1299,7 +1391,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/45/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1320,7 +1414,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/46/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1341,7 +1437,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/47/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1362,7 +1460,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/48/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1383,7 +1483,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/49/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1404,7 +1506,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/50/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1425,7 +1529,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/51/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1446,7 +1552,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/52/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1467,7 +1575,9 @@
           "source": "pm-right-click-july-1",
           "pointer": "/rows/53/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": false
     },
     {
       "game": "photonmelodies",
@@ -1493,7 +1603,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/0/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1519,7 +1631,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/1/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1545,7 +1659,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/2/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1571,7 +1687,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/3/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1597,7 +1715,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/4/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1623,7 +1743,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/5/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1649,7 +1771,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/6/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1675,7 +1799,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/7/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1701,7 +1827,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/8/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1727,7 +1855,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/9/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1753,7 +1883,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/10/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1779,7 +1911,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/11/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1805,7 +1939,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/12/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1831,7 +1967,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/13/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1857,7 +1995,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/14/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1883,7 +2023,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/15/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1909,7 +2051,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/16/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1935,7 +2079,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/17/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1961,7 +2107,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/18/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -1987,7 +2135,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/19/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2013,7 +2163,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/20/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2039,7 +2191,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/21/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2065,7 +2219,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/22/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2091,7 +2247,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/23/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2117,7 +2275,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/24/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2143,7 +2303,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/25/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2169,7 +2331,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/26/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2195,7 +2359,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/27/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2221,7 +2387,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/28/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2247,7 +2415,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/29/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2273,7 +2443,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/30/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2299,7 +2471,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/31/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2325,7 +2499,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/32/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2351,7 +2527,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/33/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2377,7 +2555,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/34/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2403,7 +2583,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/35/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2429,7 +2611,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/36/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2455,7 +2639,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/37/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2481,7 +2667,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/38/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2507,7 +2695,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/39/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2533,7 +2723,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/40/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2559,7 +2751,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/41/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2585,7 +2779,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/42/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2611,7 +2807,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/43/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2637,7 +2835,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/44/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2663,7 +2863,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/45/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2689,7 +2891,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/46/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2715,7 +2919,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/47/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2741,7 +2947,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/48/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2767,7 +2975,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/49/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2793,7 +3003,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/50/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2819,7 +3031,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/51/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2845,7 +3059,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/52/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2871,7 +3087,9 @@
           "source": "pm-right-click-july-3",
           "pointer": "/rows/53/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2897,7 +3115,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/0/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2943,7 +3163,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/1/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2969,7 +3191,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/2/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -2995,7 +3219,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/3/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3021,7 +3247,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/4/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3047,7 +3275,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/5/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3073,7 +3303,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/6/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3099,7 +3331,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/7/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3145,7 +3379,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/8/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3171,7 +3407,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/9/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3197,7 +3435,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/10/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3223,7 +3463,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/11/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3249,7 +3491,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/12/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3275,7 +3519,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/13/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3301,7 +3547,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/14/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3327,7 +3575,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/15/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3353,7 +3603,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/16/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3379,7 +3631,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/17/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3405,7 +3659,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/18/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3451,7 +3707,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/19/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3497,7 +3755,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/20/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3543,7 +3803,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/21/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3569,7 +3831,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/22/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3595,7 +3859,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/23/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3621,7 +3887,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/24/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3647,7 +3915,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/25/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3673,7 +3943,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/26/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3699,7 +3971,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/27/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3725,7 +3999,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/28/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3751,7 +4027,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/29/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3777,7 +4055,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/30/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3803,7 +4083,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/31/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3839,7 +4121,9 @@
           "source": "pm-right-click-july-7",
           "pointer": "/rows/32/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3865,7 +4149,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/33/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3891,7 +4177,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/34/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3937,7 +4225,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/35/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3963,7 +4253,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/36/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -3989,7 +4281,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/37/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4015,7 +4309,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/38/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4041,7 +4337,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/39/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4067,7 +4365,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/40/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4093,7 +4393,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/41/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4119,7 +4421,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/42/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4145,7 +4449,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/43/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4171,7 +4477,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/44/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4197,7 +4505,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/45/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4223,7 +4533,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/46/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4269,7 +4581,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/47/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4315,7 +4629,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/48/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4361,7 +4677,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/49/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4387,7 +4705,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/50/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4413,7 +4733,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/51/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4439,7 +4761,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/52/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4465,7 +4789,9 @@
           "source": "pm-right-click-july-5",
           "pointer": "/rows/53/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4501,7 +4827,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/0/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4537,7 +4865,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/2/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4573,7 +4903,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/3/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4609,7 +4941,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/4/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4645,7 +4979,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/5/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4681,7 +5017,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/6/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4707,7 +5045,9 @@
           "source": "pm-right-click-july-7",
           "pointer": "/rows/7/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4743,7 +5083,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/9/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4779,7 +5121,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/10/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4815,7 +5159,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/11/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4851,7 +5197,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/12/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4887,7 +5235,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/13/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4923,7 +5273,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/14/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4959,7 +5311,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/15/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -4995,7 +5349,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/16/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5031,7 +5387,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/17/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5067,7 +5425,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/18/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5103,7 +5463,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/22/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5139,7 +5501,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/23/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5175,7 +5539,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/24/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5211,7 +5577,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/25/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5247,7 +5615,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/26/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5283,7 +5653,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/27/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5319,7 +5691,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/28/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5355,7 +5729,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/29/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5381,7 +5757,9 @@
           "source": "pm-right-click-july-7",
           "pointer": "/rows/30/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5417,7 +5795,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/31/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5453,7 +5833,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/33/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5489,7 +5871,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/34/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5525,7 +5909,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/36/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5561,7 +5947,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/37/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5597,7 +5985,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/38/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5633,7 +6023,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/39/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5669,7 +6061,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/40/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5705,7 +6099,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/41/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5741,7 +6137,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/42/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5777,7 +6175,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/43/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5813,7 +6213,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/44/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5849,7 +6251,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/45/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5885,7 +6289,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/46/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5921,7 +6327,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/50/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5957,7 +6365,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/51/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -5993,7 +6403,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/52/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -6029,7 +6441,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/53/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -6055,7 +6469,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/7/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -6081,7 +6497,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/30/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "photonmelodies",
@@ -6107,7 +6525,9 @@
           "source": "pm-right-click-july-9",
           "pointer": "/rows/32/text"
         }
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_output_hash_available": true
     },
     {
       "game": "tda00",
@@ -6124,7 +6544,9 @@
         "tda00-early-name-2",
         "tda00-early-name-3",
         "tda00-early-name-4"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6141,7 +6563,9 @@
         "tda00-early-name-2",
         "tda00-early-name-3",
         "tda00-early-name-4"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6158,7 +6582,9 @@
         "tda00-early-name-2",
         "tda00-early-name-3",
         "tda00-early-name-4"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6175,7 +6601,9 @@
         "tda00-early-name-2",
         "tda00-early-name-3",
         "tda00-early-name-4"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6192,7 +6620,9 @@
         "tda00-early-name-2",
         "tda00-early-name-3",
         "tda00-early-name-4"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6209,7 +6639,9 @@
         "tda00-early-name-2",
         "tda00-early-name-3",
         "tda00-early-name-4"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6226,7 +6658,9 @@
         "tda00-early-name-2",
         "tda00-early-name-3",
         "tda00-early-name-4"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6242,7 +6676,9 @@
         "tda00-early-op-1",
         "tda00-early-op-2",
         "tda00-early-op-3"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6258,7 +6694,9 @@
         "tda00-early-op-1",
         "tda00-early-op-2",
         "tda00-early-op-3"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6274,7 +6712,9 @@
         "tda00-early-op-1",
         "tda00-early-op-2",
         "tda00-early-op-3"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6290,7 +6730,9 @@
         "tda00-early-op-1",
         "tda00-early-op-2",
         "tda00-early-op-3"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6306,7 +6748,9 @@
         "tda00-early-op-1",
         "tda00-early-op-2",
         "tda00-early-op-3"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6322,7 +6766,9 @@
         "tda00-early-op-1",
         "tda00-early-op-2",
         "tda00-early-op-3"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6338,7 +6784,9 @@
         "tda00-early-op-1",
         "tda00-early-op-2",
         "tda00-early-op-3"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6354,7 +6802,9 @@
         "tda00-early-op-1",
         "tda00-early-op-2",
         "tda00-early-op-3"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     },
     {
       "game": "tda00",
@@ -6370,7 +6820,9 @@
         "tda00-early-op-1",
         "tda00-early-op-2",
         "tda00-early-op-3"
-      ]
+      ],
+      "output_availability": "retained-output",
+      "historical_variant_identity": "not-established-for-each-overwritten-iteration"
     }
   ],
   "summary": {
