@@ -15,4 +15,4 @@ CRsa is a container for serialized objects, not “the text format” in one fix
 
 See the [CRsa postmortem](../../docs/postmortems/crsa-text.md) and [8311 postmortem](../../docs/postmortems/error-8311.md) before authoring new text writers.
 
-The public [CRsa extraction CLI](../../tools/text/README.md) uses these readers against extents from the ICI/RIO catalog. Its hash-only output is an unreviewed translation template, not proof that a slot has a safe static writer or runtime binding. The separate native-field auditor consumes a hash-checked full-volume scan cache; see the [光子之花/光子旋律 full-field audit](../../docs/postmortems/crsa-native-text-20260903.md) for its completed static coverage and remaining runtime boundary.
+The public [CRsa extraction CLI](../../tools/text/README.md) uses these readers against extents from the ICI/RIO catalog. Its hash-only output is an unreviewed translation template, not proof that a slot has a safe static writer or runtime binding. The separate native-field auditor consumes a hash-checked full-volume scan cache; see the [native-field guide](../../docs/postmortems/crsa-fields.md) for field roles, stable identity and support limits.

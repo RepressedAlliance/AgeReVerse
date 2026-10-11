@@ -1,34 +1,37 @@
 # Structural empty EGPACK records
 
-## Symptom
+[Translation snapshots](../../evidence/translations/snapshots/README.md) · [EGPACK tools](../../tools/egpack/README.md)
 
-A completeness audit found five published AGE2 rows with empty source and
-localized text: four in TDA02 and one in TDA03. Treating every empty target as
-an untranslated line made the tables look incomplete; deleting the rows would
-change the frozen resource sequence.
+An empty target is not always a missing translation. Some engine records have
+no source or target text; filling or deleting them would change the resource
+sequence. Control-only records that clear the current display are a separate
+case and must retain their engine behavior.
 
-## Controlled comparison
+## Classify before writing
 
-The private source-bearing tables and fresh local EGPACK manifests agreed that
-all five identities were fully empty engine slots: `jp_text`, `speaker_jp` and
-`cn_text` were empty, and the exact source hash was SHA-256 of the empty UTF-8
-byte sequence. TDA00, TDA01 and Imperial Capital Burns had no such rows.
+Match the stable resource identity to a lawful local source export. Check the
+slot's exact value and hash, rather than deciding from the displayed text or
+the total number of blank rows.
 
-## Correction
+The portable schema has an explicit `record_kind`:
 
-The portable schema now has an explicit `record_kind`:
+- `text` binds non-empty source and localized text;
+- `structural_empty` requires SHA-256 of the empty source, an empty local
+  source slot and an empty target, then becomes a verified no-op rather than
+  a text write.
 
-- `text` requires non-empty local source and localized text;
-- `structural_empty` requires the exact empty-source hash and empty local slot,
-  then becomes a verified no-op rather than a write.
+A native `\f` command is not an empty string. If a local export still contains
+that command, the strict empty-slot join must reject it; do not erase the
+command or change its hash to bypass the check. Clear-command adaptations need
+their own validated resource binding and must preserve the game's clearing
+behavior.
 
-The exporter, local-source join, frozen counts and regression tests all enforce
-this distinction. `--allow-empty` cannot turn a malformed current row into a
-legal structural record.
+The exporter, local-source join and regression tests enforce these contracts.
+`--allow-empty` does not bypass malformed-record checks. For native clear
+records and synchronization, use the [retained repair data](../../../docs/research/localization/reviews/README.md).
 
-## Production rule
+## Reusable rule
 
-Completeness means preserving and classifying every stable resource identity,
-not forcing visible text into bookkeeping slots. Empty, absent, control-only
-and intentionally cleared values are different states and must never be
-collapsed into one CSV convention.
+Preserve and classify every stable resource identity. Empty, absent,
+control-only and intentionally cleared values represent different states;
+one CSV blank-value convention cannot safely replace them all.

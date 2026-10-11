@@ -1,46 +1,43 @@
-# rUGP reverse-engineering and incident records
+# rUGP 技术案例：理解格式，也理解游戏怎样使用它
 
-These notes preserve the experiments behind the current 光子之花 / 光子旋律 support. They are not a claim that every rUGP game, record variant, or clean-install-to-release path is supported.
+These guides explain reusable format and runtime behavior for the pinned Photon builds. Start with [support limits](../limitations.md) when applying them to another version or building a player package.
 
-## Case index
+## Text and storage
 
-| Case | Question answered | Reproducible evidence | Remaining boundary |
-| --- | --- | --- | --- |
-| [Offline hook audit](offline-hook-audit-20260909.md) | What can be completed before another game session? | 188 further binding replays, actual EXE preconditions, synthetic assembly forwarding, trace reconciliation and both diagnostic builds | Live owner graphs, actual caller extents and untriggered routes remain separate |
-| [49-binding CRip008 replay](crip008-batch-replay-20260909.md) | How can the added bindings be checked without viewing every image? | Real archive/installed-sidecar replay, 2,352 C transaction cases and per-binding results | 40 artificial padded extents remain unsupported; retail arguments, ABI and initialization were not executed |
-| [光子旋律 album selector](pm-album-selector-20260909.md) | Why did Extra → Album terminate inside the patch? | Local crash-dump field shape, old/new synthetic selector replay, repaired build and user retest | Album-entry confirmation does not prove every image route |
-| [光子之花 festival presentation](pf-festival-presentation-20260909.md) | Why was the thumbnail translated while the animation retained Japanese signs? | Live extent/rectangle trace, exact archive/sidecar transaction replay and user retest | The observed partial rectangle is supported; other partial formats remain unproven |
-| [Internal Error 8311](error-8311.md) | Why did a structurally valid CRsa/RUO fail at startup? | Controlled F/M/N CString variants, a census of official strings, public manifest/exporter tests | The conclusion applies to the observed counted-CString route; it is not a catalogue of every AGES error code |
-| [CRsa text](crsa-text.md) | How are direct strings and CVMMsg3 pool strings located and rewritten? | Read-only [catalog/extractor](../../tools/text/README.md), [`crsa.py`](../../formats/rio/crsa.py), [`crsa_vm_pool.py`](../../formats/rio/crsa_vm_pool.py), and synthetic tests | The extractor is conservative and append/rewire remains experimental; it does not bind every extracted row to a production writer/runtime route |
-| [CRsa full-field audit](crsa-native-text-20260903.md) and [native-field increment](crsa-native-increment-20260904.md) | Which 光子之花/光子旋律 text fields were omitted beyond the first 40 display gaps, and how are the reviewed fields rebound? | Sequential native parsing of all 466 original CRsa records and 22 current overrides, source-hash checks for 57,547 reviewed rows, reviewed manifests, strict writeback/readback tests and 光子之花/光子旋律 runtime samples | 光子旋律 native CRsa uses fixed-extent volume staging after a later-volume identity RUO reproduced error 831; sampling does not claim every story branch |
-| [RUO overlay](ruo-overlay.md) | What does a `.ruo1` redirect, and why are multiple independent RUOs unsafe? | [`ruo.py`](../../formats/rio/ruo.py) plus synthetic footer/unit/merge tests | A valid redirect map does not prove the replacement record or game route |
-| [Cr6Ti extent](cr6ti.md) | Is archive alignment part of the serialized image record? | Strict Cr6Ti codecs/tests and an independent 光子之花 record census | Proven standard and named legacy profiles do not authorize unknown flags/profiles |
-| [CRip007](crip007.md) | How did four source records become exact antialiased grayscale replacements? | Strict decoder/encoder, independent narrow reference decoder and synthetic tests | The proved 8-bit grayscale profile is not every theoretical CRip007 variant |
-| [CRip008](crip008.md) | How was the decoder and conservative encoder subset derived? | [`formats/images`](../../formats/images/README.md) and [`test_crip008_encode.py`](../../tests/formats/images/test_crip008_encode.py) | A successful kind/profile does not prove every kind-3 flag, geometry, predictor, or alpha combination |
-| [Photon font runtime](font-runtime.md) | Why were a copied font and registry-only changes insufficient? | [`runtime`](../../runtime/README.md), build checks, and runtime unit tests | CI proves build and guarded logic, not a complete visual pass on every supported game screen |
-| [Shared/common images](shared-common-images.md) | Why are 42 image endpoints shared rather than missing translation peers? | Authenticated parent/family evidence, the [1,448/42 route closure](../../evidence/photon/routes/README.md), and the [Photon image evidence bundle](../../evidence/photon/images/README.md) | Semantic route authority and runtime replacement transport are separate claims |
-| [ICI resize metadata](ici-resize-metadata.md) | Why could a statically decodable resized ICI still lead to a white screen? | Clean/candidate differential, duplicate-size and bitmap checks, plus independent static decoding | The corrected run had zero AGES launches and remains runtime-pending, not a released general ICI writer |
-| [Image transport/runtime](image-transport-runtime.md) | Why did correct localized bitmaps blank, tear, recolour, revert or leave English/Japanese visible? | Locale/parent route census, capacity differential, controlled single-record probes, and the 光子旋律 tutorial timer identity/setter trace | All 1,490 baseline semantic routes are known; the 光子旋律 tutorial addendum adds 12 composite-frame routes, and complete visual coverage remains a release gate |
+| Guide | What you can learn |
+| --- | --- |
+| [CRsa text](crsa-text.md) | Direct CString and VM text-pool storage, control units and read-only extraction |
+| [Native fields](crsa-fields.md) | Bodies, annotations, instructions, call parameters and stable identities |
+| [Native writeback](crsa-writeback.md) | Rebinding, pool capacity, PF cumulative RUO and PM fixed-volume staging |
+| [Error 8311](error-8311.md) | Why embedded NUL padding breaks a counted CString |
+| [Backlog Return to Game](backlog-return-action-20260910.md) | Engine action identifiers must retain their registered names |
+| [Special monologues](pm-special-text-20260911.md) | A control byte and its argument form one display directive |
 
-## 光子旋律 image admission follow-up
+## Images and runtime
 
-[光子旋律 CRip008 production admission](pm-image-admission-20260909.md) explains why
-nine installed hooks were rejected by a seven-hook gate, with a synthetic
-regression and explicit separation between public builds and local installations.
+| Guide | What you can learn |
+| --- | --- |
+| [Cr6Ti](cr6ti.md), [CRip007](crip007.md), [CRip008](crip008.md) | Record extent, codec profiles, alpha and independent decoding |
+| [RUO](ruo-overlay.md) / [ICI growth](ici-resize-metadata.md) | Redirects, cumulative footers, duplicate lengths and wrapper metadata |
+| [Shared/common images](shared-common-images.md) | Proving a shared endpoint without guessing a locale fallback |
+| [Image transport](image-transport-runtime.md) | Parent selection, state geometry, timer layers and guarded runtime routes |
+| [Runtime validation](runtime-validation.md) | Production transactions, partial rectangles, padded lengths and final delivery tables |
+| [Scene entry points](pending-hook-entry-points-20260909.md) | Static references, prefetch, unlock conditions and unobserved calls |
+| [PM Album selector](pm-album-selector-20260909.md) | Revoke stale object authority when metadata changes |
+| [PF festival presentation](pf-festival-presentation-20260909.md) | A translated thumbnail does not exercise a full or partial animated frame |
+| [PM image admission](pm-image-admission-20260909.md) | Keep installed hooks and the production admission contract consistent |
+| [Player image index](player-image-index-20260910.md) | A binary-search table must be sorted in the final package |
+| [CRmt family](../crmt-family.md) | Parent/mip/CRimp layers, tagged integers and cross-locale geometry |
 
-## How to read a postmortem
+## Typography and translation
 
-The [CRmt family guide](../crmt-family.md) consolidates the later parent/mip/CRimp distinction,
-tagged-integer correction, native capacity failure, cross-locale geometry and diagnostic-versus-formal-runtime boundaries.
-Its [current evidence](../../evidence/photon/crmt/README.md) is separate from historical V6 image coverage.
+| Guide | What you can learn |
+| --- | --- |
+| [Font runtime](font-runtime.md) | Private font family, GDI selection and exact-build proxy loading |
+| [Missing glyphs](pf-font-coverage-20260914.md) / [PM metrics](pm-er-20260909.md) | Include annotations and menu glyphs, preserve font metrics, ship matching DLLs |
+| [Chinese layout](pf-pm-layout-audit-20260906.md) | Semantic line breaks and rebinding without overwriting later corrections |
+| [Speaker colours](speaker-colors-20260906.md) | Chinese aliases and the engine's active style lookup |
+| [Foreign-language expressions](pf-pm-latin-review-20260909.md) | Translate terms while retaining dialogue voice, abbreviations and wordplay |
+| [Terminology choices](terminology-20260908.md) | Resolve context before applying a glossary match |
 
-Each record should distinguish four layers:
-
-1. **Symptom** — the exact failure observed, including game/build and runtime route when known.
-2. **Competing hypotheses** — plausible explanations before the controlled test.
-3. **Discriminating experiment** — what changed, what stayed fixed, and the actual result.
-4. **Production rule and boundary** — what the repository now enforces, plus what the experiment did not prove.
-
-Screenshots and visually plausible output are supporting observations, not structural proof. A parser round trip proves the parser/writer contract exercised by that sample; it does not by itself prove AGES runtime acceptance. Conversely, one successful game run does not establish support for every format variant.
-
-For the broader map from public prior work to project-specific findings, see the [research index](../../../docs/research/README.md), [provenance policy](../provenance.md), and [quality gates](../quality.md).
+For tool usage, use the [tool index](../../tools/README.md). For prior work and attribution, use [technical references](../../../docs/research/README.md). Build checks, a structurally valid resource and an actual scene observation answer different questions; each guide states the behavior it covers.

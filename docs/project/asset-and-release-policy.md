@@ -27,8 +27,8 @@ Absolute workstation paths are not provenance. Use logical game IDs, relative re
 
 ## Image publication
 
-The player preview contains twelve selected Steam screenshots captured on 2026-09-30:
-five for TDA00 and seven for photonflowers. The exact paths are allowlisted in
+The player preview contains selected Steam screenshots for the games listed
+in the preview page. The exact paths are allowlisted in
 `.github/scripts/verify_repository.py`; each must be a valid JPEG no larger than
 1 MiB and within the supported screenshot dimensions. This is a narrow documentation
 exception, not permission to commit extracted image collections, original game
@@ -43,6 +43,19 @@ or reconstructed from legal local inputs before a future distributable bundle.
 Technical identity verification is not distribution approval. Some entries are
 represented by a native encoded record rather than a preview PNG; the manifest
 identifies the packaging authority. See the [Photon image evidence](../../rUGP/evidence/photon/images/README.md).
+
+## Public explanations and local records
+
+Public documentation explains what an asset or tool is for, how to use it,
+which versions it supports, its source and license, and its real limitations.
+Keep manifests, stable identities, build inputs and regression data that
+contributors need to reproduce or maintain the result.
+
+Per-run transcripts, local screenshots, process IDs, temporary candidate
+inventories and command logs stay in ignored local storage. Extract useful
+technical methods into guides or worked examples. Preserve unresolved defects
+with their trigger, affected scope and status; cleaning up a log must not hide
+the problem it recorded.
 
 ## Release gate
 

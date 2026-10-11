@@ -22,15 +22,11 @@ checksum or separate TOC. Encoded offsets/sizes use the same bias and archive
 unit contract as the base game; 光子之花/光子旋律 use four-byte units, while the audited
 Muv/Alternative builds use two-byte units.
 
-## How this was established
+## Identify the loaded overlay
 
-Static executable analysis identified the wildcard scan, RUO loader and
-redirect resolver. A one-record 光子之花 overlay was then decoded back field by
-field. In an isolated runtime test the exact redirect appeared once in the
-process's private redirect-map memory and the RUO filename appeared in private
-memory, proving that the running loader opened the file and copied its footer.
-An independent file-open probe also observed the real 光子之花 process opening the
-matching RUO basename.
+Match the game's actual RUO basename and inspect the loaded redirect map when
+diagnosing an ignored overlay. File presence alone does not establish that
+the loader opened it or selected its replacement record.
 
 ## The multiple-RUO trap
 
@@ -43,7 +39,7 @@ RUO files are therefore not safely stackable.
 - 光子旋律 native CRsa records in later split volumes are not deployed through RUO.
   A byte-identical redirect reproduced `InternalError(831)`, while the same
   record in its original fixed extent passed; use the hash-gated volume staging
-  route documented in the [native-field increment](crsa-native-increment-20260904.md).
+  route documented in the [native writeback guide](crsa-writeback.md).
 - Titles that already ship an official RUO: preserve its data region and
   redirects, append localized records, replace duplicate source keys, then
   write one combined footer.

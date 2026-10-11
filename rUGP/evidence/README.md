@@ -1,22 +1,11 @@
-# rUGP 公开证据
+# rUGP 资源目录与回归数据
 
-[返回 rUGP](../README.md) · [Photon 证据总入口](photon/README.md)
+[rUGP](../README.md) · [Photon 数据入口](photon/README.md)
 
-这里保存体积较小、能够长期复核的权威记录。大体积输入、游戏原件和临时实验不进入
-Git；经过审核的结论则不能只留在聊天或本地 `outputs/` 中。
+本目录提供供工具、维护和研究使用的稳定资源身份、源摘要、处理决定及回归样本描述。大体积游戏原件、完整官方脚本与内部执行日志保留在本地。
 
-当前公开范围集中在 [`photon/`](photon/)：
+公开数据用于定位正确记录、区分语言端点、比较既定译文和重现支持范围内的检查。旧合同与基线按其版本读取；新正文进入[章节表](../docs/chapter-texts.md)，新制作结果按[资产规范](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/production.md)登记，不覆盖旧输入来伪造兼容。
 
-- `text/runtime/manifest.json`：绑定光子之花 69 行、光子旋律 151 行精确运行时文本表；
-- `text/reviewed/`：绑定四组故事共 57,547 行已审校中文；
-- `images/`：绑定 1,490 项图片权威及研究资产 Release；
-- `routes/`：证明 1,448 个 translation peer 与 42 个 shared/common 端点。
+## English
 
-证据是构建的只读输入。新候选先在本地 staging 验证，审核通过后生成新的清单或 Git
-提交；不能覆盖旧清单来让后来的实验看起来像早已批准。
-
-## English summary
-
-This directory stores compact, durable authorities for runtime text, reviewed
-dialogue, localized images and semantic routes. Bulk private inputs and game
-files stay outside Git; evidence is immutable build input, not scratch space.
+Resource identities, source hashes, authoring decisions and regression inputs support the public tools. Read each dataset within its stated version and role. Game originals and internal execution logs stay local; maintained translations have a separate editing entry point.

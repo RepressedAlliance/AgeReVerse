@@ -17,7 +17,7 @@ A glossary is one part of maintaining a long translation. The reusable method is
 4. **Trace adopted changes through related occurrences.** Search Japanese forms, aliases, old and new translations, then inspect context. Record required changes, already-correct occurrences, justified differences and unresolved cases. Full names, nicknames, different senses and deliberate jokes need not have identical wording.
 5. **Integrate and recheck.** Update the maintained text and affected terminology or review records, reread relevant context, and perform the technical or in-game checks the change requires. The maintainer corrects the release candidate before publication; community revisions repeat the process for later versions.
 
-The [complete English workflow](../Text-AITranslationWorthReading/workflow.en.md) explains how these activities fit into text production. The examples above link actual scoped revisions for an organization name, character names, and terminology changes affecting text and images.
+The [complete English workflow](../Text-AITranslationWorthReading/workflow.en.md) explains how these activities fit into text production. The [worked examples](decisions.md) explain name boundaries, callsigns, ruby anchors and changes affecting both text and images.
 
 This folder contains the Muv-Luv shared glossary and eight game-specific glossaries.
 Use shared + own for the seven Muv-Luv games; Kiminozo uses only its own table.
@@ -65,15 +65,9 @@ Muv-Luv 七作按本作 `project.toml` 加载 **系列通用表＋本作专表**
 
 发布后的 [ParaTranz 校对与玩家反馈](../ParaTranz-KeepImprovingTogether/README.md)继续沿用这套方法：修改回到原文和语境判断，确认后进入可维护源表和后续版本。
 
-## 我们实际怎样处理过
+## 项目实例
 
-| 例子 | 一致性工作涉及什么 | 记录 |
-| --- | --- | --- |
-| TDA03 的 NORAD 名称 | 对照完整机构名统一相关正文，并同步 ruby 锚文本；原文写法有缺字时仍结合明确指代判断 | [逐项修改记录](../../docs/research/localization/reviews/age2-norad-consistency-20260915.json) |
-| TDA03 的角色姓名 | 同步姓名相关出现位置，保留正式长名、简称及戏谑改名的区别 | [姓名一致性记录](../../docs/research/localization/reviews/age2-name-consistency-20260915.json) |
-| 七作术语修订 | 确认人名、军衔等采用范围，反查正文和现行表；正文改名后另追踪姓名卡、徽章等图片影响 | [术语对齐与图片联动](../../docs/research/localization/reviews/main-al-alignment-20260909.md) |
-
-这些记录展示具体范围内的处理方法，各自说明了完成内容与未验证部分。
+[术语取舍与修改反查](decisions.md)用人名边界、军事呼号、NORAD 与 ruby、正文改名和图片联动说明怎样保持一致，避免无语境的全局替换。
 
 ## 各作术语表与基线
 
@@ -118,7 +112,7 @@ python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py
 
 基线CSV仍放在各作品的`terminology/`中，本目录只集中维护现行术语表。各作品首页的“术语与基线”入口说明本作来源、适用范围和当前数量。
 
-旧版本、恢复清单、审计记录及各作基线入口统一放在[术语查证与历史记录](../../docs/research/localization/terminology-history/README.md)。
+参考词对与维护数据的用途见[本地化研究资料](../../docs/research/localization/README.md)。
 候选、争议与历史译法不作为现行术语加载。
 
-八作主基线都包含各自现行术语的中文和完整使用限制，每条现行术语只列一次；相同译法合并来源，不同语境、候选和待核状态保留区别。主表六列用于阅读及程序处理，原始九列来源表另存于本作`terminology/history/`。可用`--baseline --term 日文`同时取得条目和关联来源，或用`--baseline --group candidate`只看候选；加`--history`读取原始来源。逐作改动、数量及尚缺具体篇章定位的资料见上述整理明细。
+八作主基线都包含各自现行术语的中文和完整使用限制，每条现行术语只列一次；相同译法合并来源，不同语境、候选和待核状态保留区别。主表六列用于阅读及程序处理，原始九列来源表另存于本作`terminology/history/`。可用`--baseline --term 日文`同时取得条目和关联来源，或用`--baseline --group candidate`只看候选；加`--history`读取原始来源。候选尚需按语境审定；只有本作或合集范围的来源，不能当作已经定位到具体场景。

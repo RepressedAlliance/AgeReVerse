@@ -68,6 +68,6 @@ The maintainer reviews and corrects the release candidate **before publication**
 | 各作译文、图片文案、资源映射和语境基线 | [AGE2/games/](../AGE2/games/README.md)、[rUGP/games/](../rUGP/games/README.md) 下对应作品 |
 | FPD／EGPACK／WebP 提取、写回、松散覆盖 | [AGE2 工具](../AGE2/README.md) |
 | RIO／CRsa／RUO／ICI、Photon 路由和运行时 | [rUGP 工具](../rUGP/tools/README.md) |
-| 历史词库、旧审核批次、来源调查 | [本地化研究记录](../docs/research/localization/README.md)；保留查证价值，不作为当前制作入口 |
+| 参考译法、源槽关联与原文保留实例 | [本地化参考与研究工具](../docs/research/localization/README.md)；比较来源与处理方法，现行译法仍查各作术语及基线 |
 
-原始游戏图片、完整官方文本、私人校对材料、生成缓存和本地审核图库留在获准的制作环境。公开仓库维护方法、可公开的译文／术语、身份记录和工具；成品图和字体的发布范围依各自来源与许可判断。研究记录不会自动升级为现行术语或已发布成果。
+原始游戏图片、完整官方文本、私人校对材料、生成缓存和本地审核图库留在获准的制作环境。公开仓库维护方法、可公开的译文／术语、身份记录和工具；成品图和字体的发布范围依各自来源与许可判断。参考数据不会自动升级为现行术语或已发布成果。

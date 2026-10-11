@@ -190,9 +190,8 @@ are checked against genuine source fields in the same block using the original
 UTF-8/control-escaping hash contracts. New audit `field_id` values do not replace
 existing stable IDs. The tool changes neither reviewed files nor game files.
 
-The [2026-09-03 complete audit](../../docs/postmortems/crsa-native-text-20260903.md)
-records 565 candidate field occurrences, including the first-round 40. The
-maintainer-scoped work comprises 40 dialogue/prompt fields plus 265 annotation
+The [native-field guide](../../docs/postmortems/crsa-fields.md) explains the
+field roles and exclusions. The historical scoped work comprises 40 dialogue/prompt fields plus 265 annotation
 fields; 260 armament-name parameters remain byte-identical and are excluded from
 omission counts and write actions. The superseded 40-item manifests are rejected
 by their old builder. `build_crsa_native_increment` builds the reviewed 光子之花
@@ -202,4 +201,4 @@ record growth and changes outside the selected record extents. The shared writer
 uses fixed native or zero-filled pool storage first; a non-empty orphan slot or
 pool extension must be named explicitly in the entry and is checked during full
 native readback. The reviewed manifests and writeback contract are documented in the
-[2026-09-04 increment record](../../docs/postmortems/crsa-native-increment-20260904.md).
+[native writeback guide](../../docs/postmortems/crsa-writeback.md).

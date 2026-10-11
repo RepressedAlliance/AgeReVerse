@@ -29,7 +29,7 @@ Localization-MakeGamesSpeak/
   Tools-LetToolsHandleRepetition/    把时间留给翻译；按任务使用的共用工具
   Tests-CatchProblemsBeforePlayers/  先替玩家发现问题；工具的对应回归检查
 docs/research/localization/
-                          保留的旧词库、审核记录与研究工具
+                          参考词库、源槽关联、原文保留实例与研究工具
 ```
 
 目录名同时标明主题与读者能解决的问题。字体直接集中于 `Fonts-ThatFitTheGame/`；各作源表与资源绑定仍留在对应引擎的游戏目录。术语入口讲解基线到全文一致性的方法，具体语境基线留在各作品的 `terminology/` 中。图片步骤不重复实现引擎提取器；工具按实际使用需求复用。
@@ -81,8 +81,8 @@ rUGP
       -> 密封输入根与确定性打包
 ```
 
-AGE2 当前不需要运行时 Hook；rUGP 也不能继承 AGE2 的松散覆盖假设。共享一个仓库不代表
-共享容器、编码器、安装目录或成功证据。
+AGE2 以同路径松散覆盖作为资源入口，也有版本专用的运行时修正；rUGP 不能继承
+AGE2 的松散覆盖假设。共享一个仓库不代表共享容器、编码器、安装目录或适用版本。
 
 ## 一个本地产物何时可以进入公开仓库
 

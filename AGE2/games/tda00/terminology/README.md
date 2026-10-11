@@ -29,7 +29,7 @@
 | `tda-shared-decisions` | 旧TDA交接记录中适用于本作的决定 |
 | `maintainer-20260920` | 2026-09-20审定后新增的条目；此前已有来源的修订仍保留原来源标识 |
 
-来源的历史路径、提交与原始规模见[恢复说明](../../../../docs/research/localization/terminology-history/recovery-20260908.md)和[恢复清单](../../../../docs/research/localization/terminology-history/recovery-20260908.json)。其中旧路径描述当时的位置；当前术语和基线路径以本作`project.toml`为准。2026-09-20修订见[逐条记录](../../../../docs/research/localization/terminology-history/revision-20260920.json)。
+来源 CSV 保留原状态、译法和使用限制；完整来源关联通过 `evidence_rows` 查询。机器回归资料见[术语维护资料](../../../../docs/research/localization/terminology-history/README.md)。
 
 ## 精简主基线的读法
 
@@ -37,7 +37,7 @@
 
 `basis`保留完整使用限制；`chapter`是来源已知的篇章范围，不能代替使用限制。`evidence_rows`是本目录来源CSV的记录编号，以分号分隔，含表头从1计，不是游戏台词编号。旧来源的状态和出现次数原样保留，次数不跨来源相加。原已排除及明确误命中的资料只留在来源表，未审候选不自动确认。
 
-[整理明细](review-20261009.md)列出数量变化和资料限制。默认查主表；`--term`同时返回当前术语与关联来源，程序不必解析说明文字：
+具体取舍见[术语实例](../../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/decisions.md)。默认查主表；`--term`同时返回当前术语与关联来源，程序不必解析说明文字：
 
 ```powershell
 python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py tda00 --baseline

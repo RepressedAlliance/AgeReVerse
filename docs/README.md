@@ -9,7 +9,7 @@
 - [安装、卸载与排错](player/README.md)
 - [汉化范围与中文实机截图](player/screenshots.md)
 - [君望 Steam 版及附加篇的制作进度](../AGE2/games/kiminozo/README.md)：尚未发布补丁
-- [机器可读的版本、文件名与 SHA-256 索引](player/release-index.json)
+- [机器可读的当前版本与历史包身份索引](player/release-index.json)
 - [GitHub Releases](https://github.com/RepressedAlliance/AgeReVerse/releases)
 
 ## 本地化制作者
@@ -27,8 +27,9 @@
 - [研究索引](research/README.md)：结论、证据、工具与尚未解决的边界
 - [参考项目与前人工作](research/references.md)
 - [仓库与引擎边界](research/repository-architecture.md)
-- [AGE2 问题复盘](../AGE2/docs/postmortems/README.md)
-- [rUGP 问题复盘](../rUGP/docs/postmortems/README.md)
+- [AGE2 技术案例](../AGE2/docs/postmortems/README.md) · [适用范围与未解决事项](../AGE2/docs/limitations.md)
+- [Photon 技术案例](../rUGP/docs/postmortems/README.md) · [适用范围与未解决事项](../rUGP/docs/limitations.md)
+- [术语取舍、原文保留与源槽关联实例](research/localization/README.md)
 
 ## 项目维护
 

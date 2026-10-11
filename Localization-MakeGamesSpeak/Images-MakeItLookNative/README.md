@@ -46,3 +46,8 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 每批新图与返修的字体按[登记规范](../Fonts-ThatFitTheGame/registration.md)记录，并同步[公开用字来源与致谢](../Fonts-ThatFitTheGame/attribution.md)。这项工作放在样式确认与最后交付中：同组引用一次，单图写例外；不增加第六步。
 
 “已制作”“已自检”“人工已确认”“实机已确认”“已发布”是不同事实，不能用一个 `done` 混称。也不能用文件存在、OCR 通过或模型档位替代查看图片。
+
+## 可复用的技术案例
+
+- [图片字幕排版](../../AGE2/docs/postmortems/caption-layout.md)：演出坐标、字形中心、行距与正文同显。
+- [UI 和场景图布局](../../AGE2/docs/postmortems/image-layout.md)：尺寸、常态与悬停、地图补注和原包覆盖。

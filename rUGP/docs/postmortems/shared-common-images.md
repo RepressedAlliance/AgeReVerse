@@ -1,29 +1,13 @@
-# Translation peers and the 42 shared/common images
+# Shared images: a missing English neighbour is not a locale rule
 
-## The question
+The Photon baseline classifies 1,448 images as authenticated translation-peer routes and 42 as shared/common endpoints. The latter are structurally shared, rather than a fallback to the Japanese slot.
 
-Most official Photon images have a Japanese/source endpoint and a separate translation endpoint. Forty-two did not. It was tempting either to replace the Japanese source slot or to assume all 42 used one undocumented translation rule.
-
-## Evidence chronology
-
-The first complete graph pass proved 1,448 translation-peer routes. For the remaining 42 it proved only direct source keys; three were already demonstrably common fields inside bilingual parents, while 39 lacked enough parent topology evidence. That stage correctly remained release-fail-closed.
-
-A later authenticated parent/family audit resolved the 39 without inventing translation siblings. The final 42 are:
-
-| Class | Count | Meaning |
+| Shared class | Count | Structure |
 | --- | ---: | --- |
-| Common fields inside bilingual parents | 3 | Japanese/English pages are separate, but navigation fields are structurally common |
-| Singleton common state bank | 32 | one 8×4 visual-state bank (enabled/disabled/selected/pushed), with no parallel locale bank or language selector |
-| Singleton common UI parent endpoint | 7 | one endpoint in the parent, with no official translation peer |
+| Common fields in bilingual parents | 3 | Separate locale pages share navigation fields |
+| Singleton common state bank | 32 | One 8×4 enabled/disabled/selected/pushed bank, without a parallel locale bank or selector |
+| Singleton common UI endpoint | 7 | One authenticated parent endpoint, without a translation peer |
 
-Thus the final route census is 1,448 `translation_peer_native_range` plus 42 `proven_shared_native_range`. None of the 42 is authorized by “fall back to the Japanese slot”; its parent structure proves a genuinely shared endpoint.
+Prove the parent object, enumerate matching endpoints and banks, inspect locale-selector fields and preserve state geometry. Adjacency, matching pixels or a missing filename cannot establish shared ownership.
 
-## Why display can still differ
-
-Files that look identical in a directory listing may be selected by different parent fields, composed into different state banks, decoded into a reused surface, or overwritten later. Static route authority answers *which logical endpoint is correct*. It does not prove that an encoded replacement fits the old extent or that the engine consumes a rebuilt parent correctly.
-
-For that reason the parent-family audit closed the semantic route while keeping production/runtime authorization separate. Packaging/runtime work must address native extent, append/ICI, parent scatter, decoded-surface timing and visual QA independently; any row without transport, runtime and visual proof remains blocked.
-
-## Rule
-
-Never generalize “shared/common” from adjacency, identical pixels, or a missing English neighbor. Prove the authenticated parent object, count all matching endpoints/banks, check locale selector fields, preserve state geometry, and require an actual runtime observation for the chosen transport.
+Logical ownership determines which endpoint may be localized. It does not prove that the new record fits its native extent, that a rebuilt parent is accepted, or that a decoded surface will not be overwritten later. Choose transport and confirm actual display separately. Reusable data and schema are described in the [route catalog](../../evidence/photon/routes/README.md).

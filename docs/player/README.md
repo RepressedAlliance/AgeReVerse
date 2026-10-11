@@ -42,7 +42,7 @@
 | TDA03 | `%LOCALAPPDATA%\ancr\tda03\data` |
 | 帝都燃烧 | `%LOCALAPPDATA%\ancr\tm\data` |
 
-安装后从 Steam 启动游戏，在设置里选择中文。本次汉化内容不变，已正常安装上一版无需重装。
+安装后从 Steam 启动游戏，在设置里选择中文。2026-09-21 的安装方式更新保留上一版汉化内容，已正常安装上一版无需重装。
 
 恢复原版：先切回英文或日文，再退出游戏。保留 `data/user`，将 `data/root` 和游戏目录中的 `FridaGadget.dll`、`FridaGadget.config`、`age2-cn.js`、`COPYING-frida.txt` 移到备份位置；恢复自行备份的原 EXE（安装器备份为 `.age2-cn/original.exe`），或用 Steam 验证恢复程序。Steam 验证不会移走 AppData 的补丁资源。
 

@@ -11,20 +11,16 @@ writer restored only U+0010 from the original field. This left a malformed
 command. Restoring its complete original argument removed the observed duplicate
 Japanese, but selected a special font that lacked some Chinese glyphs.
 
-At the maintainer's request, the final correction removes the leading U+0010
+The final correction removes the leading U+0010
 from 297 affected Chinese fields across seven CRsa records and uses the ordinary
 font. It preserves the translated body, line breaks, original Japanese slots,
 annotations, and action/directive fields. Record extents remain unchanged. The
 private delivery writer no longer restores this prefix for 光子旋律 and rejects
 U+0010 in its Chinese target text. 光子之花 had no affected prefix and is unchanged.
 
-The seven replacement records were verified against the previously released
-records, encoded, read back, and installed. In-game checks covered the reported
-three lines, surrounding special monologues, the later startled interjection,
-backlog text, Return to Game, and reloading the new check save. The maintainer
-confirmed the result. The follow-up static audit compared both games' current
-text with the reviewed tables and verified final image and animation payloads.
-This is not an exhaustive playthrough or a fresh manual review of every line.
+The repair was confirmed in the reported special monologues, nearby text,
+backlog, Return to Game and save reload. These checks cover the observed
+directive problem, not every route or a new manual review of every line.
 
 The player update is **光子旋律 BETA 0.1.1**, internal build `2026.09.11-r4`. It is a
 complete standalone ZIP, with direct installation over the known public BETA

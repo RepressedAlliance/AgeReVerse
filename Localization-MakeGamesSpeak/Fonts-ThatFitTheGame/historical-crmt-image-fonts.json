@@ -1044,7 +1044,8 @@
       },
       "sources": [
         "u0006-render-report"
-      ]
+      ],
+      "output_identity_scope": "historical-render-report; no-current-output-or-reproduction-identity-claimed"
     },
     {
       "asset_id": "U0479",
@@ -1061,7 +1062,8 @@
       },
       "sources": [
         "u0479-render-report"
-      ]
+      ],
+      "output_identity_scope": "historical-render-report; no-current-output-or-reproduction-identity-claimed"
     }
   ],
   "corrections": [

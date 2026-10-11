@@ -51,10 +51,9 @@ between prepare/commit. +2/+3 rejection is recorded as a safe coverage gap;
 it is not evidence of a retail caller failure. Tests check pixel identity,
 outside-rectangle preservation, row/outer guards, and no premature writes.
 Runtime initialization, assembly wrappers, original decoders and actual caller
-arguments are outside this fixture. See the [49-binding result and remaining
-checks](../../docs/postmortems/crip008-batch-replay-20260909.md).
+arguments are outside this fixture. See the [runtime validation guide](../../docs/postmortems/runtime-validation.md).
 
-### Remaining offline checks and later capture preparation
+### Native call sites, diagnostics and trace reconciliation
 
 ```powershell
 python -m rUGP.tools.images.replay_cr6ti_routes --manifest "X:\private\manifest.json" --pf-root "X:\games\PF" --pm-root "X:\games\PM" --zig "X:\zig\zig.exe" --output "X:\checks\new-cr6ti-replay"
@@ -88,7 +87,7 @@ Reconciliation requires one identified capture, matches exact identities (plus
 labelled CRip008 zero-padding candidates), and credits a commit only with
 successful write/readback fields. Identical repeated events are not double-counted;
 contradictory sessions are rejected. Unseen, ambiguous and failed bindings remain
-separate. See the [completed offline audit](../../docs/postmortems/offline-hook-audit-20260909.md).
+separate. See the [runtime validation guide](../../docs/postmortems/runtime-validation.md).
 
 ### Other tools
 

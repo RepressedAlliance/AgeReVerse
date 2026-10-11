@@ -35,7 +35,7 @@ drift, record growth, or missing parent closure. Those hypotheses were useful bu
 were falsified by the M/N controls. A later, separate 光子旋律 experiment found
 `InternalError(831)` for an identity CRsa redirect into a later split volume;
 that transport boundary is recorded in the
-[native-field increment](crsa-native-increment-20260904.md) and does not change
+[native writeback guide](crsa-writeback.md) and does not change
 the embedded-NUL cause proved here for 8311.
 
 ## Production rule

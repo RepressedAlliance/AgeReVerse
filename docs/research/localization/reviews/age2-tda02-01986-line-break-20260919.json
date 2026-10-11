@@ -12,14 +12,7 @@
     "runtime_evidence_source": "User-provided screenshots: corrected Chinese shows two complete lines; pure JP and EN show the same two-line body structure and retained Yuzuka nameplate. JP/CN Log stores the utterance and reaction separately.",
     "pure_reference": {
       "exe_sha256": "5C0275FD17E1218153AF61D8019FD8424D0FA365F989CED41F78422DA10ED697",
-      "resources": "Original Steam pack.bin extracted afresh; native boot foundation matched retained baseline",
-      "process_id": 80568,
-      "frida_module_count": 0,
-      "screenshots": [
-        "codex-clipboard-f1fd65b3-0ae8-4e30-9b04-0643f621e71c.png",
-        "codex-clipboard-73e42b80-b316-451d-8a29-de2f380e2961.png",
-        "codex-clipboard-8c142d07-a6aa-4578-a62e-2559bb9825fa.png"
-      ]
+      "resources": "Original Steam pack.bin extracted afresh; native boot foundation matched retained baseline"
     },
     "limits": "Confirms this scene body separation against pure JP/EN; does not claim full-game visual coverage or a separate post-fix Chinese next-message clearing test."
   },

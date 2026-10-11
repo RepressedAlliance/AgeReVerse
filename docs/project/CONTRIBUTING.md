@@ -14,7 +14,7 @@
 | 图片汉化 | [图片流程](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/README.md)，按实际用途分组，制作方先自检、维护者最后审核 |
 | 字体／术语 | [字体](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md)、[现行术语](../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/README.md)，按游戏与用途选择 |
 | 提取、写回、运行时 | AGE2 放 [AGE2](../../AGE2/README.md)，Photon／RIO 放 [rUGP](../../rUGP/README.md) |
-| 来源调查／历史资料 | [研究记录](../research/localization/README.md)，不混入现行制作清单 |
+| 参考译法／来源调查 | [本地化参考与研究工具](../research/localization/README.md)，与现行制作清单区分 |
 | 新语言 | [新语言指南](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md)，建立独立目标，不覆盖现有日文依据或中文 |
 
 不熟悉目录可以先提 Issue，维护者协助定位和整理。尚未完成的工具或研究结论也可以发 draft PR，说明可用范围与剩余问题；不要把未验证的功能写成已经支持。
@@ -42,6 +42,14 @@ CI 的必要检查仍需通过；[检查范围](ci-checks.md)按文件类型区�
 
 君望旧译及校对材料遵守已确认的公开范围，不能因整理术语或样例而夹带完整文本或能重建全文的数据。[君望入口](../../AGE2/games/kiminozo/README.md)。
 
+## 公开文档怎样写
+
+按读者需要说明用途、用法、主要结果和必要限制。资产说明写清资源身份、来源与许可、使用位置及维护方式；技术案例说明现象、原因、解决方法和适用版本。
+
+逐次核查命令、会话经过、进程号、私人截图和临时候选清单留在本地忽略目录。有价值的方法整理为可复用指南，例如字幕按可见字形居中、固定字距与 ruby 分开处理。构建清单、稳定身份、输入约束和仍被工具或测试使用的数据继续随项目维护。
+
+真实问题不能随流水一起消失：保留触发条件、受影响版本、当前状态和剩余限制。旧候选的问题注明历史范围；未确定影响哪个玩家版本时如实说明。
+
 ## 常用检查
 
 修改工具时安装仓库依赖，再运行相关测试；下面是各组入口，不是每个 PR 都必须逐条执行的清单。
@@ -60,6 +68,6 @@ Photon 原生代码构建按 [runtime README](../../rUGP/runtime/README.md)使�
 <details>
 <summary>English · contributing</summary>
 
-Small, reviewable corrections are welcome. There is no prerequisite to finish a chapter, run every engine suite or provide a patch package. Explain the problem, resulting behavior and relevant verification; document real limitations. Start with affected tests and expand only for a concrete dependency or risk. Draft PRs can share incomplete research with a clear scope. Preserve stable resource identity and control codes, and do not submit proprietary dumps, private material or credentials.
+Small, reviewable corrections are welcome. There is no prerequisite to finish a chapter, run every engine suite or provide a patch package. Explain the problem, resulting behavior and relevant verification; document real limitations. Start with affected tests and expand only for a concrete dependency or risk. Draft PRs can share incomplete research with a clear scope. Write public guides for their readers: explain use, reusable methods and real limitations. Keep per-run logs local; preserve necessary manifests, data contracts and regression inputs. Unresolved defects retain their affected scope and status. Preserve stable resource identity and control codes, and do not submit proprietary dumps, private material or credentials.
 
 </details>

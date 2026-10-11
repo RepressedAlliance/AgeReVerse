@@ -41,6 +41,8 @@ Select the authoritative source-language slot by field key, not by the nearest r
 
 ## 3. Prepare exact changes
 
+The example below targets an existing JP slot, as used by historical test patches. Current AGE2 BETA packages use a separate Chinese slot; this field-level join does not create that slot or reproduce the current installers. See the [packaging guide](../packaging/windows/README.md).
+
 The EGPACK writer's change CSV is `relative_path,id,slot,expected_text,replacement_text`. `expected_text` is an optimistic lock; if the installed version differs, the build stops. Preserve the format's control sequences explicitly. Do not pass a game's maintained translation snapshot directly to the repacker; first bind it to the legal local manifest with the strict converter:
 
 ```powershell

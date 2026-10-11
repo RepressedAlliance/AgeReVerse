@@ -51,7 +51,7 @@ python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py
 
 `basis`保留完整使用限制；`chapter`是来源已知的篇章范围，不能代替使用限制。`evidence_rows`是本目录来源CSV的记录编号，以分号分隔，含表头从1计，不是游戏台词编号。旧来源的状态和出现次数原样保留，次数不跨来源相加。原已排除及明确误命中的资料只留在来源表，未审候选不自动确认。
 
-[整理明细](review-20261009.md)列出数量变化和资料限制。默认查主表；`--term`同时返回当前术语与关联来源，程序不必解析说明文字：
+具体取舍见[术语实例](../../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/decisions.md)。默认查主表；`--term`同时返回当前术语与关联来源，程序不必解析说明文字：
 
 ```powershell
 python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py kiminozo --baseline

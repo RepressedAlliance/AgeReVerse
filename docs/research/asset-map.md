@@ -63,7 +63,7 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 
 图片制作的长期可维护内容不是某次批次目录，而是：资源身份、源哈希、中文文案、无字底
 权威、字体和排版参数、允许变化区域、输出哈希与审核结论。完整方法见
-[图片本地化工作流](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/README.md)。字体按游戏运行时／图片制作集中于[字体目录](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md)，历史本地化调查与审核批次见[研究记录](localization/README.md)。
+[图片本地化工作流](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/README.md)。字体按游戏运行时／图片制作集中于[字体目录](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md)，术语取舍、源槽关联与原文保留实例见[本地化参考](localization/README.md)。
 
 ## 字体
 

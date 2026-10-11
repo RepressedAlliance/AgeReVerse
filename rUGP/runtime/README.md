@@ -47,23 +47,19 @@ historical normalized identity. The currently approved reproducible outputs are
 and 光子旋律 `F4AF72BA6DFC87D8B3478F63135A44A281C8DCA464070B9C69ED4402620DE666`.
 光子旋律 includes the tutorial-timer and selector repair plus the CRip008 direct
 image hooks, matching nine-hook production admission, and the exact-host RUO
-base repair. Both games include the installed image-table snapshots. The
+base repair. Both games include sealed image-table snapshots. The
 packaging assembler accepts only its named hash-locked identities and records
 which one it copied. This does not turn the runtime builder into a complete
 source-to-player-release pipeline; packaging still requires the other sealed
 and approved authorities described in `../packaging/README.md`.
 
-The Beta0.1 assembler's allowlist is unchanged: it rejects both new default
-identities until a separate release review approves them. The 2026-09-09 local
-installations use the existing `--speaker-color-candidate` profile. Building
-with `--authorize-pinned-build --speaker-color-candidate` (without
-`--verify-release-code`) reproduces both installed DLLs byte for byte:
-光子之花 `B3C43B2000BE0C286B140D900C081B3AECC771BEF7F7F69A79DE624ACC3875B0`,
-光子旋律 `2259884FF2CC52C3A94D917BCC5508D5951340FF8461612D89C270CE3FFC525E`.
-This preserves the profile's candidate status, not an automatic player release.
-Portable build manifests and readback evidence are linked from
-[current review status](../evidence/photon/images/static-review-20260909/README.md)
-and the [光子旋律 admission regression](../docs/postmortems/pm-image-admission-20260909.md).
+Build options describe source configurations, not a live player installation.
+The image catalog includes fixed manifests for default and explicit
+`--speaker-color-candidate` profiles. Later player assembly and font rebinding
+can produce other package-specific identities. Use the selected package's
+manifest, not a dated local-install hash, to identify a player runtime.
+See [configuration snapshots](../evidence/photon/images/static-review-20260909/README.md)
+and [packaging scope](../packaging/README.md).
 
 Generated headers are [sealed reviewed configuration](generated/README.md),
 not publicly regenerable source. Updating their identities requires repeating

@@ -1,6 +1,6 @@
 # Sealed generated runtime configuration
 
-## Installed snapshots synchronized on 2026-09-09
+## Configuration scope
 
 The ordinary tables now contain 1,197 光子之花 routes and 1,598 光子旋律 routes in the 光子旋律
 build; the 光子之花 build retains its installed companion 光子旋律 table of 1,594 entries.
@@ -9,19 +9,12 @@ those routes, so the 光子旋律 table uses explicit `PHOTON_BUILD_PM` conditio
 preserve each installed binary's inputs. The special table contains 68 entries
 (17 光子之花 / 51 光子旋律, including tutorial entries exclusive to 光子旋律).
 
-The authority audit used the 光子之花 follow-up build's actual **headers** directory,
-not its stale `source/generated` copy, and the later 光子旋律 manual-adoption build's
-generated directory. Their raw source hashes are recorded per game in
-`provenance.json`; header bytes in Git use LF. All 2,795 selected ordinary rows
-match their sealed manifests, and local readback verified 2,791 eligible
-ordinary PNG/RGBA identities plus 68 special identities. Four reserved 光子旋律
-identities were retained without probing their images.
-
-The [synchronization evidence](../../evidence/photon/images/static-review-20260909/runtime-sync.json)
-and paired build manifests prove byte-for-byte reproduction of both installed
-DLLs with the existing speaker-color candidate flag. No image payload or
-private generator input has been added to Git. Uninstalled review drafts are
-not promoted into these tables.
+Per-game source identities are recorded in `provenance.json`; headers use LF.
+The PF and PM views are distinct build inputs. Do not combine files by
+modification time or infer a player package's configuration from a historical
+local installation. Four reserved PM identities have no image-readback claim.
+See the [configuration snapshots](../../evidence/photon/images/static-review-20260909/README.md)
+for the associated datasets and build manifests.
 
 ## Regeneration boundary
 

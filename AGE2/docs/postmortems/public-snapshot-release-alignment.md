@@ -6,17 +6,9 @@ A reviewed CSV, an installable historical ZIP and a reproducible current build
 were initially treated as interchangeable proof. They answer different
 questions.
 
-## Controlled audit
+## Distinct inputs
 
-The maintained AGE2 dialogue tables were rebound to their private exact source
-tables and exported without bulk official dialogue. Sidecars freeze input and
-output bytes, row counts and hashes. A separate authority-alignment audit then
-checked what those public snapshots can prove about the historical packages.
-
-The result is intentionally partial: TDA00–03 have a strict public
-source-hash-to-local-EGPACK join for dialogue, while Imperial Capital Burns has
-a phase-one non-dialogue builder. None of those facts alone reconstructs every
-speaker, choice, WebP, font, UI resource and final historical ZIP byte.
+The maintained dialogue tables are bound to exact source fields without bulk official dialogue. TDA00–03 provide source-hash-to-local-EGPACK joins; Imperial provides a non-dialogue builder. These components do not alone reconstruct every speaker, choice, image, font, UI resource or historical ZIP byte.
 
 ## Production rule
 
@@ -33,4 +25,4 @@ speaker, choice, WebP, font, UI resource and final historical ZIP byte.
 
 The public AGE2 path is component-reproducible, not yet historical-ZIP
 byte-reproducible. See the text-free review ledger for unresolved review
-identities and the authority-alignment evidence for the exact current claim.
+identities and [release compatibility](../../evidence/translations/snapshots/compatibility.md) for the supported scope.

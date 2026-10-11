@@ -22,13 +22,13 @@ Muv-Luv photonmelodies*／マブラヴ photonmelodies*。AgeReVerse · 压抑同
 [8311 复盘](../../docs/postmortems/error-8311.md)。图片使用光子之花/光子旋律共用清单，但光子旋律的
 多个 RIO 分卷、shared/common 端点与运行时表面替换必须单独验证。
 
-本轮原生 CRsa 补译还确认了另一条独立边界：后续分卷中的记录即使做内容完全相同的
+原生 CRsa 写回还有一条独立边界：后续分卷中的记录即使做内容完全相同的
 RUO 重定向，实机仍会触发 `InternalError(831)`；相同字节写回原分卷的固定范围则通过。
 因此光子旋律原生 CRsa 不再由 RUO 构建器输出，而由
 [`build_crsa_native_volume_patch.py`](../../tools/text/build_crsa_native_volume_patch.py)
 从哈希锁定的干净原卷生成新分卷副本，发布时再转换为安装用区段补丁。当前玩家安装器不创建备份、不附卸载器；恢复原版按玩家指南操作。
-完整实验、实机抽样和 831／8311 的区别见
-[CRsa 原生增量记录](../../docs/postmortems/crsa-native-increment-20260904.md)。
+写回方式、适用范围和 831／8311 的区别见
+[CRsa 原生写回](../../docs/postmortems/crsa-writeback.md)。
 
 玩家包已发布 BETA 0.1.2，安装、恢复及已知问题见[玩家指南](../../../docs/player/README.md)。
 源码组件本身不等于安装包；当前发布不代表全路线已人工遍历，后续构建仍需独立验证。
