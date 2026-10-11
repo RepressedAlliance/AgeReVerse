@@ -43,4 +43,6 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 
 复用游戏现有清单或字段，不要求每作另造一套庞大表。至少能找到：游戏与源资源身份、分类／组、原文与已采用文案、保留／拟写决定、字体或绘制方式、当前成品、检查结果、维护者意见和最终交付位置。原图、候选和审核页留在本地制作目录，公开范围见[制作规范](production.md#9-复用返修与公开)。
 
+每批新图与返修的字体按[登记规范](../Fonts-ThatFitTheGame/registration.md)记录，并同步[公开用字来源与致谢](../Fonts-ThatFitTheGame/attribution.md)。这项工作放在样式确认与最后交付中：同组引用一次，单图写例外；不增加第六步。
+
 “已制作”“已自检”“人工已确认”“实机已确认”“已发布”是不同事实，不能用一个 `done` 混称。也不能用文件存在、OCR 通过或模型档位替代查看图片。

@@ -1,0 +1,202 @@
+{
+  "schema": "age-reverse-image-font-index/v1",
+  "updated_on": "2026-10-12",
+  "scope_games": [
+    "tda00",
+    "tda01",
+    "tda02",
+    "tda03",
+    "imperial-capital-burns",
+    "photonflowers",
+    "photonmelodies"
+  ],
+  "scope": "Current patch image manifests, retained old production batches and revisions, selected and partial local work, supplied text layers, and typography prototypes used as generation inputs. Untouched original-game lettering is recorded as original rather than assigned an invented font.",
+  "font_inputs": {
+    "registered_inputs_faces_and_versions": 37,
+    "with_material_typography_or_prototype_use": 36,
+    "comparison_only": [
+      "image:ms-gothic-trial"
+    ],
+    "material_record_crosswalk": {
+      "image:noto-sans-sc-vf": [
+        "age2-released-image-fonts.json",
+        "historical-git-image-fonts.json",
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:noto-serif-sc-vf": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:swei-sugar-medium": [
+        "age2-released-image-fonts.json"
+      ],
+      "image:zcool-kuaile-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:simhei-historical": [
+        "historical-image-fonts.json",
+        "historical-image-variants.json"
+      ],
+      "image:noto-sans-sc-500": [
+        "age2-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:photon-r2-subtitles": [
+        "photon-released-image-fonts.json"
+      ],
+      "image:mashanzheng-new-batch": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:photoncn-new-batch": [
+        "historical-crmt-image-fonts.json"
+      ],
+      "image:source-han-sans-bold": [
+        "age2-released-image-fonts.json",
+        "historical-image-fonts.json"
+      ],
+      "image:source-han-serif-bold": [
+        "age2-released-image-fonts.json"
+      ],
+      "image:source-han-serif-heavy": [
+        "age2-released-image-fonts.json"
+      ],
+      "image:xiaolai": [
+        "historical-image-fonts.json",
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:smiley-sans": [
+        "historical-image-variants.json"
+      ],
+      "image:lxgw-wenkai-gb": [
+        "historical-image-variants.json"
+      ],
+      "image:kaiti": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json",
+        "unreleased-image-fonts.json"
+      ],
+      "image:yahei-regular": [
+        "historical-git-image-fonts.json",
+        "historical-image-fonts.json",
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:yahei-bold": [
+        "historical-image-fonts.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:simsun": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:ms-mincho": [
+        "historical-image-variants.json",
+        "photon-released-image-fonts.json"
+      ],
+      "image:noto-sans-sc-static-bold-700": [
+        "photon-released-image-fonts.json"
+      ],
+      "image:meb-heiheiti-note": [
+        "unreleased-image-fonts.json"
+      ],
+      "image:swei-sugar-semibold": [
+        "unreleased-image-fonts.json"
+      ],
+      "image:resource-han-rounded-medium-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:chill-round-gothic-medium-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:gensen-rounded-2-tc-heavy-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:lxgw-975-yuan-700-trial": [
+        "historical-image-fonts.json"
+      ],
+      "image:maoken-tangyuan-trial": [
+        "historical-image-fonts.json",
+        "historical-image-variants.json"
+      ],
+      "image:yomeng-script-trial": [
+        "historical-image-fonts.json",
+        "historical-image-variants.json"
+      ],
+      "image:yahei-light-historical": [
+        "historical-image-fonts.json"
+      ],
+      "image:biz-udgothic-regular-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:biz-udpgothic-regular-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:biz-udgothic-bold-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:biz-udpgothic-bold-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:noto-sans-jp-history": [
+        "historical-git-image-fonts.json"
+      ],
+      "image:dengxian-bold-history": [
+        "historical-git-image-fonts.json"
+      ]
+    },
+    "note": "Input count is not a family count or a count of fonts shipped in the present release. Mixed, inherited and generated layers retain their own methods."
+  },
+  "registries": [
+    {
+      "file": "age2-released-image-fonts.json",
+      "items": 859,
+      "unit": "current-release-files"
+    },
+    {
+      "file": "photon-released-image-fonts.json",
+      "items": 2861,
+      "unit": "current-release-files"
+    },
+    {
+      "file": "unreleased-image-fonts.json",
+      "items": 365,
+      "unit": "selected-local-candidates"
+    },
+    {
+      "file": "historical-image-fonts.json",
+      "items": 235,
+      "unit": "specifically-recovered-historical-font-records"
+    },
+    {
+      "file": "historical-image-variants.json",
+      "items": 1933,
+      "unit": "historical-game-output-contents"
+    },
+    {
+      "file": "historical-git-image-fonts.json",
+      "items": 279,
+      "unit": "Git-recovered-material-output-records"
+    },
+    {
+      "file": "historical-crmt-image-fonts.json",
+      "items": 56,
+      "unit": "early-CRmt-design-assets"
+    }
+  ],
+  "count_relationships": {
+    "current_release_files": 3720,
+    "photon_release_distinct_contents": 1562,
+    "selected_local_candidate_files": 365,
+    "historical_variant_contents_also_in_release": 557,
+    "note": "These sets overlap. Historical registers also overlap each other and must not be summed into an all-time image total."
+  },
+  "version_and_source_limits": "font-evidence.md",
+  "credits": "attribution.md",
+  "registration": "registration.md"
+}
