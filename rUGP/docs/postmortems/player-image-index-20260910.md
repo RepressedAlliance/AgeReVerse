@@ -1,6 +1,6 @@
 # Player package lost previously working album translations
 
-The user installed the 2026.09.10 光子之花/光子旋律 packages on another computer. New UI and
+The affected 2026.09.10 光子之花/光子旋律 packages displayed new UI and
 CRmt presentations appeared, but previously accepted album translations,
 including 光子之花 festival signs, were absent. This was a packaging regression.
 
@@ -33,13 +33,11 @@ both pitch signs and unchanged pixels outside the partial rectangle. G1661,
 G1662 and G1972 were also present but unreachable in the faulty table.
 
 These are runtime lookup/load and surface-commit results. They do not execute
-the proprietary decoder, Steam startup or every scene. The user still needs
-to replay the final combined package in game. The 1,789 image-bearing review
+the proprietary decoder, Steam startup or every scene. A final combined package also needs in-game checks. The 1,789 image-bearing review
 entries are a provenance catalog, not the number of ordinary runtime routes or
 a claim of complete live acceptance.
 
-The maintainer separately requested a player installer with no backups or
-rollback. The revised installer writes directly, reports failures with Steam
-reinstallation instructions, and cleans its own temporary extraction on normal
-exit. This policy does not authorize deleting historical local development
-archives or save files.
+The player installer writes directly without backups or rollback. It reports
+failures with Steam reinstallation instructions and cleans its own temporary
+extraction on normal exit. See the [player guide](../../../docs/player/README.md)
+for installation and recovery.

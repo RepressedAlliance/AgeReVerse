@@ -1,121 +1,100 @@
-# 光子之花／光子旋律外语表达最终审定（2026-09-09）
+# 外语表达的取舍：保留角色声音，而不机械清除拉丁字母
 
-## 范围与结果
+日文是翻译依据，但日文中的外语台词、呼号、缩写与笑点有各自用途。下面保留 Photon 的具体采用决定，展示同一行里“术语统一”和“外语语气保留”如何共存。它是这些场景的选择，不是跨作品的全文替换表。
 
-- 原清单80组全部有处理结论；352条候选：修改170条、保留167条、受保护15条。组之间可以共享同一条候选，组内数量不可直接相加。
-- 《樱花盛开之前》整篇4,037条保持文件哈希不变，包括续译部分与旧注释。
-- 全部57,723条章节记录保留原绑定ID、顺序、日英来源哈希、注释及其他元数据；正文修改见三份逐条审计。原有非换行控制序列不变；必要处调整中文硬换行，不新增<03>或姓名内填充。
-- 不开展本篇／Alternative全量术语提炼，不修改它们或TDA／帝都燃烧正文。
+Aquila／Aquila 编号等呼号需要连同姓名颜色别名一起维护；Mach、型号、计划名称按语义处理。`Hot Dog`、`HAPPYAKUMAN` 等笑点不能只用一个顺滑中文词抹掉角色的误解或读音纠错。普通外语语气也不能仅因含英文而列为错误。
 
-## 后续复核：三处旧译与光子旋律字库
+## 具体采用示例
 
-**本PR仍是待打包、待实机抽查的草稿，不是已完成的可安装补丁。**
+| 编号 | 原项目 | 最终处理 |
+| --- | --- | --- |
+| 01 | Mach | 15马赫 |
+| 02 | DELETE | 删除 |
+| 03 | Keiji | 鲑儿？那是什么？ |
+| 04 | Amen | 阿门 |
+| 05 | 沃肯的外语语气 | 保留 |
+| 06 | 西尔维奥及对应问候 | 保留 |
+| 07 | 军人口令 | 保留 |
+| 08 | Mama | 外语语气保留；同句Aquila按36统一 |
+| 09 | No More AKJ | 保留 |
+| 10 | All Aquilas / Call in | 外语语气保留；同句Aquila按36统一 |
+| 11 | OK | 保留 |
+| 12 | play | 保留 |
+| 13 | PLEASE | 求你了 |
+| 14 | NO | 保留 |
+| 15 | Boss | 保留 |
+| 16 | FLAG | 保留 |
+| 17 | BUG | 保留 |
+| 18 | Alternative | 保留 |
+| 19 | Prominence | 日珥计划 |
+| 20 | Bootstrap | 布特斯特拉普作战 |
+| 21 | β-Brid | 保留 |
+| 22 | Cybrid | 保留 |
+| 23 | Phase-4 | 四阶巢穴 |
+| 24 | Stab | 地下茎 |
+| 25 | Ground Zero | G弹的爆心地 |
+| 26 | Euro Fightas | 尤罗法伊塔斯公司 |
+| 27 | Nano Stop | 保留 |
+| 28 | TQ Arms | 保留 |
+| 29 | MILD CREW | 保留 |
+| 30 | Game Guy | 保留 |
+| 31 | DreamCos | DreamCost（DC）；简称DC |
+| 32 | PS2 | 普雷斯塔2 |
+| 33 | SAGA | 保留 |
+| 34 | Stratos | 保留 |
+| 35 | HIVE 公寓 | HIVE（巢穴） |
+| 36 | Aquila / Aquilas | 大鹫／大鹫队；编号保留 |
+| 37 | Valkyrie / Valkyries / Valkyrie Mom | 女武神中队／女武神加编号；Mom保留 |
+| 38 | Lightning | 闪电 |
+| 39 | Blade | 刀刃 |
+| 40 | Dancer | 舞者 |
+| 41 | Ghost | 幽灵 |
+| 42 | Hunter | 猎人 |
+| 43 | Cracker | 破击者 |
+| 44 | Crest | 纹章 |
+| 45 | Sauber | 扎乌伯 |
+| 46 | Echo | 回声舰队 |
+| 47 | Whiskey | 威士忌舰队 |
+| 48 | Sierra Delta | 西拉·德尔塔 |
+| 49 | Falso | 伪面 |
+| 50 | Fox 1 | 保留 |
+| 51 | Samurai | 首处Samurai（武士），之后保留 |
+| 52 | Fundoshi / Fun…doshi | 保留 |
+| 53 | HAPPYAKUMAN / YAOYOROZU | 保留读音并解释读法纠错及超人笑点 |
+| 54 | TAKE / SHI | 武……／……我是说刚田武 |
+| 55 | sauna | 桑拿 |
+| 56 | löyly | 保留 |
+| 57 | banya | 保留 |
+| 58 | venik | 保留 |
+| 59 | vihta | 保留 |
+| 60 | COPY RAGDOLL | 保留 |
+| 61 | ZERO | 零 |
+| 62 | Baccarat | 保留 |
+| 63 | Attack of Killer Juice | AKJ及英文全称保留，补中文意思 |
+| 64 | Southern Island | SI及英文全称保留，补南岛 |
+| 65 | Two Point Four / TPF | 保留 |
+| 66 | Hot Dog | 热狗（Hot Dog），保留角色猜错 |
+| 67 | CAST OFF | 保留 |
+| 68 | CHANGE | 保留 |
+| 69 | HUSTLE | 保留 |
+| 70 | GREAT PEAK | 保留 |
+| 71 | STAR | 保留 |
+| 72 | Made in Japan / King of / is | 保留 |
+| 73 | BETA 明示与通信断句 | 保留 |
+| 74 | D 班明示 | 保留 |
+| 75 | CP 明示 | 保留 |
+| 76 | DS 补充缩写 | 战术横卧·直击内裤（DS） |
+| 77 | MSS 读音 | 保留 |
+| 78 | B、BGM 结巴 | 保留 |
+| 79 | V 字形 | 保留 |
+| 80 | Muv-Luv 光子旋律标题 | 保留 |
 
-重新逐句核对170条改文后，另修《小鸡潜降兵》三处遗留文意错误：将“死了还得干这活”修为“死也不想摊上这活”，将向敌人叫阵误作命令的“上吧”修为“我来了”，恢复“连……虫子都不如”的比较。均已获维护者同意；详见[逐条前后对照](../../evidence/photon/text/semantic-followup-20260909.json)。三条均属于原170条，不重复增加已改记录数。
+## 改动之后还需保持什么
 
-光子旋律旧字体有4942个字形，却仅存4715项竖排度量；缺失的恰是U+E100..U+E1E2的227项。专用修复工具仅接受该旧字体的锁定哈希，为缺失项定义1000单位进给、880单位竖排原点；这不是声称恢复历史值。修复阶段保留原有度量字节及其余表（必要校验字段除外）。随后从Noto Sans SC的400字重补入“珥”，原4942个字形、横向度量、cmap及排版表保持不变。
+保留来源身份、姓名结构、非换行控制序列和已确认批注；必要断行按实际字体测量。发现文意错误时以日语与场景修正，不能把句子通顺当成译意正确。新字如“珥”应与[字形覆盖和度量](pm-er-20260909.md)一起处理。
 
-隔离候选字体及配套光子旋律运行时已生成，默认正式字体哈希与封存配置不变。只有显式的`--pm-font-candidate`构建才采用新哈希，且不能被验证为既有正式版。[字体证据](../../evidence/photon/text/pm-font-er-20260909.json)与[复现说明](pm-er-20260909.md)记录输入、输出和限制。尚未替换游戏文件。
+现行译文以[章节表](../chapter-texts.md)为入口，机器可读的采用决定用于回归比较。具体未统一的历史差异见[术语选择](terminology-20260908.md)，这组例子不表示两作所有潜在翻译问题已经消除。
 
-## 验证
+## English
 
-- 后续修正后，rUGP 201项、localization 67项、AGE2 104项、仓库辅助9项测试通过（共381项）；编译检查和diff空白检查通过。
-- 170条最终修改文本：光子之花／光子旋律分别8组GDI测量；普通字重最大677／707px，粗体705／739px，均在724／754px预算内，首行包含姓名／呼号。
-- 以上是现有字体下的诊断测量，不代表“珥”的新字形或实机显示已验收。
-- 后续用新字体重测光子旋律全部56条改文：普通/粗体最大707/739px；光子之花三处文意修正为613/639px，8组条件均未超预算。GDI选中的新字体哈希逐组核实；“珥”另有字样渲染检查。
-- 光子旋律全部227个菜单PUA字形在24/32/48px下比较681次，像素、边界与进给均一致。这不替代AGES实机抽查。
-- 原生颜色匹配探针：PF249对、PM328对，均0失败；新增14条名称别名保留原匹配与颜色，未安装候选DLL。
-- 已批准替换的旧英文专名在非保护章节中无残留；保留词、梗、普通外语不列为错误。
-
-## 80组决定
-
-| 编号 | 原项目 | 最终处理 | 原清单条数 |
-| --- | --- | --- | --- |
-| 01 | Mach | 15马赫 | 1 |
-| 02 | DELETE | 删除 | 2 |
-| 03 | Keiji | 鲑儿？那是什么？ | 1 |
-| 04 | Amen | 阿门 | 2 |
-| 05 | 沃肯的外语语气 | 保留 | 2 |
-| 06 | 西尔维奥及对应问候 | 保留 | 4 |
-| 07 | 军人口令 | 保留 | 3 |
-| 08 | Mama | 外语语气保留；同句Aquila按36统一 | 1 |
-| 09 | No More AKJ | 保留 | 1 |
-| 10 | All Aquilas / Call in | 外语语气保留；同句Aquila按36统一 | 1 |
-| 11 | OK | 保留 | 9 |
-| 12 | play | 保留 | 2 |
-| 13 | PLEASE | 求你了 | 1 |
-| 14 | NO | 保留 | 1 |
-| 15 | Boss | 保留 | 1 |
-| 16 | FLAG | 保留 | 1 |
-| 17 | BUG | 保留 | 1 |
-| 18 | Alternative | 保留 | 25 |
-| 19 | Prominence | 日珥计划 | 4 |
-| 20 | Bootstrap | 布特斯特拉普作战 | 1 |
-| 21 | β-Brid | 保留 | 31 |
-| 22 | Cybrid | 保留 | 17 |
-| 23 | Phase-4 | 四阶巢穴 | 1 |
-| 24 | Stab | 地下茎 | 1 |
-| 25 | Ground Zero | G弹的爆心地 | 1 |
-| 26 | Euro Fightas | 尤罗法伊塔斯公司 | 3 |
-| 27 | Nano Stop | 保留 | 3 |
-| 28 | TQ Arms | 保留 | 2 |
-| 29 | MILD CREW | 保留 | 1 |
-| 30 | Game Guy | 保留 | 17 |
-| 31 | DreamCos | DreamCost（DC）；简称DC | 1 |
-| 32 | PS2 | 普雷斯塔2 | 1 |
-| 33 | SAGA | 保留 | 1 |
-| 34 | Stratos | 保留 | 2 |
-| 35 | HIVE 公寓 | HIVE（巢穴） | 2 |
-| 36 | Aquila / Aquilas | 大鹫／大鹫队；编号保留 | 82 |
-| 37 | Valkyrie / Valkyries / Valkyrie Mom | 女武神中队／女武神加编号；Mom保留 | 21 |
-| 38 | Lightning | 闪电 | 7 |
-| 39 | Blade | 刀刃 | 5 |
-| 40 | Dancer | 舞者 | 1 |
-| 41 | Ghost | 幽灵 | 1 |
-| 42 | Hunter | 猎人 | 2 |
-| 43 | Cracker | 破击者 | 2 |
-| 44 | Crest | 纹章 | 1 |
-| 45 | Sauber | 扎乌伯 | 3 |
-| 46 | Echo | 回声舰队 | 1 |
-| 47 | Whiskey | 威士忌舰队 | 1 |
-| 48 | Sierra Delta | 西拉·德尔塔 | 2 |
-| 49 | Falso | 伪面 | 8 |
-| 50 | Fox 1 | 保留 | 1 |
-| 51 | Samurai | 首处Samurai（武士），之后保留 | 11 |
-| 52 | Fundoshi / Fun…doshi | 保留 | 2 |
-| 53 | HAPPYAKUMAN / YAOYOROZU | 保留读音并解释读法纠错及超人笑点 | 4 |
-| 54 | TAKE / SHI | 武……／……我是说刚田武 | 2 |
-| 55 | sauna | 桑拿 | 1 |
-| 56 | löyly | 保留 | 4 |
-| 57 | banya | 保留 | 4 |
-| 58 | venik | 保留 | 1 |
-| 59 | vihta | 保留 | 1 |
-| 60 | COPY RAGDOLL | 保留 | 3 |
-| 61 | ZERO | 零 | 2 |
-| 62 | Baccarat | 保留 | 1 |
-| 63 | Attack of Killer Juice | AKJ及英文全称保留，补中文意思 | 1 |
-| 64 | Southern Island | SI及英文全称保留，补南岛 | 1 |
-| 65 | Two Point Four / TPF | 保留 | 2 |
-| 66 | Hot Dog | 热狗（Hot Dog），保留角色猜错 | 1 |
-| 67 | CAST OFF | 保留 | 1 |
-| 68 | CHANGE | 保留 | 1 |
-| 69 | HUSTLE | 保留 | 1 |
-| 70 | GREAT PEAK | 保留 | 1 |
-| 71 | STAR | 保留 | 1 |
-| 72 | Made in Japan / King of / is | 保留 | 1 |
-| 73 | BETA 明示与通信断句 | 保留 | 5 |
-| 74 | D 班明示 | 保留 | 1 |
-| 75 | CP 明示 | 保留 | 1 |
-| 76 | DS 补充缩写 | 战术横卧·直击内裤（DS） | 1 |
-| 77 | MSS 读音 | 保留 | 1 |
-| 78 | B、BGM 结巴 | 保留 | 1 |
-| 79 | V 字形 | 保留 | 1 |
-| 80 | Muv-Luv 光子旋律标题 | 保留 | 1 |
-
-## 证据
-
-- [全候选处理清单与哈希](../../evidence/photon/text/latin-review-20260909.json)：352条各有唯一身份、处理状态、所属组、修改前后中文哈希。
-- [第一轮103条](../../evidence/photon/text/latin-decisions-20260909.json)、[第二轮59条](../../evidence/photon/text/latin-decisions-20260909-round2.json)、[最终8条](../../evidence/photon/text/latin-decisions-20260909-round3.json)：完整中文修改前后对照。
-- 未批量公开官方日英脚本。完整日英上下文在本地审查。保留项的判定理由见全候选处理清单。
-
-“全部处理”仅指本次既定清单闭环，不声称两作所有潜在翻译问题都已消除。
+Foreign speech, callsigns, abbreviations and wordplay serve different purposes. The table records scene-specific choices, not global replacements. Preserve original meaning and character voice, then maintain source identity, annotations, name-colour aliases and glyph coverage when applying a decision.

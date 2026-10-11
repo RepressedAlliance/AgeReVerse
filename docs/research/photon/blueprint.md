@@ -1,6 +1,6 @@
 # 光子之花／光子旋律完整技术蓝图与路线演变
 
-[总览](README.md) · [技术来源分类](provenance.md) · [完整蓝图](blueprint.md) · [证据索引](evidence-index.md)
+[总览](README.md) · [技术来源分类](provenance.md) · [组件索引](evidence-index.md)
 
 资料截至：2026-09-12。对应发布版本：光子之花 **BETA 0.1／2026.09.10-r3**，光子旋律 **BETA 0.1.1／2026.09.11-r4**。
 
@@ -19,7 +19,7 @@
 1. 最终仍修改 RIO 和 ICI，而且仍保留历史图片追加数据。
 2. 最终仍使用一份 RUO1，但已经不是“全部正文和图片都放在里面”。
 3. 字体路由从早期即使用运行时支持；普通图片替换逐步扩大到精确资源身份和表面写入。
-4. 9 月 4 日“光子之花某轮正文增量走 RUO、光子旋律某轮增量走原分卷”是中间状态。9 月 10 日最终组装把两作本轮正文显示记录全部固定长度写入 RIO，清除了旧正文 RUO 映射。
+4. 9 月 4 日“光子之花正文增量走 RUO、光子旋律增量走原分卷”是中间状态。9 月 10 日组装把两作该批正文显示记录全部固定长度写入 RIO，清除了旧正文 RUO 映射。
 5. 开发端“会解码／会编码一种图片”不等于正式包必须用该压缩格式运送全部中文图片。大量图片最终以 PNG 旁置，由 DLL 在合适的显示阶段替换。
 
 ```mermaid
@@ -39,22 +39,16 @@ flowchart LR
 
 ### 阶段 A：直接替换 RIO 中的图片，遇到容量与地址问题
 
-**2026-07-07** 的光子之花 quick-save 试验记录了 RIO 扩写、实机写入与字节回读，是已保存的早期资源修改实例。
-
-- 旧压缩 payload 为 **13,446 字节**，中文候选为 **26,821 字节**。
-- 在 RIO 内插入 **13,375 字节**，文件由 2,147,465,920 增至 2,147,479,295 字节。
-- 后一个资源的物理位置随之移动；报告保存了前后地址以及字节回读。
-- 报告证明当时确实做了扩写、写入和回读；它本身不证明所有后续对象引用和全游戏运行都已正确。
+早期 quick-save 中文 payload 从 13,446 增至 26,821 字节，直接插入会移动后续资源。
 
 问题在于，RIO 不是“图片文件顺序拼起来即可”的袋子：目录、原生对象、父引用、分卷地址及 ICI 中的大小信息会引用特定位置。插入更大的数据，不能只让后面的字节挪位而不处理消费者。
 
 直接原位写入在**记录边界与容量足够、内容序列化合法**时仍有价值；问题不是“RIO 永远不能改”，而是不能把可变长度图片任意塞回旧位置。
 
-证据：[7 月 7 日扩写记录（本地记录 L01）](evidence-index.md#l01)。
 
 ### 阶段 B：尝试末卷追加、目录重定位与 ICI 同步
 
-在 `rio_rebuild_research_20260810` 中保存了具体光子之花 quick-save 重定位试验：
+末卷追加路线需要同时维护引用与目录：
 
 1. 把较大的完整图片记录追加到最后一个 RIO 分卷。
 2. 修改对应加密目录块中的原始偏移和长度。
@@ -63,9 +57,8 @@ flowchart LR
 
 这条路线解决了“旧位置装不下”的物理存储问题，但带来父对象、加密引用、目录闭合与 ICI 元数据维护工作。该历史试验曾把对齐字节计入记录 extent，后续记录了这一封装问题。
 
-后来 ICI 增长审核发现，我们的早期 helper 在重建外层头时把低三位 metadata 从原件的 **3** 错改成 **7**；另外 RIO 大小有两份，漏改一份也不正确。修正后八组静态候选回读通过，但该修正报告自身标记 `runtime pending / release=false`。这说明研究完成到哪一步，不能单凭静态报告写成八组全部实机验收。
+后来 ICI 增长审核发现，我们的早期 helper 在重建外层头时把低三位 metadata 从原件的 **3** 错改成 **7**；另外 RIO 大小有两份，漏改一份也不正确。该方法仅完成静态修正，不等于已有通用生产写入器，见[ICI 增长](../../../rUGP/docs/postmortems/ici-resize-metadata.md)。
 
-证据：[重定位清单（本地记录 L02）](evidence-index.md#l02)、[ICI 增长复盘](../../../rUGP/docs/postmortems/ici-resize-metadata.md)。
 
 ### 阶段 C：验证 RUO，尝试正文和图片统一覆盖
 
@@ -75,16 +68,7 @@ flowchart LR
 
 同时发现重要限制：虽然游戏扫描多个 `.ruo*`，全局重定向表却共用最后一个 RUO 的归档索引，映射项没有自己的归档编号。因此不能把“文本 RUO1＋图片 RUO2”当成安全的独立叠加层；应合并为**每作一份累计 RUO**。
 
-随后保存的 `photon_complete_patch_v1/release` 的确尝试了集中方案：
-
-| 早期 v1 静态候选 | 图片目标 | RUO 总映射 | 当时状态 |
-| --- | ---: | ---: | --- |
-| 光子之花 | 636 | 692 | 正文＋图片累计 RUO，尚未完成实机验收 |
-| 光子旋律 | 854 | 962 | 正文＋图片累计 RUO，尚未完成实机验收 |
-
-这两份候选采用正文和图片集中覆盖方案，状态为静态完成、未安装、未进行游戏内验证；字体及界面支持仍位于 RUO 之外。
-
-证据：[RUO 原始研究结论（本地记录 L03）](evidence-index.md#l03)、[v1 使用说明（本地记录 L04）](evidence-index.md#l04)、[v1 构建清单（本地记录 L05）](evidence-index.md#l05)。
+集中正文与图片的早期 RUO 方案没有覆盖字体与所有实际显示路径；后续按对象分流。
 
 ### 阶段 D：实机与全量样本暴露问题，拆分成多条运输路线
 
@@ -101,20 +85,11 @@ flowchart LR
 | 光子旋律部分 CRsa 完全相同地重定向仍报 831 | 特定分卷／对象的重定向行为 | 对已验证问题记录改用原分卷固定范围写入 |
 | 字体文件已在磁盘，但不同界面字体不一致 | 注册表四路字体、GDI 请求、首次启动改值 | 引入私有字体及代理 DLL，而非指望资源覆盖解决字体选择 |
 
-早期容量统计为 118 个可装入、1,317 个超容、4 个待解，采用当时的目标去重口径。该数据描述历史候选的容量状态，与正式包图片数量及剩余问题分别统计。
-
-8 月 27 日的图片安装输入已经明确区分：原生散写、末卷追加、原始引用重绑、加密父对象重编译、CS5i 位点、碰撞组和 ICI；这已经是混合路线的工程形态。
-
 ### 阶段 E：普通图片更多转为官方对象承载＋精确 PNG 运行时替换
 
 8 月 28 日光子之花、8 月 30 日光子旋律的 `official_backing` 记录说明：大量父引用恢复到官方 translation／context 对象，让游戏先沿已知对象结构建立正常表面，再由我们的运行时按确切身份替换中文像素。少量特例仍保留自定义记录和引用。
 
-历史分工数据：
-
-- 光子之花：579 个官方 translation 目标、17 个 context 特例、40 个保留自定义记录；恢复 393 个父引用位点。
-- 光子旋律：769 个官方 translation 目标、40 个 context 特例、47 个保留自定义记录；有 2 个重叠项目，不能直接相加作总量；恢复 568 个官方或 context 父引用位点。
-
-这些数量对应当时的候选清单。该阶段的变化是：**不再要求每幅普通中文图都通过重新压缩、变更父记录来显示**。原生解码与编码成果仍用于普查、理解像素、回读、支持特例和建立运行时依据。
+该阶段的变化是：**不再要求每幅普通中文图都通过重新压缩、变更父记录来显示**。原生解码与编码成果仍用于普查、理解像素、回读、支持特例和建立运行时依据。
 
 该阶段及后续正式包保留了历史追加区。其中部分数据已由其他显示路径替代，因此磁盘存储范围与当前显示来源分别统计。
 
@@ -130,7 +105,6 @@ flowchart LR
 
 此时仍不能用一句“光子之花走 RUO、光子旋律改 RIO”概括所有功能；那只适用于被引用的某轮文本增量。
 
-证据：[9 月 4 日原生增量记录](../../../rUGP/docs/postmortems/crsa-native-increment-20260904.md)。
 
 ### 阶段 G：9 月 10 日最终组装与 BETA 收敛
 
@@ -164,7 +138,7 @@ flowchart LR
 
 光子之花那一条非 CRmt 映射的 source key 为 `0xA3256C75`，111,236 字节；严格 Cr6Ti 解码结果为完整封装、1024×600、kind2。Cr6Ti 与 CRip008 共享 `00 04 45` 对象前缀，**不能只看这三个字节判断格式**。
 
-50 条 CRmt 映射全部与已确认交接记录的完整 SHA-256 对应。49 个审核逻辑组、50 个目标映射是不同层级的计数，不矛盾。
+49 个审核逻辑组、50 个目标映射属于不同层级。
 
 ### 正式差分中的 RIO 历史追加区
 
@@ -172,11 +146,6 @@ flowchart LR
 | --- | ---: | ---: | ---: |
 | 光子之花 `.rio.002` | 1,661,470,956 | 1,684,696,824 | 23,225,868 字节 |
 | 光子旋律 `.rio.004` | 1,848,048,356 | 1,883,168,284 | 35,119,928 字节 |
-
-**最终安装包的差分数据**可重构完整新增区，每个新增字节均有差分区段覆盖：
-
-- 光子之花的 23,225,868 字节，与历史 506 条追加记录产物完全同哈希。
-- 光子旋律新增区的前 35,079,788 字节，与历史 715 条追加记录产物完全同哈希；后续另有 40,140 字节。
 
 **正文 CRsa 采用等长写回，RIO 归档仍包含追加区。** DLL 图片替换与原生归档修改共同构成正式方案。
 
@@ -250,7 +219,7 @@ flowchart TD
 | --- | --- | --- |
 | G | GARbro／morkt `b09ee4570ccb1daf6ac56710ee8934dc0b8baeb0` | ArcRIO.cs、ImageRIP.cs |
 | AFE | AFHook／AFEditor／eplightning `3f613a097c07d3d9fb9969a130ea6d859b544f8a` | Cr6Ti 编解码、文本／图片／名字颜色 Hook 先例 |
-| ALT | 本机 tsudoko/chinesize 副本 `ad5bdad900e31edf2a17640d1d243470a58b29a8` | `Rugp/alterdec/src2/r6ti.cpp`；当前 GitHub 名称重定向为 tsdko |
+| ALT | 实际参考的 tsudoko/chinesize 副本 `ad5bdad900e31edf2a17640d1d243470a58b29a8` | `Rugp/alterdec/src2/r6ti.cpp`；当前 GitHub 名称重定向为 tsdko |
 | RGT | rugptools／osmium76 `3ff587416e41eeeee7122fb122c90f7a36c409dd` | rUGP 与 alterdec 行为研究，Cr6Ti 预测知识链 |
 | RX | muzhi，RioX **1.2.143.810**，随包日期 2013-10-08 | CRmti 整数、位流、行范围与预测的反汇编参考 |
 | N | Noto Sans SC 可变字体，`Version 2.04;241114210130;non-release` | 基础中文字形；输入 SHA-256 `763146584CF0710223441356B4395E279021B0806C196614377A7A0174AE074A` |
@@ -371,7 +340,7 @@ flowchart TD
 
 官方剧本、插画、角色、UI 原图、声音、游戏演出、引擎格式和 Steam 成就属于官方；Noto 原始字形属于字体上游。Windows GDI／WIC、Python、NumPy、Pillow、fontTools、Zig／Clang、.NET、zlib、pefile、反汇编工具、语音／图像模型和平台 API 提供基础能力。本项目贡献是针对游戏的研究、程序、输入处理、绑定、集成和实际修复。
 
-thcrap、07th-Mod、Committee of Zero、Tsukihimates、VNTranslationTools、Kuriimu2 的现有记录只支持工作流／组织设计参考，不把它们当成光子之花／光子旋律编解码或安装器的直接源码来源。其他本机保存的 GARbro 分支等无明确采用证据者，仍列在来源报告的“候选工具”中。
+thcrap、07th-Mod、Committee of Zero、Tsukihimates、VNTranslationTools、Kuriimu2 提供工作流／组织设计参考，不作为光子之花／光子旋律编解码或安装器的直接源码来源。
 
 ## 6. 组件实现与代码索引
 
@@ -381,41 +350,19 @@ thcrap、07th-Mod、Committee of Zero、Tsukihimates、VNTranslationTools、Kuri
 | --- | --- | --- |
 | 归档读取与加密 | [rio_inventory.py](../../../rUGP/tools/catalog/rio_inventory.py)、[crypto.py](../../../rUGP/formats/rio/crypto.py)、[ruo.py](../../../rUGP/formats/rio/ruo.py) | 来源声明、算法实现、偏移／长度与 footer 合同 |
 | 原生文本 | [crsa_vm_stream.py](../../../rUGP/formats/rio/crsa_vm_stream.py)、[crsa_vm_edit.py](../../../rUGP/formats/rio/crsa_vm_edit.py)、[crsa_vm_rewire.py](../../../rUGP/formats/rio/crsa_vm_rewire.py) | 顺序解析、索引和字段编辑；不把可运行的实验 writer 自动当生产默认 |
-| 最终正文组装 | [最终固定范围处理（本地记录 L06）](evidence-index.md#l06)、[写入组装副本（本地记录 L07）](evidence-index.md#l07)、[最终清单（本地记录 L08）](evidence-index.md#l08) | 164 个记录、57,723 条、全部固定 extent，具体范围与产物身份；早期脚本默认输出名需结合交接看 |
-| 最终 RUO 组装 | [assemble_archives.py（本地记录 L09）](evidence-index.md#l09) | 明确移除旧正文 RUO，保留指定图像记录并合并 CRmt；成品解析结果与组装规则一致 |
+| 最终正文组装 | [原生写回](../../../rUGP/docs/postmortems/crsa-writeback.md)、[打包边界](../../../rUGP/packaging/README.md) | 历史玩家包使用固定范围正文；公开组件尚缺完整自动组装链路 |
+| 最终 RUO 组装 | [RUO 格式](../../../rUGP/docs/postmortems/ruo-overlay.md)与[包组成](#3-正式包结构与资源分工) | 合并指定图片对象并排除旧正文重定向，避免覆盖新文本 |
 | 图片编解码 | [格式目录说明](../../../rUGP/formats/images/README.md)、[CRip008 研究](../../../rUGP/docs/postmortems/crip008.md)、[CRmt 对象说明](../../../rUGP/docs/crmt-family.md) | 各自封装、位流、预测、Alpha、对象结构和支持范围 |
 | 图片运输转向 | [图像运行时复盘](../../../rUGP/docs/postmortems/image-transport-runtime.md)、[shared／common](../../../rUGP/docs/postmortems/shared-common-images.md) | 为什么 bitmap 正确仍不显示，以及为何按真实端点分流 |
-| 早期 V6 分流 | [8 月 27 日安装输入（本地记录 L10）](evidence-index.md#l10) | 追加、ICI、scatter、原始／加密引用、CS5i 与碰撞组；本清单自身是静态状态 |
-| 恢复官方对象承载 | [光子之花 8 月 28 日清单（本地记录 L11）](evidence-index.md#l11)、[光子旋律 8 月 30 日清单（本地记录 L12）](evidence-index.md#l12) | 明确的父引用恢复、少量自定义记录保留与 PNG 身份路由 |
 | 运行时核心 | [代理入口](../../../rUGP/runtime/src/photon_combined_proxy.c)、[表面写入事务](../../../rUGP/runtime/src/photon_v6_surface_transaction.c)、[精确 PNG 加载器](../../../rUGP/runtime/src/photon_v6_exact_rgba_sidecar_loader.c)、[构建器](../../../rUGP/runtime/build.py) | 正式 C／汇编模块、配置身份与构建方式；不凭当前默认 profile 推断所有历史 DLL |
-| 字体 | [字体运行时复盘](../../../rUGP/docs/postmortems/font-runtime.md)、[原始 PhotonCN 构建审计（本地记录 L13）](evidence-index.md#l13) | 上游字形、子集、名称、四路配置与 GDI 的不同职责 |
+| 字体 | [字体运行时](../../../rUGP/docs/postmortems/font-runtime.md)、[字体来源](../../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md) | 字形、子集、名称、四路配置与 GDI 的职责 |
 | 玩家组装与安装 | [build_photon_player.py](../../../rUGP/packaging/build_photon_player.py)、[PhotonInstaller.cs](../../../rUGP/packaging/windows/PhotonInstaller.cs)、[Install-PhotonCN.ps1](../../../rUGP/packaging/windows/Install-PhotonCN.ps1) | 差分、升级基线、EXE 包装、无备份安装与自动检查 |
 | 版本修复 | [图片索引](../../../rUGP/docs/postmortems/player-image-index-20260910.md)、[回看动作](../../../rUGP/docs/postmortems/backlog-return-action-20260910.md)、[光子旋律特殊字体](../../../rUGP/docs/postmortems/pm-special-text-20260911.md) | R2→r3→光子旋律 r4 的具体内容变化及缺陷归属 |
 
-## 7. 发布包验证与文件身份
+## 7. 采用范围与继续阅读
 
-以下为发布包的离线结构和文件身份验证，实机测试范围另见各项故障复盘：
+上方包组成对应所列历史版本。后续版本可能更换正文、字体、DLL 和图片，采用身份以自己的包清单为准，玩家从[下载指南](../../player/README.md)选择版本。
 
-1. **两份正式清单**：验证对象为光子之花 r3、光子旋律 r4 的正式包清单。
-2. **实际 RUO 文件**：完整文件 hash 与包清单一致，解析全部映射；50 个 CRmt 载荷匹配历史确认记录 hash；光子之花剩余一个 Cr6Ti 用严格解码器解析和解码。
-3. **最终差分里的追加区**：直接从补丁 segment 重构每个新增字节，证明完整覆盖；光子之花、光子旋律历史追加前缀 hash 均匹配。
-4. **最终文本清单**：164 个固定范围 CRsa、57,723 条；r3 回看修复与 r4 七记录修复另由对应构建／发布记录衔接。
-5. **GitHub 发布身份**：两个 Release 均 `prerelease=false`；光子之花 ZIP 为 112,873,626 字节，光子旋律 ZIP 为 152,585,277 字节。
+当前公开代码支持各组件及部分绑定，尚不能从干净游戏输入自动重建所有历史玩家 ZIP。源码组件、旧快照和发布载荷分开使用；未公开的私有组装输入不能仅靠摘要还原。
 
-| 发布件 | GitHub Release SHA-256 |
-| --- | --- |
-| 光子之花 BETA 0.1 ZIP | `E8933FAB8D3E4285A82269653B3F58D738BA6B2803BC2C96B956D5D148EFCCC3` |
-| 光子旋律 BETA 0.1.1 ZIP | `85D9D023494570ABC7025F10F924517706E706B722B86515C43AD5D34C5D9BAF` |
-
-发布页：[光子之花 BETA 0.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1)、[光子旋律 BETA 0.1.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.1)。光子之花 GitHub UTC 发布时间为 9 月 9 日 17:36:54，对应悉尼 9 月 10 日凌晨。
-
-机器可读结果：[release-route-audit.json](evidence/release-route-audit.json)。复核脚本：[audit_routes.py（本地记录 L14）](evidence-index.md#l14)。脚本读取历史记录和正式载荷，并通过 `gh api` 获取 Release 身份；结果输出为独立核查文件，不修改游戏。
-
-### 证据强度与范围
-
-- 历史路径、源文件、哈希能证明发生过相应实现和试验；不能仅凭文件名叫 final／release 认定已验收。
-- 静态解码能证明相应样本和算法合同；不能证明游戏实际选中该对象。
-- 实机载荷进入内存不等于已绘制；画面出现也不自动证明所有状态／全部分支。
-- 玩家安装和文件 hash 一致，不等于整部作品全剧情走完。
-- 技术表覆盖有实现或实验记录支持的组件；未留存的历史过程不在记录范围内。
-- 外部译文逐句采用、部分图片逐图制作作者／模型／字体仍有来源缺口，沿用来源报告的边界；这不妨碍技术运输路线已从实际包核实。
+故障原因与支持子集见[rUGP 案例](../../../rUGP/docs/postmortems/README.md)，未解决的源文差异、调用定位与覆盖范围见[适用范围](../../../rUGP/docs/limitations.md)。字体及外部文本的来源缺口仍保留在[来源说明](provenance.md)。

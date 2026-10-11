@@ -1,6 +1,6 @@
 # 光子之花／光子旋律汉化技术来源与贡献分类
 
-[总览](README.md) · [技术来源分类](provenance.md) · [完整蓝图](blueprint.md) · [证据索引](evidence-index.md)
+[总览](README.md) · [技术蓝图](blueprint.md) · [组件索引](evidence-index.md)
 
 资料截至：2026-09-12。适用范围：Steam 光子之花／光子旋律的资源研究、中文内容、字体、运行时与发布流程。
 
@@ -22,15 +22,7 @@
 
 CRip008 的解码和 kind2／kind3 编码属于第三类：实现依据是官方头部、原生解码器的 MSB 位流、4096 项整数表、预测及 Alpha 规则，并经过回读和游戏路线验证。支持范围限定于已实现、已验证的目标子集。
 
-### 资料依据与验证类型
-
-- 上游来源：保存的源码副本、固定 Git 提交、源码与程序 SHA-256，以及相关源码注释。
-- 项目实现：公开代码、历史构建脚本、资源清单、字体审计、故障复盘和发布记录。
-- 发布基线：光子之花 r3、光子旋律 r4 的实际包清单、RUO 载荷、RIO／ICI 差分及文本组装记录；对应源码快照为 `1972bd9c0e792087842e805e9a90e626e79a118d`，与开发提交 `6caab1176bc50350d39555374bd15015363b5f4b` 内容一致。
-- 离线测量：RioX 程序和六段机器码哈希、基础字体身份、光子之花 CRip007 原始样本的旧／新解码器对比，以及正式包资源路径核验。
-- 历史验证：全量图片回读、编码审核和已记录的实机测试，分别注明样本数量、时间和适用范围。离线结果与实机结果分开列示。
-
-公开摘要与本地历史记录的范围见[证据索引](evidence-index.md)。
+本文按固定上游版本、公开组件及所列历史玩家包说明采用范围。代码和素材入口见[组件索引](evidence-index.md)；现行玩家版本见[玩家指南](../../player/README.md)。
 
 ## 2. 上游来源与参考版本
 
@@ -41,7 +33,7 @@ CRip008 的解码和 kind2／kind3 编码属于第三类：实现依据是官方
 | alterdec：本项目实际使用的 chinesize 副本 | remote 保存为 `https://github.com/tsudoko/chinesize.git`，提交 `ad5bdad900e31edf2a17640d1d243470a58b29a8`；GitHub 当前重定向至 `tsdko/chinesize` | 历史审核明确绑定 `Rugp/alterdec/src2/r6ti.cpp`。此提交标识实际参考副本，并非 alterdec 最初发布版本。上游沿革还包括 regomne/chinesize、hiko_bae 的工作。 |
 | rugptools／osmium76 | `3ff587416e41eeeee7122fb122c90f7a36c409dd` | rUGP 对象与 alterdec 行为研究；早期 CRmti 探索明确借用 alterdec／rugptools 的 Cr6Ti 预测规则。其 README 记载部分代码源自 hiko_bae 的 alterdec，相关算法来源沿此链条注明。没有证据表明整套库被编进玩家补丁。 |
 | **RioX／muzhi** | **1.2.143.810，随包 readme 更新日期 2013-10-08** | CRmti 位流、整数、行范围、透明段与颜色预测的重要反汇编参考。它是研究参照程序，玩家安装和现行构建不需要执行 RioX。 |
-| Noto Sans SC | 本机原始 `NotoSansSC-VF.ttf`；字体内版本 **`Version 2.04;241114210130;non-release`** | PhotonCN／PhotonR2 基础字形来源。我们做静态化、子集、度量、家族名及引擎专用改造，没有自行设计整套中文字形。 |
+| Noto Sans SC | 实际使用的 `NotoSansSC-VF.ttf`；字体内版本 **`Version 2.04;241114210130;non-release`** | PhotonCN／PhotonR2 基础字形来源。我们做静态化、子集、度量、家族名及引擎专用改造，没有自行设计整套中文字形。 |
 
 固定版本源码：[GARbro ArcRIO.cs](https://github.com/morkt/GARbro/blob/b09ee4570ccb1daf6ac56710ee8934dc0b8baeb0/ArcFormats/rUGP/ArcRIO.cs)、[GARbro ImageRIP.cs](https://github.com/morkt/GARbro/blob/b09ee4570ccb1daf6ac56710ee8934dc0b8baeb0/ArcFormats/rUGP/ImageRIP.cs)、[AFEditor CR6Ti.cs](https://github.com/eplightning/afhook/blob/3f613a097c07d3d9fb9969a130ea6d859b544f8a/editor/AFEditor/CR6Ti.cs)、[AFHook CImageWriter.cpp](https://github.com/eplightning/afhook/blob/3f613a097c07d3d9fb9969a130ea6d859b544f8a/plugin/afhook/CImageWriter.cpp)、[实际参考的 alterdec 副本](https://github.com/tsdko/chinesize/blob/ad5bdad900e31edf2a17640d1d243470a58b29a8/Rugp/alterdec/src2/r6ti.cpp)、[rugptools](https://github.com/osmium76/rugptools/tree/3ff587416e41eeeee7122fb122c90f7a36c409dd)。
 
@@ -82,7 +74,7 @@ Cr6Ti 的已知状态机来自 AFHook C++、AFEditor C# 与 alterdec C++。本�
 
 光子旋律 VoiceSkip 的容量试验曾使用官方调色板／Alpha 条件，将 6,040 字节压至 3,484 字节以适配 3,488 字节容量。这是存在精度损失、未获采用的候选。正式图片方案另包含原生记录和 PNG 运行时替换，具体采用范围以发布载荷为准。
 
-主要证据：[原始 Cr6Ti 兼容性结论（本地记录 L15）](evidence-index.md#l15)、[官方样本 census（本地记录 L16）](evidence-index.md#l16)、[当前编码器](../../../rUGP/formats/images/cr6ti_encode.py)。
+实现见[现行编码器](../../../rUGP/formats/images/cr6ti_encode.py)。
 
 ## 4. CRip007 来源、原生像素适配与移植修复
 
@@ -102,24 +94,13 @@ GARbro 固定提交的 `ImageRIP.cs` 提供通道位数、位流、预测和无 
 | 灰度抗锯齿精度 | 原始 6／6／6 位不足以精确保留中文候选的 256 个灰度级；审核后的灰度编码改为 8／8／8 | 本项目针对文字图片的编码扩展；不代表支持所有理论 flag 组合 |
 | 封装 | 40 字节头＋指定长度 payload，没有 trailer | 按实际样本实现，不能套 Cr6Ti 的两字节尾部 |
 
-### 原始样本离线对比
+### CRip007 移植时需注意
 
-对比样本取自光子之花原始 RIO，偏移 `0x1AD8246C`、长度 57,846 字节。先检查源记录哈希，再分别运行本项目旧、新解码器：
-
-- 原图 800×600，q=3、pred_flag=1、通道 6／6／6。
-- 源记录 SHA-256：`96C70B17D7A01F8335C42255E651AEBBA8A47C6D6A429B88E53FB5E745D8CFA1`。
-- 480,000 个像素中，**255,533 个 RGB 不同**，首个差异行索引为 75，最大单通道差为 255。
-- 修正版 RGBA SHA-256：`B97ADD760ED8F0092E139267C1B332365C01AD20E7DD9DF84ABAC03956934AA2`，与历史 canonical 完全一致。
-
-该测量比较本项目历史移植与修正版，仅覆盖上述原始样本；验证方式为离线解码，未执行上游 C# 或游戏。历史编码审核另记录 4 个目标的独立回读零像素差。
-
-证据：[离线对比结果](evidence/crip007-readonly-replay.json)、[重放脚本（本地记录 L17）](evidence-index.md#l17)、[现行解码器](../../../rUGP/formats/images/crip007_decode.py)、[历史编码审核（本地记录 L18）](evidence-index.md#l18)。
+测试有预测的 6／6／6 样本，比较 RGB 与 alpha、首次差异行及完整 payload 消费，能够定位符号位、预测和数值语义的移植错误。原生适配不能只以 Python 编解码自洽判断；实现见[CRip007 解码器](../../../rUGP/formats/images/crip007_decode.py)。
 
 ## 5. RioX 版本与 CRmti 参考规则
 
 ### 精确程序身份
-
-保存位置：`local-record/local-internal/third-party-readonly/RioX-1.2.143.810/`。
 
 | 项目 | 核查结果 |
 | --- | --- |
@@ -134,16 +115,14 @@ GARbro 固定提交的 `ImageRIP.cs` 提供通道位数、位流、预测和无 
 
 | RioX 位置／规则 | 本项目对应证据 | 实际用途 |
 | --- | --- | --- |
-| `0x41D1E8` 的宽有符号编码 | 主目录 `probe_crmt.py::read_signed_wide`、`build_custom_crmt.py::write_signed_wide` 的直接注释 | 确认 CRmti 行范围等字段使用的宽整数编码；随后实现其反向写入，不能拿 Cr6Ti 短编码的 ±127 范围替代 |
-| `0x41D12B` 的短编码差异 | 3016 工作树 `probe_generalized_codec.py`；现行 `crmti_decode.py` 仍有 RioX 注释 | LSB 短格式达到六组 continuation 后终止；MSB 分支有不同终止行为 |
+| `0x41D1E8` 的宽有符号编码 | 有符号宽整数的读写实现 | 确认 CRmti 行范围等字段使用的宽整数编码；随后实现其反向写入，不能拿 Cr6Ti 短编码的 ±127 范围替代 |
+| `0x41D12B` 的短编码差异 | 现行 `crmti_decode.py` 的 RioX 参考注释 | LSB 短格式达到六组 continuation 后终止；MSB 分支有不同终止行为 |
 | flags `0x08` 及位流方向 | `CrmtiBitReader` 和泛化探针 | 区分实际观察的 `0x07`／`0x0F` 格式；不能把一套读位顺序套在全部记录上 |
-| `0x41E114`、`0x41E2CC` 的行范围状态 | 3016 探针及现行代码“Both RioX readers reset…”注释 | 空行 span=0 时，累积的横向起点归零，避免后续行水平错位 |
-| `0x41D3F4`、`0x41D920` 等颜色预测逻辑 | `stage2_verify_transparency_fix.py` 及原生指令摘录 | 核对量化的 RGB 状态、数值处理及透明区段的缓存行为 |
-| 元数据到透明段清零分支 | 历史 stage2 验证保存六段精确指令区间与哈希 | 当时针对条带问题确认：观察到的 `0x0F` 模式清空透明区段 RGB 缓存，`0x07` 模式保留；两份自写解码器曾共享漏分支问题 |
+| `0x41E114`、`0x41E2CC` 的行范围状态 | 现行代码“Both RioX readers reset…”注释 | 空行 span=0 时，累积的横向起点归零，避免后续行水平错位 |
+| `0x41D3F4`、`0x41D920` 等颜色预测逻辑 | 对应颜色预测分支 | 核对量化的 RGB 状态、数值处理及透明区段的缓存行为 |
+| 元数据到透明段清零分支 | 对应透明段清零分支 | 当时针对条带问题确认：观察到的 `0x0F` 模式清空透明区段 RGB 缓存，`0x07` 模式保留；两份自写解码器曾共享漏分支问题 |
 
-六个保存的机器码区间为：`0x40900C–0x409098`、`0x41DA3A–0x41DA5F`、`0x41DDB7–0x41DDC2`、`0x41DEA4–0x41DF61`、`0x42B9E8–0x42BA01`、`0x41D3F4–0x41D5D2`，结束地址不包含。保存的 RioX.exe 中，**六段哈希均与历史验证记录一致**。
-
-历史透明段修正验证包含 77 次三方比较、24 个手工状态样本、24 个旧行为反事实检查、12 个畸形输入和 29 个冻结样本。报告自己限定为静态参考验证；**RioX 是第三方程序，反汇编 RioX 不等于执行了 Steam 原生游戏解码器。**
+RioX 是第三方参考程序，反汇编它不等于执行 Steam 原生游戏解码器。支持范围仍需按目标游戏样本与现行实现确认。
 
 ### 项目实现与适配范围
 
@@ -155,7 +134,6 @@ CRmt 是父对象，CRmti 存储像素，CRimp 表示类型化属性；内嵌 mi
 
 公开通用工具、历史试验脚本和正式包载荷分别绑定版本与验证范围。透明段修正的全量验证属于对应历史实现；现行 helper 的支持范围以自身代码和测试为准，正式包则依据具体载荷与路由结果判断。
 
-证据：[随包 readme（本地记录 L19）](evidence-index.md#l19)、[初期 CRmti 探针（本地记录 L20）](evidence-index.md#l20)、[历史透明段验证（本地记录 L21）](evidence-index.md#l21)、[机器码哈希核验（公开节选）](evidence/source-chain-summary.json)。
 
 ## 6. 基础字体与引擎适配
 
@@ -163,19 +141,17 @@ PhotonCN 构建审计与构建器记录的基础输入及改造如下：
 
 | 环节 | 已确认内容 |
 | --- | --- |
-| 基础输入 | `local-record/NotoSansSC-VF.ttf`，17,773,244 字节；family=Noto Sans SC；version=`Version 2.04;241114210130;non-release` |
+| 基础输入 | `NotoSansSC-VF.ttf`，17,773,244 字节；family=Noto Sans SC；version=`Version 2.04;241114210130;non-release` |
 | 输入 SHA-256 | `763146584CF0710223441356B4395E279021B0806C196614377A7A0174AE074A` |
-| 初代构建器 | bf82 工作树 `tools/font/build_photoncn_font.py`，SHA-256 `86D346C0EABE7546C8804B40EF5A1F7086E0AAC9BBBEC307EA359C6625BF5F2B` |
 | 构建处理 | 将可变字体固定为 wght=400，保留所需码点子集，改名 PhotonCN，处理 hhea／OS2 度量与 codepage 标志 |
 | 是否混入微软雅黑／MS PGothic 字形 | 基础构建记录的字形来源为上述 Noto 文件；审计明示参考字体不影响输出字节，MS PGothic 用于度量／覆盖对照，不是字形来源 |
-| 初代 PhotonCN 输出 | SHA-256 `B807475C9F60D34711703BACC6D919AF1E619BD92273236E274A2495D2ABC25B`，已核对 |
+| 初代 PhotonCN 输出 | SHA-256 `B807475C9F60D34711703BACC6D919AF1E619BD92273236E274A2495D2ABC25B` |
 | 后续适配 | U+2060 零宽字形、独立家族名 PhotonR2、光子旋律 227 个 PUA 选项字形别名、竖向度量修复，以及“珥”补字；“珥”来源仍是同一 Noto 输入哈希 |
-| 光子之花最终字体 | `AADF895003AE6452E1FBDCA1B64206B77D6F9A6EEBE226C31D46D1247AD4830B` |
-| 光子旋律最终字体 | `3D1CDF9B8C3CA71D09ECBF5A380FA7F6E9D2F2EE4BB020805711B42FA4322F3B` |
+| 光子之花 BETA 0.1 字体 | `AADF895003AE6452E1FBDCA1B64206B77D6F9A6EEBE226C31D46D1247AD4830B` |
+| 光子旋律 BETA 0.1.1 字体 | `3D1CDF9B8C3CA71D09ECBF5A380FA7F6E9D2F2EE4BB020805711B42FA4322F3B` |
 
 PhotonCN／PhotonR2 是 **Noto Sans SC 的修改与引擎适配版**，保留上游版权和 OFL。基础字形与输入文件身份已固定，历史下载渠道未确认。栅格图片中的字体单独记录，不统一归为游戏运行时字体。
 
-证据：[基础字体构建审计（本地记录 L13）](evidence-index.md#l13)、[基础构建器（本地记录 L22）](evidence-index.md#l22)、[光子旋律补字说明](../../../rUGP/docs/postmortems/pm-er-20260909.md)。
 
 ## 7. 其他组件的完整归属表
 
@@ -185,7 +161,7 @@ PhotonCN／PhotonR2 是 **Noto Sans SC 的修改与引擎适配版**，保留上
 | --- | --- | --- | --- |
 | RIO／ICI 目录解析 | GARbro ArcRIO.cs 的反序列化与目录逻辑 | 维护型 Python 移植；光子之花／光子旋律的分卷、范围、父引用、身份、清单和异常检查 | 明确移植＋适配 |
 | ICI 解密与 RIO 地址编码 | GARbro `DecryptIci`、`ReadEncrypted`、`DecodeOffset`、`DecodeSize` 的既有算法；包括字节重排、差分／异或、0x20 分段校验、密钥推进、位变换 | Python 对应实现、加密逆过程、保头与写回检查 | 算法重实现／逆过程扩展，不是发明加密算法 |
-| 修改过的 GARbro 研究副本 | b09ee457 基线 | 本机 ArcRIO.cs 增加对象类标签、CBoxOcean／OceanNode 映射、2／4 偏移单位处理、Unicode CString、诊断等 | 历史研究代码修改；目录也用于主篇／AL，不能把每一行变化都算成光子之花／光子旋律专属贡献 |
+| 修改过的 GARbro 研究副本 | b09ee457 基线 | 研究版 ArcRIO.cs 增加对象类标签、CBoxOcean／OceanNode 映射、2／4 偏移单位处理、Unicode CString、诊断等 | 历史研究代码修改；目录也用于主篇／AL，不能把每一行变化都算成光子之花／光子旋律专属贡献 |
 | CRsa／CVM 原生文本结构 | 游戏原有命令、CString、字符串池、引用与语言槽；已有资源／加密知识 | 目标版本的顺序完整解析、字段身份、池引用、注释绑定、边界判定与中文写回 | 本项目版本专用实现，建立在已有格式研究基础上 |
 | 正文漏提取检查 | 官方光子之花 201、光子旋律 265 个 CRsa 记录 | 检查正文、受语音控制字段、注释、池尾与非待译兵装字段，补提取和修复实际漏项 | 本项目资源普查与文本工作 |
 | 文本写入路径 | 官方原生记录与覆盖机制 | 中间阶段光子之花累积 RUO、光子旋律部分记录固定 extent 写分卷；最终两作 164 个正文显示 CRsa 统一固定范围写入 RIO，旧正文 RUO 覆盖移除 | 本项目写入与安装适配；不能把 append／rewire 试验或中间分工作全部正式默认路线 |
@@ -209,18 +185,7 @@ PhotonCN／PhotonR2 是 **Noto Sans SC 的修改与引擎适配版**，保留上
 
 现行代码入口：[目录与资源工具](../../../rUGP/tools/catalog/rio_inventory.py)、[加密实现](../../../rUGP/formats/rio/crypto.py)、[CRsa 解析](../../../rUGP/formats/rio/crsa_vm_stream.py)、[CRmt 结构说明](../../../rUGP/docs/crmt-family.md)、[运行时构建](../../../rUGP/runtime/build.py)、[安装器](../../../rUGP/packaging/windows/PhotonInstaller.cs)。
 
-## 8. 其他研究资料与采用范围
-
-以下仓库保存在研究资料中，但缺少实际采用记录，因此不列为光子之花／光子旋律算法或载荷来源：
-
-| 仓库 | 本机提交 | 判定 |
-| --- | --- | --- |
-| crskycode/GARbro | `48d7066485f712827b5cc2b9e758aba9a4ab6e8a` | 历史研究副本；不能仅因目录存在就说正式方案采用其修改 |
-| nanami5270/GARbro-Mod | 同上 `48d7066485f712827b5cc2b9e758aba9a4ab6e8a` | 同样限定 |
-| UserUnknownFactor/GARbro2 | `afcda6feed8eac0d6414f2c81154223372bf8e68` | 同样限定 |
-| tsdko/deoptimizeobs | `a710a6482d3191a26180c60b2eaa8b610a259f35` | 同样限定 |
-
-另有 official-riorha2、official-rugp-runtime 等研究目录；没有足够记录证明其中程序进入正式玩家包。这些目录归为采用范围未确认的候选资料。
+## 8. 工作流参考与基础依赖
 
 thcrap、07th-Mod python-patcher、Committee of Zero SGHD Patch、Tsukihimates、VNTranslationTools、Kuriimu2 的记录支持“仓库边界、玩家入口、语言层、提取／编辑／写回分离等工作流研究”，不支持“直接用它们完成光子之花／光子旋律解包和安装”。相关工作流研究未完整固定历史提交，版本范围保留为未确认。
 
@@ -237,13 +202,12 @@ FatePackageManager／主任保护协会的松散覆盖启发属于 AGE2 研究�
 | 光子之花 Ages3ResT.dll，640,512 字节 | 本项目组合运行时；SHA-256 `80F311F3AC8FAEA4612C779CAF718E238FE0ACAADB8CB739A4917D8C44AFB684` |
 | 光子旋律 Ages3ResT.dll，613,888 字节 | 本项目组合运行时；SHA-256 `F3EEEA147CFC746EB57DB51B9370E8051AAFFEAE5044237342F5035A780217B3` |
 | 光子之花 private.dll／光子旋律 official.dll，15,360 字节 | 相同的官方资源 DLL 字体名修改版；SHA-256 `022079515CB9856B8A2ED452535C939EE410DABF805A5B505D18A0E711AEFB7D`；official 文件名不表示未修改 |
-| 光子旋律 private.dll，244,224 字节 | 本项目选项位图 wrapper，与旧 0713 工作树 v8 产物完全同哈希：`5991C0170B7AB71CFB661D53D15CD5A1CB616BB62695DBC02E97756BB961A4AE` |
+| 光子旋律 private.dll，244,224 字节 | 本项目选项位图 wrapper，用于选项字形的栅格适配：`5991C0170B7AB71CFB661D53D15CD5A1CB616BB62695DBC02E97756BB961A4AE` |
 | ages_screenSv.dll，137,216 字节 | 官方文件字体名修改版；SHA-256 `6BF8300B5EAC07B39F67BF5C1F32D337935E5606CE2EAD3BF1C2B001929DF0C6` |
 | 光子之花／光子旋律 EXE | 官方 EXE 的指定补丁版，不能将整个 EXE 视作我们的程序作品；字体改名是其中一项改动，最终文件身份以完整哈希为准 |
 
 载荷包含本项目编写的转发／替换模块，以及修改过的官方 DLL 和 EXE；这些组件分别列明来源。
 
-证据：[实际包固定文件清单](evidence/shipped-fixed-files.json)。
 
 ## 10. 内容贡献与来源记录
 
@@ -265,17 +229,6 @@ FatePackageManager／主任保护协会的松散覆盖启发属于 AGE2 研究�
 
 上述待确认事项不计入已确定的来源归属或数量。
 
-## 11. 技术记录索引
+## 11. 继续阅读
 
-以下是本地核查记录的名称及用途，不代表原始文件均已上传；公开的测量摘要见[证据索引](evidence-index.md)。
-
-| 文件 | 内容 |
-| --- | --- |
-| `historical-research-checkouts.json` | 上游本地副本 remote、完整提交与保存路径 |
-| `historical-garbro-ArcRIO-adaptation.diff` | 旧 GARbro 研究副本相对固定上游的实际代码差异 |
-| `verified-source-chain.json` | RioX 六段指令的重新哈希核对、旧 Cr6Ti／字体审计及 23 分支目录检查 |
-| `crip007-readonly-replay.json`、`replay_crip007.py` | 真实原始记录离线旧／新解码对比及复核脚本 |
-| `github-issues-and-prs.json`、`github-releases.json`、`github-issue-comments.json` | 当前 GitHub 历史记录快照 |
-| `github-branches.json`、`github-branch-trees/`、`github-current-to-main.json` | 远端分支、完整目录树及现行文件一致性 |
-
-公开的文件身份、测量结果及本地历史记录摘要见[证据索引](evidence-index.md)。
+[技术蓝图](blueprint.md)按组件解释资源处理与运行路径，[组件索引](evidence-index.md)提供源码和数据入口，[适用范围](../../../rUGP/docs/limitations.md)保留未解决问题。

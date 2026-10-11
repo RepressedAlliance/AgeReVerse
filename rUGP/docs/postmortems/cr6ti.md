@@ -6,7 +6,7 @@ An early runtime candidate redirected one byte more than the serialized Cr6Ti
 object. It displayed because the decoder obeyed the payload length and ignored
 the trailing zero, but “the game tolerated it” was not an exact format proof.
 
-## Controlled audit
+## Serialized extent
 
 The standard records in the 光子之花 image authority use:
 
@@ -27,11 +27,11 @@ placement padding         1
 placement span       26,868
 ```
 
-A read-only census of 533 光子之花 must-translate Cr6Ti records found 531 standard
-records with a two-byte zero trailer: 433 kind3/flags7, 44 kind2/flags7 and 54
-kind2/flags15. The remaining two were a distinct legacy 0x28-byte
-kind2/flags3 profile with no trailer. All 533 computed extents matched the
-independent catalog extents.
+The supported standard profiles include kind3/flags7, kind2/flags7 and
+kind2/flags15 with a two-byte zero trailer. Two known legacy records use a
+distinct 0x28-byte kind2/flags3 header with no trailer. Identify the profile
+before calculating extent; the legacy shape does not make the standard
+trailer optional.
 
 ## Production rule
 

@@ -1,6 +1,6 @@
 # CRip007: from compressed bytes to an exact grayscale replacement
 
-## Reference and independent proof
+## Reference and supported profile
 
 GARbro's MIT-licensed `ArcFormats/rUGP/ImageRIP.cs` documents the CRip007
 channel-bit fields and its no-alpha Bgr32 branch. That was a decoder reference,
@@ -26,13 +26,12 @@ reviewed encoder therefore preserved the structural header template, changed
 only the three channel-bit fields to 8/8/8, and updated payload length. It did
 not append a fake trailer or count placement padding as payload.
 
-## Verification
+## Encoding checks
 
-Both the complete audited CRip007 decoder and an independent 8-bit/no-residual
-grayscale decoder consumed the replacement payload exactly and produced RGBA
-bytes identical to the approved candidate: zero channel error, zero changed
-pixels and zero alpha error. Header bounds and 光子之花/光子旋律 unit-4 redirect keys were
-checked separately.
+Decode the replacement with both the strict codec and an independent
+8-bit/no-residual grayscale decoder. Require exact payload consumption and
+RGBA equality, including alpha; check header bounds and the Photon unit-4
+redirect keys separately.
 
 The public decoder/encoder and synthetic tests are in
 [`rUGP/formats/images/`](../../formats/images/README.md). The result establishes

@@ -7,7 +7,7 @@ At record `photonflowers11.rio:488271272`, order 98 uses `伶` in the annotation
 glyphs for both. This was a font coverage omission, separate from the 光子旋律
 [special-text directive issue](pm-special-text-20260911.md).
 
-The audit covered the current 13,025 光子之花 entries and 44,698 光子旋律 entries, including
+The BETA 0.1 repair considered 13,025 光子之花 entries and 44,698 光子旋律 entries, including
 Chinese annotations. 光子之花 needed 11 absent characters: **亟伶抉捆涟淀漪箍绎菊诘**.
 光子旋律 had no missing characters within this scope. It does not establish that all
 other UI surfaces, images, runtime font choices, or complete routes are fault-free.
@@ -53,6 +53,4 @@ notices remain bundled. Internal build: `2026.09.14-r4`.
 The fixed font covers every required 光子之花 body/annotation codepoint. Windows GDI
 at 12, 24, and 36 pixels renders all 11 additions; representative existing
 body/annotation dimensions are unchanged. In-game checks confirmed `首席女伶`,
-`亟待收复`, and `积淀`. New empty-slot saves were made at the three exact lines;
-reloading the annotation save restored its expected line. The maintainer
-accepted the repair. No claim of exhaustive route testing is made.
+`亟待收复`, and `积淀`. The repaired annotation also survived a save/reload check. No claim of exhaustive route testing is made.
