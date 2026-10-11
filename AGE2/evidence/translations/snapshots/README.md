@@ -9,10 +9,9 @@
 
 这些快照不是“当前表与所有历史 Release 逐字节相同”的声明。旧分支、公开快照和发布后
 修正之间存在差异，必须按稳定 ID 对下载的 Release 载荷逐作解决。具体见
-[`authority-alignment-audit.md`](authority-alignment-audit.md)。
+[快照与发布兼容性](compatibility.md)。
 
 ## English summary
 
 These records bind five portable Chinese tables to sealed source-bearing
-exports without mirroring the complete official script. Historical Release
-alignment remains a separate per-game audit.
+exports without mirroring the complete official script. Comparing a historical Release requires matching its exact payload and resolving revisions by stable record identity.

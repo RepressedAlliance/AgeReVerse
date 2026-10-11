@@ -68,7 +68,7 @@ ICI 目录元数据
 | [松散覆盖边界](../../AGE2/docs/postmortems/loose-overlay-boundary.md) | 补丁保持 `root/...` 相对路径写入 LocalAppData，游戏优先于 `pack.bin` 读取；Steam 验证不会清理这一层 | [AGE2 工作流](../../AGE2/docs/workflow.md) |
 | [结构性空槽](../../AGE2/docs/postmortems/structural-empty-records.md) | 一部分空记录是引擎结构，不是漏译；必须以源身份和字段类型判断，不能按“空白数量”盲补 | 文本导出器与审计表 |
 | [失败的字形替换](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md) | 用近似字或字形偷换掩盖缺字会破坏文本权威，现已改为真实字体覆盖门 | [字体检查](../../Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/font_coverage.py) |
-| [公开快照与发布包对齐](../../AGE2/docs/postmortems/public-snapshot-release-alignment.md) | 可维护表、旧分支和历史 ZIP 不是天然同一权威，必须逐作以哈希和载荷审计对齐 | [对齐审计](../../AGE2/evidence/translations/snapshots/authority-alignment-audit.md) |
+| [公开快照与发布包对齐](../../AGE2/docs/postmortems/public-snapshot-release-alignment.md) | 可维护表、旧分支和历史 ZIP 不是天然同一权威，必须逐作以哈希和载荷审计对齐 | [快照与发布兼容性](../../AGE2/evidence/translations/snapshots/compatibility.md) |
 | [TDA03 UI/成就映射](../../AGE2/docs/postmortems/tda03-achievement-uistring.md) | 早期包误用 TDA02 映射；逐作身份验证与实机成就检查必须成为发布门 | 专项复盘与测试 |
 
 ## 证据等级

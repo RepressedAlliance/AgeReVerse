@@ -20,7 +20,7 @@ Muv-Luv UNLIMITED: The Day After episode:00／マブラヴ アンリミテッド
 再由 [`build_changes.py`](../../tools/egpack/build_changes.py) 按哈希连接。
 
 历史玩家包还包含 UI／视频文字、图片和字体，但当前公开源表尚不能逐字节重建该 ZIP；
-跨旧分支、公开快照与 Release 的对齐仍在[审计](../../evidence/translations/snapshots/authority-alignment-audit.md)。TDA00 的完整路线反馈少于后续作品，修正时应附日文上下文、
+公开快照与 Release 的区别见[兼容性说明](../../evidence/translations/snapshots/compatibility.md)。TDA00 的完整路线反馈少于后续作品，修正时应附日文上下文、
 截图和调用场景。
 
 ## English summary

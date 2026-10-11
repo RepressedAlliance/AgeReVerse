@@ -44,3 +44,8 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 复用游戏现有清单或字段，不要求每作另造一套庞大表。至少能找到：游戏与源资源身份、分类／组、原文与已采用文案、保留／拟写决定、字体或绘制方式、当前成品、检查结果、维护者意见和最终交付位置。原图、候选和审核页留在本地制作目录，公开范围见[制作规范](production.md#9-复用返修与公开)。
 
 “已制作”“已自检”“人工已确认”“实机已确认”“已发布”是不同事实，不能用一个 `done` 混称。也不能用文件存在、OCR 通过或模型档位替代查看图片。
+
+## 可复用的技术案例
+
+- [图片字幕排版](../../AGE2/docs/postmortems/caption-layout.md)：演出坐标、字形中心、行距与正文同显。
+- [UI 和场景图布局](../../AGE2/docs/postmortems/image-layout.md)：尺寸、常态与悬停、地图补注和原包覆盖。
