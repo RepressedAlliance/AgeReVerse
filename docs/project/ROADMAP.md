@@ -1,93 +1,70 @@
 # Roadmap
 
-This roadmap separates published player results, reusable components, and work
-that still requires exact game inputs or full-route validation.
+[Player downloads](../player/README.md) · [Localization guide](../../Localization-MakeGamesSpeak/README.md) · [Research index](../en/research-index.md)
 
-## Kiminozo in development
+TDA00–03, The Imperial Capital Burns, photonflowers* and photonmelodies* have
+published Chinese player packages. Current versions and installation instructions
+are maintained in the player guide. Kiminozo ~Enhanced Edition~ and Another
+Episode Collection+ are in development, with no player package released.
 
-[Kiminozo ~Enhanced Edition~ and Another Episode Collection+](../../AGE2/games/kiminozo/README.md) have a dedicated project structure. Remaining work includes the maintainer’s final review of revised text, consultation with the legacy translator, UI/image review, resource integration, packaging and in-game validation. No player package is released. Full legacy translations and private correspondence are not published.
+## Kiminozo
 
-## Published player results
+Complete the maintainer's final text review, consultation with the legacy
+translator, UI/image work, resource integration, packaging and in-game validation.
+The [project entry](../../AGE2/games/kiminozo/README.md) distinguishes these tasks
+and the material that may be published. Full legacy translations and private
+correspondence remain outside the public repository.
 
-- TDA00 Simplified Chinese beta0.1
-- TDA01 Simplified Chinese beta0.2.2
-- TDA02 Simplified Chinese beta0.1
-- TDA03 Simplified Chinese beta0.1.6
-- The Imperial Capital Burns Simplified Chinese beta0.1
+## Make the existing tools easier to reuse
 
-These are historical test packages. New releases must add exact input-version
-gates, manifests, font notices, checksums and reliable rollback rather than
-assuming the old ZIPs already satisfy the current release policy.
+- Complete the public AGE2 path from a lawful clean installation to the
+  maintained text, images, fonts and game-specific overlay. Existing format
+  tools and the Imperial phase-one builder do not reproduce every current package.
+- Complete the corresponding Photon extraction, binding and staging steps.
+  The package assembler accepts sealed input roots; it does not reconstruct
+  every private production input from a clean game installation.
+- Keep exact resource identities and compatibility information with each tool.
+  Add examples for other languages when a team exercises the workflow and
+  reports actual engine constraints.
 
-Their current redistribution audit is `pending-remediation`: all five bundles
-need font-license correction, some include copied official UI fallbacks, and
-the Photon V6 research asset contains 19 byte-identical official-source images.
-Replacement or quarantine must be decided before any of them is presented as a
-current policy-compliant download.
+## Improve the released patches
 
-## Reusable foundation now present
+- Resolve the [AGE2](../../AGE2/docs/limitations.md) and
+  [Photon](../../rUGP/docs/limitations.md) issues with affected game, version and
+  scene information. Priorities include PF's intermittent English pages and
+  untranslated embedded English in PM's *Rebirth* ending animation.
+- Check unclear voice lines, ruby/emphasis, language switching, old saves and
+  remaining image routes in their actual contexts. A fixed sample does not
+  establish full-route coverage.
+- Continue ParaTranz proofreading and synchronize accepted changes into
+  maintained tables, then the relevant release. Online edits do not update
+  already downloaded packages automatically.
 
-- independent AGE2 and legacy rUGP source/test trees;
-- AGE2 portable translation snapshots with explicit structural-empty records,
-  a strict local-source-to-EGPACK join and a text-free pending-review ledger;
-- a read-only ICI/RIO catalogue, conservative CRsa extraction path and exact
-  catalogued-image-to-PNG decoder;
-- 57,547 reviewed Photon dialogue rows with source-hash identities;
-- 1,490-image authority and semantic route closure;
-- tested image codecs, RUO/CRsa primitives and pinned Photon runtime builds;
-- reverse-engineering postmortems for 8311, CRsa, RUO, Cr6Ti, CRip007,
-  CRip008, fonts, shared/common image routing, ICI resize metadata and image
-  transport/runtime failures;
-- engine-neutral new-locale, font-coverage and deterministic image workflows.
-- an engine-neutral, read-only Steam depot-manifest content check for freezing
-  selected local input files when a reviewed clear-name manifest is available;
-- a machine-readable index for the five historical player packages, including
-  exact archive identities, install roots and known safety limitations.
-- a strict, path-redacted 光子之花/光子旋律 Steam locale preflight and apply-time recheck
-  contract for a future player installer.
+## Fonts, images and distribution
 
-## AGE2 priorities
+- Complete missing image-font attribution and production recipes; keep actual
+  font source, license, modification and use information together. See the
+  [font guide](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md).
+- Preserve the unresolved rights findings for the five **historical** AGE2
+  test ZIPs: font notices and some copied official UI fallbacks. These findings
+  apply to those recorded archives, not automatically to every later package.
+- Remediate the Photon V6 **research image bundle**, which includes 19
+  byte-identical official-source PNGs. Its source metadata remains useful,
+  but that does not grant redistribution permission.
+- Keep current download instructions, release manifests and known limitations
+  synchronized. Historical package identities are retained separately in the
+  [release index](../player/release-index.json).
 
-1. Resolve every disagreement between maintained snapshots, historical
-   branches and downloaded Release payloads by stable resource identity, and
-   manually adjudicate the published text-free symbol/quotation queue.
-2. Publish a complete per-game clean-install-to-overlay builder for TDA00–03
-   and the later full-dialogue Imperial package, including image/font inputs.
-3. Publish successor version-gated, manifest-bound packages only after
-   clean-install, rollback and full-route game QA; keep historical ZIP bytes
-   immutable and mark superseded versions clearly.
+## Keep useful technical experience accessible
 
-## Photon priorities
+Turn a resolved failure into a concise explanation of the trigger, cause,
+solution, applicable versions and remaining limits, with a regression when it
+protects a real behavior. Keep per-run commands, local captures, temporary
+candidates and execution logs in ignored local storage.
 
-1. Convert a legally owned clean 光子之花 installation into every reviewed
-   text/image/font binding and the sealed 光子之花 package roots with no workstation
-   paths or undocumented staging step.
-2. Repeat that proof independently for 光子旋律; shared libraries do not transfer
-   package identity, hashes, installer approval or runtime evidence.
-3. Build, audit, install, roll back and fully test the downloaded ZIP before
-   publishing either game as a player patch.
+Legacy source-bearing tags or cached GitHub references require separate
+publication review. If removal is needed, preserve a recoverable private copy
+and coordinate with GitHub Support where ordinary ref changes are insufficient.
 
-## Documentation and internationalization
-
-- add locale-specific examples as Korean, Russian or other teams exercise the
-  generic template and report real engine constraints;
-- keep the machine-readable support matrix and checksums current with every
-  new player release;
-- keep converting any newly decisive failed experiment into a small
-  postmortem plus a regression test, not a dump of workstation probes.
-
-## Repository publication hygiene
-
-- migrate legacy source-bearing Release tags and the public branch history to a
-  sanitized root only after making and verifying a recoverable private bundle;
-- ask GitHub Support to purge hidden pull-request refs and cached objects that a
-  normal branch/tag deletion cannot remove;
-- keep Release-page deprecation, compatibility, rollback, and rights warnings
-  synchronized with the machine-readable release index.
-
-## Later games
-
-Other Muv-Luv titles, including Sakura no Hana ga Saku Koro and The Queen of
-Heart's Hypothesis, may be added only after their engine, source authority,
-redistribution boundary, and maintenance owner are known. They are not
-currently supported.
+Additional games enter the supported list only when their engine, source
+authority, redistribution scope and maintenance owner are established.

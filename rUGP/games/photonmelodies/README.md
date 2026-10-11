@@ -22,7 +22,7 @@ Muv-Luv photonmelodies*／マブラヴ photonmelodies*。AgeReVerse · 压抑同
 [8311 复盘](../../docs/postmortems/error-8311.md)。图片使用光子之花/光子旋律共用清单，但光子旋律的
 多个 RIO 分卷、shared/common 端点与运行时表面替换必须单独验证。
 
-本轮原生 CRsa 补译还确认了另一条独立边界：后续分卷中的记录即使做内容完全相同的
+原生 CRsa 写回还有一条独立边界：后续分卷中的记录即使做内容完全相同的
 RUO 重定向，实机仍会触发 `InternalError(831)`；相同字节写回原分卷的固定范围则通过。
 因此光子旋律原生 CRsa 不再由 RUO 构建器输出，而由
 [`build_crsa_native_volume_patch.py`](../../tools/text/build_crsa_native_volume_patch.py)

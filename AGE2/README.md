@@ -14,7 +14,7 @@
 ## 先看懂资源层级
 
 ```text
-pack.bin                         FPD 外层容器（TDA00 为 v1，其余本轮样本为 v2）
+pack.bin                         FPD 外层容器（TDA00 为 v1，其余已支持样本为 v2）
 └─ root/assets/...
    ├─ localized/*.egpack        多语言正文与结构字段
    ├─ gui/**/*.webp             可直接查看的图片

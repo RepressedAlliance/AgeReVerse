@@ -2,7 +2,7 @@
 
 [返回首页](../../README.md) · [English](../en/research-index.md) · **[资产地图](asset-map.md)** · [多语言工作流](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md) · [参考项目](references.md) · [贡献者与致谢](../project/CONTRIBUTORS.md) · [仓库边界](repository-architecture.md)
 
-这里不是“最后成功代码”的目录列表，而是结论—证据—限制的索引。每篇复盘尽量保留：最初现象、错误假设、实验方法、根因、最终方案、回归测试，以及仍不能证明的部分。
+从资源提取、文本写回到图片显示，这里按实际问题介绍可复用的方法、工具和案例。每篇案例说明现象、原因、解决方法、适用版本与剩余限制，方便其他制作者判断能否用于自己的项目。
 
 ## 先按目标进入
 
@@ -71,7 +71,9 @@ ICI 目录元数据
 | [公开快照与发布包对齐](../../AGE2/docs/postmortems/public-snapshot-release-alignment.md) | 可维护表、旧分支和历史 ZIP 不是天然同一权威，必须逐作以哈希和载荷审计对齐 | [快照与发布兼容性](../../AGE2/evidence/translations/snapshots/compatibility.md) |
 | [TDA03 UI/成就映射](../../AGE2/docs/postmortems/tda03-achievement-uistring.md) | 早期包误用 TDA02 映射；逐作身份验证与实机成就检查必须成为发布门 | 专项复盘与测试 |
 
-## 证据等级
+## 怎样判断适用范围
+
+尚未解决的问题集中在 [AGE2](../../AGE2/docs/limitations.md) 与 [Photon](../../rUGP/docs/limitations.md)；已处理案例保留其受影响版本。下面几种检查回答的问题不同：
 
 - **合成测试通过：**证明代码处理了明确构造的分支。
 - **独立解码/往返通过：**证明编码结果可由第二实现还原。
@@ -79,7 +81,7 @@ ICI 目录元数据
 - **锁定版本实机通过：**才证明目标游戏在该版本、路线和环境下接受结果。
 - **可发布：**还需安装、卸载、字体许可、内容权利和完整路线 QA；技术成功不自动等于可分发。
 
-## 本地复核
+## 运行公开工具检查
 
 在仓库根目录运行：
 
@@ -89,7 +91,7 @@ python -m unittest discover -s AGE2/tests -p "test_*.py" -v
 python -m unittest discover -s rUGP/tests -p "test_*.py" -v
 python -m unittest discover -s Localization-MakeGamesSpeak/Tests-CatchProblemsBeforePlayers -p "test_*.py" -v
 python -m unittest discover -s .github/scripts/tests -p "test_*.py" -v
-python -m compileall -q AGE2 rUGP localization .github/scripts
+python -m compileall -q AGE2 rUGP Localization-MakeGamesSpeak .github/scripts
 python .github/scripts/verify_repository.py
 ```
 

@@ -28,7 +28,7 @@
 | `pf-al-table` | AL五篇合并旧表，共98条来源记录 |
 | `mixed`、`legacy`、`legacy-tsv` | 旧词库在本作日文中的命中记录 |
 | `photon-native` | 适用于本作的CRsa联合术语记录 |
-| `glossary-20261009-photonflowers` | 本次补录的15条现行术语；来源是现行表已有译法与使用限制 |
+| `glossary-20261009-photonflowers` | 补充的15条现行术语；来源是现行表已有译法与使用限制 |
 
 来源 CSV 保留原状态、译法和使用限制；完整来源关联通过 `evidence_rows` 查询。机器回归资料见[术语维护资料](../../../../docs/research/localization/terminology-history/README.md)。
 

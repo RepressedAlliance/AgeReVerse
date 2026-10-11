@@ -27,7 +27,7 @@
 | `mixed`、`legacy`、`legacy-tsv` | 旧词库在本作日文中的命中记录；命中本身不等于译法已确认 |
 | `tda-shared-decisions` | 旧TDA交接记录中适用于本作的决定 |
 | `maintainer-20260920` | 2026-09-20审定后新增的条目；此前已有来源的修订仍保留原来源标识 |
-| `glossary-20261009-tda03` | 本次补录的3条现行术语；来源是现行表已有译法与使用限制 |
+| `glossary-20261009-tda03` | 补充的3条现行术语；来源是现行表已有译法与使用限制 |
 
 来源 CSV 保留原状态、译法和使用限制；完整来源关联通过 `evidence_rows` 查询。机器回归资料见[术语维护资料](../../../../docs/research/localization/terminology-history/README.md)。
 

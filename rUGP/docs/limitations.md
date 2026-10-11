@@ -12,6 +12,8 @@
 
 | 范围 | 已知情况与下一步 |
 | --- | --- |
+| PF 部分页面偶发英文 | BETA 0.1.2 的已知问题，尚未彻底解决；反馈时附场景、存档及语言设置 |
+| PM《再诞》片尾动画 | BETA 0.1.2 仍有内嵌英文说明未汉化，属于动画内容范围 |
 | CRip008 的 40 个未观察调用 | 精确长度回放通过，实际补齐参数仍未观察到；不是 40 个已确认故障。入口和资源身份见[定位说明](postmortems/pending-hook-entry-points-20260909.md) |
 | PM 四项只见加载的提示 | 三项手柄 UI 与一项壁纸解锁提示，需确认实际绘制条件 |
 | HUD 英文画面 | 日文图片模式也含英文；具体素材对应关系待核验，不能只按语言判定 hook 错误 |
@@ -27,4 +29,4 @@
 
 ## English
 
-Support is tied to exact builds and resource identities. Unobserved calls and conservative layout warnings are not confirmed defects. Preserve unresolved source alignment and runtime-entry questions, while checking each incident's affected version before treating it as a current release bug. The public components do not provide every private input or exhaustive in-game coverage.
+Support is tied to exact builds and resource identities. BETA 0.1.2 still has intermittent English pages in PF and untranslated embedded English in PM’s Rebirth ending animation. Unobserved calls and conservative layout warnings are not confirmed defects. Preserve unresolved source alignment and runtime-entry questions, while checking each incident's affected version before treating it as a current release bug. The public components do not provide every private input or exhaustive in-game coverage.

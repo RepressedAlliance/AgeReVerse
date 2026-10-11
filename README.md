@@ -210,13 +210,13 @@ Steam 语言设为 **English（英语）**，等待下载完成并退出游戏�
 
 光子之花、光子旋律均不创建备份、不附卸载器。恢复原版时保留存档，通过 Steam 卸载、清除对应游戏目录的汉化残留，再重新下载；不要清空整个 Steam 目录。详见[玩家指南](docs/player/README.md)。
 
-本次校对及反馈致谢：**柚子コショウ**。详见[两款 BETA 0.1.2 更新说明](docs/project/photon-beta012-proofreading.md)。
+BETA 0.1.2 校对及反馈致谢：**柚子コショウ**。详见[两款 BETA 0.1.2 更新说明](docs/project/photon-beta012-proofreading.md)。
 
 ### AGE2 安装与恢复
 
 TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含 `安装说明.txt`、`root`、`game` 和安装器四项，任选一种方式安装；手动安装无需运行任何生成工具。启动游戏后，在设置中选择中文。
 
-本次仅增加安装方式，汉化内容不变，已正常安装上一版的玩家无需重装。恢复原版前先切回英文或日文，并保留存档。具体复制路径和恢复步骤见[玩家指南](docs/player/README.md)。
+2026-09-21 的安装方式更新保留上一版汉化内容，已正常安装上一版的玩家无需重装。恢复原版前先切回英文或日文，并保留存档。具体复制路径和恢复步骤见[玩家指南](docs/player/README.md)。
 
 ### 项目状态
 
@@ -224,7 +224,7 @@ TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含
 
 光子之花／光子旋律的技术来源分类、上游版本、82 项技术职责与完整路线演变，详细请见 **[技术来源分类与完整蓝图](docs/research/photon/README.md)**。
 
-- **TDA00—03、帝都燃烧篇：**2026-09-20 BETA 更新已纳入本轮校对、术语和排版修正，采用独立中文槽与有版本检查的安装器；仍在持续实机验证。
+- **TDA00—03、帝都燃烧篇：**2026-09-20 BETA 更新已纳入校对、术语和排版修正，采用独立中文槽与有版本检查的安装器；仍在持续实机验证。
 - **光子之花、光子旋律：**已正式公开发布 **BETA 0.1.2**，光子之花、光子旋律各有独立安装包。旧 Photon 图片研究资产仍不是游戏安装包。
 
 ### 问题反馈
@@ -298,6 +298,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 | 君望本篇与附加篇的文本、术语和 UI 图片制作 | [君望项目（制作中）](AGE2/games/kiminozo/README.md) |
 | Photon 的 RIO、RUO、CRsa、图片和运行时 | [rUGP 工作区](rUGP/README.md) |
 | 文本、图片、字体和工具的具体位置 | [资产地图](docs/research/asset-map.md) |
+| 实用技术案例与未解决事项 | [AGE2 案例](AGE2/docs/postmortems/README.md) · [AGE2 限制](AGE2/docs/limitations.md) · [Photon 案例](rUGP/docs/postmortems/README.md) · [Photon 限制](rUGP/docs/limitations.md) |
 
 <details>
 <summary><strong>English · Tools, localization workflow and research — expand here</strong></summary>
@@ -311,7 +312,7 @@ The Chinese player downloads are listed in the first part of this README.
 | Topic | English-friendly starting point |
 | --- | --- |
 | Learn and adapt the localization method | **[Game Localization — Make Games Speak Your Language](Localization-MakeGamesSpeak/README.md)** |
-| Public results and current limitations | [Research index](docs/en/research-index.md) |
+| Public results and current limitations | [Research index](docs/en/research-index.md) · [AGE2 limits](AGE2/docs/limitations.md) · [Photon limits](rUGP/docs/limitations.md) |
 | Text, image, font and tool locations | [Asset map](docs/en/asset-map.md) |
 | Translation and independent review | [Complete English workflow](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.en.md) |
 | Korean, Russian or another target language | [Starting a new language](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md) |
