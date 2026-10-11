@@ -1,6 +1,6 @@
 # 图片用字与制作样式
 
-[字体入口](README.md) · **[七作清查总表](audit.md)** · [图片流程](../Images-MakeItLookNative/README.md) · [来源与声明](attribution.md) · [用途汇总](image-font-usage.json) · [版本目录](catalog.json)
+[字体入口](README.md) · **[七作清查总表](audit.md)** · [逐项证据状态](font-evidence.md) · [图片流程](../Images-MakeItLookNative/README.md) · [来源与声明](attribution.md) · [用途汇总](image-font-usage.json) · [版本目录](catalog.json)
 
 图片字体按素材组维护。同一级文字统一字重、字号、字距、基线和特效，再分别适配透视、距离与光照；不能按每个词的墨迹外接框重新缩放。运行时正文用字与图片用字没有自动绑定关系。
 
@@ -22,7 +22,7 @@
 
 新排字素材确认用到 Noto Sans SC 可变字体、Noto Sans SC 静态 500、狮尾加糖宋体 Medium、思源黑体 SC Bold、思源宋体 CN Bold／Heavy。**思源黑体 Bold 仍用于发布版说明页、部分 HUD 和补充字幕，不是全部已经被替换的旧方案。** 原版日期、Logo、地图及部分日英共用图片按实际字节核对后记为沿用，不给它们虚构一个新字体。
 
-上述新排字数包括五作共 10 张开场说明贴图。其字体依据打包说明与 HTML 模板声明为 Noto Sans SC；未重放历史 Chrome 的字体加载／回退过程，这 10 张与有相同字节制作输出的其他图片分别标注。
+上述新排字数包括五作共 10 张开场说明贴图、两种内容。用保留 HTML 和 Noto Sans SC 2.04 输入在 Chrome 重放，再按原横／竖画布打包操作比较，10 个文件的 RGB 像素全部一致；匹配渲染实际使用 Noto Sans SC、CSS 字重 600，微软雅黑回退对照不一致。字体身份已确认，[验证记录](font-verification.json)同时区分重放使用的文件版本与历史浏览器日志。
 
 PF／PM 当前 **BETA 0.1.2** 的全部 **2,861 个 PNG 文件**已核对到公开 ZIP、安装器嵌入清单和制作来源。相同字节共用记录：PF 为 1,214 个文件／741 种内容，PM 为 1,647 个文件／985 种内容，两作合计 1,562 种不同内容。路径、字体、配方身份、字层继承和核对方法见 [Photon 发布图片用字表](photon-released-image-fonts.json)。
 
@@ -30,12 +30,12 @@ PF／PM 当前 **BETA 0.1.2** 的全部 **2,861 个 PNG 文件**已核对到公�
 
 两份逐图表共覆盖 **3,720 个发布图片文件**，范围是上述清单列出的独立图片；不包含补丁没有携带的原游戏资源，也不宣称逐一枚举了所有原生资源记录。证据以制作文件摘要、相同字节／RGBA、明确继承关系为主；四张嵌入场景图及一张日历缩略图另外记录了实测的颜色转换差异，没有冒充字节一致。
 
-仍有具体限制：Windows 旧配方未保存摘要或 TTC 索引的，不能确认当时字体的精确二进制版本；一张“仅有声音”教程沿用早期 Noto Sans 计时字层，其制作命令和字体配置已找到，但旧排版没有逐像素重放。前述 10 张 AGE2 HTML 说明图也保留声明与加载验证的区别。
+仍有具体限制：Windows 与思源旧配方中缺历史字体摘要的，字体名称／字重已确认，但不能证明当时字体的精确二进制版本；一张“仅有声音”教程沿用早期 Noto Sans 计时字层，字体与旧配置已找到，但旧排版未逐像素重放。具体图片、资源 ID、文件名和已关闭的缺口见[逐项证据状态](font-evidence.md)。当前 18 种微软雅黑常规体内容均有旧字体摘要或已验证母版继承，不能把它们误列为字体文件不明。
 
 <details>
 <summary><strong>English · Which font went into which image?</strong></summary>
 
-The release registers cover 859 standalone AGE2 WebP/AVIF files and all 2,861 PNG files in the embedded PF/PM BETA 0.1.2 manifests. Photon duplicates share 1,562 image records, including 1,392 contents with font-rendered lettering and 170 with original or generated lettering. Bindings record exact hashes, RGBA identity, inherited layers or measured colour conversions. This establishes provenance within that file scope, not a new runtime/visual approval or a complete historical rendering replay. Windows historical bytes, ten HTML font-loading cases and one old timer layout retain explicit limitations. Local candidates and superseded trials are separate. See [credits](attribution.md) and [registration rules](registration.md).
+The release registers cover 859 standalone AGE2 WebP/AVIF files and all 2,861 PNG files in the embedded PF/PM BETA 0.1.2 manifests. Photon duplicates share 1,562 image records, including 1,392 contents with font-rendered lettering and 170 with original or generated lettering. Bindings record exact hashes, RGBA identity, inherited layers or measured colour conversions. All ten HTML boot textures now reproduce the released RGB pixels with Noto Sans SC; the fallback control differs. Historical Windows/Source Han binary identity and one old timer layout retain explicit, material-specific limitations. This establishes provenance within that file scope, not new runtime/visual approval. Local candidates and superseded trials are separate. See [evidence status](font-evidence.md), [credits](attribution.md) and [registration rules](registration.md).
 
 </details>
 
@@ -46,7 +46,7 @@ The release registers cover 859 standalone AGE2 WebP/AVIF files and all 2,861 PN
 | TDA00–03、帝都的菜单 UI | Noto Sans SC 可变字体 | UI 制作／精修脚本按 450 字重渲染；不等于游戏正文白无常 |
 | 五作 telop、语音标签、地图标注 | NotoSansSC-500.ttf | 使用静态 500；与运行时 Hud 文件相同 |
 | 五作日期／地点卡、TDA 剧情卡 | SweiSugarCJKsc-Medium.ttf | 狮尾加糖宋体 Medium；按原图排列与实际尺寸制作 |
-| TDA02 人物介绍、TDA03 轨道港／高度介绍四张卡 | SourceHanSerifCN-Bold／Heavy.otf | 思源宋体 CN 2.003；80px 姓名用 Bold，小号单位说明及港口／高度用 Heavy；不是全套卡都用狮尾 |
+| TDA02 人物介绍、TDA03 轨道港／高度介绍四张卡 | SourceHanSerifCN-Bold／Heavy.otf | 80px 姓名用 Bold，小号单位说明及港口／高度用 Heavy；检查的保留字库为 2.003，缺旧字体摘要的历史版本另见证据状态；不是全套卡都用狮尾 |
 | 五作说明页、部分 HUD／补充字幕；帝都早期 telop／地点方案 | SourceHanSansSC-Bold.otf | 发布版仍有实际使用；帝都 telop／地点卡的后续批次另改为 Noto／Swei，按素材区分 |
 | PF／PM 菜单、按钮、人物卡、说明等 | Noto Sans SC 可变字体 | 初期代表组与后续重排均有记录；具体字重随已确认组配置，不固定全作 700 |
 | PF／PM 黑色章节标题、信用／书信、部分场景文字 | Noto Serif SC 可变字体 | 按组记录粗细、字距与效果；不会影响 GDI 正文 |

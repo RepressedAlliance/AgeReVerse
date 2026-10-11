@@ -927,7 +927,8 @@
       },
       "current_release_registries": [
         "age2-released-image-fonts.json"
-      ]
+      ],
+      "precision_record": "font-evidence.md"
     },
     "image:source-han-serif-bold": {
       "file": "SourceHanSerifCN-Bold.otf",
@@ -956,7 +957,8 @@
       },
       "current_release_registries": [
         "age2-released-image-fonts.json"
-      ]
+      ],
+      "precision_record": "font-evidence.md"
     },
     "image:source-han-serif-heavy": {
       "file": "SourceHanSerifCN-Heavy.otf",
@@ -987,7 +989,8 @@
       },
       "current_release_registries": [
         "age2-released-image-fonts.json"
-      ]
+      ],
+      "precision_record": "font-evidence.md"
     },
     "image:xiaolai": {
       "file": "Xiaolai-Regular.ttf",
@@ -1089,7 +1092,7 @@
       ],
       "usage": "Current PF/PM story/naval captions, PF G1149 subtitle and its PM G1401 transfer, retained school black-banner lettering; local AGE2 letter and shop partial layers.",
       "license": "Windows font licensing; not OFL",
-      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "identity_basis": "Six current release contents have a matching recorded font hash or a verified inherited layer: PF G1961/G2803/G1149 and PM G1401/G4375/G4376. Other filename-only historical references establish KaiTi use but not these exact inspected bytes; see font-evidence.md.",
       "current_released_image_files": {
         "pf": 18,
         "pm": 21
@@ -1121,7 +1124,7 @@
       ],
       "usage": "Current Photon equipment titles and two copied-glyph CRip008 selection-HUD images; local AGE2 production-note options are separate.",
       "license": "Windows font licensing; not OFL",
-      "identity_basis": "font bytes inspected on 2026-10-11; historical filename-only references do not prove these exact bytes",
+      "identity_basis": "Current release equipment records retain the inspected font hash, and both selection HUD contents inherit the same hash-verified glyph mask; all 18 current contents use this input. Older filename-only menu trials and local options do not thereby acquire historical byte identity. See font-verification.json and font-evidence.md.",
       "collection_faces": [
         {
           "index": 0,
@@ -1175,7 +1178,11 @@
       },
       "current_release_registries": [
         "photon-released-image-fonts.json"
-      ]
+      ],
+      "historical_collection_index": 0,
+      "collection_index_basis": "Pillow default index 0 in the retained material renderer; other faces in the TTC are metadata only, not additional material inputs",
+      "precision_record": "font-evidence.md",
+      "collection_index_source": "build_equipment_titles.py; selection HUD inherits its selection_glyph_mask"
     },
     "image:yahei-bold": {
       "file": "msyhbd.ttc",
@@ -1268,7 +1275,11 @@
       },
       "current_release_registries": [
         "photon-released-image-fonts.json"
-      ]
+      ],
+      "historical_collection_index": 0,
+      "collection_index_basis": "Pillow default index 0 in the retained material renderer; other faces in the TTC are metadata only, not additional material inputs",
+      "precision_record": "font-evidence.md",
+      "collection_index_source": "compose_language_sakura_20260908.py / layer()"
     },
     "image:simsun": {
       "file": "simsun.ttc",
@@ -1323,7 +1334,11 @@
       },
       "current_release_registries": [
         "photon-released-image-fonts.json"
-      ]
+      ],
+      "historical_collection_index": 0,
+      "collection_index_basis": "Pillow default index 0 in the retained material renderer; other faces in the TTC are metadata only, not additional material inputs",
+      "precision_record": "font-evidence.md",
+      "collection_index_source": "build_f28_remaining_repairs.py / text_mask()"
     },
     "image:ms-mincho": {
       "file": "msmincho.ttc",
@@ -1377,7 +1392,11 @@
       },
       "current_release_registries": [
         "photon-released-image-fonts.json"
-      ]
+      ],
+      "historical_collection_index": 0,
+      "collection_index_basis": "Pillow default index 0 in the retained material renderer; other faces in the TTC are metadata only, not additional material inputs",
+      "precision_record": "font-evidence.md",
+      "collection_index_source": "build_f28_first_repairs.py / glyph()"
     },
     "image:ms-gothic-trial": {
       "file": "msgothic.ttc",

@@ -2,7 +2,7 @@
   "schema": "age-reverse-released-image-fonts/v1",
   "checked_on": "2026-10-11",
   "scope": "All standalone WebP/AVIF images listed in the five current AGE2 public package manifests. Does not enumerate original resources that are absent from the patch.",
-  "verification": "Every listed package copy matches the public release manifest SHA-256. Typeset entries are linked to an authoring output with identical bytes; duplicate banks/states inherit only byte-identical outputs. Preserved entries match a JP/EN/original source exactly. Ten boot notice textures have packaging source declarations, not historical browser/font fallback replay. This is provenance checking, not new visual or runtime approval.",
+  "verification": "Every listed package copy matches the public release manifest SHA-256. Typeset entries are linked to an authoring output with identical bytes; duplicate banks/states inherit only byte-identical outputs. Preserved entries match a JP/EN/original source exactly. All ten boot notice textures reproduce the release RGB pixels from the retained HTML and Noto Sans SC input; a Microsoft YaHei fallback control differs. See font-verification.json. This is provenance checking, not new visual or runtime approval.",
   "summary": [
     {
       "game": "tda00",
@@ -13,13 +13,13 @@
       "package_hash_matches": 71,
       "font_typeset_files": 54,
       "preserved_original_files": 17,
-      "html_source_declared_files": 2,
       "font_ids": [
         "image:noto-sans-sc-500",
         "image:noto-sans-sc-vf",
         "image:source-han-sans-bold",
         "image:swei-sugar-medium"
-      ]
+      ],
+      "html_replayed_files": 2
     },
     {
       "game": "tda01",
@@ -30,13 +30,13 @@
       "package_hash_matches": 118,
       "font_typeset_files": 93,
       "preserved_original_files": 25,
-      "html_source_declared_files": 2,
       "font_ids": [
         "image:noto-sans-sc-500",
         "image:noto-sans-sc-vf",
         "image:source-han-sans-bold",
         "image:swei-sugar-medium"
-      ]
+      ],
+      "html_replayed_files": 2
     },
     {
       "game": "tda02",
@@ -47,7 +47,6 @@
       "package_hash_matches": 115,
       "font_typeset_files": 94,
       "preserved_original_files": 21,
-      "html_source_declared_files": 2,
       "font_ids": [
         "image:noto-sans-sc-500",
         "image:noto-sans-sc-vf",
@@ -55,7 +54,8 @@
         "image:source-han-serif-bold",
         "image:source-han-serif-heavy",
         "image:swei-sugar-medium"
-      ]
+      ],
+      "html_replayed_files": 2
     },
     {
       "game": "tda03",
@@ -66,14 +66,14 @@
       "package_hash_matches": 153,
       "font_typeset_files": 110,
       "preserved_original_files": 43,
-      "html_source_declared_files": 2,
       "font_ids": [
         "image:noto-sans-sc-500",
         "image:noto-sans-sc-vf",
         "image:source-han-sans-bold",
         "image:source-han-serif-heavy",
         "image:swei-sugar-medium"
-      ]
+      ],
+      "html_replayed_files": 2
     },
     {
       "game": "imperial-capital-burns",
@@ -84,13 +84,13 @@
       "package_hash_matches": 402,
       "font_typeset_files": 292,
       "preserved_original_files": 110,
-      "html_source_declared_files": 2,
       "font_ids": [
         "image:noto-sans-sc-500",
         "image:noto-sans-sc-vf",
         "image:source-han-sans-bold",
         "image:swei-sugar-medium"
-      ]
+      ],
+      "html_replayed_files": 2
     }
   ],
   "source_records": {
@@ -233,12 +233,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "tda00",
@@ -248,12 +256,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "tda00",
@@ -1213,12 +1229,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "tda01",
@@ -1228,12 +1252,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "tda01",
@@ -2837,12 +2869,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "tda02",
@@ -2852,12 +2892,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "tda02",
@@ -4426,12 +4474,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "tda03",
@@ -4441,12 +4497,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "tda03",
@@ -6514,12 +6578,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "imperial-capital-burns",
@@ -6529,12 +6601,20 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-source-declaration"
+        "html-typeset-full-RGB-reproduction"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
-      ]
+      ],
+      "font_verification": {
+        "record": "font-verification.json",
+        "section": "boot",
+        "font_identity": "confirmed",
+        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "css_weight": 600,
+        "differing_RGB_pixels": 0
+      }
     },
     {
       "game": "imperial-capital-burns",

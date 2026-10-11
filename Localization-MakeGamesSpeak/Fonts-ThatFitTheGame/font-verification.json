@@ -1,0 +1,232 @@
+{
+  "schema": "age-reverse-image-font-verification/v1",
+  "checked_on": "2026-10-11",
+  "boot": {
+    "method": "Chrome rerender of the retained authoring HTML; same RGB pixels after the original landscape/portrait packaging operations",
+    "font_id": "image:noto-sans-sc-vf",
+    "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+    "replay_font_version": "2.04",
+    "css_weight": 600,
+    "font_identity": "confirmed-by-full-RGB-reproduction; no Microsoft YaHei glyphs used in the matching render",
+    "historical_binary_identity": "retained authoring input reproduces the release; this is not a recovered historical font-file hash log",
+    "browser": "155.0.8059.39",
+    "html_record": "boot-review/published-boot-template.html",
+    "html_sha256": "078fe86c9e885692080ef09fc4e2c12b91a9be5adc87323ae9fd6e2be2d0ae88",
+    "platform_fonts": [
+      "Noto Sans SC"
+    ],
+    "fallback_control": [
+      {
+        "name": "noto",
+        "shape": [
+          1080,
+          1920,
+          3
+        ],
+        "rgba_equal": true,
+        "differing_pixels": 0,
+        "mae": 0.0,
+        "max": 0,
+        "screenshot_sha256": "5209bad5dff55d1791e626e55a9ebab7d32f957c42d04fd1e4069bfd8faf1e09"
+      },
+      {
+        "name": "yahei",
+        "shape": [
+          1080,
+          1920,
+          3
+        ],
+        "rgba_equal": false,
+        "differing_pixels": 231159,
+        "mae": 6.921103877314815,
+        "max": 241,
+        "screenshot_sha256": "8473073428752937dd5e90393a51943fa9a8652acfd9265484d497629c4dfd8e"
+      },
+      {
+        "name": "fallback",
+        "shape": [
+          1080,
+          1920,
+          3
+        ],
+        "rgba_equal": false,
+        "differing_pixels": 231159,
+        "mae": 6.921103877314815,
+        "max": 241,
+        "screenshot_sha256": "8473073428752937dd5e90393a51943fa9a8652acfd9265484d497629c4dfd8e"
+      }
+    ],
+    "entries": [
+      {
+        "game": "tda00",
+        "path": "root/assets/data/gui/textures/boot/00_note000_zh.webp",
+        "sha256": "36c684f6aab2bbbf98d27e9cb4032d33ad49a3eb65ddd6bb871c9ade197cf354",
+        "dimensions": [
+          1920,
+          1440
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "65278597b07232855794bbaaf3ac4f345c07d7d211e9370711c0112f148a47c9"
+      },
+      {
+        "game": "tda00",
+        "path": "root/assets/data/gui/textures/boot/00_v_note000_zh.webp",
+        "sha256": "7b4bf2f1636da5706205f53dce8b066e74261ac56f009741bfb6bf842d5a0cc7",
+        "dimensions": [
+          1440,
+          1920
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "478204fbef48c485a5c3bf95abcc272308cd952c535e82978ff7b41426e0c400"
+      },
+      {
+        "game": "tda01",
+        "path": "root/assets/data/gui/textures/boot/00_note000_zh.webp",
+        "sha256": "36c684f6aab2bbbf98d27e9cb4032d33ad49a3eb65ddd6bb871c9ade197cf354",
+        "dimensions": [
+          1920,
+          1440
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "65278597b07232855794bbaaf3ac4f345c07d7d211e9370711c0112f148a47c9"
+      },
+      {
+        "game": "tda01",
+        "path": "root/assets/data/gui/textures/boot/00_v_note000_zh.webp",
+        "sha256": "7b4bf2f1636da5706205f53dce8b066e74261ac56f009741bfb6bf842d5a0cc7",
+        "dimensions": [
+          1440,
+          1920
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "478204fbef48c485a5c3bf95abcc272308cd952c535e82978ff7b41426e0c400"
+      },
+      {
+        "game": "tda02",
+        "path": "root/assets/data/gui/textures/boot/00_note000_zh.webp",
+        "sha256": "36c684f6aab2bbbf98d27e9cb4032d33ad49a3eb65ddd6bb871c9ade197cf354",
+        "dimensions": [
+          1920,
+          1440
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "65278597b07232855794bbaaf3ac4f345c07d7d211e9370711c0112f148a47c9"
+      },
+      {
+        "game": "tda02",
+        "path": "root/assets/data/gui/textures/boot/00_v_note000_zh.webp",
+        "sha256": "7b4bf2f1636da5706205f53dce8b066e74261ac56f009741bfb6bf842d5a0cc7",
+        "dimensions": [
+          1440,
+          1920
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "478204fbef48c485a5c3bf95abcc272308cd952c535e82978ff7b41426e0c400"
+      },
+      {
+        "game": "tda03",
+        "path": "root/assets/data/gui/textures/boot/00_note000_zh.webp",
+        "sha256": "36c684f6aab2bbbf98d27e9cb4032d33ad49a3eb65ddd6bb871c9ade197cf354",
+        "dimensions": [
+          1920,
+          1440
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "65278597b07232855794bbaaf3ac4f345c07d7d211e9370711c0112f148a47c9"
+      },
+      {
+        "game": "tda03",
+        "path": "root/assets/data/gui/textures/boot/00_v_note000_zh.webp",
+        "sha256": "7b4bf2f1636da5706205f53dce8b066e74261ac56f009741bfb6bf842d5a0cc7",
+        "dimensions": [
+          1440,
+          1920
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "478204fbef48c485a5c3bf95abcc272308cd952c535e82978ff7b41426e0c400"
+      },
+      {
+        "game": "imperial-capital-burns",
+        "path": "root/assets/data/gui/textures/boot/00_note000_zh.webp",
+        "sha256": "36c684f6aab2bbbf98d27e9cb4032d33ad49a3eb65ddd6bb871c9ade197cf354",
+        "dimensions": [
+          1920,
+          1440
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "65278597b07232855794bbaaf3ac4f345c07d7d211e9370711c0112f148a47c9"
+      },
+      {
+        "game": "imperial-capital-burns",
+        "path": "root/assets/data/gui/textures/boot/00_v_note000_zh.webp",
+        "sha256": "7b4bf2f1636da5706205f53dce8b066e74261ac56f009741bfb6bf842d5a0cc7",
+        "dimensions": [
+          1440,
+          1920
+        ],
+        "differing_RGB_pixels": 0,
+        "replayed_RGB_sha256": "478204fbef48c485a5c3bf95abcc272308cd952c535e82978ff7b41426e0c400"
+      }
+    ]
+  },
+  "selection_hud": {
+    "method": "The followup generator copies the equipment manifest G2600 selection_glyph_mask without retypesetting. Its glyph hash and the original manifest font hash agree with the retained files.",
+    "font_id": "image:yahei-regular",
+    "font_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+    "font_version": "6.31",
+    "entries": [
+      {
+        "group_id": 2600,
+        "asset_id": "pf:rio002:0x2ee29d38",
+        "candidate_sha256": "b5da9d109c59839153f3c697e0f04e97d054742e40cd93f3b92135c3ef4ebefd",
+        "font_id": "image:yahei-regular",
+        "font_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+        "font_index": 0,
+        "inherited_glyph_sha256": "41d24476012ce03654cf9b709274cabfd97d7fb38e6c696f9bf89005fa946921",
+        "equipment_source_id": "p0130",
+        "equipment_pointer": "/rows/30",
+        "followup_source_id": "p0180",
+        "followup_pointer": "/rows/2"
+      },
+      {
+        "group_id": 2606,
+        "asset_id": "pf:rio002:0x2ee2fa80",
+        "candidate_sha256": "291c5c54abc7a37c6a86f6b33c02dec02e742f218a1bea5ae078499b677d925c",
+        "font_id": "image:yahei-regular",
+        "font_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+        "font_index": 0,
+        "inherited_glyph_sha256": "41d24476012ce03654cf9b709274cabfd97d7fb38e6c696f9bf89005fa946921",
+        "equipment_source_id": "p0130",
+        "equipment_pointer": "/rows/30",
+        "followup_source_id": "p0180",
+        "followup_pointer": "/rows/3"
+      },
+      {
+        "group_id": 4327,
+        "asset_id": "pm:rio003:0x7d40f95c",
+        "candidate_sha256": "b5da9d109c59839153f3c697e0f04e97d054742e40cd93f3b92135c3ef4ebefd",
+        "font_id": "image:yahei-regular",
+        "font_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+        "font_index": 0,
+        "inherited_glyph_sha256": "41d24476012ce03654cf9b709274cabfd97d7fb38e6c696f9bf89005fa946921",
+        "equipment_source_id": "p0130",
+        "equipment_pointer": "/rows/30",
+        "followup_source_id": "p0180",
+        "followup_pointer": "/rows/4"
+      },
+      {
+        "group_id": 4332,
+        "asset_id": "pm:rio003:0x7d4156a8",
+        "candidate_sha256": "291c5c54abc7a37c6a86f6b33c02dec02e742f218a1bea5ae078499b677d925c",
+        "font_id": "image:yahei-regular",
+        "font_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+        "font_index": 0,
+        "inherited_glyph_sha256": "41d24476012ce03654cf9b709274cabfd97d7fb38e6c696f9bf89005fa946921",
+        "equipment_source_id": "p0130",
+        "equipment_pointer": "/rows/30",
+        "followup_source_id": "p0180",
+        "followup_pointer": "/rows/5"
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 
 **Image Font Audit — Follow the Lettering Back to Its Source**
 
-[字体入口](README.md) · [素材与样式](images.md) · [作者与许可](attribution.md) · [精确文件身份](catalog.json) · [核查范围与对应索引](audit-scope.json)
+[字体入口](README.md) · [素材与样式](images.md) · [作者与许可](attribution.md) · **[逐项证据状态](font-evidence.md)** · [精确文件身份](catalog.json) · [核查范围与对应索引](audit-scope.json)
 
 本次把 **PM、PF、帝都燃烧、TDA00–03** 可访问的图片制作资料重新查了一遍：当前发布图、早期批次、旧稿、返修、局部字层、提供的字幕图，以及供图像模型编辑的排字底稿都包括在内。共登记 **37 项字体输入／字重／版本，其中 36 项有实际素材排字或底稿用途，1 项仅有字体比较用途**。这不是 37 个字体家族，也不是当前补丁附带 37 套字体。
 
@@ -75,13 +75,15 @@
 
 核查从保存的工程、制作会话和 Git 历史找输入，再用逐图配方、成品摘要、字层继承与必要的重放确认用途。只安装过字体、脚本备用列表和“仿 Noto 风格”提示词都不能单独证明实际使用。生成前用过字体底稿的仍登记底稿；仅依据官方原图生成的，不倒推成字体排字。
 
-仍如实保留几个精度限制：部分 Windows 旧稿没有保存当时的字体摘要／TTC 索引；10 张 AGE2 开场说明图依据制作记录与 Noto Sans 声明归档，未重放历史浏览器加载；一张 Photon 声音教程的旧计时布局没有逐像素重放。美呗作者页面本次无法读取，沿用已有来源声明，不声称重新完整核验授权。这些限制不以今天的字体或补做的图来填造证据。
+**字体名称／字重已经确定，与历史字体文件的精确版本有无证据，分别记录。** 五作 10 张开场说明已用保留 HTML 和 Noto Sans SC 输入在 Chrome 重放，按原打包方式生成的全部 RGB 像素与发布图一致；故意回退到微软雅黑的对照不一致。这处不再只依据 CSS 声明。两种选择 HUD 内容也已追到带旧字体摘要的微软雅黑装备字形母版，见[补查验证](font-verification.json)。
+
+仍保留的精度限制是：部分 Windows 和思源旧记录没有当时的字体文件摘要，不能把目录中检查到的保留文件版本当成每张旧图的历史版本；一张 Photon 声音教程的字体已确定，但旧计时布局未逐像素重放；美呗作者页面本次无法读取，影响重新核验授权原文，不影响字体身份。**具体图片、文件名和旧稿组全部展开在[逐项证据状态](font-evidence.md)**，不再用一句“部分旧稿有限制”代替清单，也不以今天的字体或补做的图填造旧证据。
 
 本次结论适用于 **2026-10-11 已盘点到的可访问资料**。原图中未另行排字的官方字样不猜字体，已经丢失或未提供的私人资料也不声称能够重建。核查资料身份与表间对应见 [audit-scope.json](audit-scope.json)。以后每批新图、返修和换字体同步遵循[登记规范](registration.md)，把实际输入、采用版本和声明留下。
 
 <details>
 <summary><strong>English · What this audit establishes</strong></summary>
 
-The audit reconciles the retained image-production records for PM, PF, Imperial Capital Burns and TDA00–03, including releases, superseded drafts, local partials, supplied text layers and font prototypes used for generation. There are 36 material typography/prototype inputs, plus one comparison-only MS Gothic entry; these are file/face/version records, not family counts or fonts shipped today. The registers distinguish actual release adoption, trials, inherited layers, original artwork and generated lettering. Historical byte identity, browser loading and unavailable author-page evidence remain explicit limitations. Read the [credits](attribution.md), [exact identities](catalog.json) and [registration rules](registration.md) before reusing an input.
+The audit reconciles the retained image-production records for PM, PF, Imperial Capital Burns and TDA00–03, including releases, superseded drafts, local partials, supplied text layers and font prototypes used for generation. There are 36 material typography/prototype inputs, plus one comparison-only MS Gothic entry; these are file/face/version records, not family counts or fonts shipped today. The registers distinguish actual release adoption, trials, inherited layers, original artwork and generated lettering. All ten boot textures now reproduce the released RGB pixels with the retained Noto Sans SC input. Historical binary identity, old-layout replay and unavailable author-page evidence are distinguished from font identification; affected materials are enumerated in the [evidence status](font-evidence.md). Read the [credits](attribution.md), [exact identities](catalog.json) and [registration rules](registration.md) before reusing an input.
 
 </details>

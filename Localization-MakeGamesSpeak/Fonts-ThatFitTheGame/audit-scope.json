@@ -25,9 +25,9 @@
       "font-comparison-sheet": 17,
       "runtime-component-font-comparison-page": 1,
       "promotional-image": 15,
-      "boot-HTML-font-declaration; historical-browser-loading-not-replayed": 6,
       "other-game-or-task": 164,
-      "this-audit": 7
+      "this-audit": 7,
+      "boot-HTML-authoring; current-release-font-loading-confirmed": 6
     },
     "in_scope_generation_orchestration_calls_reviewed": 227,
     "counting_note": "Files include originals and repeated histories; orchestration calls include loops, revisions and failures. None of these counts is a count of distinct localized images."
@@ -178,14 +178,14 @@
       "file": "age2-released-image-fonts.json",
       "items": 859,
       "unit": "current-release-files",
-      "sha256": "9312cf7045f60d2dc80c7aaf521fa11f68974c07f62deee60f3512d0829798ce",
+      "sha256": "d0e681ad861ac0c3c728170ef652cb95a94dbbf0f9a2e4ac7bee4f9ed632c398",
       "hash_domain": "UTF-8 JSON contents with LF newlines, as published by Git"
     },
     {
       "file": "photon-released-image-fonts.json",
       "items": 2861,
       "unit": "current-release-files",
-      "sha256": "d27cdfd2db787482c54e90f79cb21374df6615b85b65efde125c5434d507013e",
+      "sha256": "7b3526fb4cf1124e425b8ffd3323e4e4165757e059a6aab6a32b2efb5c4fc191",
       "hash_domain": "UTF-8 JSON contents with LF newlines, as published by Git"
     },
     {
@@ -268,15 +268,11 @@
   "limits": [
     {
       "id": "historical-font-bytes",
-      "detail": "Some old Windows renders identify their input file but did not retain its old hash or TTC index. Present-day inspection cannot supply missing historic byte identity."
-    },
-    {
-      "id": "HTML-font-loading",
-      "detail": "Ten AGE2 boot-notice textures are attributed from authoring records and Noto Sans declarations; historic browser loading/fallback is not replayed."
+      "detail": "Some Windows and Source Han records identify the actual face/weight but lack a historical font-file hash. Current inspected versions cannot supply that missing identity; affected images are listed in font-evidence.md. Current Windows TTC material renderers establish index 0 from their actual API calls."
     },
     {
       "id": "historical-rendering-replay",
-      "detail": "Selected samples were replayed where needed to resolve identity; no claim is made that every historical output was pixel-replayed. One sound-only Photon tutorial keeps its old-layout replay limitation."
+      "detail": "Not every old output was pixel-replayed. PM sound-only tutorial pm:rio000:0x6544f288 has a known Noto Sans SC input/profile; its older layout replay remains separate from font identification. All 10 current AGE2 boot textures now reproduce the released RGB pixels."
     },
     {
       "id": "author-license-page",
@@ -287,5 +283,21 @@
       "detail": "This conclusion applies to the enumerated retained records and reachable Git history as of the audit date. Deleted records and unprovided private material cannot be reconstructed by visual font guessing."
     }
   ],
-  "privacy": "Only sanitized identities, material relationships and evidence hashes are published. Private conversations, local paths, original art and font binaries stay out of Git."
+  "privacy": "Only sanitized identities, material relationships and evidence hashes are published. Private conversations, local paths, original art and font binaries stay out of Git.",
+  "font_identity_status": {
+    "registered_typeset_and_prototype_inputs": "names/weights traced to production inputs or confirmed inherited layers",
+    "unidentified_registered_font_inputs": [],
+    "boot_loading": "closed by full RGB reproduction of all 10 current textures; matching render uses Noto Sans SC only",
+    "historical_file_precision": "separate; specific affected materials enumerated in font-evidence.md",
+    "original_or_generated_lettering": "recorded by actual method; no invented font identity"
+  },
+  "verification_records": [
+    {
+      "file": "font-verification.json",
+      "sha256": "6287a868037d230d48c6150a5222a79b69367d77f77a24e89a8547d31fc23738",
+      "hash_domain": "UTF-8 JSON with LF newlines",
+      "purpose": "Full RGB boot reproduction and historical font/glyph-hash inheritance for selection HUDs"
+    }
+  ],
+  "precision_listing": "font-evidence.md"
 }

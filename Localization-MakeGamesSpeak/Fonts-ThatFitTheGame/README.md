@@ -2,7 +2,7 @@
 
 **Fonts & Typography: Don't Let Fonts Give Your Patch Away**
 
-[返回本地化](../README.md) · **[七作图片用字总表](audit.md)** · [游戏字体对应表](runtime.md) · [图片用字与样式](images.md) · [字体致谢与许可](attribution.md) · [新图片登记](registration.md) · [精确版本目录](catalog.json)
+[返回本地化](../README.md) · **[七作图片用字总表](audit.md)** · [逐项证据状态](font-evidence.md) · [游戏字体对应表](runtime.md) · [图片用字与样式](images.md) · [字体致谢与许可](attribution.md) · [新图片登记](registration.md) · [精确版本目录](catalog.json)
 
 **七作图片用字已完成本次可访问资料的追溯。** [总表](audit.md)按作品和字体汇总当前发布、旧稿、返修、局部稿、提供字层与生成底稿：37 项输入／字重／版本中，36 项有素材排字或底稿用途，1 项仅有比较用途。逐图记录与证据边界集中列在总表，旧试样不算进当前发布版。
 
@@ -13,13 +13,13 @@ The catalog covers the seven released games, original AGE2 roles, every bundled 
 
 The October 11 audit traces 3,720 current release image files to their font or original/generated lettering sources, and records 365 selected local candidates separately. It also identifies missing authoring inputs, including Swei SemiBold, an unpatched MEB image font and a static Noto Sans 700 instance. Read the [image usage table](images.md), [credits](attribution.md) and [registration policy](registration.md). This is provenance within the listed file scope, not new visual/runtime approval. Historical font-byte and rendering limitations remain explicit.
 
-The [audit overview](audit.md) reconciles the retained release, historical, partial and supplied-layer records, including typography prototypes provided for generation. It lists 36 material-use inputs plus one comparison-only entry. The [historical variant register](historical-image-variants.json) recovers 1,933 game/output contents, including 557 also present in the current release register; these overlapping counts must not be added. Early Git-only font trials and the 56-image PhotonCN CRmt batch have separate registers. Superseded font metadata is checked against actual layer replacement code. Unavailable historical bytes and browser-loading evidence remain explicit limitations.
+The [audit overview](audit.md) reconciles the retained release, historical, partial and supplied-layer records, including typography prototypes provided for generation. It lists 36 material-use inputs plus one comparison-only entry. The [historical variant register](historical-image-variants.json) recovers 1,933 game/output contents, including 557 also present in the current release register; these overlapping counts must not be added. Early Git-only font trials and the 56-image PhotonCN CRmt batch have separate registers. Superseded font metadata is checked against actual layer replacement code. Boot font loading is now confirmed by full RGB reproduction. [Evidence status](font-evidence.md) enumerates remaining historical-binary and other limits separately from font identity.
 
 </details>
 
 译文进入游戏以后，还要放得下、看得清，并贴合作品原有的气质。这里集中维护七作的字体选择与来源，游戏文本和图片烘焙用字分别登记。替换运行时字体不会改变已画进图片的文字，重画图片也不会修复正文的选字、字宽或换行。
 
-**核对范围：运行时按 2026-10-05 的七作发布包核对；图片追溯更新于 2026-10-11。** 五作 AGE2 的 859 个独立图片文件和 PF／PM 的 2,861 个 PNG 文件，均对应到实际字体或原版／生成字样来源；另列 365 项本地在制成品。目录目前登记 37 项具体图片字体输入／试样，区分当前采用、历史替换与在制方案；同一 TTC 中实际使用过的字体索引也分别记录，不把输入项数称为家族数。详情与历史字体版本、HTML 加载和旧计时排版的限制见[图片用字表](images.md)，不以来源核对代替人工视觉审核和实机验证。
+**核对范围：运行时按 2026-10-05 的七作发布包核对；图片追溯更新于 2026-10-11。** 五作 AGE2 的 859 个独立图片文件和 PF／PM 的 2,861 个 PNG 文件，均对应到实际字体或原版／生成字样来源；另列 365 项本地在制成品。目录目前登记 37 项具体图片字体输入／试样，区分当前采用、历史替换与在制方案；同一 TTC 中实际使用过的字体索引也分别记录，不把输入项数称为家族数。[图片用字表](images.md)与[逐项证据状态](font-evidence.md)分别列具体用途和历史字体版本等限制，不以来源核对代替人工视觉审核和实机验证。
 
 ## 当前发布版使用什么
 
