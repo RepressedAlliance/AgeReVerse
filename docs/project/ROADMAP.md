@@ -42,9 +42,14 @@ correspondence remain outside the public repository.
 
 ## Fonts, images and distribution
 
-- Complete missing image-font attribution and production recipes; keep actual
-  font source, license, modification and use information together. See the
-  [font guide](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md).
+- Maintain the seven-game image-font registers and credits as images change.
+  The listed release images now have font or original/generated-lettering
+  associations. Recover missing historical font-file identities and production
+  inputs where possible; affected materials remain listed in the
+  [font limitations](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/font-evidence.md).
+  Register source, license, modifications, actual use and adoption with each new
+  image or revision, following the
+  [font guide](../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/registration.md).
 - Preserve the unresolved rights findings for the five **historical** AGE2
   test ZIPs: font notices and some copied official UI fallbacks. These findings
   apply to those recorded archives, not automatically to every later package.
