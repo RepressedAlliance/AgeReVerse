@@ -2,7 +2,6 @@
   "schema": "age-reverse-released-image-fonts/v1",
   "checked_on": "2026-10-11",
   "scope": "All standalone WebP/AVIF images listed in the five current AGE2 public package manifests. Does not enumerate original resources that are absent from the patch.",
-  "verification": "Every listed package copy matches the public release manifest SHA-256. Typeset entries are linked to an authoring output with identical bytes; duplicate banks/states inherit only byte-identical outputs. Preserved entries match a JP/EN/original source exactly. All ten boot notice textures reproduce the release RGB pixels from the retained HTML and Noto Sans SC input; a Microsoft YaHei fallback control differs. See font-verification.json. This is provenance checking, not new visual or runtime approval.",
   "summary": [
     {
       "game": "tda00",
@@ -10,7 +9,6 @@
       "manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda00-BETA-0.2.1/tda00-release-manifest.json",
       "source_commit": "ef1794ee58ac1976a147df22a557de1ec4c3caa6",
       "image_files": 71,
-      "package_hash_matches": 71,
       "font_typeset_files": 54,
       "preserved_original_files": 17,
       "font_ids": [
@@ -18,8 +16,7 @@
         "image:noto-sans-sc-vf",
         "image:source-han-sans-bold",
         "image:swei-sugar-medium"
-      ],
-      "html_replayed_files": 2
+      ]
     },
     {
       "game": "tda01",
@@ -27,7 +24,6 @@
       "manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda01-BETA-0.3.3/tda01-release-manifest.json",
       "source_commit": "7e4ec24003028440fcc49ed338f893aca6df06e4",
       "image_files": 118,
-      "package_hash_matches": 118,
       "font_typeset_files": 93,
       "preserved_original_files": 25,
       "font_ids": [
@@ -35,8 +31,7 @@
         "image:noto-sans-sc-vf",
         "image:source-han-sans-bold",
         "image:swei-sugar-medium"
-      ],
-      "html_replayed_files": 2
+      ]
     },
     {
       "game": "tda02",
@@ -44,7 +39,6 @@
       "manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda02-BETA-0.2.1/tda02-release-manifest.json",
       "source_commit": "7e4ec24003028440fcc49ed338f893aca6df06e4",
       "image_files": 115,
-      "package_hash_matches": 115,
       "font_typeset_files": 94,
       "preserved_original_files": 21,
       "font_ids": [
@@ -54,8 +48,7 @@
         "image:source-han-serif-bold",
         "image:source-han-serif-heavy",
         "image:swei-sugar-medium"
-      ],
-      "html_replayed_files": 2
+      ]
     },
     {
       "game": "tda03",
@@ -63,7 +56,6 @@
       "manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda03-BETA-0.2.7/tda03-release-manifest.json",
       "source_commit": "7e4ec24003028440fcc49ed338f893aca6df06e4",
       "image_files": 153,
-      "package_hash_matches": 153,
       "font_typeset_files": 110,
       "preserved_original_files": 43,
       "font_ids": [
@@ -72,8 +64,7 @@
         "image:source-han-sans-bold",
         "image:source-han-serif-heavy",
         "image:swei-sugar-medium"
-      ],
-      "html_replayed_files": 2
+      ]
     },
     {
       "game": "imperial-capital-burns",
@@ -81,7 +72,6 @@
       "manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-BETA-0.2.1/tm-release-manifest.json",
       "source_commit": "7e4ec24003028440fcc49ed338f893aca6df06e4",
       "image_files": 402,
-      "package_hash_matches": 402,
       "font_typeset_files": 292,
       "preserved_original_files": 110,
       "font_ids": [
@@ -89,8 +79,7 @@
         "image:noto-sans-sc-vf",
         "image:source-han-sans-bold",
         "image:swei-sugar-medium"
-      ],
-      "html_replayed_files": 2
+      ]
     }
   ],
   "source_records": {
@@ -233,19 +222,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {
@@ -256,19 +243,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {
@@ -1229,19 +1214,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {
@@ -1252,19 +1235,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {
@@ -2869,19 +2850,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {
@@ -2892,19 +2871,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {
@@ -4474,19 +4451,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {
@@ -4497,19 +4472,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {
@@ -6578,19 +6551,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {
@@ -6601,19 +6572,17 @@
         "image:noto-sans-sc-vf"
       ],
       "method": [
-        "html-typeset-full-RGB-reproduction"
+        "html-typeset"
       ],
       "source_records": [
         "public-source/AGE2/packaging/windows/README.md",
         "public-source/AGE2/tools/images/boot_notice_template.py"
       ],
-      "font_verification": {
-        "record": "font-verification.json",
-        "section": "boot",
-        "font_identity": "confirmed",
-        "replay_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "typography": {
+        "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "font_version": "2.04",
         "css_weight": 600,
-        "differing_RGB_pixels": 0
+        "version_scope": "Retained authoring input; no historical browser font-file log is available."
       }
     },
     {

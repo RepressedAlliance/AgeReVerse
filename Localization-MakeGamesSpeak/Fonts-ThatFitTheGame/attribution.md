@@ -11,13 +11,13 @@
 | 字体 | 作者／维护项目与上游 | 许可与本项目用途 |
 | --- | --- | --- |
 | Noto Sans SC、Noto Serif SC | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；七作 UI、卡片、说明、地图和场景排字；另有从可变字体导出的静态 700，用于 PM 日历缩略图字幕 |
-| Noto Sans JP | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；PM 早期设置页“画面模式”排字试稿；历史字体摘要与保留文件一致，代表图重放一致 |
+| Noto Sans JP | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；PM 早期设置页“画面模式”排字试稿；历史输入，与当前发布选型分开 |
 | 思源黑体 Source Han Sans SC | [Adobe Fonts](https://github.com/adobe-fonts/source-han-sans)，Adobe 及项目贡献者 | OFL 1.1；AGE2 发布说明页、部分 HUD／字幕及历史制作方案，以及 PhotonCN／PhotonR2 的派生基础 |
 | PhotonCN／PhotonR2 图片排字输入 | 本项目基于 [Adobe 思源黑体](https://github.com/adobe-fonts/source-han-sans)维护的派生字体 | OFL 1.1；PhotonCN 用于 PF／PM 早期 56 张 CRmt 设计稿和 PM 地图旧稿，其中 U0483 排字稿也作为后续修图输入；旧 PhotonR2 用于 PF 28 种烘焙字幕，与当前运行时文件分别登记 |
 | 思源宋体 Source Han Serif CN | [Adobe Fonts](https://github.com/adobe-fonts/source-han-serif)，Adobe 及项目贡献者 | OFL 1.1；TDA02／03 四张介绍卡的 Bold／Heavy |
 | 狮尾加糖宋体 Swei Sugar | [max32002](https://github.com/max32002/swei-sugar)，基于思源／Noto 宋体的衍生项目 | OFL 1.1；五作日期、地点和剧情卡 Medium；TDA01 在制明太子纸箱中文括注 SemiBold |
 | 霞鹜文楷 GB LXGW WenKai GB | [LXGW](https://github.com/lxgw/LxgwWenkaiGB)，基于 FONTWORKS Klee One | OFL 1.1；PF EX 标题、PM 标题与手写指示历史制作 |
-| 得意黑 Smiley Sans | [atelierAnchor](https://github.com/atelier-anchor/smiley-sans) | OFL 1.1；PF EX 标题历史制作／回放 |
+| 得意黑 Smiley Sans | [atelierAnchor](https://github.com/atelier-anchor/smiley-sans) | OFL 1.1；PF EX 标题历史试稿 |
 | 小赖 Xiaolai | [LXGW](https://github.com/lxgw/kose-font)，瀬戸のぞみ及上游衍生贡献者 | OFL 1.1；PM 当前发布版的 11 个计时状态及 10 张内嵌教程文字 |
 | 马善政 Ma Shan Zheng | [The MaShanZheng Project Authors](https://github.com/googlefonts/mashanzheng) | OFL 1.1；毛笔标题、指示、颁发式及蛋糕文字制作 |
 | 站酷快乐体 ZCOOL KuaiLe | [The ZCOOL KuaiLe Project Authors](https://github.com/googlefonts/zcool-kuaile) | OFL 1.1；PM 倒计时教程字体试样，最终采用小赖 |
@@ -28,15 +28,15 @@
 | 猫啃网糖圆体 MaoKen TangYuan | [猫啃网／夜煞之乐 NFSL2001](https://www.maoken.com/tangyuan)，及 MOTOYA、Varela Round、justfont 上游贡献者 | OFL 1.1；PM 倒计时教程历史试样；保留 20210702 文件与其完整版权声明 |
 | 有梦体 Yomeng Script | [Thoms Liu](https://github.com/l-thoms/YomengScript-Font)，基于 Satsuyako／Yomogi Project 的 Yomogi | OFL 1.1；PM 倒计时教程历史试样；精确输入为 0.9.1 |
 
-这里列的是家族和贡献来源，精确文件的版权字符串、版本和摘要见 [catalog.json](catalog.json)。旧霞鹜文楷 GB 已从与历史摘要相符的保留副本确认版本 1.522；得意黑由 2.0.1 原存档同样确认，不拿最新版替代历史输入。上游最新页面也不能替代历史文件自己的版权与保留字体名声明。运行时另有 IBM Plex、源石、白无常可可体、美呗嘿嘿体等，见[字体总入口](README.md#来源与复用)，不要把运行时选型自动算成图片用字。
+这里列家族和贡献来源，精确文件的版权字符串、版本与摘要见 [catalog.json](catalog.json)。历史霞鹜文楷 GB 使用 1.522，得意黑使用 2.0.1，不能用上游最新版代替旧输入；许可和保留字体名也跟随实际文件。运行时另有 IBM Plex、源石、白无常可可体等，见[字体入口](README.md)，运行时选型不自动成为图片用字。
 
-美呗嘿嘿体也实际用于 **TDA03 在制折叠便笺 1629**，因此另记图片输入；其文件版权署名为成都美尔贝科技股份有限公司，[作者发布页](https://www.zcool.com.cn/work/ZNTY3OTI5ODg%3D.html)与仓库已有[来源声明](../../AGE2/packaging/windows/MEBheiheiti-source.txt)一并保留。它依据作者使用声明维护，**不是 OFL／开源字体**；本次未能读取发布页正文，不声称重新完整核验授权。图片输入与发布包补字后的运行时文件摘要不同，分别登记。
+美呗嘿嘿体也实际用于 **TDA03 在制折叠便笺 1629**，因此另记图片输入；其文件版权署名为成都美尔贝科技股份有限公司，[作者发布页](https://www.zcool.com.cn/work/ZNTY3OTI5ODg%3D.html)与仓库已有[来源声明](../../AGE2/packaging/windows/MEBheiheiti-source.txt)一并保留。它依据作者使用声明维护，**不是 OFL／开源字体**；作者授权正文暂未取得，仍需补充核实适用范围。图片输入与发布包补字后的运行时文件摘要不同，分别登记。
 
 ## Windows 字体也如实登记
 
 楷体 KaiTi、宋体 SimSun、MS Mincho、微软雅黑 Microsoft YaHei、黑体 SimHei 出现在实际图片制作或候选中；MS Gothic 还有字体比较记录。它们是 Windows 授权字体，**不能统称为开源字体，也不在本仓库附送字体文件**。SimHei 的版权记录为北京中易，精确文件身份和 Microsoft 产品附带许可说明见目录，不把“Windows 自带”写成开源授权。
 
-微软雅黑 Light 也实际用于一轮 33 张装备标题候选，后来被常规版替换；两种输入分别登记。旧稿被覆盖而没有保留历史字体摘要的，明确说明证据限制，不把现存常规版配方倒推给旧稿。字体与素材的逐项对应见[历史图片用字记录](historical-image-fonts.json)，本次七作清查的完整索引见[总表](audit.md)。
+微软雅黑 Light 也实际用于一轮 33 张装备标题候选，后来被常规版替换；两种输入分别登记。旧稿被覆盖而没有保留历史字体摘要的，明确说明证据限制，不把现存常规版配方倒推给旧稿。字体与素材的逐项对应见[历史图片用字记录](historical-image-fonts.json)，七作用字的完整索引见[总表](audit.md)。
 
 PM 早期设置页及“保存”按钮还使用过 **BIZ UDGothic／BIZ UDPGothic 的 Regular、Bold**，设计／发行来源为 TypeBank／Morisawa；[Microsoft 字体页](https://learn.microsoft.com/en-us/typography/font-list/biz-udgothic)列明这两个 TTC 中的四种字体。实际输入的历史摘要与现存 Windows 文件一致，文件许可声明为 Microsoft 产品附带字体条款。旧脚本误写的“开源候选”已在本目录纠正；另有 [Morisawa／Google Fonts 的 OFL 发行](https://github.com/googlefonts/morisawa-biz-ud-gothic)，但它不替代当时实际读取的 Windows 文件身份与许可。
 

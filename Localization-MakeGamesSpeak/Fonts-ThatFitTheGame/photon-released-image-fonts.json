@@ -2,7 +2,6 @@
   "schema": "age-reverse-photon-released-image-fonts/v1",
   "checked_on": "2026-10-11",
   "scope": "Every PNG file listed in the embedded package manifest of PF/PM BETA 0.1.2, including sidecar and payload copies. Repeated file bytes share one image record. Does not enumerate untouched base-game resources or assert coverage of all native resource records.",
-  "verification": "Release ZIP hashes and embedded manifests were checked against the public release manifests. All 2,861 package PNG hashes match their embedded manifests. Image provenance is established by recorded candidate hashes, byte/RGBA identity, explicit inheritance, native-image authority, or the individually described bounded colour conversions. This is not a new visual review, game runtime test or complete historical rendering replay.",
   "summary": [
     {
       "game": "pf",
@@ -15,7 +14,6 @@
       "embedded_manifest_path": "package_manifest.20260910.json",
       "source_commit": "ebb0ba5ff27800b10b29ce8de54cd7596664ed2e",
       "png_files": 1214,
-      "all_embedded_png_hashes_verified": true,
       "unique_images": 741,
       "font_typeset_unique_images": 655,
       "font_ids": [
@@ -40,7 +38,6 @@
       "embedded_manifest_path": "package_manifest.20260910.json",
       "source_commit": "ebb0ba5ff27800b10b29ce8de54cd7596664ed2e",
       "png_files": 1647,
-      "all_embedded_png_hashes_verified": true,
       "unique_images": 985,
       "font_typeset_unique_images": 873,
       "font_ids": [

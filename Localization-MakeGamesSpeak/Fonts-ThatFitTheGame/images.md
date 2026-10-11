@@ -1,18 +1,18 @@
 # 图片用字与制作样式
 
-[字体入口](README.md) · **[七作清查总表](audit.md)** · [逐项证据状态](font-evidence.md) · [图片流程](../Images-MakeItLookNative/README.md) · [来源与声明](attribution.md) · [用途汇总](image-font-usage.json) · [版本目录](catalog.json)
+[字体入口](README.md) · **[七作用字总表](audit.md)** · [版本与资料限制](font-evidence.md) · [图片流程](../Images-MakeItLookNative/README.md) · [作者与许可](attribution.md) · [排字方法](typography.md)
 
 图片字体按素材组维护。同一级文字统一字重、字号、字距、基线和特效，再分别适配透视、距离与光照；不能按每个词的墨迹外接框重新缩放。运行时正文用字与图片用字没有自动绑定关系。
 
-**本次可访问资料的用字追溯已核对完成。** 当前发布包、10 月候选、历史批次、局部字层和生成参考分别登记；按作品／字体查询及各表对应见[清查总表](audit.md)，范围与精度限制见[核查记录](audit-scope.json)。
+本页按素材组列实际用字与样式。当前发布包、历史批次、本地候选、局部字层和生成参考分别登记；逐图清单与计数单位见[索引](image-font-index.json)。
 
 制作过、已采用和已发布分别记录；绘制、生成或复用原字形不靠外观猜字体名。下面从当前发布包反查实际字层，再列本地在制和历史试样。
 
-## 当前发布包：已查到哪一步
+## 当前发布包的图片用字
 
-五作 AGE2 当前发布清单中的 **859 个独立 WebP／AVIF 文件**已逐个核对本地打包副本与公开 SHA-256，并对应制作输出或原版来源。每个文件的路径、摘要、字体和来源记录见 [AGE2 发布图片用字表](age2-released-image-fonts.json)。这是来源核对，不是重新进行全图视觉审核或实机验收。
+五作 AGE2 当前发布清单包含 **859 个独立 WebP／AVIF 文件**。每个文件的路径、成品摘要、字体及来源记录见 [AGE2 发布图片用字表](age2-released-image-fonts.json)。采用版本如下：
 
-| 作品 | 核对的公开版本 | 图片文件 | 新排字／HTML 排字 | 原版图片原样沿用 |
+| 作品 | 对应公开版本 | 图片文件 | 新排字／HTML 排字 | 原版图片原样沿用 |
 | --- | --- | ---: | ---: | ---: |
 | TDA00 | BETA 0.2.1 | 71 | 54 | 17 |
 | TDA01 | BETA 0.3.3 | 118 | 93 | 25 |
@@ -22,20 +22,20 @@
 
 新排字素材确认用到 Noto Sans SC 可变字体、Noto Sans SC 静态 500、狮尾加糖宋体 Medium、思源黑体 SC Bold、思源宋体 CN Bold／Heavy。**思源黑体 Bold 仍用于发布版说明页、部分 HUD 和补充字幕，不是全部已经被替换的旧方案。** 原版日期、Logo、地图及部分日英共用图片按实际字节核对后记为沿用，不给它们虚构一个新字体。
 
-上述新排字数包括五作共 10 张开场说明贴图、两种内容。用保留 HTML 和 Noto Sans SC 2.04 输入在 Chrome 重放，再按原横／竖画布打包操作比较，10 个文件的 RGB 像素全部一致；匹配渲染实际使用 Noto Sans SC、CSS 字重 600，微软雅黑回退对照不一致。字体身份已确认，[验证记录](font-verification.json)同时区分重放使用的文件版本与历史浏览器日志。
+上述新排字包含五作共 10 张开场说明贴图、两种内容，使用 Noto Sans SC、CSS 字重 600。保留配方的字体版本为 2.04，不代表保存了历史浏览器的完整加载日志。浏览器实际选字与后备字体的处理方法见[排字技术说明](typography.md)。
 
-PF／PM 当前 **BETA 0.1.2** 的全部 **2,861 个 PNG 文件**已核对到公开 ZIP、安装器嵌入清单和制作来源。相同字节共用记录：PF 为 1,214 个文件／741 种内容，PM 为 1,647 个文件／985 种内容，两作合计 1,562 种不同内容。路径、字体、配方身份、字层继承和核对方法见 [Photon 发布图片用字表](photon-released-image-fonts.json)。
+PF／PM 当前 **BETA 0.1.2** 的嵌入清单包含 **2,861 个 PNG 文件**。相同字节共用内容记录：PF 为 1,214 个文件／741 种内容，PM 为 1,647 个文件／985 种内容，两作合计 1,562 种不同内容。路径、字体、配方身份和字层继承见 [Photon 发布图片用字表](photon-released-image-fonts.json)。
 
 其中 1,392 种内容涉及字体排字，另 170 种为原版字形沿用或已有记录的生成字样；一张图可以混有多个字体或生成字层。**旧的 1,490 图归档和早期“未安装”标记不代表当前包。** 例如小赖倒计时后来已发布，PF EX 标题的旧文楷／得意黑方案则已被生成字样替换。
 
-两份逐图表共覆盖 **3,720 个发布图片文件**，范围是上述清单列出的独立图片；不包含补丁没有携带的原游戏资源，也不宣称逐一枚举了所有原生资源记录。证据以制作文件摘要、相同字节／RGBA、明确继承关系为主；四张嵌入场景图及一张日历缩略图另外记录了实测的颜色转换差异，没有冒充字节一致。
+两份逐图表共覆盖 **3,720 个发布图片文件**，范围是补丁清单列出的独立图片，不包含补丁未携带的原游戏资源。一张图可以同时使用多个字体、继承字层或生成字样；四张嵌入场景图和一张日历缩略图涉及颜色转换，按各自图像身份记录，不将转换后的图片写成字节完全相同。
 
-仍有具体限制：Windows 与思源旧配方中缺历史字体摘要的，字体名称／字重已确认，但不能证明当时字体的精确二进制版本；一张“仅有声音”教程沿用早期 Noto Sans 计时字层，字体与旧配置已找到，但旧排版未逐像素重放。具体图片、资源 ID、文件名和已关闭的缺口见[逐项证据状态](font-evidence.md)。当前 18 种微软雅黑常规体内容均有旧字体摘要或已验证母版继承，不能把它们误列为字体文件不明。
+部分 Windows 与思源旧配方缺当时字体文件摘要，已知字体名称／字重，但不能据此确认精确历史二进制版本；PM 一张“仅有声音”教程保留了 Noto Sans 计时字层，旧排版尚未完整复现验证。具体资源 ID 和文件名见[版本与资料限制](font-evidence.md)。当前 18 种微软雅黑常规体内容对应已知输入或其继承母版，不属于字体身份不明。
 
 <details>
 <summary><strong>English · Which font went into which image?</strong></summary>
 
-The release registers cover 859 standalone AGE2 WebP/AVIF files and all 2,861 PNG files in the embedded PF/PM BETA 0.1.2 manifests. Photon duplicates share 1,562 image records, including 1,392 contents with font-rendered lettering and 170 with original or generated lettering. Bindings record exact hashes, RGBA identity, inherited layers or measured colour conversions. All ten HTML boot textures now reproduce the released RGB pixels with Noto Sans SC; the fallback control differs. Historical Windows/Source Han binary identity and one old timer layout retain explicit, material-specific limitations. This establishes provenance within that file scope, not new runtime/visual approval. Local candidates and superseded trials are separate. See [evidence status](font-evidence.md), [credits](attribution.md) and [registration rules](registration.md).
+The release registers cover 859 AGE2 WebP/AVIF files and 2,861 PNG files in PF/PM BETA 0.1.2. Photon duplicates share 1,562 content records, including 1,392 with font-rendered lettering and 170 with original or generated lettering. The tables preserve mixed fonts, inherited layers, versions and adoption status. Historical font binaries and one old timer layout retain material-specific [limitations](font-evidence.md). Local candidates and superseded trials are separate. See the [credits](attribution.md), [typography methods](typography.md) and [registration rules](registration.md).
 
 </details>
 
@@ -53,8 +53,8 @@ The release registers cover 859 standalone AGE2 WebP/AVIF files and all 2,861 PN
 | PF 28 种烘焙字幕内容 | 制作当时的 PhotonR2 | 旧输入摘要 `aadf8950…ad4830b`；不同于后来扩字的运行时文件 |
 | PF／PM 早期 56 张 CRmt 设计稿、PM 地图 v1 | PhotonCN-Regular.ttf | 旧批量排字、修订及 U0483 后续修图输入；与当前采用分别登记 |
 | PF／PM 轨道擦除字幕 | Noto Sans SC 可变字体 | 90 条制作记录对应 44 种不同发布内容；有单独的字幕制作器，不能全部归给 PhotonR2 |
-| PF EX 标题、PM《樱花盛开之前》标题／手写指示旧稿 | LXGWWenKaiGB-Medium.ttf | 霞鹜文楷 GB 1.522；保留副本的摘要与旧配方、回放证据一致；部分后来改用其他字体 |
-| PF EX 标题旧制作／精确回放 | SmileySans-Oblique.ttf | 得意黑 2.0.1；原存档字体摘要与回放记录一致，不把每个历史候选都写成当前定稿 |
+| PF EX 标题、PM《樱花盛开之前》标题／手写指示旧稿 | LXGWWenKaiGB-Medium.ttf | 霞鹜文楷 GB 1.522；历史配方对应此版本，部分素材后来更换字体 |
+| PF EX 标题旧稿 | SmileySans-Oblique.ttf | 得意黑 2.0.1；历史试样，与当前定稿分开 |
 | PF／PM 毛笔剧情卡、PM 手写指示、PF 证书颁发式 G1972／G2787 | MaShanZheng-Regular.ttf | 马善政 2.003；当前包采用，G2787 继承大图字层，不只是 10 月候选 |
 | PM 剩余时间 G1294–G1304、教程内嵌 G2990–G2999 | Xiaolai-Regular.ttf | 小赖 3.126；11 个计时状态与 10 张教程图已进入当前包，保留原数字与秒字 |
 | PF／PM 装备标题及两张搬用装备字层的选择 HUD | Microsoft YaHei 常规 | 18 种当前内容；两张 CRip008 HUD 同样继承微软雅黑字层 |
@@ -62,7 +62,7 @@ The release registers cover 859 standalone AGE2 WebP/AVIF files and all 2,861 PN
 | PF／PM 舰艇字幕、剧情卡及学校黑色横幅 | KaiTi / simkai.ttf | 当前采用；PM G1401 继承 PF G1149 字幕。学校金字后来改成生成字样，但 G1961／G2803 黑色横幅仍有楷体 |
 | PF／PM 时间／剧情卡、PM 研修日期后缀 | SimSun / simsun.ttc；MS Mincho / msmincho.ttc | 当前采用的 Windows 字体；原日文保留层与新排字分别记录 |
 | PM 日历缩略图 G1049 的提供字幕 | NotoSansSC-Bold-700.ttf | 从 Noto Sans SC 可变字体导出静态 700，17px／8 倍渲染；字层来源不因手工合成而消失 |
-| PF 蛋糕 G1952 | MaShanZheng-Regular.ttf | 10 月 recipe-v1 最后记录为本地静态验收通过，未做实机确认 |
+| PF 蛋糕 G1952 | MaShanZheng-Regular.ttf | 本地 recipe-v1 候选，未发布、未做实机确认 |
 | PM 基地地图 G4267／G4268 | NotoSerifSC-VF.ttf | 制作清单选中 v3，字重 500、16px；PhotonCN v1 已被替换 |
 | PF 报纸 G2594、PF／PM 书店素材 | Noto Serif SC ＋ Noto Sans SC | 同图混用：报纸宋体 800／黑体 900，书店按文字段选择；不能只登记其中一种 |
 | 五作共用 ORDER UI、帝都片尾岗位／场景等补漏图 | NotoSerifSC-VF.ttf | 原人物署名保留，岗位另译；片尾岗位配方记载 600／38px |
@@ -70,13 +70,13 @@ The release registers cover 859 standalone AGE2 WebP/AVIF files and all 2,861 PN
 | 帝都制作备注 2011 备选、商店包装 1932 局部 | Microsoft YaHei / msyh.ttc、msyhbd.ttc | 微软雅黑常规／粗体；制作备注未批准，包装粗体用于两个小标签，整图仍待完成 |
 | TDA01 明太子纸箱的中文括注 | SweiSugarCJKsc-SemiBold.ttf | 本地在制 SemiBold；与发布日期／地点卡的 Medium 分别登记 |
 | TDA03 折叠便笺 1629 | MEBheiheiti.ttf | 本地在制美呗嘿嘿体；输入摘要 `7f59303f…62174b`，不同于发布包已补字的同名运行时文件 |
-| 当前 PF EX 标题、樱花标题、部分学校金字和场景牌匾 | 生成字样／原字形沿用 | 追到选中的字层或生成母版；六张提供的标题合成图与发布图 RGBA 相同，没有在合成时另排字体 |
+| 当前 PF EX 标题、樱花标题、部分学校金字和场景牌匾 | 生成字样／原字形沿用 | 采用提供的字层或生成母版；六张标题合成图没有在合成时另排字体 |
 
-可变字体实际输入是 Noto Sans SC 2.04、Noto Serif SC 2.02；文件摘要已核对制作记录与本机输入，见目录。每个组的具体渲染参数仍跟随对应游戏素材；字体来源确定不等于该组所有成品已重新视觉验收。
+可变字体输入为 Noto Sans SC 2.04、Noto Serif SC 2.02，精确文件身份见[目录](catalog.json)。字号、轴值、描边和间距随对应素材组配方维护，不能将同一家族名当成全作统一排版参数。
 
-## 追回的倒计时试样与装备旧稿
+## 倒计时试样与装备旧稿
 
-PM 的“剩余时间”教程还保留着八张字体试样。用保留的字体文件和制作器重放后，八张都与旧图的 RGBA 像素完全一致；因此下面六项确实用于图片试作，并非只下载过字体。
+PM“剩余时间”教程制作时使用过下列字体试样；当前发布版最终采用小赖。保留历史用字便于维护来源和样式，不表示继续采用这些备选。
 
 | 字体输入 | 历史图片与用途 | 当前采用情况 |
 | --- | --- | --- |
@@ -87,35 +87,35 @@ PM 的“剩余时间”教程还保留着八张字体试样。用保留的字�
 | 猫啃网糖圆体 20210702 | `A-maoken-tangyuan.png`，22px | 历史试样；文件名与 SFNT 版本字符串均保留 |
 | 有梦体 Yomeng Script 0.9.1 | `C-yomeng-script.png`，22px，半像素填充描边 | 历史试样 |
 
-另外两张是站酷快乐体 24px 与小赖 22px；**当前发布的倒计时最终用小赖**，不能把这些备选统称为发布字体。逐张输出与字体摘要、排版参数和重放结果见[历史记录](historical-image-fonts.json)。
+另有站酷快乐体 24px 与小赖 22px 试样。逐张输出、字体摘要和排版参数见[历史用字表](historical-image-fonts.json)。
 
-装备标题还有一轮使用 `msyhl.ttc` 的 **微软雅黑 Light** 旧稿：五套共用字样生成了 33 张候选，随后改用常规微软雅黑。制作对话保存了语法修复后成功生成 33 张、再更换字体的顺序；旧输出及清单被覆盖，不能拿今天的字体摘要或常规版成品代替旧稿的字节证据。这项也单独登记，不遗漏实际用过的 Light，也不把它说成当前包采用。
+装备标题的 33 张早期候选使用 `msyhl.ttc` **微软雅黑 Light**，随后更换为常规体。旧输出与清单已被覆盖，现存常规体成品和保留参考字体不能代替旧稿的精确文件身份；Light 用途仍登记为历史输入。
 
-PF 的 `G2685`“制作／著作”还有一张历史候选：用 **SimHei 黑体 5.05** 将“製”重排为“制”，其余原字和 âge 标志沿用原图。字体摘要与旧制作清单一致，重放后整张 RGBA 与保留候选完全一致；这张候选的摘要未出现在当前发布清单。它确实用于素材修改，不能仅列为字体比较记录。
+PF `G2685`“制作／著作”的历史候选使用 **SimHei 黑体 5.05** 将“製”重排为“制”，其余原字和 âge 标志沿用原图。该候选未列入当前发布清单，属于素材修改用途，不是只作字体比较。
 
-## 早期批次也单独追查
+## 早期批次与字体替换
 
-PM 7 月的右键菜单制作使用过**微软雅黑粗体和常规体**：第一轮 54 张按钮为粗体，随后四轮 54 状态的渲染记录改用常规体，继续调整阴影与抗锯齿。九份制作报告共 486 行，按资源、成品摘要和字体去重后是 **209 项历史版本**；这些行数不能当成 486 张不同成品。逐项记录见[历史表](historical-image-fonts.json)。脚本列出的黑体备用项没有被这些实际制作报告选用。
+PM 早期右键菜单的 54 张按钮先用**微软雅黑粗体**，后改为常规体，并调整阴影与抗锯齿。[历史表](historical-image-fonts.json)按资源、成品和字体记录 209 项不同版本；脚本中的备用字体不因此算作实际用字。
 
 TDA00 早期的 **7 张姓名贴图和 9 张 OP 字幕**使用思源黑体 SC Bold。姓名贴图改过全名、简称及对齐方案，OP 字幕改过颜色与布局；制作器沿用同一个字体，并覆盖相同输出路径，所以只给现存输出记录摘要，不冒充每一轮旧图的字节证据。部分中文姓名图仍沿用 `_ja.webp` 文件名，不能按后缀把它们误判成未修改的日文原图。
 
-PF／PM 早期 CRmt 制作还有 **56 张 PhotonCN 排字设计稿**：39 张低风险组、17 张单独设计组。两次批量命令都明确使用冻结的同一字体，且有成功输出记录；先前失败的运行单独排除。U0006、U0479 保存了完整的逐图渲染报告，U0329 及 U0483／U0484／U0486 还有修订记录，见 [CRmt 历史表](historical-crmt-image-fonts.json)。这些是两作旧制作共用的 U 编号，未强行换算成猜测的游戏资源偏移。
+PF／PM 早期 CRmt 有 **56 张 PhotonCN 排字设计稿**：39 张低风险组、17 张单独设计组。U0006、U0479 的配方身份及 U0329、U0483／U0484／U0486 的修订关系见 [CRmt 历史用字表](historical-crmt-image-fonts.json)。这些是两作共用的历史 U 编号，不换算成未经确认的游戏资源偏移。
 
-**U0483 的 PhotonCN 中文稿后来还被提供给图像模型作局部修图输入**，因此这项字体来源也保留。修图提示要求保留中文内容和位置、处理文字底板；这证明实际提供了排字底稿，不等于证明生成后的每一笔仍是原字体。PhotonCN 的历史用途不能只写成 PM 两张地图，也不能把全部旧设计稿算成当前发布成品。
+**U0483 的 PhotonCN 中文稿还用于后续局部修图**。生成编辑要求保留中文内容与位置、修复文字底板，因此保留该字体的底稿来源。生成后的笔画可能变化，不能据此将每一笔都归为原字体；旧设计稿也不自动算入当前发布成品。
 
-从保留的 Git 历史中还追回 PM 7 月设置页“画面模式”和右键“保存”按钮的旧试稿，见 [Git 历史用字表](historical-git-image-fonts.json)：**BIZ UDGothic Regular／Bold、BIZ UDPGothic Regular／Bold、Noto Sans JP、等线粗体**都实际用于图片试作。四项 BIZ 输入分清了 `R.ttc`／`B.ttc` 的索引 0（等宽）与 1（比例宽度）；不能只看文件名就把它们写成同一种字。
+PM 早期设置页“画面模式”和右键“保存”按钮使用过 **BIZ UDGothic Regular／Bold、BIZ UDPGothic Regular／Bold、Noto Sans JP、等线粗体**，见[历史用字表](historical-git-image-fonts.json)。BIZ 的 `R.ttc`／`B.ttc` 分别使用索引 0（等宽）和 1（比例宽度），同一个 TTC 文件名不能代替具体字体身份。
 
-这部分共 279 项制作输出记录、194 种保留的 PNG 内容，另有只保存了排版结果指标的试算。64 项旧 PNG 摘要和 12 项旧 RGBA 摘要已按各自含义核对，未保存历史成品摘要的条目单独说明；三张代表字层重放后 RGBA 完全一致。六张继承字层的白色文字蒙版也与已确认字体的渲染相同，但阴影和颜色有差异，未冒充整图重放通过。这些数量包含重复版本，不能直接加进发布数量。
+这部分包含 279 项制作输出记录、194 种保留的 PNG 内容，以及未保存成品的排版试算。历史表分别记录已有成品、仅存制作记录和继承字层，不能将重复版本数加进发布数量。阴影或颜色不同的图片也不等于完整像素相同。
 
 旧配方的 BIZ“开源候选”标记已纠正：实际读取的是 Microsoft 随 Windows 提供的 TTC，保留文件的许可声明也如此；不是另行发行的 Google Fonts／Morisawa OFL 字库。Noto Sans JP 则按实际 Noto 输入登记。字体身份、历史摘要及作者见[版本目录](catalog.json)，许可区别见[致谢](attribution.md)。
 
-[历史素材版本表](historical-image-variants.json)进一步收录制作清单里的 **1,933 项游戏／成品内容**，包括旧稿、返修和多轮排字；其中 1,871 项找到了摘要一致的保留输出，62 项只有旧制作记录，分别标明。557 项内容也存在于当前发布表，不能把这份历史表全部加进“已发布图片数”。每项保留素材标识、成品摘要、实际字体字段及源记录位置；这是制作来源追溯，未逐一重放全部旧图。
+[历史素材版本表](historical-image-variants.json)收录 **1,933 项游戏／成品内容**，包括旧稿和返修；其中 1,871 项有保留输出，62 项仅存制作记录。557 项内容与当前发布表重叠，不能全部算成新增图片。各行保留素材标识、成品摘要、字体与来源指针。
 
-旧清单的字体字段也可能过时。例如 PF 学校金字 `G1891` 的第二版仍抄着第一版“楷体”字段，但合成代码已把全部金色文字换成依据原图生成的字样。这项已按实际替换关系排除；第一版的楷体试稿和另一张图仍沿用楷体的黑色布幅分别保留，不能只照抄旧字段。
+PF 学校金字 `G1891` 的后续版本已把楷体字层换成生成字样；旧楷体试稿和仍沿用楷体的黑色布幅分别保留。复制旧配方后要同步实际字层的字体字段，避免将历史输入误写成当前用途，方法见[字层继承](typography.md)。
 
 ## 本地在制与局部稿
 
-[在制图片用字表](unreleased-image-fonts.json)另列 10 月两轮制作的 **365 项**：AGE2 24 个系列的 328 张已登记静态候选，以及 Photon 37 张修改图。当前文件摘要对应现存候选与其记录；没有把本地看图、维护者最终确认和实机验证混成同一种通过状态。
+[在制图片用字表](unreleased-image-fonts.json)另列 **365 项本地候选**：AGE2 24 个系列的 328 张图片及 Photon 37 张修改图。本地选择、维护者确认、实机验证和发布采用是不同状态，分别记录。
 
 AGE2 候选中有 311 张使用 Noto Sans SC 静态 500、7 张 Noto Sans SC 可变字体、6 张 Noto Serif SC、各 1 张狮尾 SemiBold、美呗嘿嘿体、楷体，以及 1 张生成字样。另有 21 张原图按决定保留、21 张资源待完成；帝都商店局部稿和制作备注备选等已见用字仍列在上表和用途汇总中，不把它们当作整图完稿。
 
@@ -125,9 +125,9 @@ PF／PM 的旧字体比较记录还出现 **SimHei 5.05**、**MS Gothic 5.32**�
 
 对照表、审核页标题用过 Arial、Consolas、Segoe UI、微软雅黑；AGE2 正文字体比较还试过多种霞鹜、狮尾、寒蝉及日文字体。它们不是因此就成了游戏图片字体。原图保留、原字形搬用、模型绘制字样也分别记录方法，不另造字体身份。原版商业字体及运行时方案见[运行时表](runtime.md)。
 
-早先 35,034 个记录的检索只是局部发现。本次从项目、工作树、独立制作目录、提供字层与已安装覆盖资源重新盘点，遍历 108 个现存根目录、检索 610 份保存会话，并补查 XML、配置及字幕文件；另查了保留 Git 历史中的 21,918 个文本版本。字体引用、排字制作器、审核页用字和生成输入分别归类，再对应实际素材。文件总数包含原版资源、重复历史和工具资料，不能当作汉化图片数量；详细范围、表间对应和保留限制见[核查记录](audit-scope.json)。
+[用途汇总](image-font-usage.json)和[逐图表索引](image-font-index.json)关联素材、字体和采用范围。部分制作配方仅保留在维护者本地，公开的身份与用途摘要不等于完整可重建工程，缺失范围见[资料限制](font-evidence.md)。
 
-[用途汇总](image-font-usage.json)与逐图表保留素材、摘要和实际采用关系。完整审核门户、私人对话、原游戏图与字体二进制不上传。维护者保留的源记录只有身份和用途摘要公开，读者不能把这些摘要当成已获得完整制作工程。
+源身份、实际用途与必要配方公开维护；私人对话、逐次核查日志、原游戏图和字体二进制不作为文档附件上传。
 
 ## 新批次怎么选
 
@@ -137,4 +137,4 @@ PF／PM 的旧字体比较记录还出现 **SimHei 5.05**、**MS Gothic 5.32**�
 4. 给每项成品保留其实际采用的配方。找不到旧配方时标注未核实，不因为外观看起来接近就追认某个字体。
 5. 对原尺寸、整图和局部放大分别检查；同字族覆盖检查不能证明透视、遮挡、光照和笔画正确。
 
-君望对话形成的新工作方法包括朱雀仿宋菜单方案，以及按独立 Logo、手写和场景文字选择绘制／生成方式。这属于在制作品的已选样式，另按[君望项目](../../AGE2/games/kiminozo/images/README.md)维护，不写成上述七作已经采用的字体。
+君望在制 UI 的样式包括朱雀仿宋菜单方案，以及按独立 Logo、手写和场景文字选择绘制／生成方式；另按[君望项目](../../AGE2/games/kiminozo/images/README.md)维护。

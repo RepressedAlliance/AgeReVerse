@@ -6,7 +6,7 @@
     "photonmelodies"
   ],
   "material_namespace": "Historical PF/PM CRmt unique-image U identifiers. The batch namespace includes both games; it is not expanded into guessed per-game resource offsets.",
-  "status": "historical-font-use-confirmed",
+  "status": "historical-font-uses",
   "summary": {
     "distinct_design_assets": 56,
     "low_risk_v2_assets": 39,
@@ -20,7 +20,6 @@
     "license": "OFL-1.1",
     "identity": "Frozen copy of the project PhotonCN input; the recorded hash matches the registered historical file."
   },
-  "verification": "Both batch invocations explicitly pass the frozen PhotonCN file; each has a separate successful output result and explicit material list. The failed low-risk v1 execution is not counted as a successful batch. These historical font-based layouts were later revised, reused as generation input or replaced, independently of present release adoption.",
   "source_records": {
     "frozen-font": {
       "record": "font-inputs-20260902.v1 / copy result",
@@ -1045,8 +1044,7 @@
       },
       "sources": [
         "u0006-render-report"
-      ],
-      "verification": "Complete historical rendering report retained; output hashes are reported evidence, not a claim that a modern file or a replay matched them."
+      ]
     },
     {
       "asset_id": "U0479",
@@ -1063,8 +1061,7 @@
       },
       "sources": [
         "u0479-render-report"
-      ],
-      "verification": "Complete historical rendering report retained; output hashes are reported evidence, not a claim that a modern file or a replay matched them."
+      ]
     }
   ],
   "corrections": [

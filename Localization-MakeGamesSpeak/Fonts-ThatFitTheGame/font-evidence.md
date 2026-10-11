@@ -1,19 +1,19 @@
-# 哪些已经确定，哪些仍缺旧版本证据
+# 字体版本与制作资料的限制
 
-[七作总表](audit.md) · [完整发布逐图表：AGE2](age2-released-image-fonts.json)／[PF・PM](photon-released-image-fonts.json) · [补查验证记录](font-verification.json)
+[七作用字总表](audit.md) · [AGE2 发布逐图表](age2-released-image-fonts.json) · [PF／PM 发布逐图表](photon-released-image-fonts.json) · [排字方法](typography.md)
 
-**字体名称／字重是否确定，与当时字体文件的精确版本是否有证据，是两件事。** 下面逐项列明已关闭的问题及仍缺历史文件证据的素材；不能把今天检查到的版本当成旧稿当时版本。
+**已知字体名称／字重，不代表保留了当时的精确字体文件。** 下表列出缺历史二进制身份、旧布局或制作原件的具体素材；不能拿今天的参考文件版本补写历史记录。
 
-本次补查后，已登记汉化排字素材没有仅凭 CSS 后备列表或外观猜测而留下的未识别字体。未另行排字的官方原字形、手绘／生成字样按制作方式记录，不虚构字体名。完整图片清单仍以各逐图表为准，本页列的是证据精度差异。
+已登记排字素材都有实际字体或底稿来源；官方原字形、手绘和生成字样按制作方式记录，不虚构字体名。完整素材清单见各逐图表，本页集中说明不能完整复现的范围。
 
-## 开场说明：实际字体已经确认
+## 开场说明的字体与配方范围
 
 TDA00、TDA01、TDA02、TDA03、帝都燃烧各有以下两个文件，共 10 个文件、两种内容：
 
 - `root/assets/data/gui/textures/boot/00_note000_zh.webp`
 - `root/assets/data/gui/textures/boot/00_v_note000_zh.webp`
 
-保留的 HTML、Noto Sans SC 2.04 输入及原打包操作在 Chrome 中重放后，10 个文件的全部 RGB 像素均与发布图一致。匹配渲染实际使用 Noto Sans SC，CSS 字重为 600；故意令字体加载失败时回退到微软雅黑，与发布页有 231,159 个像素不同。**这处已经从“模板指定 Noto”补到实际字形确认，不再是字体身份缺口。** 版本 2.04 是匹配重放使用的保留输入版本，不冒充找回了当年浏览器的字体文件日志。
+这些贴图实际使用 **Noto Sans SC、CSS 字重 600**，保留配方对应字体版本 2.04。历史浏览器的字体加载日志未保留，版本 2.04 表示现存可复现输入，不补作当年的日志。后备字体的处理方法见[排字技术说明](typography.md)。
 
 ## 当前发布图：字体确定，旧文件身份未完全证实
 
@@ -57,7 +57,7 @@ TDA00、TDA01、TDA02、TDA03、帝都燃烧各有以下两个文件，共 10 �
 
 这些分别是楷体 **10 种**内容、宋体 **5 种**、MS Mincho **8 种**、微软雅黑粗体 **8 种**。合计 31 项字体／内容关系，涉及 **29 种不同图片内容**，不是 31 张互不重复的图片。字体由实际制作记录、代码或字层继承确认；缺的是当时字体文件的摘要等身份记录。宋体、MS Mincho 与当前微软雅黑制作器均使用 Pillow 的默认 TTC 索引 0，不能再笼统说这些字体的索引也都不知道。
 
-**已排除在缺口外的素材：**18 种当前微软雅黑常规体内容已有旧文件摘要或可验证的母版继承；其中选择 HUD 的 G2600／G2606／G4327／G4332 共两种内容，继承相同装备字形蒙版。楷体的 PF G1961、G2803、G1149，PM G1401、G4375、G4376 共六种内容，也有旧摘要或已确认母版关系。详见逐图表与补查记录。
+**不属于上述版本缺口的素材：**当前 18 种微软雅黑常规体内容对应已知字体输入或其母版；G2600／G2606／G4327／G4332 共两种选择 HUD 内容继承装备字形蒙版。楷体 PF G1961、G2803、G1149 及 PM G1401、G4375、G4376 共六种内容也对应已知输入或母版，具体关系见逐图表。
 
 ### TDA／帝都的思源字体
 
@@ -234,17 +234,17 @@ TDA00、TDA01、TDA02、TDA03、帝都燃烧各有以下两个文件，共 10 �
 
 [逐图历史版本表](historical-image-variants.json)还保留上述字体的其他返修／沿用记录。部分历史字体摘要缺失不等于字体名称没找到；有些行与当前发布表或专项旧稿重复，不能相加当作额外图片数量。
 
-## 字体已经确定，但有其他验证限制
+## 其他缺失资料与许可限制
 
 | 具体图片／素材 | 已确定的字体 | 实际限制 |
 | --- | --- | --- |
-| PM “仅有声音”教程，`pm:rio000:0x6544f288`；发布文件 `PhotonR2Assets/v6/payload/PM/pm_rio000_6544f288.png` | Noto Sans SC；补充标签与继承的早期计时字层同属该字体，计时配方保留旧字体摘要 | 未逐像素重放旧计时布局；这是布局重放范围，不是字体身份不明 |
-| TDA03 折叠便笺 1629，`folded-note-v8/cn.png` | 美呗嘿嘿体 3.000，旧输入摘要与保留文件一致 | 作者网页本次无法读取；影响重新核验授权原文，不影响字体身份 |
-| 历史表中 62 项没有现存成品的制作记录 | 各行已有实际字体字段 | 只能核对旧制作记录，不能对已丢失图片进行像素重放 |
+| PM “仅有声音”教程，`pm:rio000:0x6544f288`；发布文件 `PhotonR2Assets/v6/payload/PM/pm_rio000_6544f288.png` | Noto Sans SC；补充标签与继承的早期计时字层同属该字体，计时配方保留旧字体摘要 | 旧计时布局尚未完整复现验证；字体已确定，不据此宣称布局已重新验证 |
+| TDA03 折叠便笺 1629，`folded-note-v8/cn.png` | 美呗嘿嘿体 3.000，旧输入摘要与保留文件一致 | 作者网页的授权正文暂未取得，需补齐原文核对许可适用范围；字体身份已确定 |
+| 历史表中 62 项没有现存成品的制作记录 | 各行已有实际字体字段 | 只有旧制作记录，缺现存成品，无法完整复现或复查这些图片 |
 
 <details>
 <summary><strong>English · Font identity is separate from historical byte identity</strong></summary>
 
-The retained boot HTML and Noto Sans SC input reproduce every RGB pixel of all ten released textures; the Microsoft YaHei fallback control differs. The four selection-HUD group aliases inherit two contents from a font-hashed equipment glyph mask. Remaining filename-only historical records identify the font face but do not establish the exact historical font binary. The tables above enumerate those release materials and historical batches. The sound-only tutorial limitation concerns old-layout replay; the MEB note limitation concerns renewed reading of its author-license page. Neither is an unidentified font. Original glyphs and generated or painted lettering receive their actual methods rather than guessed font names.
+The release tables identify the actual font faces and weights. Some historical records do not retain the exact font binary, and the tables above enumerate those materials. Boot notices use Noto Sans SC at CSS weight 600; the retained reproducible input is version 2.04, without an original browser loading log. Selection-HUD lettering inherits known equipment masks. The sound-only tutorial's old layout has not been fully reproduced and verified; the MEB note lacks renewed access to the author-license text. These are distinct limits, not unidentified fonts. Original, generated and painted lettering retain their actual methods.
 
 </details>

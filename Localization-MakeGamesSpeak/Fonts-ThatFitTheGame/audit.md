@@ -1,12 +1,12 @@
-# 七作图片用字：从成品查回每一套字体
+# 七作图片用字与来源
 
-**Image Font Audit — Follow the Lettering Back to Its Source**
+**Image Font Usage: Follow the Lettering Back to Its Source**
 
-[字体入口](README.md) · [素材与样式](images.md) · [作者与许可](attribution.md) · **[逐项证据状态](font-evidence.md)** · [精确文件身份](catalog.json) · [核查范围与对应索引](audit-scope.json)
+[字体入口](README.md) · [素材与样式](images.md) · [作者与许可](attribution.md) · [版本与资料限制](font-evidence.md) · [逐图表索引](image-font-index.json)
 
-本次把 **PM、PF、帝都燃烧、TDA00–03** 可访问的图片制作资料重新查了一遍：当前发布图、早期批次、旧稿、返修、局部字层、提供的字幕图，以及供图像模型编辑的排字底稿都包括在内。共登记 **37 项字体输入／字重／版本，其中 36 项有实际素材排字或底稿用途，1 项仅有字体比较用途**。这不是 37 个字体家族，也不是当前补丁附带 37 套字体。
+这里按作品、字体和具体图片整理 **PM、PF、帝都燃烧、TDA00–03** 的用字。37 项具体字体输入／字重／版本中，36 项用于素材排字或提供给修图的文字底稿，1 项只用于字体比较；它们不是 37 个字体家族，也不是当前补丁附带的字体数量。
 
-下面先查作品，再查字体。具体资源 ID、输出摘要、配方来源和替换关系保存在逐图表中。原图沿用、手绘和生成字样按实际方式记录；没有排字字体时，不凭外观猜一个名称。
+当前发布、历史替换、本地候选和生成底稿分别记录。原图沿用、手绘和生成字样按实际方式填写，没有字体输入时不凭外观补一个名字。
 
 ## 从作品查
 
@@ -71,19 +71,19 @@
 
 这些表彼此有重叠：历史版本中有 557 项内容同时存在于当前发布表，Git 记录和专项记录也可能重复。不能将各表行数相加，宣称制作过那么多不同图片。局部稿与尚未完成的资源另外保留状态，不因发现其字体就标成完稿。
 
-## 证据与边界
+## 使用范围与仍缺的资料
 
-核查从保存的工程、制作会话和 Git 历史找输入，再用逐图配方、成品摘要、字层继承与必要的重放确认用途。只安装过字体、脚本备用列表和“仿 Noto 风格”提示词都不能单独证明实际使用。生成前用过字体底稿的仍登记底稿；仅依据官方原图生成的，不倒推成字体排字。
+上述发布清单只列补丁携带的独立图片，不包含未随补丁分发的原游戏资源。文件数、不同图像内容数和历史版本数是不同单位，具体对应见[逐图表索引](image-font-index.json)。本地候选不表示已发布或已完成实机验证。
 
-**字体名称／字重已经确定，与历史字体文件的精确版本有无证据，分别记录。** 五作 10 张开场说明已用保留 HTML 和 Noto Sans SC 输入在 Chrome 重放，按原打包方式生成的全部 RGB 像素与发布图一致；故意回退到微软雅黑的对照不一致。这处不再只依据 CSS 声明。两种选择 HUD 内容也已追到带旧字体摘要的微软雅黑装备字形母版，见[补查验证](font-verification.json)。
+五作开场说明使用 Noto Sans SC、CSS 字重 600；PF／PM 的选择 HUD 继承微软雅黑常规体装备字层。相同家族的运行时文件、旧稿字体和提供的栅格字层仍需分别维护，制作方法见[排字与字层继承](typography.md)。
 
-仍保留的精度限制是：部分 Windows 和思源旧记录没有当时的字体文件摘要，不能把目录中检查到的保留文件版本当成每张旧图的历史版本；一张 Photon 声音教程的字体已确定，但旧计时布局未逐像素重放；美呗作者页面本次无法读取，影响重新核验授权原文，不影响字体身份。**具体图片、文件名和旧稿组全部展开在[逐项证据状态](font-evidence.md)**，不再用一句“部分旧稿有限制”代替清单，也不以今天的字体或补做的图填造旧证据。
+**字体名称／字重已确定，不等于每份历史字体文件都仍可取得。** 部分 Windows 和思源旧记录缺当时字体文件摘要；PM 一张声音教程尚未完整复现验证旧计时布局；美呗作者许可正文仍需补充核实。受影响图片和文件名完整列在[版本与资料限制](font-evidence.md)，原图或已丢失的制作资料不宣称能够完整重建。
 
-本次结论适用于 **2026-10-11 已盘点到的可访问资料**。原图中未另行排字的官方字样不猜字体，已经丢失或未提供的私人资料也不声称能够重建。核查资料身份与表间对应见 [audit-scope.json](audit-scope.json)。以后每批新图、返修和换字体同步遵循[登记规范](registration.md)，把实际输入、采用版本和声明留下。
+新图、返修与换字体按[登记规范](registration.md)更新实际输入、采用版本和声明。
 
 <details>
-<summary><strong>English · What this audit establishes</strong></summary>
+<summary><strong>English · Find a font by game or image</strong></summary>
 
-The audit reconciles the retained image-production records for PM, PF, Imperial Capital Burns and TDA00–03, including releases, superseded drafts, local partials, supplied text layers and font prototypes used for generation. There are 36 material typography/prototype inputs, plus one comparison-only MS Gothic entry; these are file/face/version records, not family counts or fonts shipped today. The registers distinguish actual release adoption, trials, inherited layers, original artwork and generated lettering. All ten boot textures now reproduce the released RGB pixels with the retained Noto Sans SC input. Historical binary identity, old-layout replay and unavailable author-page evidence are distinguished from font identification; affected materials are enumerated in the [evidence status](font-evidence.md). Read the [credits](attribution.md), [exact identities](catalog.json) and [registration rules](registration.md) before reusing an input.
+The tables distinguish current releases, historical drafts, local candidates and typography prototypes supplied for image editing. There are 36 material-use font inputs plus one comparison-only entry. File/face/version counts are not font-family counts. The per-image registers preserve material IDs, font references and adoption status; their counts overlap. Some exact historical binaries and production inputs remain unavailable, with affected materials listed in the [limitations](font-evidence.md). See the [credits](attribution.md) and [registration rules](registration.md) before reusing a font.
 
 </details>

@@ -11,56 +11,26 @@
     "photonmelodies"
   ],
   "coverage": {
-    "record_files_examined": 1016675,
-    "method": "Independent inventory of all retained project/worktree, historical authoring, supplied-layer and installed-overlay roots identified from project records and session metadata. Font references and rendering APIs are searched in text formats without a size cutoff; authoring outputs, source scripts, recipes and conversations are then checked per material. File counts include originals, duplicate histories and tool records and are not localized-image counts.",
-    "excluded_from_font_discovery": [
-      "dependency and version-control internals; retained project, original-asset and historical-output directories are not excluded",
-      "raw image pixels are inventoried but never used to guess a font identity"
-    ],
-    "release_scope": "All standalone WebP/AVIF files in five current AGE2 public manifests (859) and all PNG files in the PF/PM BETA 0.1.2 embedded manifests (2861). AGE2 EPK files in these packages are string resources, EGPACK files are text tables and GUT files are resource declarations; no additional image container was found in this checked set. Original base-game artwork not carried by the patches is not counted as newly typeset work. Historical and local-only materials are investigated separately.",
+    "release_scope": "Standalone images carried by the listed AGE2 and Photon patch manifests. Original base-game artwork absent from these packages is outside this register. Historical and local candidate materials have separate registers.",
     "age2_released_image_registry": "age2-released-image-fonts.json",
     "photon_released_image_registry": "photon-released-image-fonts.json",
     "released_image_files": 3720,
     "photon_unique_image_contents": 1562,
     "unreleased_image_registry": "unreleased-image-fonts.json",
     "selected_local_candidate_files": 365,
-    "historical_audit": {
-      "status": "retained-scope-font-attribution-reconciled",
-      "register": "historical-image-fonts.json",
-      "note": "Retained sources, material bindings, historical revisions, supplied layers and generation inputs have been reconciled for the independently inventoried scope. Historical missing bytes and font-loading precision limits remain explicit; no exhaustive claim is made about unavailable records.",
-      "material_variant_register": "historical-image-variants.json",
-      "material_variants_from_authoring_records": 1933,
-      "git_history": {
-        "text_blobs_examined": 21918,
-        "source": "retained reachable Git history across all local refs",
-        "register": "historical-git-image-fonts.json",
-        "recorded_material_outputs": 279
-      },
-      "crmt_register": "historical-crmt-image-fonts.json"
-    },
-    "earlier_discovery_subset": {
-      "record_files_examined": 35034,
-      "batches": {
-        "legacy-tools": 933,
-        "legacy-local-tools": 5,
-        "legacy-photon-images": 20287,
-        "legacy-photon-staging": 659,
-        "photon-reinventory": 8234,
-        "age2-production": 2451,
-        "age2-omissions": 2239,
-        "photon-omissions": 226
-      }
-    },
-    "retained_roots_examined": 108,
-    "session_files_examined": 610,
-    "audit_scope_registry": "audit-scope.json",
     "registered_font_input_records": 37,
     "material_font_input_records": 36,
     "comparison_only_font_inputs": [
       "image:ms-gothic-trial"
     ],
     "font_precision_record": "font-evidence.md",
-    "additional_verification_record": "font-verification.json"
+    "registry_index": "image-font-index.json",
+    "historical_registries": [
+      "historical-image-fonts.json",
+      "historical-image-variants.json",
+      "historical-git-image-fonts.json",
+      "historical-crmt-image-fonts.json"
+    ]
   },
   "evidence_sources": {
     "e01": {

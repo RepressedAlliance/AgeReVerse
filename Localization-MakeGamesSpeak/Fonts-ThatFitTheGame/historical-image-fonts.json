@@ -1,8 +1,8 @@
 {
   "schema": "age-reverse-historical-image-fonts/v1",
   "checked_on": "2026-10-11",
-  "status": "retained-scope-font-attribution-reconciled",
-  "scope": "Recovered material variants, font trials and superseded inputs across the seven games, supplementing the other historical registers. Current release adoption is separate; retained-scope reconciliation and explicit evidence limitations are indexed in audit-scope.json.",
+  "status": "historical-font-uses",
+  "scope": "Historical material variants, font trials and superseded inputs across the seven games. These overlap the other historical registers and are separate from current release adoption. See image-font-index.json for register units and font-evidence.md for missing historical file identities.",
   "source_records": {
     "timer-renderer": {
       "record": "font-preview-20260905/build_timer_font_previews.py",
@@ -21,8 +21,7 @@
     },
     "equipment-light-draft": {
       "record": "build_equipment_titles.py (historical revision before msyh.ttc change)",
-      "availability": "retained authoring call plus successful command result; old output/manifest overwritten",
-      "verification": "First execution failed on a syntax error; the syntax-only repair then produced 33 candidates before the font-path change. Failed execution is not the evidence of use."
+      "availability": "retained authoring call plus successful command result; old output/manifest overwritten"
     },
     "credit-repair-renderer": {
       "record": "static_image_reinventory_20260905/build_reuse_scope_correction.py",
@@ -130,10 +129,6 @@
       "fill_stroke_quarter_px": 0,
       "method": "font-rendered-label-composited-on-preserved-tutorial",
       "state": "historical-preview; adoption-not-inferred",
-      "verification": {
-        "method": "replay-to-retained-RGBA",
-        "changed_pixels": 0
-      },
       "sources": [
         "timer-renderer",
         "timer-font-downloads"
@@ -152,10 +147,6 @@
       "fill_stroke_quarter_px": 0,
       "method": "font-rendered-label-composited-on-preserved-tutorial",
       "state": "historical-preview; adoption-not-inferred",
-      "verification": {
-        "method": "replay-to-retained-RGBA",
-        "changed_pixels": 0
-      },
       "sources": [
         "timer-renderer",
         "timer-font-downloads"
@@ -174,10 +165,6 @@
       "fill_stroke_quarter_px": 0,
       "method": "font-rendered-label-composited-on-preserved-tutorial",
       "state": "historical-preview; adoption-not-inferred",
-      "verification": {
-        "method": "replay-to-retained-RGBA",
-        "changed_pixels": 0
-      },
       "sources": [
         "timer-renderer",
         "timer-font-downloads"
@@ -196,10 +183,6 @@
       "fill_stroke_quarter_px": 0,
       "method": "font-rendered-label-composited-on-preserved-tutorial",
       "state": "historical-preview; adoption-not-inferred",
-      "verification": {
-        "method": "replay-to-retained-RGBA",
-        "changed_pixels": 0
-      },
       "sources": [
         "timer-renderer",
         "timer-font-downloads"
@@ -218,10 +201,6 @@
       "fill_stroke_quarter_px": 0,
       "method": "font-rendered-label-composited-on-preserved-tutorial",
       "state": "historical-preview; adoption-not-inferred",
-      "verification": {
-        "method": "replay-to-retained-RGBA",
-        "changed_pixels": 0
-      },
       "sources": [
         "timer-renderer",
         "timer-font-downloads"
@@ -240,10 +219,6 @@
       "fill_stroke_quarter_px": 0,
       "method": "font-rendered-label-composited-on-preserved-tutorial",
       "state": "historical-preview; adoption-not-inferred",
-      "verification": {
-        "method": "replay-to-retained-RGBA",
-        "changed_pixels": 0
-      },
       "sources": [
         "timer-renderer",
         "timer-selected-trials"
@@ -262,10 +237,6 @@
       "fill_stroke_quarter_px": 1,
       "method": "font-rendered-label-composited-on-preserved-tutorial",
       "state": "historical-preview; adoption-not-inferred",
-      "verification": {
-        "method": "replay-to-retained-RGBA",
-        "changed_pixels": 0
-      },
       "sources": [
         "timer-renderer",
         "timer-selected-trials"
@@ -284,10 +255,6 @@
       "fill_stroke_quarter_px": 2,
       "method": "font-rendered-label-composited-on-preserved-tutorial",
       "state": "historical-preview; adoption-not-inferred",
-      "verification": {
-        "method": "replay-to-retained-RGBA",
-        "changed_pixels": 0
-      },
       "sources": [
         "timer-renderer",
         "timer-selected-trials"
@@ -339,11 +306,6 @@
       ],
       "method": "font-typesetting; five-shared-label-masks",
       "state": "rendered-and-superseded-before-current-release",
-      "verification": {
-        "method": "historical-code-and-successful-execution",
-        "output_rgba_not_available": true,
-        "historical_font_hash_not_available": true
-      },
       "sources": [
         "equipment-light-draft"
       ]
@@ -368,10 +330,6 @@
       ],
       "method": "single-character-font-rendering; remaining-original-glyphs-preserved",
       "state": "historical-local-candidate; exact-bytes-absent-from-current-release",
-      "verification": {
-        "method": "replay-to-retained-RGBA",
-        "changed_pixels": 0
-      },
       "sources": [
         "credit-repair-renderer",
         "credit-repair-manifest"
@@ -388,9 +346,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -412,9 +367,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -436,9 +388,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -460,9 +409,6 @@
       "font_size_px": 36,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -484,9 +430,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -508,9 +451,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -532,9 +472,6 @@
       "font_size_px": 22,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -556,9 +493,6 @@
       "font_size_px": 24,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -580,9 +514,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -604,9 +535,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -628,9 +556,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -652,9 +577,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -676,9 +598,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -700,9 +619,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -724,9 +640,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -748,9 +661,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -772,9 +682,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -796,9 +703,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -820,9 +724,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -844,9 +745,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -868,9 +766,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -892,9 +787,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -916,9 +808,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -940,9 +829,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -964,9 +850,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -988,9 +871,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1012,9 +892,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1036,9 +913,6 @@
       "font_size_px": 36,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1060,9 +934,6 @@
       "font_size_px": 36,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1084,9 +955,6 @@
       "font_size_px": 32,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1108,9 +976,6 @@
       "font_size_px": 20,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1132,9 +997,6 @@
       "font_size_px": 20,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1156,9 +1018,6 @@
       "font_size_px": 20,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1180,9 +1039,6 @@
       "font_size_px": 24,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1204,9 +1060,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1228,9 +1081,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1252,9 +1102,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1276,9 +1123,6 @@
       "font_size_px": 22,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1300,9 +1144,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1324,9 +1165,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1348,9 +1186,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1372,9 +1207,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1396,9 +1228,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1420,9 +1249,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1444,9 +1270,6 @@
       "font_size_px": 36,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1468,9 +1291,6 @@
       "font_size_px": 36,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1492,9 +1312,6 @@
       "font_size_px": 36,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1516,9 +1333,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1540,9 +1354,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1564,9 +1375,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1588,9 +1396,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1612,9 +1417,6 @@
       "font_size_px": 40,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1636,9 +1438,6 @@
       "font_size_px": 24,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1660,9 +1459,6 @@
       "font_size_px": 36,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-linked-by-authoring-report; historical-output-hash-not-recorded"
-      },
       "sources": [
         "pm-right-click-july-1"
       ],
@@ -1684,9 +1480,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1713,9 +1506,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1742,9 +1532,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1771,9 +1558,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1800,9 +1584,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1829,9 +1610,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1858,9 +1636,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1887,9 +1662,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1916,9 +1688,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1945,9 +1714,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -1974,9 +1740,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2003,9 +1766,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2032,9 +1792,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2061,9 +1818,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2090,9 +1844,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2119,9 +1870,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2148,9 +1896,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2177,9 +1922,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2206,9 +1948,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2235,9 +1974,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2264,9 +2000,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2293,9 +2026,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2322,9 +2052,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2351,9 +2078,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2380,9 +2104,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2409,9 +2130,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2438,9 +2156,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2467,9 +2182,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2496,9 +2208,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2525,9 +2234,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2554,9 +2260,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2583,9 +2286,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2612,9 +2312,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2641,9 +2338,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2670,9 +2364,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2699,9 +2390,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2728,9 +2416,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2757,9 +2442,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2786,9 +2468,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2815,9 +2494,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2844,9 +2520,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2873,9 +2546,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2902,9 +2572,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2931,9 +2598,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2960,9 +2624,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -2989,9 +2650,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -3018,9 +2676,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -3047,9 +2702,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -3076,9 +2728,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -3105,9 +2754,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -3134,9 +2780,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -3163,9 +2806,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -3192,9 +2832,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -3221,9 +2858,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-2",
         "pm-right-click-july-3"
@@ -3250,9 +2884,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3279,9 +2910,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -3328,9 +2956,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3357,9 +2982,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3386,9 +3008,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3415,9 +3034,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3444,9 +3060,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3473,9 +3086,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3502,9 +3112,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -3551,9 +3158,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3580,9 +3184,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3609,9 +3210,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3638,9 +3236,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3667,9 +3262,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3696,9 +3288,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3725,9 +3314,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3754,9 +3340,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3783,9 +3366,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3812,9 +3392,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -3841,9 +3418,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -3890,9 +3464,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -3939,9 +3510,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -3988,9 +3556,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4017,9 +3582,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4046,9 +3608,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4075,9 +3634,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4104,9 +3660,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4133,9 +3686,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4162,9 +3712,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4191,9 +3738,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4220,9 +3764,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4249,9 +3790,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4278,9 +3816,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -4317,9 +3852,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4346,9 +3878,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4375,9 +3904,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -4424,9 +3950,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4453,9 +3976,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4482,9 +4002,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4511,9 +4028,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4540,9 +4054,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4569,9 +4080,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4598,9 +4106,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4627,9 +4132,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4656,9 +4158,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4685,9 +4184,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4714,9 +4210,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4743,9 +4236,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -4792,9 +4282,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -4841,9 +4328,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5",
@@ -4890,9 +4374,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4919,9 +4400,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4948,9 +4426,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -4977,9 +4452,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-4",
         "pm-right-click-july-5"
@@ -5006,9 +4478,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5045,9 +4514,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5084,9 +4550,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5123,9 +4586,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5162,9 +4622,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5201,9 +4658,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5240,9 +4694,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7"
@@ -5269,9 +4720,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5308,9 +4756,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5347,9 +4792,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5386,9 +4828,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5425,9 +4864,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5464,9 +4900,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5503,9 +4936,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5542,9 +4972,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5581,9 +5008,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5620,9 +5044,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5659,9 +5080,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5698,9 +5116,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5737,9 +5152,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5776,9 +5188,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5815,9 +5224,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5854,9 +5260,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5893,9 +5296,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5932,9 +5332,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -5971,9 +5368,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7"
@@ -6000,9 +5394,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6039,9 +5430,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6078,9 +5466,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6117,9 +5502,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6156,9 +5538,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6195,9 +5574,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6234,9 +5610,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6273,9 +5646,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6312,9 +5682,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6351,9 +5718,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6390,9 +5754,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6429,9 +5790,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6468,9 +5826,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6507,9 +5862,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6546,9 +5898,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6585,9 +5934,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6624,9 +5970,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6663,9 +6006,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-6",
         "pm-right-click-july-7",
@@ -6702,9 +6042,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-8",
         "pm-right-click-july-9"
@@ -6731,9 +6068,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-8",
         "pm-right-click-july-9"
@@ -6760,9 +6094,6 @@
       "font_size_px": 42,
       "method": "font-rendered-right-click-button-label",
       "state": "historical-July-candidate; current-release-adoption-not-inferred",
-      "verification": {
-        "method": "retained-output-sha256-matches-authoring-report"
-      },
       "sources": [
         "pm-right-click-july-8",
         "pm-right-click-july-9"
@@ -6788,9 +6119,6 @@
       ],
       "method": "font-rendered-name-label",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-name-1",
         "tda00-early-name-2",
@@ -6808,9 +6136,6 @@
       ],
       "method": "font-rendered-name-label",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-name-1",
         "tda00-early-name-2",
@@ -6828,9 +6153,6 @@
       ],
       "method": "font-rendered-name-label",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-name-1",
         "tda00-early-name-2",
@@ -6848,9 +6170,6 @@
       ],
       "method": "font-rendered-name-label",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-name-1",
         "tda00-early-name-2",
@@ -6868,9 +6187,6 @@
       ],
       "method": "font-rendered-name-label",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-name-1",
         "tda00-early-name-2",
@@ -6888,9 +6204,6 @@
       ],
       "method": "font-rendered-name-label",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-name-1",
         "tda00-early-name-2",
@@ -6908,9 +6221,6 @@
       ],
       "method": "font-rendered-name-label",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-name-1",
         "tda00-early-name-2",
@@ -6928,9 +6238,6 @@
       ],
       "method": "font-rendered-OP-caption",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-op-1",
         "tda00-early-op-2",
@@ -6947,9 +6254,6 @@
       ],
       "method": "font-rendered-OP-caption",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-op-1",
         "tda00-early-op-2",
@@ -6966,9 +6270,6 @@
       ],
       "method": "font-rendered-OP-caption",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-op-1",
         "tda00-early-op-2",
@@ -6985,9 +6286,6 @@
       ],
       "method": "font-rendered-OP-caption",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-op-1",
         "tda00-early-op-2",
@@ -7004,9 +6302,6 @@
       ],
       "method": "font-rendered-OP-caption",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-op-1",
         "tda00-early-op-2",
@@ -7023,9 +6318,6 @@
       ],
       "method": "font-rendered-OP-caption",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-op-1",
         "tda00-early-op-2",
@@ -7042,9 +6334,6 @@
       ],
       "method": "font-rendered-OP-caption",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-op-1",
         "tda00-early-op-2",
@@ -7061,9 +6350,6 @@
       ],
       "method": "font-rendered-OP-caption",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-op-1",
         "tda00-early-op-2",
@@ -7080,9 +6366,6 @@
       ],
       "method": "font-rendered-OP-caption",
       "state": "historical-retained-output; earlier-revisions-overwrote-the-same-path",
-      "verification": {
-        "method": "retained-output-and-explicit-renderer; historical-variant-bytes-not-inferred"
-      },
       "sources": [
         "tda00-early-op-1",
         "tda00-early-op-2",
