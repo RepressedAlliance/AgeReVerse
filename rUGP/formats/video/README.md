@@ -2,11 +2,15 @@
 
 原理、位流和边界见[CRsi 规格](../../docs/crsi-format.md)。这些是离线工具；
 玩家继续使用原版引擎解码 RUO 中的资源，不安装 Python 或此工具 DLL。
+从 RIO 完整提取、全片无损导出、编辑、编码及独立验证的串联命令见
+[视频工具工作流](../../tools/video/README.md)。
 
 ## 构建
 
 依赖仅为 C 标准库。以下在仓库根目录执行，`zig` 使用已有编译器路径即可。
 产物写到已忽略的任务目录，不与游戏 DLL 混用。
+先创建自己的产物目录（示例目录不存在时运行 `New-Item -ItemType Directory
+-Path 'local-internal/pm-rebirth-video'`）。输出库路径由调用方显式提供。
 
 ```powershell
 zig cc -shared -O2 -ffp-contract=off -Wall -Wextra -Werror rUGP/formats/video/crsi_codec.c rUGP/formats/video/crsi_lossless.c rUGP/formats/video/crsi_container.c -o local-internal/pm-rebirth-video/crsi_codec.dll

@@ -101,6 +101,25 @@ class PortableCodecTests(unittest.TestCase):
                 decoded,_=self.codec.decode(f,2,2)
                 self.assertEqual(native_to_rgb(decoded),expected.tobytes())
 
+    def test_native_top_left_adjacent_table_alias(self):
+        # Artificial 4x2 dependent stream: flat block Y274, then detailed
+        # block Y100 with TR escape16. TL d=16-274=-258, short code2.
+        # The locked PM initializer copies delta=1 into the adjacent table;
+        # a fresh native leaf call establishes all 32 bytes below.
+        frame=Frame(0,0,0,0x575,8,bytes.fromhex('d15dd3750010330000'))
+        actual,bits=self.codec.decode(frame,4,2,bytes([128])*32)
+        self.assertEqual(bits,54)
+        self.assertEqual(actual,bytes.fromhex(
+            'ffffffffffffffffffffffff00000000fffffffffffffffff6f6f6f648484848'))
+        # The same out-of-range TL difference with short code6 is unproven;
+        # accepting one observed alias must not relax the whole table range.
+        bad=Frame(0,0,0,0x575,8,bytes.fromhex('d15dd3750010130000'))
+        with self.assertRaises(ValueError): self.codec.decode(bad,4,2,bytes([128])*32)
+        # BL d=-258 and TR d=-258 must also retain the range rejection.
+        for payload,w,h in [('d15dd37f014064060000',4,2),('74d7e4fe02060000',2,4)]:
+            bad=Frame(0,0,0,0x575,8,bytes.fromhex(payload))
+            with self.assertRaises(ValueError): self.codec.decode(bad,w,h,bytes([128])*32)
+
     def test_truncated_and_invalid_profiles(self):
         rgb = random.Random(43).randbytes(16*8*3)
         for frame in [self.codec.encode_lossless(rgb,16,8),self.codec.encode_lossy(rgb,16,8)[0]]:

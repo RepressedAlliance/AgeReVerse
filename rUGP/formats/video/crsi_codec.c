@@ -55,12 +55,18 @@ static int delta_value(int d,unsigned code) {
     double scale=(10.0/(abs(d)+25)+0.16)*d;
     return (int)floor((code-4.0)*scale+d*0.5+0.5);
 }
-static int residual(Bits *b,int d) {
+static int residual(Bits *b,int d,int top_left) {
     unsigned code;
     if (get(b,1)) code=4;
     else if (get(b,1)) code=get(b,1)?3:5;
     else if (get(b,1)) code=get(b,1)?2:6;
     else { unsigned c=get(b,2); if (!c) return (int)get(b,7)*4-256; code=c==1?1:c==2?0:7; }
+    /* Locked PM edge case: the top-left packed-dword difference can be
+     * -258. Native ((d*8)|2)*4+0x6c12e0 aliases 0x6bf2a8, where initializer
+     * 0x403815 copied the static word 1 from 0x63ef28. This is not the
+     * extrapolated colour formula. Other out-of-range entries stay rejected;
+     * BL/TR packed differences do not have the same signed lookup behaviour. */
+    if (top_left && d==-258 && code==2) return 1;
     if (d<-256 || d>255) { b->error=1; return 0; }
     return delta_value(d,code);
 }
@@ -134,9 +140,9 @@ int crsi_decode_codec1(const uint8_t *data,size_t size,unsigned width,
                     for (int p=0;p<3;p++) for (int k=0;k<4;k++) pixels[p][k]=pixels[3][k];
                 } else {
                     tr=copy?state:mean(up,state);
-                    if (!copy) tr.y=clip(up.y+residual(b,state.y-up.y),0,255);
-                    Color bl=mean(left,state); bl.y=left.y+residual(b,state.y-left.y);
-                    Color tl=mean(prev_top,tr); tl.y=prev_top.y+residual(b,tr.y-prev_top.y);
+                    if (!copy) tr.y=clip(up.y+residual(b,state.y-up.y,0),0,255);
+                    Color bl=mean(left,state); bl.y=left.y+residual(b,state.y-left.y,0);
+                    Color tl=mean(prev_top,tr); tl.y=prev_top.y+residual(b,tr.y-prev_top.y,1);
                     rgb(tr,pixels[1]); rgb(bl,pixels[2]); rgb(tl,pixels[0]);
                 }
                 size_t pos=((size_t)y*width+x)*4;

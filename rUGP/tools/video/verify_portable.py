@@ -69,7 +69,10 @@ def verify(library: Path, source: Path, *, baseline: Path | None = None,
     started=time.perf_counter()
     stride=sequence.width*4
     for i,frame in enumerate(sequence.frames):
-        previous,bits=codec.decode(frame,sequence.width,sequence.height,previous)
+        try:
+            previous,bits=codec.decode(frame,sequence.width,sequence.height,previous)
+        except ValueError as error:
+            raise ValueError(f'C decode failed at frame {i}: {error}') from error
         profiles[f'{frame.mode:04x}/{frame.parameter}/{frame.flags}']+=1
         tails[len(frame.payload)*8-bits]+=1
         if expected:
