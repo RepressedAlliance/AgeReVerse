@@ -1,0 +1,1486 @@
+{
+  "schema": "photon-crsi-content-inventory/1",
+  "audit_date": "2026-10-10",
+  "scope": "Observed Steam PM/PF RIO volumes; format scan cross-checked against parsed script references. Not a cross-version exhaustive proof.",
+  "counts": {
+    "story_narration": 4,
+    "story_title": 2,
+    "pv": 5,
+    "op": 8,
+    "preserve": 23,
+    "story_instrument": 1
+  },
+  "games": {
+    "pm": {
+      "source": {
+        "ici_name": "photonmelodies11.rio.ici",
+        "main_rio_name": "photonmelodies11.rio"
+      },
+      "volumes": [
+        {
+          "name": "photonmelodies11.rio",
+          "global_offset": 0,
+          "offset_units": 0,
+          "declared_size": 1913545000,
+          "provided": true,
+          "actual_size": 1913545000
+        },
+        {
+          "name": "photonmelodies11.rio.002",
+          "global_offset": 1913545000,
+          "offset_units": 478386250,
+          "declared_size": 1903007556,
+          "provided": true,
+          "actual_size": 1903007556
+        },
+        {
+          "name": "photonmelodies11.rio.003",
+          "global_offset": 3816552556,
+          "offset_units": 954138139,
+          "declared_size": 2121421700,
+          "provided": true,
+          "actual_size": 2121421700
+        },
+        {
+          "name": "photonmelodies11.rio.004",
+          "global_offset": 5937974256,
+          "offset_units": 1484493564,
+          "declared_size": 1883168284,
+          "provided": true,
+          "actual_size": 1883168284
+        }
+      ]
+    },
+    "pf": {
+      "source": {
+        "ici_name": "photonflowers11.rio.ici",
+        "main_rio_name": "photonflowers11.rio"
+      },
+      "volumes": [
+        {
+          "name": "photonflowers11.rio",
+          "global_offset": 0,
+          "offset_units": 0,
+          "declared_size": 2147465920,
+          "provided": true,
+          "actual_size": 2147465920
+        },
+        {
+          "name": "photonflowers11.rio.002",
+          "global_offset": 2147465920,
+          "offset_units": 536866480,
+          "declared_size": 1684696824,
+          "provided": true,
+          "actual_size": 1684696824
+        }
+      ]
+    }
+  },
+  "videos": [
+    {
+      "game": "pm",
+      "global_offset": 27493704,
+      "volume": "photonmelodies11.rio",
+      "offset": 27493704,
+      "extent": 90171399,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 1905,
+      "category": "story_narration",
+      "title": "《再诞》结尾：900 万美元",
+      "callers": [
+        {
+          "offset": 7784885952,
+          "chapters": []
+        }
+      ],
+      "verification": "复用先前四源版本共 7558 帧研究及两段旁白校核"
+    },
+    {
+      "game": "pm",
+      "global_offset": 117665112,
+      "volume": "photonmelodies11.rio",
+      "offset": 117665112,
+      "extent": 90163517,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 1875,
+      "category": "story_narration",
+      "title": "《再诞》开头：600 万美元",
+      "callers": [
+        {
+          "offset": 5185919096,
+          "chapters": []
+        }
+      ],
+      "verification": "复用先前四源版本共 7558 帧研究及两段旁白校核"
+    },
+    {
+      "game": "pm",
+      "global_offset": 217595660,
+      "volume": "photonmelodies11.rio",
+      "offset": 217595660,
+      "extent": 1967559,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 351,
+      "category": "story_title",
+      "title": "《时空的欠片》前情回顾标题",
+      "callers": [],
+      "verification": {
+        "decoded_frames": 351,
+        "ocr_frames": 351,
+        "ordered_visual_samples": 60,
+        "contact_pages": 3,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 219563360,
+      "volume": "photonmelodies11.rio",
+      "offset": 219563360,
+      "extent": 598632633,
+      "width": 1280,
+      "height": 720,
+      "rate": 3000,
+      "frames": 5509,
+      "category": "pv",
+      "title": "PM Total Eclipse 宣传片，两种字幕版本",
+      "callers": [],
+      "verification": {
+        "decoded_frames": 5509,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 532,
+        "contact_pages": 23,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 818195996,
+      "volume": "photonmelodies11.rio",
+      "offset": 818195996,
+      "extent": 513856516,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 9452,
+      "category": "pv",
+      "title": "PM Chronicles 宣传片，两种字幕版本",
+      "callers": [],
+      "verification": {
+        "decoded_frames": 9452,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 607,
+        "contact_pages": 26,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 1341451580,
+      "volume": "photonmelodies11.rio",
+      "offset": 1341451580,
+      "extent": 343870609,
+      "width": 1280,
+      "height": 720,
+      "rate": 3000,
+      "frames": 3835,
+      "category": "op",
+      "title": "photonmelodies 总 OP",
+      "callers": [
+        {
+          "offset": 1339066040,
+          "chapters": [
+            "共通系统"
+          ]
+        },
+        {
+          "offset": 3129065816,
+          "chapters": []
+        }
+      ],
+      "verification": {
+        "decoded_frames": 3835,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 330,
+        "contact_pages": 14,
+        "native_fallbacks": [
+          {
+            "frame": 1073,
+            "mode": 1397,
+            "parameter": 8,
+            "payload_bytes": 120858,
+            "reason": "C CRsi codec rejected input (-3)"
+          }
+        ]
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 1715679260,
+      "volume": "photonmelodies11.rio",
+      "offset": 1715679260,
+      "extent": 92955780,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 1904,
+      "category": "story_narration",
+      "title": "《再诞》结尾：900 万美元",
+      "callers": [
+        {
+          "offset": 7784885952,
+          "chapters": []
+        }
+      ],
+      "verification": "复用先前四源版本共 7558 帧研究及两段旁白校核"
+    },
+    {
+      "game": "pm",
+      "global_offset": 1808635048,
+      "volume": "photonmelodies11.rio",
+      "offset": 1808635048,
+      "extent": 92901554,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 1874,
+      "category": "story_narration",
+      "title": "《再诞》开头：600 万美元",
+      "callers": [
+        {
+          "offset": 5185919096,
+          "chapters": []
+        }
+      ],
+      "verification": "复用先前四源版本共 7558 帧研究及两段旁白校核"
+    },
+    {
+      "game": "pm",
+      "global_offset": 1911342516,
+      "volume": "photonmelodies11.rio",
+      "offset": 1911342516,
+      "extent": 2202347,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 351,
+      "category": "story_title",
+      "title": "《时空的欠片》前情回顾标题",
+      "callers": [
+        {
+          "offset": 7265456340,
+          "chapters": [
+            "35_前情回顾与后续"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 351,
+        "ocr_frames": 351,
+        "ordered_visual_samples": 60,
+        "contact_pages": 3,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 1913545000,
+      "volume": "photonmelodies11.rio.002",
+      "offset": 0,
+      "extent": 683839753,
+      "width": 1280,
+      "height": 720,
+      "rate": 3000,
+      "frames": 5507,
+      "category": "pv",
+      "title": "PM Total Eclipse 宣传片，两种字幕版本",
+      "callers": [
+        {
+          "offset": 3129065816,
+          "chapters": []
+        }
+      ],
+      "verification": {
+        "decoded_frames": 5507,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 531,
+        "contact_pages": 23,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 2597384756,
+      "volume": "photonmelodies11.rio.002",
+      "offset": 683839756,
+      "extent": 511181528,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 9450,
+      "category": "pv",
+      "title": "PM Chronicles 宣传片，两种字幕版本",
+      "callers": [
+        {
+          "offset": 3129065816,
+          "chapters": []
+        }
+      ],
+      "verification": {
+        "decoded_frames": 9450,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 624,
+        "contact_pages": 26,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 3135895312,
+      "volume": "photonmelodies11.rio.002",
+      "offset": 1222350312,
+      "extent": 305056898,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 3812,
+      "category": "op",
+      "title": "PM Chronicles／Once & Forever OP 两版",
+      "callers": [
+        {
+          "offset": 3127615628,
+          "chapters": []
+        },
+        {
+          "offset": 3129065816,
+          "chapters": []
+        }
+      ],
+      "verification": {
+        "decoded_frames": 3812,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 375,
+        "contact_pages": 16,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 3535011524,
+      "volume": "photonmelodies11.rio.002",
+      "offset": 1621466524,
+      "extent": 437253,
+      "width": 512,
+      "height": 300,
+      "rate": 2000,
+      "frames": 39,
+      "category": "preserve",
+      "title": "PM 星形／线条效果",
+      "callers": [
+        {
+          "offset": 3127636360,
+          "chapters": [
+            "憧憬"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 39,
+        "ocr_frames": 39,
+        "ordered_visual_samples": 11,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 3550336176,
+      "volume": "photonmelodies11.rio.002",
+      "offset": 1636791176,
+      "extent": 476759,
+      "width": 512,
+      "height": 300,
+      "rate": 2000,
+      "frames": 39,
+      "category": "preserve",
+      "title": "PM 星形／线条效果",
+      "callers": [
+        {
+          "offset": 3127636360,
+          "chapters": [
+            "憧憬"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 39,
+        "ocr_frames": 39,
+        "ordered_visual_samples": 11,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 3816552556,
+      "volume": "photonmelodies11.rio.003",
+      "offset": 0,
+      "extent": 359899181,
+      "width": 1280,
+      "height": 720,
+      "rate": 3000,
+      "frames": 2975,
+      "category": "op",
+      "title": "《时空的欠片》OP",
+      "callers": [
+        {
+          "offset": 3129065816,
+          "chapters": []
+        },
+        {
+          "offset": 3457858288,
+          "chapters": [
+            "02_白陵日常"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 2975,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 399,
+        "contact_pages": 17,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 4176451896,
+      "volume": "photonmelodies11.rio.003",
+      "offset": 359899340,
+      "extent": 310422307,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 3809,
+      "category": "op",
+      "title": "PM Chronicles／Once & Forever OP 两版",
+      "callers": [
+        {
+          "offset": 3129065816,
+          "chapters": []
+        },
+        {
+          "offset": 3579110448,
+          "chapters": [
+            "再诞"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 3809,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 373,
+        "contact_pages": 16,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 4706001764,
+      "volume": "photonmelodies11.rio.003",
+      "offset": 889449208,
+      "extent": 155255,
+      "width": 512,
+      "height": 300,
+      "rate": 2000,
+      "frames": 25,
+      "category": "preserve",
+      "title": "PM 星形／线条效果",
+      "callers": [
+        {
+          "offset": 3554981828,
+          "chapters": [
+            "憧憬"
+          ]
+        },
+        {
+          "offset": 4740478608,
+          "chapters": [
+            "憧憬"
+          ]
+        },
+        {
+          "offset": 5826861376,
+          "chapters": [
+            "憧憬"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 25,
+        "ocr_frames": 25,
+        "ordered_visual_samples": 7,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 4728785668,
+      "volume": "photonmelodies11.rio.003",
+      "offset": 912233112,
+      "extent": 671651,
+      "width": 512,
+      "height": 300,
+      "rate": 2000,
+      "frames": 31,
+      "category": "preserve",
+      "title": "PM 星形／线条效果",
+      "callers": [
+        {
+          "offset": 3554981828,
+          "chapters": [
+            "憧憬"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 31,
+        "ocr_frames": 31,
+        "ordered_visual_samples": 9,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 4734249268,
+      "volume": "photonmelodies11.rio.003",
+      "offset": 917696712,
+      "extent": 55970,
+      "width": 512,
+      "height": 300,
+      "rate": 2000,
+      "frames": 28,
+      "category": "preserve",
+      "title": "PM 星形／线条效果",
+      "callers": [
+        {
+          "offset": 3554981828,
+          "chapters": [
+            "憧憬"
+          ]
+        },
+        {
+          "offset": 4740478608,
+          "chapters": [
+            "憧憬"
+          ]
+        },
+        {
+          "offset": 5164432504,
+          "chapters": [
+            "憧憬"
+          ]
+        },
+        {
+          "offset": 5826861376,
+          "chapters": [
+            "憧憬"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 28,
+        "ocr_frames": 28,
+        "ordered_visual_samples": 8,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 5462632112,
+      "volume": "photonmelodies11.rio.003",
+      "offset": 1646079556,
+      "extent": 14658847,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 483,
+      "category": "preserve",
+      "title": "PM 分屏时钟过场",
+      "callers": [
+        {
+          "offset": 5304043396,
+          "chapters": [
+            "05_演说与出发"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 483,
+        "ocr_frames": 483,
+        "ordered_visual_samples": 84,
+        "contact_pages": 4,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 5582723280,
+      "volume": "photonmelodies11.rio.003",
+      "offset": 1766170724,
+      "extent": 9392797,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 323,
+      "category": "preserve",
+      "title": "PM 分屏时钟过场",
+      "callers": [
+        {
+          "offset": 5485241388,
+          "chapters": [
+            "06_通信与行动"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 323,
+        "ocr_frames": 323,
+        "ordered_visual_samples": 56,
+        "contact_pages": 3,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 5597270468,
+      "volume": "photonmelodies11.rio.003",
+      "offset": 1780717912,
+      "extent": 11257296,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 422,
+      "category": "preserve",
+      "title": "PM 分屏时钟过场",
+      "callers": [
+        {
+          "offset": 5485241388,
+          "chapters": [
+            "06_通信与行动"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 422,
+        "ocr_frames": 422,
+        "ordered_visual_samples": 73,
+        "contact_pages": 4,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 5937974256,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 0,
+      "extent": 35570628,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 1500,
+      "category": "preserve",
+      "title": "《憧憬》海边至战术机编队，50 秒",
+      "callers": [
+        {
+          "offset": 5826861376,
+          "chapters": [
+            "憧憬"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 1500,
+        "ocr_frames": 1500,
+        "ordered_visual_samples": 260,
+        "contact_pages": 11,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 5979782240,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 41807984,
+      "extent": 12308843,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 191,
+      "category": "preserve",
+      "title": "《憧憬》战术机动作",
+      "callers": [
+        {
+          "offset": 5826861376,
+          "chapters": [
+            "憧憬"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 191,
+        "ocr_frames": 191,
+        "ordered_visual_samples": 33,
+        "contact_pages": 2,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 5993291528,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 55317272,
+      "extent": 6192654,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 50,
+      "category": "preserve",
+      "title": "《憧憬》战术机动作",
+      "callers": [
+        {
+          "offset": 5826861376,
+          "chapters": [
+            "憧憬"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 50,
+        "ocr_frames": 50,
+        "ordered_visual_samples": 10,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 5999484316,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 61510060,
+      "extent": 4458512,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 44,
+      "category": "preserve",
+      "title": "《憧憬》战术机动作",
+      "callers": [
+        {
+          "offset": 5826861376,
+          "chapters": [
+            "憧憬"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 44,
+        "ocr_frames": 44,
+        "ordered_visual_samples": 18,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 6185440848,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 247466592,
+      "extent": 2204821,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 29,
+      "category": "preserve",
+      "title": "PM 战术机开火／攻击",
+      "callers": [
+        {
+          "offset": 6069836456,
+          "chapters": [
+            "10_同行人选择"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 29,
+        "ocr_frames": 29,
+        "ordered_visual_samples": 15,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 6187653000,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 249678744,
+      "extent": 1787373,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 21,
+      "category": "preserve",
+      "title": "PM 战术机开火／攻击",
+      "callers": [
+        {
+          "offset": 6069836456,
+          "chapters": [
+            "10_同行人选择"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 21,
+        "ocr_frames": 21,
+        "ordered_visual_samples": 8,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 6189520476,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 251546220,
+      "extent": 2597135,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 31,
+      "category": "preserve",
+      "title": "PM 战术机开火／攻击",
+      "callers": [
+        {
+          "offset": 6069836456,
+          "chapters": [
+            "10_同行人选择"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 31,
+        "ocr_frames": 31,
+        "ordered_visual_samples": 11,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 6488723256,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 550749000,
+      "extent": 4736609,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 71,
+      "category": "preserve",
+      "title": "《再诞》能量效果",
+      "callers": [
+        {
+          "offset": 6372934048,
+          "chapters": [
+            "再诞"
+          ]
+        },
+        {
+          "offset": 6493459868,
+          "chapters": [
+            "再诞"
+          ]
+        },
+        {
+          "offset": 6720315136,
+          "chapters": [
+            "再诞"
+          ]
+        },
+        {
+          "offset": 7150310880,
+          "chapters": [
+            "再诞"
+          ]
+        },
+        {
+          "offset": 7232092484,
+          "chapters": [
+            "再诞"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 71,
+        "ocr_frames": 71,
+        "ordered_visual_samples": 13,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 7434755280,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 1496781024,
+      "extent": 14115323,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 363,
+      "category": "preserve",
+      "title": "PM 分屏时钟过场",
+      "callers": [
+        {
+          "offset": 7348187948,
+          "chapters": [
+            "37_御剑家插曲"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 363,
+        "ocr_frames": 363,
+        "ordered_visual_samples": 64,
+        "contact_pages": 3,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 7534042320,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 1596068064,
+      "extent": 3002400,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 276,
+      "category": "preserve",
+      "title": "PM 分屏时钟过场",
+      "callers": [
+        {
+          "offset": 7449406188,
+          "chapters": [
+            "39_年末聚会"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 276,
+        "ocr_frames": 276,
+        "ordered_visual_samples": 47,
+        "contact_pages": 2,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 7545447584,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 1607473328,
+      "extent": 1946121,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 221,
+      "category": "preserve",
+      "title": "PM 分屏时钟过场",
+      "callers": [
+        {
+          "offset": 7449406188,
+          "chapters": [
+            "39_年末聚会"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 221,
+        "ocr_frames": 221,
+        "ordered_visual_samples": 38,
+        "contact_pages": 2,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pm",
+      "global_offset": 7748752780,
+      "volume": "photonmelodies11.rio.004",
+      "offset": 1810778524,
+      "extent": 3302974,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 40,
+      "category": "preserve",
+      "title": "《再诞》能量效果",
+      "callers": [
+        {
+          "offset": 7734273384,
+          "chapters": [
+            "再诞"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 40,
+        "ocr_frames": 40,
+        "ordered_visual_samples": 9,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pf",
+      "global_offset": 17195036,
+      "volume": "photonflowers11.rio",
+      "offset": 17195036,
+      "extent": 422730853,
+      "width": 1280,
+      "height": 720,
+      "rate": 3000,
+      "frames": 3835,
+      "category": "op",
+      "title": "photonflowers 总 OP",
+      "callers": [
+        {
+          "offset": 14809024,
+          "chapters": [
+            "共通系统"
+          ]
+        },
+        {
+          "offset": 480196584,
+          "chapters": []
+        }
+      ],
+      "verification": {
+        "decoded_frames": 3835,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 308,
+        "contact_pages": 13,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pf",
+      "global_offset": 602133692,
+      "volume": "photonflowers11.rio",
+      "offset": 602133692,
+      "extent": 300456825,
+      "width": 1024,
+      "height": 600,
+      "rate": 2997,
+      "frames": 3809,
+      "category": "op",
+      "title": "PF Chronicles／Once & Forever OP 三版",
+      "callers": [
+        {
+          "offset": 480196584,
+          "chapters": []
+        },
+        {
+          "offset": 487183316,
+          "chapters": []
+        }
+      ],
+      "verification": {
+        "decoded_frames": 3809,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 371,
+        "contact_pages": 16,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pf",
+      "global_offset": 904498504,
+      "volume": "photonflowers11.rio",
+      "offset": 904498504,
+      "extent": 296076558,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 3812,
+      "category": "op",
+      "title": "PF Chronicles／Once & Forever OP 三版",
+      "callers": [
+        {
+          "offset": 480196584,
+          "chapters": []
+        },
+        {
+          "offset": 487183316,
+          "chapters": []
+        }
+      ],
+      "verification": {
+        "decoded_frames": 3812,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 374,
+        "contact_pages": 16,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pf",
+      "global_offset": 1200575232,
+      "volume": "photonflowers11.rio",
+      "offset": 1200575232,
+      "extent": 312477100,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 3820,
+      "category": "op",
+      "title": "PF Chronicles／Once & Forever OP 三版",
+      "callers": [
+        {
+          "offset": 480196584,
+          "chapters": []
+        },
+        {
+          "offset": 487183316,
+          "chapters": []
+        }
+      ],
+      "verification": {
+        "decoded_frames": 3820,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 375,
+        "contact_pages": 16,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pf",
+      "global_offset": 1514719112,
+      "volume": "photonflowers11.rio",
+      "offset": 1514719112,
+      "extent": 597026969,
+      "width": 1280,
+      "height": 720,
+      "rate": 3000,
+      "frames": 4295,
+      "category": "pv",
+      "title": "PF Schwarzesmarken 宣传片",
+      "callers": [
+        {
+          "offset": 480196584,
+          "chapters": []
+        }
+      ],
+      "verification": {
+        "decoded_frames": 4295,
+        "ocr_frames": 0,
+        "ordered_visual_samples": 295,
+        "contact_pages": 13,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pf",
+      "global_offset": 2374599392,
+      "volume": "photonflowers11.rio.002",
+      "offset": 227133472,
+      "extent": 10433574,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 300,
+      "category": "preserve",
+      "title": "《雨舞者》战术机起飞",
+      "callers": [
+        {
+          "offset": 488271272,
+          "chapters": [
+            "雨舞者"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 300,
+        "ocr_frames": 300,
+        "ordered_visual_samples": 54,
+        "contact_pages": 3,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pf",
+      "global_offset": 2678584548,
+      "volume": "photonflowers11.rio.002",
+      "offset": 531118628,
+      "extent": 6015899,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 89,
+      "category": "preserve",
+      "title": "《小鸡潜降兵》降落",
+      "callers": [
+        {
+          "offset": 488838928,
+          "chapters": [
+            "小鸡潜降兵"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 89,
+        "ocr_frames": 89,
+        "ordered_visual_samples": 24,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pf",
+      "global_offset": 2687806808,
+      "volume": "photonflowers11.rio.002",
+      "offset": 540340888,
+      "extent": 13046776,
+      "width": 1024,
+      "height": 600,
+      "rate": 3000,
+      "frames": 136,
+      "category": "preserve",
+      "title": "《小鸡潜降兵》瞄准／开火 HUD",
+      "callers": [
+        {
+          "offset": 488838928,
+          "chapters": [
+            "小鸡潜降兵"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 136,
+        "ocr_frames": 136,
+        "ordered_visual_samples": 41,
+        "contact_pages": 2,
+        "native_fallbacks": []
+      }
+    },
+    {
+      "game": "pf",
+      "global_offset": 3724567232,
+      "volume": "photonflowers11.rio.002",
+      "offset": 1577101312,
+      "extent": 1013039,
+      "width": 1024,
+      "height": 600,
+      "rate": 2500,
+      "frames": 51,
+      "category": "story_instrument",
+      "title": "《告白》主机临界倒计时",
+      "callers": [
+        {
+          "offset": 3687255848,
+          "chapters": [
+            "告白"
+          ]
+        }
+      ],
+      "verification": {
+        "decoded_frames": 51,
+        "ocr_frames": 51,
+        "ordered_visual_samples": 11,
+        "contact_pages": 1,
+        "native_fallbacks": []
+      }
+    }
+  ],
+  "generated_staffrolls": [
+    {
+      "game": "pm",
+      "offset": 6003942904,
+      "extent": 16554,
+      "chapters": [
+        "憧憬"
+      ],
+      "calls": [
+        {
+          "script": 5826861376,
+          "order": 2281,
+          "milliseconds": 252000
+        }
+      ]
+    },
+    {
+      "game": "pm",
+      "offset": 7657130372,
+      "extent": 21089,
+      "chapters": [
+        "时空的欠片／42_新年后续"
+      ],
+      "calls": [
+        {
+          "script": 7614946928,
+          "order": 2237,
+          "milliseconds": 247200
+        }
+      ]
+    },
+    {
+      "game": "pm",
+      "offset": 7784869100,
+      "extent": 16852,
+      "chapters": [
+        "再诞（独立片尾脚本）"
+      ],
+      "calls": [
+        {
+          "script": 7781518876,
+          "order": 3,
+          "milliseconds": 186000
+        }
+      ]
+    },
+    {
+      "game": "pf",
+      "offset": 2306230176,
+      "extent": 11608,
+      "chapters": [
+        "其名为武"
+      ],
+      "calls": [
+        {
+          "script": 487890932,
+          "order": 2132,
+          "milliseconds": 82500
+        }
+      ]
+    },
+    {
+      "game": "pf",
+      "offset": 2501409432,
+      "extent": 15688,
+      "chapters": [
+        "雨舞者"
+      ],
+      "calls": [
+        {
+          "script": 488271272,
+          "order": 5337,
+          "milliseconds": 286000
+        }
+      ]
+    },
+    {
+      "game": "pf",
+      "offset": 2706695208,
+      "extent": 15238,
+      "chapters": [
+        "小鸡潜降兵"
+      ],
+      "calls": [
+        {
+          "script": 488838928,
+          "order": 3120,
+          "milliseconds": 286000
+        }
+      ]
+    },
+    {
+      "game": "pf",
+      "offset": 2896351780,
+      "extent": 11892,
+      "chapters": [
+        "我名为冥夜"
+      ],
+      "calls": [
+        {
+          "script": 2334139360,
+          "order": 2398,
+          "milliseconds": 83000
+        }
+      ]
+    },
+    {
+      "game": "pf",
+      "offset": 3039864976,
+      "extent": 11492,
+      "chapters": [
+        "继承"
+      ],
+      "calls": [
+        {
+          "script": 2649099560,
+          "order": 1244,
+          "milliseconds": 187000
+        }
+      ]
+    },
+    {
+      "game": "pf",
+      "offset": 3394572952,
+      "extent": 11574,
+      "chapters": [
+        "赎罪"
+      ],
+      "calls": [
+        {
+          "script": 3330234924,
+          "order": 358,
+          "milliseconds": 199500
+        }
+      ]
+    },
+    {
+      "game": "pf",
+      "offset": 3732674428,
+      "extent": 15480,
+      "chapters": [
+        "告白"
+      ],
+      "calls": [
+        {
+          "script": 3687255848,
+          "order": 1906,
+          "milliseconds": 218000
+        }
+      ]
+    },
+    {
+      "game": "pf",
+      "offset": 3787582308,
+      "extent": 12702,
+      "chapters": [
+        "樱花盛开之前"
+      ],
+      "calls": [
+        {
+          "script": 3750296688,
+          "order": 2021,
+          "milliseconds": 230600
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Physical resources include language and edit variants; not 43 distinct story scenes.",
+    "Content decoding and ordered still review are not continuous audiovisual playback or full native cross-validation.",
+    "Historical fallback entries describe the 2026-10-10 audit, not the support status of later codec revisions.",
+    "CLayoutTextImg staff rolls are runtime text layouts, not CRsi video files.",
+    "No game binary, frame, audio, subtitle dump, save or workstation path is included."
+  ]
+}

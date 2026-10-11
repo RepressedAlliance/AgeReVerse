@@ -12,6 +12,10 @@ Muv-Luv photonmelodies*／マブラヴ photonmelodies*。AgeReVerse · 压抑同
 - 当前精确运行时绑定表：151 行
 - Photon 图片权威：光子旋律 854 项
 
+剧情视频另有《再诞》[开头／结尾字幕](video-localization/README.md)和
+《时空的欠片》[两版回顾标题](../../docs/story-video-labels.md)。这些制作成果尚未包含在
+上述 BETA 0.1.2 中；下一次与其他改动的合并方式见[视频接入规划](../../packaging/video-integration-plan.md)。
+
 [按章节命名的 CSV](translations/README.md) 是最新人工编辑入口。
 `text-data/history/reviewed/` 保留早期审校中文、稳定 ID 和日文源哈希，作为封存证据，不再人工编辑。
 `text-data/runtime/zh-Hans.csv` 仍是原有 151 行生产绑定契约，包含对象偏移、容量、精确运行时

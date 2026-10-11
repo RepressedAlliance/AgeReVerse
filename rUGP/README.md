@@ -28,8 +28,12 @@ ICI 只告诉我们对象在哪里、是什么类型；找到 RIO 中的对象�
 CRmt 家族的结构、日英对应、全层导出和替换验证请从[专项指南](docs/crmt-family.md)开始。
 当前[49 组审核清单](evidence/photon/crmt/README.md)与下方历史 1,490 项图片权威分开记账，不能直接相加。
 
-CRsi 影片的帧间预测、颜色编码、C 工具及原生交叉验证见[专项规格](docs/crsi-format.md)；
-《再诞》开头／结尾汉化见[双段制作说明](games/photonmelodies/video-localization/README.md)。
+CRsi 影片的帧间预测、颜色编码及原生交叉验证见[专项规格](docs/crsi-format.md)，
+解包、无损导出、制作与封装命令见[视频工具指南](tools/video/README.md)。
+具体成果包括《再诞》的[双段字幕](games/photonmelodies/video-localization/README.md)，
+以及 PM 回顾标题与 PF 倒计时的[画面文字](docs/story-video-labels.md)；
+下一次玩家包接入见[整合规划](packaging/video-integration-plan.md)，当前不提前制作最终补丁。
+两作 43 条 CRsi 与动态职员表的区分见[资源普查和汉化范围](docs/photon-video-scope.md)。
 
 ## 游戏与核心汉化资产
 
@@ -54,7 +58,7 @@ CRsi 影片的帧间预测、颜色编码、C 工具及原生交叉验证见[专
 - [`formats/images/`](formats/images/)：Cr6Ti、CRip007、CRip008、CRmt／CRmti 编解码及 CRimp 类型属性。
 - [`formats/video/`](formats/video/)：CRsi 帧表、C 编解码核心及无损替换格式。
 - [`formats/rio/`](formats/rio/)：RIO 加密、引用、RUO、CRsa 和 VM 字符串池。
-- [`tools/`](tools/)：ICI/RIO 目录、只读 CRsa 提取、图片检查、文本导出与来源验证。
+- [`tools/`](tools/)：ICI/RIO 目录、只读 CRsa 提取、图片检查、视频制作、文本导出与来源验证。
 - [`runtime/`](runtime/)：光子之花/光子旋律分开构建、遇到未知 EXE/DLL 哈希即拒绝运行的 x86 代理。
 - [`packaging/`](packaging/)：从已经封存并锁定哈希的输入根构建候选包。
 - [`evidence/`](evidence/)：公开清单、哈希、路由闭环和可复核结论。
