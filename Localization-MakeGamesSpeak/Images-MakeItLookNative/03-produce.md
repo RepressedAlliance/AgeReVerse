@@ -20,7 +20,9 @@
 
 普通排版优先复用[确定性排字工具](tools.md)，统一字体、字号、字重、间距、基线和状态效果。匹配字高字宽、重心、留白、颜色、渐变、阴影和光晕。不要压扁中文以塞进原框，不要逐词改变字重或只修按钮一个状态。
 
-Logo 与手写可采用绘制或受控生成，再校正实际文案和笔画。按已选中文方案制作所需变体，通常以日文版适用原图为基础，英文设计用于样式对照；确需复用英文版具体画布或模板时，沿用 02 确认的部分、用途与理由，不自动各做一套中文。根据选定底稿、作品风格与中文阅读检查效果；柔和原字不能无故变成硬描边，浓艳颜色不能无故变灰淡。按[最高原则](../principles.md)保留原作已有的英文副标题及无需修改的装饰，不把英文版后来替换的内容一概保留。
+Logo 与手写可采用绘制或受控生成，再校正实际文案和笔画。按已选中文方案制作所需变体，通常以日文版适用原图为基础，英文设计用于样式对照；确需复用英文版具体画布或模板时，沿用 02 确认的部分、用途与理由，不自动各做一套中文。根据选定底稿、作品风格与中文阅读检查效果；柔和原字不能无故变成硬描边，浓艳颜色不能无故变灰淡。按[最高原则](../principles.md)保留原作已有的英文副标题，装饰文字则沿用 02 已明确的处理范围，不因属于装饰就保留，也不把英文版后来替换的内容一概保留。
+
+应汉化区域完整采用简体中文的字形、术语与表达，不能只替换假名或做繁简转换。手写、印刷与生成字都检查实际笔画，不能让日式字形、繁体字形或日式称谓混入；原图文字已经全部合格时才直接复用。明确保留的原文与特殊惯例限于 02 确认的范围，保留纸张、笔迹风格和构图不能成为保留文字缺陷的理由。
 
 ## 附着在物体上的文字
 
@@ -49,3 +51,9 @@ engine/design plan, not a blanket relaxation of constraints. Select suitable
 typesetting, painting or constrained editing, preserving unrelated artwork,
 spatial relationships and approved retention. Make only the chosen variants,
 and keep runtime masters distinct from enlarged previews.
+Required Chinese regions must be fully Simplified Chinese in glyphs, terminology
+and expression, including handwriting and generated lettering. Check actual
+strokes; removing kana or converting Traditional characters alone is insufficient.
+Reuse original lettering only when fully compliant or within a justified original
+retention/special-convention scope from 02. Preserving artistic style does not
+justify preserving text defects.

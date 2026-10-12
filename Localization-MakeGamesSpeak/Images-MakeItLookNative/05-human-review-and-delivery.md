@@ -22,7 +22,9 @@
 
 审核[来源与语言处理决定](../principles.md)。听译展示实际语音与必要片段定位、工作转写和疑点，文字或图内信息提供可核对来源。真正新增信息明确其语源、用途与采用范围，辅助文案核对功能。原意未确认不能因采用了官方模板而通过；原作已有英文、有理由采用的英文与未解决内容分别说明。
 
-同时展示有意保留的原图／原文及范围、理由和确认依据，与待译、待确认分开。维护者按内容用途、玩家理解和原作表现检查保留是否合理，以及同图应译信息是否已处理；新内容采用同一判断方法，不只检查是否符合既有例子。经确认保留项不能被自动“清除日文”再次改写。保留项的最终绑定也须指向正确原图，而非旧中文候选。
+对不改的内容，说明属于[有意保留原文、已经符合简体中文，还是沿用特殊惯例](../principles.md#如何判断是否需要翻译)，并展示范围与依据，与待译、待修和待确认分开。维护者查看实际字形、术语和表达：应汉化区域完整简体中文化，“能看懂”或“属于装饰”不能作为通过理由。七曜惯例不能推广为其他文字免译；真实署名等有效保留范围则不被自动“清除日文”再次改写。保留项的最终绑定也须指向正确原图，而非旧中文候选。
+
+仍适用的确认可以复用；旧决定仅凭可读性、装饰分类或工具限制时重新判断，已知缺陷未修仍属待修，不能沿用旧“通过”代替本轮确认。新内容采用相同标准，不把例子当作封闭名单，也不因规则更新自动回退全部旧图。
 
 疑问集中展示图片、具体位置、已识读原文、拟定中文、不确定原因与建议。能自行解决的问题先解决；已经认可的保留项和效果不用反复询问。需要“通过／待改”或只收建议的形式按本次送审安排选择，不把界面勾选强加给审核者。
 
@@ -53,6 +55,14 @@ objects/calls for delivery. Offer aligned base/Chinese switching and useful
 detail views, not mandatory Japanese-image pairs. Label missing counterparts
 and each official asset's role accurately. Confirm retention, additions and
 font use without treating an official template as semantic approval.
+For unchanged regions, show whether the reason is intentional Japanese retention,
+already compliant Simplified Chinese or an explicitly adopted special convention,
+with scope and evidence. Check actual glyphs, terminology and expression: required
+Chinese must be fully Simplified Chinese, not merely readable or decorative.
+Weekday conventions do not exempt adjacent text; valid original credits/titles
+remain protected within their scope. Reuse still-valid approvals, but reassess
+old readability/decoration/tool-limit decisions. Known unrepaired defects remain
+repairs rather than approved retention; do not automatically revert all old images.
 Deliver materials that open on the reviewer's actual device: an accessible page
 or a self-contained attachment with the required images, explanations and
 dependencies. Maintainer-only absolute paths and localhost URLs are not external

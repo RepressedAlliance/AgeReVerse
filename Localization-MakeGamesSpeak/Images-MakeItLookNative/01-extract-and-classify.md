@@ -44,7 +44,9 @@
 
 将同一菜单、按钮全状态、连续日期、人物卡和同场景差分归为组。列出实际存在的成员，不按想象补出缺少的状态。Logo 设计不同的变体分别记录，不能共用一张成品冒充全部完成。
 
-根据最高原则区分原作有意使用的英文与英文本地化译文，后者不因出现在底稿上就按原作英文保留。按[内容用途、玩家理解和原作表现](../principles.md#如何判断是否需要翻译)划定应译与保留区域，不以有无日文决定是否改图。大部分承担阅读功能的日文应译；原文主要用于身份识别、画面表现或可在中文语境直接沿用时，可说明理由后保留。已有例子帮助判断，新素材不因未列出就必须重绘；同一图的装饰和阅读信息分别处理。先确认范围，再检查应译区域的日式字形；既有决定须核对具体语境，不机械跨游戏套用。
+根据最高原则区分原作有意使用的英文与英文本地化译文，后者不因出现在底稿上就按原作英文保留。原图不改时按[三类情况](../principles.md#如何判断是否需要翻译)说明：有意保留日文、实际字形／含义／术语／表达均已符合简体中文，或沿用有明确依据的特殊惯例。七曜星期标记属于特殊惯例，不能只凭字形相同就当作普通中文已经合格。同图分区判断，身份标记、装饰或“玩家能看懂”本身不免译。
+
+应汉化区域中的繁体／日式字形、假名和未汉化的日式称谓均须处理；字符编码或 OCR 相同不能证明画面字形相同。既有决定核对具体范围与依据，仍适用的直接复用；仅凭可读性、装饰分类或旧工具限制的决定须重新判断。已知文字问题列为待修，依据不足列为待确认，不把历史妥协当成保留或完成，也不机械跨游戏套用。
 
 **输出：**全量清单、可浏览原图、素材组和优先顺序。每张图均有去向，未解码或待确认项有原因和下一步位置。剧情图即使放在背景目录，也不会漏入最低优先级。
 
@@ -79,6 +81,13 @@ detailed inspection, self-review, human approval and in-game checks separately.
 Do not infer an overall completion rate while scope remains unknown; give known
 counts and unknown coverage. Reuse existing records rather than adding a large
 mandatory ledger.
+For unchanged regions, distinguish justified Japanese retention, content already
+meeting Simplified Chinese glyph/meaning/terminology/expression requirements,
+and explicitly adopted special conventions such as approved weekday notation.
+Readability, identity or decoration alone is insufficient. Inspect actual glyphs,
+not just OCR or character codes. Reassess old decisions based only on those weak
+reasons or tool limits: known defects need repair, uncertain cases need review.
+Reuse still-valid decisions without treating historical compromises as complete.
 Where Japanese and English editions exist, retain Japanese/English/Chinese
 correspondence and shared relationships even for comparison-only images.
 The [Photon HUD case](../../rUGP/docs/postmortems/pending-hook-entry-points-20260909.md)

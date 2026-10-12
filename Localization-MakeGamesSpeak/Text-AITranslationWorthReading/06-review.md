@@ -29,7 +29,7 @@
 
 听译重新核对实际语音，日语原作内容重听日语，工作转写不是官方原文；语音未确认、关键部分听不清、缺少定位或必要上下文时，不得判定通过。没有同形式日文图不等于缺少原意依据。经确认的新增信息提供来源与采用范围；辅助文案说明用途及实际行为。语言选择遵守[最高原则](../principles.md)，原作已有英文与英文版替换译文分别处理。
 
-原文保留项同时提供用途、范围、理由和维护者确认。审核者按[内容用途、玩家理解和原作表现](../principles.md#如何判断是否需要翻译)核对保留是否合理，检查同一行应译部分；不把曲名、署名等例子当作封闭名单。不能仅因含假名判漏译，也不能仅因标了“保留”就默认 `keep`。
+不改的内容按[三类情况](../principles.md#如何判断是否需要翻译)说明属于有意保留日文、已经符合简体中文，还是沿用特殊惯例，并提供范围与依据；原文保留同时提供理由和维护者确认。审核者核对实际字形、含义、术语和表达，检查同一行应译部分，不把曲名、署名等例子当作封闭名单。不能仅因含假名判漏译，也不能因标了“保留”、玩家能看懂或属于装饰就默认 `keep`。旧工具妥协不免除修正，旧决定只靠这些理由时须重新判断。
 
 例如 [PM 源槽关联疑点](../../docs/research/localization/source-alignment.md)中，日英内容与说话人不同；二审应保留英文对照，先检查对应关系，而非只让中文更顺。相反，[Photon 的 `Hot Dog` 采用决定](../../rUGP/docs/postmortems/pf-pm-latin-review-20260909.md)保留英文及角色的误解，不能仅因中文里仍有英文就判为 `revise`。前者仍待核，后者是对应语境的采用决定。
 
@@ -52,7 +52,7 @@
 必须同时满足：
 
 1. 声明来源的原意准确，没有误译、漏译或擅自增译；原作内容核对日文／日语及画面，新增内容的来源与采用范围明确。
-2. 应译部分的中文自然，放进上下文不突兀；原文保留符合最高原则且范围准确。
+2. 应译部分的实际字形、含义、术语和表达完整符合简体中文，放进上下文自然；原文保留与特殊惯例符合最高原则且范围准确。
 3. 人物语气、称谓和关系正确。
 4. 术语符合已冻结基线。
 5. 原文中的功能性符号和表达作用没有无故丢失。
@@ -67,6 +67,7 @@
 - 中文不通顺、拗口、过度书面或与原文文体不符。
 - 角色语气、身份或称谓不对。
 - 术语、专名或固定表达不统一。
+- 明确保留范围外仍有繁体／日式字形、假名或未汉化的日式称谓；例如本项目 `軍曹` 仅简化为 `军曹`，而未按术语译为 `中士`。
 - 普通口语被翻成不自然的文绉绉表达。
 - 有命名感或设定意义的词被磨掉。
 - 原文英文、拉丁缩写或关键符号被错误删除或替换。
@@ -143,7 +144,15 @@ identify assistance and verify function. English translations and old Chinese
 cannot override Japanese original meaning, while official designs/templates
 and calls can support separate presentation and technical decisions. A missing
 same-form Japanese asset does not by itself block semantic review.
-Preserve retention/terminology rules and per-item `keep/revise/question` decisions.
+Distinguish intentional Japanese retention, already compliant Simplified Chinese
+and explicitly adopted conventions, with scope and evidence; intentional retention
+also needs its reason and maintainer confirmation. Required Chinese must meet
+actual glyph, meaning, terminology and expression requirements. Readability,
+decoration or a retention label alone cannot justify `keep`; old tool compromises
+still need correction. Outside justified retention, Traditional/Japanese glyphs,
+kana and Japanese terms require revision: here `軍曹` needs `中士`, not merely
+simplified `军曹`. Reassess old decisions based only on those weak reasons.
+Preserve still-valid retention/terminology rules and per-item `keep/revise/question` decisions.
 Review approval does not imply adoption, writeback, in-game verification or release.
 Include correctly matched official English where available and compare it
 independently without assuming the match or interpretation is correct. The

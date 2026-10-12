@@ -47,7 +47,22 @@ Chinese may replace English in rUGP's existing `translation` slot without a new
 Chinese slot. Language suffixes do not exclude an actual Chinese target;
 select the authoring base separately rather than inferring it from that slot.
 
-Before the first pass, distinguish translation from intentional retention by function, player understanding and the original presentation. Most Japanese text needs translation. Wording used primarily for identification or presentation may remain when this preserves its role without obstructing necessary understanding; wording already suitable in Chinese may also remain. Assess different parts of a line or image separately. Song titles, credits and date notation are examples, not an exhaustive list; apply the shared principles to new material too. Pass on the retention scope, reason and confirmation for independent review. Completing localization does not mean removing every Japanese character.
+After full inspection, content requiring localization must be fully Simplified
+Chinese in actual glyphs, meaning, terminology and expression. Being understandable
+to Chinese readers is insufficient. Under the [three unchanged-content cases](../principles.md#english-summary),
+distinguish intentional Japanese retention, content already meeting Simplified
+Chinese requirements, and explicitly adopted special conventions, region by region.
+Real staff credits and song titles without verified official Chinese names may have
+justified retention scopes. Approved Japanese weekday notation is a deliberate
+convention, not ordinary compliant Chinese. These examples are not a closed whitelist.
+
+Pass scope, reason and confirmation to independent review. Outside justified
+retention, correct Traditional/Japanese glyphs, kana and Japanese terms or forms
+of address; character conversion alone is not translation. For example, this
+project's `軍曹` needs `中士`, not merely simplified `军曹`. Reassess old decisions
+based only on readability, decoration or tool limits: known defects need repair,
+uncertain cases need review. Reuse still-valid retention, without treating either
+removal of every Japanese character or an old tool compromise as completion.
 
 ```text
 lawful extraction; content/function inventory; source and target planning

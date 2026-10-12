@@ -4,7 +4,7 @@
 
 **这组原则同时适用于正文、界面、字幕、图片文案、Logo 和场景文字。** 先确认需要向中文玩家传达的内容与功能，再选择表达、素材和实现方式。文本与图片使用同一套判断方法，不能由文件后缀或语言槽代替内容判断。
 
-**本项目以日译中为目标，大部分日文都需要翻译，但并非所有日文都必须改成中文。** 是否翻译，应结合内容用途、中文玩家的理解需要和原作表现判断。完整汉化要求全量核查、翻译应译内容，并说明有意保留的内容；未发现、未确认和未完成的内容不能算作已保留。
+**本项目以日译中为目标，应汉化的内容必须完整做到简体中文化。** 大部分日文都需要翻译，但有明确内容依据的原文保留另行说明范围与理由。完整汉化要求全量核查，处理应译内容的字形、含义、术语和表达；“中文玩家能看懂”不能作为合格或免译标准。未发现、未确认和未完成的内容不能算作已保留。
 
 ## 中文版的定位与制作范围
 
@@ -51,13 +51,21 @@
 
 ## 如何判断是否需要翻译
 
-**先看玩家是否需要读懂它传达的信息。** 对话、旁白、选项、界面、操作提示以及需要阅读的说明和剧情线索，通常都应译成中文。这是大部分文本和图片文案的处理方向；不能因为内容不是主线剧情、文字很小或制作困难就省略。
+**默认处理应汉化内容，并完整做到简体中文化。** 对话、旁白、选项、界面、操作提示、说明和剧情线索通常都应译成中文；场景文字、服装／机体标记和道具文字也按具体内容判断，不能因为不是主线、属于装饰、字小或制作困难就免译。
 
-**再看保留原文是否更符合它在作品中的作用。** 有些文字主要用于身份识别、署名、表现环境或构成原画，保留原写法能准确识别对象、尊重原作设计，且不妨碍玩家理解必要信息时，可以保留。原文在中文语境中含义明确、表达适用，也可以直接沿用，不必为替换而重做。判断须结合实际用途与上下文，不能只看它是否含假名或是不是汉字。
+原文或原图不改时，区分以下三种情况：
 
-**按实际内容划分范围。** 同一行或同一张图可以部分翻译、部分保留：身份名称与说明、画面装饰与阅读信息分别判断。保留一部分不代表整句、整图或整个目录都无须翻译。
+| 情况 | 判断依据 | 处理方式 |
+| --- | --- | --- |
+| 1. 有意保留日文原文 | 原写法本身需要保留，例如真实人员署名、没有经核实官方中文译名的曲目原题，或经确认保留的原画文字 | 说明具体内容、范围与理由，独立复核；此范围保留原写法，不擅自简化姓名或改造原题 |
+| 2. 原内容已经符合简体中文要求 | **实际字形、含义、术语与表达都与目标简体中文一致**，不只是汉字相似或能猜懂 | 直接复用，无须为改而改；这是内容已经合格，不是保留日文的例外 |
+| 3. 沿用有明确依据的特殊表达惯例 | 字形与简体中文相同，但表达方式不同；项目有意采用并确认其范围，例如沿用本篇与 Alternative 官汉的七曜星期标记 | 记录采用惯例与依据；这是有意保留的一种，不能冒充第 2 类，也不能推广为同类素材全部免译 |
 
-这套判断同样适用于尚未遇到的新内容，不以是否出现在下面的例子中为准。目录名、英文版有没有翻译、OCR 是否检出日文或改图难度，都不能单独决定应译与否。保留项说明范围和理由，按现有流程复核；无法可靠判断的内容列为待确认。
+**除明确保留范围外，繁体字形、日式字形、假名和未汉化的日式称谓／用语都应处理。** 同一个汉字编码也可能显示不同地区字形，要看实际画面与笔画，不能只看 OCR 或字符表。只转换繁简不足以完成翻译：例如 `軍曹` 改为 `军曹` 仍未完成，按本项目[军衔术语](Glossaries-KeepItConsistent/decisions.md)应为 `中士`。保留手写、材质与构图不等于保留这些文字问题。
+
+**按实际内容划分范围。** 同一行或同一张图可以分别适用上述情况与正常翻译：保留署名不免除岗位翻译，保留七曜不免除相邻说明翻译。“身份标记”“画面装饰”“中文玩家能看懂”都不能单独成为保留理由。
+
+这套方法同样适用于新内容，不以是否出现在例子中为准。目录名、英文版有没有翻译、OCR 是否检出日文或改图难度，都不能单独决定应译与否。依据不足列为待确认；已经确认需要修正但尚未处理的内容列为待修。**旧工具能力不足造成的妥协属于待修问题，不能改记为原文保留或据此算作汉化完成。**
 
 ## 哪些原文应该保留
 
@@ -67,14 +75,14 @@
 | --- | --- | --- |
 | 曲目名称、片尾歌曲原题 | 没有经核实的官方中文译名时，保留原题，不自行创造正式中文歌名；有官方译名时按项目决定采用 | 歌词、歌曲说明和播放操作不随歌名免译。已有项目中文候选不等于官方译名；确需采用项目译名，由维护者明确确认并注明性质 |
 | 片尾真实人员、声优、公司及团体署名 | 保留原署名写法，包括汉字、假名、笔名和拉丁字母，不擅自简化、音译或汉化姓名 | 岗位、职责、演唱／作词等标签仍译成中文；虚构角色姓名、军衔和称谓按作品术语处理。混合一行时只翻译应译部分 |
-| 已确认保留的壁纸、插画和画内装饰 | 保留原画构图、作品字标、署名及已确认不承担阅读任务的装饰文字，不能仅因存在假名就重绘 | 图库图注、菜单、标题说明和剧情／操作所需信息分别处理；不能把壁纸原画保留决定套到另一张带说明文字的图上 |
-| 已确认沿用的日期、日历图 | 保留原有年月日和日期后的七曜星期标记，如月、火、水、木、金、土、日；不机械改成“星期一”等，也不改变数字、顺序或圈记 | 地点、事件说明、操作提示等另行判断；某张日期图保留不代表全部日期素材都免译 |
+| 已确认保留的壁纸、插画和画内装饰 | 只在有明确内容理由、经确认的原画文字范围内保留原写法；不能仅因存在假名就推翻有效决定 | 保留原画美术不等于文字免译。图库图注、菜单、标题说明和其他应汉化文字仍须完整简体中文化；“装饰”或“不影响剧情”本身不是保留理由 |
+| 已确认沿用的日期、日历图 | 字形、含义和表达均已符合简体中文的年月日直接复用；七曜星期标记如月、火、水、木、金、土、日，按明确采用的特殊惯例保留，不机械改成“星期一”等 | 七曜属于第 3 类，不是因“能看懂”就认定为普通中文。数字、顺序和圈记不擅改，地点、事件说明、操作提示等另行处理；某张日期图保留不代表全部日期素材都免译 |
 
 其他包装、漫画拟声、场景陈设及后续新内容也按上述方法判断。既有决定可供相同用途的内容参考，但仍要核对具体语境。核查实例与限制，包括君望、PF／PM 七曜日期图的既有保留决定，见[原文保留实例](../docs/research/localization/retention-examples.md)。
 
 保留决定复用现有备注、决定记录或本地旁表，能找到作品、资源／文本稳定身份、保留范围、理由和维护者确认即可，不强制新建一套表或状态枚举。**“保留原文”是内容决定，二审的 `keep` 是审核结论，两者不能混用。** 保留项同样经过独立复核，确认没有误留正文、岗位或图注；文字与图片中的同一原题、署名应一致。
 
-尚无决定或依据不足时继续列为 `question`／待确认。已经确认的保留项不反复要求翻译；新的剧情证据或维护者决定改变其适用范围时，按[修改反查](Text-AITranslationWorthReading/07-change-impact.md)复查相关文本和图片。通用原则不能代替对具体候选的审核、采用或返修决定。
+尚无决定或依据不足时继续列为 `question`／待确认。符合上述依据的既有保留决定可以复用，不反复要求翻译；若旧决定仅依据“看得懂”、装饰分类或工具限制，则重新判断并区分待确认与待修，不能直接沿用为合格。范围改变时，按[修改反查](Text-AITranslationWorthReading/07-change-impact.md)复查相关文本和图片。规则更新不自动批准或回退全部既有候选，也不表示旧补丁的问题已经修复。
 
 ## 官方版本差异怎么处理
 
@@ -109,11 +117,21 @@ Plan Chinese use and feasible delivery before production, then verify binding an
 
 Preserve English intentionally present in the Japanese original; do not confuse it with English substituted by a localization. Render Japanese in English only when it better fits the meaning and context, with a recorded reason.
 
-Most Japanese text should be translated into Chinese, but not every Japanese inscription needs replacement. Decide by its function, what Chinese-speaking players need to understand, and its role in the original presentation. Dialogue, narration, choices, UI, instructions and other information meant to be read normally require translation. Original wording may remain when it primarily identifies a person or work, expresses the setting or forms part of the artwork, and retaining it preserves that role without obstructing necessary understanding. Wording already suitable in Chinese may also remain. Assess separate parts of a line or image independently.
+Content requiring localization must be fully Simplified Chinese in its actual glyphs, meaning, terminology and expression. Being understandable to Chinese readers is not sufficient. Dialogue, narration, choices, UI, instructions and story information normally need translation; scene lettering, clothing/equipment markings and props require content-specific assessment rather than blanket decoration or identity exemptions.
 
-Song titles without a verified official Chinese name, real staff/actor/company credits, approved artwork and date/calendar notation are examples of this reasoning, not an exhaustive list of permitted exceptions. Translate role labels, lyrics, gallery captions and required story/operation information separately. Apply the same reasoning to new material; a filename, OCR result, English-edition treatment or editing difficulty alone does not settle the decision. A project translation candidate is not an official title or an approval to replace the original.
+Distinguish three reasons for leaving content unchanged:
 
-Record the exact retention scope, resource identity, reason and maintainer confirmation using existing notes or decision records. A retention decision is distinct from the review verdict `keep` and still requires independent checking. Missing evidence or unfinished work remains unresolved; the rule does not automatically approve or revert existing candidates.
+| Case | Requirement and treatment |
+| --- | --- |
+| 1. Intentional Japanese retention | The original wording itself has a justified role to preserve, such as real staff credits, song titles without a verified official Chinese name, or explicitly approved artwork lettering. Record and independently review its exact scope and reason; do not arbitrarily simplify names or rewrite original titles. |
+| 2. Already compliant Simplified Chinese | Actual glyphs, meaning, terminology and expression all match the intended Simplified Chinese. Reuse it unchanged; this is compliant content, not a Japanese-retention exception. |
+| 3. An explicitly adopted special convention | Glyphs match Simplified Chinese but the expression differs, and the project deliberately adopts a supported convention within a defined scope. Japanese weekday notation following the official Chinese Muv-Luv/Alternative treatment is an example. This is a form of intentional retention, not case 2 or an exemption for all date assets. |
+
+Outside justified retention regions, correct Traditional/Japanese glyph forms, kana and untranslated Japanese terms or forms of address. Shared character codes or successful OCR do not prove matching glyphs; inspect the actual lettering and strokes. Merely changing `軍曹` to `军曹` is insufficient: the [project rank terminology](Glossaries-KeepItConsistent/decisions.md) uses `中士`. Preserve the handwriting, material and composition while fixing the text.
+
+Assess regions independently: retaining a credit or weekday marker does not exempt role labels, adjacent explanations, lyrics, gallery captions or other required Chinese text. Examples are not a closed whitelist. A decoration/identity label, readability, filename, English-edition treatment, OCR result or editing difficulty alone cannot justify retention. A project title candidate is neither an official translation nor approval to replace the original.
+
+Record scope, resource identity, reason and maintainer confirmation through existing notes. A retention decision is distinct from the review verdict `keep`. Reuse still-valid decisions; reassess old decisions justified only by readability, decoration or tool limitations, distinguishing uncertain cases from confirmed repairs. Old tool-limit compromises remain repair work, not intentional retention or completed localization. Policy changes neither automatically approve/revert all existing candidates nor fix old releases; check affected occurrences when a decision changes.
 
 Distinguish official-edition differences:
 

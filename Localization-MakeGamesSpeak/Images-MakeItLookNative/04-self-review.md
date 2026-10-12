@@ -12,11 +12,13 @@
 | --- | --- |
 | 整图 | 是否自然，构图、视觉重心、物体关系是否改变 |
 | 原始尺寸 | 实际阅读效果、字号、间距、清晰度和层级 |
-| 局部放大 | 旧字碎点、坏笔画、日式字形、硬边、糊块、纹理与遮挡 |
+| 局部放大 | 旧字碎点、坏笔画、繁体／日式字形、硬边、糊块、纹理与遮挡 |
 
-逐张检查：文案／数字正确；该处理的区域完整中文化；无不应保留的假名和日式字形；中文笔画完整；颜色和特效贴合；位置、透视、曲面、材质、留白、遮挡自然；声明保护范围内的人物和画面未改坏；画布和透明边缘符合选定底稿／目标格式与已确认的中文设计。
+逐张检查：文案／数字正确；应汉化区域在实际字形、含义、术语和表达上完整简体中文化；无不应保留的假名、繁体／日式字形和日式称谓；中文笔画完整；颜色和特效贴合；位置、透视、曲面、材质、留白、遮挡自然；声明保护范围内的人物和画面未改坏；画布和透明边缘符合选定底稿／目标格式与已确认的中文设计。
 
-先复核应译与保留的划分是否符合内容用途、玩家理解和原作表现，再确认保留内容没有被误擦、改字或变形。残留检查只对该翻译的区域判缺陷；OCR 查到日文是复核线索，不能自动判漏译或触发重绘。保留原画不能掩盖同图应译的说明，也不以是否属于已列出的例子代替判断。
+先按[三类不改的情况](../principles.md#如何判断是否需要翻译)复核范围和依据，再确认保留内容没有被误擦、改字或变形。直接复用的普通中文须逐项符合简体中文要求；七曜等特殊惯例单独确认，不能混为普通中文。明确原文保留范围外，繁体／日式字形与未汉化用语均属缺陷；例如 `軍曹` 仅改为 `军曹` 仍不合格，本项目采用 `中士`。
+
+“能看懂”、OCR 没有检出日文或画面没有假名都不能证明合格；OCR 查到日文也只是复核线索，不能自动擦除有依据保留的原题或署名。保留原画不免除同图应译说明，旧工具妥协不作为保留依据，已知缺陷未修不能报为通过。
 
 同时核对[最高原则](../principles.md)：原作已有英文没有被误删，日文改用英文有明确理由；原意按实际文字、语音或画面独立复核。真正新增信息的来源与采用范围明确，辅助文案符合功能且没有冒充原作。不能把“文字通顺”当成来源已确认，也不能把来源可靠当成中文呈现已合格。
 
@@ -38,6 +40,14 @@ correspondence, protected artwork, target geometry/alpha and group states at
 full-frame, native and magnified scales. Confirm sources/scope for additions and
 function for assistance. Technical image checks do not prove meaning, appearance
 or runtime behavior. Repair affected parts and preserve still-valid work.
+Check the three unchanged-content cases and their scope. Ordinary unchanged
+Chinese must meet actual glyph, meaning, terminology and expression requirements;
+approved weekday conventions remain a separate retention case. Outside justified
+retention, Traditional/Japanese glyphs, kana and Japanese terms need correction:
+`軍曹` merely changed to `军曹` still needs this project's `中士`. Readability,
+clean OCR or no kana cannot prove compliance. OCR also cannot automatically erase
+justified original titles/credits. Old tool compromises are unresolved repairs,
+not retention reasons or passing results.
 Inspect layers in their actual composition, including order, transparency and
 the relationship between lettering and background. Play frame sequences in the
 correct order/timing and check stable lettering, position, color and edges for
