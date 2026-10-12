@@ -32,10 +32,10 @@ CRimp 的四字节整数带低两位类型标签 `2`，应作有符号算术右�
 
 按[图片人工审核与交付](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/05-human-review-and-delivery.md)组织**官方日文／可选官方英文／可选旧中文／当前中文**对照，标明版本并附修改、保留理由。可以切换或附图，不强制列数；现有日英中工具预览未提供的旧中文与说明另附。
 
-1. 日英共用图标明实际共用关系；“无英文本地化”仅描述资源分布，不表示无须汉化。已有明确的保留决定按其范围复用，其他内容按[通用原则](../../Localization-MakeGamesSpeak/principles.md)判断应译与保留范围，不因共用关系默认保留。
-2. 日英分开图重点审核。日文内容与简体中文一致时，可将日文官图明确登记为 translation 槽候选，不能只删除英文替换而依赖回退。
+1. 日英共用图标明实际共用关系；“无英文本地化”仅描述资源分布，不表示无须汉化。符合[通用原则](../../Localization-MakeGamesSpeak/principles.md)的保留决定按其范围复用；仅凭“看得懂”、装饰分类或旧工具限制的决定须重新判断，不因共用关系默认保留。
+2. 日英分开图重点审核。日文官图的实际字形、含义、术语与表达均已符合目标简体中文时，可明确登记为 translation 槽候选，不能只删除英文替换而依赖回退。有意保留日文或沿用七曜等特殊惯例的候选另注明范围与依据；应汉化区域的繁体／日式字形及未汉化用语仍须处理。
 3. 原作内容以日文文本、日语语音、画面和语境确认原意；图片通常以日文版适用原图为基础，英文设计用于参考；确需复用英文版画布或模板时说明具体部分、用途与理由。按[通用原则](../../Localization-MakeGamesSpeak/principles.md)分别关联原意依据、制作底稿和 translation 目标，不能由底稿语言推定原意语源，也不自动制作全部语言差分。
-4. 日文官图本来使用的英文通常保留，只处理其中需理解的日文。按文字用途判断，不机械排除所有 HUD、武器或场景招牌。
+4. 日文官图本来使用的英文保留；应汉化的日文区域完整做到简体中文化，不能以“玩家能理解”代替字形、术语和表达要求。不机械排除所有 HUD、武器或场景招牌。
 5. 同物理对象的缩放层、不同物理位置的副本和真正不同姿态／状态分别记账。
 
 例如 U0478 有两个光子旋律目标；日文竖排 4 层、英文横排 6 层、已批准中文竖排 4 层。
@@ -57,7 +57,13 @@ column count is required. Supplement existing Japanese/English/Chinese previews
 with previous Chinese and explanations where the tool does not provide them.
 Shared Japanese/English resources describe a distribution relationship, not an
 automatic retention decision. Reuse confirmed retention within its scope and
-judge other content under the shared principles.
+judge other content under the shared principles. Reassess decisions based only
+on readability, decoration or old tool limits. An unchanged Japanese original
+can be a translation-slot candidate when its actual glyphs, meaning, terminology
+and expression already meet Simplified Chinese requirements; register the target
+explicitly rather than relying on fallback. Record justified Japanese retention
+and special conventions separately, and correct Traditional/Japanese glyphs or
+untranslated terms in required Chinese regions.
 
 ## 从个人游戏副本复现
 

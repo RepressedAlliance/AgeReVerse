@@ -18,7 +18,9 @@
 
 全量对照不等于分别汉化日英两套资源。同一内容可以关联多个实际目标，各目标保留身份、状态和调用；仅供比较的资源不进入制作统计。先规划中文版用途与可行实现，交付时验证实际绑定，无须内容已经在中文版生效才可制作。例如中文可以覆盖 rUGP 的 `translation` 槽原有英文内容，不要求另建中文槽，也不按语言后缀排除实际中文目标；制作底稿按上文单独选择，不能由槽位反推。
 
-全量核查后，按内容用途、玩家理解和原作表现区分应译与保留范围。大部分日文应译成中文；主要承担身份识别或原作表现作用、保留不妨碍必要理解的内容，以及在中文语境中可直接沿用的原文，可以说明理由后保留。同一句或同一张图的不同部分分别判断。曲名、署名、日期标记等只是常见例子，新内容同样按[通用判断方法](../principles.md#如何判断是否需要翻译)处理。保留范围、理由与确认依据随初译交接，独立二审逐项检查；不能用“消除所有日文”作为完成标准。
+全量核查后，应汉化内容完整做到简体中文化，字形、含义、术语与表达均须合格，不能仅以“中文玩家能看懂”通过。按[三类不改的情况](../principles.md#如何判断是否需要翻译)区分有意保留日文、原内容已经符合简体中文，以及有明确依据的特殊惯例；同一句或同一图分区判断。真实署名、无官方中文名的曲目原题等可有明确保留范围，七曜星期标记属于特意沿用的惯例，不能混同于普通中文已经合格；例子不是封闭名单。
+
+范围、理由与确认依据随初译交接，独立二审逐项检查。明确保留范围外的繁体／日式字形、假名和日式称谓须修正，繁简转换不能代替翻译，例如本项目 `軍曹` 应译为 `中士`，而非 `军曹`。旧决定仅凭可读性、装饰分类或工具限制时须重新判断，已知缺陷列为待修，依据不足列为待确认。有效保留仍可复用，不能用“消除所有日文”作为完成标准，也不能把工具妥协记为保留或完成。
 
 ## 总流程
 
@@ -256,3 +258,15 @@ question](../../docs/research/localization/source-alignment.md) illustrates why
 correspondence must be checked before meaning; [AGE2 subtitles](../../AGE2/docs/postmortems/caption-layout.md)
 illustrate using an English canvas with Japanese-audio translation. The unresolved
 [TDA01 cheer ending](../../AGE2/docs/limitations.md) remains unresolved.
+
+Required Chinese must be fully Simplified Chinese in actual glyphs, meaning,
+terminology and expression; readability alone is insufficient. Distinguish
+intentional Japanese retention, already compliant Chinese and explicitly adopted
+special conventions by region. Original credits/titles and approved weekday
+notation can have justified scopes; examples are not a closed whitelist. Outside
+those scopes, correct Traditional/Japanese glyphs, kana and Japanese terms;
+`軍曹` needs this project's `中士`, not merely simplified `军曹`. Pass scope,
+reason and confirmation to independent review. Reuse valid decisions, but reassess
+old readability/decoration/tool-limit decisions and retain known defects as
+repairs, not retention or completed work. Removing every Japanese character is
+not the completion criterion either.

@@ -29,7 +29,7 @@ designs; keep it where available without making it mandatory for every item.
 The [project examples](principles.md#how-we-use-english-project-examples) cover
 subtitle canvases, source mismatches, original English UI and character wordplay.
 
-Most Japanese text needs translation, but retention depends on function, player understanding and the original presentation. Assess each relevant part; familiar examples are not an exhaustive list of what may remain unchanged.
+Content requiring localization must be fully Simplified Chinese in actual glyphs, meaning, terminology and expression; readability alone is insufficient. Distinguish justified Japanese retention, content already meeting all Simplified Chinese requirements, and explicitly adopted special conventions such as approved weekday notation. Assess each region; decoration or identity alone is not an exemption, and old tool-limit compromises remain repair work. See the [decision rules](principles.md#english-summary).
 
 The maintainer reviews and corrects the release candidate **before publication**. ParaTranz revisions are reviewed, integrated and verified for a later release; an online edit does not update an installed patch.
 
@@ -59,7 +59,7 @@ The maintainer reviews and corrects the release candidate **before publication**
 
 本项目通常把**日文原作、官方英文、中文候选**放在一起对照：英文帮助定位场景、比较译法和借鉴本地化设计，含义有分歧时先确认关联、再回到日文／日语判断。没有英文对应时不强求。怎样具体使用英文，可看[字幕画布、源槽错配、原作英文 UI 与角色笑点等项目实例](principles.md#官方英文具体怎么用)。
 
-**大部分日文需要翻译，但不是所有日文都要替换。** 根据内容用途、玩家理解和原作表现区分应译与保留范围；同一段文字或图片也可以部分翻译、部分保留。曲名、署名、原画与日期标记等是帮助理解的例子，新的内容同样按这一原则判断，不能仅因仍有日文就判漏译。
+**应汉化的地方必须完整简体中文化，不能以“玩家能看懂”代替合格。** 字形、含义、术语和表达都要到位。按[三类不改的情况](principles.md#如何判断是否需要翻译)区分有意保留日文、原内容已经符合简体中文，以及有明确依据的特殊惯例（如已确认的七曜星期标记），同一段或同一图分区判断。身份标记或装饰分类本身不免译；旧工具妥协留下的问题仍是待修。
 
 ## 从候选到玩家拿到的版本
 

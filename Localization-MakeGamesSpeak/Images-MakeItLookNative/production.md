@@ -13,7 +13,7 @@
 下文用于编辑和像素检查的“原图”指实际选定底稿；原意来源、借鉴设计和目标格式分别关联。保护范围针对该底稿，换画布或新增叠层则遵守已确认的中文设计与引擎方案，不默认拿日文图约束所有制作。
 
 1. **视觉自然优先。** 文字的位置、大小、方向、透视、留白、遮挡和材质必须成立，整张图不能出现明显修补痕迹。
-2. **按内容用途、玩家理解和原作表现划定应译与保留范围，语言选择服从[翻译最高原则](../principles.md)。** 大部分日文需要翻译；主要用于身份识别或画面表现、保留不妨碍必要理解的内容，以及中文语境可直接沿用的原文，可有依据地保留，不限于既有示例。应译区域清除旧假名、残笔、小点、光晕及不符合目标简体中文字形的日式汉字，保留区域不因此擦除或重绘。同图的阅读信息仍分别处理；不能仅凭“只是 Logo”“不影响剧情”或制作困难省略应译内容。原作已有英文保持英文，日文改用英文需确实适合并记录理由。
+2. **应汉化区域完整简体中文化，语言选择服从[翻译最高原则](../principles.md)。** 原图不改须区分有意保留日文、实际字形／含义／术语／表达均已符合简体中文，以及有明确依据的特殊惯例。除明确保留范围外，繁体／日式字形、假名和日式称谓都须处理，旧字残笔、小点与光晕清除完整；不能仅凭“能看懂”“身份标记”“装饰”“只是 Logo”“不影响剧情”或制作困难省略。七曜等特殊惯例不免除相邻说明的汉化；真实署名等有依据的原文保留区域不因此擦除或简化。原作已有英文保持英文，日文改用英文需确实适合并记录理由。
 3. **尽可能保留信息。** 清楚可辨的文字严格依原意处理，尤其是剧情信息、人名、数字、价格、日期、操作含义。视觉优先不是改写这些信息的理由；有冲突时调整制作方案。
 4. **无关内容尽可能不动。** 修改只覆盖文字及必要的底图修复范围，不能改变人物、物体、构图、颜色或其他已经通过的部分。
 5. **整套一致性与单张还原同时验收。** 不得为了模仿某张字的外接框，破坏同套 UI 或素材的字号、字重、间距与效果体系。
@@ -82,7 +82,7 @@
 
 UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距外，还要比较颜色、饱和度、渐变方向、深色区域、阴影深浅与光晕扩散。柔和光晕不能变成一圈明显的硬描边；整体变淡也不能冒充柔和。
 
-中文版需要的不同篇章、设计和状态的标题或 Logo，分别核对实际原意、选定底稿与采用设计，不能直接套用另一变体已通过的 Logo。通常以日文版适用原图为基础，参考英文设计；确需复用英文版画布或模板时说明具体用途与理由，不自动各做一套中文。保留日文原版已有的英文副标题和无需修改的其他标记；英文版后来替换的文字仍按最高原则判断，不因它在底稿上就全部保留。
+中文版需要的不同篇章、设计和状态的标题或 Logo，分别核对实际原意、选定底稿与采用设计，不能直接套用另一变体已通过的 Logo。通常以日文版适用原图为基础，参考英文设计；确需复用英文版画布或模板时说明具体用途与理由，不自动各做一套中文。保留日文原版已有的英文副标题；其他标记按第 1 节明确的处理范围制作，不能仅因用于装饰或身份识别就免译。英文版后来替换的文字仍按最高原则判断，不因它在底稿上就全部保留。
 
 人物身上的涂鸦、胸牌和道具文字仍遵守空间关系：不得产生皮肤色块、马赛克、断发、硬抠边或不自然的覆盖。透明素材同时检查浅色、深色背景与边缘，避免黑边、白边和意外不透明区域。
 
@@ -94,8 +94,8 @@ UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距
 
 检查清单：
 
-- 应译区域的日文、日式字形、残笔、小点、旧字阴影是否清干净？明确保留的原文和图像是否保持原样？
-- 中文是否正确，有无缺笔、乱码、变形或异常字形？
+- 不改的内容属于有意保留、已符合简体中文还是特殊惯例，范围与依据是否成立？应译区域的假名、繁体／日式字形、残笔、小点、旧字阴影是否处理完整？有效保留范围是否保持原样？
+- 实际字形、含义、术语与表达是否完整符合简体中文，有无缺笔、乱码或变形？本项目的 `軍曹` 是否译为 `中士`，而非只简化为 `军曹`？不能只凭编码、OCR 或“能看懂”判断。
 - 字体、颜色、粗细、阴影、光晕是否接近原图？
 - 位置、方向、透视、留白、曲面和遮挡是否合理？
 - 底图有无糊块、拼接、色差、破损或覆盖其他物体？
@@ -111,6 +111,8 @@ UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距
 ## 9. 复用、返修与公开
 
 返修定位到问题区域和关联素材组，修完检查本图及受影响的同组版本，不连带改动其他已通过素材。保存采用的文案、样式配置、来源映射和审核结论，使后续批次复用同一标准。
+
+仍符合现行原则的保留与通过决定继续复用；仅因可读性、装饰分类或旧工具限制放过的内容须重新判断。已经确认的繁体／日式字形和未汉化用语属于待修，不能以历史妥协或已经发布为完成依据。
 
 换字体、版本、字重轴或后备字来源时，更新实际采用配方和受影响的图片用字表；旧方案保留为历史。交付前补齐本批的公开字体来源与致谢。若实际携带字体软件，附对应完整声明并核对分发条件，不用其他字体的 OFL 文件代替；只交付图片的许可要求见[说明](../Fonts-ThatFitTheGame/attribution.md#图片致谢和随包许可证分别处理)。
 
@@ -129,6 +131,16 @@ In editing/pixel checks, “original image” means the selected authoring base.
 Preserve its protected regions and the actual target's geometry/alpha constraints;
 canvas changes or added layers follow the established design/engine plan.
 Review copy, visual integration, group states and every actual target separately.
+Required Chinese must be fully Simplified Chinese in actual glyphs, meaning,
+terminology and expression. Distinguish justified Japanese retention, already
+compliant Chinese and explicitly adopted special conventions per region.
+Readability, identity or decoration alone is not an exemption. Outside valid
+retention, correct Traditional/Japanese glyphs, kana and untranslated terms;
+`軍曹` needs this project's `中士`, not just simplified `军曹`. Inspect actual
+strokes rather than relying on OCR or shared character codes. Preserve valid
+original credits and special conventions within their scope, and reassess old
+readability/decoration/tool-limit decisions. Known defects remain repairs even
+if released; a historical compromise does not establish completion.
 Reuse existing extraction/decoding, editable sources and approved work when
 valid for the current version; fill gaps, changes and failures rather than
 unpacking again. Declare counting units and distinguish investigation from

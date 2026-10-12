@@ -36,7 +36,7 @@ retention, then distinguish inspection, human approval and runtime status.
 | 04 | Per-image and per-group checks of meaning, Chinese design and protected content, including layer composition and frame playback where applicable; unresolved issues remain explicit |
 | 05 | Versioned Japanese / optional English / optional previous Chinese / current Chinese comparison with human-readable explanations, accessible materials and a clear feedback return method, followed by human approval, engine and in-game checks and final pre-release corrections |
 
-Most Japanese lettering needs translation, but determine the translation and retention regions by function, player understanding and the original presentation first. Remove old lettering and its effects only where translation is needed, then author Chinese using reproducible typography, drawing or constrained image editing as appropriate. Match perspective, material, lighting and occlusion. Review every output at full-frame, native and magnified scales, then obtain the maintainer's review of the exact final candidate. Bind the approved output through the appropriate engine, test in game, and complete the maintainer's final corrections before release.
+Content requiring localization must be fully Simplified Chinese in actual glyphs, meaning, terminology and expression; readability alone is insufficient. Distinguish justified Japanese retention, already compliant Simplified Chinese, and explicitly adopted special conventions such as approved weekday notation. Apply this per region; decoration or identity alone is not an exemption, and old tool-limit compromises remain repair work. Remove old lettering and its effects where replacement is needed, then author Chinese using reproducible typography, drawing or constrained image editing as appropriate. Match perspective, material, lighting and occlusion. Review every output at full-frame, native and magnified scales, then obtain the maintainer's review of the exact final candidate. Bind the approved output through the appropriate engine, test in game, and complete the maintainer's final corrections before release.
 
 The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference, not a guaranteed ranking. A capable alternative still needs representative-image validation. Clear copy, prices and plot information are fixed; only unresolved decorative text may be reconstructed with an explicit record. Preserve unrelated pixels and distinguish authoring, human approval, engine verification and publication.
 
@@ -44,9 +44,9 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 
 一块按钮、一张手写便条、一幅嵌着文字的场景，都有自己的字形、材质和空间关系。目标是让中文像原图本来就有的一部分：**视觉自然、空间关系正确，清楚的信息准确，同套素材一致，无关画面保持原样。** 这套步骤整理自本项目实际的图片提取、全量分类、UI／场景制作、返修及维护者审核过程。
 
-大部分日文文案需要翻译，但不是看到日文就必须改图。先按[内容用途、玩家理解和原作表现](../principles.md#如何判断是否需要翻译)确定应译与保留区域，再安排制作；保留原图或部分文字也可以是经过核查的正确结果。
+**应汉化的区域必须完整简体中文化，“中文玩家能看懂”不够。** 先按[三类不改的情况](../principles.md#如何判断是否需要翻译)区分有意保留日文、原图已经符合简体中文，以及有明确依据的特殊惯例，再安排制作。原图直接复用要求实际字形、含义、术语和表达均合格；不能只看都是汉字。身份标记和画面装饰也须逐项判断，同图的保留范围不免除其他文字的汉化。
 
-维护者从 2026 年 10 月起使用的经验基线是：视觉理解能力不低于 **Astra 6**，局部图像编辑能力不低于 **Image 2.5**，特别是对未选区域的保留能力。其他模型或工具具备相当能力时也可复用这套方法。这里是项目的经验基线，不是模型性能排行榜；仍要用代表图确认识读、空间理解、编辑范围和成品质量。旧批次的工具限制不作为新制作的固定限制。
+维护者从 2026 年 10 月起使用的经验基线是：视觉理解能力不低于 **Astra 6**，局部图像编辑能力不低于 **Image 2.5**，特别是对未选区域的保留能力。其他模型或工具具备相当能力时也可复用这套方法。这里是项目的经验基线，不是模型性能排行榜；仍要用代表图确认识读、空间理解、编辑范围和成品质量。旧批次的工具限制不作为新制作的固定限制；因此留下的繁体／日式字形和未汉化用语属于待修，不能改称保留或完成。
 
 ## 五个阶段
 
