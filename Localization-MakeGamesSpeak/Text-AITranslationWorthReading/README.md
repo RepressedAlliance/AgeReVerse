@@ -17,8 +17,14 @@ writeback, automated checks and in-game QA. Apply 07 whenever later edits occur.
 The numbers describe workflow order, not rule precedence.
 
 Before these steps, apply the shared [translation principles](../principles.md#english-summary)
-to both text and images, including Japanese-voice transcription for assets
-exclusive to the official English edition.
+to both text and images. Japanese text, audio and Japanese-edition assets are
+first-hand sources; English is reference material, including localization design
+that may inform but need not dictate the Chinese solution. Produce the resources
+needed by the Chinese edition, not both official language sets. Use Japanese-voice
+transcription for English-edition-only content confirmed as needed in Chinese.
+Writeback follows the engine: Chinese can replace English in rUGP's existing
+`translation` slot without making English the translation authority or requiring
+a separate Chinese slot.
 
 </details>
 
@@ -26,7 +32,7 @@ exclusive to the official English edition.
 
 沿用本项目已经使用的文本流程：通读剧情并建立术语 → 按场景初译 → 独立日文对照二审 → 解决疑点与联动修改 → 技术写回和实机检查 → 维护者人工修正、复查 → 发布。各阶段的输入、输出和状态见[完整工作流](workflow.md)。术语表如何形成、修改怎样影响全文，另见[术语与全文一致性](../Glossaries-KeepItConsistent/README.md)。
 
-先按最高原则确定语言来源与处理：日译中，保留日文原版已有英文；日文改用英文需有适当理由。官方英文版独有素材用对应日语语音听译，初译和二审都核对语音，不改成英译中。图片文案也使用同一原则。
+先按最高原则确定语言来源与处理：日文原文、日语语音和日文版素材是第一手依据，英文及其本地化设计是参考；日译中，保留日文原版已有英文，日文改用英文需有适当理由。先确定中文版需要采用的内容，再处理其中的英文版独有素材：用对应日语语音听译，初译和二审都核对语音，不改成英译中。图片文案也使用同一原则。写回按引擎实际路由，例如中文可覆盖 rUGP 的 `translation` 槽原有英文内容，不要求另建中文槽。
 
 文件名前的 `01`—`07` 表示规范的阅读和使用顺序。前三份用于确认项目与数据；
 正文工作的核心顺序是：**通读剧情并冻结术语 → 初译 → 独立二审 → 解决疑点并同步术语

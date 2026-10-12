@@ -11,15 +11,26 @@ spreadsheet.” Story comprehension, terminology, first translation, independent
 review, engine binding, in-game QA, and player feedback are separate stages with
 different evidence.
 
-The Chinese patch and its image lettering share the same governing policy:
-translate Japanese into Chinese, preserve English present in the Japanese
+The Chinese patch and its image lettering share the same governing policy.
+Japanese text, Japanese audio and Japanese-edition assets are first-hand sources;
+English is reference material. The official English localization may inform layout,
+information selection and presentation, but need not be copied. Comparing all
+locales does not mean localizing both official resource sets: produce the content
+needed by the Chinese edition. Translation authority and writeback slots are
+separate decisions. Chinese can replace English in rUGP's existing `translation`
+slot without requiring a new Chinese slot. An English-marked path does not exclude
+an actual Chinese target.
+
+Translate Japanese into Chinese, preserve English present in the Japanese
 original, and use English for Japanese only when it better serves the meaning
 and context, with a recorded reason. For assets exclusive to the official
-English edition, locate their corresponding Japanese voice and translate what
-is actually heard into Chinese. Record the audio location and uncertainties;
+English edition and confirmed as needed by the Chinese edition, locate their
+corresponding Japanese voice and translate what is actually heard into Chinese.
+Record the audio location and uncertainties;
 both the first pass and independent review check the Japanese audio. Do not
 invent a Japanese source by back-translating English or approve an English-based
-fallback when the necessary Japanese evidence is missing.
+fallback when the necessary Japanese evidence is missing. This source restriction
+does not prohibit writeback to the `translation` slot.
 
 Before the first pass, distinguish translation from intentional retention by function, player understanding and the original presentation. Most Japanese text needs translation. Wording used primarily for identification or presentation may remain when this preserves its role without obstructing necessary understanding; wording already suitable in Chinese may also remain. Assess different parts of a line or image separately. Song titles, credits and date notation are examples, not an exhaustive list; apply the shared principles to new material too. Pass on the retention scope, reason and confirmation for independent review. Completing localization does not mean removing every Japanese character.
 

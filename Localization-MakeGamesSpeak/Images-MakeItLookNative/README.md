@@ -9,7 +9,9 @@
 
 ## English workflow
 
-Five stages: extract and classify all images; confirm copy and style; produce images; self-review and repair; obtain human review and deliver through the engine. Follow the shared [translation principles](../principles.md#english-summary): translate Japanese into Chinese, preserve English present in the Japanese original, use English for Japanese only when justified, and translate English-edition-only assets from their corresponding Japanese voice.
+Five stages: extract and classify all images; confirm copy and style; produce images; self-review and repair; obtain human review and deliver through the engine. Japanese text, audio and Japanese-edition assets are first-hand sources; English is a reference for layout, information selection and presentation, without requiring the same design. Extraction and comparison cover all locales; production and delivery cover the resources needed by the Chinese edition. Reference-only variants do not automatically become tasks or count toward production progress. Determine intended Chinese use before authoring, without classifying assets solely by filename suffix. Follow the engine's actual writeback routes: Chinese may replace English in rUGP's existing `translation` slot without creating a separate Chinese slot or changing the translation authority.
+
+Follow the shared [translation principles](../principles.md#english-summary): translate Japanese into Chinese, preserve English present in the Japanese original, and use English for Japanese only when justified. For English-edition-only content confirmed as needed by the Chinese edition, translate from its corresponding Japanese voice. Review primarily compares the Japanese original and Chinese candidate, with English as an optional reference; final delivery verifies the Chinese resource route.
 
 Most Japanese lettering needs translation, but determine the translation and retention regions by function, player understanding and the original presentation first. Remove old lettering and its effects only where translation is needed, then author Chinese using reproducible typography, drawing or constrained image editing as appropriate. Match perspective, material, lighting and occlusion. Review every output at full-frame, native and magnified scales, then obtain the maintainer's review of the exact final candidate. Bind the approved output through the appropriate engine, test in game, and complete the maintainer's final corrections before release.
 
@@ -24,6 +26,8 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 维护者从 2026 年 10 月起使用的经验基线是：视觉理解能力不低于 **Astra 6**，局部图像编辑能力不低于 **Image 2.5**，特别是对未选区域的保留能力。其他模型或工具具备相当能力时也可复用这套方法。这里是项目的经验基线，不是模型性能排行榜；仍要用代表图确认识读、空间理解、编辑范围和成品质量。旧批次的工具限制不作为新制作的固定限制。
 
 ## 五个阶段
+
+**日文原文、日语语音和日文版素材是第一手依据，官方英文本地化可参考、不照搬。** 全量提取和日英对照用于核查，制作范围则是中文版需要采用的资源；仅供参考的差分不进入制作、交付或完成统计。先明确中文用途和预期调用，再按内容决定如何处理，不凭语言后缀排除素材。写回槽位服从引擎，例如 rUGP 可将 `translation` 槽里的英文替换成中文，无须另建中文槽。中文方案以原意准确、阅读自然和最终画面效果为准，详见[中文版的定位与制作范围](../principles.md#中文版的定位与制作范围)。
 
 编号表示制作的主要阶段，不要求把每个动作另立一步。提取和分类一起完成，去字与排字属于制作，最后由维护者审核并完成交付；具体素材按需要处理。
 
