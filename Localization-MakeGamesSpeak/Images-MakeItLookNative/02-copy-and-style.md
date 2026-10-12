@@ -6,7 +6,7 @@
 
 ## 先确认文字
 
-沿用 01 的内容与功能范围，分别确定原意依据、中文呈现、实际制作底稿和目标规划。原作含义回到日文文本、日语语音、画面与语境；排版、信息组织、图层和显示机制可采用适用的官方日英方案，再按中文阅读与画面效果调整。选用英文版底稿或现有 `translation` 目标不等于按英文译文裁定含义，也不自动增加另一套交付。
+沿用 01 的内容与功能范围，分别确定原意依据、中文呈现、实际制作底稿和目标规划。原作含义回到日文文本、日语语音、画面与语境；图片通常以日文版适用原图为基础，英文排版与信息组织用于参考；确需复用英文版画布、模板或显示机制时，说明具体部分、中文用途和理由，再按中文阅读与画面效果制作。写入现有 `translation` 目标只表示写回位置，不表示选用英文成品图作底稿或按英文译文裁定含义，也不自动增加另一套交付。
 
 先遵守[翻译最高原则](../principles.md)：目标是日译中，日文原版已有英文保持英文；只有确实更适合英文表达的日文才采用英文，并说明理由。能读清的人名、操作提示、标题、数字、价格和剧情线索必须忠实处理。
 
@@ -33,8 +33,10 @@
 ## English summary
 
 Choose meaning evidence, Chinese presentation, authoring base and target plan
-separately. Original meaning uses Japanese text/audio/images in context; official
-designs, layers and display mechanisms from either edition may be adapted.
+separately. Original meaning uses Japanese text/audio/images in context. Normally
+use a suitable Japanese original as the image base and English design as a
+reference. Explain the part, purpose and reason for necessary English-canvas/
+template or display-mechanism reuse; a translation slot is only a destination.
 Independently check actual text, images or audio, not only transcripts. Confirm
 the provenance and adopted scope of genuine additions, and identify functional
 assistance. Declare the selected base, borrowed design, editing scope and target

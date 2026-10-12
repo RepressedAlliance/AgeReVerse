@@ -6,7 +6,7 @@
 先理解剧情并建立目标语言术语，完成第一轮翻译，再独立作出 `keep/revise/question`
 审核，解决问题后进入引擎绑定、实机 QA 和玩家反馈闭环。
 
-按[最高原则](../principles.md)先确定目标语言需要传达的内容与功能，再区分原意依据、呈现、制作底稿和交付位置。文字、语音和图片都是正常输入；适用的官方版本素材与实现均可采用。其他版本独有资源可能只是原作内容的另一种呈现，真正新增信息须确认来源和采用范围；不能把底稿语言当成原意语源，也不能为适配文本模板伪造日文字段或哈希。
+按[最高原则](../principles.md)先确定目标语言需要传达的内容与功能，再区分原意依据、呈现、制作底稿和交付位置。文字、语音和图片都是正常输入；图片通常以日文版适用原图为基础，英文设计供参考；确需复用具体画布、模板或显示机制时说明复用部分、用途与理由。其他版本独有资源可能只是原作内容的另一种呈现，真正新增信息须确认来源和采用范围；不能把底稿语言当成原意语源，也不能为适配文本模板伪造日文字段或哈希。
 
 This repository contains reusable localization components, but it does **not** yet provide a one-command, end-to-end pipeline from every clean game installation to a finished patch. Treat the existing Simplified Chinese work as an implemented language target and a set of proven components—not as a universal template whose text files can simply be renamed.
 
@@ -39,9 +39,11 @@ Start with the content/functions needed in the target language. Link the scene
 across text, audio, imagery and official editions, then distinguish meaning
 evidence, presentation, authoring base and delivery targets under the
 [shared principles](../principles.md#english-summary). Japanese original meaning
-uses Japanese text/audio/images in context; suitable official-edition designs,
-materials and implementations may be adopted. Listening is a normal input
-path. Another medium is not necessarily new content; confirm the provenance,
+uses Japanese text/audio/images in context. Normally use a suitable Japanese
+original as the image base and English design as a reference; explain the part,
+purpose and reason for necessary English-canvas/template or display-mechanism
+reuse. A writeback slot does not choose the authoring base. Listening is a normal
+input path. Another medium is not necessarily new content; confirm the provenance,
 purpose and adopted scope of genuine additions. Preserve each actual target's
 identity and calls rather than treating every official variant as a task.
 

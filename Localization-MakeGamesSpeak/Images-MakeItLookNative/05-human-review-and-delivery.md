@@ -8,9 +8,9 @@
 
 送审页应让人直接看图：制作底稿／中文在**相同位置、相同缩放**快速切换，保留放大、拖动、全屏、张数、跳转、分类和“只看修改图”筛选。提供整图与必要细节，另关联实际原意依据和采用的设计，不能只交文字账本或打不开的图片。
 
-按资料用途组织对照：原意提供实际文本、语音或画面及场景；视觉提供选定底稿、借鉴的设计和中文成品；交付提供实际目标与调用。日文版有对应画面时可一并展示，没有时不强制补图或用透明占位充当有效对照。官方英文图可能是底稿、设计依据或仅供比较，准确标明角色；没有找到对应就写“尚未找到”，确认没有才写“不存在”。不能从 `_ja`／`_en` 后缀猜用途，也不要求照搬某版排版。
+按资料用途组织对照：原意提供实际文本、语音或画面及场景；视觉提供选定底稿、借鉴的设计和中文成品；交付提供实际目标与调用。日文版有对应画面时可一并展示，没有时不强制补图或用透明占位充当有效对照。官方英文图通常用于对照或设计参考；确需复用其具体画布或模板时，说明用途与理由，并准确标明角色。没有找到对应就写“尚未找到”，确认没有才写“不存在”。不能从 `_ja`／`_en` 后缀猜用途，也不要求照搬某版排版。
 
-**日英图片都有时，提供官方日文／官方英文／中文成品的准确对照。** 英文即使仅供参考也保留入口，方便审核者比较内容、信息取舍和画面效果；没有对应英文图不强求。若选用英文版底稿，就提供英文底稿／中文切换，另关联日文原意依据；日文图只有透明占位的字幕则提供日语语音，不用占位图冒充有效原意对照。不同画布或图层分别按真实尺寸展示，不能为凑三列而裁切、拉伸或错配。
+**日英图片都有时，提供官方日文／官方英文／中文成品的准确对照。** 英文即使仅供参考也保留入口，方便审核者比较内容、信息取舍和画面效果；没有对应英文图不强求。若确需复用英文版画布或模板，提供所复用部分／中文对照，说明具体用途与理由，另关联日文原意依据；日文图只有透明占位的字幕则提供日语语音，不用占位图冒充有效原意对照。不同画布或图层分别按真实尺寸展示，不能为凑三列而裁切、拉伸或错配。
 
 审核[来源与语言处理决定](../principles.md)。听译展示实际语音与必要片段定位、工作转写和疑点，文字或图内信息提供可核对来源。真正新增信息明确其语源、用途与采用范围，辅助文案核对功能。原意未确认不能因采用了官方模板而通过；原作已有英文、有理由采用的英文与未解决内容分别说明。
 
@@ -50,8 +50,9 @@ The maintainer corrects and verifies issues before publication. Human approval,
 integration, in-game verification and release remain distinct facts.
 When both official images exist, provide accurately matched Japanese/English/
 Chinese views and keep English accessible even when used only for comparison.
-Do not require a missing English image. If English is the selected base, offer
-English-base/Chinese switching and link Japanese meaning evidence separately;
+Do not require a missing English image. For necessary English-canvas/template
+reuse, show the reused part and Chinese output, explain its purpose/reason,
+and link Japanese meaning evidence separately;
 a subtitle with a transparent Japanese placeholder needs its Japanese audio.
 Preserve actual canvas/layer geometry rather than stretching or mismatching
 assets to fill a three-column view.

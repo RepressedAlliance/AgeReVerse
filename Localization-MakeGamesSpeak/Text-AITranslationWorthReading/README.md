@@ -19,9 +19,10 @@ The numbers describe workflow order, not rule precedence.
 Before these steps, apply the shared [localization principles](../principles.md#english-summary).
 Define Chinese tasks by content/function and distinguish meaning evidence,
 presentation, authoring base and delivery target. Japanese text, audio and
-images establish original meaning; suitable official-edition designs, materials
-and implementations may support the Chinese solution. Listening is a normal
-input path. Distinguish another presentation of existing content from genuinely
+images establish original meaning. Images normally use a suitable Japanese
+original as the base; English designs are references. Explain the part, purpose
+and reason for any needed English-canvas/template or display-mechanism reuse.
+Listening is a normal input path. Distinguish another presentation of existing content from genuinely
 added information, whose source and adopted scope need confirmation.
 Produce the chosen Chinese solution rather than both official resource sets.
 Chinese can replace English in rUGP's existing `translation` slot without
@@ -38,7 +39,7 @@ See the [project examples](../principles.md#how-we-use-english-project-examples)
 
 沿用本项目已经使用的文本流程：通读剧情并建立术语 → 按场景初译 → 独立日文对照二审 → 解决疑点与联动修改 → 技术写回和实机检查 → 维护者人工修正、复查 → 发布。各阶段的输入、输出和状态见[完整工作流](workflow.md)。术语表如何形成、修改怎样影响全文，另见[术语与全文一致性](../Glossaries-KeepItConsistent/README.md)。
 
-先按最高原则确定中文需要传达的内容与功能，再区分原意依据、呈现方案、制作底稿和交付目标。原作含义从日文文本、日语语音、画面及语境确认；官方各版本的适用设计、素材和实现可以采用或调整。听译是正常输入方式，初译与二审都核对实际语音。其他版本增加载体不等于增加原作内容，真正新增的信息先确认来源与采用范围。原作已有英文的保留规则仍适用。写回按引擎实际路由，例如中文可覆盖 rUGP 的 `translation` 槽原有英文内容。
+先按最高原则确定中文需要传达的内容与功能，再区分原意依据、呈现方案、制作底稿和交付目标。原作含义从日文文本、日语语音、画面及语境确认；图片通常以日文版适用原图为基础，英文设计用于参考；确需复用英文版画布、模板或显示机制时说明具体部分、用途与理由。听译是正常输入方式，初译与二审都核对实际语音。其他版本增加载体不等于增加原作内容，真正新增的信息先确认来源与采用范围。原作已有英文的保留规则仍适用。写回按引擎实际路由，例如中文可覆盖 rUGP 的 `translation` 槽原有英文内容。
 
 有官方英文时保留准确对应，用于定位场景、比较译法、发现疑点和参考本地化设计；不能把有用的英文对照省掉，也不能用英文代替独立日文复核。日英有分歧时先查关联，再判含义。具体可看[PM 源槽疑点、AGE2 字幕及原作英文保留等实例](../principles.md#官方英文具体怎么用)。
 

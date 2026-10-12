@@ -18,7 +18,7 @@
 
 **先按内容与功能确定中文任务，再选择所需素材及应译区域。** 将图片与同场景的文本、语音和对象调用关联，区分原作已有内容换了载体、同一功能的不同官方设计、真正新增的信息以及尚未确认的对应关系。原作没有同形式日文图，也可能通过语音或其他画面传达了同一内容；没有找到对应不能当作已经证明不存在。
 
-复用现有清单或备注，分别关联原意依据、中文呈现、制作底稿、当前成品和预期交付对象。原作含义以日文文本、日语语音、画面和语境确认；适用的官方日英设计与素材均可供制作采用，不凭 `_ja`／`_en` 后缀分类。先确定中文用途并规划实现，不要求任务已经在中文版生效。rUGP 的现有 `translation` 槽可以是实际目标；真正新增信息按[总则](../principles.md#官方版本差异怎么处理)确认来源、用途和范围，不统一强制听译。用途或对应关系不明则说明待确认事项，最后交付阶段验证实际绑定。
+复用现有清单或备注，分别关联原意依据、中文呈现、制作底稿、当前成品和预期交付对象。原作含义以日文文本、日语语音、画面和语境确认；图片通常以日文版适用原图制作，英文设计供参考；确需复用英文版具体画布或模板时，说明用途与理由，不凭 `_ja`／`_en` 后缀推定素材角色。先确定中文用途并规划实现，不要求任务已经在中文版生效。rUGP 的现有 `translation` 槽可以是实际目标；真正新增信息按[总则](../principles.md#官方版本差异怎么处理)确认来源、用途和范围，不统一强制听译。用途或对应关系不明则说明待确认事项，最后交付阶段验证实际绑定。
 
 有日英版本时，清单保留**官方日文、官方英文、中文候选**的对应与共用关系。英文图即使不制作，也能帮助发现不同设计、字幕和调用；不要删掉这种对照，也不要把每张对照图自动计成制作任务。例如 [Photon HUD 的英文](../../rUGP/docs/postmortems/pending-hook-entry-points-20260909.md)在日文图片模式也能出现，不能直接归成英文版遗漏；[AGE2 菜单](../../AGE2/docs/postmortems/image-layout.md)则可以保留原英文主体、只替换日文副标题。具体应译区域仍须逐图判断。
 
@@ -49,8 +49,9 @@ tasks by content/function and link the same scene across text, audio and images.
 Distinguish existing content in another medium, alternative designs, genuine
 additions and uncertain correspondence. Link meaning evidence, presentation,
 authoring base and intended targets separately through existing records.
-Suitable official-edition resources may be production inputs regardless of
-suffix; Chinese use need not already be implemented. Keep every actual target's
+Normally author from a suitable Japanese original and reference English design.
+Identify any necessary English-canvas/template reuse and its purpose/reason;
+filename suffixes do not determine roles. Chinese use need not already be implemented. Keep every actual target's
 identity/state/calls. Confirm genuine additions under the shared principles.
 Reference-only variants do not count as pending or completed Chinese production.
 Where Japanese and English editions exist, retain Japanese/English/Chinese

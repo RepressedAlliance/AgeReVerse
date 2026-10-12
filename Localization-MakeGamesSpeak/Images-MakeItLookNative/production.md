@@ -8,7 +8,7 @@
 
 ## 1. 目标与边界
 
-本规范按内容与功能确定中文任务，再分别选择原意依据、呈现方案、制作底稿和交付目标。原作含义来自日文文本、日语语音、画面与语境；官方日英设计、素材和实现可以按用途采用或调整。缺少同形式日文图不排除任务，英文版独有资源也不自动构成新增内容或第二套制作任务。中文可覆盖 rUGP 现有 `translation` 目标。详见[中文版的定位与制作范围](../principles.md#中文版的定位与制作范围)。
+本规范按内容与功能确定中文任务，再分别选择原意依据、呈现方案、制作底稿和交付目标。原作含义来自日文文本、日语语音、画面与语境；图片通常以日文版适用原图为基础，英文设计供参考；确需复用英文版画布、模板或显示机制时，说明具体部分、用途与理由。缺少同形式日文图不排除任务，英文版独有资源也不自动构成新增内容或第二套制作任务。中文可覆盖 rUGP 现有 `translation` 目标。详见[中文版的定位与制作范围](../principles.md#中文版的定位与制作范围)。
 
 下文用于编辑和像素检查的“原图”指实际选定底稿；原意来源、借鉴设计和目标格式分别关联。保护范围针对该底稿，换画布或新增叠层则遵守已确认的中文设计与引擎方案，不默认拿日文图约束所有制作。
 
@@ -80,7 +80,7 @@
 
 UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距外，还要比较颜色、饱和度、渐变方向、深色区域、阴影深浅与光晕扩散。柔和光晕不能变成一圈明显的硬描边；整体变淡也不能冒充柔和。
 
-中文版需要的不同篇章、设计和状态的标题或 Logo，分别核对实际原意、选定底稿与采用设计，不能直接套用另一变体已通过的 Logo。官方日英方案均可适当采用，不自动各做一套中文。保留日文原版已有的英文副标题和无需修改的其他标记；英文版后来替换的文字仍按最高原则判断，不因它在底稿上就全部保留。
+中文版需要的不同篇章、设计和状态的标题或 Logo，分别核对实际原意、选定底稿与采用设计，不能直接套用另一变体已通过的 Logo。通常以日文版适用原图为基础，参考英文设计；确需复用英文版画布或模板时说明具体用途与理由，不自动各做一套中文。保留日文原版已有的英文副标题和无需修改的其他标记；英文版后来替换的文字仍按最高原则判断，不因它在底稿上就全部保留。
 
 人物身上的涂鸦、胸牌和道具文字仍遵守空间关系：不得产生皮肤色块、马赛克、断发、硬抠边或不自然的覆盖。透明素材同时检查浅色、深色背景与边缘，避免黑边、白边和意外不透明区域。
 
@@ -116,8 +116,9 @@ UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距
 
 Organize production by content/function, then distinguish meaning evidence,
 presentation, authoring base and delivery targets. Japanese original meaning
-uses text, audio, images and context; suitable official-edition designs,
-templates and implementations may be adopted for Chinese. A missing Japanese
+uses text, audio, images and context. Normally author from a suitable Japanese
+original, referencing English design; explain the part, purpose and reason for
+necessary English-canvas/template or display-mechanism reuse. A missing Japanese
 image does not exclude a task, and an edition-only asset is not necessarily new
 content. Confirm actual provenance and scope for additions and identify assistance.
 In editing/pixel checks, “original image” means the selected authoring base.

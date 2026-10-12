@@ -58,7 +58,7 @@
 1. 本章已冻结基线和当前目标语言公共表中已经合并、且适用于该语境的译法。
 2. 作品内 JP 上下文和官方日文设定。
 3. 已有可靠中文惯用译名或经确认采用的中文资料。
-4. 在语义明确的前提下，根据人名、专名、称号等类别决定音译、意译或保留原文，并遵守[最高原则](../principles.md)：保留原作已有英文，日文改用英文需确实适合。真实工作人员署名保留原写法，无官方中文译名的曲目保留原题；不要套用虚构角色译名规则，也不要把项目中文候选当成官方译名。原作内容的依据可来自日文文本、日语语音或画面，不能因采用英文版底稿而改按英译定名。
+4. 在语义明确的前提下，根据人名、专名、称号等类别决定音译、意译或保留原文，并遵守[最高原则](../principles.md)：保留原作已有英文，日文改用英文需确实适合。真实工作人员署名保留原写法，无官方中文译名的曲目保留原题；不要套用虚构角色译名规则，也不要把项目中文候选当成官方译名。原作内容的依据可来自日文文本、日语语音或画面，不能因参考英文设计或复用具体字幕模板而改按英译定名。
 
 同一对象在正文、语音、字幕、地图或界面中共享适用的术语决定，不因资源分属日英版本而另起一套名字。真正新增信息先确认来源和采用范围，再关联相应术语与语境；不将候选、英文设计选择或工作转写自动提升为确认术语。
 
@@ -174,7 +174,7 @@ names, foreign voice and jokes rather than replacing every English word alike.
 Build a contextual terminology baseline before bulk translation, including the
 text, voice and image information within the chosen task scope. Existing
 Japanese original content uses its actual Japanese evidence; adopting an
-English-edition base does not change naming authority. Apply the same scoped
+English subtitle template does not change naming authority. Apply the same scoped
 decision to the same object across dialogue, captions, maps and UI, while
 preserving justified contextual differences. Confirm provenance/scope before
 associating genuine additions. Candidates, transcripts and design choices do

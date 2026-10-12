@@ -14,10 +14,12 @@ different evidence.
 Text and image work share the [localization principles](../principles.md#english-summary).
 Define the Chinese task by scene, information and function, then distinguish
 meaning evidence, presentation, authoring base and delivery target. Japanese text,
-audio, images and context establish original meaning. Suitable designs, materials
-and implementations from either official edition may be adopted, combined or
-adapted. English wording cannot override Japanese meaning; an English-edition
-template or display mechanism can be an actual production input.
+audio, images and context establish original meaning. Normally author images
+from suitable Japanese originals and use English design as a reference. If a
+Chinese task needs an English-edition canvas, template or display mechanism,
+identify the reused part, its purpose and the reason. An originally English
+writeback slot does not select English artwork as the base or make English the
+translation source.
 
 Our usual comparison is **Japanese original / official English / Chinese candidate**.
 Keep the English counterpart where available for alternative wording, scene
@@ -42,7 +44,8 @@ state and calls. Reference-only resources do not count toward production. Plan
 Chinese use and feasible implementation before authoring, then verify actual
 binding at delivery; the content need need not already be implemented in Chinese.
 Chinese may replace English in rUGP's existing `translation` slot without a new
-Chinese slot. A language suffix excludes neither a suitable base nor an actual target.
+Chinese slot. Language suffixes do not exclude an actual Chinese target;
+select the authoring base separately rather than inferring it from that slot.
 
 Before the first pass, distinguish translation from intentional retention by function, player understanding and the original presentation. Most Japanese text needs translation. Wording used primarily for identification or presentation may remain when this preserves its role without obstructing necessary understanding; wording already suitable in Chinese may also remain. Assess different parts of a line or image separately. Song titles, credits and date notation are examples, not an exhaustive list; apply the shared principles to new material too. Pass on the retention scope, reason and confirmation for independent review. Completing localization does not mean removing every Japanese character.
 
@@ -149,8 +152,9 @@ For original content, English slots, old translations, OCR and machine output
 cannot replace checking Japanese text/audio or source images. Record audio
 locations and uncertainties for listening-based work. Confirmed additions use
 their actual original language; assistance is identified and checked against
-function. An English-edition base, subtitle segmentation or target slot does not
-change the evidence required to establish original meaning.
+function. Referencing English segmentation, reusing a specifically needed English
+canvas/template, or writing to an originally English target does not change the
+evidence required to establish original meaning.
 
 Compare official English as another interpretation that may suggest questions;
 both translation and independent review still check Japanese text/audio directly.

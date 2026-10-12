@@ -34,7 +34,7 @@ CRimp 的四字节整数带低两位类型标签 `2`，应作有符号算术右�
 
 1. 日英共用图标记“官方日文，无英文本地化”，默认保留；明显影响阅读理解时另行汉化。
 2. 日英分开图重点审核。日文内容与简体中文一致时，可将日文官图明确登记为 translation 槽候选，不能只删除英文替换而依赖回退。
-3. 原作内容以日文文本、日语语音、画面和语境确认原意；中文呈现与底稿可以采用适用的官方日英方案。按[通用原则](../../Localization-MakeGamesSpeak/principles.md)分别关联原意依据、制作底稿和 translation 目标，不能由底稿语言推定原意语源，也不自动制作全部语言差分。
+3. 原作内容以日文文本、日语语音、画面和语境确认原意；图片通常以日文版适用原图为基础，英文设计用于参考；确需复用英文版画布或模板时说明具体部分、用途与理由。按[通用原则](../../Localization-MakeGamesSpeak/principles.md)分别关联原意依据、制作底稿和 translation 目标，不能由底稿语言推定原意语源，也不自动制作全部语言差分。
 4. 日文官图本来使用的英文通常保留，只处理其中需理解的日文。按文字用途判断，不机械排除所有 HUD、武器或场景招牌。
 5. 同物理对象的缩放层、不同物理位置的副本和真正不同姿态／状态分别记账。
 
@@ -43,8 +43,9 @@ CRimp 的四字节整数带低两位类型标签 `2`，应作有符号算术右�
 光子之花／光子旋律的 U0006 则是不同物理资源，哪一个被请求和替换必须分别核对。
 
 For localization decisions, Japanese text/audio/images establish original
-meaning; suitable official-edition designs and authoring bases may be adopted
-for Chinese. Link meaning evidence, selected base and actual translation targets
+meaning. Normally use a suitable Japanese original as the image base and
+English design as a reference; explain the part, purpose and reason for any
+necessary English-canvas/template reuse. Link meaning evidence, selected base and actual translation targets
 separately. Preserve each physical object's identity and geometry; a shared
 content decision does not prove every target has been integrated. These rules
 do not change the codec or parent-geometry constraints below.

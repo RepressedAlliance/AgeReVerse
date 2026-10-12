@@ -9,7 +9,7 @@
 
 ## English workflow
 
-Five stages: extract and classify all images; confirm copy and style; produce images; self-review and repair; obtain human review and deliver through the engine. First define the content and functions needed in Chinese, then distinguish meaning evidence, presentation, authoring base and delivery target. Original meaning comes from Japanese text, audio, images and context. Designs, templates and implementations from either official edition may be actual production inputs, adapted for Chinese. A missing same-form Japanese image does not exclude a task. Extraction covers all locales; production covers the selected Chinese solution, retaining every actual target's identity and calls. Reference-only variants do not count toward production progress.
+Five stages: extract and classify all images; confirm copy and style; produce images; self-review and repair; obtain human review and deliver through the engine. First define the content and functions needed in Chinese, then distinguish meaning evidence, presentation, authoring base and delivery target. Original meaning comes from Japanese text, audio, images and context. Images normally use suitable Japanese originals as their base, with English design as a reference. Identify the reused part, purpose and reason when a Chinese task needs an English canvas, template or display mechanism; an English writeback slot is a separate destination decision. A missing same-form Japanese image does not exclude a task. Extraction covers all locales; production covers the selected Chinese solution, retaining every actual target's identity and calls. Reference-only variants do not count toward production progress.
 
 Follow the shared [localization principles](../principles.md#english-summary): preserve English intentionally present in the Japanese original and use English for Japanese only when justified. Text, voice and image lettering are normal inputs, independently reviewed against their actual sources. Distinguish existing content in another medium from genuinely added information; confirm the latter's provenance, purpose and scope rather than requiring Japanese audio for every asset. Review meaning against source evidence and visuals against the selected base and Chinese design. Delivery verifies actual routing, geometry, timing and display; Chinese may replace English in rUGP's existing `translation` slot.
 
@@ -42,7 +42,7 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 
 ## 五个阶段
 
-**先确认中文需要传达的内容与功能，再选择原意依据、呈现方案、制作底稿和交付目标。** 原作含义根据日文文本、日语语音、画面与语境确认；官方日英版本中的适用设计、素材和实现可以采用、组合或调整。某版独有的图片可能只是已有内容的另一种载体，不能由是否存在日文图决定是否制作。全量清单保留各版资源，制作清单覆盖选定的中文方案与实际目标，参考差分不计入成果。写回服从引擎，例如 rUGP 可覆盖现有 `translation` 槽。详见[中文版的定位与制作范围](../principles.md#中文版的定位与制作范围)。
+**先确认中文需要传达的内容与功能，再选择原意依据、呈现方案、制作底稿和交付目标。** 原作含义根据日文文本、日语语音、画面与语境确认；图片通常以日文版适用原图为基础，英文设计供参考；确需复用英文版画布、模板或显示机制时，说明具体部分、用途与理由，写回英文槽则另行判断。某版独有的图片可能只是已有内容的另一种载体，不能由是否存在日文图决定是否制作。全量清单保留各版资源，制作清单覆盖选定的中文方案与实际目标，参考差分不计入成果。写回服从引擎，例如 rUGP 可覆盖现有 `translation` 槽。详见[中文版的定位与制作范围](../principles.md#中文版的定位与制作范围)。
 
 有对应素材时，保留**官方日文／官方英文／中文成品**对照，英文即使仅供参考也展示其内容和设计差异；没有对应图时不强求。英文版字幕画布、不同图层排版、原作英文菜单和 HUD 都有具体用途，见[项目实例](../principles.md#官方英文具体怎么用)。参考对照与实际中文交付分别统计。
 

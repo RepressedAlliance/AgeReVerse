@@ -4,7 +4,7 @@
 
 **输入：**02 选定的制作底稿、已复核文案、已确认呈现与样式，以及允许修改和需要保护的区域。去字与中文制作是同一阶段内的处理动作，根据文字存在方式选择方法。
 
-本步的“原图”指实际采用的制作底稿，可能来自适用的日文版、英文版或合法无字底；原意依据另行关联。像素保护针对该底稿和声明范围，输出画布、有效区域与图层仍须满足实际目标格式。新增叠层或换画布沿用已确认的中文设计及引擎方案，不能为了通过像素检查缩回日文透明占位，也不能无依据放宽保护范围。
+本步的“原图”指实际采用的制作底稿，通常是日文版适用原图或由其制作的合法无字底；确需复用英文版画布或模板时，沿用 02 明确的具体部分、中文用途和理由，不默认拿英文成品图改中文。原意依据另行关联。像素保护针对该底稿和声明范围，输出画布、有效区域与图层仍须满足实际目标格式。新增叠层或换画布沿用已确认的中文设计及引擎方案，不能为了通过像素检查缩回日文透明占位，也不能无依据放宽保护范围。
 
 ## 清除旧字、修复底图
 
@@ -39,8 +39,10 @@ Logo 与手写可采用绘制或受控生成，再校正实际文案和笔画。
 ## English summary
 
 Produce from the selected base, checked copy and approved Chinese design/style.
-The base may come from either applicable official edition or a lawful textless
-layer; meaning evidence is linked separately. Pixel preservation applies to that
+Normally use a suitable Japanese original or its lawful textless derivative.
+Any necessary English-canvas/template reuse follows 02's specified part, Chinese
+purpose and reason; English finished artwork is not the default base.
+Meaning evidence is linked separately. Pixel preservation applies to that
 base and the declared edit mask, while canvas, alpha and geometry must satisfy
 the actual target format. Added layers or canvas changes need the established
 engine/design plan, not a blanket relaxation of constraints. Select suitable

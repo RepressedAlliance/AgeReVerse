@@ -21,7 +21,7 @@ Learn how we turn AI-assisted drafts and edited artwork into a maintained game l
 
 The [complete English text workflow](Text-AITranslationWorthReading/workflow.en.md) and [new-language guide](Text-AITranslationWorthReading/new-locale.md) explain how to adapt the method to another target language. Engine-neutral authoring stays here; extraction, encoding, runtime binding and packaging stay in AGE2 or rUGP. Historical evidence is under [research](../docs/research/localization/README.md).
 
-This guide focuses on Japanese-origin games without Chinese support, including games with an official English edition. Both text and image work follow the shared [localization principles](principles.md#english-summary): establish the content/function, meaning evidence, presentation, authoring base and delivery target separately. Japanese text, audio and context establish original meaning; suitable official resources and implementations from either edition may support the Chinese solution. Listening-based translation is a normal input path. A resource exclusive to one edition is not necessarily new content.
+This guide focuses on Japanese-origin games without Chinese support, including games with an official English edition. Both text and image work follow the shared [localization principles](principles.md#english-summary): establish the content/function, meaning evidence, presentation, authoring base and delivery target separately. Japanese text, audio and context establish original meaning; images normally use suitable Japanese originals as their base. English design is a reference; identify the part, purpose and reason when a task needs an English canvas, template or display mechanism. Listening-based translation is a normal input path. A resource exclusive to one edition is not necessarily new content.
 
 Our usual comparison is Japanese original / official English / Chinese candidate.
 English can help locate scenes, compare interpretations and learn from official
@@ -55,7 +55,7 @@ The maintainer reviews and corrects the release candidate **before publication**
 
 这套方法重点面向已有日语原作、尚缺中文支持的游戏，也考虑同时提供官方英文版的情况。其他语言团队可以复用方法，另行制定自己的表达与排版规则。
 
-**先读[本地化最高原则](principles.md)：按内容与功能确定中文任务，分别确认原意依据、呈现方案、制作底稿和交付目标。** 原意回到日文文本、日语语音、画面和语境；呈现、素材及实现可以采用适用的官方版本方案。听译是正常输入方式，某一版本独有的资源不一定是新增内容。日文原版已有英文仍按原作语言选择保留，日文改用英文需有适当理由。正文、界面和图片使用同一方法。
+**先读[本地化最高原则](principles.md)：按内容与功能确定中文任务，分别确认原意依据、呈现方案、制作底稿和交付目标。** 原意回到日文文本、日语语音、画面和语境；图片通常以日文版适用原图制作，英文版设计供参考；确需复用其画布、模板或显示机制时说明具体部分、用途与理由。听译是正常输入方式，某一版本独有的资源不一定是新增内容。日文原版已有英文仍按原作语言选择保留，日文改用英文需有适当理由。正文、界面和图片使用同一方法。
 
 本项目通常把**日文原作、官方英文、中文候选**放在一起对照：英文帮助定位场景、比较译法和借鉴本地化设计，含义有分歧时先确认关联、再回到日文／日语判断。没有英文对应时不强求。怎样具体使用英文，可看[字幕画布、源槽错配、原作英文 UI 与角色笑点等项目实例](principles.md#官方英文具体怎么用)。
 

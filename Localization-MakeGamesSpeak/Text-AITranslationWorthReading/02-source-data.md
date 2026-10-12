@@ -25,7 +25,7 @@
 - rUGP 的两张 69/151 行运行时表保存偏移、容量、控制与绑定合约；四张共 57,547 行的审校表只保存稳定身份、RIO/scene、源字段哈希和译文，仍需另行绑定到安全写入路线。两类表都不公开完整日文台词；合法持有者应从受支持的本地游戏版本重新验证身份。
 - 英文槽、旧翻译和模糊匹配可以用于发现问题，但不能替代 JP 原文成为翻译含义的权威来源。
 
-文字、语音和图片都可以承载原作信息。按[最高原则](../principles.md)关联场景与内容，分别记录原意依据、用于制作或连接的源资源和实际写回目标；三者不必是同一文件或同一语言槽。官方英文素材可作为底稿或连接对象，不能仅凭它的源哈希认定中文含义来自英文。
+文字、语音和图片都可以承载原作信息。按[最高原则](../principles.md)关联场景与内容，分别记录原意依据、用于制作或连接的源资源和实际写回目标；三者不必是同一文件或同一语言槽。官方英文资源可以是用于连接的对象；确需复用其具体画布或模板时，按总则说明用途与理由。记录英文资源的哈希不表示中文含义来自英文，也不表示图片默认以英文成品图为底稿。
 
 有官方英文时，保留它与日文／日语及中文候选的准确对应，供场景定位、译法比较和差异检查；公开表不必因此增加英文全文列。PM 曾发现[日英说话人与内容不一致的关联疑点](../../docs/research/localization/source-alignment.md)，中文对应英文内容：这时先查记录、索引、调用和语音，不能只改说话人，也不能因英文仅供参考就丢掉这条线索。该疑点仍未确认修复结果或受影响的玩家版本。
 
@@ -67,7 +67,10 @@
 
 Keep stable identities, supported-version joins and existing table contracts.
 Link meaning evidence, authoring/join resources and delivery targets separately;
-they need not share a file or language slot. A hash verifies its declared field
+they need not share a file or language slot. English resources may serve joins;
+explain any necessary English-canvas/template reuse under the principles. An
+English-resource hash does not choose English finished artwork as the base.
+A hash verifies its declared field
 or resource, not translation authority. Text, voice and images are normal inputs.
 Listening-based work records audio/segment context and a separate working
 transcript, and independent review checks the audio again. Never fabricate JP

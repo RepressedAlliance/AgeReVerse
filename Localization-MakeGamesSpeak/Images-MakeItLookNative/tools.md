@@ -6,10 +6,12 @@
 
 技术检查只证明尺寸、alpha 或区域约束等明确条件，不证明译文、视觉或实机质量。历史 ZIP 成员清单属于[研究工具](../../docs/research/localization/README.md)，不能当成全量游戏图片提取器。
 
-下列命令的 `--source` 是选定的制作／检查底稿，可以来自适用的任一官方版本；原意依据和实际写回目标另行关联。像素检查相对该底稿与允许修改范围执行，目标格式、换画布或新增叠层的支持仍由引擎方案验证，不能用另一语言的占位图代替有效底稿。
+下列命令的 `--source` 是实际制作／检查底稿，通常为日文版适用原图或由其制作的无字底。确需复用英文版画布或模板时，按[总则](../principles.md)说明具体部分、用途与理由；不能因写回英文槽就把英文成品图默认当底稿。原意依据和实际写回目标另行关联。像素检查相对该底稿与允许修改范围执行，目标格式、换画布或新增叠层的支持仍由引擎方案验证，不能用另一语言的占位图代替有效底稿。
 
-The commands below use `--source` as the selected authoring/checking base, which
-may come from either applicable official edition. Link meaning evidence and
+The commands below use `--source` as the actual authoring/checking base, normally
+a suitable Japanese original or its textless derivative. Explain any necessary
+English-canvas/template reuse under the [principles](../principles.md#english-summary);
+an English writeback slot does not select English artwork as the base. Link meaning evidence and
 delivery targets separately. Pixel checks apply to that base and the declared
 editing scope; engine validation still establishes target-format constraints and
 support for canvas changes or added layers. A placeholder from another language

@@ -8,7 +8,9 @@
 
 ## 中文版的定位与制作范围
 
-**以日语原作确定内容含义，以中文玩家的理解与操作需要选择呈现方案。** 日文文本、日语语音、画面与剧情语境共同提供原意依据；官方各版本中的设计、素材和实现可以按用途采用、组合或调整。官方英文译文用于比较和发现疑点，不能替代日语原作裁定原意；英文版的字幕画布、排版、图层或调用机制则可以成为实际制作依据，不限于旁观参考。
+**以日语原作确定内容含义，以中文玩家的理解与操作需要选择呈现方案。** 日文文本、日语语音、画面与剧情语境共同提供原意依据；图片通常在日文版适用原图的基础上制作，保留原作构图与表现。官方英文译文、排版和演出用于对照与参考，不能替代日语原作裁定原意。
+
+**参考英文设计、复用具体模板、覆盖原英文位置，分别说明。** 需要复用英文版的画布、模板或显示机制时，先确认中文用途，说明复用哪一部分、为什么需要，并核对实际目标约束。例如原作只有日语语音、英文版增加字幕时，可复用其字幕画布和显示机制，根据日语听译重新制作中文字幕。这不代表优先拿英文成品图改中文，也不代表把英文专用差分都另做一套中文；日文版已有适用原图时，通常仍以它为制作基础。
 
 本项目的常见工作对象是**日文原作、官方英文本地化与中文候选**。英文对照可以帮助理解不同译法、定位场景、检查信息差异，并展示官方如何处理排版和演出，应保留其具体用途。日英含义不一致时，先确认是否确实对应同一句、同一场景，再回到日文／日语判断；不能把“英文是参考”理解为不看英文。没有官方英文时直接使用现有资料，其他官方语种也按相同方法处理。
 
@@ -18,15 +20,15 @@
 | --- | --- |
 | 内容与功能 | 按场景、信息和用途确定中文玩家需要理解或操作的内容；关联文字、语音、图片及各版差异，再划定应译与保留范围 |
 | 原意依据 | 原作既有内容回到日文文本、日语语音、画面和上下文；文字与语音都可以直接作为输入，不要求先有一张日文图 |
-| 呈现方案 | 为中文选择适当的字幕、布局、分段与信息组织；可以采用或调整官方日英版本中的方案，保持原意和作品表现 |
-| 制作底稿 | 明确实际使用的原图、无字底、图层或模板及其版本；可以来自适用的任一官方版本，不能用“日文优先”代替尺寸、样式与保护范围判断 |
+| 呈现方案 | 保持原意和原作表现，为中文调整字幕、布局、分段与信息组织；可参考官方英文设计，不要求照搬任一版排版 |
+| 制作底稿 | 通常使用日文版适用原图或由其制作的无字底；确需复用英文版画布或模板时，说明具体部分、中文用途和理由，并记录真实底稿及目标参数 |
 | 交付目标 | 按引擎的语言路由、对象引用和覆盖机制确定资源、槽位与调用；预期方案在制作前说明，最终绑定与实机效果在交付时验证 |
 
 例如，原作通过日语语音传达剧情，英文版为它增加字幕：这是同一原作内容的另一种呈现。中文版可以听译该语音，采用英文版已有的字幕模板和显示机制，再按中文阅读需要调整。日文图缺失或只是透明占位，不妨碍建立这项中文任务；英文字幕文字不因此成为原意依据。
 
 **全量提取和对照，不等于分别汉化日英两套资源。** 先按内容与功能确定任务，再关联所需资源；同一信息可以对应多个实际交付对象，保留每个目标的身份和调用，不能因合并内容理解就丢掉状态、尺寸或路由差异。仅供比较的资源不计为待制作项或已完成成果；英文版设计有差异也不自动要求再做一套中文。
 
-**翻译依据与写回槽位分开判断。** 例如 rUGP 使用日文与 `translation` 路由时，中文可覆盖 `translation` 槽原有英文内容，无须新建中文槽。不能仅凭 `_ja`／`_en` 后缀排除制作底稿或实际目标。先确定中文用途并规划可行调用，不要求待制作内容已经在中文版中生效；用途或实现尚不明确时，分别说明待确认的问题。
+**翻译依据、制作底稿与写回槽位分开判断。** 例如 rUGP 使用日文与 `translation` 路由时，中文可覆盖 `translation` 槽原有英文内容，无须新建中文槽；这是写回位置，不表示内容按英文翻译，也不表示用英文图片当底稿。不能仅凭 `_ja`／`_en` 后缀排除实际目标，目标尺寸与编码按引擎确认。先确定中文用途并规划可行调用，不要求待制作内容已经在中文版中生效；用途或实现尚不明确时，分别说明待确认的问题。
 
 ## 语言怎么处理
 
@@ -81,7 +83,7 @@
 | 差异 | 处理方式 |
 | --- | --- |
 | 原作已有内容，其他版本增加了载体或显示方式 | 关联同一场景的原作文本、语音或画面，为中文采用适合的呈现。原意仍独立核对，不要求补造同形式的日文资源 |
-| 同一内容或功能存在不同官方设计 | 按中文阅读、画面效果和引擎约束选择、组合或调整方案；只制作采用方案所需的资源，保留实际状态与调用差异 |
+| 同一内容或功能存在不同官方设计 | 通常以日文版适用原图制作，参考英文设计改善中文阅读与画面效果；确需复用英文版画布或模板时说明具体用途与理由。只制作中文方案所需资源，保留实际状态与调用差异 |
 | 真正新增的信息、功能说明或辅助提示 | 先确认来源、中文用途和采用范围。新增剧情按其实际原始语源翻译、独立审核并说明来源；功能说明还需核对实际行为。中文版自行补充的辅助文案明确其性质，不能伪装成日语原文或擅自添加剧情 |
 | 对应关系或含义仍不明确 | 标为 `question`／`blocked`，说明缺少什么。不能把英语直译或反译日语当作已确认的日语原作依据 |
 
@@ -93,7 +95,9 @@
 
 ## English summary
 
-Localize the information and functions needed by Chinese-speaking players. Determine the meaning of existing original content from Japanese text, Japanese audio, images and story context. Choose suitable presentation, production materials and implementation from the official editions, adapting them for Chinese. English translation can reveal discrepancies but does not override the Japanese meaning; an English-edition canvas, layer, layout or display mechanism can be an actual production input.
+Localize the information and functions needed by Chinese-speaking players. Determine the meaning of existing original content from Japanese text, Japanese audio, images and story context. Normally author images from a suitable Japanese-edition original, preserving its composition and artistic expression. Compare official English wording, layout and staging without letting them override Japanese meaning.
+
+Distinguish **English design reference, reuse of a specific template, and writeback to an originally English target**. When a Chinese task needs an English-edition canvas, template or display mechanism, identify the reused part, its purpose and the reason for using it, then verify the target constraints. For Japanese spoken story with English-added subtitles, this may mean reusing the subtitle canvas/mechanism while creating Chinese subtitles from Japanese audio. It does not mean preferring English finished artwork or localizing every English-only variant. Use a suitable Japanese original as the normal image base where one exists.
 
 Our usual comparison is **Japanese original / official English localization / Chinese candidate**. Keep the English counterpart where available: it can offer another interpretation, help locate a scene, reveal information differences and demonstrate an official design. When meanings differ, first verify that the records and scenes actually correspond, then resolve the original meaning against Japanese. No English counterpart is required when none exists; other official languages can serve the same comparative roles.
 
@@ -101,7 +105,7 @@ Keep five decisions distinct: **content/function, meaning evidence, presentation
 
 Full extraction and comparison do not require localizing both official resource sets. Select the Chinese solution and its required resources; retain the identity and calls of every actual target, including differing states, dimensions and routes. Reference-only resources count as neither pending production nor completed outputs. A language suffix alone determines neither an asset's role nor its eligibility.
 
-Plan Chinese use and feasible delivery before production, then verify binding and in-game behavior at delivery. The content need does not have to be already implemented in Chinese. Chinese may replace English in rUGP's existing `translation` slot without creating a separate Chinese slot. An English-marked target does not make the work English-to-Chinese translation.
+Plan Chinese use and feasible delivery before production, then verify binding and in-game behavior at delivery. The content need does not have to be already implemented in Chinese. Chinese may replace English in rUGP's existing `translation` slot without creating a separate Chinese slot. This is a destination decision, not an English translation source or a choice of English artwork as the base. Verify target geometry/encoding independently of language suffixes.
 
 Preserve English intentionally present in the Japanese original; do not confuse it with English substituted by a localization. Render Japanese in English only when it better fits the meaning and context, with a recorded reason.
 
@@ -114,7 +118,7 @@ Record the exact retention scope, resource identity, reason and maintainer confi
 Distinguish official-edition differences:
 
 - **Existing original content, another medium or display:** link the Japanese text, voice or scene and choose a suitable Chinese presentation; no same-form Japanese asset is required.
-- **Alternative designs for the same content/function:** select, combine or adapt a design for Chinese and the engine, producing its required resources rather than every official variant.
+- **Alternative designs for the same content/function:** normally use the suitable Japanese original as the base, with English design as a reference for Chinese readability and appearance. Explain any necessary English-canvas/template reuse and produce only the Chinese solution's required resources.
 - **Genuinely added information or assistance:** confirm provenance, Chinese purpose and adopted scope. Translate added story from its actual original language and review it independently; verify functional instructions against actual behavior. Identify Chinese-authored assistance as such. Do not automatically adopt additions, require nonexistent Japanese audio or misrepresent them as Japanese original content.
 - **Uncertain correspondence or meaning:** retain `question`/`blocked` and identify the missing evidence. Not finding a Japanese counterpart does not prove none exists.
 
