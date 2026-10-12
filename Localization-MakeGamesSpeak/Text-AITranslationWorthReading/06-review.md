@@ -112,6 +112,12 @@
 
 逐批理由、临时决策和个人工作便签默认不加入公开补丁源表；能够长期解释发布状态、可复现且由测试约束的 `review_status` / `audit_flags` 可以按 [`02-source-data.md`](02-source-data.md) 的政策提升为公开字段。
 
+### 给人工校对者的材料
+
+按篇章或自然剧情段组织可连续阅读的材料，保留判断所需的上下文与清楚的场景、分支提示。用文字明确标注“沿用旧译”“新增／重写”“调整／拆合”，区分本轮需校对与仅供参考的内容，不能只靠颜色。
+
+沿用稳定定位编号并标明本次候选版本，关联本页规定的适用原意依据与英文对照，提供便于直接填写改稿、备注、续读位置和交回意见的方式；不将每个片段或分支都变成独立确认任务。必要时另附全文参考，内部修改理由另行查阅，不因提供全文而默认要求重审全部旧译。收到人工修改后，按 [07 修改反查](07-change-impact.md) 确认采用并同步受影响位置。
+
 ## 9. 章节审核完成标准
 
 1. 所有候选 CN 都经过逐句审核。
@@ -147,3 +153,15 @@ the [Photon `Hot Dog` decision](../../rUGP/docs/postmortems/pf-pm-latin-review-2
 preserves English and a character's misunderstanding; Latin letters alone are
 not grounds for `revise`. The first case remains unresolved; the second is a
 context-specific adopted decision.
+
+For human proofreading, organize continuous reading by chapter or natural story
+section, with necessary context and clear scene/branch cues. Explicitly label
+reused translation, new/rewritten text and adjusted/split/merged text; separate
+this round's review scope from reference-only context without relying on color.
+Keep stable IDs and identify the current candidate version; link the applicable
+meaning evidence and English comparison specified above. Offer a simple way to
+enter edits, notes and a reading-resume point and return feedback. Do not make
+every fragment or branch a separate confirmation task. A full-text reference may
+help with context but does not automatically require re-reviewing all old text;
+keep internal change reasoning separate. Confirm adoption of human edits and
+check affected occurrences under [07 change impact](07-change-impact.md).
