@@ -102,7 +102,7 @@ UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距
 
 再做资源和实机检查：正确语言槽、路径、覆盖优先级、运行时缩放和实际调用。文件存在、链接正常或技术检查通过，都不能代替视觉与实机验证。分别记录“已自检”“待人工确认”“已实机确认”，不要混称全部通过。
 
-有疑问时给出实际原意依据、底稿、候选图、具体位置和原因。审核展示应支持整图／细节、底稿／中文切换、放大和移动，并保留张数、跳转与只看修改图的筛选。按来源角色提供适用的文字、语音和画面；JP／EN／CN 对照中的缺失对应如实标明，不强制所有任务有日文原图。
+有疑问时给出实际原意依据、底稿、候选图、具体位置和原因。审核展示应支持整图／细节、底稿／中文切换、放大和移动，并保留张数、跳转与只看修改图的筛选。按[人工审核要求](05-human-review-and-delivery.md)提供官方日文／官方英文（有则提供）／之前的中文（有则提供）／当前中文，标明角色、版本和候选状态；附上面向人的修改位置、原因、保留决定与待确认问题说明。旧中文用于比较本次修正，不能代替日语原意依据。缺失对应如实说明，按来源角色提供适用的文字、语音和画面，不强制所有任务有日文原图。
 
 ## 9. 复用、返修与公开
 
@@ -125,5 +125,11 @@ In editing/pixel checks, “original image” means the selected authoring base.
 Preserve its protected regions and the actual target's geometry/alpha constraints;
 canvas changes or added layers follow the established design/engine plan.
 Review copy, visual integration, group states and every actual target separately.
+Human review compares official Japanese, optional official English, optional
+previous Chinese and current Chinese with role/version/status labels and short
+explanations of changes, reasons, intentional retention and open questions.
+Previous Chinese shows the revision, not authority for Japanese meaning; provide
+actual text/audio/scene evidence where an image counterpart is missing. See the
+[human review requirements](05-human-review-and-delivery.md).
 Register actual fonts, retain unresolved limitations and publication boundaries,
 and complete human corrections plus in-game checks before release.

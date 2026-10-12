@@ -8,9 +8,13 @@
 
 送审页应让人直接看图：制作底稿／中文在**相同位置、相同缩放**快速切换，保留放大、拖动、全屏、张数、跳转、分类和“只看修改图”筛选。提供整图与必要细节，另关联实际原意依据和采用的设计，不能只交文字账本或打不开的图片。
 
-按资料用途组织对照：原意提供实际文本、语音或画面及场景；视觉提供选定底稿、借鉴的设计和中文成品；交付提供实际目标与调用。日文版有对应画面时可一并展示，没有时不强制补图或用透明占位充当有效对照。官方英文图通常用于对照或设计参考；确需复用其具体画布或模板时，说明用途与理由，并准确标明角色。没有找到对应就写“尚未找到”，确认没有才写“不存在”。不能从 `_ja`／`_en` 后缀猜用途，也不要求照搬某版排版。
+按资料用途组织对照：原意提供实际文本、语音或画面及场景；视觉提供选定底稿、借鉴的设计和中文成品；交付提供实际目标与调用。日文版有对应画面时展示，没有时不强制补图或用透明占位充当有效对照。官方英文图通常用于对照或设计参考；确需复用其具体画布或模板时，说明用途与理由，并准确标明角色。没有找到对应就写“尚未找到”，确认没有才写“不存在”。不能从 `_ja`／`_en` 后缀猜用途，也不要求照搬某版排版。
 
-**日英图片都有时，提供官方日文／官方英文／中文成品的准确对照。** 英文即使仅供参考也保留入口，方便审核者比较内容、信息取舍和画面效果；没有对应英文图不强求。若确需复用英文版画布或模板，提供所复用部分／中文对照，说明具体用途与理由，另关联日文原意依据；日文图只有透明占位的字幕则提供日语语音，不用占位图冒充有效原意对照。不同画布或图层分别按真实尺寸展示，不能为凑三列而裁切、拉伸或错配。
+**送审默认按“官方日文 → 官方英文（有则提供）→ 之前的中文（有则提供）→ 当前中文”组织准确对照。** 官方英文即使仅供参考也保留入口；已有旧中文时，提供本次修改前的对应版本，让审核者看清改动与是否引入新问题。首次制作没有旧中文、没有对应英文图时不强求，也不用其他图片凑数。每个视图标明角色及对应版本；旧中文区分已发布、已确认或未确认候选，当前中文标明本次送审版本，不能把旧稿显示成当前成品。
+
+对照图旁附上**面向审核者的简短说明**，逐图或按同类素材组说明：图用在哪里；这次改了哪些文字或区域；为什么这样翻译、排版或返修；哪些内容有意保留及理由；还有什么不确定、需要人判断。说明直接指向图中位置，可用“左下角地名”“第二行字幕”等易懂表述；同组共性解释一次，单图例外另写。返修明确旧中文的问题和当前修正，首次制作说明关键处理。不只给文件名、状态码或制作流水，也不要求审核者翻聊天记录才能理解。当前中文仍是候选时明确写“待人工确认”，说明不能代替查看实际图片。
+
+若确需复用英文版画布或模板，提供所复用部分／中文对照，说明具体用途与理由，另关联日文原意依据；没有同形式日文图时，展示实际日文文本、日语语音或其他画面依据及场景，并说明缺少哪种对应。日文图只有透明占位的字幕则提供日语语音，不用占位图冒充有效原意对照。没有找到对应就标明尚未找到，不能写成确认不存在。不同画布或图层分别按真实尺寸展示，不能为凑四列而裁切、拉伸或错配；可用切换视图，不要求四列并排。
 
 审核[来源与语言处理决定](../principles.md)。听译展示实际语音与必要片段定位、工作转写和疑点，文字或图内信息提供可核对来源。真正新增信息明确其语源、用途与采用范围，辅助文案核对功能。原意未确认不能因采用了官方模板而通过；原作已有英文、有理由采用的英文与未解决内容分别说明。
 
@@ -48,11 +52,30 @@ Chinese may use rUGP's existing `translation` route. In-game checks cover
 information, display/clear timing, voice correspondence, obstruction and states.
 The maintainer corrects and verifies issues before publication. Human approval,
 integration, in-game verification and release remain distinct facts.
-When both official images exist, provide accurately matched Japanese/English/
-Chinese views and keep English accessible even when used only for comparison.
-Do not require a missing English image. For necessary English-canvas/template
+Organize the review as **official Japanese → official English (if available) →
+previous Chinese (if available) → current Chinese**. Keep English accessible even
+when used only for comparison. Include the corresponding pre-change Chinese
+version where one exists, so reviewers can see both improvements and regressions.
+Do not invent counterparts for first-time work or missing official resources.
+Label each view's role and version; distinguish released, approved and unapproved
+previous Chinese, and identify the exact current review candidate.
+
+Add a short, human-readable explanation beside each image or related group:
+where it appears; which text or regions changed; why the wording, layout or repair
+was chosen; what was intentionally retained and why; and what still needs human
+judgment. Refer to visible positions, explain shared decisions once and individual
+exceptions separately. For revisions, explain the previous problem and current
+fix; for first-time work, explain the key choices. Filenames, status codes and
+execution logs alone are insufficient; reviewers should not need chat history.
+Clearly mark candidates awaiting human confirmation. Explanations do not replace
+viewing the actual images.
+
+For necessary English-canvas/template
 reuse, show the reused part and Chinese output, explain its purpose/reason,
-and link Japanese meaning evidence separately;
-a subtitle with a transparent Japanese placeholder needs its Japanese audio.
+and link Japanese meaning evidence separately. If no same-form Japanese image
+exists, show the actual Japanese text, audio or other visual evidence and scene,
+and explain which counterpart is missing. A subtitle with a transparent Japanese
+placeholder needs its Japanese audio. Distinguish an unfound counterpart from
+confirmed absence.
 Preserve actual canvas/layer geometry rather than stretching or mismatching
-assets to fill a three-column view.
+assets to fill a four-column view; switching views is sufficient.
