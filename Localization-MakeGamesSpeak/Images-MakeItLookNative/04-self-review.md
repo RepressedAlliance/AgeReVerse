@@ -22,6 +22,8 @@
 
 检查同套菜单、按钮全状态、连续日期、昼夜、裁切和其他差分，防止只改一张、错复用日期或带错底图。自动尺寸／像素／字体覆盖检查用来发现技术问题，不能证明视觉、语义或实机质量。
 
+图层素材按实际组合查看，检查叠放顺序、透明度、文字与背景的关系；连续帧按正确顺序和时机播放，检查字形、位置、颜色与边缘是否稳定，有无闪烁、漂移或接缝。单层、单帧检查仍须保留，但不能代替合成与连续播放检查，也不能由一帧效果推定整段通过。
+
 按缺陷回到对应阶段：错译或来源问题回 02，残字、排版和融合问题回 03。保留已通过部分；返修后看本图和受影响同组，已有检查仍有效时不扩大成全批重做。
 
 **输出：**已自检候选、未决问题及准确的当前版本引用。不能只检查缩略图、图片链接或解码成功，就写“视觉通过”。
@@ -36,6 +38,11 @@ correspondence, protected artwork, target geometry/alpha and group states at
 full-frame, native and magnified scales. Confirm sources/scope for additions and
 function for assistance. Technical image checks do not prove meaning, appearance
 or runtime behavior. Repair affected parts and preserve still-valid work.
+Inspect layers in their actual composition, including order, transparency and
+the relationship between lettering and background. Play frame sequences in the
+correct order/timing and check stable lettering, position, color and edges for
+flicker, drift or seams. Individual layer/frame checks do not replace composition
+and playback checks or establish that an entire sequence passed.
 Keep Japanese/English comparison where both images exist to detect omitted
 information and inspect layout, state and layer differences. [Photon U0478](../../rUGP/docs/crmt-family.md)
 has four vertical Japanese layers, six horizontal English layers and a four-layer

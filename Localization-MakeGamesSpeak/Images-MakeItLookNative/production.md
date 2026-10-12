@@ -22,6 +22,8 @@
 
 优先使用已有制作记录、资源映射、通过版本和修订记录，找出实际未完成的范围。不要仅凭文件名相似判断同图，也不要重复制作已通过内容。
 
+已有提取／解码与可编辑源文件同样先核对版本后复用，只补缺失、变更或失败部分。按[01 的清单与进度要求](01-extract-and-classify.md)说明计数单位、待核查与确定待制作范围，以及已细查、人工确认和实机状态，不能把未调查资源全算成待汉化。
+
 先关联同一场景中的文字、语音、图片与版本差异，再确定中文需要表达什么、选择怎样呈现及如何交付。用途和对应关系不明确时分别列疑问，不要求尚未制作的任务已经在中文版生效。全量提取中的参考图不自动算作任务或成果；同一文案可复用，但每个实际目标保留身份、状态、尺寸与调用，不自动将所有语言路径纳入交付。
 
 按功能和视觉体系分组，例如同一菜单的按钮、同一套状态图、同一招牌的昼夜版本、同一道具的不同镜头。记录各组的资源、语言、尺寸、透明度、使用位置和状态关系。相同像素可复用；不同透视、遮挡或光照需要分别适配。
@@ -102,6 +104,8 @@ UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距
 
 再做资源和实机检查：正确语言槽、路径、覆盖优先级、运行时缩放和实际调用。文件存在、链接正常或技术检查通过，都不能代替视觉与实机验证。分别记录“已自检”“待人工确认”“已实机确认”，不要混称全部通过。
 
+动态图层和连续帧还要按[04 自检要求](04-self-review.md)检查合成与播放，不能由单层、单帧推定整体通过。人工送审按接收设备提供能打开的材料、必要的动态预览及简单的意见交回方式，反馈关联稳定图片编号和候选版本；具体见下一项人工审核要求。
+
 有疑问时给出实际原意依据、底稿、候选图、具体位置和原因。审核展示应支持整图／细节、底稿／中文切换、放大和移动，并保留张数、跳转与只看修改图的筛选。按[人工审核要求](05-human-review-and-delivery.md)提供官方日文／官方英文（有则提供）／之前的中文（有则提供）／当前中文，标明角色、版本和候选状态；附上面向人的修改位置、原因、保留决定与待确认问题说明。旧中文用于比较本次修正，不能代替日语原意依据。缺失对应如实说明，按来源角色提供适用的文字、语音和画面，不强制所有任务有日文原图。
 
 ## 9. 复用、返修与公开
@@ -125,9 +129,16 @@ In editing/pixel checks, “original image” means the selected authoring base.
 Preserve its protected regions and the actual target's geometry/alpha constraints;
 canvas changes or added layers follow the established design/engine plan.
 Review copy, visual integration, group states and every actual target separately.
+Reuse existing extraction/decoding, editable sources and approved work when
+valid for the current version; fill gaps, changes and failures rather than
+unpacking again. Declare counting units and distinguish investigation from
+confirmed production, detailed inspection, human approval and runtime checks.
+Inspect dynamic assets both individually and in composition/playback.
 Human review compares official Japanese, optional official English, optional
 previous Chinese and current Chinese with role/version/status labels and short
 explanations of changes, reasons, intentional retention and open questions.
+Provide materials that open on the reviewer's device, relevant dynamic previews
+and a simple way to return feedback tied to stable image IDs and candidate versions.
 Previous Chinese shows the revision, not authority for Japanese meaning; provide
 actual text/audio/scene evidence where an image counterpart is missing. See the
 [human review requirements](05-human-review-and-delivery.md).
