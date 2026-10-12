@@ -19,9 +19,17 @@ Use the tool for the task in front of you. Install `requirements-dev.txt` and ru
 
 Engine extraction, codecs, runtime integration and package builds remain in AGE2 or rUGP. These tools do not automatically translate, approve artwork, resolve conflicting revisions or publish a finished patch. When changing a tool, run its [focused regression tests](../Tests-CatchProblemsBeforePlayers/README.md).
 
+Source identities and hashes validate their declared objects, not meaning
+authority. The locale exporter handles supported text-table mappings, not audio
+or image correspondence. Image pixel checks use the selected authoring base.
+Keep meaning evidence and delivery targets linked separately under the
+[localization principles](../principles.md#english-summary).
+
 </details>
 
 让工具处理能明确描述的重复劳动，把精力留给理解剧情、判断译法和打磨画面。这里保留已经用于制作、可以跨引擎复用的工具；从任务选择需要的命令即可。
+
+按[最高原则](../principles.md)分别关联原意依据、制作底稿和交付目标。身份和哈希校验只证明声明的字段或资源；新语言导出器处理受支持的文本表，不生成语音／图片对应。图片像素检查以选定底稿为准，不能用这些技术结果替代原意与中文呈现判断。
 
 ## 按任务选工具
 

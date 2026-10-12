@@ -2,7 +2,9 @@
 
 [上一步](02-copy-and-style.md) · [流程总览](README.md) · [下一步](04-self-review.md)
 
-**输入：**原图、已复核文案、已确认样式，以及允许修改和需要保护的区域。去字与中文制作是同一阶段内的处理动作，根据文字存在方式选择方法。
+**输入：**02 选定的制作底稿、已复核文案、已确认呈现与样式，以及允许修改和需要保护的区域。去字与中文制作是同一阶段内的处理动作，根据文字存在方式选择方法。
+
+本步的“原图”指实际采用的制作底稿，可能来自适用的日文版、英文版或合法无字底；原意依据另行关联。像素保护针对该底稿和声明范围，输出画布、有效区域与图层仍须满足实际目标格式。新增叠层或换画布沿用已确认的中文设计及引擎方案，不能为了通过像素检查缩回日文透明占位，也不能无依据放宽保护范围。
 
 ## 清除旧字、修复底图
 
@@ -18,7 +20,7 @@
 
 普通排版优先复用[确定性排字工具](tools.md)，统一字体、字号、字重、间距、基线和状态效果。匹配字高字宽、重心、留白、颜色、渐变、阴影和光晕。不要压扁中文以塞进原框，不要逐词改变字重或只修按钮一个状态。
 
-Logo 与手写可采用绘制或受控生成，再校正实际文案和笔画。中文版需要的设计变体分别制作，不因日英两版设计不同就自动各做一套中文；英文处理可供参考，中文效果仍以日文版为画面基准。柔和原字不能变成硬描边，浓艳颜色不能变灰淡。按[翻译最高原则](../principles.md)保留原作已有的英文副标题及无需修改的装饰，不把英文版后来替换的内容一概保留。
+Logo 与手写可采用绘制或受控生成，再校正实际文案和笔画。按已选中文方案制作所需变体，官方日英设计均可提供底稿或样式依据，不自动各做一套中文。根据选定底稿、作品风格与中文阅读检查效果；柔和原字不能无故变成硬描边，浓艳颜色不能无故变灰淡。按[最高原则](../principles.md)保留原作已有的英文副标题及无需修改的装饰，不把英文版后来替换的内容一概保留。
 
 ## 附着在物体上的文字
 
@@ -32,4 +34,16 @@ Logo 与手写可采用绘制或受控生成，再校正实际文案和笔画。
 
 每次生成只是候选。检查中文实际笔画，纠正重排海报、修改价格、移动物体、损伤人物等错误；需要时恢复区域外原图。能力和档位不替代结果检查，失败时调整方法，不能反复把同类缺陷交给维护者。
 
-**输出：**候选图及可复用配方。保留原画布尺寸、有效内容位置和透明边缘；用于游戏的母版与放大预览分开。
+**输出：**候选图及可复用配方。遵守选定底稿的保护范围和实际目标的画布、有效位置与透明边缘要求；用于游戏的母版与放大预览分开。
+
+## English summary
+
+Produce from the selected base, checked copy and approved Chinese design/style.
+The base may come from either applicable official edition or a lawful textless
+layer; meaning evidence is linked separately. Pixel preservation applies to that
+base and the declared edit mask, while canvas, alpha and geometry must satisfy
+the actual target format. Added layers or canvas changes need the established
+engine/design plan, not a blanket relaxation of constraints. Select suitable
+typesetting, painting or constrained editing, preserving unrelated artwork,
+spatial relationships and approved retention. Make only the chosen variants,
+and keep runtime masters distinct from enlarged previews.

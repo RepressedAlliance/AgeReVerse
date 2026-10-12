@@ -9,9 +9,17 @@
 
 ## English workflow
 
-Five stages: extract and classify all images; confirm copy and style; produce images; self-review and repair; obtain human review and deliver through the engine. Japanese text, audio and Japanese-edition assets are first-hand sources; English is a reference for layout, information selection and presentation, without requiring the same design. Extraction and comparison cover all locales; production and delivery cover the resources needed by the Chinese edition. Reference-only variants do not automatically become tasks or count toward production progress. Determine intended Chinese use before authoring, without classifying assets solely by filename suffix. Follow the engine's actual writeback routes: Chinese may replace English in rUGP's existing `translation` slot without creating a separate Chinese slot or changing the translation authority.
+Five stages: extract and classify all images; confirm copy and style; produce images; self-review and repair; obtain human review and deliver through the engine. First define the content and functions needed in Chinese, then distinguish meaning evidence, presentation, authoring base and delivery target. Original meaning comes from Japanese text, audio, images and context. Designs, templates and implementations from either official edition may be actual production inputs, adapted for Chinese. A missing same-form Japanese image does not exclude a task. Extraction covers all locales; production covers the selected Chinese solution, retaining every actual target's identity and calls. Reference-only variants do not count toward production progress.
 
-Follow the shared [translation principles](../principles.md#english-summary): translate Japanese into Chinese, preserve English present in the Japanese original, and use English for Japanese only when justified. For English-edition-only content confirmed as needed by the Chinese edition, translate from its corresponding Japanese voice. Review primarily compares the Japanese original and Chinese candidate, with English as an optional reference; final delivery verifies the Chinese resource route.
+Follow the shared [localization principles](../principles.md#english-summary): preserve English intentionally present in the Japanese original and use English for Japanese only when justified. Text, voice and image lettering are normal inputs, independently reviewed against their actual sources. Distinguish existing content in another medium from genuinely added information; confirm the latter's provenance, purpose and scope rather than requiring Japanese audio for every asset. Review meaning against source evidence and visuals against the selected base and Chinese design. Delivery verifies actual routing, geometry, timing and display; Chinese may replace English in rUGP's existing `translation` slot.
+
+| Stage | Required result |
+| --- | --- |
+| 01 | Complete resource inventory, cross-media/content relationships, selected Chinese tasks and intended targets |
+| 02 | Independently checked copy, chosen presentation/base, font/style records and representative samples |
+| 03 | Candidates made within the declared editing scope and target-format constraints |
+| 04 | Per-image and per-group checks of meaning, Chinese design, protected content and unresolved issues |
+| 05 | Human review of the exact candidate with appropriate source/base evidence, followed by engine and in-game checks and final pre-release corrections |
 
 Most Japanese lettering needs translation, but determine the translation and retention regions by function, player understanding and the original presentation first. Remove old lettering and its effects only where translation is needed, then author Chinese using reproducible typography, drawing or constrained image editing as appropriate. Match perspective, material, lighting and occlusion. Review every output at full-frame, native and magnified scales, then obtain the maintainer's review of the exact final candidate. Bind the approved output through the appropriate engine, test in game, and complete the maintainer's final corrections before release.
 
@@ -27,14 +35,14 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 
 ## 五个阶段
 
-**日文原文、日语语音和日文版素材是第一手依据，官方英文本地化可参考、不照搬。** 全量提取和日英对照用于核查，制作范围则是中文版需要采用的资源；仅供参考的差分不进入制作、交付或完成统计。先明确中文用途和预期调用，再按内容决定如何处理，不凭语言后缀排除素材。写回槽位服从引擎，例如 rUGP 可将 `translation` 槽里的英文替换成中文，无须另建中文槽。中文方案以原意准确、阅读自然和最终画面效果为准，详见[中文版的定位与制作范围](../principles.md#中文版的定位与制作范围)。
+**先确认中文需要传达的内容与功能，再选择原意依据、呈现方案、制作底稿和交付目标。** 原作含义根据日文文本、日语语音、画面与语境确认；官方日英版本中的适用设计、素材和实现可以采用、组合或调整。某版独有的图片可能只是已有内容的另一种载体，不能由是否存在日文图决定是否制作。全量清单保留各版资源，制作清单覆盖选定的中文方案与实际目标，参考差分不计入成果。写回服从引擎，例如 rUGP 可覆盖现有 `translation` 槽。详见[中文版的定位与制作范围](../principles.md#中文版的定位与制作范围)。
 
 编号表示制作的主要阶段，不要求把每个动作另立一步。提取和分类一起完成，去字与排字属于制作，最后由维护者审核并完成交付；具体素材按需要处理。
 
 | 步骤 | 内容 | 本步交付 |
 | --- | --- | --- |
-| **01** | [全量提取与分类](01-extract-and-classify.md) | 所有图片的来源、分类、分组与处理决定；未解码项也有记录 |
-| **02** | [确认文案、字体和样式](02-copy-and-style.md) | 遵守最高原则的已复核文案、同套样式和代表图 |
+| **01** | [全量提取与分类](01-extract-and-classify.md) | 全量资源、跨载体内容关系、中文任务及预期目标；未解码项也有记录 |
+| **02** | [确认文案、字体和样式](02-copy-and-style.md) | 已复核文案、选定的呈现与底稿、字体／同套样式和代表图 |
 | **03** | [制作图片](03-produce.md) | 去字修底、中文制作和画面融合后的候选图 |
 | **04** | [自检与返修](04-self-review.md) | 逐图、逐组检查过的最新候选与未决问题 |
 | **05** | [人工审核与交付](05-human-review-and-delivery.md) | 维护者审核、修正后的成品，以及引擎绑定、实机检查与发布前收尾 |
@@ -45,7 +53,7 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 
 ## 工作记录只保留必要内容
 
-复用游戏现有清单或字段，不要求每作另造一套庞大表。至少能找到：游戏与源资源身份、分类／组、原文与已采用文案、保留／拟写决定、字体或绘制方式、当前成品、检查结果、维护者意见和最终交付位置。原图、候选和审核页留在本地制作目录，公开范围见[制作规范](production.md#9-复用返修与公开)。
+复用游戏现有清单或字段，不要求每作另造一套庞大表。至少能找到：游戏与内容／功能、实际原意依据、源资源与选定底稿、采用文案及保留／拟写决定、字体或绘制方式、当前成品、检查结果、维护者意见和交付目标。语音输入保留资源与必要片段定位，多个目标各自关联，不能把底稿、原意依据和写回位置混为一个“原图”。原图、候选和审核页留在本地制作目录，公开范围见[制作规范](production.md#9-复用返修与公开)。
 
 每批新图与返修的字体按[登记规范](../Fonts-ThatFitTheGame/registration.md)记录，并同步[公开用字来源与致谢](../Fonts-ThatFitTheGame/attribution.md)。这项工作放在样式确认与最后交付中：同组引用一次，单图写例外；不增加第六步。
 

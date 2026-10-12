@@ -11,31 +11,36 @@ spreadsheet.” Story comprehension, terminology, first translation, independent
 review, engine binding, in-game QA, and player feedback are separate stages with
 different evidence.
 
-The Chinese patch and its image lettering share the same governing policy.
-Japanese text, Japanese audio and Japanese-edition assets are first-hand sources;
-English is reference material. The official English localization may inform layout,
-information selection and presentation, but need not be copied. Comparing all
-locales does not mean localizing both official resource sets: produce the content
-needed by the Chinese edition. Translation authority and writeback slots are
-separate decisions. Chinese can replace English in rUGP's existing `translation`
-slot without requiring a new Chinese slot. An English-marked path does not exclude
-an actual Chinese target.
+Text and image work share the [localization principles](../principles.md#english-summary).
+Define the Chinese task by scene, information and function, then distinguish
+meaning evidence, presentation, authoring base and delivery target. Japanese text,
+audio, images and context establish original meaning. Suitable designs, materials
+and implementations from either official edition may be adopted, combined or
+adapted. English wording cannot override Japanese meaning; an English-edition
+template or display mechanism can be an actual production input.
 
 Translate Japanese into Chinese, preserve English present in the Japanese
 original, and use English for Japanese only when it better serves the meaning
-and context, with a recorded reason. For assets exclusive to the official
-English edition and confirmed as needed by the Chinese edition, locate their
-corresponding Japanese voice and translate what is actually heard into Chinese.
-Record the audio location and uncertainties;
-both the first pass and independent review check the Japanese audio. Do not
-invent a Japanese source by back-translating English or approve an English-based
-fallback when the necessary Japanese evidence is missing. This source restriction
-does not prohibit writeback to the `translation` slot.
+and context, with a recorded reason. Listening-based translation is a normal
+input path, with no requirement for matching Japanese text or imagery. Another
+edition's new display or medium may carry existing original content. Genuinely
+added information or assistance needs confirmed provenance, Chinese purpose and
+adopted scope; review its actual original language and function rather than
+requiring nonexistent Japanese audio. Both listening passes check the actual
+audio, not just a working transcript or English translation.
+
+Comparing all locales does not require localizing both official resource sets.
+One content item may have several actual targets; preserve each target's identity,
+state and calls. Reference-only resources do not count toward production. Plan
+Chinese use and feasible implementation before authoring, then verify actual
+binding at delivery; the content need need not already be implemented in Chinese.
+Chinese may replace English in rUGP's existing `translation` slot without a new
+Chinese slot. A language suffix excludes neither a suitable base nor an actual target.
 
 Before the first pass, distinguish translation from intentional retention by function, player understanding and the original presentation. Most Japanese text needs translation. Wording used primarily for identification or presentation may remain when this preserves its role without obstructing necessary understanding; wording already suitable in Chinese may also remain. Assess different parts of a line or image separately. Song titles, credits and date notation are examples, not an exhaustive list; apply the shared principles to new material too. Pass on the retention scope, reason and confirmation for independent review. Completing localization does not mean removing every Japanese character.
 
 ```text
-lawful extraction and stable source identity
+lawful extraction; content/function inventory; source and target planning
         ↓
 read the story; establish relationships and terminology
         ↓
@@ -81,15 +86,24 @@ write and installation time still run at those operations.
    complete official script. Other contributors re-extract locally and join by
    stable identity plus hash.
 5. Keep AGE2 and rUGP extraction, writer, and runtime paths independent.
+6. Link text, voice, images and edition differences by scene and function.
+   Establish the Chinese information need before choosing assets. A missing
+   same-form Japanese resource calls for checking other media; distinguish an
+   uncertain correspondence from a confirmed addition.
+7. Link meaning evidence, chosen presentation/base and intended targets through
+   existing manifests or notes. Resource hashes establish identity/version, not
+   semantic authority. Do not invent Japanese fields or a universal new table.
 
-Output: source manifest, stable IDs, hashes, scene order, and a list of still
-unidentified structural questions.
+Output: content/function scope, lawful resource identities, meaning evidence,
+presentation/base and target plan, scene order, and unresolved correspondence
+or structural questions.
 
 ## 1. Understand the story and establish terminology first
 
 Do not start with randomly sampled rows. Before bulk translation:
 
-- read the current route/scene in order and enough surrounding material;
+- read or listen to the current route/scene in order, with surrounding material
+  and the image context needed to understand it;
 - record character relationships, status differences, forms of address,
   speech habits, and current emotion;
 - inventory names, organizations, ranks, machines, weapons, operations,
@@ -103,7 +117,7 @@ The glossary is a story-understanding tool established before the first pass,
 not merely a cleanup table produced after translation.
 
 Output: scene summary, relationship/address notes, frozen terminology baseline,
-and unresolved questions.
+retention decisions and unresolved questions.
 
 ## 2. First translation: produce candidates
 
@@ -115,16 +129,18 @@ Every maintained row should retain the equivalent of:
 | `id` / `stable_id` | Identity that survives sorting and export |
 | `resource_file` / `egpack` / `rio_file` | Route back to the game resource |
 | `scene`, `speaker_jp` | Story and speaker context |
-| `source_text_sha256` | Actual source text field; listening-based cases also record the Japanese audio location without inventing a JP text slot |
+| source evidence and links | Preserve `source_text_sha256` for an actual source text field; link audio/image resources and segments/regions separately from working transcripts, without fabricated text fields or hashes |
 | target text | First-pass candidate |
 | status | `translated`, `question`, or `blocked` |
 
 This pass aims for accurate source understanding and natural target-language
-writing. It does not perform engine writeback. English slots, old translations,
-OCR, and machine translation can reveal discrepancies but cannot replace the
-Japanese source. English-edition-only assets use the corresponding Japanese
-voice as the source; English already present in the Japanese original is retained
-under the shared policy.
+writing from the declared meaning evidence. It does not perform engine writeback.
+For original content, English slots, old translations, OCR and machine output
+cannot replace checking Japanese text/audio or source images. Record audio
+locations and uncertainties for listening-based work. Confirmed additions use
+their actual original language; assistance is identified and checked against
+function. An English-edition base, subtitle segmentation or target slot does not
+change the evidence required to establish original meaning.
 
 Output: candidate text, terminology additions, questions, batch range, and the
 next stable starting point.
@@ -132,9 +148,12 @@ next stable starting point.
 ## 3. Second pass: independent review
 
 The second pass is not target-language polishing. The reviewer rereads the
-Japanese, context, and character relationships; for listening-based cases, the
-reviewer listens to the Japanese audio again rather than merely accepting the
-first-pass transcript. The reviewer assigns exactly one result:
+declared meaning evidence, context and character relationships: reread text,
+relisten to audio and inspect source images, rather than merely accepting a
+first-pass transcript. Review confirmed additions in their declared source
+language and check functional instructions against actual behavior and purpose.
+Presentation and delivery receive separate checks; similarity to an English
+template does not decide meaning. The reviewer assigns exactly one result:
 
 - `keep`: retain the candidate;
 - `revise`: supply corrected text and the material reason;
@@ -153,19 +172,27 @@ and review statistics.
 A `question` must not silently disappear before packaging. Consult as needed:
 
 - later scenes and other occurrences of the same expression;
-- Japanese voice, speaker, expression, and staging;
+- text/audio in the actual source language, speaker, expression, and staging;
 - screenshots and the actual resource call site;
 - official setting material or established series usage;
 - control codes, locale slots, and image context.
 
 After resolution, follow [07 change-impact review](07-change-impact.md)
 to check related occurrences, update affected text and glossaries, and preserve
-contextually justified differences. Keep genuinely unresolved items blocked rather than
-guessing from an English slot or from what merely sounds plausible.
+contextually justified differences. Missing Japanese meaning cannot be approved
+by an English fallback. Identify meaning, edition correspondence, presentation
+and implementation questions separately; a missing Japanese image does not by
+itself mean the original meaning is unavailable.
 
 ## 5. Bind and write through the correct engine
 
 Only semantically reviewed text enters the engine layer:
+
+Check the chosen authoring base and actual target objects rather than inferring
+the writeback language from the meaning source. Shared copy still needs each
+target's dimensions, states and calls checked. Chinese may replace an existing
+rUGP `translation` target or use a verified AGE2 `_en` path. Implement additional
+presentation only through supported engine capabilities; do not invent slots.
 
 - **AGE2:** extract required FPD members from a lawful `pack.bin`; build exact
   EGPACK changes; handle UI, WebP, and fonts; publish as a LocalAppData loose
@@ -190,7 +217,8 @@ a local text edit does not require repeating the entire suite:
 - control codes, encoding, capacity, offsets, and parent references;
 - terminology consistency and retired translations;
 - font coverage across every maintained target string;
-- image dimensions, mode, alpha, hashes, and state/family layout;
+- image dimensions, mode, alpha, permitted changes, hashes and family layout
+  against the selected base and target format;
 - package members, destinations, and rollback information;
 - absence of original containers, workstation paths, secrets, test images, and
   fonts without provenance.
@@ -206,6 +234,10 @@ route and choice, speakers, achievements, fonts, each modified image family, and
 rollback. Image QA must detect more than visibility: colour swaps, tearing,
 alpha damage, wrong endpoints, English fallback, Japanese/translation route
 differences, and shared/common behavior all matter.
+For adopted or added Chinese presentation, verify readable and accurate
+information, voice/subtitle correspondence, segmentation and display/clear
+timing, and conflicts with dialogue or controls. Another edition's working
+implementation does not replace these Chinese-edition checks.
 
 For later local revisions, check the changed locations, necessary context, and
 affected functions rather than replaying every route for a sentence edit. Game
@@ -239,8 +271,9 @@ replace one generated file in a Release manually.
 
 1. Confirm the game, patch version, locale selection, and other installed mods.
 2. Use the screenshot, scene, and surrounding dialogue to find the stable ID.
-3. Return to Japanese source and terminology to distinguish translation,
-   binding, font, image, installation, and game-version problems.
+3. Consult meaning evidence/terminology, chosen presentation/base or actual
+   binding as appropriate to distinguish translation, design, font, image,
+   installation and game-version problems.
 4. Fix maintained source or code—not only a generated EGPACK, RIO, or WebP.
 5. Follow 07 to synchronize affected occurrences and rerun relevant automated checks and scenes.
 6. Document the fix and produce a new reproducible Release.

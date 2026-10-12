@@ -4,7 +4,9 @@
 
 本文规定当前 `zh-Hans` 目标从 JP 原文产出第一版中文候选译文的流程。新语言可以复用“按稳定身份定位、先翻译后独立审核、技术写回另行验证”的框架，但必须另行定义该语言的标点、排版、称谓和专名规则；不能把这里的中文表达规则直接当成通用语言标准。参见 [`new-locale.md`](new-locale.md)。
 
-先遵守文本与图片共同的[翻译最高原则](../principles.md)：目标是日译中，保留日文原版已有英文；日文只有确实更适合时才译成英文。官方英文版独有素材找对应日语语音听译成中文，不能直接英译中。
+先遵守文本与图片共同的[本地化最高原则](../principles.md)：按内容和功能确定任务，区分原意依据、呈现、制作底稿与写回目标。原作内容从日文文本、日语语音或画面翻译；保留日文原版已有英文，日文改用英文需确实合适。听译是正常输入方式，不要求存在同形式日文资源。
+
+本页默认处理日语原作内容。真正新增的信息须先按总则确认来源、用途与采用范围，再按实际原始语源执行初译和独立复核；辅助文案核对实际功能并说明性质，不能冒称日语原文或擅自添加剧情。
 
 术语确认、独立审核、资源写回和技术质检分别见：
 
@@ -20,8 +22,8 @@
 
 ## 2. 硬规则
 
-1. 以 JP 原作文字、画面或对应日语语音为翻译依据；英文版独有素材用日语听译，不捏造官方日文文本。
-2. 不使用英文槽兜底。
+1. 原作内容以 JP 文字、画面、日语语音及语境确认原意；听译不补造官方日文文本，经确认的新增内容声明实际语源。
+2. 不用英文译文为缺少依据的日语原意兜底。英文版的分段、模板或写回槽可按中文用途采用，不能由此改变原意依据。
 3. 不使用旧中文兜底。
 4. 不使用模糊匹配兜底。
 5. 旧 CN 只能作为待审核候选，不能反向决定 JP 含义。
@@ -33,7 +35,7 @@
 
 开始正文初译前，应完成：
 
-1. 确认章节、route、scene 顺序和文本来源。
+1. 确认内容／功能范围、章节、route、scene 顺序和实际原意依据，关联需要处理的文字、语音或图内信息。
 2. 按 [`04-terminology.md`](04-terminology.md) 扫描全章专有名词。
 3. 对照 [`../glossaries/muv-luv.ja-zh-Hans.csv`](../Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv)，确认本章术语基线。
 4. 将未确认术语列入问题清单；高频或关键术语未定时，不批量推进相关文本。
@@ -43,7 +45,7 @@
 
 ## 4. 每批开始前
 
-每批按完整 scene 或自然剧情段推进，不随机抽行。翻译前先确认：
+每批按完整 scene 或自然剧情段推进，不随机抽行。按输入形态确认适用的定位字段与原意依据，不要求所有输入都有 `jp_text`：
 
 - `chapter`
 - `csv_row`
@@ -51,7 +53,7 @@
 - `resource_file`
 - `scene`
 - `speaker_jp`
-- `jp_text`；听译案件另记日语工作转写、实际语音定位与疑点，不冒充官方 JP 源字段
+- 实际源文本／源图；语音输入另记实际语音与必要片段定位、工作转写及疑点，不冒充官方 JP 源字段
 - 当前术语基线版本
 
 并简要理解：
@@ -110,7 +112,7 @@
 每批至少保留：
 
 1. 候选译文：当前批次的完整 CN 候选。
-2. 定位信息：`csv_row`、`id / stable_id`、`scene`、`speaker_jp`、`jp_text`；听译案件以真实语音定位和工作用转写补充日文依据。
+2. 定位与依据：适用的行号、稳定身份、场景、说话人和实际源文本／画面；听译关联真实语音与片段定位、工作转写。保留与制作底稿、目标资源的对应，不混同其来源角色。
 3. 问题清单：拿不准的术语、称谓、剧情理解和特殊表达。
 4. 新术语候选：交给 [`04-terminology.md`](04-terminology.md) 处理。
 5. 交接摘要：本批范围、总行数和下一批起点。
@@ -121,7 +123,7 @@
 
 - `translated`：已给出目标文本候选（应译中文或按决定保留的原文），等待独立审核。
 - `question`：需要确认后才能定稿。
-- `blocked`：缺少 JP、上下文、定位信息或其他必要依据。
+- `blocked`：缺少已声明的原意依据、上下文、定位信息或其他必要条件；不能仅因没有日文文本／图片就判定缺少依据。
 
 初译阶段不使用 `keep / revise`，这两个结论属于独立审核。
 
@@ -132,7 +134,7 @@
 
 提交审核前，译者只做基础自检：
 
-1. 是否准确理解 JP 原意；听译案件是否已核对实际日语语音。
+1. 是否准确理解声明来源的原意；原作内容是否核对日文／日语及画面，听译是否核对实际语音。
 2. 是否有漏译、擅自增译或逻辑错误；原文保留是否有依据，是否误留了岗位、说明或正文。
 3. 中文是否通顺，角色语气是否明显跑偏。
 4. 是否遵守已冻结的术语和称谓。
@@ -146,8 +148,21 @@
 一个批次完成初译时，应满足：
 
 1. 每行都有 `translated`、`question` 或 `blocked` 状态。
-2. 所有应译行都有基于 JP 文字或对应日语语音的候选；原文保留及英文处理符合最高原则，保留项有明确范围和理由。
+2. 所有应译项都有基于声明来源的候选；原作内容核对 JP 文字、语音或画面，新增内容明确其来源与性质。原文保留及英文处理符合最高原则，保留项有明确范围和理由。
 3. 所有疑点均进入问题清单，没有静默猜测。
 4. 新术语已进入术语候选流程。
 5. 批次边界和下一批起点可追踪。
 6. 尚未把候选译文当成审核通过文本或直接写回游戏资源。
+
+## English summary
+
+Define tasks by content/function and distinguish meaning evidence, presentation,
+authoring base and target. Translate original content from Japanese text, audio
+or images in context; listening is a normal input path. English templates,
+segmentation and target slots may be adopted, but English translation cannot
+resolve missing Japanese meaning. Confirm genuine additions and declare their
+actual source; identify assistance and verify its function. Supply applicable
+identity/context fields and real evidence without fabricated JP text or hashes.
+Use the existing terminology, retention decisions and first-pass statuses.
+Missing same-form Japanese assets alone is not a reason to block a task.
+Candidates still require independent review and later technical/in-game checks.

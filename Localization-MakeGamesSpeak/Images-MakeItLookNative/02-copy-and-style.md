@@ -2,17 +2,19 @@
 
 [上一步](01-extract-and-classify.md) · [流程总览](README.md) · [下一步](03-produce.md)
 
-**输入：**原图、分类及同套素材，已有文本／术语与最后采用的修订。
+**输入：**内容／功能分类、实际原意依据、可选底稿及同套素材，已有文本／术语与最后采用的修订。
 
 ## 先确认文字
 
-先沿用 01 已确定的中文用途和制作范围。日文原文、日语语音和日文版画面提供第一手依据；官方英文本地化可参考其排版、信息取舍和演出方式，不必照搬。为中文阅读和画面效果调整设计时保持原意，不能把英文参考差分顺手扩成另一项制作任务。资源写入现有英文／`translation` 槽，不会改变这一依据。
+沿用 01 的内容与功能范围，分别确定原意依据、中文呈现、实际制作底稿和目标规划。原作含义回到日文文本、日语语音、画面与语境；排版、信息组织、图层和显示机制可采用适用的官方日英方案，再按中文阅读与画面效果调整。选用英文版底稿或现有 `translation` 目标不等于按英文译文裁定含义，也不自动增加另一套交付。
 
 先遵守[翻译最高原则](../principles.md)：目标是日译中，日文原版已有英文保持英文；只有确实更适合英文表达的日文才采用英文，并说明理由。能读清的人名、操作提示、标题、数字、价格和剧情线索必须忠实处理。
 
 按[通用判断方法](../principles.md#如何判断是否需要翻译)先锁定应译与保留区域；有依据保留的内容不送入自动擦字／重绘范围，不限于曲名、署名、装饰、日期标记等示例。保留一部分不代表整图免译：例如保留壁纸原画时仍单独处理图库图注，保留署名时仍翻译岗位。待审核的中文曲名候选不能自动替代原题。
 
-日文原图、脚本、语音和上下文是依据，英文只作参考。官方英文版独有的字幕或其他素材，先确认中文版确实需要采用，再找对应日语语音、听译并独立复核，制作中文；不能因为没有日文图就直接翻译英文。记录语音定位、实际听到的内容及疑点，找不到或听不清必要依据时保持待确认。按[文本初译和独立审核](../Text-AITranslationWorthReading/README.md)核对译文和[现行术语](../Glossaries-KeepItConsistent/README.md)，不采用已被维护者改掉的旧候选。
+按实际载体识读、回读或听译，独立复核原意；语音输入记录资源、必要片段／场景定位、工作转写和疑点，不能只审第一轮转写。日文图缺失不影响采用语音或文本依据，关键含义不明仍待确认。真正新增信息先确认来源与采用范围，辅助文案还需核对功能并明确性质。按[文本初译和独立审核](../Text-AITranslationWorthReading/README.md)核对译文和[现行术语](../Glossaries-KeepItConsistent/README.md)，不采用已被维护者改掉的旧候选。
+
+选定底稿时说明来自哪个资源、借鉴哪些设计、允许改变哪些区域以及目标格式约束。普通替换在相应画布内制作；需要新叠层、换画布或重排时，先确认引擎能够承载并记录中文方案，不以不存在的日文图或透明占位限定版式。
 
 无法识读的**非剧情装饰小字**，可结合完整场景拟写合理中文，也可由生成工具提出候选。注明“场景拟写”及用途；不能冒充识读结果。涉及剧情或操作、无法确认的信息集中列疑问，给出实际图片、位置、候选文字和依据。清楚字与模糊字混在一块时分别约束，不允许模型连已知数字一起重写。
 
@@ -25,3 +27,15 @@
 先选横排、竖排、透明效果、密集文字、透视／曲面、模糊小字等有代表性的图试做，按当前授权交维护者确认，再批量复用。同级文字统一设计源样式，之后按各图适配光照与透视；**不要把每个词分别缩放到相同墨迹外接框**。长文案按整组规则调整，确需例外时解释原因。
 
 **输出：**经过复核的文案、统一样式和已确认样图。疑点与保留项明确；样图成功不等于全批自动通过。
+
+## English summary
+
+Choose meaning evidence, Chinese presentation, authoring base and target plan
+separately. Original meaning uses Japanese text/audio/images in context; official
+designs, layers and display mechanisms from either edition may be adapted.
+Independently check actual text, images or audio, not only transcripts. Confirm
+the provenance and adopted scope of genuine additions, and identify functional
+assistance. Declare the selected base, borrowed design, editing scope and target
+constraints; verify engine support before changing canvas or adding a layer.
+Keep approved terminology/retention decisions, register actual font use and
+establish representative samples before applying a shared style.

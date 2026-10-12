@@ -6,11 +6,11 @@
 
 ## 维护者人工审核与修改
 
-送审页应让人直接看图：原图／中文在**相同位置、相同缩放**快速切换，保留放大、拖动、全屏、张数、跳转、分类和“只看修改图”筛选。提供整图与必要细节，不能只交文字账本或打不开的图片。
+送审页应让人直接看图：制作底稿／中文在**相同位置、相同缩放**快速切换，保留放大、拖动、全屏、张数、跳转、分类和“只看修改图”筛选。提供整图与必要细节，另关联实际原意依据和采用的设计，不能只交文字账本或打不开的图片。
 
-送审以日文版原图／中文成品对照为主；英文存在时作为参考准确对应，不要求每项都必须找到英文图。没有找到英文参考就写“尚未找到”，确认没有才写“不存在”；某个 `_ja` 路径也可能实际共用英文图，按内容和绑定判断，不从后缀猜语言。英文参考不自动成为另一项交付目标，中文方案也不以照搬英文排版为通过条件。
+按资料用途组织对照：原意提供实际文本、语音或画面及场景；视觉提供选定底稿、借鉴的设计和中文成品；交付提供实际目标与调用。日文版有对应画面时可一并展示，没有时不强制补图或用透明占位充当有效对照。官方英文图可能是底稿、设计依据或仅供比较，准确标明角色；没有找到对应就写“尚未找到”，确认没有才写“不存在”。不能从 `_ja`／`_en` 后缀猜用途，也不要求照搬某版排版。
 
-审核[语言来源与处理决定](../principles.md)。已确认中文版需要的英文版独有素材，展示对应日语语音的定位、听译结果和疑点，不能拿英文图本身当成日文依据。原作已有英文、有理由采用的英文与未解决内容分别说明。
+审核[来源与语言处理决定](../principles.md)。听译展示实际语音与必要片段定位、工作转写和疑点，文字或图内信息提供可核对来源。真正新增信息明确其语源、用途与采用范围，辅助文案核对功能。原意未确认不能因采用了官方模板而通过；原作已有英文、有理由采用的英文与未解决内容分别说明。
 
 同时展示有意保留的原图／原文及范围、理由和确认依据，与待译、待确认分开。维护者按内容用途、玩家理解和原作表现检查保留是否合理，以及同图应译信息是否已处理；新内容采用同一判断方法，不只检查是否符合既有例子。经确认保留项不能被自动“清除日文”再次改写。保留项的最终绑定也须指向正确原图，而非旧中文候选。
 
@@ -24,11 +24,25 @@
 
 图片制作经人工确认后，再处理游戏集成；这些交付动作合在最后一个阶段，不另增一套做图步骤。
 
-1. 根据真实脚本、GUI／对象引用验证 01 确定的中文用途与预期写回位置，确认语言槽、资源 ID、路径和覆盖优先级。中文不要求另建独立语言槽：rUGP 可覆盖 `translation` 槽原有英文内容，翻译依据仍是日文／日语。不得仅因目标带英文标记排除，也不得把全部英文差分自动纳入交付。不能只凭相似文件名选图；内容相似的 `pattern` 与实际 `chr` 资源可能尺寸、用途不同。
+1. 根据真实脚本、GUI／对象引用验证 01 的中文用途与目标规划，确认语言槽、每个资源 ID、路径和覆盖优先级。中文可覆盖 rUGP 现有 `translation` 槽；底稿和写回目标均不由原意语源推定。不按语言后缀排除，也不自动纳入全部官方差分。不能只凭相似文件名选图；内容相似的 `pattern` 与实际 `chr` 资源可能尺寸、用途不同。
 2. 通过对应引擎编码、写回和读回验证，确认画布、透明度、有效区域和游戏缩放。原本应全透明的资源不能因名字像标题就塞入 Logo。
-3. 在相关菜单、剧情、日期、状态和差分中实机查看：是否被调用，是否偏移、裁切、闪烁、错语言或出现旧图。首次集成按作品覆盖范围检查，后续修改重点复查实际受影响位置。
+3. 在相关菜单、剧情、日期、状态和差分中实机查看：是否被调用，是否偏移、裁切、闪烁、错语言或出现旧图；新增或采用的呈现是否准确可读，字幕分段和显示／清除时机是否对应语音，是否遮挡正文或操作。首次集成按作品覆盖范围检查，后续修改重点复查实际受影响位置。
 4. **维护者完成发布前的人工收尾：**修改实机或审核发现的错误、复查修改结果，再制作并发布对应版本。玩家获得的版本已经包含这轮修改。
 
 图片定稿、静态读回、实机确认和发布结果分别记录。不能把“做完图片”当成安装包已发布，也不能让发布后 ParaTranz 校对代替发布前的人工收尾。
 
 **输出：**维护者确认的成品、明确保留项、对应版本的绑定与实机结论，以及实际发布状态。未解决问题返回相关阶段；后续玩家反馈回到文案、成品和源映射修正，再进入下一版。
+
+## English summary
+
+Review the exact candidate with evidence suited to each question: text/audio/
+scene for meaning, selected base/borrowed design for appearance, and actual
+objects/calls for delivery. Offer aligned base/Chinese switching and useful
+detail views, not mandatory Japanese-image pairs. Label missing counterparts
+and each official asset's role accurately. Confirm retention, additions and
+font use without treating an official template as semantic approval.
+Verify every actual target, supported geometry/alpha and engine readback;
+Chinese may use rUGP's existing `translation` route. In-game checks cover
+information, display/clear timing, voice correspondence, obstruction and states.
+The maintainer corrects and verifies issues before publication. Human approval,
+integration, in-game verification and release remain distinct facts.

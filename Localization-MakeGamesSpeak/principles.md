@@ -1,27 +1,37 @@
-# 翻译最高原则：以日文原作为依据，目标是日译中
+# 本地化最高原则：忠于日语原作，让中文准确传达
 
 [返回本地化](README.md) · [文本流程](Text-AITranslationWorthReading/README.md) · [图片流程](Images-MakeItLookNative/README.md)
 
-**这组原则同时适用于正文、界面、字幕、图片文案、Logo 和场景文字。** 文本翻译与图片制作使用同一套语言依据，不能因素材形态或所在语言槽不同而改变目标。具体制作步骤、字体和工具选择都服从这些原则。
+**这组原则同时适用于正文、界面、字幕、图片文案、Logo 和场景文字。** 先确认需要向中文玩家传达的内容与功能，再选择表达、素材和实现方式。文本与图片使用同一套判断方法，不能由文件后缀或语言槽代替内容判断。
 
 **本项目以日译中为目标，大部分日文都需要翻译，但并非所有日文都必须改成中文。** 是否翻译，应结合内容用途、中文玩家的理解需要和原作表现判断。完整汉化要求全量核查、翻译应译内容，并说明有意保留的内容；未发现、未确认和未完成的内容不能算作已保留。
 
 ## 中文版的定位与制作范围
 
-**本项目制作中文版，日文原文、日语语音和日文版素材是第一手依据，英文是参考。** 官方英文本地化可用于比较排版、信息取舍和演出方式，但不要求照搬。中文方案以准确传达原意、中文阅读体验和最终画面效果为准，不能为了模仿英文版改变原意，也不必机械沿用日文的排版。
+**以日语原作确定内容含义，以中文玩家的理解与操作需要选择呈现方案。** 日文文本、日语语音、画面与剧情语境共同提供原意依据；官方各版本中的设计、素材和实现可以按用途采用、组合或调整。官方英文译文用于比较和发现疑点，不能替代日语原作裁定原意；英文版的字幕画布、排版、图层或调用机制则可以成为实际制作依据，不限于旁观参考。
 
-**全量提取和对照，不等于分别汉化日英两套资源。** 日文依据、官方英文参考与中文成品分别识别；制作、交付和完成统计围绕中文版实际需要采用的内容展开。以日文版为内容和画面基准，英文版专用差分不因其中仍有日文就自动进入制作任务。
+开工时分别回答以下问题，不把某一语言版本排在所有问题的首位：
 
-**翻译依据与写回槽位分开判断，中文版不等于必须新建中文槽。** 按引擎的实际语言路由、对象引用和覆盖机制选择写回位置。例如 rUGP 使用日文与 `translation` 路由时，中文可覆盖 `translation` 槽原有英文内容；这仍然是以日文／日语为依据的汉化，不是英译中，也不需要为此虚构新的中文槽。素材或目标路径带英文标记，也不能据此认定它只供参考、禁止写入；实际用途与调用才决定制作和交付范围。
+| 要确认什么 | 判断方法 |
+| --- | --- |
+| 内容与功能 | 按场景、信息和用途确定中文玩家需要理解或操作的内容；关联文字、语音、图片及各版差异，再划定应译与保留范围 |
+| 原意依据 | 原作既有内容回到日文文本、日语语音、画面和上下文；文字与语音都可以直接作为输入，不要求先有一张日文图 |
+| 呈现方案 | 为中文选择适当的字幕、布局、分段与信息组织；可以采用或调整官方日英版本中的方案，保持原意和作品表现 |
+| 制作底稿 | 明确实际使用的原图、无字底、图层或模板及其版本；可以来自适用的任一官方版本，不能用“日文优先”代替尺寸、样式与保护范围判断 |
+| 交付目标 | 按引擎的语言路由、对象引用和覆盖机制确定资源、槽位与调用；预期方案在制作前说明，最终绑定与实机效果在交付时验证 |
 
-先确认素材在中文版中的用途和预期调用，再决定是否制作。日英共用图或中文版实际需要采用的素材，不能仅凭 `_ja`／`_en` 后缀排除；调用尚不明确的参考图先列待确认，不自动扩成制作任务。官方英文版独有素材也先确认属于中文版所需内容，再按下文的日语听译规则处理。提取、查看过多少资源与完成多少中文成品分别统计，参考图不算待制作项或已完成成果。
+例如，原作通过日语语音传达剧情，英文版为它增加字幕：这是同一原作内容的另一种呈现。中文版可以听译该语音，采用英文版已有的字幕模板和显示机制，再按中文阅读需要调整。日文图缺失或只是透明占位，不妨碍建立这项中文任务；英文字幕文字不因此成为原意依据。
+
+**全量提取和对照，不等于分别汉化日英两套资源。** 先按内容与功能确定任务，再关联所需资源；同一信息可以对应多个实际交付对象，保留每个目标的身份和调用，不能因合并内容理解就丢掉状态、尺寸或路由差异。仅供比较的资源不计为待制作项或已完成成果；英文版设计有差异也不自动要求再做一套中文。
+
+**翻译依据与写回槽位分开判断。** 例如 rUGP 使用日文与 `translation` 路由时，中文可覆盖 `translation` 槽原有英文内容，无须新建中文槽。不能仅凭 `_ja`／`_en` 后缀排除制作底稿或实际目标。先确定中文用途并规划可行调用，不要求待制作内容已经在中文版中生效；用途或实现尚不明确时，分别说明待确认的问题。
 
 ## 语言怎么处理
 
-1. **日文原作中的日文，原则上译成中文；是否保留按下文的通用方法判断。** 以原作文字、画面、日语语音及剧情上下文理解含义。英文版可辅助定位、发现差异和参考本地化设计，但不能代替日文含义依据。
+1. **日文原作中的日文，原则上译成中文；是否保留按下文的通用方法判断。** 从实际承载信息的文本、语音或画面翻译，再用剧情语境核对。听译是正常输入方式，不依赖是否存在英文素材。
 2. **日文原版中本来就使用英文的内容，保留英文。** 这是保留原作的语言选择；不能把“英文版把日文换成了英文”误当成此类情况，也不能因路径带 `_ja` 就假定图里一定是日文。
 3. **只有日文确实用英文表达更合适时，才可译成英文。** 根据原意、作品设定和场景功能判断，并记录采用理由；不能因为英文版已有译法、排版更省事或工具更擅长英文就改变目标。专名、缩写等沿用已确认的项目决定。
-4. **已确认属于中文版所需内容、但官方英文版独有且找不到对应官方日文文字或图片的素材，找到对应日语语音后听译成中文。** 英文可帮助找场景和语音，译文含义仍以实际听到的日语及上下文为依据，不直接把官方英文译成中文，也不把英文反译的日语冒充原文。
+4. **区分原作内容与其他版本真正新增的信息。** 载体或显示方式新增，不等于内容新增；先查对应的原作文字、语音、画面和场景。确实没有日语对应的新增信息，按下文确认用途、来源与采用范围，不强行寻找不存在的语音，也不自动纳入汉化。
 
 ## 如何判断是否需要翻译
 
@@ -48,27 +58,36 @@
 
 保留决定复用现有备注、决定记录或本地旁表，能找到作品、资源／文本稳定身份、保留范围、理由和维护者确认即可，不强制新建一套表或状态枚举。**“保留原文”是内容决定，二审的 `keep` 是审核结论，两者不能混用。** 保留项同样经过独立复核，确认没有误留正文、岗位或图注；文字与图片中的同一原题、署名应一致。
 
-尚无决定或依据不足时继续列为 `question`／待确认。已经确认的保留项不反复要求翻译；新的剧情证据或维护者决定改变其适用范围时，按[修改反查](Text-AITranslationWorthReading/07-change-impact.md)复查相关文本和图片。此次规则补充不自动批准、回退或重写已有候选。
+尚无决定或依据不足时继续列为 `question`／待确认。已经确认的保留项不反复要求翻译；新的剧情证据或维护者决定改变其适用范围时，按[修改反查](Text-AITranslationWorthReading/07-change-impact.md)复查相关文本和图片。通用原则不能代替对具体候选的审核、采用或返修决定。
 
-## 英文版独有素材怎么确认
+## 官方版本差异怎么处理
 
-先确认该内容需要用于中文版，而非仅用于日英对照。英文版专用差分的存在本身，不构成增加中文制作任务的理由。
+“英文版独有素材”只说明资源分布，不能直接说明内容来源。尚未找到日文对应，也不能当作已经证明不存在。按实际关系处理：
 
-记录源素材和场景、对应日语语音的定位信息、听到的内容与疑点，再按现有初译和独立复核流程确认中文。听译是日文依据的一种形式，不要求补造不存在的官方日文文本。工作用转写遵守已有的[来源与公开边界](Text-AITranslationWorthReading/02-source-data.md)，不因此公开完整语音或台词。
+| 差异 | 处理方式 |
+| --- | --- |
+| 原作已有内容，其他版本增加了载体或显示方式 | 关联同一场景的原作文本、语音或画面，为中文采用适合的呈现。原意仍独立核对，不要求补造同形式的日文资源 |
+| 同一内容或功能存在不同官方设计 | 按中文阅读、画面效果和引擎约束选择、组合或调整方案；只制作采用方案所需的资源，保留实际状态与调用差异 |
+| 真正新增的信息、功能说明或辅助提示 | 先确认来源、中文用途和采用范围。新增剧情按其实际原始语源翻译、独立审核并说明来源；功能说明还需核对实际行为。中文版自行补充的辅助文案明确其性质，不能伪装成日语原文或擅自添加剧情 |
+| 对应关系或含义仍不明确 | 标为 `question`／`blocked`，说明缺少什么。不能把英语直译或反译日语当作已确认的日语原作依据 |
 
-找不到对应日语语音，或关键部分听不清时，列为 `question`／`blocked` 并说明缺少的依据；不能用英文内容兜底定稿。图片允许的非剧情装饰拟写另行注明，不能冒充原文识读或日语听译，更不能代替剧情、操作、数字等明确内容的翻译。
+听译记录语音、场景与必要片段定位、工作用转写和疑点，初译和独立二审都核对实际语音；文字识读与 OCR 同样回到源画面核对。保留实际资源身份和来源，不捏造 JP 槽或把工作转写当成官方文本。关键原意听不清、对应关系不能确认时，不能用英文译文兜底定稿。工作记录遵守已有的[来源与公开边界](Text-AITranslationWorthReading/02-source-data.md)。
 
-审核同时确认两件事：**来源是否可靠、语言处理是否符合以上原则。** 经确认保留的原文、原作本来使用的英文和有理由采用的英文不算漏译；无保留决定的残留和缺少日文依据的英文替换不能因此自动通过。
+复用现有清单、备注或旁表关联内容、原意依据、采用的呈现／底稿与交付目标即可，不强制每项另建多列表或重复审批。图片允许的非剧情装饰拟写仍须注明，不能冒充原文识读或代替剧情、操作、数字等明确内容的翻译。
+
+审核分别确认原意与语言处理、中文呈现及技术交付。经确认保留的原文不算漏译；文案正确不能代替画面和实机检查。真实未解决问题保留范围与状态，规则更新不自动批准既有候选。
 
 ## English summary
 
-The Chinese patch translates from the Japanese original. The same policy covers text, UI, subtitles and image lettering. Preserve English already present in the Japanese original; English substituted by the official English edition is a different case. Render Japanese in English only when it better fits the original meaning and context, with a recorded reason.
+Localize the information and functions needed by Chinese-speaking players. Determine the meaning of existing original content from Japanese text, Japanese audio, images and story context. Choose suitable presentation, production materials and implementation from the official editions, adapting them for Chinese. English translation can reveal discrepancies but does not override the Japanese meaning; an English-edition canvas, layer, layout or display mechanism can be an actual production input.
 
-Produce the Chinese edition with Japanese text, Japanese audio and Japanese-edition assets as first-hand sources; English is reference material. The official English localization may inform layout, information selection and presentation, but need not be copied. Choose Chinese solutions for fidelity, readability and the final visual result, without changing meaning to imitate English or mechanically retaining Japanese typesetting.
+Keep five decisions distinct: **content/function, meaning evidence, presentation, authoring base and delivery target**. Organize tasks by scene, information and purpose, then link the relevant resources across languages and media. Listening-based translation is an ordinary input path, not an exception restricted to English-only assets. For example, Japanese spoken story may receive Chinese subtitles using an English-edition subtitle template and display mechanism. A missing Japanese image or transparent placeholder does not exclude that task.
 
-Extracting and comparing all locales does not mean localizing both Japanese and English resource sets. Identify Japanese sources, official English references and Chinese outputs separately. Japanese supplies the content and visual baseline; English-only variants do not become production tasks just because they contain Japanese lettering. Establish each asset's intended Chinese use and resource route before production. Do not exclude shared or required assets solely by a `_ja` or `_en` suffix; unresolved reference assets remain unresolved rather than automatically entering production. Report extraction/review coverage separately from Chinese production progress; reference-only images count as neither pending production nor completed outputs.
+Full extraction and comparison do not require localizing both official resource sets. Select the Chinese solution and its required resources; retain the identity and calls of every actual target, including differing states, dimensions and routes. Reference-only resources count as neither pending production nor completed outputs. A language suffix alone determines neither an asset's role nor its eligibility.
 
-Translation authority and writeback slots are separate decisions. A Chinese edition does not require a new Chinese slot: use the engine's actual language routes, object references and override mechanism. For example, when rUGP provides Japanese and `translation` routes, Chinese may replace the English content in `translation`. This remains Japanese-to-Chinese localization, not English-to-Chinese translation. An English-marked asset or destination path is not automatically reference-only or forbidden as a writeback target; its actual use and route determine production and delivery scope.
+Plan Chinese use and feasible delivery before production, then verify binding and in-game behavior at delivery. The content need does not have to be already implemented in Chinese. Chinese may replace English in rUGP's existing `translation` slot without creating a separate Chinese slot. An English-marked target does not make the work English-to-Chinese translation.
+
+Preserve English intentionally present in the Japanese original; do not confuse it with English substituted by a localization. Render Japanese in English only when it better fits the meaning and context, with a recorded reason.
 
 Most Japanese text should be translated into Chinese, but not every Japanese inscription needs replacement. Decide by its function, what Chinese-speaking players need to understand, and its role in the original presentation. Dialogue, narration, choices, UI, instructions and other information meant to be read normally require translation. Original wording may remain when it primarily identifies a person or work, expresses the setting or forms part of the artwork, and retaining it preserves that role without obstructing necessary understanding. Wording already suitable in Chinese may also remain. Assess separate parts of a line or image independently.
 
@@ -76,4 +95,13 @@ Song titles without a verified official Chinese name, real staff/actor/company c
 
 Record the exact retention scope, resource identity, reason and maintainer confirmation using existing notes or decision records. A retention decision is distinct from the review verdict `keep` and still requires independent checking. Missing evidence or unfinished work remains unresolved; the rule does not automatically approve or revert existing candidates.
 
-For assets exclusive to the official English edition, first confirm that the Chinese edition needs the content; an English-only variant alone does not establish this need. Then locate the corresponding Japanese voice and translate what is actually heard into Chinese, checking the scene context independently. English may help locate the material but is not the translation authority. Record the audio location and listening uncertainties; do not invent a Japanese source by back-translating English. If the necessary Japanese evidence cannot be found or understood, keep the item unresolved rather than approving an English-based fallback.
+Distinguish official-edition differences:
+
+- **Existing original content, another medium or display:** link the Japanese text, voice or scene and choose a suitable Chinese presentation; no same-form Japanese asset is required.
+- **Alternative designs for the same content/function:** select, combine or adapt a design for Chinese and the engine, producing its required resources rather than every official variant.
+- **Genuinely added information or assistance:** confirm provenance, Chinese purpose and adopted scope. Translate added story from its actual original language and review it independently; verify functional instructions against actual behavior. Identify Chinese-authored assistance as such. Do not automatically adopt additions, require nonexistent Japanese audio or misrepresent them as Japanese original content.
+- **Uncertain correspondence or meaning:** retain `question`/`blocked` and identify the missing evidence. Not finding a Japanese counterpart does not prove none exists.
+
+For listening-based work, record the audio, scene/segment location, working transcript and uncertainties. Both passes check the actual audio; Japanese original content is checked against Japanese speech. OCR is likewise checked against the source image. Resource identity, meaning evidence and authoring inputs remain distinct; never fabricate a Japanese field/hash or present a working transcript as official text. Missing or unclear Japanese meaning cannot be approved through an English fallback.
+
+Use existing manifests, notes or sidecar records to link these roles; no new universal table or repeated approval is required. Decorative reconstruction remains explicitly identified and cannot replace known story, operational or numeric information. Review meaning/language choices, Chinese presentation and technical delivery separately. Keep genuine limitations and publication boundaries; this policy does not retroactively approve existing candidates.

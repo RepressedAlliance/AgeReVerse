@@ -6,6 +6,15 @@
 
 技术检查只证明尺寸、alpha 或区域约束等明确条件，不证明译文、视觉或实机质量。历史 ZIP 成员清单属于[研究工具](../../docs/research/localization/README.md)，不能当成全量游戏图片提取器。
 
+下列命令的 `--source` 是选定的制作／检查底稿，可以来自适用的任一官方版本；原意依据和实际写回目标另行关联。像素检查相对该底稿与允许修改范围执行，目标格式、换画布或新增叠层的支持仍由引擎方案验证，不能用另一语言的占位图代替有效底稿。
+
+The commands below use `--source` as the selected authoring/checking base, which
+may come from either applicable official edition. Link meaning evidence and
+delivery targets separately. Pixel checks apply to that base and the declared
+editing scope; engine validation still establishes target-format constraints and
+support for canvas changes or added layers. A placeholder from another language
+is not a substitute for the chosen base.
+
 安装仓库依赖：
 
 ```powershell

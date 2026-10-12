@@ -16,9 +16,9 @@
 
 ## 分类、分组和确定范围
 
-**先确定中文版需要哪些素材，再判断图内哪些区域应译。** 全量清单可以包含日文、英文和共用资源，制作清单则只包含中文版需要采用的素材。日文原文、日语语音和日文版素材是第一手依据；英文专用差分不因其中仍有日文就自动成为另一套汉化任务。
+**先按内容与功能确定中文任务，再选择所需素材及应译区域。** 将图片与同场景的文本、语音和对象调用关联，区分原作已有内容换了载体、同一功能的不同官方设计、真正新增的信息以及尚未确认的对应关系。原作没有同形式日文图，也可能通过语音或其他画面传达了同一内容；没有找到对应不能当作已经证明不存在。
 
-复用现有清单区分日文依据、英文参考、共用关系、中文成品及预期写回位置。按实际内容和脚本／对象关系判断，不能单靠 `_ja`／`_en` 后缀。内容依据不等于目标槽位：rUGP 可将中文写入原来承载英文的 `translation` 槽；此类实际中文目标不能当成参考图排除。尚不能确认中文用途的参考图先待确认，不自动送入制作。英文版独有内容只有确认中文版需要采用后，才进入日语听译流程。这里确定预期用途与制作范围，最后交付阶段再验证实际绑定和实机结果。
+复用现有清单或备注，分别关联原意依据、中文呈现、制作底稿、当前成品和预期交付对象。原作含义以日文文本、日语语音、画面和语境确认；适用的官方日英设计与素材均可供制作采用，不凭 `_ja`／`_en` 后缀分类。先确定中文用途并规划实现，不要求任务已经在中文版生效。rUGP 的现有 `translation` 槽可以是实际目标；真正新增信息按[总则](../principles.md#官方版本差异怎么处理)确认来源、用途和范围，不统一强制听译。用途或对应关系不明则说明待确认事项，最后交付阶段验证实际绑定。
 
 提取和查看的资源总数、中文版待制作项及已完成成品分别统计。仅供参考的差分保留在对照清单中，不计入待制作数量或完成成果；去重检查仍保留各语言和调用关系，不能把同像素的所有路径都自动列为中文交付目标。
 
@@ -36,6 +36,18 @@
 
 将同一菜单、按钮全状态、连续日期、人物卡和同场景差分归为组。列出实际存在的成员，不按想象补出缺少的状态。Logo 设计不同的变体分别记录，不能共用一张成品冒充全部完成。
 
-根据最高原则区分“日文原版已有英文”和“英文版独有／替换素材”，后者需要查找日文依据或对应日语语音。按[内容用途、玩家理解和原作表现](../principles.md#如何判断是否需要翻译)划定应译与保留区域，不以有无日文决定是否改图。大部分承担阅读功能的日文应译；原文主要用于身份识别、画面表现或可在中文语境直接沿用时，可说明理由后保留。已有例子帮助判断，新素材不因未列出就必须重绘；同一图的装饰和阅读信息分别处理。先确认范围，再检查应译区域的日式字形；既有决定须核对具体语境，不机械跨游戏套用。
+根据最高原则区分原作有意使用的英文与英文本地化译文，后者不因出现在底稿上就按原作英文保留。按[内容用途、玩家理解和原作表现](../principles.md#如何判断是否需要翻译)划定应译与保留区域，不以有无日文决定是否改图。大部分承担阅读功能的日文应译；原文主要用于身份识别、画面表现或可在中文语境直接沿用时，可说明理由后保留。已有例子帮助判断，新素材不因未列出就必须重绘；同一图的装饰和阅读信息分别处理。先确认范围，再检查应译区域的日式字形；既有决定须核对具体语境，不机械跨游戏套用。
 
 **输出：**全量清单、可浏览原图、素材组和优先顺序。每张图均有去向，未解码或待确认项有原因和下一步位置。剧情图即使放在背景目录，也不会漏入最低优先级。
+
+## English summary
+
+Extract all resources and retain undecoded/unmatched entries. Define Chinese
+tasks by content/function and link the same scene across text, audio and images.
+Distinguish existing content in another medium, alternative designs, genuine
+additions and uncertain correspondence. Link meaning evidence, presentation,
+authoring base and intended targets separately through existing records.
+Suitable official-edition resources may be production inputs regardless of
+suffix; Chinese use need not already be implemented. Keep every actual target's
+identity/state/calls. Confirm genuine additions under the shared principles.
+Reference-only variants do not count as pending or completed Chinese production.

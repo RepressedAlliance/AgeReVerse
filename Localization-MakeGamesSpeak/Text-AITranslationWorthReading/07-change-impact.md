@@ -10,7 +10,7 @@
 
 1. 只修改当前明确指定的游戏、章节和目标语言。
 2. 可以在可访问的项目资料中查找必要关联；范围外需要修改的位置应记录并交接，不直接改动其他章节正文。
-3. 反查以当前版本 JP、实际上下文和当前采用决定为依据，不能用旧中文反向决定原意。
+3. 原意反查以当前声明来源、实际上下文和采用决定为依据；日语原作内容回到 JP 文字、语音或画面，不能用旧中文反向决定原意。呈现或绑定变更按各自的底稿与调用关系判断。
 4. 搜索命中用于发现候选，不代表这些位置都应采用相同译法。
 5. 已判定 `keep`、已经定稿或采用旧译文的条目，同样可能需要复核。
 6. 反查不默认写回游戏资源、打包或发布。
@@ -24,6 +24,7 @@
 - 疑点得到解决，或修改建议被确认采用。
 - 发现可能重复出现的误译、漏译或表达问题。
 - 原文版本、场景对应或其他审核依据发生变化。
+- 采用的呈现、制作底稿或目标绑定变化，影响同一内容的字幕、图片、状态或显示时机。
 - 技术、实机或玩家反馈导致已采用文本再次修改。
 
 修改范围按实际影响确定。局部错字或病句可以只复核当前句与必要上下文；涉及共用译法或理解依据时，应检查相关出现位置。多个修改可以合并反查，但应能对应到各自决定。
@@ -52,6 +53,7 @@
 4. 同一段话的拆分记录、铺垫、回应和重复引用。
 5. 共用文本、相关分支及其他受同一决定影响的位置。
 6. 依赖旧判断的术语说明和审核记录。
+7. 同一内容在其他载体中的采用文案，以及受呈现／底稿／路由变更影响的实际交付对象。
 
 检查对象使用当前有效译文，不以历史候选代替正文。不能只检索旧中文，也不能只检查尚未处理的条目。
 
@@ -112,3 +114,14 @@
 仍有待确认或待同步位置时，应标明未完成范围，不能将其计为全部完成。范围外事项可以交接，但不能据此宣称全项目已经一致。
 
 相关检查通过且没有未解决问题后停止。反查完成不等于资源已写回、补丁已更新或实机 QA 已通过。
+
+## English summary
+
+Trace adopted changes through actual content and resource relationships.
+Meaning changes return to the declared source; Japanese original content uses
+Japanese text, audio or images in context. Presentation/base/route changes use
+their corresponding design and call evidence, including linked captions, images,
+states and timing. Preserve every target's identity and justified contextual
+differences. Reuse existing decisions and review records, update affected
+maintained inputs, and run relevant checks. Search matches are candidates,
+not permission for global replacement or proof of completed delivery.

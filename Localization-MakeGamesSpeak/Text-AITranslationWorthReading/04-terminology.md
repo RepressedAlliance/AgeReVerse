@@ -32,7 +32,7 @@
 
 ## 3. 章节开工前的全章扫描
 
-正文初译开始前，先在合法本机源数据中扫描本章全部 JP 文本：
+正文初译开始前，先在合法本机源数据中扫描本章全部 JP 文本，并纳入本次需要处理的语音或图内信息：
 
 1. 提取候选术语及其出现次数和典型上下文。对影响检索和采用的别名、写法变体及语境限制，在章节候选记录中保留对应关系和可定位的用例；字符相似不能作为同一对象的依据。
 2. 与公共总表逐项比对。
@@ -56,7 +56,9 @@
 1. 本章已冻结基线和当前目标语言公共表中已经合并、且适用于该语境的译法。
 2. 作品内 JP 上下文和官方日文设定。
 3. 已有可靠中文惯用译名或经确认采用的中文资料。
-4. 在语义明确的前提下，根据人名、专名、称号等类别决定音译、意译或保留原文，并遵守[最高原则](../principles.md)：保留原作已有英文，日文改用英文需确实适合。真实工作人员署名保留原写法，无官方中文译名的曲目保留原题；不要套用虚构角色译名规则，也不要把项目中文候选当成官方译名。英文版独有素材的含义用对应日语语音听译确认。
+4. 在语义明确的前提下，根据人名、专名、称号等类别决定音译、意译或保留原文，并遵守[最高原则](../principles.md)：保留原作已有英文，日文改用英文需确实适合。真实工作人员署名保留原写法，无官方中文译名的曲目保留原题；不要套用虚构角色译名规则，也不要把项目中文候选当成官方译名。原作内容的依据可来自日文文本、日语语音或画面，不能因采用英文版底稿而改按英译定名。
+
+同一对象在正文、语音、字幕、地图或界面中共享适用的术语决定，不因资源分属日英版本而另起一套名字。真正新增信息先确认来源和采用范围，再关联相应术语与语境；不将候选、英文设计选择或工作转写自动提升为确认术语。
 
 其中第 3、4 项描述当前简体中文目标；其他语言应换成对应语言的可靠资料和专名规则。英文槽、旧译文和模糊匹配不能作为原文含义的最终依据。网络资料只能作为可审查证据，不能越过 JP 原文和已经合并的项目决定。
 
@@ -157,3 +159,15 @@ python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py
 3. 称谓差异可以由人物关系和场景解释。
 4. 本章新增的可复用术语已提交维护者确认。
 5. 公共总表与章节最终采用译法没有未说明的冲突。
+
+## English summary
+
+Build a contextual terminology baseline before bulk translation, including the
+text, voice and image information within the chosen task scope. Existing
+Japanese original content uses its actual Japanese evidence; adopting an
+English-edition base does not change naming authority. Apply the same scoped
+decision to the same object across dialogue, captions, maps and UI, while
+preserving justified contextual differences. Confirm provenance/scope before
+associating genuine additions. Candidates, transcripts and design choices do
+not automatically become approved terms. Keep existing glossary schemas and
+game-specific loading rules; record evidence separately and trace adopted changes.
