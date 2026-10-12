@@ -243,10 +243,13 @@ translation by complete scene; independently review every row as
 through the correct engine; run automated and in-game QA; have the maintainer
 check and correct remaining issues before release; then feed player
 reports back into the maintained source rather than patching generated files.
-Text, voice and images are normal meaning inputs. Official-edition designs and
-implementations may be adopted for Chinese without replacing the Japanese meaning
-authority. Distinguish another presentation of existing content from genuinely
-added information; the latter needs a declared source and adopted scope.
+Text, voice and images are normal meaning inputs. Normally author images from a
+suitable Japanese original and reference English design. Identify the part,
+Chinese purpose and reason for necessary English-canvas/template or
+display-mechanism reuse; writeback slots remain a separate decision. None of
+these choices replaces Japanese meaning authority. Distinguish another
+presentation of existing content from genuinely added information; the latter
+needs a declared source and adopted scope.
 Keep accurately matched official English where available for scene location,
 alternative-wording comparison and design reference. The [PM source-association
 question](../../docs/research/localization/source-alignment.md) illustrates why
