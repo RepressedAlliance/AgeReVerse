@@ -6,6 +6,8 @@
 
 从新制作和返修开始，每批图片都登记实际用字，并把可公开的对应关系汇总到本目录。优先复用游戏现有配方和素材清单，同组共享一条样式记录、单图只写例外；不要求每张重复填一套表，也不另加一个制作阶段。
 
+字体与排版服从已选中文呈现方案。按[最高原则](../principles.md)分别关联原意依据、制作底稿和交付目标；底稿来自日文版或英文版，都不能证明新中文实际用了哪款字体。字体登记以实际加载的文件或继承字层为准，原图中仅被保留的官方字样不冒称本项目使用了其字体文件。
+
 ## 选样时记来源，交付时记实际采用
 
 | 现有阶段 | 必须留下的内容 |
@@ -62,5 +64,11 @@
 <summary><strong>English · Apply this within the existing workflow</strong></summary>
 
 Record source, authorship, exact font identity, license and modifications during style selection. Link game material IDs to the fonts actually used, including mixed layers and real fallback use. At human review and delivery, update the selected recipe, credits and adoption status; mark superseded trials rather than silently replacing their history. Keep private paths and game artwork out of the public register. Ship the actual copyright and full license notices whenever font software is included. Generated or painted lettering has no invented font identity, but any font used as its input or base remains attributable. Reuse existing group recipes; this adds records to the five stages, not another stage or a blanket PR gate.
+
+Typography follows the selected Chinese presentation. Meaning evidence,
+authoring base and delivery target remain distinct; a base from either official
+edition does not identify the font actually used for new Chinese lettering.
+Register real font inputs or inherited layers. Retaining official raster
+lettering does not imply the project loaded its original font software.
 
 </details>

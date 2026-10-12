@@ -16,6 +16,13 @@ Community proofreading shares the current text, source context and discussion:
 3. Explain the problem, propose a correction and provide the relevant evidence. Record differing interpretations for maintainer review rather than silently overwriting a disputed choice.
 4. Trace adopted changes to related occurrences, integrate them into maintained source tables, and verify the affected structure or display before a later release.
 
+Follow the [shared source-role rules](../principles.md#english-summary): meaning
+comes from the declared text, voice or image evidence, not the language of a
+template or writeback slot. Recheck audio/image sources when relevant and
+identify assistance or genuine additions by their confirmed source and scope.
+The current mapping only updates existing entries; report unmapped copy with
+its scene/resource identity rather than inventing platform keys or source text.
+
 You can contribute a single well-explained correction. If you cannot read Japanese, reports of typos, awkward wording, image remnants, display or installation problems are also welcome through QQ group **273626767** or the [issue guide](../../docs/player/README.md#排错与反馈). For maintainers, [sync.md](sync.md) documents the current pull-only mapping and conflict handling.
 
 </details>
@@ -49,6 +56,8 @@ You can contribute a single well-explained correction. If you cannot read Japane
 2. **参考同一套采用决定。** 查本作[术语表与语境基线](../Glossaries-KeepItConsistent/README.md#各作术语表与基线)，区分已确认译法、候选和待核问题；人物关系与语气同样需要上下文支持。
 3. **给出可讨论的修正。** 说明哪里不准确或不通顺、建议怎样改、依据是什么。读不准时提出具体疑问；意见不一致时保留不同理由，交维护者确认采用方案。
 4. **把一项修正落实到相关位置。** 同一问题可能还出现在别处。按[修改反查方法](../Text-AITranslationWorthReading/07-change-impact.md)查找关联台词、称谓和术语，逐项判断，保留有依据的场景差异。
+
+原意按[最高原则](../principles.md)回到实际文字、语音或画面，制作底稿和写回槽位的语言不能代替来源核对。听译修订重听对应片段，图内文字回看源画面；真正新增信息和辅助说明按已确认的来源、范围与功能处理。现有同步只更新已经映射的词条；没有对应平台条目的文案，用场景和资源身份反馈给维护者，不伪造词条键、日文原文或源哈希。
 
 参与者不必一次处理整章。一个能定位、能说明依据的小修正，就能帮助后续维护；采用结果与后续同步由维护者协调。
 

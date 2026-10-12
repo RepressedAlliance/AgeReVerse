@@ -19,11 +19,17 @@ Run the test matching the changed behavior first. Use the full directory command
 
 Automated checks establish their explicit technical conditions. Meaning, visual quality and in-game presentation still require the relevant human and game review.
 
+Identity/hash checks do not establish meaning authority. Image invariants are
+relative to the selected base and editing scope, not automatically to a Japanese
+asset. Source correspondence and Chinese design still require their own review.
+
 </details>
 
 一次“只是改了个工具”的修改，也可能让词条身份丢失、其他作品术语混进来，或让图片改到指定范围之外。这里把这些能明确判断的问题交给自动检查，帮助维护者在交付前发现回归。
 
 测试使用合成输入或可公开的数据，不需要原版游戏。按本次修改选择对应检查即可。
+
+源身份／哈希检查不裁定原意来源；图片边界检查相对选定底稿和修改范围，不自动要求使用日文图。来源对应和中文设计仍按[本地化原则](../principles.md)与相应工作流复核。
 
 ## 这些测试在替我们盯什么
 

@@ -6,6 +6,8 @@
 先理解剧情并建立目标语言术语，完成第一轮翻译，再独立作出 `keep/revise/question`
 审核，解决问题后进入引擎绑定、实机 QA 和玩家反馈闭环。
 
+按[最高原则](../principles.md)先确定目标语言需要传达的内容与功能，再区分原意依据、呈现、制作底稿和交付位置。文字、语音和图片都是正常输入；图片通常以日文版适用原图为基础，英文设计供参考；确需复用具体画布、模板或显示机制时说明复用部分、用途与理由。其他版本独有资源可能只是原作内容的另一种呈现，真正新增信息须确认来源和采用范围；不能把底稿语言当成原意语源，也不能为适配文本模板伪造日文字段或哈希。
+
 This repository contains reusable localization components, but it does **not** yet provide a one-command, end-to-end pipeline from every clean game installation to a finished patch. Treat the existing Simplified Chinese work as an implemented language target and a set of proven components—not as a universal template whose text files can simply be renamed.
 
 ## 1. Choose the engine first
@@ -32,6 +34,18 @@ Use a BCP 47 language tag such as `ko`, `ru`, or `pt-BR`. Keep it distinct from 
 Do not overwrite `zh-Hans.csv`, Chinese image masters, or Chinese release metadata to prototype another language.
 
 ## 3. Freeze the legal source baseline
+
+Start with the content/functions needed in the target language. Link the scene
+across text, audio, imagery and official editions, then distinguish meaning
+evidence, presentation, authoring base and delivery targets under the
+[shared principles](../principles.md#english-summary). Japanese original meaning
+uses Japanese text/audio/images in context. Normally use a suitable Japanese
+original as the image base and English design as a reference; explain the part,
+purpose and reason for necessary English-canvas/template or display-mechanism
+reuse. A writeback slot does not choose the authoring base. Listening is a normal
+input path. Another medium is not necessarily new content; confirm the provenance,
+purpose and adopted scope of genuine additions. Preserve each actual target's
+identity and calls rather than treating every official variant as a task.
 
 Record the storefront, game version/build, executable and container hashes, extraction tool/version, and the exact files used to derive stable identities. Do not commit original proprietary archives, official text dumps, decrypted records, or redistributable-unknown game assets. The public-source boundary is described in [asset and release policy](../../docs/project/asset-and-release-policy.md) and each engine's provenance document.
 
@@ -91,18 +105,23 @@ workstation path.
 
 This file is a **translation work template**, not a writer input. It does not
 contain Japanese dialogue and the removed Chinese translation is not source
-authority. Join the legally extracted Japanese field locally by stable identity,
+authority. For this dialogue example, join the legally extracted Japanese field locally by stable identity,
 verify its hash, translate from that field, then validate and transform the
 reviewed target text into the engine-specific writer schema as a separate step.
+
+The exporter requires an existing supported identity/hash/text mapping. It does
+not establish audio/image correspondence or create an inventory for those media.
+Retain their real resource/segment/region links through existing game records;
+never fabricate a text hash or Japanese field to make them fit this exporter.
 
 ## 4. Translate and review
 
 Follow the complete [English two-pass workflow](workflow.en.md), adapting language-specific
 style rules rather than Chinese prose conventions:
 
-1. Read complete scenes, establish character relationships and create a locale-specific glossary before bulk translation; the current Chinese file is [`muv-luv.ja-zh-Hans.csv`](../Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv).
+1. Read or listen to complete scenes with relevant images, establish character relationships and create a locale-specific glossary before bulk translation; the current Chinese file is [`muv-luv.ja-zh-Hans.csv`](../Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv).
 2. Produce a first translation in stable scene/resource order while preserving identity and source-hash fields. Mark uncertainty instead of guessing.
-3. In a separate pass, reread the Japanese and decide every candidate as `keep`, `revise` or `question`. This is not Chinese-only polishing.
+3. In a separate pass, reread, relisten to or inspect the declared source and decide every candidate as `keep`, `revise` or `question`. Original Japanese meaning must be checked against its Japanese evidence; genuine additions use their confirmed actual source and assistance is verified against function. Target-language polishing alone is insufficient.
 4. Resolve questions using later context, voice, screenshots, established setting terms and actual resource use; then re-freeze terminology and repeated expressions.
 5. Follow the [ordered standards](README.md): project and source preparation (01–03), story context and terminology (04), first translation (05), independent review (06), and change-impact review whenever decisions or text change (07). Reuse the target-neutral rules and define expression rules for the new language.
 6. Define target-language punctuation, typography, honorific, line-breaking and naming rules. Korean, Russian and other targets need their own font and layout gates.
@@ -110,7 +129,7 @@ style rules rather than Chinese prose conventions:
 
 ## 5. Localize images and fonts
 
-Follow the [image workflow](../Images-MakeItLookNative/tools.md): preserve source identity, create a reviewed textless layer where lawful, render localized typography deterministically, and record hashes and allowed-change masks. Publish only assets whose redistribution status has been reviewed.
+Follow the [image workflow](../Images-MakeItLookNative/README.md): link meaning evidence separately from the selected authoring base and actual targets. Adopt or adapt a suitable official design for the target language. Use reproducible typesetting, painting or constrained image editing as appropriate, preserving declared regions and target-format constraints. The [image tools](../Images-MakeItLookNative/tools.md) check specific conditions against the selected base; they do not determine meaning or require a same-form Japanese image. Publish only assets whose redistribution status has been reviewed.
 
 For rUGP, first obtain an exact volume/offset/extent from the [ICI catalogue](../../rUGP/tools/catalog/README.md), then use the [read-only record decoder](../../rUGP/formats/images/README.md) to create a review PNG for a supported Cr6Ti/CRip007/CRip008 profile. Do not scan for magic bytes or treat a successfully decoded PNG as proof that the same extent can hold a localized re-encode.
 
