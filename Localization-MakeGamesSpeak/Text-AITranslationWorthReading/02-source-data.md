@@ -27,6 +27,8 @@
 
 文字、语音和图片都可以承载原作信息。按[最高原则](../principles.md)关联场景与内容，分别记录原意依据、用于制作或连接的源资源和实际写回目标；三者不必是同一文件或同一语言槽。官方英文素材可作为底稿或连接对象，不能仅凭它的源哈希认定中文含义来自英文。
 
+有官方英文时，保留它与日文／日语及中文候选的准确对应，供场景定位、译法比较和差异检查；公开表不必因此增加英文全文列。PM 曾发现[日英说话人与内容不一致的关联疑点](../../docs/research/localization/source-alignment.md)，中文对应英文内容：这时先查记录、索引、调用和语音，不能只改说话人，也不能因英文仅供参考就丢掉这条线索。该疑点仍未确认修复结果或受影响的玩家版本。
+
 听译关联实际语音资源、必要片段／场景定位、工作用转写和疑点，二审重新听语音；图内文字回看对应画面。哈希锁定实际存在的文本字段或资源，工作转写另列，不补造 JP 槽或把转写摘要当成官方文本摘要。原作本来使用的英文与英文版译文分别识别。
 
 真正新增的信息与辅助说明先确认来源、中文用途和采用范围，按实际原始语源或功能审核；未确认对应关系的资源不能直接当成新增内容，也不一律要求找日语语音。沿用本作源表映射、现有备注或旁表即可，不批量改写历史表头。
@@ -73,3 +75,9 @@ fields or substitute transcript hashes for official text hashes. Confirm the
 provenance, purpose and scope of genuine additions, reviewing their actual source
 language or function. Missing counterparts remain uncertain. Reuse mappings and
 sidecar records, and retain the existing publication and QA boundaries.
+Where official English exists, preserve its accurate correspondence with Japanese
+and Chinese for scene location, wording comparison and discrepancy checks; this
+does not require publishing another full-script column. The [PM association
+question](../../docs/research/localization/source-alignment.md) shows why a speaker/
+content mismatch requires checking records, indices, calls and audio, not merely
+renaming a speaker. Its fix and affected player release remain unconfirmed.

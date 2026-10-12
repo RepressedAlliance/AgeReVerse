@@ -23,7 +23,7 @@
 ## 2. 硬规则
 
 1. 原作内容以 JP 文字、画面、日语语音及语境确认原意；听译不补造官方日文文本，经确认的新增内容声明实际语源。
-2. 不用英文译文为缺少依据的日语原意兜底。英文版的分段、模板或写回槽可按中文用途采用，不能由此改变原意依据。
+2. 官方英文可辅助理解不同译法、定位场景和发现疑点；有分歧时先确认对应关系，再回到日文／日语及上下文。不能用英文译文为缺少依据的日语原意兜底。英文版的分段、模板或写回槽可按中文用途采用，不能由此改变原意依据。
 3. 不使用旧中文兜底。
 4. 不使用模糊匹配兜底。
 5. 旧 CN 只能作为待审核候选，不能反向决定 JP 含义。
@@ -54,6 +54,7 @@
 - `scene`
 - `speaker_jp`
 - 实际源文本／源图；语音输入另记实际语音与必要片段定位、工作转写及疑点，不冒充官方 JP 源字段
+- 准确对应的官方英文（若有），注明比较用途；没有时不补造，不把它当作独立复核的结论
 - 当前术语基线版本
 
 并简要理解：
@@ -166,3 +167,7 @@ identity/context fields and real evidence without fabricated JP text or hashes.
 Use the existing terminology, retention decisions and first-pass statuses.
 Missing same-form Japanese assets alone is not a reason to block a task.
 Candidates still require independent review and later technical/in-game checks.
+Where available, include accurately matched official English for scene location,
+alternative-wording comparison and finding questions. Verify correspondence
+before resolving discrepancies against Japanese. English reference is useful,
+but neither its pairing nor its translation is automatically correct.

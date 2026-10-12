@@ -23,6 +23,12 @@ The [complete English text workflow](Text-AITranslationWorthReading/workflow.en.
 
 This guide focuses on Japanese-origin games without Chinese support, including games with an official English edition. Both text and image work follow the shared [localization principles](principles.md#english-summary): establish the content/function, meaning evidence, presentation, authoring base and delivery target separately. Japanese text, audio and context establish original meaning; suitable official resources and implementations from either edition may support the Chinese solution. Listening-based translation is a normal input path. A resource exclusive to one edition is not necessarily new content.
 
+Our usual comparison is Japanese original / official English / Chinese candidate.
+English can help locate scenes, compare interpretations and learn from official
+designs; keep it where available without making it mandatory for every item.
+The [project examples](principles.md#how-we-use-english-project-examples) cover
+subtitle canvases, source mismatches, original English UI and character wordplay.
+
 Most Japanese text needs translation, but retention depends on function, player understanding and the original presentation. Assess each relevant part; familiar examples are not an exhaustive list of what may remain unchanged.
 
 The maintainer reviews and corrects the release candidate **before publication**. ParaTranz revisions are reviewed, integrated and verified for a later release; an online edit does not update an installed patch.
@@ -50,6 +56,8 @@ The maintainer reviews and corrects the release candidate **before publication**
 这套方法重点面向已有日语原作、尚缺中文支持的游戏，也考虑同时提供官方英文版的情况。其他语言团队可以复用方法，另行制定自己的表达与排版规则。
 
 **先读[本地化最高原则](principles.md)：按内容与功能确定中文任务，分别确认原意依据、呈现方案、制作底稿和交付目标。** 原意回到日文文本、日语语音、画面和语境；呈现、素材及实现可以采用适用的官方版本方案。听译是正常输入方式，某一版本独有的资源不一定是新增内容。日文原版已有英文仍按原作语言选择保留，日文改用英文需有适当理由。正文、界面和图片使用同一方法。
+
+本项目通常把**日文原作、官方英文、中文候选**放在一起对照：英文帮助定位场景、比较译法和借鉴本地化设计，含义有分歧时先确认关联、再回到日文／日语判断。没有英文对应时不强求。怎样具体使用英文，可看[字幕画布、源槽错配、原作英文 UI 与角色笑点等项目实例](principles.md#官方英文具体怎么用)。
 
 **大部分日文需要翻译，但不是所有日文都要替换。** 根据内容用途、玩家理解和原作表现区分应译与保留范围；同一段文字或图片也可以部分翻译、部分保留。曲名、署名、原画与日期标记等是帮助理解的例子，新的内容同样按这一原则判断，不能仅因仍有日文就判漏译。
 

@@ -20,6 +20,8 @@
 
 复用现有清单或备注，分别关联原意依据、中文呈现、制作底稿、当前成品和预期交付对象。原作含义以日文文本、日语语音、画面和语境确认；适用的官方日英设计与素材均可供制作采用，不凭 `_ja`／`_en` 后缀分类。先确定中文用途并规划实现，不要求任务已经在中文版生效。rUGP 的现有 `translation` 槽可以是实际目标；真正新增信息按[总则](../principles.md#官方版本差异怎么处理)确认来源、用途和范围，不统一强制听译。用途或对应关系不明则说明待确认事项，最后交付阶段验证实际绑定。
 
+有日英版本时，清单保留**官方日文、官方英文、中文候选**的对应与共用关系。英文图即使不制作，也能帮助发现不同设计、字幕和调用；不要删掉这种对照，也不要把每张对照图自动计成制作任务。例如 [Photon HUD 的英文](../../rUGP/docs/postmortems/pending-hook-entry-points-20260909.md)在日文图片模式也能出现，不能直接归成英文版遗漏；[AGE2 菜单](../../AGE2/docs/postmortems/image-layout.md)则可以保留原英文主体、只替换日文副标题。具体应译区域仍须逐图判断。
+
 提取和查看的资源总数、中文版待制作项及已完成成品分别统计。仅供参考的差分保留在对照清单中，不计入待制作数量或完成成果；去重检查仍保留各语言和调用关系，不能把同像素的所有路径都自动列为中文交付目标。
 
 逐图看实际内容，OCR、文件名和目录只作辅助。
@@ -51,3 +53,9 @@ Suitable official-edition resources may be production inputs regardless of
 suffix; Chinese use need not already be implemented. Keep every actual target's
 identity/state/calls. Confirm genuine additions under the shared principles.
 Reference-only variants do not count as pending or completed Chinese production.
+Where Japanese and English editions exist, retain Japanese/English/Chinese
+correspondence and shared relationships even for comparison-only images.
+The [Photon HUD case](../../rUGP/docs/postmortems/pending-hook-entry-points-20260909.md)
+contains English in Japanese image mode too; [AGE2 menus](../../AGE2/docs/postmortems/image-layout.md)
+keep original English main lettering while replacing Japanese subtitles. These
+examples require region-by-region decisions, not filename-based language guesses.

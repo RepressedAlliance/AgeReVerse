@@ -10,6 +10,8 @@
 
 **以日语原作确定内容含义，以中文玩家的理解与操作需要选择呈现方案。** 日文文本、日语语音、画面与剧情语境共同提供原意依据；官方各版本中的设计、素材和实现可以按用途采用、组合或调整。官方英文译文用于比较和发现疑点，不能替代日语原作裁定原意；英文版的字幕画布、排版、图层或调用机制则可以成为实际制作依据，不限于旁观参考。
 
+本项目的常见工作对象是**日文原作、官方英文本地化与中文候选**。英文对照可以帮助理解不同译法、定位场景、检查信息差异，并展示官方如何处理排版和演出，应保留其具体用途。日英含义不一致时，先确认是否确实对应同一句、同一场景，再回到日文／日语判断；不能把“英文是参考”理解为不看英文。没有官方英文时直接使用现有资料，其他官方语种也按相同方法处理。
+
 开工时分别回答以下问题，不把某一语言版本排在所有问题的首位：
 
 | 要确认什么 | 判断方法 |
@@ -32,6 +34,18 @@
 2. **日文原版中本来就使用英文的内容，保留英文。** 这是保留原作的语言选择；不能把“英文版把日文换成了英文”误当成此类情况，也不能因路径带 `_ja` 就假定图里一定是日文。
 3. **只有日文确实用英文表达更合适时，才可译成英文。** 根据原意、作品设定和场景功能判断，并记录采用理由；不能因为英文版已有译法、排版更省事或工具更擅长英文就改变目标。专名、缩写等沿用已确认的项目决定。
 4. **区分原作内容与其他版本真正新增的信息。** 载体或显示方式新增，不等于内容新增；先查对应的原作文字、语音、画面和场景。确实没有日语对应的新增信息，按下文确认用途、来源与采用范围，不强行寻找不存在的语音，也不自动纳入汉化。
+
+## 官方英文具体怎么用
+
+下面用本项目的经验说明英文在不同环节的作用。例子帮助应用通用原则，不要求其他作品照搬同一设计或采用决定。
+
+| 用途 | 项目中的例子 | 怎样用于中文制作 |
+| --- | --- | --- |
+| 对照含义与发现错配 | [PM 源槽关联疑点](../docs/research/localization/source-alignment.md)：同一条记录中的日文与英文说话人、内容不一致 | 保留日英对照，先查索引、调用和场景语音，再判断中文；该条仍待核，不能写成已修复或所有发布版均受影响 |
+| 参考或采用字幕呈现 | [AGE2 图片字幕](../AGE2/docs/postmortems/caption-layout.md)：日文图可能是 1×1 透明占位，英文版有实际字幕画布 | 中文含义从对应日语语音听译，英文字幕帮助定位与比较分段，其画布、模板和显示机制可按实际目标采用 |
+| 比较设计而不强制照搬 | [Photon 的 U0478](../rUGP/docs/crmt-family.md)：日文竖排 4 层、英文横排 6 层，已有中文竖排 4 层方案 | 日英设计都展示，中文可选择合适方案；分别核对每个实际目标的尺寸、层级与调用，不按英文层数机械复制 |
+| 判断原作英文是否应保留 | [AGE2 菜单](../AGE2/docs/postmortems/image-layout.md)保留原英文主体，只在日文副标题区域制作中文；[Photon HUD](../rUGP/docs/postmortems/pending-hook-entry-points-20260909.md)在日文图片模式也出现 `36mm chain gun` 等英文 | 区分原作英文与英文本地化替换文字，按图内各部分处理；HUD 实际资源对应仍待核，不能只因画面含英文就判漏译或替换失败 |
+| 保留人物表达与笑点 | [Photon 外语表达](../rUGP/docs/postmortems/pf-pm-latin-review-20260909.md)对 `Hot Dog` 采用“热狗（Hot Dog）”并保留角色猜错 | 结合日文语境处理原作中的外语、缩写和读音梗；不能把所有拉丁字母当成残留，也不能把本例变成跨作品固定替换 |
 
 ## 如何判断是否需要翻译
 
@@ -81,6 +95,8 @@
 
 Localize the information and functions needed by Chinese-speaking players. Determine the meaning of existing original content from Japanese text, Japanese audio, images and story context. Choose suitable presentation, production materials and implementation from the official editions, adapting them for Chinese. English translation can reveal discrepancies but does not override the Japanese meaning; an English-edition canvas, layer, layout or display mechanism can be an actual production input.
 
+Our usual comparison is **Japanese original / official English localization / Chinese candidate**. Keep the English counterpart where available: it can offer another interpretation, help locate a scene, reveal information differences and demonstrate an official design. When meanings differ, first verify that the records and scenes actually correspond, then resolve the original meaning against Japanese. No English counterpart is required when none exists; other official languages can serve the same comparative roles.
+
 Keep five decisions distinct: **content/function, meaning evidence, presentation, authoring base and delivery target**. Organize tasks by scene, information and purpose, then link the relevant resources across languages and media. Listening-based translation is an ordinary input path, not an exception restricted to English-only assets. For example, Japanese spoken story may receive Chinese subtitles using an English-edition subtitle template and display mechanism. A missing Japanese image or transparent placeholder does not exclude that task.
 
 Full extraction and comparison do not require localizing both official resource sets. Select the Chinese solution and its required resources; retain the identity and calls of every actual target, including differing states, dimensions and routes. Reference-only resources count as neither pending production nor completed outputs. A language suffix alone determines neither an asset's role nor its eligibility.
@@ -105,3 +121,15 @@ Distinguish official-edition differences:
 For listening-based work, record the audio, scene/segment location, working transcript and uncertainties. Both passes check the actual audio; Japanese original content is checked against Japanese speech. OCR is likewise checked against the source image. Resource identity, meaning evidence and authoring inputs remain distinct; never fabricate a Japanese field/hash or present a working transcript as official text. Missing or unclear Japanese meaning cannot be approved through an English fallback.
 
 Use existing manifests, notes or sidecar records to link these roles; no new universal table or repeated approval is required. Decorative reconstruction remains explicitly identified and cannot replace known story, operational or numeric information. Review meaning/language choices, Chinese presentation and technical delivery separately. Keep genuine limitations and publication boundaries; this policy does not retroactively approve existing candidates.
+
+### How we use English: project examples
+
+| Use | Project example and lesson |
+| --- | --- |
+| Compare meaning and detect mismatches | The [PM source-association question](../docs/research/localization/source-alignment.md) has different Japanese/English speakers and content. Preserve both for comparison and check indices, calls and scene audio before judging Chinese. This case remains unresolved, with no confirmed affected player release. |
+| Adopt subtitle presentation | [AGE2 caption layout](../AGE2/docs/postmortems/caption-layout.md) describes Japanese 1×1 transparent placeholders and actual English-edition subtitle canvases. Translate Japanese speech; English subtitles help locate and compare segments, while suitable canvases/templates/display mechanisms may support production. |
+| Compare designs without copying blindly | [Photon U0478](../rUGP/docs/crmt-family.md) has four vertical Japanese layers, six horizontal English layers and a four-layer vertical Chinese design. Show both official designs, choose for Chinese, and verify each actual target's geometry, layers and calls separately. |
+| Preserve original English | [AGE2 menus](../AGE2/docs/postmortems/image-layout.md) keep the English main lettering and replace Japanese subtitles. [Photon HUD observations](../rUGP/docs/postmortems/pending-hook-entry-points-20260909.md) include `36mm chain gun` in Japanese image mode too. Distinguish original English from localization substitutions; the HUD's exact resource correspondence remains unresolved, so English on screen alone proves neither omission nor replacement failure. |
+| Preserve character expression and jokes | The [Photon language decisions](../rUGP/docs/postmortems/pf-pm-latin-review-20260909.md) retain the misunderstanding in `Hot Dog` with “热狗（Hot Dog）”. Check foreign expressions, abbreviations and pronunciation jokes in Japanese context rather than deleting every Latin word or applying this decision to unrelated works. |
+
+These examples explain the general decisions; they are not universal designs or replacement rules.

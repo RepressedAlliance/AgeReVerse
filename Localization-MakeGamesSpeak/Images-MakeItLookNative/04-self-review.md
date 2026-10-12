@@ -6,6 +6,8 @@
 
 先核对内容与功能范围及实际目标，再分别检查原意、中文呈现和制作约束。原作含义回到日文文本、日语语音、画面与语境；画面检查对照选定底稿和中文设计，不要求每项都有日文图。底稿或目标来自英文版不能代替原意复核，也不能仅凭语言后缀排除。
 
+日英图片都存在时，保留两版对照，检查有无漏掉的阅读信息，并比较版式、状态和图层。例如 [Photon U0478](../../rUGP/docs/crmt-family.md)的日文是竖排 4 层、英文是横排 6 层，已有中文竖排 4 层方案；不能因为中文层数不同于英文就判错，也不能只检查同一内容的一个目标就认定全部通过。
+
 | 尺度 | 主要查看 |
 | --- | --- |
 | 整图 | 是否自然，构图、视觉重心、物体关系是否改变 |
@@ -34,3 +36,8 @@ correspondence, protected artwork, target geometry/alpha and group states at
 full-frame, native and magnified scales. Confirm sources/scope for additions and
 function for assistance. Technical image checks do not prove meaning, appearance
 or runtime behavior. Repair affected parts and preserve still-valid work.
+Keep Japanese/English comparison where both images exist to detect omitted
+information and inspect layout, state and layer differences. [Photon U0478](../../rUGP/docs/crmt-family.md)
+has four vertical Japanese layers, six horizontal English layers and a four-layer
+vertical Chinese design. A layer-count difference from English is not itself a
+defect, and one checked target does not prove all targets passed.

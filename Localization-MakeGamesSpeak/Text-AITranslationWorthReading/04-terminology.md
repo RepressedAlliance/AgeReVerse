@@ -46,6 +46,8 @@
 
 章节开工时要确认的是专名和固定表达，不需要让维护者或审校者逐个审批普通词句。
 
+有官方英文时，将适用的英文名称、缩写或译法作为参考关联到语境基线，帮助检索日英同一对象与发现差异；它不是必须新增的公共术语列，也不能直接覆盖日文原意或已确认的中文决定。[Photon 外语表达](../../rUGP/docs/postmortems/pf-pm-latin-review-20260909.md)区分呼号、普通外语语气与 `Hot Dog` 笑点，[全文一致性实例](../Glossaries-KeepItConsistent/decisions.md)则区分队名与 `Valkyrie` 加编号的呼号：需要一致的是对应对象和语境，不是把所有英文都换成同一个中文词。
+
 接手已有章节时可以复用仍适用的全章扫描和基线，只补查来源、规则或语境发生变化的部分；
 不因更换批次或审核者重新扫描全章、重新建立同一基线。
 
@@ -161,6 +163,13 @@ python Localization-MakeGamesSpeak/Tools-LetToolsHandleRepetition/terminology.py
 5. 公共总表与章节最终采用译法没有未说明的冲突。
 
 ## English summary
+
+Where official English exists, link useful English names, abbreviations and
+translations in contextual baselines for cross-language lookup and comparison;
+this requires no new public glossary column and does not override Japanese
+meaning or adopted Chinese decisions. The [Photon language choices](../../rUGP/docs/postmortems/pf-pm-latin-review-20260909.md)
+and [callsign examples](../Glossaries-KeepItConsistent/decisions.md) distinguish
+names, foreign voice and jokes rather than replacing every English word alike.
 
 Build a contextual terminology baseline before bulk translation, including the
 text, voice and image information within the chosen task scope. Existing

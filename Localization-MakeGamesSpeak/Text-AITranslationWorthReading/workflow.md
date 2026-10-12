@@ -12,6 +12,8 @@
 
 文本与图片共同遵守[本地化最高原则](../principles.md)：先按场景、信息与功能确定中文任务，再分别确认原意依据、呈现方案、制作底稿和交付目标。原作含义回到日文文本、日语语音、画面和语境；适用的官方日英版本设计、素材和实现可以采用、组合或调整。英文译文不能代替日语原作裁定原意，但英文版的模板或调用机制可以成为实际制作依据。
 
+本项目通常对照**日文原作、官方英文与中文候选**。官方英文可辅助理解不同译法、定位场景和发现疑点，也可展示已有本地化设计；有日英分歧时先确认是否对应同一内容，再核对日文／日语。有官方英文时保留有用的对照，不强求每项都存在英文输入。具体用法见[项目实例](../principles.md#官方英文具体怎么用)。
+
 听译是正常输入方式，不要求同时存在官方日文文本或图片。其他版本增加载体或显示方式时，先关联原作已有内容；真正新增的信息和辅助说明另行确认来源、中文用途与采用范围，按实际原始语源及功能审核，不强行要求日语语音。听译的初译和二审都核对实际语音，不能将转写或英文译文冒充原作依据。原作已有英文保留，日文改用英文需确实合适并说明理由。
 
 全量对照不等于分别汉化日英两套资源。同一内容可以关联多个实际目标，各目标保留身份、状态和调用；仅供比较的资源不进入制作统计。先规划中文版用途与可行实现，交付时验证实际绑定，无须内容已经在中文版生效才可制作。例如中文可以覆盖 rUGP 的 `translation` 槽原有英文内容，不要求另建中文槽，也不按语言后缀排除制作底稿或实际目标。
@@ -60,7 +62,7 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 4. 公开表可以保留源字段哈希而不批量镜像官方全文；其他贡献者从自己的合法安装重新
    提取并按哈希连接。
 5. AGE2 与 rUGP 的提取、写回和运行时路径必须分开。
-6. 按场景和功能关联文本、语音、图像及官方版本差异，确定中文需要传达什么。资源缺少同形式日文对应时，继续查其他载体；对应关系不明与已经确认新增分别记录。
+6. 按场景和功能关联文本、语音、图像及官方版本差异，确定中文需要传达什么；有官方英文时保留准确对应及其比较用途。资源缺少同形式日文对应时，继续查其他载体；对应关系不明与已经确认新增分别记录。[PM 源槽关联疑点](../../docs/research/localization/source-alignment.md)说明日英记录必须先对齐，不能只按顺序或内容相似配对。
 7. 复用现有清单或备注，关联原意依据、采用的呈现与底稿、预期交付对象。源资源哈希用于身份和版本校验，不能单独证明含义来自哪种语言；不新增虚构 JP 字段或统一多列表。
 
 输出：内容与功能范围、源资源及稳定身份、原意依据、呈现／底稿与目标规划、场景顺序，以及未确认的对应关系和结构问题。
@@ -96,6 +98,8 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 | `status` | `translated`、`question` 或 `blocked` |
 
 这一轮根据声明的原意依据理解内容、写出自然中文，不做技术写回。原作内容不能用英语槽、旧中文、OCR 或机器翻译替代日文／日语及画面核对；听译记录实际语音定位与疑点。经确认采用的真正新增信息按实际原始语源处理，辅助说明核对实际功能，明确其性质。选用英文版底稿、字幕分段或资源槽不改变原作含义的核对依据。详细规则见[初译规则](05-translation.md)。
+
+官方英文可作为另一种译法参与比较，帮助提出问题；初译和独立二审都须核对日文／日语本身，而不是因英文看起来通顺就接受。例如 [AGE2 字幕](../../AGE2/docs/postmortems/caption-layout.md)可以沿用英文版的实际画布、参考分段，同时根据日语语音写出中文；[TDA01 尚待复听的一句](../../AGE2/docs/limitations.md)仍保留为未确认问题。
 
 输出：候选译文、术语增量、问题清单、批次范围和下一批起点。
 
@@ -243,3 +247,9 @@ Text, voice and images are normal meaning inputs. Official-edition designs and
 implementations may be adopted for Chinese without replacing the Japanese meaning
 authority. Distinguish another presentation of existing content from genuinely
 added information; the latter needs a declared source and adopted scope.
+Keep accurately matched official English where available for scene location,
+alternative-wording comparison and design reference. The [PM source-association
+question](../../docs/research/localization/source-alignment.md) illustrates why
+correspondence must be checked before meaning; [AGE2 subtitles](../../AGE2/docs/postmortems/caption-layout.md)
+illustrate using an English canvas with Japanese-audio translation. The unresolved
+[TDA01 cheer ending](../../AGE2/docs/limitations.md) remains unresolved.

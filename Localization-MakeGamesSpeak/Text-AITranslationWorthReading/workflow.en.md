@@ -19,6 +19,13 @@ and implementations from either official edition may be adopted, combined or
 adapted. English wording cannot override Japanese meaning; an English-edition
 template or display mechanism can be an actual production input.
 
+Our usual comparison is **Japanese original / official English / Chinese candidate**.
+Keep the English counterpart where available for alternative wording, scene
+location, discrepancy checks and localization design. If meanings differ, verify
+that the records represent the same content before checking the Japanese source.
+English comparison is useful without being mandatory for every item. See the
+[project examples](../principles.md#how-we-use-english-project-examples).
+
 Translate Japanese into Chinese, preserve English present in the Japanese
 original, and use English for Japanese only when it better serves the meaning
 and context, with a recorded reason. Listening-based translation is a normal
@@ -87,6 +94,9 @@ write and installation time still run at those operations.
    stable identity plus hash.
 5. Keep AGE2 and rUGP extraction, writer, and runtime paths independent.
 6. Link text, voice, images and edition differences by scene and function.
+   Keep accurate official English correspondence and its comparison role where
+   available. The [PM association question](../../docs/research/localization/source-alignment.md)
+   shows why row order or similar wording alone cannot establish a match.
    Establish the Chinese information need before choosing assets. A missing
    same-form Japanese resource calls for checking other media; distinguish an
    uncertain correspondence from a confirmed addition.
@@ -141,6 +151,13 @@ locations and uncertainties for listening-based work. Confirmed additions use
 their actual original language; assistance is identified and checked against
 function. An English-edition base, subtitle segmentation or target slot does not
 change the evidence required to establish original meaning.
+
+Compare official English as another interpretation that may suggest questions;
+both translation and independent review still check Japanese text/audio directly.
+For example, [AGE2 subtitles](../../AGE2/docs/postmortems/caption-layout.md) can use
+the actual English-edition canvas and compare segmentation while translating
+Japanese speech. The [unresolved TDA01 cheer ending](../../AGE2/docs/limitations.md)
+remains a question pending relistening, not an English-based final line.
 
 Output: candidate text, terminology additions, questions, batch range, and the
 next stable starting point.

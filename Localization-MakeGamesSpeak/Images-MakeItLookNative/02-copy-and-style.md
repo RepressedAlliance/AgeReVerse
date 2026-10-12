@@ -14,6 +14,8 @@
 
 按实际载体识读、回读或听译，独立复核原意；语音输入记录资源、必要片段／场景定位、工作转写和疑点，不能只审第一轮转写。日文图缺失不影响采用语音或文本依据，关键含义不明仍待确认。真正新增信息先确认来源与采用范围，辅助文案还需核对功能并明确性质。按[文本初译和独立审核](../Text-AITranslationWorthReading/README.md)核对译文和[现行术语](../Glossaries-KeepItConsistent/README.md)，不采用已被维护者改掉的旧候选。
 
+有官方英文时，准确对应它的文案和画面，参考其译法、字幕分段、信息层级和版式；与日语有出入时回到原作核对。以 [AGE2 图片字幕](../../AGE2/docs/postmortems/caption-layout.md)为例：日文图可能只有透明占位，英文图可以提供实际画布与排版，中文文案则从对应日语语音听译。TDA01 欢呼字幕仍有[一句末尾待复听](../../AGE2/docs/limitations.md)，英文可作为待核线索，不能据此把该句当成已定稿。
+
 选定底稿时说明来自哪个资源、借鉴哪些设计、允许改变哪些区域以及目标格式约束。普通替换在相应画布内制作；需要新叠层、换画布或重排时，先确认引擎能够承载并记录中文方案，不以不存在的日文图或透明占位限定版式。
 
 无法识读的**非剧情装饰小字**，可结合完整场景拟写合理中文，也可由生成工具提出候选。注明“场景拟写”及用途；不能冒充识读结果。涉及剧情或操作、无法确认的信息集中列疑问，给出实际图片、位置、候选文字和依据。清楚字与模糊字混在一块时分别约束，不允许模型连已知数字一起重写。
@@ -39,3 +41,8 @@ assistance. Declare the selected base, borrowed design, editing scope and target
 constraints; verify engine support before changing canvas or adding a layer.
 Keep approved terminology/retention decisions, register actual font use and
 establish representative samples before applying a shared style.
+Keep the official English copy/image where available for wording, segmentation,
+hierarchy and layout comparison. In the [AGE2 subtitle case](../../AGE2/docs/postmortems/caption-layout.md),
+English supplies a usable canvas while Japanese speech supplies the meaning.
+One [TDA01 cheer ending](../../AGE2/docs/limitations.md) still needs relistening;
+English may guide the question but does not make that line final.

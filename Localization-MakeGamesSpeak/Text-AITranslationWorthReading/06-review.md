@@ -8,7 +8,7 @@
 
 1. 审核对象包含实际原意依据、候选 CN、适用的场景／说话人与上下文。文字、语音和图片均可输入；不补造不存在的官方 JP 字段。
 2. 审核者重新核对声明的来源：文字回读、语音重听、图中文字回看源画面，不能只润色中文或审第一轮转写。确认采用的新增信息按实际语源审核，辅助说明核对功能及其性质。
-3. 裁定日语原作含义时，英文译文和旧中文不能替代原作依据；官方各版本的设计、模板与调用资料可以用于呈现和技术判断，这些结论分别记录。
+3. 官方英文可用于比较译法、定位场景和发现疑点；日英不一致先确认关联，再核对原作。裁定日语原作含义时，英文译文和旧中文不能替代原作依据；官方各版本的设计、模板与调用资料可以用于呈现和技术判断，这些结论分别记录。
 4. 译者自检不等于独立审核。条件允许时，应由不同对话、不同人员或至少在独立轮次中重新判断。
 5. 审核阶段不默认写回资源、打包或安装游戏。
 
@@ -23,12 +23,15 @@
 - `scene`
 - `speaker_jp`
 - 实际源文本／画面，或语音资源与片段定位、工作转写
+- 准确对应的官方英文（若有），用于独立比较，不默认其译法或与日文的配对正确
 - 候选 `cn_text`
 - 当前章节术语基线版本
 
 听译重新核对实际语音，日语原作内容重听日语，工作转写不是官方原文；语音未确认、关键部分听不清、缺少定位或必要上下文时，不得判定通过。没有同形式日文图不等于缺少原意依据。经确认的新增信息提供来源与采用范围；辅助文案说明用途及实际行为。语言选择遵守[最高原则](../principles.md)，原作已有英文与英文版替换译文分别处理。
 
 原文保留项同时提供用途、范围、理由和维护者确认。审核者按[内容用途、玩家理解和原作表现](../principles.md#如何判断是否需要翻译)核对保留是否合理，检查同一行应译部分；不把曲名、署名等例子当作封闭名单。不能仅因含假名判漏译，也不能仅因标了“保留”就默认 `keep`。
+
+例如 [PM 源槽关联疑点](../../docs/research/localization/source-alignment.md)中，日英内容与说话人不同；二审应保留英文对照，先检查对应关系，而非只让中文更顺。相反，[Photon 的 `Hot Dog` 采用决定](../../rUGP/docs/postmortems/pf-pm-latin-review-20260909.md)保留英文及角色的误解，不能仅因中文里仍有英文就判为 `revise`。前者仍待核，后者是对应语境的采用决定。
 
 ## 3. 逐句结论
 
@@ -136,3 +139,11 @@ and calls can support separate presentation and technical decisions. A missing
 same-form Japanese asset does not by itself block semantic review.
 Preserve retention/terminology rules and per-item `keep/revise/question` decisions.
 Review approval does not imply adoption, writeback, in-game verification or release.
+Include correctly matched official English where available and compare it
+independently without assuming the match or interpretation is correct. The
+[PM association question](../../docs/research/localization/source-alignment.md)
+requires checking records and scenes, not merely polishing Chinese. Conversely,
+the [Photon `Hot Dog` decision](../../rUGP/docs/postmortems/pf-pm-latin-review-20260909.md)
+preserves English and a character's misunderstanding; Latin letters alone are
+not grounds for `revise`. The first case remains unresolved; the second is a
+context-specific adopted decision.

@@ -10,6 +10,8 @@
 
 按资料用途组织对照：原意提供实际文本、语音或画面及场景；视觉提供选定底稿、借鉴的设计和中文成品；交付提供实际目标与调用。日文版有对应画面时可一并展示，没有时不强制补图或用透明占位充当有效对照。官方英文图可能是底稿、设计依据或仅供比较，准确标明角色；没有找到对应就写“尚未找到”，确认没有才写“不存在”。不能从 `_ja`／`_en` 后缀猜用途，也不要求照搬某版排版。
 
+**日英图片都有时，提供官方日文／官方英文／中文成品的准确对照。** 英文即使仅供参考也保留入口，方便审核者比较内容、信息取舍和画面效果；没有对应英文图不强求。若选用英文版底稿，就提供英文底稿／中文切换，另关联日文原意依据；日文图只有透明占位的字幕则提供日语语音，不用占位图冒充有效原意对照。不同画布或图层分别按真实尺寸展示，不能为凑三列而裁切、拉伸或错配。
+
 审核[来源与语言处理决定](../principles.md)。听译展示实际语音与必要片段定位、工作转写和疑点，文字或图内信息提供可核对来源。真正新增信息明确其语源、用途与采用范围，辅助文案核对功能。原意未确认不能因采用了官方模板而通过；原作已有英文、有理由采用的英文与未解决内容分别说明。
 
 同时展示有意保留的原图／原文及范围、理由和确认依据，与待译、待确认分开。维护者按内容用途、玩家理解和原作表现检查保留是否合理，以及同图应译信息是否已处理；新内容采用同一判断方法，不只检查是否符合既有例子。经确认保留项不能被自动“清除日文”再次改写。保留项的最终绑定也须指向正确原图，而非旧中文候选。
@@ -46,3 +48,10 @@ Chinese may use rUGP's existing `translation` route. In-game checks cover
 information, display/clear timing, voice correspondence, obstruction and states.
 The maintainer corrects and verifies issues before publication. Human approval,
 integration, in-game verification and release remain distinct facts.
+When both official images exist, provide accurately matched Japanese/English/
+Chinese views and keep English accessible even when used only for comparison.
+Do not require a missing English image. If English is the selected base, offer
+English-base/Chinese switching and link Japanese meaning evidence separately;
+a subtitle with a transparent Japanese placeholder needs its Japanese audio.
+Preserve actual canvas/layer geometry rather than stretching or mismatching
+assets to fill a three-column view.

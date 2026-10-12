@@ -13,6 +13,13 @@ Five stages: extract and classify all images; confirm copy and style; produce im
 
 Follow the shared [localization principles](../principles.md#english-summary): preserve English intentionally present in the Japanese original and use English for Japanese only when justified. Text, voice and image lettering are normal inputs, independently reviewed against their actual sources. Distinguish existing content in another medium from genuinely added information; confirm the latter's provenance, purpose and scope rather than requiring Japanese audio for every asset. Review meaning against source evidence and visuals against the selected base and Chinese design. Delivery verifies actual routing, geometry, timing and display; Chinese may replace English in rUGP's existing `translation` slot.
 
+Keep accurate Japanese/English/Chinese comparison where the official resources
+exist. English helps compare information, layout and presentation even when it
+is not the selected base or target. Use available counterparts without inventing
+missing ones.
+See the [project examples](../principles.md#how-we-use-english-project-examples)
+for subtitle canvases, differing layer layouts and original English UI.
+
 | Stage | Required result |
 | --- | --- |
 | 01 | Complete resource inventory, cross-media/content relationships, selected Chinese tasks and intended targets |
@@ -36,6 +43,8 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 ## 五个阶段
 
 **先确认中文需要传达的内容与功能，再选择原意依据、呈现方案、制作底稿和交付目标。** 原作含义根据日文文本、日语语音、画面与语境确认；官方日英版本中的适用设计、素材和实现可以采用、组合或调整。某版独有的图片可能只是已有内容的另一种载体，不能由是否存在日文图决定是否制作。全量清单保留各版资源，制作清单覆盖选定的中文方案与实际目标，参考差分不计入成果。写回服从引擎，例如 rUGP 可覆盖现有 `translation` 槽。详见[中文版的定位与制作范围](../principles.md#中文版的定位与制作范围)。
+
+有对应素材时，保留**官方日文／官方英文／中文成品**对照，英文即使仅供参考也展示其内容和设计差异；没有对应图时不强求。英文版字幕画布、不同图层排版、原作英文菜单和 HUD 都有具体用途，见[项目实例](../principles.md#官方英文具体怎么用)。参考对照与实际中文交付分别统计。
 
 编号表示制作的主要阶段，不要求把每个动作另立一步。提取和分类一起完成，去字与排字属于制作，最后由维护者审核并完成交付；具体素材按需要处理。
 
