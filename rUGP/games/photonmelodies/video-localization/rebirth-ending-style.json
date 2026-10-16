@@ -1,0 +1,27 @@
+{
+  "schema": "photon-crsi-style-study/1",
+  "status": "candidate; representative-image review and animation acceptance pending",
+  "font": {
+    "catalog_id": "image:noto-sans-sc-vf",
+    "file": "NotoSansSC-VF.ttf",
+    "sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+    "family": "Noto Sans SC",
+    "license": "OFL-1.1"
+  },
+  "supersample": 8,
+  "scale_x": 1,
+  "roles": {
+    "technical": {"size": 25, "weight": 400, "tracking": 0.3, "color": [242, 248, 246], "glow": 1.1, "baseline_from_source_box_top": 24},
+    "price": {"size": 38, "weight": 400, "tracking": 0.3, "color": [244, 0, 102], "glow": 2.0, "baseline_from_source_box_top": 36},
+    "notice.classified": {"size": 34, "weight": 400, "tracking": 1.5, "color": [0, 191, 239], "glow": 3.2, "anchor": [512, 214], "alignment": "center"},
+    "notice.secret": {"size": 100, "weight": 300, "tracking": 28, "color": [244, 0, 102], "glow": 3.0, "anchor": [512, 347], "alignment": "center"},
+    "notice.clearance": {"size": 30, "weight": 400, "tracking": 1.0, "color": [0, 191, 239], "glow": 2.8, "anchor": [512, 398], "alignment": "center"},
+    "narration": {"size": 22, "weight": 400, "tracking": 0, "color": [250, 250, 250], "glow": 0, "outline": 1.1, "anchor": [512, 574], "alignment": "center"}
+  },
+  "notes": [
+    "Same-level technical and price styles are shared across eye, arm and leg; no per-word scaling",
+    "Glow is a blurred colored mask, not a hard outline; narration has a separate dark readability outline",
+    "Source-language decisions and Japanese audio review remain separate from typography",
+    "This profile does not approve the current neural cleanplates"
+  ]
+}

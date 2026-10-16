@@ -1,0 +1,115 @@
+{
+  "ruo_addressing": {
+    "validation": "offline native address resolver; synthetic archive and hash objects",
+    "limitations": [
+      "does not execute video caller, file IO, rendering or game process"
+    ],
+    "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+    "resolver_entry": "0x5d9de0",
+    "hash_lookup_entry": "0x5df070",
+    "base_calculation_range": [
+      "0x5de2f3",
+      "0x5de30b"
+    ],
+    "unit_size": 4,
+    "original_volume_base_bytes": 6442450944,
+    "patched_volume_base_bytes": 8589934592,
+    "redirects_checked": 31,
+    "all_native_addresses_and_sizes_match": true,
+    "missing_key_preserves_original": true,
+    "disabled_overlay_preserves_original": true,
+    "invalid_volume_indices_rejected": [
+      0,
+      2
+    ],
+    "64_bit_addition_carry_verified": true,
+    "native_file_position_entry": "0x5f4040",
+    "unbuffered_relative_positions_verified": [
+      0,
+      26,
+      46748937,
+      93497874
+    ],
+    "selected_source_key": "0xbc8c36d8",
+    "selected_ruo_byte_offset": 4475320,
+    "selected_virtual_byte_offset": 8594409912,
+    "selected_size": 93497874
+  },
+  "crsi_tables": {
+    "validation": "offline parent and row deserialization; no game process",
+    "native_entry": "0x5830f0",
+    "native_row_entry": "0x582c70",
+    "stubs": [
+      "MFC ReadCount: observed 16-bit count",
+      "buffer allocation: bounded zero-filled memory",
+      "archive position: cursor relative to record start"
+    ],
+    "records": [
+      {
+        "record": "original.crsi",
+        "sha256": "e00ce4045070162925f593d1b3cef3e520f7d719690fb6daf718fd1d0aee7849",
+        "frames": 1905,
+        "table_end": 28601,
+        "dimensions": [
+          1024,
+          600
+        ],
+        "rate": 3000,
+        "all_native_rows_match": true,
+        "original_source_offset": 27493704
+      },
+      {
+        "record": "original.crsi",
+        "sha256": "948bcdae76795e8246a9c4dd9ddba836c03a3010ecc3f34b0fefbff37ab8479c",
+        "frames": 1875,
+        "table_end": 28151,
+        "dimensions": [
+          1024,
+          600
+        ],
+        "rate": 3000,
+        "all_native_rows_match": true,
+        "original_source_offset": 117665112
+      },
+      {
+        "record": "original.crsi",
+        "sha256": "b4ba441300977b070e5275b9556047a54cf5f493365ee7152c197ca8d8e5b410",
+        "frames": 1904,
+        "table_end": 28586,
+        "dimensions": [
+          1024,
+          600
+        ],
+        "rate": 3000,
+        "all_native_rows_match": true,
+        "original_source_offset": 1715679260
+      },
+      {
+        "record": "original.crsi",
+        "sha256": "2547f41fc0f3935adf449c005eac8f00824ce989ffb4dcfff306202dc1949f3d",
+        "frames": 1874,
+        "table_end": 28136,
+        "dimensions": [
+          1024,
+          600
+        ],
+        "rate": 3000,
+        "all_native_rows_match": true,
+        "original_source_offset": 1808635048
+      },
+      {
+        "record": "probe-1715679260.crsi",
+        "sha256": "859fe3b5b6a6bd2eba38266a5bb29db98a8860d0bdd62053fa8ee8d8c0f97bed",
+        "frames": 1904,
+        "table_end": 28584,
+        "dimensions": [
+          1024,
+          600
+        ],
+        "rate": 3000,
+        "all_native_rows_match": true,
+        "original_source_offset": 1715679260
+      }
+    ]
+  }
+}

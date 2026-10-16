@@ -1,0 +1,146 @@
+{
+  "schema": "photon-rebirth-opening-runtime/1",
+  "date": "2026-10-10",
+  "status": "Localized opening rendered through completion and returned to following dialogue in isolated game; recorded waveform/frame alignment measured",
+  "process_id": 178700,
+  "source_global_offset": 117665112,
+  "resource_sha256": "5ad267a1ba05e0079c27926bb012b93110b3d58999ffba11a280d79ece78b4e5",
+  "ruo_sha256": "1bbbd23e8977ee5c465b74625ec11733ff1191c27ac7ae7556015b3817b8c746",
+  "navigation": "Ordinary load slot 4 and skip controls; old save restored Japanese image language, corrected to Chinese on the known option page at dialogue 260 before the target. Initial setup/OP recording retained separately; fresh v2 captures started at this stopping point. No input during the target sequence.",
+  "stages": [
+    "pre-video option page and dialogue",
+    "600万 body-modification video with Chinese narration captions",
+    "following Goldmann briefing"
+  ],
+  "video_capture": {
+    "bytes": 117686832,
+    "sha256": "3654d0316448fbe3d688ce8d8cba3e486b9574381ccfe8bc5410f464f16e2781",
+    "method": "Window-only gdigrab; H.264 4:4:4 CRF16; encoder uses demuxer time base"
+  },
+  "audio_capture": {
+    "bytes": 27447884,
+    "sha256": "94ed53fa2ecaa93cdfc73841c71bdad9d851e6c5b47965bbcc7f98735795a68a",
+    "seconds": 155.6,
+    "sample_rate": 44100,
+    "channels": 2,
+    "scope": "include target process tree only"
+  },
+  "visual_review": {
+    "all_21_caption_witnesses_inspected": true,
+    "observed": "Opening-specific 伪面/600万/10米/100公里 and consistent caption styling; no obvious clipping or English caption residue in inspected witnesses."
+  },
+  "quantitative_alignment": {
+    "audio_offset_in_wav_seconds": 63.0897052154195,
+    "audio_matches": [
+      {
+        "source_seconds": 2,
+        "recording_seconds": 65.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9978074431419373
+      },
+      {
+        "source_seconds": 6,
+        "recording_seconds": 69.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9903703331947327
+      },
+      {
+        "source_seconds": 10,
+        "recording_seconds": 73.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9789794683456421
+      },
+      {
+        "source_seconds": 14,
+        "recording_seconds": 77.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.980561375617981
+      },
+      {
+        "source_seconds": 18,
+        "recording_seconds": 81.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9775609374046326
+      },
+      {
+        "source_seconds": 22,
+        "recording_seconds": 85.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9714935421943665
+      },
+      {
+        "source_seconds": 26,
+        "recording_seconds": 89.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9815695285797119
+      },
+      {
+        "source_seconds": 30,
+        "recording_seconds": 93.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9832756519317627
+      },
+      {
+        "source_seconds": 34,
+        "recording_seconds": 97.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.985859751701355
+      },
+      {
+        "source_seconds": 38,
+        "recording_seconds": 101.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.981472373008728
+      },
+      {
+        "source_seconds": 42,
+        "recording_seconds": 105.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9804192781448364
+      },
+      {
+        "source_seconds": 46,
+        "recording_seconds": 109.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9752775430679321
+      },
+      {
+        "source_seconds": 50,
+        "recording_seconds": 113.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9783759713172913
+      },
+      {
+        "source_seconds": 54,
+        "recording_seconds": 117.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.977949857711792
+      },
+      {
+        "source_seconds": 58,
+        "recording_seconds": 121.0897052154195,
+        "offset_seconds": 63.0897052154195,
+        "correlation": 0.9822198152542114
+      }
+    ],
+    "audio_first_packet_epoch": 1791588896.614548,
+    "video_first_frame_epoch": 1791588929.73637,
+    "audio_start_in_video_seconds": 29.967883110046387,
+    "visual_start_in_video_seconds": 29.545333333333325,
+    "visual_minus_audio_seconds": -0.42254977671306193,
+    "visual_good_matches": 1737,
+    "visual_matched_frames": 1830,
+    "visual_start_offset_percentiles": [
+      29.480999999999998,
+      29.53633333333334,
+      29.545333333333325,
+      29.581666666666663,
+      29.80033333333333
+    ]
+  },
+  "limits": [
+    "Recorded stages, inspected caption witnesses and automated frame matching do not equal direct human continuous audiovisual viewing.",
+    "A fixed audio/video start difference is measured separately from cumulative drift; original frame timing and game audio were preserved.",
+    "No formal installation, publication or human listening approval."
+  ]
+}

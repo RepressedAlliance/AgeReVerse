@@ -1,5 +1,8 @@
 # Photon packaging
 
+剧情视频的下一次接入见[视频整合规划](video-integration-plan.md)。该规划覆盖再诞双段、
+PM 两版回顾标题及 PF 倒计时，说明如何与其他改动合并；当前没有据此制作新的玩家包。
+
 ## Current player releases: BETA 0.1.2
 
 Both games have separate BETA 0.1.2 packages. This update incorporates 24 光子之花 and 23 光子旋律 proofreading entries while retaining the BETA 0.1.1 images, fonts and runtime. See the [change scope, credits and known limitations](../../docs/project/photon-beta012-proofreading.md) and [player guide](../../docs/player/README.md). The installers create no backups and include no uninstaller.

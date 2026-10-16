@@ -1,0 +1,152 @@
+{
+  "schema": "photon-crsi-compact-lossless/1",
+  "date": "2026-10-10",
+  "status": "offline native RGB proof; streaming and game playback not verified",
+  "encoder": "rUGP/tools/video/compact_encoder.py",
+  "encoder_sha256": "1c5a8cbfb57f68e05c353b88b3170149460690f7b2903e8823a38be5408bfdcf",
+  "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+  "native_leaf": "0x57b490",
+  "mode": "0x03ff",
+  "opaque_alpha": 128,
+  "compression": [
+    "alternating literal and same-pixel repeat segments",
+    "previous-row pixel copy",
+    "predictive 8-bit RGB deltas"
+  ],
+  "cases": [
+    {
+      "case": "black",
+      "width": 16,
+      "height": 5,
+      "payload_bytes": 20,
+      "counts": {
+        "above_pixels": 4,
+        "repeat_pixels": 75,
+        "literal_pixels": 1
+      },
+      "rgb_exact": true,
+      "payload_sha256": "68162dd320c06b2fb8af6019be57a4851cbc2f0cc7a845312f38037079274c8e",
+      "payload_hex": "aaa5501faaa9547f5552a8feaaa551fd554aa3f8"
+    },
+    {
+      "case": "white",
+      "width": 16,
+      "height": 5,
+      "payload_bytes": 22,
+      "counts": {
+        "above_pixels": 4,
+        "repeat_pixels": 75,
+        "literal_pixels": 1
+      },
+      "rgb_exact": true,
+      "payload_sha256": "55e4e5d872edf50fbb4a1aa4310df10412f406794e92aebeb74ccd711696f523",
+      "payload_hex": "aaa550bfff1faaa9547f5552a8feaaa551fd554aa3f8"
+    },
+    {
+      "case": "random_odd",
+      "width": 37,
+      "height": 9,
+      "payload_bytes": 1845,
+      "counts": {
+        "above_pixels": 0,
+        "repeat_pixels": 0,
+        "literal_pixels": 333
+      },
+      "rgb_exact": true,
+      "payload_sha256": "ef904c2ff6e358f74cba5dc9e98cb2cad7531c26fa1326377883934f38771fb9"
+    },
+    {
+      "case": "run_transition",
+      "width": 12,
+      "height": 3,
+      "payload_bytes": 30,
+      "counts": {
+        "above_pixels": 6,
+        "repeat_pixels": 27,
+        "literal_pixels": 3
+      },
+      "rgb_exact": true,
+      "payload_sha256": "72eda26529fb211a33461912706b98daf92bcdcaeecd37edbb645d1f3c1bc716",
+      "payload_hex": "aaa742fff5ffefff98fffdfffafffd0bfff3fffd4aaa74731a5553a398d0"
+    },
+    {
+      "case": "ramp_rows",
+      "width": 256,
+      "height": 3,
+      "payload_bytes": 223,
+      "counts": {
+        "above_pixels": 512,
+        "repeat_pixels": 0,
+        "literal_pixels": 256
+      },
+      "rgb_exact": true,
+      "payload_sha256": "b41e7cbaaeb4443a7194c01f0077ca3435b71e6b26f42318e4d98c4897965e47"
+    },
+    {
+      "case": "caption_240",
+      "width": 1024,
+      "height": 600,
+      "payload_bytes": 232134,
+      "counts": {
+        "above_pixels": 41655,
+        "repeat_pixels": 492016,
+        "literal_pixels": 80729
+      },
+      "rgb_exact": true,
+      "payload_sha256": "a260974e50398a6bd7e8f48bc32f62c99b58954aaa67eb1116b89f86d0e712ad"
+    },
+    {
+      "case": "caption_900",
+      "width": 1024,
+      "height": 600,
+      "payload_bytes": 348032,
+      "counts": {
+        "above_pixels": 71017,
+        "repeat_pixels": 417999,
+        "literal_pixels": 125384
+      },
+      "rgb_exact": true,
+      "payload_sha256": "c267cd3453f5142dc51c468e2f0895abf256b03286323edb6189f291a014e89d"
+    },
+    {
+      "case": "caption_1140",
+      "width": 1024,
+      "height": 600,
+      "payload_bytes": 526509,
+      "counts": {
+        "above_pixels": 88543,
+        "repeat_pixels": 352491,
+        "literal_pixels": 173366
+      },
+      "rgb_exact": true,
+      "payload_sha256": "1ba98e5b9c1c6d6ed577dc89822dc82b8bf1dbc0ce4e827647dd2ac3d7c4bf84"
+    },
+    {
+      "case": "caption_1560",
+      "width": 1024,
+      "height": 600,
+      "payload_bytes": 267801,
+      "counts": {
+        "above_pixels": 44271,
+        "repeat_pixels": 488458,
+        "literal_pixels": 81671
+      },
+      "rgb_exact": true,
+      "payload_sha256": "6571b651eeb36ad7c86818f75a0d7872338dc372bbca967598816c3a7398e7e7"
+    }
+  ],
+  "tests": {
+    "command": "python -m unittest rUGP.tests.formats.video.test_compact_crsi rUGP.tests.formats.video.test_crsi_lossless rUGP.tests.formats.video.test_crsi",
+    "passed": 9,
+    "coverage": "Existing independent grammar decoder, predictor resets, odd rows, width boundary, native-verified payload fixture, existing literal/container regression tests"
+  },
+  "dependencies": {
+    "numpy": "optional producer dependency",
+    "numba": "0.65.1 used; optional producer dependency"
+  },
+  "limitations": [
+    "Samples prove exact RGB for the listed inputs, not arbitrary source material",
+    "Full candidate sequential replay is recorded separately",
+    "Neither translation nor visual acceptance follows from codec equality"
+  ]
+}

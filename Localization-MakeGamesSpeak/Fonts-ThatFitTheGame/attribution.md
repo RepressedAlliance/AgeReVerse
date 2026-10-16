@@ -10,7 +10,7 @@
 
 | 字体 | 作者／维护项目与上游 | 许可与本项目用途 |
 | --- | --- | --- |
-| Noto Sans SC、Noto Serif SC | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；七作 UI、卡片、说明、地图和场景排字；另有从可变字体导出的静态 700，用于 PM 日历缩略图字幕 |
+| Noto Sans SC、Noto Serif SC | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；七作 UI、卡片、说明、地图和场景排字；Noto Sans SC 2.04 另用于 PM／PF 剧情视频候选的旁白、回顾标题和仪表标签；另有从可变字体导出的静态 700，用于 PM 日历缩略图字幕 |
 | Noto Sans JP | [Noto CJK](https://github.com/notofonts/noto-cjk)，Adobe／Google 及项目贡献者 | OFL 1.1；PM 早期设置页“画面模式”排字试稿；历史输入，与当前发布选型分开 |
 | 思源黑体 Source Han Sans SC | [Adobe Fonts](https://github.com/adobe-fonts/source-han-sans)，Adobe 及项目贡献者 | OFL 1.1；AGE2 发布说明页、部分 HUD／字幕及历史制作方案，以及 PhotonCN／PhotonR2 的派生基础 |
 | PhotonCN／PhotonR2 图片排字输入 | 本项目基于 [Adobe 思源黑体](https://github.com/adobe-fonts/source-han-sans)维护的派生字体 | OFL 1.1；PhotonCN 用于 PF／PM 早期 56 张 CRmt 设计稿和 PM 地图旧稿，其中 U0483 排字稿也作为后续修图输入；旧 PhotonR2 用于 PF 28 种烘焙字幕，与当前运行时文件分别登记 |

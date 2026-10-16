@@ -1,0 +1,153 @@
+{
+  "schema": "photon-crsi-caption-frames/1",
+  "source_global_offset": 117665112,
+  "source_sha256": "948bcdae76795e8246a9c4dd9ddba836c03a3010ecc3f34b0fefbff37ab8479c",
+  "frame_count": 1875,
+  "frame_index_origin": 0,
+  "end_semantics": "exclusive",
+  "text_file": "rebirth-text.zh-CN.csv",
+  "text_variant": "short",
+  "native_default_clock": {
+    "method_entry": "0x5814b0",
+    "import_slot": "0x618194",
+    "import_name": "KERNEL32.dll!MulDiv",
+    "formula_ms": "MulDiv(frame_index, 100000, header_rate)",
+    "header_rate": 3000,
+    "fps_numerator": 30,
+    "fps_denominator": 1,
+    "limitation": "Shared native clock formula; absolute audio/video start relationship is not established by this frame table."
+  },
+  "verification": "All frames measured; start-1/start/end-1/end crops visually inspected for all 21 cues. Only faint compression residue remains at several first excluded frames.",
+  "limitations": [
+    "Source ranges apply to the opening Translation CRsi only. The Japanese reference is aligned locally during composition.",
+    "Wording checked against two independent automatic Japanese transcriptions, source captions and existing official character context; no human listening claimed."
+  ],
+  "captions": [
+    {
+      "id": "narration.name",
+      "start_frame": 198,
+      "end_frame": 240,
+      "witness_frame": 210
+    },
+    {
+      "id": "narration.rank",
+      "start_frame": 249,
+      "end_frame": 321,
+      "witness_frame": 300
+    },
+    {
+      "id": "narration.codename",
+      "start_frame": 321,
+      "end_frame": 380,
+      "witness_frame": 360
+    },
+    {
+      "id": "narration.miracle",
+      "start_frame": 380,
+      "end_frame": 480,
+      "witness_frame": 420
+    },
+    {
+      "id": "narration.abandon",
+      "start_frame": 492,
+      "end_frame": 572,
+      "witness_frame": 540
+    },
+    {
+      "id": "narration.beta",
+      "start_frame": 572,
+      "end_frame": 630,
+      "witness_frame": 600
+    },
+    {
+      "id": "narration.loss",
+      "start_frame": 630,
+      "end_frame": 726,
+      "witness_frame": 660
+    },
+    {
+      "id": "narration.survival",
+      "start_frame": 731,
+      "end_frame": 797,
+      "witness_frame": 780
+    },
+    {
+      "id": "narration.wish",
+      "start_frame": 797,
+      "end_frame": 870,
+      "witness_frame": 840
+    },
+    {
+      "id": "narration.volunteer",
+      "start_frame": 870,
+      "end_frame": 938,
+      "witness_frame": 900
+    },
+    {
+      "id": "narration.project",
+      "start_frame": 938,
+      "end_frame": 1037,
+      "witness_frame": 960
+    },
+    {
+      "id": "narration.rebuild",
+      "start_frame": 1050,
+      "end_frame": 1133,
+      "witness_frame": 1080
+    },
+    {
+      "id": "narration.total",
+      "start_frame": 1133,
+      "end_frame": 1207,
+      "witness_frame": 1140
+    },
+    {
+      "id": "narration.eye",
+      "start_frame": 1234,
+      "end_frame": 1326,
+      "witness_frame": 1260
+    },
+    {
+      "id": "narration.skeleton",
+      "start_frame": 1345,
+      "end_frame": 1410,
+      "witness_frame": 1380
+    },
+    {
+      "id": "narration.muscle",
+      "start_frame": 1410,
+      "end_frame": 1487,
+      "witness_frame": 1440
+    },
+    {
+      "id": "narration.crush",
+      "start_frame": 1506,
+      "end_frame": 1556,
+      "witness_frame": 1525
+    },
+    {
+      "id": "narration.jump",
+      "start_frame": 1556,
+      "end_frame": 1616,
+      "witness_frame": 1560
+    },
+    {
+      "id": "narration.speed",
+      "start_frame": 1616,
+      "end_frame": 1712,
+      "witness_frame": 1620
+    },
+    {
+      "id": "narration.man",
+      "start_frame": 1740,
+      "end_frame": 1805,
+      "witness_frame": 1740
+    },
+    {
+      "id": "narration.cybrid",
+      "start_frame": 1805,
+      "end_frame": 1865,
+      "witness_frame": 1845
+    }
+  ]
+}

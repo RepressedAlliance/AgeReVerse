@@ -1,0 +1,33 @@
+{
+  "status": "static typography candidate; no animation or artwork acceptance",
+  "rendered_graphic_occurrences": 28,
+  "rendered_caption_cues": 22,
+  "missing_glyphs": [],
+  "all_effect_layers_inside_native_canvas": true,
+  "style_sha256": "498c41494114173cae0f9f9bf610097b4b3efa9da0dd7c0451a99ea925cf3d92",
+  "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+  "native_dimensions": [
+    1024,
+    600
+  ],
+  "inspected_full_size_composites": [
+    160,
+    1170,
+    1330,
+    1630
+  ],
+  "profile": "rUGP/games/photonmelodies/video-localization/rebirth-ending-style.json",
+  "private_review": "style-study-v2/review.html",
+  "observations": [
+    "Opening cyan and magenta retain source palette with soft glow",
+    "Shared technical and price styles reused across eye, arm and leg",
+    "No clipped text observed in four native-size composites",
+    "Bent, softened grid lines and stripes remain in existing cleanplates"
+  ],
+  "limitations": [
+    "Static full-text composites do not reproduce sampled-frame reveal or blinking",
+    "Not maintainer-approved typography or production artwork",
+    "No continuous animation or audiovisual acceptance",
+    "Narration source and timing remain provisional"
+  ]
+}

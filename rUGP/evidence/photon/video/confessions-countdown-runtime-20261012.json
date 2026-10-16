@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-12",
+  "game": "Muv-Luv photonflowers",
+  "resource_global_offset": 3724567232,
+  "caller_global_offset": 3687255848,
+  "route": "Original Confessions story progression; no temporary script or video-entry reroute",
+  "candidate_record_sha256": "fb9902de63f5c5fdf55e40036b6d2ddfe9c99f1f006e3b3c054f84145068d8cf",
+  "installed_overlay_sha256": "9ff500b22e33f5f5ebeb3caf388494a110ffe1c6acc54761bf477d1c07b2fdba",
+  "installed_record_hash_verified": true,
+  "image_language": "Chinese, retained after actual save reload",
+  "runtime_visual_observations": {
+    "labels": ["主机临界剩余时间", "乘员撤离"],
+    "readability": "Upper Chinese label is legible at native capture size; lower label follows the source panel perspective and extends beyond the original camera crop. No new edge intrusion or digit occlusion observed.",
+    "capture_seconds": {"before": 120.5, "first_sample": 121.5, "last_changing_sample": 123.5, "after": 130.0},
+    "ordered_samples": ["00:00:10:00", "00:00:09:72", "00:00:09:48", "00:00:09:20", "00:00:09:00", "00:00:08:72", "00:00:08:48", "00:00:08:24", "00:00:08:04"],
+    "end_frame": "08:04 remains displayed for several seconds, then the original story resumes.",
+    "timing_scope": "CRsi body is 51 frames at 25 fps; its final displayed frame can remain during script timing. The held display is not an extended encoded movie.",
+    "following_dialogue": "【美知留】「……我……已经，该走了……」"
+  },
+  "manual_save": {
+    "identity": "muvluv_pf_vp1",
+    "slot": 115,
+    "page": 20,
+    "position": "upper left",
+    "empty_slot_checked": true,
+    "actually_reloaded": true,
+    "scene": "Dark cockpit, 【美知留】「…………」, before the timed farewell sequence and countdown",
+    "trigger": "After loading, press Return once; let the timed farewell sequence continue without movie-skip input. The countdown is reached after roughly four minutes on the observed run.",
+    "reload_to_target_verified": true,
+    "save_binary": "Private local artifact; not distributed in this repository"
+  },
+  "capture": {
+    "primary_private_name": "pf-countdown-runtime-20261012.mkv",
+    "reload_private_name": "pf-save115-reload-20261012.mkv",
+    "capture_exit_codes": [0, 0],
+    "audio": false,
+    "inspection": "Context montage, 0.25-second ordered countdown samples, and native-size label frame; no audio or dialogue synchronization claim"
+  },
+  "shutdown": {"method": "Normal Alt+F4", "no_game_process_after_exit": true},
+  "formal_game_or_user_saves_modified": false
+}
