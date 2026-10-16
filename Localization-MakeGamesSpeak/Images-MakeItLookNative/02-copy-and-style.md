@@ -26,6 +26,8 @@
 
 应汉化文字使用正确的简体中文区域字形，并按中文术语、称谓与表达处理。字体名称、字符编码和“没有假名”都不能证明字形合格，手写／生成字也要看实际笔画；例如 `軍曹` 不能仅简化为 `军曹`，按本项目术语应为 `中士`。明确保留的原题、署名或特殊惯例只在其确认范围内例外。
 
+文案与样式按**完整文字单元**确认，例如一个词组、一行广告、招牌标题或按钮标签。先锁定整个单元的正确文案、字体／笔迹、字重、基线和字距，再选择局部修字或整单元重做；不能只挑一个明显错字，默认其余旧译、繁体／日式字形和排版都合格。单元内原作英文、数字及明确保留文字分别锁定，不因整行设计而改写。
+
 每批新图和返修都按[字体登记规范](../Fonts-ThatFitTheGame/registration.md)记录实际用字：来源、作者、许可、文件身份和修改情况进入字体目录，游戏／素材组引用对应条目。同图混用、实际后备字、TTC 字体索引和可变轴分别写清；仅作试样不标为最终采用。字体作过生成底稿或参考输入时也保留来源，不能因后续修图就略去。复用现有组配方，不另造每张必填的重复表。
 
 先选横排、竖排、透明效果、密集文字、透视／曲面、模糊小字等有代表性的图试做，按当前授权交维护者确认，再批量复用。同级文字统一设计源样式，之后按各图适配光照与透视；**不要把每个词分别缩放到相同墨迹外接框**。长文案按整组规则调整，确需例外时解释原因。
@@ -52,6 +54,12 @@ glyphs and Chinese terminology/expression; inspect actual strokes even in
 handwriting or generated lettering. A font name, shared code point or absence of
 kana is insufficient. Here `軍曹` needs `中士`, not merely simplified `军曹`.
 Keep original-title, credit and special-convention exceptions within their scope.
+Confirm copy and style for a complete lettering unit: a phrase, advertisement
+line, sign heading or button label. Lock its full wording, font/handwriting,
+weight, baseline and spacing before choosing a local repair or rebuilding the
+unit. Fixing one obvious character does not establish that the remaining old
+copy, glyphs or layout are correct. Protect original English, numbers and
+justified retention separately within the unit.
 Keep the official English copy/image where available for wording, segmentation,
 hierarchy and layout comparison. In the [AGE2 subtitle case](../../AGE2/docs/postmortems/caption-layout.md),
 English supplies a usable canvas while Japanese speech supplies the meaning.

@@ -18,6 +18,8 @@
 
 逐张检查：文案／数字正确；应汉化区域在实际字形、含义、术语和表达上完整简体中文化；无不应保留的假名、繁体／日式字形和日式称谓；中文笔画完整；颜色和特效贴合；位置、透视、曲面、材质、留白、遮挡自然；声明保护范围内的人物和画面未改坏；画布和透明边缘符合选定底稿／目标格式与已确认的中文设计。
 
+**即使只修改一个字，也回读完整词组、整行或其他文字单元。** 逐字对照本轮已确认文案，检查实际笔画、繁体／日式字形残留、旧译是否漏改，以及新旧字的字重、基线、字距、颜色和效果是否一致。结合原尺寸与放大细节查残笔、叠影、接缝和局部底图，再放回整图检查；单字看着正确、OCR 通过或改动范围小都不能代替整单元合格。局部修补仍无法融合时，按[最小完整文字单元](03-produce.md#先确定最小完整文字单元)返修，保留其他已通过部分。
+
 先按[三类不改的情况](../principles.md#如何判断是否需要翻译)复核范围和依据，再确认保留内容没有被误擦、改字或变形。直接复用的普通中文须逐项符合简体中文要求；七曜等特殊惯例单独确认，不能混为普通中文。明确原文保留范围外，繁体／日式字形与未汉化用语均属缺陷；例如 `軍曹` 仅改为 `军曹` 仍不合格，本项目采用 `中士`。
 
 “能看懂”、OCR 没有检出日文或画面没有假名都不能证明合格；OCR 查到日文也只是复核线索，不能自动擦除有依据保留的原题或署名。保留原画不免除同图应译说明，旧工具妥协不作为保留依据，已知缺陷未修不能报为通过。
@@ -68,3 +70,11 @@ nor difference alone proves a mismatch or full English translation. Verified
 reuse is not missing imagery; distinguish unfetched, undecoded and unresolved
 counterparts from confirmed absence. Correct provenance does not exempt required
 regions from full Simplified Chinese review.
+Even after a one-character change, reread the full phrase, line or other lettering
+unit against the current approved copy. Inspect actual strokes, leftover
+Traditional/Japanese forms or old wording, and consistency of weight, baseline,
+spacing, color and effects. Check remnants, doubled strokes, seams and repaired
+background at native and magnified scales, then in the full image. A correct
+isolated character, clean OCR or small edit mask does not establish a passing
+unit. Rebuild the smallest complete unit if local repair still fails to blend,
+preserving other valid work.

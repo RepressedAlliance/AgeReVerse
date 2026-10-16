@@ -6,6 +6,12 @@
 
 本步的“原图”指实际采用的制作底稿，通常是日文版适用原图或由其制作的合法无字底；确需复用英文版画布或模板时，沿用 02 明确的具体部分、中文用途和理由，不默认拿英文成品图改中文。原意依据另行关联。像素保护针对该底稿和声明范围，输出画布、有效区域与图层仍须满足实际目标格式。新增叠层或换画布沿用已确认的中文设计及引擎方案，不能为了通过像素检查缩回日文透明占位，也不能无依据放宽保护范围。
 
+## 先确定最小完整文字单元
+
+**文案按完整单元确认，修改范围按实际缺陷确定，验收仍看完整单元。** 词组、整行广告、招牌标题等共用一套笔迹和排版，不能以“只改一个字”或改动像素最少作为质量目标。能够完整清除旧字，并让新字与原有字体／笔迹、字重、基线、字距和效果一致时，可以局部修补。
+
+局部修补留下残笔、叠影、混杂字形、拼接感或间距失衡，无法可靠修干净时，应重做**最小完整视觉文字单元**，清除该单元需要替换的旧字后统一排字、绘制或受控编辑，不能继续用新字盖旧字。必要时更新声明的文字修改范围；重做完整词组或整行不等于重绘整图，仍保护无关画面、原作英文、数字和明确保留文字，不改动已合格的其他单元。
+
 ## 清除旧字、修复底图
 
 先完整清除需要替换的旧文字，再制作中文。去字包括主笔画、抗锯齿边缘、碎点、描边、阴影、光晕和裁切／遮挡处残笔，不能靠新字盖住、靠模糊掩盖。按最高原则保留的原作英文不纳入去字区。
@@ -57,3 +63,13 @@ strokes; removing kana or converting Traditional characters alone is insufficien
 Reuse original lettering only when fully compliant or within a justified original
 retention/special-convention scope from 02. Preserving artistic style does not
 justify preserving text defects.
+Confirm the whole lettering unit's copy, choose the edit scope from actual
+defects, and review the complete unit afterward. A one-character repair is
+acceptable when old lettering is fully removed and the font/handwriting,
+weight, baseline, spacing and effects remain consistent. Minimal character or
+pixel changes are not the quality goal. If local repair cannot remove remnants,
+double strokes, mixed glyphs, seams or spacing imbalance reliably, rebuild the
+smallest complete visual lettering unit with clean removal and consistent
+typesetting/drawing/editing. Update the declared text-editing scope as needed;
+this does not authorize whole-image repainting or changes to unrelated artwork,
+original English, numbers, approved retention or other correct units.

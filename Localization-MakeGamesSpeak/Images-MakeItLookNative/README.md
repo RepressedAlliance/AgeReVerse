@@ -33,6 +33,11 @@ reuse what fits the current version and extract only gaps or changes. Report
 counting units and separate investigation, confirmed production, reuse and
 retention, then distinguish inspection, human approval and runtime status.
 
+Confirm and review complete lettering units such as phrases, lines or headings.
+A character repair is acceptable when clean and visually consistent; otherwise
+rebuild the smallest complete unit while protecting unrelated artwork and
+approved retention. Show the whole affected unit in human review.
+
 | Stage | Required result |
 | --- | --- |
 | 01 | Complete resource inventory, cross-media/content relationships, selected Chinese tasks and intended targets |
@@ -74,6 +79,8 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 先完成 UI、按钮、姓名、日期、字幕、标题等非场景素材，再处理普通场景背景。剧情用的信件、漫画、报纸或道具文字按剧情需要安排，不能因存在 `bg/` 就降成装饰背景。分类决定安排；**文字怎样附着在画面上**决定制作方法。
 
 同一张图返修不必重走全流程：回到受影响步骤，复查本图和相关差分。已通过的字体、颜色、光晕和画面部分应保留，避免修一处又破坏另一处。
+
+文案确认与验收按完整词组、整行或标题进行，即使只改一个字也检查整个文字单元。局部修补须去字干净、字形与样式一致；做不到时重做[最小完整文字单元](03-produce.md#先确定最小完整文字单元)，同时保护无关画面与明确保留内容，送审展示整个受影响单元。
 
 ## 工作记录只保留必要内容
 

@@ -26,6 +26,8 @@
 
 对照图旁附上**面向审核者的简短说明**，逐图或按同类素材组说明：图用在哪里；这次改了哪些文字或区域；为什么这样翻译、排版或返修；哪些内容有意保留及理由；还有什么不确定、需要人判断。说明直接指向图中位置，可用“左下角地名”“第二行字幕”等易懂表述；同组共性解释一次，单图例外另写。返修明确旧中文的问题和当前修正，首次制作说明关键处理。不只给文件名、状态码或制作流水，也不要求审核者翻聊天记录才能理解。当前中文仍是候选时明确写“待人工确认”，说明不能代替查看实际图片。
 
+局部修字送审也展示**完整词组／整行及必要上下文**，说明采用单字修补还是重做文字单元、处理了什么问题。单字特写仅作补充，不能把其余旧字和整行排版藏在裁切之外；维护者确认的是整个受影响单元的文案、字形和融合效果，不只是新换的那个字。
+
 动态图层提供实际合成预览，连续帧提供可播放序列或片段及必要定位，让人看到文字的出现、保持、切换与消失；静态对照仍用于核对细节。不能只给抽出的某层或几张截图，就请人确认整个动态效果。
 
 若确需复用英文版画布或模板，提供所复用部分／中文对照，说明具体用途与理由，另关联日文原意依据；没有同形式日文图时，展示实际日文文本、日语语音或其他画面依据及场景，并说明缺少哪种对应。日文图只有透明占位的字幕则提供日语语音，不用占位图冒充有效原意对照。没有找到对应就标明尚未找到，不能写成确认不存在。不同画布或图层分别按真实尺寸展示，不能为凑四列而裁切、拉伸或错配；可用切换视图，不要求四列并排。
@@ -132,6 +134,12 @@ fix; for first-time work, explain the key choices. Filenames, status codes and
 execution logs alone are insufficient; reviewers should not need chat history.
 Clearly mark candidates awaiting human confirmation. Explanations do not replace
 viewing the actual images.
+
+For local lettering repairs, show the complete phrase/line and useful context,
+and explain whether the repair changed one character or rebuilt a whole unit and
+which problem it addressed. Character close-ups supplement that view rather than
+hiding the remaining old lettering or layout. Approval covers the affected unit's
+copy, glyphs and integration, not only the replacement character.
 
 For necessary English-canvas/template
 reuse, show the reused part and Chinese output, explain its purpose/reason,
