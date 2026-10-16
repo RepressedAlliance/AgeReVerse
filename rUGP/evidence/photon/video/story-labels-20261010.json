@@ -1,0 +1,1073 @@
+{
+  "schema": "photon-story-video-labels/1",
+  "date": "2026-10-10",
+  "status": "Offline production candidates; not installed or runtime-tested",
+  "resources": [
+    {
+      "resource": "pm-217595660",
+      "source_sha256": "5a501c824a127556eb283994a27786bc47d02b62b3f78781ab8671c929db95d8",
+      "candidate_sha256": "bf269553072ddd4997f07182152340e7072ee02be9c3be6402785dbdcdab4783",
+      "frames": 351,
+      "rate": 3000,
+      "dimensions": [
+        1024,
+        600
+      ],
+      "changed_frames": [
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350
+      ],
+      "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "native": {
+        "schema": "photon-crsi-replacement-native/1",
+        "validation": "all native RGB frames and frame-table rows match; offline only",
+        "candidate_sha256": "bf269553072ddd4997f07182152340e7072ee02be9c3be6402785dbdcdab4783",
+        "build_report_sha256": "058a003ea8c37ef12179c8e48a731af4f429f3662528d945c7685df146c80c46",
+        "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+        "frame_count": 351,
+        "modes": {
+          "0x0575": 254,
+          "0x03ff": 97
+        },
+        "tables": {
+          "validation": "offline parent and row deserialization; no game process",
+          "native_entry": "0x5830f0",
+          "native_row_entry": "0x582c70",
+          "stubs": [
+            "MFC ReadCount: observed 16-bit count",
+            "buffer allocation: bounded zero-filled memory",
+            "archive position: cursor relative to record start"
+          ],
+          "records": [
+            {
+              "record": "pm-217595660-zh-v3.crsi",
+              "sha256": "bf269553072ddd4997f07182152340e7072ee02be9c3be6402785dbdcdab4783",
+              "frames": 351,
+              "table_end": 5097,
+              "dimensions": [
+                1024,
+                600
+              ],
+              "rate": 3000,
+              "all_native_rows_match": true
+            }
+          ]
+        },
+        "seconds": 65.07461360000889,
+        "limitations": [
+          "No game process or streaming IO exercised",
+          "Pixel equality does not establish translation or visual acceptance"
+        ]
+      }
+    },
+    {
+      "resource": "pm-1911342516",
+      "source_sha256": "afc6ba907a552514296e12573f71652fa426338c7b6dda4009460501c312a328",
+      "candidate_sha256": "e7339d0503e53a87c3486657547627f3b7fd1e578c9f6ebfbf4208156f55a377",
+      "frames": 351,
+      "rate": 3000,
+      "dimensions": [
+        1024,
+        600
+      ],
+      "changed_frames": [
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350
+      ],
+      "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "native": {
+        "schema": "photon-crsi-replacement-native/1",
+        "validation": "all native RGB frames and frame-table rows match; offline only",
+        "candidate_sha256": "e7339d0503e53a87c3486657547627f3b7fd1e578c9f6ebfbf4208156f55a377",
+        "build_report_sha256": "359c204476086602c88c47733cf3184e23308e2cf09a3a48764d93fbbd83d631",
+        "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+        "frame_count": 351,
+        "modes": {
+          "0x0575": 254,
+          "0x03ff": 97
+        },
+        "tables": {
+          "validation": "offline parent and row deserialization; no game process",
+          "native_entry": "0x5830f0",
+          "native_row_entry": "0x582c70",
+          "stubs": [
+            "MFC ReadCount: observed 16-bit count",
+            "buffer allocation: bounded zero-filled memory",
+            "archive position: cursor relative to record start"
+          ],
+          "records": [
+            {
+              "record": "pm-1911342516-zh-v3.crsi",
+              "sha256": "e7339d0503e53a87c3486657547627f3b7fd1e578c9f6ebfbf4208156f55a377",
+              "frames": 351,
+              "table_end": 5097,
+              "dimensions": [
+                1024,
+                600
+              ],
+              "rate": 3000,
+              "all_native_rows_match": true
+            }
+          ]
+        },
+        "seconds": 68.27643830000306,
+        "limitations": [
+          "No game process or streaming IO exercised",
+          "Pixel equality does not establish translation or visual acceptance"
+        ]
+      }
+    },
+    {
+      "resource": "pf-3724567232",
+      "source_sha256": "67d77466f8fb4f7934594b553e1c7032feb78adf8d275cb2d4285dc1fb89042e",
+      "candidate_sha256": "fb9902de63f5c5fdf55e40036b6d2ddfe9c99f1f006e3b3c054f84145068d8cf",
+      "frames": 51,
+      "rate": 2500,
+      "dimensions": [
+        1024,
+        600
+      ],
+      "changed_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "native": {
+        "schema": "photon-crsi-replacement-native/1",
+        "validation": "all native RGB frames and frame-table rows match; offline only",
+        "candidate_sha256": "fb9902de63f5c5fdf55e40036b6d2ddfe9c99f1f006e3b3c054f84145068d8cf",
+        "build_report_sha256": "a9d80b9abec47091ca17bab5eb4b9740968006f53e8d4c2463678bbc031895ca",
+        "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+        "frame_count": 51,
+        "modes": {
+          "0x03ff": 51
+        },
+        "tables": {
+          "validation": "offline parent and row deserialization; no game process",
+          "native_entry": "0x5830f0",
+          "native_row_entry": "0x582c70",
+          "stubs": [
+            "MFC ReadCount: observed 16-bit count",
+            "buffer allocation: bounded zero-filled memory",
+            "archive position: cursor relative to record start"
+          ],
+          "records": [
+            {
+              "record": "pf-3724567232-zh-v4.crsi",
+              "sha256": "fb9902de63f5c5fdf55e40036b6d2ddfe9c99f1f006e3b3c054f84145068d8cf",
+              "frames": 51,
+              "table_end": 689,
+              "dimensions": [
+                1024,
+                600
+              ],
+              "rate": 2500,
+              "all_native_rows_match": true
+            }
+          ]
+        },
+        "seconds": 48.35743790000561,
+        "limitations": [
+          "No game process or streaming IO exercised",
+          "Pixel equality does not establish translation or visual acceptance"
+        ]
+      }
+    }
+  ],
+  "packages": [
+    {
+      "game": "photonmelodies",
+      "output": "story-labels-photonmelodies11.rio.ruo1",
+      "bytes": 946933492,
+      "sha256": "1adff12d0993934baef9e4e560b3b607e0457f07cc46eb0b91275a62ec2c9017",
+      "inherited_redirects": 32,
+      "total_redirects": 34,
+      "inherited_redirects_exact": true,
+      "inherited_payload_exact": true,
+      "new_resources_readback_exact": true,
+      "manifest": {
+        "schema": 1,
+        "format": "rUGP relative archive redirect overlay (RUO)",
+        "output": "story-labels-photonmelodies11.rio.ruo1",
+        "unit_size": 4,
+        "data_offset": 0,
+        "base_ruo": "rebirth-both-caption-v1-photonmelodies11.rio.ruo1",
+        "base_ruo_sha256": "1bbbd23e8977ee5c465b74625ec11733ff1191c27ac7ae7556015b3817b8c746",
+        "inherited_data_size": 938230164,
+        "inherited_redirect_count": 32,
+        "footer_offset": 946933080,
+        "footer_offset_hex": "0x38710D58",
+        "redirect_count": 34,
+        "file_size": 946933492,
+        "file_sha256": "1adff12d0993934baef9e4e560b3b607e0457f07cc46eb0b91275a62ec2c9017",
+        "records": [
+          {
+            "source_raw_offset_hex": "0xA6397A94",
+            "destination_byte_offset": 938230164,
+            "destination_byte_offset_hex": "0x37EC4194",
+            "ruo_raw_offset_hex": "0xB0F67B36",
+            "input_record_size": 4348600,
+            "replacement_extent_size": 4348600,
+            "placement_span_with_alignment": 4348600,
+            "replacement_raw_size_hex": "0x330CE4B8",
+            "record_sha256": "bf269553072ddd4997f07182152340e7072ee02be9c3be6402785dbdcdab4783",
+            "replaced_inherited_redirect": false
+          },
+          {
+            "source_raw_offset_hex": "0xBF769C3E",
+            "destination_byte_offset": 942578764,
+            "destination_byte_offset_hex": "0x382E9C4C",
+            "ruo_raw_offset_hex": "0xB10711E4",
+            "input_record_size": 4354314,
+            "replacement_extent_size": 4354314,
+            "placement_span_with_alignment": 4354316,
+            "replacement_raw_size_hex": "0x35D71B0A",
+            "record_sha256": "e7339d0503e53a87c3486657547627f3b7fd1e578c9f6ebfbf4208156f55a377",
+            "replaced_inherited_redirect": false
+          }
+        ],
+        "footer_records": [
+          {
+            "source_raw_offset": 2735890382,
+            "ruo_raw_offset": 2734585627,
+            "replacement_raw_size": 166566838,
+            "source_raw_offset_hex": "0xA3125FCE",
+            "ruo_raw_offset_hex": "0xA2FE771B",
+            "replacement_raw_size_hex": "0x09ED9BB6"
+          },
+          {
+            "source_raw_offset": 2735902717,
+            "ruo_raw_offset": 2734620667,
+            "replacement_raw_size": 18670896,
+            "source_raw_offset_hex": "0xA3128FFD",
+            "ruo_raw_offset_hex": "0xA2FEFFFB",
+            "replacement_raw_size_hex": "0x011CE530"
+          },
+          {
+            "source_raw_offset": 2735912964,
+            "ruo_raw_offset": 2734646679,
+            "replacement_raw_size": 413573502,
+            "source_raw_offset_hex": "0xA312B804",
+            "ruo_raw_offset_hex": "0xA2FF6597",
+            "replacement_raw_size_hex": "0x18A6A17E"
+          },
+          {
+            "source_raw_offset": 2736300755,
+            "ruo_raw_offset": 2734603147,
+            "replacement_raw_size": 166566838,
+            "source_raw_offset_hex": "0xA318A2D3",
+            "ruo_raw_offset_hex": "0xA2FEBB8B",
+            "replacement_raw_size_hex": "0x09ED9BB6"
+          },
+          {
+            "source_raw_offset": 2736313090,
+            "ruo_raw_offset": 2734633673,
+            "replacement_raw_size": 18670896,
+            "source_raw_offset_hex": "0xA318D302",
+            "ruo_raw_offset_hex": "0xA2FF32C9",
+            "replacement_raw_size_hex": "0x011CE530"
+          },
+          {
+            "source_raw_offset": 2736323337,
+            "ruo_raw_offset": 2734457138,
+            "replacement_raw_size": 1718558658,
+            "source_raw_offset_hex": "0xA318FB09",
+            "ruo_raw_offset_hex": "0xA2FC8132",
+            "replacement_raw_size_hex": "0x666F1FC2"
+          },
+          {
+            "source_raw_offset": 2736374087,
+            "ruo_raw_offset": 2734522021,
+            "replacement_raw_size": 1676712910,
+            "source_raw_offset_hex": "0xA319C147",
+            "ruo_raw_offset_hex": "0xA2FD7EA5",
+            "replacement_raw_size_hex": "0x63F09BCE"
+          },
+          {
+            "source_raw_offset": 2740477872,
+            "ruo_raw_offset": 2734671737,
+            "replacement_raw_size": 180462167,
+            "source_raw_offset_hex": "0xA3585FB0",
+            "ruo_raw_offset_hex": "0xA2FFC779",
+            "replacement_raw_size_hex": "0x0AC1A257"
+          },
+          {
+            "source_raw_offset": 2740610750,
+            "ruo_raw_offset": 2734820753,
+            "replacement_raw_size": 879878105,
+            "source_raw_offset_hex": "0xA35A66BE",
+            "ruo_raw_offset_hex": "0xA3020D91",
+            "replacement_raw_size_hex": "0x3471DFD9"
+          },
+          {
+            "source_raw_offset": 2740763029,
+            "ruo_raw_offset": 2734991113,
+            "replacement_raw_size": 586687499,
+            "source_raw_offset_hex": "0xA35CB995",
+            "ruo_raw_offset_hex": "0xA304A709",
+            "replacement_raw_size_hex": "0x22F8240B"
+          },
+          {
+            "source_raw_offset": 2740906988,
+            "ruo_raw_offset": 2735152526,
+            "replacement_raw_size": 256583331,
+            "source_raw_offset_hex": "0xA35EEBEC",
+            "ruo_raw_offset_hex": "0xA3071D8E",
+            "replacement_raw_size_hex": "0x0F4B26A3"
+          },
+          {
+            "source_raw_offset": 2741040370,
+            "ruo_raw_offset": 2735303865,
+            "replacement_raw_size": 302259307,
+            "source_raw_offset_hex": "0xA360F4F2",
+            "ruo_raw_offset_hex": "0xA3096CB9",
+            "replacement_raw_size_hex": "0x12041C6B"
+          },
+          {
+            "source_raw_offset": 2741217588,
+            "ruo_raw_offset": 2734446379,
+            "replacement_raw_size": 3950553102,
+            "source_raw_offset_hex": "0xA363A934",
+            "ruo_raw_offset_hex": "0xA2FC572B",
+            "replacement_raw_size_hex": "0xEB78A80E"
+          },
+          {
+            "source_raw_offset": 2741222459,
+            "ruo_raw_offset": 2734448305,
+            "replacement_raw_size": 3943949544,
+            "source_raw_offset_hex": "0xA363BC3B",
+            "ruo_raw_offset_hex": "0xA2FC5EB1",
+            "replacement_raw_size_hex": "0xEB13E4E8"
+          },
+          {
+            "source_raw_offset": 2741225930,
+            "ruo_raw_offset": 2734450029,
+            "replacement_raw_size": 3968032868,
+            "source_raw_offset_hex": "0xA363C9CA",
+            "ruo_raw_offset_hex": "0xA2FC656D",
+            "replacement_raw_size_hex": "0xEC836064"
+          },
+          {
+            "source_raw_offset": 2741231174,
+            "ruo_raw_offset": 2734452488,
+            "replacement_raw_size": 3928120668,
+            "source_raw_offset_hex": "0xA363DE46",
+            "ruo_raw_offset_hex": "0xA2FC6F08",
+            "replacement_raw_size_hex": "0xEA225D5C"
+          },
+          {
+            "source_raw_offset": 2741234238,
+            "ruo_raw_offset": 2734453729,
+            "replacement_raw_size": 3999162172,
+            "source_raw_offset_hex": "0xA363EA3E",
+            "ruo_raw_offset_hex": "0xA2FC73E1",
+            "replacement_raw_size_hex": "0xEE5E5F3C"
+          },
+          {
+            "source_raw_offset": 2741240513,
+            "ruo_raw_offset": 2735462615,
+            "replacement_raw_size": 4140901074,
+            "source_raw_offset_hex": "0xA36402C1",
+            "ruo_raw_offset_hex": "0xA30BD8D7",
+            "replacement_raw_size_hex": "0xF6D122D2"
+          },
+          {
+            "source_raw_offset": 2741250590,
+            "ruo_raw_offset": 2735470350,
+            "replacement_raw_size": 4129152312,
+            "source_raw_offset_hex": "0xA3642A1E",
+            "ruo_raw_offset_hex": "0xA30BF70E",
+            "replacement_raw_size_hex": "0xF61DDD38"
+          },
+          {
+            "source_raw_offset": 2741259299,
+            "ruo_raw_offset": 2850132269,
+            "replacement_raw_size": 1555719590,
+            "source_raw_offset_hex": "0xA3644C23",
+            "ruo_raw_offset_hex": "0xA9E1912D",
+            "replacement_raw_size_hex": "0x5CBA65A6"
+          },
+          {
+            "source_raw_offset": 2763802151,
+            "ruo_raw_offset": 2735504703,
+            "replacement_raw_size": 1907150105,
+            "source_raw_offset_hex": "0xA4BC4627",
+            "ruo_raw_offset_hex": "0xA30C7D3F",
+            "replacement_raw_size_hex": "0x71ACCD19"
+          },
+          {
+            "source_raw_offset": 2786343032,
+            "ruo_raw_offset": 2734385873,
+            "replacement_raw_size": 409526160,
+            "source_raw_offset_hex": "0xA6143878",
+            "ruo_raw_offset_hex": "0xA2FB6AD1",
+            "replacement_raw_size_hex": "0x1868DF90"
+          },
+          {
+            "source_raw_offset": 2786371184,
+            "ruo_raw_offset": 2734410807,
+            "replacement_raw_size": 4052281488,
+            "source_raw_offset_hex": "0xA614A670",
+            "ruo_raw_offset_hex": "0xA2FBCC37",
+            "replacement_raw_size_hex": "0xF188E890"
+          },
+          {
+            "source_raw_offset": 2786383027,
+            "ruo_raw_offset": 2734415837,
+            "replacement_raw_size": 4037189982,
+            "source_raw_offset_hex": "0xA614D4B3",
+            "ruo_raw_offset_hex": "0xA2FBDFDD",
+            "replacement_raw_size_hex": "0xF0A2A15E"
+          },
+          {
+            "source_raw_offset": 2786392254,
+            "ruo_raw_offset": 2734420407,
+            "replacement_raw_size": 4057488140,
+            "source_raw_offset_hex": "0xA614F8BE",
+            "ruo_raw_offset_hex": "0xA2FBF1B7",
+            "replacement_raw_size_hex": "0xF1D85B0C"
+          },
+          {
+            "source_raw_offset": 2786403355,
+            "ruo_raw_offset": 2734425596,
+            "replacement_raw_size": 4280231234,
+            "source_raw_offset_hex": "0xA615241B",
+            "ruo_raw_offset_hex": "0xA2FC05FC",
+            "replacement_raw_size_hex": "0xFF1F2542"
+          },
+          {
+            "source_raw_offset": 2786420779,
+            "ruo_raw_offset": 2734437583,
+            "replacement_raw_size": 4175668070,
+            "source_raw_offset_hex": "0xA615682B",
+            "ruo_raw_offset_hex": "0xA2FC34CF",
+            "replacement_raw_size_hex": "0xF8E3A366"
+          },
+          {
+            "source_raw_offset": 2788784788,
+            "ruo_raw_offset": 2968943414,
+            "replacement_raw_size": 856483000,
+            "source_raw_offset_hex": "0xA6397A94",
+            "ruo_raw_offset_hex": "0xB0F67B36",
+            "replacement_raw_size_hex": "0x330CE4B8"
+          },
+          {
+            "source_raw_offset": 3212221502,
+            "ruo_raw_offset": 2970030564,
+            "replacement_raw_size": 903289610,
+            "source_raw_offset_hex": "0xBF769C3E",
+            "ruo_raw_offset_hex": "0xB10711E4",
+            "replacement_raw_size_hex": "0x35D71B0A"
+          },
+          {
+            "source_raw_offset": 4178793735,
+            "ruo_raw_offset": 2735456598,
+            "replacement_raw_size": 4084623356,
+            "source_raw_offset_hex": "0xF9135507",
+            "ruo_raw_offset_hex": "0xA30BC156",
+            "replacement_raw_size_hex": "0xF37667FC"
+          },
+          {
+            "source_raw_offset": 250011741,
+            "ruo_raw_offset": 2735477726,
+            "replacement_raw_size": 4085819534,
+            "source_raw_offset_hex": "0x0EE6E05D",
+            "ruo_raw_offset_hex": "0xA30C13DE",
+            "replacement_raw_size_hex": "0xF388A88E"
+          },
+          {
+            "source_raw_offset": 250016319,
+            "ruo_raw_offset": 2735483780,
+            "replacement_raw_size": 4089879166,
+            "source_raw_offset_hex": "0x0EE6F23F",
+            "ruo_raw_offset_hex": "0xA30C2B84",
+            "replacement_raw_size_hex": "0xF3C69A7E"
+          },
+          {
+            "source_raw_offset": 283496466,
+            "ruo_raw_offset": 2735489958,
+            "replacement_raw_size": 4154468682,
+            "source_raw_offset_hex": "0x10E5D012",
+            "ruo_raw_offset_hex": "0xA30C43A6",
+            "replacement_raw_size_hex": "0xF7A0294A"
+          },
+          {
+            "source_raw_offset": 283504064,
+            "ruo_raw_offset": 2735498107,
+            "replacement_raw_size": 4103577862,
+            "source_raw_offset_hex": "0x10E5EDC0",
+            "ruo_raw_offset_hex": "0xA30C637B",
+            "replacement_raw_size_hex": "0xF497A106"
+          }
+        ],
+        "verification": {
+          "footer_readback": true,
+          "deterministic_signed_source_order": true,
+          "replacement_extents_before_footer": true
+        }
+      }
+    },
+    {
+      "game": "photonflowers",
+      "output": "story-labels-photonflowers11.rio.ruo1",
+      "bytes": 15411720,
+      "sha256": "9ff500b22e33f5f5ebeb3caf388494a110ffe1c6acc54761bf477d1c07b2fdba",
+      "inherited_redirects": 21,
+      "total_redirects": 22,
+      "inherited_redirects_exact": true,
+      "inherited_payload_exact": true,
+      "new_resources_readback_exact": true,
+      "manifest": {
+        "schema": 1,
+        "format": "rUGP relative archive redirect overlay (RUO)",
+        "output": "story-labels-photonflowers11.rio.ruo1",
+        "unit_size": 4,
+        "data_offset": 0,
+        "base_ruo": "photonflowers11.rio.ruo1",
+        "base_ruo_sha256": "21c762fdf08fb7b0825eb9ba6b5d20b93b1b524ecf0b913c8bd80811601ddfc6",
+        "inherited_data_size": 2547132,
+        "inherited_redirect_count": 21,
+        "footer_offset": 15411452,
+        "footer_offset_hex": "0xEB28FC",
+        "redirect_count": 22,
+        "file_size": 15411720,
+        "file_sha256": "9ff500b22e33f5f5ebeb3caf388494a110ffe1c6acc54761bf477d1c07b2fdba",
+        "records": [
+          {
+            "source_raw_offset_hex": "0xDA7B8381",
+            "destination_byte_offset": 2547132,
+            "destination_byte_offset_hex": "0x26DDBC",
+            "ruo_raw_offset_hex": "0xA3052240",
+            "input_record_size": 12864319,
+            "replacement_extent_size": 12864319,
+            "placement_span_with_alignment": 12864320,
+            "replacement_raw_size_hex": "0x711DC54F",
+            "record_sha256": "fb9902de63f5c5fdf55e40036b6d2ddfe9c99f1f006e3b3c054f84145068d8cf",
+            "replaced_inherited_redirect": false
+          }
+        ],
+        "footer_records": [
+          {
+            "source_raw_offset": 2737138805,
+            "ruo_raw_offset": 2734385873,
+            "replacement_raw_size": 503733372,
+            "source_raw_offset_hex": "0xA3256C75",
+            "ruo_raw_offset_hex": "0xA2FB6AD1",
+            "replacement_raw_size_hex": "0x1E065C7C"
+          },
+          {
+            "source_raw_offset": 2737175701,
+            "ruo_raw_offset": 2734413682,
+            "replacement_raw_size": 409526160,
+            "source_raw_offset_hex": "0xA325FC95",
+            "ruo_raw_offset_hex": "0xA2FBD772",
+            "replacement_raw_size_hex": "0x1868DF90"
+          },
+          {
+            "source_raw_offset": 2737203853,
+            "ruo_raw_offset": 2734438616,
+            "replacement_raw_size": 4052281488,
+            "source_raw_offset_hex": "0xA3266A8D",
+            "ruo_raw_offset_hex": "0xA2FC38D8",
+            "replacement_raw_size_hex": "0xF188E890"
+          },
+          {
+            "source_raw_offset": 2737215696,
+            "ruo_raw_offset": 2734443646,
+            "replacement_raw_size": 4037189982,
+            "source_raw_offset_hex": "0xA32698D0",
+            "ruo_raw_offset_hex": "0xA2FC4C7E",
+            "replacement_raw_size_hex": "0xF0A2A15E"
+          },
+          {
+            "source_raw_offset": 2737224923,
+            "ruo_raw_offset": 2734448216,
+            "replacement_raw_size": 4057488140,
+            "source_raw_offset_hex": "0xA326BCDB",
+            "ruo_raw_offset_hex": "0xA2FC5E58",
+            "replacement_raw_size_hex": "0xF1D85B0C"
+          },
+          {
+            "source_raw_offset": 2737236024,
+            "ruo_raw_offset": 2734453405,
+            "replacement_raw_size": 4280231234,
+            "source_raw_offset_hex": "0xA326E838",
+            "ruo_raw_offset_hex": "0xA2FC729D",
+            "replacement_raw_size_hex": "0xFF1F2542"
+          },
+          {
+            "source_raw_offset": 2737253448,
+            "ruo_raw_offset": 2734465392,
+            "replacement_raw_size": 4175668070,
+            "source_raw_offset_hex": "0xA3272C48",
+            "ruo_raw_offset_hex": "0xA2FCA170",
+            "replacement_raw_size_hex": "0xF8E3A366"
+          },
+          {
+            "source_raw_offset": 3299041248,
+            "ruo_raw_offset": 2734997903,
+            "replacement_raw_size": 403594428,
+            "source_raw_offset_hex": "0xC4A35FE0",
+            "ruo_raw_offset_hex": "0xA304C18F",
+            "replacement_raw_size_hex": "0x180E5CBC"
+          },
+          {
+            "source_raw_offset": 3363164264,
+            "ruo_raw_offset": 2734885470,
+            "replacement_raw_size": 481894930,
+            "source_raw_offset_hex": "0xC875D068",
+            "ruo_raw_offset_hex": "0xA3030A5E",
+            "replacement_raw_size_hex": "0x1CB92212"
+          },
+          {
+            "source_raw_offset": 3363187605,
+            "ruo_raw_offset": 2734912613,
+            "replacement_raw_size": 765552980,
+            "source_raw_offset_hex": "0xC8762B95",
+            "ruo_raw_offset_hex": "0xA3037465",
+            "replacement_raw_size_hex": "0x2DA16954"
+          },
+          {
+            "source_raw_offset": 3363229176,
+            "ruo_raw_offset": 2734474188,
+            "replacement_raw_size": 1226466588,
+            "source_raw_offset_hex": "0xC876CDF8",
+            "ruo_raw_offset_hex": "0xA2FCC3CC",
+            "replacement_raw_size_hex": "0x491A651C"
+          },
+          {
+            "source_raw_offset": 3562555656,
+            "ruo_raw_offset": 2734948412,
+            "replacement_raw_size": 4144833714,
+            "source_raw_offset_hex": "0xD4584908",
+            "ruo_raw_offset_hex": "0xA304003C",
+            "replacement_raw_size_hex": "0xF70D24B2"
+          },
+          {
+            "source_raw_offset": 3562561810,
+            "ruo_raw_offset": 2734956267,
+            "replacement_raw_size": 4067090336,
+            "source_raw_offset_hex": "0xD4586112",
+            "ruo_raw_offset_hex": "0xA3041EEB",
+            "replacement_raw_size_hex": "0xF26ADFA0"
+          },
+          {
+            "source_raw_offset": 3562565968,
+            "ruo_raw_offset": 2734988724,
+            "replacement_raw_size": 4188219746,
+            "source_raw_offset_hex": "0xD4587150",
+            "ruo_raw_offset_hex": "0xA3049DB4",
+            "replacement_raw_size_hex": "0xF9A32962"
+          },
+          {
+            "source_raw_offset": 3633145487,
+            "ruo_raw_offset": 2734975139,
+            "replacement_raw_size": 37641788,
+            "source_raw_offset_hex": "0xD88D668F",
+            "ruo_raw_offset_hex": "0xA30468A3",
+            "replacement_raw_size_hex": "0x023E5E3C"
+          },
+          {
+            "source_raw_offset": 3633159629,
+            "ruo_raw_offset": 2734524053,
+            "replacement_raw_size": 3532021884,
+            "source_raw_offset_hex": "0xD88D9DCD",
+            "ruo_raw_offset_hex": "0xA2FD8695",
+            "replacement_raw_size_hex": "0xD286607C"
+          },
+          {
+            "source_raw_offset": 3633253167,
+            "ruo_raw_offset": 2734961749,
+            "replacement_raw_size": 3946391058,
+            "source_raw_offset_hex": "0xD88F0B2F",
+            "ruo_raw_offset_hex": "0xA3043455",
+            "replacement_raw_size_hex": "0xEB392612"
+          },
+          {
+            "source_raw_offset": 3633290025,
+            "ruo_raw_offset": 2734963548,
+            "replacement_raw_size": 3942491190,
+            "source_raw_offset_hex": "0xD88F9B29",
+            "ruo_raw_offset_hex": "0xA3043B5C",
+            "replacement_raw_size_hex": "0xEAFDA436"
+          },
+          {
+            "source_raw_offset": 3633301401,
+            "ruo_raw_offset": 2734965228,
+            "replacement_raw_size": 4212204754,
+            "source_raw_offset_hex": "0xD88FC799",
+            "ruo_raw_offset_hex": "0xA30441EC",
+            "replacement_raw_size_hex": "0xFB1124D2"
+          },
+          {
+            "source_raw_offset": 3633339993,
+            "ruo_raw_offset": 2734644278,
+            "replacement_raw_size": 3530891250,
+            "source_raw_offset_hex": "0xD8905E59",
+            "ruo_raw_offset_hex": "0xA2FF5C36",
+            "replacement_raw_size_hex": "0xD2751FF2"
+          },
+          {
+            "source_raw_offset": 3633435110,
+            "ruo_raw_offset": 2734764469,
+            "replacement_raw_size": 3557448860,
+            "source_raw_offset_hex": "0xD891D1E6",
+            "ruo_raw_offset_hex": "0xA30131B5",
+            "replacement_raw_size_hex": "0xD40A5C9C"
+          },
+          {
+            "source_raw_offset": 3665527681,
+            "ruo_raw_offset": 2735022656,
+            "replacement_raw_size": 1897776463,
+            "source_raw_offset_hex": "0xDA7B8381",
+            "ruo_raw_offset_hex": "0xA3052240",
+            "replacement_raw_size_hex": "0x711DC54F"
+          }
+        ],
+        "verification": {
+          "footer_readback": true,
+          "deterministic_signed_source_order": true,
+          "replacement_extents_before_footer": true
+        }
+      }
+    }
+  ],
+  "native_oracle": "PM Muv-Luv_PM.exe native decode/table functions emulated offline for all three resources, including the PF resource; this is not validation of the PF executable.",
+  "visual_review": {
+    "recap_frames": [
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      300
+    ],
+    "countdown_frames": [
+      0,
+      25,
+      50
+    ],
+    "cleanplate_review": true,
+    "method": "Ordered source/target frame strips and full-resolution stills; not continuous real-time playback"
+  },
+  "limitations": [
+    "No game process or streaming I/O exercised",
+    "PF executable not exercised",
+    "Hidden countdown background estimated with smooth lighting fits",
+    "Recap halo and brief echo reconstructed from source envelopes; not the original animation authoring layers",
+    "The lower Japanese warning is partly cropped in the source; 乘员撤离 conveys its visible evacuation warning without claiming to recover hidden source characters"
+  ],
+  "pixel_scope": [
+    {
+      "resource": "pm-217595660",
+      "frames": 351,
+      "unchanged_frames": 254,
+      "scope_exact": true,
+      "numeric_panel_exact": false
+    },
+    {
+      "resource": "pm-1911342516",
+      "frames": 351,
+      "unchanged_frames": 254,
+      "scope_exact": true,
+      "numeric_panel_exact": false
+    },
+    {
+      "resource": "pf-3724567232",
+      "frames": 51,
+      "unchanged_frames": 0,
+      "scope_exact": true,
+      "numeric_panel_exact": true
+    }
+  ]
+}

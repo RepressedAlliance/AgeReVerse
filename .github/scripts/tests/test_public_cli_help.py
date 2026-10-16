@@ -41,6 +41,8 @@ MODULE_COMMANDS = (
     "Localization-MakeGamesSpeak.Tools-LetToolsHandleRepetition.create_locale_template",
     "rUGP.packaging.steam_locale_preflight",
     "rUGP.tools.catalog.rio_inventory",
+    "rUGP.tools.video.crsi_workflow",
+    "rUGP.tools.video.subtitle_track",
     "rUGP.tools.images.decode_record",
     "rUGP.tools.images.decode_crmti",
     "rUGP.tools.images.export_crmt_layers",

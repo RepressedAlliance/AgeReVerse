@@ -120,6 +120,20 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           $zig = (Get-Command zig).Source
           python -m rUGP.tools.images.verify_pm_production --zig $zig --output "$env:RUNNER_TEMP/pm-production-regression"
+      - name: Build and test the independent CRsi codec and CLI
+        # The independent video codec uses the same available Zig toolchain.
+        # Production/video integration tests remain optional when FFmpeg/OpenCV
+        # are absent, but the C ABI and synthetic codec checks must run here.
+        shell: pwsh
+        run: |
+          $zig = (Get-Command zig).Source
+          & $zig cc -shared -O2 -ffp-contract=off -Wall -Wextra -Werror rUGP/formats/video/crsi_codec.c rUGP/formats/video/crsi_lossless.c rUGP/formats/video/crsi_container.c -o "$env:RUNNER_TEMP/crsi_codec.dll"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & $zig cc -O2 -ffp-contract=off -Wall -Wextra -Werror -municode rUGP/tools/video/crsi_tool.c rUGP/formats/video/crsi_codec.c rUGP/formats/video/crsi_lossless.c rUGP/formats/video/crsi_container.c -o "$env:RUNNER_TEMP/crsi_tool.exe"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $env:RUGP_CRSI_LIBRARY = "$env:RUNNER_TEMP/crsi_codec.dll"
+          python -m unittest discover -s rUGP/tests/formats/video -t . -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Build current speaker and font candidates separately from installed history
         shell: pwsh
         run: |

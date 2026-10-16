@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-12",
+  "game": "Muv-Luv photonmelodies",
+  "standard_overlay_sha256": "1adff12d0993934baef9e4e560b3b607e0457f07cc46eb0b91275a62ec2c9017",
+  "natural_playback": {
+    "resource_global_offset": 1911342516,
+    "caller_global_offset": 7265456340,
+    "candidate_record_sha256": "e7339d0503e53a87c3486657547627f3b7fd1e578c9f6ebfbf4208156f55a377",
+    "route": "Original chapter 35 recap entry reached by normal story progression from the saved volleyball finale; no script or entry reroute",
+    "title": "《时空的欠片》前情回顾",
+    "complete_context_captured": true,
+    "observed_sequence": "Kitchen before the movie, black transition, ordered digital-number construction and pixel disappearance, Chinese title enlarging and returning to its stable size with orange/white glow, script caption over the title, then Zauber close-up and dialogue",
+    "timing": {
+      "source_frames": 351,
+      "source_fps": 30,
+      "source_duration_seconds": 11.7,
+      "source_frame_matches": [90, 120, 210, 260, 265],
+      "recording_match_seconds": [92.833333, 93.833333, 96.833333, 98.5, 98.666667],
+      "common_offset_seconds": 89.833333,
+      "finding": "Selected changing frames match 1:1 time progression. The source-duration end at about 101.53 seconds agrees with the script caption appearing at about 101.6 seconds. The title background persists until the Zauber scene at about 104.1 seconds; the approximately 14.3-second scene window includes about 2.6 seconds of post-movie script display.",
+      "limitation": "Selected-frame matching and boundary inspection, not proof of every one of the 351 frames; repeated/static images make exact end-frame identification ambiguous"
+    },
+    "following_dialogue": "【扎乌伯】「算了。我正在执行任务，寻找某样东西」",
+    "private_recording_name": "pm-recap-full118-natural-20261012.mkv"
+  },
+  "alternate_playback": {
+    "source_resource_global_offset": 217595660,
+    "candidate_record_sha256": "bf269553072ddd4997f07182152340e7072ee02be9c3be6402785dbdcdab4783",
+    "test_entry_global_offset": 1911342516,
+    "test_overlay_sha256": "8a3bef26fbc9cfdb00f3d6e2c279bbd2f019865f411d3648ce4479c4d77373b7",
+    "route": "Private test overlay redirects the established 1911342516 entry to the Chinese candidate made from source 217595660; other 33 inherited redirects remain unchanged",
+    "original_source_route_proven": false,
+    "title": "《时空的欠片》前情回顾",
+    "complete_context_captured": true,
+    "observed_sequence": "Kitchen before the movie, digital numbers, Chinese title with zoom and orange/white glow, post-movie script caption, then Zauber dialogue",
+    "timing": {"source_frames": 351, "source_fps": 30, "source_duration_seconds": 11.7, "selected_dynamic_frame_match_offset_seconds": [114.3, 114.333], "script_caption_seconds_approximately": 126.1, "Zauber_scene_seconds_approximately": 128.5, "finding": "Five dynamic source-frame matches support 1:1 progression. The additional approximately 2.5 seconds before the Zauber scene are post-movie background/dialogue display."},
+    "private_recording_name": "pm-recap-source217-entry191-20261012.mkv",
+    "following_dialogue": "【扎乌伯】「算了。我正在执行任务，寻找某样东西」"
+  },
+  "manual_save": {
+    "identity": "muvluv_pm_vp1",
+    "slot": 118,
+    "page": 20,
+    "position": "upper right",
+    "empty_slot_checked": true,
+    "actually_reloaded": true,
+    "image_language": "Chinese retained after reload",
+    "scene": "Black background, 【冥夜】「武，我们终于做到了！！！」",
+    "trigger": "Load slot 118 and confirm YES. Right-click and choose 跳过; if the current dialogue remains, press Return once. Provide no further input while progression reaches the recap and its following dialogue. On the observed run the recap begins after roughly 30 seconds; ordinary skip automatically ends at the movie entry.",
+    "reload_to_target_verified": true,
+    "save_binary": "Private local artifact; not distributed in this repository"
+  },
+  "capture": {"fps": 30, "method": "Specified game-window gdigrab recording", "audio": false, "exit_codes": [0, 0], "independent_displacement_ghosting_runtime_confirmed": false},
+  "restoration": {"standard_overlay_restored": true, "restored_sha256_verified": true, "private_alternate_overlay_retained": true},
+  "shutdown": {"method": "Normal Alt+F4 after each run", "no_PM_or_PF_process_after_exit": true},
+  "formal_game_or_user_saves_modified": false
+}

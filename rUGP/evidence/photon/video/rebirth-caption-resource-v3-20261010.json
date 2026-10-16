@@ -1,0 +1,151 @@
+{
+  "schema": "photon-rebirth-caption-resource/2",
+  "date": "2026-10-10",
+  "status": "v3 packaged offline candidate; not installed, published or game-accepted",
+  "wording_and_preview": "rebirth-independent-asr-20261010.json",
+  "source_global_offset": 27493704,
+  "crsi": {
+    "original_sha256": "e00ce4045070162925f593d1b3cef3e520f7d719690fb6daf718fd1d0aee7849",
+    "output_sha256": "d3e2579e4d0910f4b55ac808423128f31c8277b8675a367f72f9626f4aba1f90",
+    "original_bytes": 90171399,
+    "output_bytes": 475244580,
+    "width": 1024,
+    "height": 600,
+    "rate": 3000,
+    "frame_count": 1905,
+    "replaced_frames": 1662,
+    "retained_original_frames": 243,
+    "replacement_mode": "0x03ff"
+  },
+  "changed_frames_from_original": 1658,
+  "dependency_closure_frames": [
+    858,
+    859,
+    1281,
+    1862
+  ],
+  "native_coverage": {
+    "schema": "photon-crsi-replacement-native-reuse/1",
+    "validation": "changed native RGB frames and all new table rows match; identical baseline frames reused",
+    "candidate_sha256": "d3e2579e4d0910f4b55ac808423128f31c8277b8675a367f72f9626f4aba1f90",
+    "build_report_sha256": "31ba6f867b3ba8d48692db3139acd6e12b9a5acf1e766632d70815758165b80c",
+    "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+    "frame_count": 1905,
+    "modes": {
+      "0x0575": 243,
+      "0x03ff": 1662
+    },
+    "tables": {
+      "validation": "offline parent and row deserialization; no game process",
+      "native_entry": "0x5830f0",
+      "native_row_entry": "0x582c70",
+      "stubs": [
+        "MFC ReadCount: observed 16-bit count",
+        "buffer allocation: bounded zero-filled memory",
+        "archive position: cursor relative to record start"
+      ],
+      "records": [
+        {
+          "record": "ending-caption-only-v3-27493704.crsi",
+          "sha256": "d3e2579e4d0910f4b55ac808423128f31c8277b8675a367f72f9626f4aba1f90",
+          "frames": 1905,
+          "table_end": 25277,
+          "dimensions": [
+            1024,
+            600
+          ],
+          "rate": 3000,
+          "all_native_rows_match": true
+        }
+      ]
+    },
+    "seconds": 381.58084229999804,
+    "limitations": [
+      "No game process or streaming IO exercised",
+      "Pixel equality does not establish translation or visual acceptance"
+    ],
+    "native_decoded_frames": 479,
+    "baseline": {
+      "candidate_sha256": "03842c819cd462122489d2589a61d4bbe9a83e938c26d7adf252d6946fc19dcb",
+      "build_report_sha256": "d251965a8b0d1bc099c129e110b54851951dd00c7b84e7506ba5c481738a0fb8",
+      "native_report_sha256": "bbaf345a17736657a69b629f03bb3aa2c347d507757eb32f1576018379f6aa09",
+      "identical_frames": 1426
+    }
+  },
+  "baseline_evidence": "rebirth-caption-resource-20261010.json",
+  "preview_binding": "All 1905 build target RGB digests equal the v3 composition report.",
+  "ruo": {
+    "file": "caption-only-v3-photonmelodies11.rio.ruo1",
+    "bytes": 479720276,
+    "sha256": "f33f941a390d9df32763170fa967ca29a1ac0e0f9f5d05c676144c638f02b236",
+    "base_sha256": "dc54624ce621259bd4928a7b25e2db0c41eb148953a2ef738a44972a3badff66",
+    "redirect_count": 31,
+    "inherited_redirects_unchanged": 30,
+    "inherited_data_exact": true,
+    "replacement_readback_exact": true,
+    "source_key": "0xa3644c23",
+    "record_offset": 4475320
+  },
+  "native_addressing": {
+    "validation": "offline native resolver and stream-range arguments; synthetic archive and hash objects",
+    "limitations": [
+      "does not execute the complete video caller, file IO, rendering or game process"
+    ],
+    "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+    "resolver_entry": "0x5d9de0",
+    "hash_lookup_entry": "0x5df070",
+    "base_calculation_range": [
+      "0x5de2f3",
+      "0x5de30b"
+    ],
+    "unit_size": 4,
+    "original_volume_base_bytes": 6442450944,
+    "patched_volume_base_bytes": 8589934592,
+    "redirects_checked": 31,
+    "all_native_addresses_and_sizes_match": true,
+    "missing_key_preserves_original": true,
+    "disabled_overlay_preserves_original": true,
+    "invalid_volume_indices_rejected": [
+      0,
+      2
+    ],
+    "64_bit_addition_carry_verified": true,
+    "native_file_position_entry": "0x5f4040",
+    "unbuffered_relative_positions_verified": [
+      0,
+      26,
+      237622290,
+      475244580
+    ],
+    "selected_source_key": "0xa3644c23",
+    "selected_ruo_byte_offset": 4475320,
+    "selected_virtual_byte_offset": 8594409912,
+    "selected_size": 475244580,
+    "native_stream_caller_range": {
+      "executed": [
+        "0x5dea1c",
+        "0x5deb00"
+      ],
+      "start": 8594409912,
+      "end": 9069654492,
+      "original_size_input": 90171399,
+      "replacement_size_used": true,
+      "stubs": [
+        "already-loaded archive handle",
+        "positive CFile runtime-type check"
+      ],
+      "limitation": "Starts after file creation; stops before bounded-file SetRange/Seek"
+    }
+  },
+  "tests": {
+    "module": "rUGP.tests.formats.video.test_native_reuse",
+    "passed": 3,
+    "coverage": "Identical relocated frames, dependency reset, changed dependent-frame rejection, target-RGB drift and header drift."
+  },
+  "limitations": [
+    "Native coverage combines 479 newly decoded frames and 1426 byte-identical baseline frames; it is not a second full sequential replay.",
+    "Offline codec, table and range checks do not execute archive registry lookup, actual file creation/Seek, rendering or game playback.",
+    "Machine audio cross-check and static frame review do not establish complete audiovisual acceptance.",
+    "Independent-frame resource size and real-time playback throughput still require in-game acceptance."
+  ]
+}

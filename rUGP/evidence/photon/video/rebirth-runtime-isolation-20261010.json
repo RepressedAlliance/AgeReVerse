@@ -1,0 +1,165 @@
+{
+  "schema": "photon-rebirth-runtime-isolation/1",
+  "date": "2026-10-10",
+  "status": "Isolated startup and save-directory repair confirmed; localized ending subsequently rendered through return to menu",
+  "scope": {
+    "identity": "muvluv_pm_vp1",
+    "route": "Software\\AGES3 Applications\\age\\muvluv_pm_vp1\\rvmmPeculiarToTheApp",
+    "formal_game_files_modified": false,
+    "formal_v11_registry_written": false,
+    "manual_save_requested": false,
+    "isolated_automatic_save_notification_observed": true,
+    "video_candidate_installed": true,
+    "installation_scope": "Private isolated game only; formal game unchanged"
+  },
+  "observations": [
+    {
+      "context": "Independent 32-bit program launched by command tool",
+      "operation": "RegOpenKeyExW with KEY_QUERY_VALUE | KEY_SET_VALUE",
+      "default_view_result": 0,
+      "view32_result": 0,
+      "view64_result": 0
+    },
+    {
+      "context": "Same independent program launched by node_repl child_process",
+      "default_view_result": 0,
+      "view32_result": 0,
+      "view64_result": 0
+    },
+    {
+      "context": "Isolated game launched from Explorer, diagnostic DLL",
+      "regopen_result": 2,
+      "guard_status": 4,
+      "launches": 2,
+      "purpose": "First obtain the system error; then inspect the registry root and failing path prefix",
+      "same_user_sid_as_independent_check": true,
+      "same_fresh_hkcu_native_root_as_independent_check": true,
+      "first_failing_prefix": "Software\\AGES3 Applications\\age\\muvluv_pm_vp1",
+      "all_parent_prefixes_open": true,
+      "exited_after_diagnostics": true
+    },
+    {
+      "context": "Independent read-only context checker launched from Explorer",
+      "game_running": false,
+      "regopen_result": 2,
+      "first_failing_prefix": "Software\\AGES3 Applications\\age\\muvluv_pm_vp1",
+      "same_user_sid_and_native_root": true
+    }
+  ],
+  "finding": "The isolated registry identity created in the command environment was not visible to Explorer-launched processes. The same failure without the game rules out a game-only cause. The mechanism producing the context difference has not been identified.",
+  "repair": {
+    "context": "Task-local helper launched from Explorer",
+    "source": "Existing v11 configuration, opened read-only",
+    "destination": "Task-specific vp1 key only",
+    "first_attempt": {
+      "target_absent_before": true,
+      "created_new_target": true,
+      "RegCopyTreeW_result": 5,
+      "stopped_on_error": true
+    },
+    "completed_attempt": {
+      "target_before": {
+        "subkeys": 0,
+        "values": 0
+      },
+      "method": "Enumerate and copy registry values and child keys without copying security descriptors",
+      "destination_guard": "Refuse a nonempty target; refuse any already-existing destination child",
+      "nonempty_guard_validation": "Independent execution against the command environment's existing 10-child vp1 key stopped before any copy or value write",
+      "subkeys_copied": 10,
+      "copy_result": 0,
+      "isolated_paths_written": [
+        "Installation.strAbsolutePath",
+        "Installation.strInstallSourcePath",
+        "Installation.strObjectOcean",
+        "Installation.strIciPath",
+        "rUGPBasic.strRugpPluginFolder",
+        "rvmmInstallation.strFontCachePath",
+        "rvmmInstallation.strVirtuaRegistryAbsolutePath"
+      ],
+      "steam_settings": {
+        "bUucUseSteamRemoteStorage": 0,
+        "nEnableWithoutSteamClient": 1,
+        "nEnableWithoutSteamLoggedOn": 1
+      },
+      "all_setting_calls_succeeded": true,
+      "route_open_after": 0,
+      "status": "prepared"
+    }
+  },
+  "runtime_chain": {
+    "initial_followup": "Outer guard passed after the registry repair; nested choice-glyph guard still expected the original executable identity.",
+    "repair": "Rebind the nested private DLL's expected host hash and the outer DLL's expected private-DLL hash to the isolated files; retain guard logic.",
+    "private_dll_changed_field": {
+      "offset": 201728,
+      "bytes": 64
+    },
+    "outer_dll_changed_field": {
+      "offset": 277648,
+      "bytes": 64
+    },
+    "other_bytes_unchanged": true,
+    "official_dll_unchanged": true,
+    "isolated_executable_sha256": "a84d1705eef5fc93b6d3c23a8a4ed8c1882220a16740b0d549371383896e1421",
+    "private_dll_sha256": "207de54bd246596ed2b078c7e35c773a5e4b2f67db2e560d0e127d048d0d35a8",
+    "outer_dll_sha256": "01aead8bc6608f95399183d8a7c9b5e56b51a58b3043f0884304b5f87208a225",
+    "ruo_sha256": "f33f941a390d9df32763170fa967ca29a1ac0e0f9f5d05c676144c638f02b236",
+    "observed": "PID 168212 reached Chinese CAUTION, title and load UI without either guard error. It reported missing system data and showed empty normal/quick-load lists.",
+    "ending_video_played": true
+  },
+  "save_directory_diagnosis": {
+    "original_source_written": false,
+    "offline_decode": "All 38 copied normal saves decode into two blocks with valid full and partial group checksums and zero trailing bytes.",
+    "format": {
+      "magic": "0x79d21e34",
+      "key": "0x0732ce9a",
+      "blocks": 2,
+      "partial_group_checksum_present": true
+    },
+    "identity_observation": "Metadata contains age\\muvluv_pm_v11 and muvluv_pm_v11. No identity rejection was established; these fields were not edited.",
+    "live_read_only_observation": {
+      "process": 168212,
+      "normal_save_directory_global": "0x6c380c",
+      "normal_save_directory_suffix": "age/muvluv_pm_vp1/",
+      "global_data_directory_global": "0x6c3b04",
+      "global_data_directory_suffix": "age/muvluv_pm_vp1/Vmreg/",
+      "steam_remote_storage_flag": 0,
+      "first_six_normal_slots_enumerated": false
+    },
+    "native_code": {
+      "normal_enumeration": "0x4530b0 combines vmr*.uuc with 0x6c380c.",
+      "cache": "0x452f1b returns without rescanning when 0x6d13bc >= 1; observed value remained 2 after returning to title and reopening Load.",
+      "metadata_reader": "0x5c5b10 reads the two encrypted blocks; 0x5c5740 reads the metadata strings."
+    },
+    "correction": "Copy the original Rebirth normal saves 4 and 27 unchanged into the isolated app-data parent directory; preserve the previous Vmreg copies.",
+    "rebirth_slots": [
+      {
+        "slot": 4,
+        "dialogue_index": 41,
+        "sha256": "962ed9d6ae51b2779b8bc9c0e35a2a591a7ee3b5bbedcab0111d237e782b3bbd"
+      },
+      {
+        "slot": 27,
+        "dialogue_index": 1,
+        "sha256": "7aec74d497bd23965b785d26108b6674cf19974220469294c26ec6a27eca8fea"
+      }
+    ],
+    "both_slots_are_early_story": true,
+    "post_correction_restart_result": "PID 168616 displays slots 4 and 27 as Resurrection after one normal restart. Slot 4 was loaded successfully into the matching indoor character scene without changing its v11 metadata identity. The initial loaded screenshots had no visible text box; no dialogue text was inferred from them."
+  },
+  "references": [
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regcopytreew",
+      "scope": "RegCopyTreeW also copies security descriptors; this alone does not prove why the observed call returned error 5"
+    },
+    {
+      "url": "https://www.winehq.org/pipermail/wine-cvs/2016-February/111887.html",
+      "scope": "Independent implementation of registry value and child enumeration; not evidence of this Windows process's behavior"
+    }
+  ],
+  "limitations": [
+    "Isolated host identity bindings are validation setup, not a player deliverable.",
+    "Ending playback and bounded audio/video measurement are recorded separately; direct human listening is not established.",
+    "Formal game and v11 registry were not modified."
+  ],
+  "ending_runtime_evidence": "rebirth-ending-runtime-20261010.json"
+}

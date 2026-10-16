@@ -52,6 +52,7 @@ ICI 目录元数据
 | [Cr6Ti](../../rUGP/docs/postmortems/cr6ti.md) | 对象序列化长度与 RIO 放置填充不是同一个数；遗留样本还存在明确配置差异 | [图片格式](../../rUGP/formats/images/) |
 | [CRip007](../../rUGP/docs/postmortems/crip007.md) | 已审查灰度路线通过保持头部契约并使用 8 位通道，避免抗锯齿量化损失 | 编解码器与独立回读测试 |
 | [CRip008](../../rUGP/docs/postmortems/crip008.md) | 从样本与原生行为重建了头部、MSB 整数流、绘制矩形、预测器及 kind 特有透明度 | [图片格式](../../rUGP/formats/images/)与 kind 2/3 测试 |
+| [CRsi 剧情影片](../../rUGP/docs/crsi-format.md) | 帧索引、空间／帧间预测和颜色编码组成独立视频格式；复用图片研究中的部分码字，不等于 CRip008 图片序列 | [C 核心与制作工具](../../rUGP/tools/video/README.md)、[两作资源范围](../../rUGP/docs/photon-video-scope.md) |
 | [字体运行时](../../rUGP/docs/postmortems/font-runtime.md) | 字体文件覆盖、家族选择、注册、GDI 请求和图片内文字是不同层，必须分别验证 | [运行时源码](../../rUGP/runtime/)与可复现构建测试 |
 | [42 个 shared/common 图片](../../rUGP/docs/postmortems/shared-common-images.md) | 1,448 个 translation peer 与 42 个 common endpoint 使用不同语义路由，不能简单覆盖同一槽 | [1,490 图清单](../../rUGP/evidence/photon/images/)与[路由闭环](../../rUGP/evidence/photon/routes/) |
 | [ICI 尺寸元数据](../../rUGP/docs/postmortems/ici-resize-metadata.md) | 改尺寸涉及两个 `CInstallSource` 大小、bitmap 增长和未知包装位；只改一处会留下不一致 | 差分记录和独立静态解码；候选未获实机批准 |

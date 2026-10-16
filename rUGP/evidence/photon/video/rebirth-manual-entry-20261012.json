@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-12",
+  "game": "Muv-Luv photonmelodies",
+  "scope": "Private pre-movie saves for manual acceptance; existing full playback evidence remains separate",
+  "identity": "muvluv_pm_vp1",
+  "formal_game_or_user_saves_modified": false,
+  "entries": [
+    {
+      "resource_global_offset": 117665112,
+      "slot": 115,
+      "page": 20,
+      "position": "upper left",
+      "empty_slot_checked": true,
+      "actually_reloaded": true,
+      "saved_scene": "Black background, 【西尔维奥】「……………………唔…………」",
+      "distance": "Start of the 71-line scene preceding the video, not a one-click adjacent stop",
+      "trigger": "Continue ordinary dialogue, or use the game's ordinary Skip with all-text mode; do not skip the movie",
+      "reload_to_target_verified": true,
+      "chinese_witnesses": ["代号：伪面。", "生还之后"]
+    },
+    {
+      "resource_global_offset": 27493704,
+      "slot": 116,
+      "page": 20,
+      "position": "middle left",
+      "empty_slot_checked": true,
+      "actually_reloaded": true,
+      "saved_scene": "铠衣科长 close-up, 【香月博士】「啊……」",
+      "reload_behavior": "Immediately enters staff credits, before the target ending movie; no persistent dialogue wait",
+      "trigger": "Load and provide no further input; credits lead into the ending video, copyright and story menu",
+      "reload_to_target_verified": true,
+      "chinese_witnesses": ["从死亡与绝望的深渊中重生的奇迹之人。"]
+    }
+  ],
+  "image_language": "Chinese selected before saving and confirmed in both target movies after actual reload",
+  "save_distribution": "Save binaries and private recordings remain local, not included in source or a released patch",
+  "shutdown_after_rebirth_validation": "Normal exit; no PM game process remained",
+  "limits": "Entry and Chinese resource selection verified; this pass does not replace the earlier full caption checks or human audio review"
+}

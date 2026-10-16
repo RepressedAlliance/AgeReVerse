@@ -10,6 +10,7 @@
 | 静态图与制作状态 | [images](images/README.md)：V6 历史资产与后续选集分别维护 |
 | 演出图与缩放层 | [crmt](crmt/README.md)：父对象、语言配对、各层及处理决定 |
 | 图片的逻辑语言端点 | [routes](routes/README.md)：1,448 个 translation peer 与 42 个 shared/common 端点 |
+| 剧情视频与检查范围 | [视频范围](../../docs/photon-video-scope.md)：43条CRsi与11份动态职员表；制作、离线核对和实机证据分别记载 |
 
 `text-data/layout-baseline` 保存不可变绑定基线，当前正文只在章节 CSV 编辑；回归数据与历史合同不是第二套新正文。完整官方日英脚本由使用者从合法游戏副本提取，不在此镜像。
 

@@ -1,0 +1,67 @@
+{
+  "schema": "photon-rebirth-japanese-context/1",
+  "date": "2026-10-10",
+  "status": "Three ending draft cues revised using official Japanese character context; direct ending-audio review still pending",
+  "sources": [
+    {
+      "url": "https://game.mages.co.jp/muvluv/fm/melodies/character/",
+      "type": "official Japanese character profile",
+      "location": "Silvio Orlandi biography, including its image alternative text",
+      "supports": "Machine damage during a secret assault operation, subsequent BETA attack, voluntary participation as an experimental subject in the EU program restoring wounded servicemen to combat capability.",
+      "scope_limit": "This profile describes the earlier Falso state, including 10 m and 100 km/h. It is not an ending transcript and must not replace the ending's Fenice identity or upgraded capabilities. Omission here does not establish omission from the ending narration."
+    },
+    {
+      "url": "https://www.age-soft.com/former/Product/chr/contents/saitan/index.html",
+      "type": "official Japanese story introduction",
+      "supports": "Character name and story context only; no ending narration transcript."
+    },
+    {
+      "url": "https://note.com/ru_114514/n/n07c6ae63c4a4",
+      "type": "independent player impression",
+      "published": "2025-04-19",
+      "supports": "Reports the change from the six-million-euro man to the nine-million-euro man at the ending.",
+      "scope_limit": "A player's impression, not an authoritative transcript or independent listening review of this patch. No usable independent full narration transcript was found."
+    }
+  ],
+  "revisions": [
+    {
+      "id": "narration.abandon",
+      "variant": "long",
+      "target": "在绝密强袭作战中机体受损后，",
+      "reason": "Use the Japanese profile's machine-damage event instead of relying on the English subtitle's abandonment wording. The following existing cue supplies the BETA attack."
+    },
+    {
+      "id": "narration.volunteer",
+      "variant": "long",
+      "target": "他自愿成为欧盟伤残军人战力恢复计划——",
+      "reason": "Express restoration of combat capability rather than redevelopment; read together with the following cue."
+    },
+    {
+      "id": "narration.project",
+      "variant": "long",
+      "target": "“Cybrid计划”的受试者。",
+      "reason": "Preserve the explicit experimental-subject role; retain Cybrid and 受试者 terminology used in the existing Chinese story."
+    }
+  ],
+  "scope": "Only the ending (long) draft changes. Previously shared rows are split; short-version draft wording and source-English observations are preserved.",
+  "adoption": "Revised CSV and review stills only. The v2 video, CRsi and RUO retain the earlier wording and must not be mistaken for this revision. No installation or publication.",
+  "subsequent_adoption": "The three context revisions are included in offline video and packaged resource v3; see rebirth-independent-asr-20261010.json and rebirth-caption-resource-v3-20261010.json. Not installed or game-accepted.",
+  "visual_review": {
+    "private_directory": "local-internal/pm-rebirth-video/narration-context-review",
+    "witness_frames": [540, 900, 960],
+    "method": "Three full 1024x600 images rendered on previously checked clean witness frames with the existing shared narration style, then viewed at native size.",
+    "result": "No observed clipping, inconsistent font size or obvious old-letter residue. All revised glyphs exist in the locked font and text/effect layers fit the frame. Shared 22px, weight 400 and baseline 574 retained; no per-cue scaling.",
+    "limits": "Static witnesses only; not continuous playback, timing approval or direct audio review.",
+    "scope_check": "Exactly three long-version targets changed. All short-version targets, statuses and witness frames remain unchanged; all source-English observations remain unchanged.",
+    "image_sha256": {
+      "narration.abandon.png": "cd98d72f516e82946fd0ef04c759190b432154c4c505f1c9bf870899cc4e6c57",
+      "narration.volunteer.png": "fdef47cac3516d39fd7218310cf1fd11777fa2fe4483bde51ed2e0416167d7af",
+      "narration.project.png": "bedbe9c417739ce3947cc4b1747547e3df92c543b5ed07fe5aec70507dbc715b"
+    }
+  },
+  "remaining": [
+    "Verify every cue against the original ending audio, including the three context-supported revisions and their timing.",
+    "Resolve whether the ending voice actually includes the advanced-parts and bare-hands details.",
+    "Rebuild video and game resources from the accepted text, then complete audiovisual and in-game acceptance."
+  ]
+}

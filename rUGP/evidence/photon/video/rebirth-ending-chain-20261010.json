@@ -1,0 +1,230 @@
+{
+  "schema": "photon-crsi-ending-chain/1",
+  "method": "Existing strict CrsaVmStream parser; no game execution",
+  "scope": "Final dialogue -> staff-roll script -> long body-introduction script; short-version caller pending",
+  "sources": [
+    {
+      "global_offset": 7776805328,
+      "volume": "photonmelodies11.rio.004",
+      "volume_offset": 1838831072,
+      "record_bytes": 73888,
+      "record_sha256": "013ac2f172d262989564b54ee050b71581e644c47455bfc203467ff54b789e65",
+      "command_count": 603,
+      "jump_targets": [
+        7781518876
+      ]
+    },
+    {
+      "global_offset": 7781518876,
+      "volume": "photonmelodies11.rio.004",
+      "volume_offset": 1843544620,
+      "record_bytes": 897,
+      "record_sha256": "50e79697e3c8059c752ee510a8ef42f56793997ac6fcb091292ad5093f87855a",
+      "command_count": 16,
+      "jump_targets": [
+        7784885952
+      ]
+    },
+    {
+      "global_offset": 7784885952,
+      "volume": "photonmelodies11.rio.004",
+      "volume_offset": 1846911696,
+      "record_bytes": 1819,
+      "record_sha256": "adb554db8f74fe1f2ecaa250c157bf7f092a3110083ae1ebdfa20858f31a234c",
+      "command_count": 39,
+      "jump_targets": [
+        6004160876
+      ]
+    }
+  ],
+  "selected_commands": [
+    {
+      "order": 10,
+      "name": "CVmSound",
+      "target": 416,
+      "fields": {
+        "object": {
+          "object": "CPmBgm",
+          "global_offset": 7785014532
+        },
+        "kind": 2,
+        "options": 32,
+        "parameters": [
+          4096,
+          0,
+          1000
+        ],
+        "resource": {
+          "object": "COptimizedObs",
+          "global_offset": 7785014604
+        }
+      }
+    },
+    {
+      "order": 11,
+      "name": "CVmFlagOp",
+      "target": 448,
+      "fields": {
+        "a": {
+          "integer": 0
+        },
+        "b": {
+          "object": "CInt",
+          "global_offset": 568804
+        },
+        "jump": {
+          "kind": "object",
+          "name": "null"
+        },
+        "operation": 66,
+        "mode": 1,
+        "target": 636
+      }
+    },
+    {
+      "order": 12,
+      "name": "CVmCall",
+      "target": 500,
+      "fields": {
+        "script": {
+          "object": "CRsa",
+          "global_offset": 1339182176
+        },
+        "arguments": [
+          {
+            "object": "CPmVideoRef",
+            "global_offset": 1904699576
+          },
+          {
+            "integer": 2
+          }
+        ],
+        "bindings": [
+          [
+            0,
+            {
+              "object": "CRsi",
+              "global_offset": 1715679260
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "order": 15,
+      "name": "CVmFlagOp",
+      "target": 668,
+      "fields": {
+        "a": {
+          "integer": 0
+        },
+        "b": {
+          "object": "CInt",
+          "global_offset": 568804
+        },
+        "jump": {
+          "kind": "object",
+          "name": "null"
+        },
+        "operation": 67,
+        "mode": 1,
+        "target": 856
+      }
+    },
+    {
+      "order": 16,
+      "name": "CVmCall",
+      "target": 720,
+      "fields": {
+        "script": {
+          "object": "CRsa",
+          "global_offset": 1339182176
+        },
+        "arguments": [
+          {
+            "object": "CPmVideoRef",
+            "global_offset": 210804580
+          },
+          {
+            "integer": 2
+          }
+        ],
+        "bindings": [
+          [
+            0,
+            {
+              "object": "CRsi",
+              "global_offset": 27493704
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "order": 19,
+      "name": "CVmDirectionSync",
+      "target": 880,
+      "fields": {
+        "mode": 0,
+        "objects": []
+      }
+    },
+    {
+      "order": 20,
+      "name": "CVmCall",
+      "target": 924,
+      "fields": {
+        "script": {
+          "object": "CRsa",
+          "global_offset": 1685322196
+        },
+        "arguments": [
+          {
+            "integer": 0
+          },
+          {
+            "integer": 0
+          }
+        ],
+        "bindings": []
+      }
+    },
+    {
+      "order": 21,
+      "name": "CVmSound",
+      "target": 952,
+      "fields": {
+        "object": {
+          "kind": "object",
+          "name": "null"
+        },
+        "kind": 255,
+        "options": 32,
+        "parameters": [
+          4096,
+          0,
+          1000
+        ]
+      }
+    }
+  ],
+  "audio": {
+    "class_name": "COptimizedObs",
+    "global_offset": 7785014604,
+    "volume": "photonmelodies11.rio.004",
+    "volume_offset": 1847040348,
+    "extent": 1008007,
+    "sha256": "377d2fb254ada1e477cb5e1aab8d60f8ebdb8a951e0ed63bf7ad0901b7a479d8",
+    "decoder": "vgmstream r2117 win64",
+    "decoder_sha256": "29DF08C557ADA8269C92A6ABFE3886AD2F65849B0B26BA78A0819B363BBC5B85",
+    "sample_rate": 44100,
+    "channels": 2,
+    "samples": 2799808,
+    "duration_seconds": 63.48770975056689
+  },
+  "limitations": [
+    "Branch CInt semantic name and operators not independently established",
+    "Audio decode and static command order do not prove game synchronization",
+    "No production resource replacement or runtime playback verification"
+  ]
+}

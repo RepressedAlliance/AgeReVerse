@@ -1,0 +1,160 @@
+{
+  "schema": "photon-rebirth-caption-only-draft/1",
+  "date": "2026-10-10",
+  "status": "offline visual draft; not a game patch",
+  "source_classification": "rebirth-language-branches-20261010.json",
+  "source_global_offset": 27493704,
+  "clean_background_global_offset": 1715679260,
+  "frame_count": 1905,
+  "modified_frames": 1658,
+  "outside_allowed_changed_pixels": 0,
+  "preserved": "Original notice, technical text, prices, animations, and all source pixels outside caption-repair/new-caption masks",
+  "background_method": "Japanese-branch temporal nearest pair; glyph-template plus native-size punctuation mask replacement with feather; original English frame outside mask preserved; shared Noto caption layer",
+  "repair_band": [
+    0,
+    505,
+    1024,
+    589
+  ],
+  "repair_temporal_padding": {
+    "before_frames": 2,
+    "after_frames": 3,
+    "status": "22 cue boundaries sampled; no obvious remnants in reviewed frames"
+  },
+  "matching": {
+    "top_feature_size": [
+      128,
+      64
+    ],
+    "top_source_rows": [
+      0,
+      505
+    ],
+    "candidate_pair_start_delta": [
+      -4,
+      1
+    ],
+    "blend": "least-squares adjacent-frame blend, chosen by minimum top-feature mean absolute error",
+    "limitation": "Approximate background restoration; not byte-exact source reconstruction"
+  },
+  "typography": {
+    "profile": "rebirth-ending-style.json",
+    "role": "narration",
+    "font": "Noto Sans SC 2.04",
+    "size": 22,
+    "weight": 400,
+    "baseline": 574,
+    "outline": 1.1
+  },
+  "review": {
+    "caption_count": 22,
+    "witness_frames": [
+      240,
+      300,
+      360,
+      420,
+      540,
+      600,
+      660,
+      780,
+      840,
+      900,
+      960,
+      1080,
+      1140,
+      1200,
+      1320,
+      1440,
+      1500,
+      1560,
+      1620,
+      1680,
+      1800,
+      1830
+    ],
+    "coverage": "All 22 clean and Chinese caption strips visually inspected at native width; full frame 240 also inspected",
+    "first_draft_rejection": "Half-resolution templates missed several punctuation outlines",
+    "correction": "Union with native-size white glyph components near dark outlines; preserve small punctuation components",
+    "observed": "The identified punctuation remnants are absent in v2 witness strips. No obvious glyph clipping or grid break found in these samples.",
+    "limitations": [
+      "Not continuous playback or full visual acceptance",
+      "Dense boundary and selected adjacent-frame samples reviewed; full motion acceptance pending",
+      "Narration wording is not yet reviewed against Japanese audio",
+      "Nominal 30fps; real-game synchronization remains unverified"
+    ],
+    "boundary_review": {
+      "captions": 22,
+      "comparisons": 88,
+      "frames": "start-1, start, end-1, end for each cue",
+      "display": "side-by-side strips at half width",
+      "observed": "No obvious English remnants or caption position jumps in these samples"
+    },
+    "adjacent_frame_review": {
+      "frames": [
+        [
+          1029,
+          1030,
+          1031,
+          1032,
+          1033
+        ],
+        [
+          1824,
+          1825,
+          1826,
+          1827,
+          1828
+        ],
+        [
+          1735,
+          1736,
+          1737,
+          1738,
+          1739
+        ],
+        [
+          1413,
+          1414,
+          1415,
+          1416,
+          1417
+        ]
+      ],
+      "display": "native-width clean and Chinese caption bands",
+      "selection": "four distinct high alignment-error regions: fade, bright transition and animated grid",
+      "observed": "No obvious repair seams or position jumps in these 20 adjacent-frame comparisons",
+      "limitation": "Not full continuous playback acceptance"
+    }
+  },
+  "preview": {
+    "file": "ending-caption-only-draft-v2.mp4",
+    "sha256": "08ab7c8af1993d4327acad5fee78c74c9b6bcc9e4566ed360952ee58ed8fefbc",
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1024,
+        "height": 600,
+        "duration": "63.500000",
+        "nb_frames": "1905"
+      },
+      {
+        "codec_name": "aac",
+        "duration": "63.487007",
+        "nb_frames": "2736"
+      }
+    ],
+    "audio": "Original ending WAV encoded to AAC for preview; production audio untouched"
+  },
+  "local_recipe": {
+    "file": "compose_caption_only_draft.py",
+    "sha256": "47d793125662770cc7856e8aa5069b04bf27794bad89e8fdeca71627e0e404a1",
+    "status": "historical private prototype; superseded by the pixel-identical reusable compositor"
+  },
+  "reusable_recipe": {
+    "module": "rUGP.tools.video.caption_compositor",
+    "reproduced_frames": 1905,
+    "all_rgb_equal_to_v2": true,
+    "cached_layers_or_masks_required": false,
+    "outside_allowed_changed_pixels": 0
+  }
+}

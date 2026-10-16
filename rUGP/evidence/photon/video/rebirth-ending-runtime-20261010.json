@@ -1,0 +1,191 @@
+{
+  "schema": "photon-rebirth-ending-runtime/1",
+  "date": "2026-10-10",
+  "status": "Localized ending rendered through completion in isolated game; bounded recorded synchronization measurements, no direct listening approval",
+  "process_id": 168616,
+  "source_global_offset": 27493704,
+  "resource_sha256": "d3e2579e4d0910f4b55ac808423128f31c8277b8675a367f72f9626f4aba1f90",
+  "ruo_sha256": "f33f941a390d9df32763170fa967ca29a1ac0e0f9f5d05c676144c638f02b236",
+  "navigation": "Normal slot 4; isolated image language Chinese; skip all enabled through ordinary UI. Final dialogue progressed into credits without further input.",
+  "input_during_capture": false,
+  "stages": [
+    "staff credits",
+    "body-modification video with Chinese narration captions",
+    "copyright",
+    "Rebirth menu"
+  ],
+  "video_capture": {
+    "bytes": 98219591,
+    "sha256": "f550963b0afc2d3658ca93fc7a4696ff36097145a2448e32b4e65c04a51f4d0f",
+    "seconds": 158.933,
+    "width": 1024,
+    "height": 600,
+    "method": "Window-only gdigrab; H.264 4:4:4 CRF16, nominal 30fps; source timestamps retained with millisecond/timebase rounding",
+    "caveat": "Capture log contains repeated non-strictly-monotonic PTS warnings; frame sampling cannot prove every displayed frame was recorded."
+  },
+  "audio_capture": {
+    "bytes": 29695220,
+    "sha256": "44f655c434cb130420a9d27211bcad2f47f88ed2ae22437ae37dc28bb6c778b5",
+    "seconds": 168.34,
+    "sample_rate": 44100,
+    "channels": 2,
+    "scope": "WASAPI process-loopback including target process tree only; no microphone or system mix"
+  },
+  "visual_review": {
+    "overview_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155
+    ],
+    "all_22_caption_witnesses_inspected": true,
+    "full_size_witnesses": [
+      "narration.speed",
+      "narration.cybrid"
+    ],
+    "observed": "Consistent caption typography; correct ending-specific 900万/20米/120公里; no obvious English caption residue or clipping in inspected frames."
+  },
+  "quantitative_alignment": {
+    "audio_offset_in_wav_seconds": 41.61015873015873,
+    "audio_matches": [
+      {
+        "source_seconds": 2,
+        "recording_seconds": 43.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9716561436653137
+      },
+      {
+        "source_seconds": 6,
+        "recording_seconds": 47.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9703970551490784
+      },
+      {
+        "source_seconds": 10,
+        "recording_seconds": 51.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9714214205741882
+      },
+      {
+        "source_seconds": 14,
+        "recording_seconds": 55.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9678298830986023
+      },
+      {
+        "source_seconds": 18,
+        "recording_seconds": 59.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9691122174263
+      },
+      {
+        "source_seconds": 22,
+        "recording_seconds": 63.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9627479910850525
+      },
+      {
+        "source_seconds": 26,
+        "recording_seconds": 67.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.97152179479599
+      },
+      {
+        "source_seconds": 30,
+        "recording_seconds": 71.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9720777869224548
+      },
+      {
+        "source_seconds": 34,
+        "recording_seconds": 75.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9727250933647156
+      },
+      {
+        "source_seconds": 38,
+        "recording_seconds": 79.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9590750932693481
+      },
+      {
+        "source_seconds": 42,
+        "recording_seconds": 83.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.97611004114151
+      },
+      {
+        "source_seconds": 46,
+        "recording_seconds": 87.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9641859531402588
+      },
+      {
+        "source_seconds": 50,
+        "recording_seconds": 91.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9699897170066833
+      },
+      {
+        "source_seconds": 54,
+        "recording_seconds": 95.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9651615619659424
+      },
+      {
+        "source_seconds": 58,
+        "recording_seconds": 99.61015873015873,
+        "offset_seconds": 41.61015873015873,
+        "correlation": 0.9742700457572937
+      }
+    ],
+    "audio_first_packet_epoch": 1791586714.223902,
+    "video_first_frame_epoch": 1791586723.961581,
+    "audio_start_in_video_seconds": 31.872479677200317,
+    "visual_start_in_video_seconds": 31.500000000000004,
+    "visual_minus_audio_seconds": -0.37247967720031383,
+    "visual_good_matches": 1767,
+    "visual_matched_frames": 1860,
+    "visual_start_offset_percentiles": [
+      31.43333333333333,
+      31.499666666666663,
+      31.500000000000004,
+      31.53366666666667,
+      31.733333333333338
+    ]
+  },
+  "limits": [
+    "Visual scene/caption witnesses and automated frame matching cover the recorded sequence; these are not a claim of human continuous audiovisual viewing.",
+    "The measured visual timeline begins about 0.372s ahead of the source audio timeline. No cumulative drift appears in the measured windows; the absolute offset has no unmodified-game baseline and is not silently corrected.",
+    "Content timing, source frame count and original game audio remain unchanged. Machine transcription and waveform correlation do not equal direct listening.",
+    "Private isolated runtime only; no formal installation or publication."
+  ]
+}

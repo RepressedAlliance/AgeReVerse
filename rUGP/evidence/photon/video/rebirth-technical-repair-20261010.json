@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-10",
+  "status": "offline research; no production-quality acceptance",
+  "source_global_offset": 1715679260,
+  "layout": "../../../games/photonmelodies/video-localization/rebirth-ending-technical.layout.json",
+  "analysis": {
+    "technical_rows": 25,
+    "glyph_contact_sheet_visually_reviewed": true,
+    "public_tool_reproduces_private_prototype": {
+      "masks": 25,
+      "frame_signals": 25,
+      "comparison": "array_equal for every array"
+    },
+    "timing_status": "candidate threshold intervals, not boundary-approved"
+  },
+  "rejected_spatial_repair": {
+    "source_range": [
+      1290,
+      1372
+    ],
+    "methods": [
+      "OpenCV Telea, 9x9 mask dilation",
+      "OpenCV Navier-Stokes, 25x25 mask dilation"
+    ],
+    "reason": "visible text glow smears, broken grid and wrist detail loss"
+  },
+  "temporal_repair": {
+    "source_range": [
+      1218,
+      1382
+    ],
+    "crop_xyxy": [
+      64,
+      240,
+      640,
+      560
+    ],
+    "resize": false,
+    "mask_dilation_square": 25,
+    "upstream": {
+      "repo": "https://github.com/sczhou/ProPainter",
+      "commit": "e870e79321c31b733e2031af5aa2fb1fe3ac7eec",
+      "license": "S-Lab License 1.0, non-commercial",
+      "weights": [
+        {
+          "name": "ProPainter.pth",
+          "bytes": 157780510,
+          "sha256": "12c070c4b48f374c91d8a2a17851140b85c159621080989f9e191bbc18bd6591",
+          "url": "https://github.com/sczhou/ProPainter/releases/download/v0.1.0/ProPainter.pth"
+        },
+        {
+          "name": "raft-things.pth",
+          "bytes": 21108000,
+          "sha256": "fcfa4125d6418f4de95d84aec20a3c5f4e205101715a79f193243c186ac9a7e1",
+          "url": "https://github.com/sczhou/ProPainter/releases/download/v0.1.0/raft-things.pth"
+        },
+        {
+          "name": "recurrent_flow_completion.pth",
+          "bytes": 20348681,
+          "sha256": "22939a1a7900da878dbe1ccd011d646b1bfb30b8290039d8ff0e0c2fefbfd283",
+          "url": "https://github.com/sczhou/ProPainter/releases/download/v0.1.0/recurrent_flow_completion.pth"
+        }
+      ]
+    },
+    "runtime": {
+      "torch": "2.5.1+cu124",
+      "torchvision": "0.20.1",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "fp16": true,
+      "subvideo_length": 30,
+      "neighbor_length": 6,
+      "ref_stride": 15,
+      "mask_dilation_in_upstream": 0
+    },
+    "variants": [
+      {
+        "name": "arm-temporal-results",
+        "frames": 164,
+        "elapsed_seconds": 66.7,
+        "clean_endpoint_references": false,
+        "unmasked_pixels_identical_all_frames": true
+      },
+      {
+        "name": "arm-temporal-endpoint-results",
+        "frames": 164,
+        "elapsed_seconds": 65.2,
+        "clean_endpoint_references": true,
+        "unmasked_pixels_identical_all_frames": true
+      }
+    ],
+    "second_variant_adjustment": "Add first and last unmasked frames to transformer references; on-disk upstream source unchanged; wrapper changes executed reference list",
+    "reviewed_first_variant_frames": [
+      1225,
+      1230,
+      1250,
+      1270,
+      1290,
+      1300,
+      1310,
+      1320,
+      1330,
+      1340,
+      1350,
+      1360,
+      1365,
+      1370
+    ],
+    "reviewed_second_variant_frames": [
+      1320,
+      1330,
+      1360
+    ],
+    "findings": "English glyph removal and model preservation improve over spatial-only repair; slight grid bending/softening and stripe artifacts remain. Endpoint references do not establish production quality."
+  },
+  "chinese_preview": {
+    "file": "ending-arm-localization-draft.mp4",
+    "bytes": 32173425,
+    "sha256": "f4638a8ec99e50342dd69aecc58dd8bd11b13304150e6c493829dcf235ca8dcb",
+    "video_frames": 1904,
+    "dimensions": [
+      1024,
+      600
+    ],
+    "nominal_fps": "30/1",
+    "video_duration_seconds": 63.466667,
+    "audio_duration_seconds": 63.487007,
+    "chinese_narration_events": 22,
+    "chinese_technical_rows": 6,
+    "technical_scope": "arm only",
+    "full_frame_layout_witness": 1330,
+    "audio_source": "original long ending decoded audio; AAC only in preview"
+  },
+  "limitations": [
+    "Eye, leg and opening notice graphics remain untranslated in this preview",
+    "Reveal/fade/price blinking are threshold-driven draft approximations",
+    "No complete audiovisual viewing, Japanese listening check or native-game acceptance",
+    "No production CRsi encoding, installation, push or release",
+    "All game pixels, model weights and research runtime remain local and untracked"
+  ]
+}

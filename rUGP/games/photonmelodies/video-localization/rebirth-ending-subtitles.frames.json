@@ -1,0 +1,160 @@
+{
+  "schema": "photon-crsi-caption-frames/1",
+  "source_global_offset": 27493704,
+  "source_sha256": "e00ce4045070162925f593d1b3cef3e520f7d719690fb6daf718fd1d0aee7849",
+  "frame_count": 1905,
+  "frame_index_origin": 0,
+  "end_semantics": "exclusive",
+  "text_file": "rebirth-text.zh-CN.csv",
+  "text_variant": "long",
+  "verification": "Every frame analyzed with fixed-position white glyph/black outline templates; start-1/start/end-1/end crops visually inspected for all 22 captions",
+  "native_default_clock": {
+    "method_entry": "0x5814b0",
+    "import_slot": "0x618194",
+    "import_name": "KERNEL32.dll!MulDiv",
+    "formula_ms": "MulDiv(frame_index, 100000, header_rate)",
+    "header_rate": 3000,
+    "fps_numerator": 30,
+    "fps_denominator": 1,
+    "limitation": "Controller override at +0xb8 and real playback synchronization remain unverified"
+  },
+  "limitations": [
+    "Frame ranges refer only to the English-subtitled long CRsi; do not apply a fixed frame shift to the no-subtitle video",
+    "Weak glyph residue at frame 1859 is excluded from the final caption body",
+    "Chinese wording remains draft; no production rendering or game synchronization verification"
+  ],
+  "captions": [
+    {
+      "id": "narration.name",
+      "start_frame": 198,
+      "end_frame": 248,
+      "witness_frame": 240
+    },
+    {
+      "id": "narration.rank",
+      "start_frame": 249,
+      "end_frame": 321,
+      "witness_frame": 300
+    },
+    {
+      "id": "narration.codename",
+      "start_frame": 321,
+      "end_frame": 380,
+      "witness_frame": 360
+    },
+    {
+      "id": "narration.miracle",
+      "start_frame": 380,
+      "end_frame": 491,
+      "witness_frame": 420
+    },
+    {
+      "id": "narration.abandon",
+      "start_frame": 493,
+      "end_frame": 572,
+      "witness_frame": 540
+    },
+    {
+      "id": "narration.beta",
+      "start_frame": 572,
+      "end_frame": 630,
+      "witness_frame": 600
+    },
+    {
+      "id": "narration.loss",
+      "start_frame": 630,
+      "end_frame": 726,
+      "witness_frame": 660
+    },
+    {
+      "id": "narration.survival",
+      "start_frame": 731,
+      "end_frame": 798,
+      "witness_frame": 780
+    },
+    {
+      "id": "narration.wish",
+      "start_frame": 799,
+      "end_frame": 855,
+      "witness_frame": 840
+    },
+    {
+      "id": "narration.volunteer",
+      "start_frame": 866,
+      "end_frame": 938,
+      "witness_frame": 900
+    },
+    {
+      "id": "narration.project",
+      "start_frame": 938,
+      "end_frame": 1036,
+      "witness_frame": 960
+    },
+    {
+      "id": "narration.rebuild",
+      "start_frame": 1036,
+      "end_frame": 1104,
+      "witness_frame": 1080
+    },
+    {
+      "id": "narration.enhancement",
+      "start_frame": 1104,
+      "end_frame": 1184,
+      "witness_frame": 1140
+    },
+    {
+      "id": "narration.total",
+      "start_frame": 1190,
+      "end_frame": 1278,
+      "witness_frame": 1200
+    },
+    {
+      "id": "narration.eye",
+      "start_frame": 1284,
+      "end_frame": 1380,
+      "witness_frame": 1320
+    },
+    {
+      "id": "narration.skeleton",
+      "start_frame": 1381,
+      "end_frame": 1453,
+      "witness_frame": 1440
+    },
+    {
+      "id": "narration.muscle",
+      "start_frame": 1454,
+      "end_frame": 1534,
+      "witness_frame": 1500
+    },
+    {
+      "id": "narration.crush",
+      "start_frame": 1534,
+      "end_frame": 1585,
+      "witness_frame": 1560
+    },
+    {
+      "id": "narration.jump",
+      "start_frame": 1585,
+      "end_frame": 1647,
+      "witness_frame": 1620
+    },
+    {
+      "id": "narration.speed",
+      "start_frame": 1647,
+      "end_frame": 1744,
+      "witness_frame": 1680
+    },
+    {
+      "id": "narration.man",
+      "start_frame": 1744,
+      "end_frame": 1805,
+      "witness_frame": 1800
+    },
+    {
+      "id": "narration.cybrid",
+      "start_frame": 1806,
+      "end_frame": 1859,
+      "witness_frame": 1830
+    }
+  ]
+}

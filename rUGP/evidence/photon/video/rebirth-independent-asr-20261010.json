@@ -1,0 +1,91 @@
+{
+  "schema": "photon-rebirth-independent-asr/1",
+  "date": "2026-10-10",
+  "status": "Independent machine-audio cross-check and revised offline video; not human listening approval or game acceptance",
+  "discovery": {
+    "plugin_search": "Audio/transcription plugins were checked. Results mostly retrieve saved meetings; Descript advertised transcription but was unconnected. No plugin was connected and no audio was uploaded.",
+    "source_search": "No usable full ending transcript found; official character context retained only within its stated scope."
+  },
+  "model": {
+    "name": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+    "runtime": "sherpa-onnx 1.13.8 CPU",
+    "sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+    "documentation": "https://k2-fsa.github.io/sherpa/onnx/sense-voice/pretrained.html",
+    "upstream": "https://github.com/QwenAudio/SenseVoice",
+    "source_archive": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17.tar.bz2",
+    "setup": "Task-local Python packages and model. An ONNX DLL version conflict was resolved by loading the bundled runtime in this process; no shared runtime/global configuration changed."
+  },
+  "input": {
+    "resource_global_offset": 7785014604,
+    "wav_sha256": "92db1716830bd62298961b103b63159ab6ba809c05c95481870501f02a5fe939",
+    "segments_seconds": [
+      [
+        6.0,
+        25.0
+      ],
+      [
+        23.5,
+        43.0
+      ],
+      [
+        41.0,
+        63.48775
+      ]
+    ],
+    "method": "Original audio decoded locally to 16 kHz mono; three overlapping regions; Japanese; no text prompts or supplied candidate transcript."
+  },
+  "independence": "SenseVoice consumed the original audio without the Chinese draft or previous transcripts. It is a different model architecture from the three previous Whisper-based runs, but remains automatic recognition.",
+  "findings": {
+    "surgery": "Supports the shorter surgery wording also recognized by the previous models.",
+    "strength": "Supports crushing reinforced concrete without recognizing a bare-hands qualifier.",
+    "names": "Proper names and homophones are still misrecognized, e.g. military rank; official names and existing terms remain necessary.",
+    "limitation": "Agreement strengthens draft decisions; it is not proof that every spoken word was recovered. No human listening or full audiovisual approval is claimed."
+  },
+  "changes": [
+    {
+      "id": "narration.miracle",
+      "before": "他是活着的奇迹，曾从死亡与绝望的深渊中重获新生。",
+      "after": "从死亡与绝望的深渊中重生的奇迹之人。",
+      "reason": "Japanese ASR describes a miraculous man returning from the abyss; remove the English-derived extra living-miracle clause and retain the dramatic register."
+    },
+    {
+      "id": "narration.rebuild",
+      "before": "他接受了全身改造手术，植入最先进的强化部件，",
+      "after": "他接受了人体强化改造手术，",
+      "reason": "Separate SenseVoice and Whisper outputs support human-body enhancement surgery; remove whole-body and cutting-edge-parts claims lacking Japanese support."
+    },
+    {
+      "id": "narration.crush",
+      "before": "他能徒手击碎强化混凝土，",
+      "after": "他能击碎强化混凝土，",
+      "reason": "Separate SenseVoice and Whisper outputs support crushing reinforced concrete; remove the unsupported bare-hands qualifier."
+    }
+  ],
+  "scope_check": "Only these three long-version targets and statuses changed this turn; all short rows and source-English observations are unchanged.",
+  "preview": {
+    "file": "local-internal/pm-rebirth-video/ending-caption-only-draft-v3.mp4",
+    "sha256": "b763c146507b43528c0f1cc658013f6fc3336a3681cad946a7cb0380051f7666",
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1024,
+        "height": 600,
+        "r_frame_rate": "30/1",
+        "duration": "63.500000",
+        "nb_frames": "1905"
+      },
+      {
+        "codec_type": "audio",
+        "r_frame_rate": "0/0",
+        "duration": "63.487007",
+        "nb_frames": "2736"
+      }
+    ],
+    "frames": 1905,
+    "outside_allowed_changed_pixels": 0,
+    "compared_to_v2": "Exactly 479 RGB frames in the six revised cue intervals differ; every other frame is identical. Includes the three official-context revisions from the preceding commit.",
+    "visual_review": "All six revised full-size witness images were viewed: no observed clipping, inconsistent font size or obvious old-letter residue. Same narration style retained. Static review only.",
+    "game_resources": "Subsequently packaged and verified offline as v3; see rebirth-caption-resource-v3-20261010.json. Not installed or published."
+  },
+  "private_transcripts": true
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "photon-crsi-tools-workflow/1",
+  "date": "2026-10-12",
+  "scope": "public extraction and sequential C-to-FFV1 export; no installation or game operation",
+  "build": {
+    "compiler": "existing Zig 0.16.0",
+    "platform": "Windows x64",
+    "flags": ["-shared", "-O2", "-ffp-contract=off", "-Wall", "-Wextra", "-Werror"],
+    "sources": ["crsi_codec.c", "crsi_lossless.c", "crsi_container.c"],
+    "initial_workflow_library_sha256": "50b1d125ba77755872f35e91929c8b38305057e72d6da2dbea333049b473ef5a",
+    "fixed_library_sha256": "cb86f956198f72ca15b3d99d5f29a37e4d419ed401bfb41dfbcf0d8855600f94",
+    "fixed_codec_source_sha256": "1f3c9c624fda48df222f368cbae2c23b73b9bf60f0eb29728d4bc2456c44c4c5"
+  },
+  "public_workflow_real_sample": {
+    "volume": "photonmelodies11.rio",
+    "volume_local_offset": 217595660,
+    "extent": 1967559,
+    "source_sha256": "5a501c824a127556eb283994a27786bc47d02b62b3f78781ab8671c929db95d8",
+    "frames": 351,
+    "decoded_frames": 351,
+    "native_fallbacks": 0,
+    "ffprobe": {"codec": "ffv1", "width": 1024, "height": 600, "pixel_format": "bgr0", "frame_rate": "30/1", "read_frames": 351},
+    "ffv1_roundtrip_rgb_sha256_matches": 351,
+    "method": "crsi_workflow extract and export CLI; FFmpeg decoded the whole proxy to RGB24; each frame matched export-report RGB SHA256",
+    "native_comparison": "No new native comparison of this 351-frame sequence in this pass; previous complete native comparison remains in crsi-c-codec-20261010.json"
+  },
+  "te_pv_frame_1073_regression": {
+    "volume": "photonmelodies11.rio",
+    "volume_local_offset": 219563360,
+    "extent": 598632633,
+    "source_sha256": "3115ce30fceb3514e6dfdd24e5b8fcb395e31bf7b593e73584adab0172119164",
+    "frame": 1073,
+    "independent": true,
+    "mode": "0x0575",
+    "parameter": 8,
+    "payload_bytes": 81746,
+    "consumed_bits": 653959,
+    "dimensions": [1280, 720],
+    "native_executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+    "comparison": "fresh NativeCrsiDecoder leaf call; bottom-up native rows reversed; all four BGRX bytes compared",
+    "all_bgrx_equal": true,
+    "surface_sha256": "1417511a7c4b3e4eeb6cb011284dbe26bd3a6090a61009116466f8e727f3f9a1",
+    "finding": "This is Total Eclipse PV, not the photonmelodies overall OP. This single independent frame matches native; it does not resolve the different OP compatibility gap."
+  },
+  "fixed_overall_op_codec_edge": {
+    "volume": "photonmelodies11.rio",
+    "volume_local_offset": 1341451580,
+    "extent": 343870609,
+    "source_sha256": "b5a95dc49cae21a667e549fb06824fa018ccb779ffc76d0ea000225b926381ed",
+    "frames": 3835,
+    "frame": 1073,
+    "independent": false,
+    "mode": "0x0575",
+    "parameter": 8,
+    "payload_bytes": 120858,
+    "fresh_native_chain_start": 1069,
+    "preceding_all_bgrx_equal_frames": [1069, 1070, 1071, 1072],
+    "previous_c_result": "C CRsi codec rejected input (-3)",
+    "native_decode_returned": true,
+    "native_surface_sha256": "3cc697d1289fdbff78185d3fbc0544da7e004d619e77ff89869e89ac5734af32",
+    "first_rejection": {"block_xy": [360, 228], "payload_bit_after_short_code": 166766, "difference": -258, "short_code": 2, "pixel": "TL"},
+    "native_lookup": {"instruction": "0x5b9aa8", "formula": "0x6c12e0 + ((d*8)|code)*4", "address": "0x6bf2a8", "value": 1},
+    "initializer": {"copy_instruction": "0x403815", "source": "0x63ed60", "destination": "0x6bf0e0", "dwords": 128, "alias_static_source": "0x63ef28", "source_and_initialized_value": 1},
+    "fixed_all_bgrx_equal_frames": [1069, 1070, 1071, 1072, 1073, 1074, 1075, 1076],
+    "fixed_frame1073_consumed_bits": 966860,
+    "status": "fixed only proven TL d=-258/code2 adjacent-table alias; all other out-of-range lookups still rejected",
+    "synthetic_fixture": {
+      "dimensions": [4, 2], "independent": false, "previous_bgrx_hex": "80 repeated 32 bytes",
+      "construction": "literal run2; first flat block Y274 from signed delta105; second detail block Y100 from delta-18; TR escape delta16; BL short code4; TL short code2 gives difference -258",
+      "payload_hex": "d15dd3750010330000", "consumed_bits": 54,
+      "fresh_native_and_c_bgrx_hex": "ffffffffffffffffffffffff00000000fffffffffffffffff6f6f6f648484848",
+      "rejected_unproven_cases": ["TL same difference/code6", "BL difference -258", "TR difference -258"]
+    }
+  },
+  "synthetic_tests": {
+    "command": "python -m unittest discover -s rUGP/tests/formats/video -t . -v",
+    "environment": "RUGP_CRSI_LIBRARY explicitly set to the freshly built C library; existing FFmpeg available",
+    "passed": 27,
+    "skipped": 0,
+    "new_checks": ["bounded exact object extraction", "refuse malformed ranges and overwrite", "two-frame full FFV1 RGB roundtrip", "explicit incomplete report on missing FFmpeg", "synthetic native-verified TL adjacent-table alias with other TL/BL/TR cases rejected"]
+  },
+  "limitations": [
+    "PM overall OP edge fix was checked on frames1069-1076 and an artificial bitstream, not a new full-OP native replay. The different TE PV frame1073 passes a targeted comparison only.",
+    "FFV1 export is silent RGB-only; native X is hashed separately and never used as alpha.",
+    "No visual review, translation acceptance, audio listening, synchronization, game playback or final patch production in this pass.",
+    "Codec-0 0x016d remains a research oracle profile, not a supported C export profile; unsupported profiles fail rather than using hidden fallback.",
+    "C codec-1 lossy encoding remains research; public production workflow uses C 0x03ff lossless replacements with dependency closure."
+  ]
+}

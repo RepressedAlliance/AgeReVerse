@@ -1,6 +1,6 @@
 {
   "schema": "age-reverse-image-font-usage/v1",
-  "checked_on": "2026-10-11",
+  "checked_on": "2026-10-12",
   "scope_games": [
     "tda00",
     "tda01",
@@ -1048,6 +1048,51 @@
       "state": "historical-font-rendered-designs; later-versions-separately-recorded",
       "detail_registry": "historical-crmt-image-fonts.json",
       "evidence": []
+    }
+  ],
+  "video_material_groups": [
+    {
+      "id": "pm-rebirth-narration-captions",
+      "game": "photonmelodies",
+      "crsi_global_byte_offsets": [117665112, 27493704],
+      "font_ids": ["image:noto-sans-sc-vf"],
+      "font_version": "2.04",
+      "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "recipe": "rUGP/games/photonmelodies/video-localization/rebirth-ending-style.json",
+      "role": "narration",
+      "typography": {"axes": {"wght": 400}, "size": 22, "tracking": 0, "outline": 1.1, "baseline": 574, "supersample": 8},
+      "method": "font-typesetting over reconstructed caption background; original English technical artwork retained",
+      "production_state": "production candidate; isolated playback recorded; final human review separate",
+      "release_adoption": "not-released",
+      "evidence": ["rUGP/evidence/photon/video/rebirth-both-caption-package-20261010.json"]
+    },
+    {
+      "id": "pm-recap-titles",
+      "game": "photonmelodies",
+      "crsi_global_byte_offsets": [217595660, 1911342516],
+      "font_ids": ["image:noto-sans-sc-vf"],
+      "font_version": "2.04",
+      "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "recipe": "rUGP/tools/video/story_labels.py",
+      "typography": {"axes": {"wght": 600}, "size": 30, "tracking": 2.5, "supersample": 4},
+      "method": "font-typesetting with per-source title scale, position, warm glow and brief echo",
+      "production_state": "production candidate; review scope documented separately",
+      "release_adoption": "not-released",
+      "evidence": ["rUGP/evidence/photon/video/story-labels-20261010.json", "rUGP/docs/story-video-labels.md"]
+    },
+    {
+      "id": "pf-confession-countdown-labels",
+      "game": "photonflowers",
+      "crsi_global_byte_offsets": [3724567232],
+      "font_ids": ["image:noto-sans-sc-vf"],
+      "font_version": "2.04",
+      "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "recipe": "rUGP/tools/video/story_labels.py",
+      "typography": {"axes": {"wght": 900}, "header_size_on_rectified_plane": 80, "lower_size_on_rectified_plane": 190, "supersample": 4},
+      "method": "font-typesetting on a rectified panel; inverse perspective and protected original digits",
+      "production_state": "production candidate; review scope documented separately",
+      "release_adoption": "not-released",
+      "evidence": ["rUGP/evidence/photon/video/story-labels-20261010.json", "rUGP/docs/story-video-labels.md"]
     }
   ],
   "gaps": [
