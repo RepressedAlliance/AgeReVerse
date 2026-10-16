@@ -66,6 +66,8 @@
 
 中文制作通常优先使用可复现排字。手写、特殊 Logo、模糊装饰文字可采用适合的绘制或生成方法，但成品仍须满足文案、整套一致性、局部自然和背景保留要求。工具输出只是候选，提示词“其他完全不变”并不证明背景真的没变。
 
+按[最小完整文字单元](03-produce.md#先确定最小完整文字单元)选择返修范围：文案与样式先按词组、整行、标题等完整单元确认，局部修字仅在去字干净且笔迹、字重、基线、字距和效果一致时采用。无法可靠消除残笔、叠影、混杂字形或拼接感时，清除该单元需替换的旧字并统一重做，不能用新字盖旧字或以修改字符少作为质量目标。调整必要文字范围仍保护无关画面、原作英文、数字与明确保留项，不因此重绘整图。
+
 ## 6. 场景／背景：文字必须属于所在物体
 
 逐项匹配原图的文字区域，而不是在附近找空白处放字：
@@ -97,6 +99,7 @@ UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距
 - 不改的内容属于有意保留、已符合简体中文还是特殊惯例，范围与依据是否成立？应译区域的假名、繁体／日式字形、残笔、小点、旧字阴影是否处理完整？有效保留范围是否保持原样？
 - 实际字形、含义、术语与表达是否完整符合简体中文，有无缺笔、乱码或变形？本项目的 `軍曹` 是否译为 `中士`，而非只简化为 `军曹`？不能只凭编码、OCR 或“能看懂”判断。
 - 字体、颜色、粗细、阴影、光晕是否接近原图？
+- 单字修补后是否回读并检查完整词组／整行？其余旧译或字形有无漏改，新旧字有无残笔、叠影、接缝、基线或间距不一致？送审是否展示了完整单元及上下文？
 - 位置、方向、透视、留白、曲面和遮挡是否合理？
 - 底图有无糊块、拼接、色差、破损或覆盖其他物体？
 - 同组字体、字号、间距、基线和状态效果是否统一？
@@ -106,7 +109,7 @@ UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距
 
 动态图层和连续帧还要按[04 自检要求](04-self-review.md)检查合成与播放，不能由单层、单帧推定整体通过。人工送审按接收设备提供能打开的材料、必要的动态预览及简单的意见交回方式，反馈关联稳定图片编号和候选版本；具体见下一项人工审核要求。
 
-有疑问时给出实际原意依据、底稿、候选图、具体位置和原因。审核展示应支持整图／细节、底稿／中文切换、放大和移动，并保留张数、跳转与只看修改图的筛选。按[人工审核要求](05-human-review-and-delivery.md)提供官方日文／官方英文（有则提供）／之前的中文（有则提供）／当前中文，标明角色、版本和候选状态；附上面向人的修改位置、原因、保留决定与待确认问题说明。旧中文用于比较本次修正，不能代替日语原意依据。缺失对应如实说明，按来源角色提供适用的文字、语音和画面，不强制所有任务有日文原图。
+有疑问时给出实际原意依据、底稿、候选图、具体位置和原因。审核展示应支持整图／细节、底稿／中文切换、放大和移动，并保留张数、跳转与只看修改图的筛选。按[人工审核要求](05-human-review-and-delivery.md)提供官方日文版用图／官方英文版用图（有则提供）／之前的中文（有则提供）／当前中文，标明角色、版本和候选状态；版本归属采用语言槽、索引／脚本引用与共用／回退的核实结果，不能看图中文字换栏。图内语言、日英对应关系和中文处理范围另作简短说明；不同资源但同像素不等于共用同一资源，已确认沿用不标缺图。附上面向人的修改位置、原因、保留决定与待确认问题说明。旧中文用于比较本次修正，不能代替日语原意依据。缺失对应如实说明，按来源角色提供适用的文字、语音和画面，不强制所有任务有日文原图。
 
 ## 9. 复用、返修与公开
 
@@ -146,9 +149,20 @@ valid for the current version; fill gaps, changes and failures rather than
 unpacking again. Declare counting units and distinguish investigation from
 confirmed production, detailed inspection, human approval and runtime checks.
 Inspect dynamic assets both individually and in composition/playback.
-Human review compares official Japanese, optional official English, optional
+Human review compares official Japanese-edition images, optional official English-edition images, optional
 previous Chinese and current Chinese with role/version/status labels and short
 explanations of changes, reasons, intentional retention and open questions.
+Edition provenance follows verified slots, indices/script references and shared/
+fallback routes, not visible language. Explain lettering, resource relationships
+and Chinese scope separately. Equal pixels in distinct resources do not establish
+a shared object, and proven English reuse is not missing English imagery.
+Confirm copy/style and review at the complete phrase/line/heading level even for
+one-character repairs. Local repair is acceptable only with clean removal and
+consistent handwriting/font, weight, baseline, spacing and effects. Otherwise
+rebuild the smallest complete visual lettering unit, not the entire image;
+protect unrelated artwork, original English, numbers and justified retention.
+Do not optimize for the fewest changed characters or cover old strokes with new
+ones. Human review shows the complete affected unit and useful context.
 Provide materials that open on the reviewer's device, relevant dynamic previews
 and a simple way to return feedback tied to stable image IDs and candidate versions.
 Previous Chinese shows the revision, not authority for Japanese meaning; provide

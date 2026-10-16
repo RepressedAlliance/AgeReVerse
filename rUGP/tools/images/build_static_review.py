@@ -58,14 +58,15 @@ class StreamPNG:
 
 
 def panels(row: dict) -> list[tuple[str, dict | None]]:
+    """Label edition roles; validated shared_native proves pixels, not routing."""
     official = row["official"]
     if row["shared_native"]:
-        native = [("官方日文／英文共用", official["jp"]), ("与左侧共用", None)]
+        native = [("官方日文版用图", official["jp"]), ("官方英文版用图 · 同像素", official["en"])]
     else:
-        native = [("官方日文", official["jp"])] if "jp" in official else [("官图 · 语言待核", official["unknown"])] if "unknown" in official else [("官方日文 · 无已确认对应", None)]
-        native.append(("官方英文", official["en"]) if "en" in official else ("官方英文 · 无已确认对应", None))
+        native = [("官方日文版用图", official["jp"])] if "jp" in official else [("官图 · 版本归属待核", official["unknown"])] if "unknown" in official else [("官方日文版用图 · 对应待核", None)]
+        native.append(("官方英文版用图", official["en"]) if "en" in official else ("官方英文版用图 · 对应待核", None))
     if "jp" in official and "unknown" in official:
-        native.append(("官图 · 语言待核", official["unknown"]))
+        native.append(("官图 · 版本归属待核", official["unknown"]))
     return native + [("汉化 · 当前审核稿", row["candidate"])]
 
 
@@ -178,7 +179,7 @@ def build(catalog: dict, assets: dict, map_root: Path, output: Path, font: Path,
         head = Image.new("RGB", (CARD_W * columns, 180), BG)
         d = ImageDraw.Draw(head)
         d.text((20, 25), "PF / PM 素材全量审核", font=fonts[42], fill="white")
-        d.text((20, 95), f"{len(catalog['rows'])} 项 · 日文 / 英文 / 汉化 · 状态与实机验证分别记录", font=fonts[22], fill="white")
+        d.text((20, 95), f"{len(catalog['rows'])} 项 · 日文版用图 / 英文版用图 / 中文审核稿 · 状态与实机验证分别记录", font=fonts[22], fill="white")
         png.append(head)
     try:
         for category_index, (category, rows) in enumerate(groups):
@@ -212,7 +213,7 @@ def build(catalog: dict, assets: dict, map_root: Path, output: Path, font: Path,
     options = ''.join(f'<option value="{i}">{escaped(c)}</option>' for i, c in enumerate(catalog["categories"]))
     document = '''<!doctype html><html lang="zh-Hans"><meta charset="utf-8"><title>PF / PM 素材审核</title>
 <style>body{background:#191f29;color:#e7edf6;font:16px system-ui;margin:24px}header{position:sticky;top:0;background:#191f29;padding:12px}input,select{font:inherit;padding:8px}article{display:inline-block;width:min(100%,992px);vertical-align:top}img{width:100%}a{color:#80daca}[hidden]{display:none!important}</style>
-<header><h1>PF / PM 素材审核</h1><p>官方日文 / 官方英文 / 汉化。缺少已确认配对不等于不存在另一语言；登记、安装及实机验收分别记录。</p>
+<header><h1>PF / PM 素材审核</h1><p>官方日文版用图 / 官方英文版用图 / 当前中文审核稿。版本归属按清单标注，须以语言槽与资源引用核实，图内语言另作说明。同像素不代表共用同一资源，对应待核不等于不存在；登记、安装及实机验收分别记录。</p>
 <label>分类 <select id="category"><option value="">全部</option>''' + options + '''</select></label>
 <label>搜索 <input id="query" placeholder="编号、用途、分组或状态"></label><span id="count"></span></header>''' + ''.join(sections) + '''
 <script>const category=document.querySelector('#category'),query=document.querySelector('#query');function filter(){let n=0;for(const a of document.querySelectorAll('article')){a.hidden=!!((category.value&&a.dataset.category!==category.value)||!a.dataset.search.toLowerCase().includes(query.value.toLowerCase()));if(!a.hidden)n++}for(const s of document.querySelectorAll('section'))s.hidden=![...s.querySelectorAll('article')].some(a=>!a.hidden);document.querySelector('#count').textContent=` ${n} 项`}category.onchange=query.oninput=filter;filter();</script></html>'''

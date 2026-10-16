@@ -2,7 +2,7 @@
 
 [返回本地化](README.md) · [文本流程](Text-AITranslationWorthReading/README.md) · [图片流程](Images-MakeItLookNative/README.md)
 
-**这组原则同时适用于正文、界面、字幕、图片文案、Logo 和场景文字。** 先确认需要向中文玩家传达的内容与功能，再选择表达、素材和实现方式。文本与图片使用同一套判断方法，不能由文件后缀或语言槽代替内容判断。
+**这组原则同时适用于正文、界面、字幕、图片文案、Logo 和场景文字。** 先确认需要向中文玩家传达的内容与功能，再选择表达、素材和实现方式。版本归属按已核实的语言槽与资源路由确认，是否汉化按内容与下文原则判断，不能混用。
 
 **本项目以日译中为目标，应汉化的内容必须完整做到简体中文化。** 大部分日文都需要翻译，但有明确内容依据的原文保留另行说明范围与理由。完整汉化要求全量核查，处理应译内容的字形、含义、术语和表达；“中文玩家能看懂”不能作为合格或免译标准。未发现、未确认和未完成的内容不能算作已保留。
 
@@ -29,6 +29,14 @@
 **全量提取和对照，不等于分别汉化日英两套资源。** 先按内容与功能确定任务，再关联所需资源；同一信息可以对应多个实际交付对象，保留每个目标的身份和调用，不能因合并内容理解就丢掉状态、尺寸或路由差异。仅供比较的资源不计为待制作项或已完成成果；英文版设计有差异也不自动要求再做一套中文。
 
 **翻译依据、制作底稿与写回槽位分开判断。** 例如 rUGP 使用日文与 `translation` 路由时，中文可覆盖 `translation` 槽原有英文内容，无须新建中文槽；这是写回位置，不表示内容按英文翻译，也不表示用英文图片当底稿。不能仅凭 `_ja`／`_en` 后缀排除实际目标，目标尺寸与编码按引擎确认。先确定中文用途并规划可行调用，不要求待制作内容已经在中文版中生效；用途或实现尚不明确时，分别说明待确认的问题。
+
+## 图片属于哪个版本
+
+**以语言槽、索引和资源选择关系确认版本归属，不能看图中文字反推。** 使用该游戏的官方语言槽、资源索引、脚本选择逻辑或版本资源映射，沿引用链确认对应对象、共用资源与回退。原版来源与中文覆盖分别核对，不能把已安装补丁替换过的图当作官方原图。仅凭目录或文件后缀不够；经过资源选择逻辑确认的语言路径则可以作为依据。没有显式语言槽的游戏也按实际版本资源与引用关系判断，不要求虚构一个槽。
+
+本项目通常先从日文版原包和已有提取记录寻找适用原图。英文版可以另制差分，也可以沿用日文版或共用图；不要求每项都有独立英文图。日文版用图可以含英文，英文版用图也可以仍含日文、混合文字或仅把曲名转写成罗马字。**版本归属、图内语言与本地化处理、日英资源对应关系、中文处理决定分别说明。** 日英同图不代表错配或无须汉化，存在独立英文资源也不代表图中文字已全部英译。
+
+“共用同一资源”须有槽位／引用依据；“不同资源但解码像素相同”只说明像素一致，各自身份与调用仍保留。已核实英文路由沿用日版／共用图时这样标明，不记成缺图；尚未取得、尚未解码或对应关系待核分别如实说明，不能一律写成不存在。先复用适用的索引、映射与已有核查结果，疑点再补查；静态来源依据与最终实机显示状态分开记录，不要求每张图先重新实机确认才能送审。具体标注见[分类](Images-MakeItLookNative/01-extract-and-classify.md)与[人工送审](Images-MakeItLookNative/05-human-review-and-delivery.md)。缺少同形式日文图的字幕仍按前述日语语音依据制作，不以“日文原图必有”排除任务。
 
 ## 语言怎么处理
 
@@ -116,6 +124,12 @@ Full extraction and comparison do not require localizing both official resource 
 Plan Chinese use and feasible delivery before production, then verify binding and in-game behavior at delivery. The content need does not have to be already implemented in Chinese. Chinese may replace English in rUGP's existing `translation` slot without creating a separate Chinese slot. This is a destination decision, not an English translation source or a choice of English artwork as the base. Verify target geometry/encoding independently of language suffixes.
 
 Preserve English intentionally present in the Japanese original; do not confuse it with English substituted by a localization. Render Japanese in English only when it better fits the meaning and context, with a recorded reason.
+
+**Establish image edition provenance from verified language slots, indices and resource-selection relationships, never from visible lettering.** Follow the game's official locale routes, script selection or edition resource mappings through references, shared objects and fallback. Distinguish official inputs from installed Chinese overrides. A filename alone is insufficient; a language path verified against selection logic is evidence. Games without explicit language slots use their actual edition resources and references rather than invented slots.
+
+Normally look for the Japanese original in original packages and existing extracts first. The English edition may provide a separate variant or reuse a Japanese/shared image; an independent English image is not required for every item. A Japanese-edition image can contain English, and an English-edition image can contain Japanese, mixed text or a romanized song title. Keep edition provenance, visible language/localization treatment, Japanese/English resource relationships and Chinese treatment distinct. Identical images prove neither a mismatch nor exemption from Chinese localization; a separate English resource does not prove fully translated English copy.
+
+Shared-resource claims need slot/reference evidence. Equal decoded pixels in separate resources do not merge their identities or calls. Label verified English reuse as reuse, not a missing image; distinguish unfetched, undecoded and unresolved counterparts from confirmed absence. Reuse valid mappings and investigate gaps; static source evidence and final in-game display remain distinct, without requiring a new game run for every review item. See classification and human-review guidance. Japanese-audio subtitles remain valid tasks even without a same-form Japanese image.
 
 Content requiring localization must be fully Simplified Chinese in its actual glyphs, meaning, terminology and expression. Being understandable to Chinese readers is not sufficient. Dialogue, narration, choices, UI, instructions and story information normally need translation; scene lettering, clothing/equipment markings and props require content-specific assessment rather than blanket decoration or identity exemptions.
 

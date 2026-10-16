@@ -8,6 +8,8 @@
 
 日英图片都存在时，保留两版对照，检查有无漏掉的阅读信息，并比较版式、状态和图层。例如 [Photon U0478](../../rUGP/docs/crmt-family.md)的日文是竖排 4 层、英文是横排 6 层，已有中文竖排 4 层方案；不能因为中文层数不同于英文就判错，也不能只检查同一内容的一个目标就认定全部通过。
 
+送审前按[版本归属规则](../principles.md#图片属于哪个版本)核对预览图与语言槽、索引／脚本引用的关联，而非看图中文字给日英栏归类。日文版含英文、英文版含日文或日英同图都可能正确；“共用资源”与“不同资源但同像素”分别核对，不能把同图直接判错配或把独立英文图判为全图已英译。已确认沿用不标缺图，未取得、未解码与对应待核不写成不存在。来源核对通过也不免除应译区域的简体中文检查。
+
 | 尺度 | 主要查看 |
 | --- | --- |
 | 整图 | 是否自然，构图、视觉重心、物体关系是否改变 |
@@ -15,6 +17,8 @@
 | 局部放大 | 旧字碎点、坏笔画、繁体／日式字形、硬边、糊块、纹理与遮挡 |
 
 逐张检查：文案／数字正确；应汉化区域在实际字形、含义、术语和表达上完整简体中文化；无不应保留的假名、繁体／日式字形和日式称谓；中文笔画完整；颜色和特效贴合；位置、透视、曲面、材质、留白、遮挡自然；声明保护范围内的人物和画面未改坏；画布和透明边缘符合选定底稿／目标格式与已确认的中文设计。
+
+**即使只修改一个字，也回读完整词组、整行或其他文字单元。** 逐字对照本轮已确认文案，检查实际笔画、繁体／日式字形残留、旧译是否漏改，以及新旧字的字重、基线、字距、颜色和效果是否一致。结合原尺寸与放大细节查残笔、叠影、接缝和局部底图，再放回整图检查；单字看着正确、OCR 通过或改动范围小都不能代替整单元合格。局部修补仍无法融合时，按[最小完整文字单元](03-produce.md#先确定最小完整文字单元)返修，保留其他已通过部分。
 
 先按[三类不改的情况](../principles.md#如何判断是否需要翻译)复核范围和依据，再确认保留内容没有被误擦、改字或变形。直接复用的普通中文须逐项符合简体中文要求；七曜等特殊惯例单独确认，不能混为普通中文。明确原文保留范围外，繁体／日式字形与未汉化用语均属缺陷；例如 `軍曹` 仅改为 `军曹` 仍不合格，本项目采用 `中士`。
 
@@ -58,3 +62,19 @@ information and inspect layout, state and layer differences. [Photon U0478](../.
 has four vertical Japanese layers, six horizontal English layers and a four-layer
 vertical Chinese design. A layer-count difference from English is not itself a
 defect, and one checked target does not prove all targets passed.
+Check review views against verified slots, indices/script references and resource
+identities, not visible language. English in a Japanese-edition image, Japanese
+in an English-edition image, and equal images can all be correct. Verify shared
+resources separately from equal pixels in distinct resources; neither identity
+nor difference alone proves a mismatch or full English translation. Verified
+reuse is not missing imagery; distinguish unfetched, undecoded and unresolved
+counterparts from confirmed absence. Correct provenance does not exempt required
+regions from full Simplified Chinese review.
+Even after a one-character change, reread the full phrase, line or other lettering
+unit against the current approved copy. Inspect actual strokes, leftover
+Traditional/Japanese forms or old wording, and consistency of weight, baseline,
+spacing, color and effects. Check remnants, doubled strokes, seams and repaired
+background at native and magnified scales, then in the full image. A correct
+isolated character, clean OCR or small edit mask does not establish a passing
+unit. Rebuild the smallest complete unit if local repair still fails to blend,
+preserving other valid work.

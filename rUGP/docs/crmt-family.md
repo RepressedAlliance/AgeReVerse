@@ -30,9 +30,9 @@ CRimp 的四字节整数带低两位类型标签 `2`，应作有符号算术右�
 
 ## 对照与翻译政策
 
-按[图片人工审核与交付](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/05-human-review-and-delivery.md)组织**官方日文／可选官方英文／可选旧中文／当前中文**对照，标明版本并附修改、保留理由。可以切换或附图，不强制列数；现有日英中工具预览未提供的旧中文与说明另附。
+按[图片人工审核与交付](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/05-human-review-and-delivery.md)组织**官方日文版用图／可选官方英文版用图／可选旧中文／当前中文**对照，标明版本并附修改、保留理由。版本用途以官方日文与 `translation` 映射、对象引用及共用／回退关系为依据，图内文字不能反推槽位；`translation` 槽中的官图也可能仍含日文或与日文图相同。中文覆盖和官方原图分别核对。可以切换或附图，不强制列数；现有日英中工具预览未提供的旧中文与说明另附。
 
-1. 日英共用图标明实际共用关系；“无英文本地化”仅描述资源分布，不表示无须汉化。符合[通用原则](../../Localization-MakeGamesSpeak/principles.md)的保留决定按其范围复用；仅凭“看得懂”、装饰分类或旧工具限制的决定须重新判断，不因共用关系默认保留。
+1. 日英引用同一对象才按引用依据标共用；不同对象但解码像素相同只标同像素，各自身份与目标不合并。已核实英文路由沿用日文／共用图时不标缺图。“无独立英文本地化资源”仅描述资源分布，不表示无须汉化，也不说明画面没有英文。符合[通用原则](../../Localization-MakeGamesSpeak/principles.md)的保留决定按其范围复用；仅凭“看得懂”、装饰分类或旧工具限制的决定须重新判断。
 2. 日英分开图重点审核。日文官图的实际字形、含义、术语与表达均已符合目标简体中文时，可明确登记为 translation 槽候选，不能只删除英文替换而依赖回退。有意保留日文或沿用七曜等特殊惯例的候选另注明范围与依据；应汉化区域的繁体／日式字形及未汉化用语仍须处理。
 3. 原作内容以日文文本、日语语音、画面和语境确认原意；图片通常以日文版适用原图为基础，英文设计用于参考；确需复用英文版画布或模板时说明具体部分、用途与理由。按[通用原则](../../Localization-MakeGamesSpeak/principles.md)分别关联原意依据、制作底稿和 translation 目标，不能由底稿语言推定原意语源，也不自动制作全部语言差分。
 4. 日文官图本来使用的英文保留；应汉化的日文区域完整做到简体中文化，不能以“玩家能理解”代替字形、术语和表达要求。不机械排除所有 HUD、武器或场景招牌。
@@ -50,11 +50,19 @@ separately. Preserve each physical object's identity and geometry; a shared
 content decision does not prove every target has been integrated. These rules
 do not change the codec or parent-geometry constraints below.
 
-For human review, provide official Japanese, optional official English, optional
+For human review, provide official Japanese-edition images, optional official English-edition images, optional
 previous Chinese and current Chinese with version labels and explanations of
 changes and retention. Switching views or attachments is sufficient; no fixed
 column count is required. Supplement existing Japanese/English/Chinese previews
 with previous Chinese and explanations where the tool does not provide them.
+Establish edition roles from official Japanese/`translation` mappings and object
+references, including shared/fallback routes; lettering cannot identify the slot.
+Official translation-slot images may still contain Japanese or match the Japanese
+image. Distinguish official inputs from Chinese overrides. Shared-object claims
+need reference evidence; equal pixels in distinct objects retain each identity
+and target. Verified English reuse is not missing imagery. A lack of separate
+English localization resources describes resource distribution, not visible
+language or exemption from Chinese localization.
 Shared Japanese/English resources describe a distribution relationship, not an
 automatic retention decision. Reuse confirmed retention within its scope and
 judge other content under the shared principles. Reassess decisions based only

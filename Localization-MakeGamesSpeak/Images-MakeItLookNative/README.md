@@ -13,8 +13,13 @@ Five stages: extract and classify all images; confirm copy and style; produce im
 
 Follow the shared [localization principles](../principles.md#english-summary): preserve English intentionally present in the Japanese original and use English for Japanese only when justified. Text, voice and image lettering are normal inputs, independently reviewed against their actual sources. Distinguish existing content in another medium from genuinely added information; confirm the latter's provenance, purpose and scope rather than requiring Japanese audio for every asset. Review meaning against source evidence and visuals against the selected base and Chinese design. Delivery verifies actual routing, geometry, timing and display; Chinese may replace English in rUGP's existing `translation` slot.
 
-For human review, show official Japanese, optional official English, optional
+For human review, show the official Japanese-edition image, optional official English-edition image, optional
 previous Chinese, and the current Chinese candidate with clear version labels.
+Establish edition use from verified language slots, indices/script selection and
+resource mappings, including shared resources and fallback, not visible lettering.
+Japanese-edition images can contain English; English-edition images may reuse
+Japanese artwork or retain Japanese text. Label proven reuse separately from equal
+pixels in distinct resources, and distinguish unresolved counterparts from absence.
 Add a short explanation of the visible changes, reasons, intentional retention
 and questions for the reviewer. English helps compare information, layout and
 presentation even when it is not the selected base or target. Use actual Japanese
@@ -28,13 +33,18 @@ reuse what fits the current version and extract only gaps or changes. Report
 counting units and separate investigation, confirmed production, reuse and
 retention, then distinguish inspection, human approval and runtime status.
 
+Confirm and review complete lettering units such as phrases, lines or headings.
+A character repair is acceptable when clean and visually consistent; otherwise
+rebuild the smallest complete unit while protecting unrelated artwork and
+approved retention. Show the whole affected unit in human review.
+
 | Stage | Required result |
 | --- | --- |
 | 01 | Complete resource inventory, cross-media/content relationships, selected Chinese tasks and intended targets |
 | 02 | Independently checked copy, chosen presentation/base, font/style records and representative samples |
 | 03 | Candidates made within the declared editing scope and target-format constraints |
 | 04 | Per-image and per-group checks of meaning, Chinese design and protected content, including layer composition and frame playback where applicable; unresolved issues remain explicit |
-| 05 | Versioned Japanese / optional English / optional previous Chinese / current Chinese comparison with human-readable explanations, accessible materials and a clear feedback return method, followed by human approval, engine and in-game checks and final pre-release corrections |
+| 05 | Versioned official Japanese-edition image / optional official English-edition image / optional previous Chinese / current Chinese comparison, with provenance and resource-relationship labels, human-readable explanations, accessible materials and a feedback return method, followed by human approval, engine and in-game checks and final pre-release corrections |
 
 Content requiring localization must be fully Simplified Chinese in actual glyphs, meaning, terminology and expression; readability alone is insufficient. Distinguish justified Japanese retention, already compliant Simplified Chinese, and explicitly adopted special conventions such as approved weekday notation. Apply this per region; decoration or identity alone is not an exemption, and old tool-limit compromises remain repair work. Remove old lettering and its effects where replacement is needed, then author Chinese using reproducible typography, drawing or constrained image editing as appropriate. Match perspective, material, lighting and occlusion. Review every output at full-frame, native and magnified scales, then obtain the maintainer's review of the exact final candidate. Bind the approved output through the appropriate engine, test in game, and complete the maintainer's final corrections before release.
 
@@ -52,7 +62,7 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 
 **先确认中文需要传达的内容与功能，再选择原意依据、呈现方案、制作底稿和交付目标。** 原作含义根据日文文本、日语语音、画面与语境确认；图片通常以日文版适用原图为基础，英文设计供参考；确需复用英文版画布、模板或显示机制时，说明具体部分、用途与理由，写回英文槽则另行判断。某版独有的图片可能只是已有内容的另一种载体，不能由是否存在日文图决定是否制作。全量清单保留各版资源，制作清单覆盖选定的中文方案与实际目标，参考差分不计入成果。写回服从引擎，例如 rUGP 可覆盖现有 `translation` 槽。详见[中文版的定位与制作范围](../principles.md#中文版的定位与制作范围)。
 
-人工送审按**官方日文／官方英文（有则提供）／之前的中文（有则提供）／当前中文**展示，明确版本，并附上修改位置、原因、保留决定与待确认问题的简短说明。没有对应日文图时展示实际日文文本、日语语音或其他画面依据，不用占位或错配图凑数。详见[人工审核与交付](05-human-review-and-delivery.md)。英文即使仅供参考也展示其内容和设计差异；英文版字幕画布、不同图层排版、原作英文菜单和 HUD 的用途见[项目实例](../principles.md#官方英文具体怎么用)。参考对照与实际中文交付分别统计。
+人工送审按**官方日文版用图／官方英文版用图（有则提供）／之前的中文（有则提供）／当前中文**展示。这是版本用途标注，不是图中文字的语言判断；按已核实的语言槽、索引／脚本选择与资源映射确认来源，沿用、共用和不同资源但同像素分别说明。日文版图内可以有英文，英文版也可能沿用日文图或保留日文，不能因此换栏或判错配。附上修改位置、原因、保留决定与待确认问题的简短说明。没有对应日文图时展示实际日文文本、日语语音或其他画面依据，不用占位或错配图凑数。详见[人工审核与交付](05-human-review-and-delivery.md)。英文版用图即使仅供参考也展示其内容和设计差异；英文版字幕画布、不同图层排版、原作英文菜单和 HUD 的用途见[项目实例](../principles.md#官方英文具体怎么用)。参考对照与实际中文交付分别统计。
 
 开始前先找已有清单、导出、可编辑源文件和已确认成品，复用适用版本的结果，只补缺失或变更。进度说明计数单位，将待核查、确定待制作、复用和保留分开，再分别说明细查、人工确认与实机状态。动态图层和连续帧既看单张，也看合成与播放；送审材料要在审核者的设备上能打开，并有按图片编号和候选版本交回意见的方法。具体要求放在对应阶段内。
 
@@ -64,11 +74,13 @@ The stated Astra 6 / Image 2.5 baseline is the maintainer's practical reference,
 | **02** | [确认文案、字体和样式](02-copy-and-style.md) | 已复核文案、选定的呈现与底稿、字体／同套样式和代表图 |
 | **03** | [制作图片](03-produce.md) | 去字修底、中文制作和画面融合后的候选图 |
 | **04** | [自检与返修](04-self-review.md) | 逐图、逐组及适用的图层合成／连续播放检查后的最新候选与未决问题 |
-| **05** | [人工审核与交付](05-human-review-and-delivery.md) | 能打开、能按版本回传意见的日文／可选英文／可选旧中文／当前中文对照与易懂说明；维护者确认后完成引擎绑定、实机检查与发布前收尾 |
+| **05** | [人工审核与交付](05-human-review-and-delivery.md) | 能打开、能按版本回传意见的官方日文版用图／可选官方英文版用图／可选旧中文／当前中文对照，含来源与对应关系说明；维护者确认后完成引擎绑定、实机检查与发布前收尾 |
 
 先完成 UI、按钮、姓名、日期、字幕、标题等非场景素材，再处理普通场景背景。剧情用的信件、漫画、报纸或道具文字按剧情需要安排，不能因存在 `bg/` 就降成装饰背景。分类决定安排；**文字怎样附着在画面上**决定制作方法。
 
 同一张图返修不必重走全流程：回到受影响步骤，复查本图和相关差分。已通过的字体、颜色、光晕和画面部分应保留，避免修一处又破坏另一处。
+
+文案确认与验收按完整词组、整行或标题进行，即使只改一个字也检查整个文字单元。局部修补须去字干净、字形与样式一致；做不到时重做[最小完整文字单元](03-produce.md#先确定最小完整文字单元)，同时保护无关画面与明确保留内容，送审展示整个受影响单元。
 
 ## 工作记录只保留必要内容
 
