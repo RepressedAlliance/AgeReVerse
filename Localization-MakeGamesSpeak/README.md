@@ -21,9 +21,15 @@ Learn how we turn AI-assisted drafts and edited artwork into a maintained game l
 
 The [complete English text workflow](Text-AITranslationWorthReading/workflow.en.md) and [new-language guide](Text-AITranslationWorthReading/new-locale.md) explain how to adapt the method to another target language. Engine-neutral authoring stays here; extraction, encoding, runtime binding and packaging stay in AGE2 or rUGP. Historical evidence is under [research](../docs/research/localization/README.md).
 
-Both text and image lettering follow the shared [translation principles](principles.md#english-summary): Japanese to Chinese, retaining English present in the Japanese original. English-edition-only assets are translated from their corresponding Japanese voice, not from the English edition's wording.
+This guide focuses on Japanese-origin games without Chinese support, including games with an official English edition. Both text and image work follow the shared [localization principles](principles.md#english-summary): establish the content/function, meaning evidence, presentation, authoring base and delivery target separately. Japanese text, audio and context establish original meaning; images normally use suitable Japanese originals as their base. English design is a reference; identify the part, purpose and reason when a task needs an English canvas, template or display mechanism. Listening-based translation is a normal input path. A resource exclusive to one edition is not necessarily new content.
 
-Most Japanese text needs translation, but retention depends on function, player understanding and the original presentation. Assess each relevant part; familiar examples are not an exhaustive list of what may remain unchanged.
+Our usual comparison is Japanese original / official English / Chinese candidate.
+English can help locate scenes, compare interpretations and learn from official
+designs; keep it where available without making it mandatory for every item.
+The [project examples](principles.md#how-we-use-english-project-examples) cover
+subtitle canvases, source mismatches, original English UI and character wordplay.
+
+Content requiring localization must be fully Simplified Chinese in actual glyphs, meaning, terminology and expression; readability alone is insufficient. Distinguish justified Japanese retention, content already meeting all Simplified Chinese requirements, and explicitly adopted special conventions such as approved weekday notation. Assess each region; decoration or identity alone is not an exemption, and old tool-limit compromises remain repair work. See the [decision rules](principles.md#english-summary).
 
 The maintainer reviews and corrects the release candidate **before publication**. ParaTranz revisions are reviewed, integrated and verified for a later release; an online edit does not update an installed patch.
 
@@ -47,9 +53,13 @@ The maintainer reviews and corrects the release candidate **before publication**
 
 ## 先确定该译什么，再开始制作
 
-**先读[翻译最高原则](principles.md)：目标是日译中；日文原版已有英文保留英文，日文只有确实更适合时才译成英文。官方英文版独有素材找对应日语语音听译成中文。正文翻译和图片制作一体适用。**
+这套方法重点面向已有日语原作、尚缺中文支持的游戏，也考虑同时提供官方英文版的情况。其他语言团队可以复用方法，另行制定自己的表达与排版规则。
 
-**大部分日文需要翻译，但不是所有日文都要替换。** 根据内容用途、玩家理解和原作表现区分应译与保留范围；同一段文字或图片也可以部分翻译、部分保留。曲名、署名、原画与日期标记等是帮助理解的例子，新的内容同样按这一原则判断，不能仅因仍有日文就判漏译。
+**先读[本地化最高原则](principles.md)：按内容与功能确定中文任务，分别确认原意依据、呈现方案、制作底稿和交付目标。** 原意回到日文文本、日语语音、画面和语境；图片通常以日文版适用原图制作，英文版设计供参考；确需复用其画布、模板或显示机制时说明具体部分、用途与理由。听译是正常输入方式，某一版本独有的资源不一定是新增内容。日文原版已有英文仍按原作语言选择保留，日文改用英文需有适当理由。正文、界面和图片使用同一方法。
+
+本项目通常把**日文原作、官方英文、中文候选**放在一起对照：英文帮助定位场景、比较译法和借鉴本地化设计，含义有分歧时先确认关联、再回到日文／日语判断。没有英文对应时不强求。怎样具体使用英文，可看[字幕画布、源槽错配、原作英文 UI 与角色笑点等项目实例](principles.md#官方英文具体怎么用)。
+
+**应汉化的地方必须完整简体中文化，不能以“玩家能看懂”代替合格。** 字形、含义、术语和表达都要到位。按[三类不改的情况](principles.md#如何判断是否需要翻译)区分有意保留日文、原内容已经符合简体中文，以及有明确依据的特殊惯例（如已确认的七曜星期标记），同一段或同一图分区判断。身份标记或装饰分类本身不免译；旧工具妥协留下的问题仍是待修。
 
 ## 从候选到玩家拿到的版本
 

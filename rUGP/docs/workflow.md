@@ -22,7 +22,19 @@ Route only a strictly identified record to `formats/images/` or `formats/rio/`. 
 
 ## 4. Author content
 
-Translate from Japanese source authority and follow [`../Localization-MakeGamesSpeak/`](../../Localization-MakeGamesSpeak/). For images, approve a textless layer and deterministic typography before encoding. Preserve source codec where supported; a successful kind=3 test proves the implemented kind=3 subset, not every flag/profile in the world.
+Follow the [localization principles](../../Localization-MakeGamesSpeak/principles.md#english-summary):
+define content/functions, then distinguish meaning evidence, presentation,
+authoring base and delivery targets. Japanese text, audio and images establish
+original meaning; English design can inform Chinese presentation. Review actual text/audio/image evidence independently, and confirm
+the source/scope of genuine additions. Use the [image workflow](../../Localization-MakeGamesSpeak/Images-MakeItLookNative/README.md)
+to select typesetting, painting or constrained editing, then review the exact
+candidate. Normally use a suitable Japanese original as the base; explain the
+part, purpose and reason for necessary English-canvas/template reuse. Writing to
+`translation` does not choose English artwork as the base.
+
+按[通用原则](../../Localization-MakeGamesSpeak/principles.md)先确定内容与功能，分别关联原意依据、中文呈现、制作底稿和实际目标。原作含义回到日文文本、日语语音及画面；英文设计可供中文呈现参考。独立复核实际来源，确认真正新增信息的来源与范围；图片按五步流程选择排字、绘制或受控编辑并审核具体成品，底稿通常以日文版适用原图为基础，确需复用英文版画布或模板时说明具体部分、用途与理由；写入 `translation` 不表示采用英文图片作底稿。
+
+Preserve source codec where supported; a successful kind=3 test proves the implemented kind=3 subset, not every flag/profile in the world.
 
 ## 5. Encode and prove round trips
 

@@ -10,14 +10,22 @@
 
 ## 翻译最高原则
 
-文本与图片共同遵守[日译中的最高原则](../principles.md)：日文译成中文，日文原版已有英文保留英文，日文只有确实更适合时才译成英文；官方英文版独有素材找到对应日语语音后听译成中文。听译案件保存语音定位与工作用转写，初译、独立二审和疑点处理都回到实际日语语音。找不到或听不清必要依据时保持待确认，不能用英文槽兜底。
+文本与图片共同遵守[本地化最高原则](../principles.md)：先按场景、信息与功能确定中文任务，再分别确认原意依据、呈现方案、制作底稿和交付目标。原作含义回到日文文本、日语语音、画面和语境；图片通常以日文版适用原图制作，英文设计供参考；确需复用英文版画布、模板或显示机制时说明具体部分、用途与理由。英文译文不能代替日语原作裁定原意，但英文版的模板或调用机制可以成为实际制作依据。
 
-全量核查后，按内容用途、玩家理解和原作表现区分应译与保留范围。大部分日文应译成中文；主要承担身份识别或原作表现作用、保留不妨碍必要理解的内容，以及在中文语境中可直接沿用的原文，可以说明理由后保留。同一句或同一张图的不同部分分别判断。曲名、署名、日期标记等只是常见例子，新内容同样按[通用判断方法](../principles.md#如何判断是否需要翻译)处理。保留范围、理由与确认依据随初译交接，独立二审逐项检查；不能用“消除所有日文”作为完成标准。
+本项目通常对照**日文原作、官方英文与中文候选**。官方英文可辅助理解不同译法、定位场景和发现疑点，也可展示已有本地化设计；有日英分歧时先确认是否对应同一内容，再核对日文／日语。有官方英文时保留有用的对照，不强求每项都存在英文输入。具体用法见[项目实例](../principles.md#官方英文具体怎么用)。
+
+听译是正常输入方式，不要求同时存在官方日文文本或图片。其他版本增加载体或显示方式时，先关联原作已有内容；真正新增的信息和辅助说明另行确认来源、中文用途与采用范围，按实际原始语源及功能审核，不强行要求日语语音。听译的初译和二审都核对实际语音，不能将转写或英文译文冒充原作依据。原作已有英文保留，日文改用英文需确实合适并说明理由。
+
+全量对照不等于分别汉化日英两套资源。同一内容可以关联多个实际目标，各目标保留身份、状态和调用；仅供比较的资源不进入制作统计。先规划中文版用途与可行实现，交付时验证实际绑定，无须内容已经在中文版生效才可制作。例如中文可以覆盖 rUGP 的 `translation` 槽原有英文内容，不要求另建中文槽，也不按语言后缀排除实际中文目标；制作底稿按上文单独选择，不能由槽位反推。
+
+全量核查后，应汉化内容完整做到简体中文化，字形、含义、术语与表达均须合格，不能仅以“中文玩家能看懂”通过。按[三类不改的情况](../principles.md#如何判断是否需要翻译)区分有意保留日文、原内容已经符合简体中文，以及有明确依据的特殊惯例；同一句或同一图分区判断。真实署名、无官方中文名的曲目原题等可有明确保留范围，七曜星期标记属于特意沿用的惯例，不能混同于普通中文已经合格；例子不是封闭名单。
+
+范围、理由与确认依据随初译交接，独立二审逐项检查。明确保留范围外的繁体／日式字形、假名和日式称谓须修正，繁简转换不能代替翻译，例如本项目 `軍曹` 应译为 `中士`，而非 `军曹`。旧决定仅凭可读性、装饰分类或工具限制时须重新判断，已知缺陷列为待修，依据不足列为待确认。有效保留仍可复用，不能用“消除所有日文”作为完成标准，也不能把工具妥协记为保留或完成。
 
 ## 总流程
 
 ```text
-合法提取与身份锁定
+合法提取、内容与功能盘点、来源及目标规划
         ↓
 通读剧情、建立人物关系与术语基线
         ↓
@@ -56,14 +64,16 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 4. 公开表可以保留源字段哈希而不批量镜像官方全文；其他贡献者从自己的合法安装重新
    提取并按哈希连接。
 5. AGE2 与 rUGP 的提取、写回和运行时路径必须分开。
+6. 按场景和功能关联文本、语音、图像及官方版本差异，确定中文需要传达什么；有官方英文时保留准确对应及其比较用途。资源缺少同形式日文对应时，继续查其他载体；对应关系不明与已经确认新增分别记录。[PM 源槽关联疑点](../../docs/research/localization/source-alignment.md)说明日英记录必须先对齐，不能只按顺序或内容相似配对。
+7. 复用现有清单或备注，关联原意依据、采用的呈现与底稿、预期交付对象。源资源哈希用于身份和版本校验，不能单独证明含义来自哪种语言；不新增虚构 JP 字段或统一多列表。
 
-输出：源资源清单、稳定 ID、源哈希、场景顺序，以及尚未识别的结构问题。
+输出：内容与功能范围、源资源及稳定身份、原意依据、呈现／底稿与目标规划、场景顺序，以及未确认的对应关系和结构问题。
 
 ## 1. 第一次翻译前：先理解剧情并建立术语
 
 不要随机抽一批行直接翻译。至少先完成：
 
-- 按 route／scene 顺序阅读当前章节及必要前后文；
+- 按 route／scene 顺序阅读或听取当前章节及必要前后文，结合画面确认语境；
 - 记录人物关系、身份差、称谓、口癖和当前情绪；
 - 扫描人名、组织、军衔、机体、武器、作战名、地名和固定梗；
 - 与[系列通用术语表](../Glossaries-KeepItConsistent/muv-luv.ja-zh-Hans.csv)
@@ -85,18 +95,19 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 | `id`／`stable_id` | 不随排序变化的文本身份 |
 | `resource_file`／`egpack`／`rio_file` | 回到游戏资源的位置 |
 | `scene`、`speaker_jp` | 理解语境和说话人 |
-| `source_text_sha256` | 锁定实际文本源字段；听译另记对应日语语音定位，不虚构 JP 槽或哈希 |
+| 源证据及其关联 | 有实际文本源字段时保留 `source_text_sha256`；语音、图片输入记录实际资源与片段／区域，工作转写另列，不虚构文本字段或哈希 |
 | `localized_text` 或现有表的等价列 | 候选译文 |
 | `status` | `translated`、`question` 或 `blocked` |
 
-这一轮的任务是准确理解日文并写出自然中文，不做技术写回。英语槽、旧中文、OCR 和机器
-翻译只能用于发现问题，不能取代日文依据。英文版独有素材从对应日语语音听译，记录语音定位与转写疑点；原作已有英文及有理由采用的英文按最高原则处理。详细规则见[初译规则](05-translation.md)。
+这一轮根据声明的原意依据理解内容、写出自然中文，不做技术写回。原作内容不能用英语槽、旧中文、OCR 或机器翻译替代日文／日语及画面核对；听译记录实际语音定位与疑点。经确认采用的真正新增信息按实际原始语源处理，辅助说明核对实际功能，明确其性质。参考英文字幕分段、按需要复用其具体画布／模板，或写回原英文资源槽，都不改变原作含义的核对依据。详细规则见[初译规则](05-translation.md)。
+
+官方英文可作为另一种译法参与比较，帮助提出问题；初译和独立二审都须核对日文／日语本身，而不是因英文看起来通顺就接受。例如 [AGE2 字幕](../../AGE2/docs/postmortems/caption-layout.md)可以沿用英文版的实际画布、参考分段，同时根据日语语音写出中文；[TDA01 尚待复听的一句](../../AGE2/docs/limitations.md)仍保留为未确认问题。
 
 输出：候选译文、术语增量、问题清单、批次范围和下一批起点。
 
 ## 3. 第二次翻译／独立审核
 
-第二轮不是在第一版中文上“润色一下”。审核者必须重新阅读日文、上下文和人物关系；听译案件重新听对应日语语音，不能只审第一轮转写。
+第二轮不是在第一版中文上“润色一下”。审核者重新核对原意依据、上下文和人物关系：文字回读，语音重听，图内文字回看源图，不能只审第一轮转写。真正新增信息按已声明的语源复核，功能说明核对行为与用途；呈现和技术交付分别检查，不能用某个英文模板是否相似裁定原意。
 逐句给出：
 
 - `keep`：原候选可以保留；
@@ -115,20 +126,22 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 `question` 不能在打包前悄悄消失。按需要补充：
 
 - 后续剧情与相同用词的其他场景；
-- 日文语音、说话人和表情；
+- 实际语源的文字／语音、说话人和表情；
 - 游戏截图及实际调用位置；
 - 官方设定或系列内已确认用法；
 - 资源槽、控制符和图片上下文。
 
 确认后按 [07 修改反查](07-change-impact.md) 检查关联位置，同步受影响的正文、
 公共术语表和作内术语表，保留有语境依据的差异。仍无法判断的项目保持
-阻塞，不能靠英文槽或“读起来差不多”强行定稿。
+阻塞；缺少日语原作含义依据不能靠英文译文兜底。原意、版本对应、呈现和技术路线的疑点分别定位，不把缺少日文图片等同于缺少原意依据。
 
 输出：已解决问题、仍阻塞问题、术语表版本和跨章节一致性报告。
 
 ## 5. 技术绑定与写回
 
 语义定稿后才进入引擎层：
+
+核对制作时选择的底稿和实际目标对象，而不是由原意语源推定写回语言。多个目标复用同一文案时，各自验证尺寸、状态和调用；例如 rUGP 可覆盖既有 `translation` 目标，AGE2 可使用经确认的 `_en` 资源路径。新增呈现依照引擎能力实现，不虚构其支持的槽位。
 
 - AGE2：从合法 `pack.bin` 提取 FPD 成员，按稳定身份生成 EGPACK 修改，处理 UI、WebP
   和字体，以 LocalAppData 松散覆盖发布；
@@ -147,7 +160,7 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 - 控制符、编码、容量、偏移和父引用；
 - 术语一致性与禁用旧译名；
 - 全量译文的字体覆盖；
-- 图片尺寸、模式、透明度、哈希和同组排版；
+- 图片相对选定底稿／目标格式的尺寸、模式、透明度、允许修改范围、哈希和同组排版；
 - 包内文件清单、安装目标和可回滚性；
 - 未混入原始容器、工作站路径、密钥、测试图或来源不明字体。
 
@@ -158,6 +171,7 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 首次建立对应游戏、语言和资源方案的实机覆盖时，至少覆盖标题、设置、第一段台词、存读档、回看、所有路线、选项、说话人、成就、字体、
 每类修改图片和补丁卸载。图片需要检查的不只是“能看到”：还包括异色、撕裂、透明度、
 错槽、英文回退、日文/translation 路由差异和 shared/common 端点。
+采用或新增的中文呈现还需核对信息是否准确可读，字幕与语音是否对应、分段和显示／清除时机是否合适，是否遮挡正文或操作。其他版本的方案提供实现依据，不能代替中文版的这些检查。
 
 后续局部修订检查修改位置、必要上下文和受影响功能，不因一句译文变化重走所有路线。
 游戏版本、写回方案、字体或共用资源变化时扩大相关覆盖；无法确认影响范围时先调查，
@@ -186,7 +200,7 @@ ParaTranz 主要用于发布后其他参与者的日文对照校对与后续修�
 
 1. 先确认游戏、补丁版本、语言槽和是否安装其他 Mod；
 2. 用截图、章节和前后台词定位稳定 ID；
-3. 回到日文原文和术语基线判断是翻译、资源绑定、字体、图片还是安装问题；
+3. 按问题回到原意依据与术语、采用的呈现／底稿或实际绑定，判断是翻译、设计、字体、图片、安装还是版本问题；
 4. 修改可维护源表或代码，而不是只修生成的 EGPACK／RIO／WebP；
 5. 按 [07 修改反查](07-change-impact.md) 同步关联位置，重跑受影响的自动检查和场景；共用依赖变化或相关失败时扩大检查范围；
 6. 在变更记录中说明修复，并生成新的可复现 Release。
@@ -223,10 +237,36 @@ ParaTranz 主要用于发布后其他参与者的日文对照校对与后续修�
 
 ## English summary
 
-The reusable method is a staged, evidence-backed loop: freeze legal source
-identity; understand the story and establish terminology; produce a first
+The reusable method is a staged, evidence-backed loop: inventory content/functions
+and lawful resources; distinguish meaning evidence, presentation, authoring base
+and delivery target; understand the story and establish terminology; produce a first
 translation by complete scene; independently review every row as
 `keep`/`revise`/`question`; resolve questions and re-freeze terminology; bind
 through the correct engine; run automated and in-game QA; have the maintainer
 check and correct remaining issues before release; then feed player
 reports back into the maintained source rather than patching generated files.
+Text, voice and images are normal meaning inputs. Normally author images from a
+suitable Japanese original and reference English design. Identify the part,
+Chinese purpose and reason for necessary English-canvas/template or
+display-mechanism reuse; writeback slots remain a separate decision. None of
+these choices replaces Japanese meaning authority. Distinguish another
+presentation of existing content from genuinely added information; the latter
+needs a declared source and adopted scope.
+Keep accurately matched official English where available for scene location,
+alternative-wording comparison and design reference. The [PM source-association
+question](../../docs/research/localization/source-alignment.md) illustrates why
+correspondence must be checked before meaning; [AGE2 subtitles](../../AGE2/docs/postmortems/caption-layout.md)
+illustrate using an English canvas with Japanese-audio translation. The unresolved
+[TDA01 cheer ending](../../AGE2/docs/limitations.md) remains unresolved.
+
+Required Chinese must be fully Simplified Chinese in actual glyphs, meaning,
+terminology and expression; readability alone is insufficient. Distinguish
+intentional Japanese retention, already compliant Chinese and explicitly adopted
+special conventions by region. Original credits/titles and approved weekday
+notation can have justified scopes; examples are not a closed whitelist. Outside
+those scopes, correct Traditional/Japanese glyphs, kana and Japanese terms;
+`軍曹` needs this project's `中士`, not merely simplified `军曹`. Pass scope,
+reason and confirmation to independent review. Reuse valid decisions, but reassess
+old readability/decoration/tool-limit decisions and retain known defects as
+repairs, not retention or completed work. Removing every Japanese character is
+not the completion criterion either.

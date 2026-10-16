@@ -8,7 +8,9 @@
 
 原版既有单独显示的字幕，也有与正文同时出现的抬高字幕。将帝都的 `0,-2145,723`、`0,-2170,723` 统一改成普通字幕的 `0,-1550,723`，会消除演出为正文预留的空间。制作中文图片时保留对应场景的原始坐标，排版调整优先在原画布内完成。
 
-日文字幕图也可能只是 1×1 透明占位。此时从配对素材和脚本确定画布与调用，不能把占位图当作最终图片尺寸。文案仍依据对应日语语音听译，英文只辅助定位与版式参照。
+日文字幕图也可能只是 1×1 透明占位。此时从配对素材和脚本确定画布与调用，不能把占位图当作最终图片尺寸。文案依据对应日语语音听译并独立复核；适用的英文版字幕图可以提供实际画布与版式模板，其语言标记也不排除它作为中文写回目标。英文译文不代替日语原意判断。
+
+这体现[通用本地化原则](../../../Localization-MakeGamesSpeak/principles.md)：先确认同一原作内容，再分别选择中文呈现、制作底稿和实际目标。原作已有语音与其他版本新增字幕载体可以关联成一项中文任务，无须补造同形式日文图片。
 
 ## 对齐实际可见的字形
 
@@ -39,4 +41,15 @@
 
 ## English
 
-Preserve scene-specific caption positions. Center the rendered alpha bounds rather than font advance boxes, use consistent line pitch, and fit raised captions into the space shared with dialogue. The numerical recipes above are specific to Imperial and ordinary TDA cards. Static layout, package adoption and in-game behavior are separate checks.
+Meaning evidence, authoring base and delivery target need not be the same asset.
+A Japanese 1×1 transparent placeholder does not constrain the final subtitle
+canvas. Translate and independently review the Japanese speech; an appropriate
+English-edition subtitle image may supply the actual canvas/layout template and
+target path.
+
+Preserve verified scene-specific coordinates and fit Chinese lettering to the
+available space. Center the rendered alpha bounds rather than font advance
+boxes, use consistent line pitch, and fit raised captions into the space shared
+with dialogue. The numerical recipes above are specific to Imperial and
+ordinary TDA cards. Check actual calls and display/clear timing in game. Static
+layout, package adoption and in-game behavior are separate checks.

@@ -11,13 +11,25 @@
 
 A glossary is one part of maintaining a long translation. The reusable method is:
 
-1. **Read the story and build a contextual baseline.** Record identities, relationships, aliases, naming variants, evidence, decisions and unresolved questions. Reuse applicable work; update it when the underlying evidence changes.
+1. **Read/listen to the story and build a contextual baseline.** Include relevant image lettering and link evidence across media. Record identities, relationships, aliases, naming variants, evidence, decisions and unresolved questions. Reuse applicable work; update it when the underlying evidence changes.
 2. **Promote confirmed mappings to maintained glossaries.** Store Japanese, Chinese and usage conditions. The baseline still contains their evidence alongside contextual references, candidates and questions. Approval does not remove an entry's history.
 3. **Carry the same decisions across batches.** Drafting and independent Japanese review use the current baseline. Check character voice, forms of address, references, recurring expressions and connections between scenes, including related UI and image copy.
 4. **Trace adopted changes through related occurrences.** Search Japanese forms, aliases, old and new translations, then inspect context. Record required changes, already-correct occurrences, justified differences and unresolved cases. Full names, nicknames, different senses and deliberate jokes need not have identical wording.
 5. **Integrate and recheck.** Update the maintained text and affected terminology or review records, reread relevant context, and perform the technical or in-game checks the change requires. The maintainer corrects the release candidate before publication; community revisions repeat the process for later versions.
 
 The [complete English workflow](../Text-AITranslationWorthReading/workflow.en.md) explains how these activities fit into text production. The [worked examples](decisions.md) explain name boundaries, callsigns, ruby anchors and changes affecting both text and images.
+
+Meaning evidence, presentation, authoring base and target are distinct under the
+[shared principles](../principles.md#english-summary). An English-edition template
+does not change an original character's naming authority. Confirm genuine
+additions and their actual sources separately; do not invent a Japanese term to
+fit a table. Keep each actual resource identity while sharing applicable decisions.
+
+Keep useful official English names, abbreviations and translations linked in
+the contextual baseline where available. They support cross-language lookup
+and comparison, without requiring a new glossary column or overriding Japanese
+meaning and adopted Chinese terms. The [Photon language decisions](../../rUGP/docs/postmortems/pf-pm-latin-review-20260909.md)
+show why callsigns, foreign voice and `Hot Dog` wordplay need different treatment.
 
 This folder contains the Muv-Luv shared glossary and eight game-specific glossaries.
 Use shared + own for the seven Muv-Luv games; Kiminozo uses only its own table.
@@ -37,7 +49,11 @@ For another target language, create independent glossary files and target-langua
 
 ### 1. 先读作品，建立有语境的基线
 
-初译前通读声明范围内的剧情，整理人物关系、称谓、专名、别名、写法变体和固定表达，再与已有术语逐项核对。对关键用例记录出处、适用范围、采用理由和仍待确认的问题；拿不准的词先保留为候选或疑点。
+初译前通读或听取声明范围内的剧情，结合需要处理的图内信息，整理人物关系、称谓、专名、别名、写法变体和固定表达，再与已有术语逐项核对。对关键用例记录实际文字、语音或画面出处、适用范围、采用理由和仍待确认的问题；拿不准的词先保留为候选或疑点。
+
+按[最高原则](../principles.md)区分原意依据、呈现、制作底稿与目标。同一人物或概念不会因字幕模板来自英文版而改变定名依据。真正新增信息先确认来源与范围，不能为了套表捏造日文词条；跨载体共享适用决定时，各实际资源身份仍保留。
+
+有官方英文时，把有用的英文名称、缩写与译法关联在语境基线中，方便检索日英对应和比较理解；不强制增加术语表列，也不直接覆盖日文原意或已确认中文。[Photon 的外语表达实例](../../rUGP/docs/postmortems/pf-pm-latin-review-20260909.md)说明，呼号、外语语气和 `Hot Dog` 笑点需要不同处理，不能为了全文一致就机械清除英文。
 
 **基线保存理解和决定的依据。** 它包含确认术语，也包含语境参考、候选和待核项。条目进入术语表后，依据仍留在基线中；“冻结”表示当前按这一版推进，后续有新证据仍可修改。现有扫描和基线仍适用时直接复用，补查变化的部分。详细做法见[04 术语流程](../Text-AITranslationWorthReading/04-terminology.md#3-章节开工前的全章扫描)。
 

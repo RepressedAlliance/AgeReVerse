@@ -2,7 +2,9 @@
 
 [上一步](02-copy-and-style.md) · [流程总览](README.md) · [下一步](04-self-review.md)
 
-**输入：**原图、已复核文案、已确认样式，以及允许修改和需要保护的区域。去字与中文制作是同一阶段内的处理动作，根据文字存在方式选择方法。
+**输入：**02 选定的制作底稿、已复核文案、已确认呈现与样式，以及允许修改和需要保护的区域。去字与中文制作是同一阶段内的处理动作，根据文字存在方式选择方法。
+
+本步的“原图”指实际采用的制作底稿，通常是日文版适用原图或由其制作的合法无字底；确需复用英文版画布或模板时，沿用 02 明确的具体部分、中文用途和理由，不默认拿英文成品图改中文。原意依据另行关联。像素保护针对该底稿和声明范围，输出画布、有效区域与图层仍须满足实际目标格式。新增叠层或换画布沿用已确认的中文设计及引擎方案，不能为了通过像素检查缩回日文透明占位，也不能无依据放宽保护范围。
 
 ## 清除旧字、修复底图
 
@@ -18,7 +20,9 @@
 
 普通排版优先复用[确定性排字工具](tools.md)，统一字体、字号、字重、间距、基线和状态效果。匹配字高字宽、重心、留白、颜色、渐变、阴影和光晕。不要压扁中文以塞进原框，不要逐词改变字重或只修按钮一个状态。
 
-Logo 与手写可采用绘制或受控生成，再校正实际文案和笔画。每个设计变体分别还原；柔和原字不能变成硬描边，浓艳颜色不能变灰淡。按[翻译最高原则](../principles.md)保留原作已有的英文副标题及无需修改的装饰，不把英文版后来替换的内容一概保留。
+Logo 与手写可采用绘制或受控生成，再校正实际文案和笔画。按已选中文方案制作所需变体，通常以日文版适用原图为基础，英文设计用于样式对照；确需复用英文版具体画布或模板时，沿用 02 确认的部分、用途与理由，不自动各做一套中文。根据选定底稿、作品风格与中文阅读检查效果；柔和原字不能无故变成硬描边，浓艳颜色不能无故变灰淡。按[最高原则](../principles.md)保留原作已有的英文副标题，装饰文字则沿用 02 已明确的处理范围，不因属于装饰就保留，也不把英文版后来替换的内容一概保留。
+
+应汉化区域完整采用简体中文的字形、术语与表达，不能只替换假名或做繁简转换。手写、印刷与生成字都检查实际笔画，不能让日式字形、繁体字形或日式称谓混入；原图文字已经全部合格时才直接复用。明确保留的原文与特殊惯例限于 02 确认的范围，保留纸张、笔迹风格和构图不能成为保留文字缺陷的理由。
 
 ## 附着在物体上的文字
 
@@ -32,4 +36,24 @@ Logo 与手写可采用绘制或受控生成，再校正实际文案和笔画。
 
 每次生成只是候选。检查中文实际笔画，纠正重排海报、修改价格、移动物体、损伤人物等错误；需要时恢复区域外原图。能力和档位不替代结果检查，失败时调整方法，不能反复把同类缺陷交给维护者。
 
-**输出：**候选图及可复用配方。保留原画布尺寸、有效内容位置和透明边缘；用于游戏的母版与放大预览分开。
+**输出：**候选图及可复用配方。遵守选定底稿的保护范围和实际目标的画布、有效位置与透明边缘要求；用于游戏的母版与放大预览分开。
+
+## English summary
+
+Produce from the selected base, checked copy and approved Chinese design/style.
+Normally use a suitable Japanese original or its lawful textless derivative.
+Any necessary English-canvas/template reuse follows 02's specified part, Chinese
+purpose and reason; English finished artwork is not the default base.
+Meaning evidence is linked separately. Pixel preservation applies to that
+base and the declared edit mask, while canvas, alpha and geometry must satisfy
+the actual target format. Added layers or canvas changes need the established
+engine/design plan, not a blanket relaxation of constraints. Select suitable
+typesetting, painting or constrained editing, preserving unrelated artwork,
+spatial relationships and approved retention. Make only the chosen variants,
+and keep runtime masters distinct from enlarged previews.
+Required Chinese regions must be fully Simplified Chinese in glyphs, terminology
+and expression, including handwriting and generated lettering. Check actual
+strokes; removing kana or converting Traditional characters alone is insufficient.
+Reuse original lettering only when fully compliant or within a justified original
+retention/special-convention scope from 02. Preserving artistic style does not
+justify preserving text defects.

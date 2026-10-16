@@ -16,9 +16,22 @@ update terminology, then trace and resolve change impacts (07) before engine
 writeback, automated checks and in-game QA. Apply 07 whenever later edits occur.
 The numbers describe workflow order, not rule precedence.
 
-Before these steps, apply the shared [translation principles](../principles.md#english-summary)
-to both text and images, including Japanese-voice transcription for assets
-exclusive to the official English edition.
+Before these steps, apply the shared [localization principles](../principles.md#english-summary).
+Define Chinese tasks by content/function and distinguish meaning evidence,
+presentation, authoring base and delivery target. Japanese text, audio and
+images establish original meaning. Images normally use a suitable Japanese
+original as the base; English designs are references. Explain the part, purpose
+and reason for any needed English-canvas/template or display-mechanism reuse.
+Listening is a normal input path. Distinguish another presentation of existing content from genuinely
+added information, whose source and adopted scope need confirmation.
+Produce the chosen Chinese solution rather than both official resource sets.
+Chinese can replace English in rUGP's existing `translation` slot without
+making English the meaning authority or requiring a separate Chinese slot.
+
+Keep official English where available for scene location, alternative-wording
+comparison and design reference. Check Japanese/English correspondence before
+resolving meaning differences; independent review still returns to Japanese.
+See the [project examples](../principles.md#how-we-use-english-project-examples).
 
 </details>
 
@@ -26,7 +39,9 @@ exclusive to the official English edition.
 
 沿用本项目已经使用的文本流程：通读剧情并建立术语 → 按场景初译 → 独立日文对照二审 → 解决疑点与联动修改 → 技术写回和实机检查 → 维护者人工修正、复查 → 发布。各阶段的输入、输出和状态见[完整工作流](workflow.md)。术语表如何形成、修改怎样影响全文，另见[术语与全文一致性](../Glossaries-KeepItConsistent/README.md)。
 
-先按最高原则确定语言来源与处理：日译中，保留日文原版已有英文；日文改用英文需有适当理由。官方英文版独有素材用对应日语语音听译，初译和二审都核对语音，不改成英译中。图片文案也使用同一原则。
+先按最高原则确定中文需要传达的内容与功能，再区分原意依据、呈现方案、制作底稿和交付目标。原作含义从日文文本、日语语音、画面及语境确认；图片通常以日文版适用原图为基础，英文设计用于参考；确需复用英文版画布、模板或显示机制时说明具体部分、用途与理由。听译是正常输入方式，初译与二审都核对实际语音。其他版本增加载体不等于增加原作内容，真正新增的信息先确认来源与采用范围。原作已有英文的保留规则仍适用。写回按引擎实际路由，例如中文可覆盖 rUGP 的 `translation` 槽原有英文内容。
+
+有官方英文时保留准确对应，用于定位场景、比较译法、发现疑点和参考本地化设计；不能把有用的英文对照省掉，也不能用英文代替独立日文复核。日英有分歧时先查关联，再判含义。具体可看[PM 源槽疑点、AGE2 字幕及原作英文保留等实例](../principles.md#官方英文具体怎么用)。
 
 文件名前的 `01`—`07` 表示规范的阅读和使用顺序。前三份用于确认项目与数据；
 正文工作的核心顺序是：**通读剧情并冻结术语 → 初译 → 独立二审 → 解决疑点并同步术语
@@ -38,11 +53,11 @@ exclusive to the official English edition.
 | 顺序 | 规范 | 什么时候用 | 进入下一步前要明确什么 |
 | --- | --- | --- | --- |
 | 01 | [单个游戏项目清单](01-game-project.md) | 新游戏或接手任务时 | 游戏、引擎、目标语言，以及正文、术语、图片和字体的权威入口；已有项目先读其 `project.toml` 和 README |
-| 02 | [补丁源表规则](02-source-data.md) | 提取、核对来源及每次修改源表时 | 版本、JP 原文槽、稳定 ID、源哈希、scene 顺序与修改范围；公开表没有 JP 全文时需从合法本机源数据连接 |
+| 02 | [补丁源表规则](02-source-data.md) | 提取、核对来源及每次修改源表时 | 版本、实际原意依据与资源关联、稳定 ID、源摘要、scene 顺序与修改范围；公开表缺少全文时从合法本机来源连接，语音／图片按实际载体定位 |
 | 03 | [翻译与图片表字段约定](03-table-schemas.md) | 选择现有表或新建工作表时 | 身份、源证据、目标译文和状态分别在哪一列；已有表保留历史字段映射 |
 | 04 | [章节术语工作流](04-terminology.md) | 正文初译前，之后每批持续使用 | 通读剧情与人物关系、扫描全章专名、核对总表、冻结章节术语基线，并列出疑点 |
 | 05 | [简体中文初译规则](05-translation.md) | 按完整 scene 或自然剧情段初译时 | 产出候选译文、`translated / question / blocked` 状态、术语增量和下一批起点 |
-| 06 | [独立审核规则](06-review.md) | 每批候选完成后，独立重新阅读 JP 时 | 逐句给出 `keep / revise / question`，记录修改理由，复查全章一致性 |
+| 06 | [独立审核规则](06-review.md) | 每批候选完成后，独立回读、重听或回看来源时 | 逐项给出 `keep / revise / question`，记录修改理由，复查全章一致性；呈现与技术判断各按其依据检查 |
 | 07 | [修改反查规则](07-change-impact.md) | 译文、术语或理解依据变化后 | 确认受影响范围、同步关联位置、记录例外与未决项，复核修改结果 |
 
 接手已有章节时先核验 01—03 的现有成果，再加载该章冻结术语进入当前批次。
@@ -68,8 +83,8 @@ dry-run 和验收表。引擎规定的写入、安装前校验仍在实际操作
 
 ## 规则冲突时怎样判断
 
-- **原意判断：**以当前版本 JP 原文及其剧情上下文为依据；英文版独有素材用对应日语语音听译。英文槽、旧中文、OCR 和
-  模糊匹配只能帮助发现问题，不能用于兜底定稿；缺少依据就记录 `question` 或 `blocked`。
+- **原意判断：**原作内容以当前版本日文文本、日语语音、画面与语境为依据；听译不要求先有日文文字或图片。英文译文、旧中文、OCR 和模糊匹配不能替代来源核对。真正新增的信息按已确认的实际语源及用途审核；缺少必要依据记录 `question` 或 `blocked`。
+- **中文呈现：**图片通常以日文版适用原图制作，官方英文排版与设计供参考；确需复用英文版具体画布、模板或显示机制时，说明部分、中文用途和理由。中文表达与排版按实际阅读效果调整，写回槽位单独确认，不自动制作全部英文差分，也不因参考英文而改变原作含义。
 - **固定译名：**先用本章已冻结且适用于该语境的项目译法和公共术语表，再按
   [术语确认依据](04-terminology.md#4-译法确认依据) 补充证据。若基线、总表或 JP
   语境相互冲突，应记录并确认变更，不能静默选一个覆盖其他记录。

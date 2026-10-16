@@ -25,7 +25,13 @@
 - rUGP 的两张 69/151 行运行时表保存偏移、容量、控制与绑定合约；四张共 57,547 行的审校表只保存稳定身份、RIO/scene、源字段哈希和译文，仍需另行绑定到安全写入路线。两类表都不公开完整日文台词；合法持有者应从受支持的本地游戏版本重新验证身份。
 - 英文槽、旧翻译和模糊匹配可以用于发现问题，但不能替代 JP 原文成为翻译含义的权威来源。
 
-官方英文版独有、没有对应官方日文文字或图片的素材，按[最高原则](../principles.md)找到对应日语语音并听译。资源定位和校验继续指向实际源对象，另记语音定位、工作用转写及疑点；不捏造不存在的 JP 槽或把工作转写冒充官方源字段。二审需重新听日语语音核对。原作本来使用的英文与英文版的译文分别记录，前者保留英文，后者不成为英译中的依据。
+文字、语音和图片都可以承载原作信息。按[最高原则](../principles.md)关联场景与内容，分别记录原意依据、用于制作或连接的源资源和实际写回目标；三者不必是同一文件或同一语言槽。官方英文资源可以是用于连接的对象；确需复用其具体画布或模板时，按总则说明用途与理由。记录英文资源的哈希不表示中文含义来自英文，也不表示图片默认以英文成品图为底稿。
+
+有官方英文时，保留它与日文／日语及中文候选的准确对应，供场景定位、译法比较和差异检查；公开表不必因此增加英文全文列。PM 曾发现[日英说话人与内容不一致的关联疑点](../../docs/research/localization/source-alignment.md)，中文对应英文内容：这时先查记录、索引、调用和语音，不能只改说话人，也不能因英文仅供参考就丢掉这条线索。该疑点仍未确认修复结果或受影响的玩家版本。
+
+听译关联实际语音资源、必要片段／场景定位、工作用转写和疑点，二审重新听语音；图内文字回看对应画面。哈希锁定实际存在的文本字段或资源，工作转写另列，不补造 JP 槽或把转写摘要当成官方文本摘要。原作本来使用的英文与英文版译文分别识别。
+
+真正新增的信息与辅助说明先确认来源、中文用途和采用范围，按实际原始语源或功能审核；未确认对应关系的资源不能直接当成新增内容，也不一律要求找日语语音。沿用本作源表映射、现有备注或旁表即可，不批量改写历史表头。
 
 因此，“所有公开表都必须包含 `speaker_jp` / `jp_text`”并不是仓库规则。能否公开源文本取决于游戏、来源和[内容与发布政策](../../docs/project/asset-and-release-policy.md)。
 
@@ -56,3 +62,25 @@
 - builder 实际读取的列、资源和语言是否就是本次审核的版本。
 
 格式检查不等于端到端证明。最终补丁仍需按引擎完成构建、清洁安装、实机、卸载/回滚与发布清单验证。Release 载荷不应作为生成物提交回源码目录；公开资产是否能进入仓库则按资产政策逐项判断。
+
+## English summary
+
+Keep stable identities, supported-version joins and existing table contracts.
+Link meaning evidence, authoring/join resources and delivery targets separately;
+they need not share a file or language slot. English resources may serve joins;
+explain any necessary English-canvas/template reuse under the principles. An
+English-resource hash does not choose English finished artwork as the base.
+A hash verifies its declared field
+or resource, not translation authority. Text, voice and images are normal inputs.
+Listening-based work records audio/segment context and a separate working
+transcript, and independent review checks the audio again. Never fabricate JP
+fields or substitute transcript hashes for official text hashes. Confirm the
+provenance, purpose and scope of genuine additions, reviewing their actual source
+language or function. Missing counterparts remain uncertain. Reuse mappings and
+sidecar records, and retain the existing publication and QA boundaries.
+Where official English exists, preserve its accurate correspondence with Japanese
+and Chinese for scene location, wording comparison and discrepancy checks; this
+does not require publishing another full-script column. The [PM association
+question](../../docs/research/localization/source-alignment.md) shows why a speaker/
+content mismatch requires checking records, indices, calls and audio, not merely
+renaming a speaker. Its fix and affected player release remain unconfirmed.

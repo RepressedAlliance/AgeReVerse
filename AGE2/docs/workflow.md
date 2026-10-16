@@ -39,6 +39,16 @@ python AGE2/tools/egpack/extract_egpack_manifest.py "X:\work\fpd-extract" `
 
 Select the authoritative source-language slot by field key, not by the nearest readable byte sequence.
 
+Under the [localization principles](../../Localization-MakeGamesSpeak/principles.md#english-summary),
+content/function, meaning evidence, presentation, authoring base and target are
+separate decisions. Original meaning may come from Japanese text, audio or images;
+suitable official-edition templates and implementations may support the target
+language. Source-field joins do not determine the writeback slot or image base.
+Retain the actual source and every target identity; the examples below remain
+limited to their documented text-table and writer contracts.
+
+按[通用原则](../../Localization-MakeGamesSpeak/principles.md)分别确认内容与功能、原意依据、呈现方案、制作底稿和交付目标。原作信息可来自日文文本、日语语音或画面，适用的官方各版模板与实现可用于目标语言。源字段连接不决定写回槽或图片底稿；保留实际来源及每个目标身份，下方示例仍只适用于其声明的文本表与写入合约。
+
 ## 3. Prepare exact changes
 
 The example below targets an existing JP slot, as used by historical test patches. Current AGE2 BETA packages use a separate Chinese slot; this field-level join does not create that slot or reproduce the current installers. See the [packaging guide](../packaging/windows/README.md).
