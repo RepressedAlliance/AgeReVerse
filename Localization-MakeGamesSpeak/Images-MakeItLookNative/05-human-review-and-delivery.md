@@ -12,7 +12,17 @@
 
 按资料用途组织对照：原意提供实际文本、语音或画面及场景；视觉提供选定底稿、借鉴的设计和中文成品；交付提供实际目标与调用。日文版有对应画面时展示，没有时不强制补图或用透明占位充当有效对照。官方英文图通常用于对照或设计参考；确需复用其具体画布或模板时，说明用途与理由，并准确标明角色。没有找到对应就写“尚未找到”，确认没有才写“不存在”。不能从 `_ja`／`_en` 后缀猜用途，也不要求照搬某版排版。
 
-**送审默认按“官方日文 → 官方英文（有则提供）→ 之前的中文（有则提供）→ 当前中文”组织准确对照。** 官方英文即使仅供参考也保留入口；已有旧中文时，提供本次修改前的对应版本，让审核者看清改动与是否引入新问题。首次制作没有旧中文、没有对应英文图时不强求，也不用其他图片凑数。每个视图标明角色及对应版本；旧中文区分已发布、已确认或未确认候选，当前中文标明本次送审版本，不能把旧稿显示成当前成品。
+**图片送审默认按“官方日文版用图 → 官方英文版用图（有则提供）→ 之前的中文（有则提供）→ 当前中文”组织准确对照。** 前两项标版本用途，不宣称图中文字都是日文或英文。版本归属沿用 01 中经语言槽、索引／脚本选择、资源映射与共用／回退关系核实的结果，不能按看见的文字或 OCR 结果换栏。官方英文版用图即使仅供参考也保留入口；已有旧中文时，提供本次修改前的对应版本，让审核者看清改动与是否引入新问题。首次制作没有旧中文、对应图尚未取得时不用其他图片凑数。每个视图标明角色及对应版本；旧中文区分已发布、已确认或未确认候选，当前中文标明本次送审版本，不能把旧稿显示成当前成品。
+
+图旁或素材组说明分别写清：**来源／槽位依据、图内语言与本地化处理、日英对应关系、中文处理范围**。同组共性说明一次，例外单列，复用现有备注，不强制新表。原作英文、英文译文和曲名罗马字转写分别说明；局部英译不能标成全图已英译。可采用如下标注：
+
+> 官方英文版用图 · 来源：已核实的英文资源路由
+>
+> 图内文字：日文与英文混合；对应关系：与日版来自不同资源，但解码像素相同。
+>
+> 中文处理：汉化指定日文区域，保留原作英文；具体区域与理由见本图说明。
+
+已确认日英共用同一资源，或英文路由沿用日版／共用图时，保留两个版本用途并明确标注，可以共用预览，不要求制造独立英文图。若只是不同资源的解码像素相同，标“像素相同”并保留各自身份，不升级为共用资源。尚未取得、尚未解码或对应待核分别注明；只有依据确认不存在才写不存在。页内不能从重复画面自动判错配，也不能把英文版用图直接标为已英文化。静态来源依据与实机显示状态仍分开。
 
 对照图旁附上**面向审核者的简短说明**，逐图或按同类素材组说明：图用在哪里；这次改了哪些文字或区域；为什么这样翻译、排版或返修；哪些内容有意保留及理由；还有什么不确定、需要人判断。说明直接指向图中位置，可用“左下角地名”“第二行字幕”等易懂表述；同组共性解释一次，单图例外另写。返修明确旧中文的问题和当前修正，首次制作说明关键处理。不只给文件名、状态码或制作流水，也不要求审核者翻聊天记录才能理解。当前中文仍是候选时明确写“待人工确认”，说明不能代替查看实际图片。
 
@@ -85,13 +95,33 @@ page export as appropriate. If a page stores comments only locally, explain
 save/export and return; local saving is not sending. Match incoming feedback to
 its version before revising, preserve valid approvals and do not apply old-draft
 comments to a different candidate. Do not require a particular review interface.
-Organize the review as **official Japanese → official English (if available) →
+Organize image review as **official Japanese-edition image → official English-edition image (if available) →
 previous Chinese (if available) → current Chinese**. Keep English accessible even
 when used only for comparison. Include the corresponding pre-change Chinese
 version where one exists, so reviewers can see both improvements and regressions.
 Do not invent counterparts for first-time work or missing official resources.
 Label each view's role and version; distinguish released, approved and unapproved
 previous Chinese, and identify the exact current review candidate.
+
+The official-image labels identify edition use, not the language of the lettering.
+Use 01's provenance established through verified slots, indices/script selection,
+resource mappings and shared/fallback routes; never reassign panels from visible
+text or OCR. Explain source/slot evidence, visible language/localization treatment,
+Japanese/English resource relationship and Chinese scope through existing notes.
+Explain a group's common decisions once and individual exceptions separately.
+Distinguish original English, translated English and romanized song titles;
+partial translation does not establish full English localization. For example:
+“Official English-edition image; verified English route; Japanese/English mixed
+lettering; separate resources with identical decoded pixels; localize the specified
+Japanese region while retaining original English.”
+
+For proven shared resources or English reuse of Japanese/shared artwork, retain
+both edition roles and label reuse; they may share a preview without inventing a
+separate English image. Equal pixels alone justify only a pixel-equality label,
+not a shared-resource claim; keep each identity. Distinguish unfetched, undecoded
+and unresolved counterparts from confirmed absence. Duplicate views do not prove
+a mismatch and English-edition origin does not prove English lettering. Keep
+static provenance separate from final in-game display status.
 
 Add a short, human-readable explanation beside each image or related group:
 where it appears; which text or regions changed; why the wording, layout or repair

@@ -8,6 +8,8 @@
 
 日英图片都存在时，保留两版对照，检查有无漏掉的阅读信息，并比较版式、状态和图层。例如 [Photon U0478](../../rUGP/docs/crmt-family.md)的日文是竖排 4 层、英文是横排 6 层，已有中文竖排 4 层方案；不能因为中文层数不同于英文就判错，也不能只检查同一内容的一个目标就认定全部通过。
 
+送审前按[版本归属规则](../principles.md#图片属于哪个版本)核对预览图与语言槽、索引／脚本引用的关联，而非看图中文字给日英栏归类。日文版含英文、英文版含日文或日英同图都可能正确；“共用资源”与“不同资源但同像素”分别核对，不能把同图直接判错配或把独立英文图判为全图已英译。已确认沿用不标缺图，未取得、未解码与对应待核不写成不存在。来源核对通过也不免除应译区域的简体中文检查。
+
 | 尺度 | 主要查看 |
 | --- | --- |
 | 整图 | 是否自然，构图、视觉重心、物体关系是否改变 |
@@ -58,3 +60,11 @@ information and inspect layout, state and layer differences. [Photon U0478](../.
 has four vertical Japanese layers, six horizontal English layers and a four-layer
 vertical Chinese design. A layer-count difference from English is not itself a
 defect, and one checked target does not prove all targets passed.
+Check review views against verified slots, indices/script references and resource
+identities, not visible language. English in a Japanese-edition image, Japanese
+in an English-edition image, and equal images can all be correct. Verify shared
+resources separately from equal pixels in distinct resources; neither identity
+nor difference alone proves a mismatch or full English translation. Verified
+reuse is not missing imagery; distinguish unfetched, undecoded and unresolved
+counterparts from confirmed absence. Correct provenance does not exempt required
+regions from full Simplified Chinese review.

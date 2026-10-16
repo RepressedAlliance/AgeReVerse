@@ -106,7 +106,7 @@ UI 按第 3 节成组制作和对照。Logo 除字形、粗细、笔势、间距
 
 动态图层和连续帧还要按[04 自检要求](04-self-review.md)检查合成与播放，不能由单层、单帧推定整体通过。人工送审按接收设备提供能打开的材料、必要的动态预览及简单的意见交回方式，反馈关联稳定图片编号和候选版本；具体见下一项人工审核要求。
 
-有疑问时给出实际原意依据、底稿、候选图、具体位置和原因。审核展示应支持整图／细节、底稿／中文切换、放大和移动，并保留张数、跳转与只看修改图的筛选。按[人工审核要求](05-human-review-and-delivery.md)提供官方日文／官方英文（有则提供）／之前的中文（有则提供）／当前中文，标明角色、版本和候选状态；附上面向人的修改位置、原因、保留决定与待确认问题说明。旧中文用于比较本次修正，不能代替日语原意依据。缺失对应如实说明，按来源角色提供适用的文字、语音和画面，不强制所有任务有日文原图。
+有疑问时给出实际原意依据、底稿、候选图、具体位置和原因。审核展示应支持整图／细节、底稿／中文切换、放大和移动，并保留张数、跳转与只看修改图的筛选。按[人工审核要求](05-human-review-and-delivery.md)提供官方日文版用图／官方英文版用图（有则提供）／之前的中文（有则提供）／当前中文，标明角色、版本和候选状态；版本归属采用语言槽、索引／脚本引用与共用／回退的核实结果，不能看图中文字换栏。图内语言、日英对应关系和中文处理范围另作简短说明；不同资源但同像素不等于共用同一资源，已确认沿用不标缺图。附上面向人的修改位置、原因、保留决定与待确认问题说明。旧中文用于比较本次修正，不能代替日语原意依据。缺失对应如实说明，按来源角色提供适用的文字、语音和画面，不强制所有任务有日文原图。
 
 ## 9. 复用、返修与公开
 
@@ -146,9 +146,13 @@ valid for the current version; fill gaps, changes and failures rather than
 unpacking again. Declare counting units and distinguish investigation from
 confirmed production, detailed inspection, human approval and runtime checks.
 Inspect dynamic assets both individually and in composition/playback.
-Human review compares official Japanese, optional official English, optional
+Human review compares official Japanese-edition images, optional official English-edition images, optional
 previous Chinese and current Chinese with role/version/status labels and short
 explanations of changes, reasons, intentional retention and open questions.
+Edition provenance follows verified slots, indices/script references and shared/
+fallback routes, not visible language. Explain lettering, resource relationships
+and Chinese scope separately. Equal pixels in distinct resources do not establish
+a shared object, and proven English reuse is not missing English imagery.
 Provide materials that open on the reviewer's device, relevant dynamic previews
 and a simple way to return feedback tied to stable image IDs and candidate versions.
 Previous Chinese shows the revision, not authority for Japanese meaning; provide

@@ -10,8 +10,8 @@
 | 口径 | 数量 | 含义 |
 | --- | ---: | --- |
 | 逻辑审核组 | 49 | 原 27 组与后续补查 22 组；不是全游戏图片数量 |
-| 有独立英文本地化 | 23 | 官方日文与官方英文明确对应 |
-| 无英文本地化 | 26 | 英文版沿用官方日文，不称为“独立目标”或“英文未确认” |
+| 有独立英文版对应资源 | 23 | 官方日文版与英文版资源明确对应，不表示全图文字均已英译 |
+| 无独立英文版对应资源，已核实沿用 | 26 | 英文版沿用官方日文版用图，不称为“独立目标”“缺少英文图”或“英文未确认” |
 | 物理目标 | 59 | 光子之花／光子旋律或不同对象位置的副本分别计数 |
 | 官方 CRmt 对象 | 90 | 日文对象加英文对象；无英文本地化的不重复计数 |
 | 官方内嵌图片层 | 476 | 对象内全部 CRmti 层，不是 476 帧动画 |
@@ -23,11 +23,11 @@
 `review-catalog.json` 逐条保存：
 
 - 官方对象的游戏、分卷文件名、偏移、长度、整记录 SHA-256、ImageMP 引用及每层尺寸／像素哈希；
-- 日英对应关系；`official_english: null` 明确表示无独立英文本地化；
+- 日英对应关系；本清单的 `official_english: null` 已核实表示无独立英文版对应资源、沿用日文版用图，不能把这一约定套到尚未核实的其他清单；
 - 当前中文文案、处理决定、中文稿与实际编码记录的哈希、每层回读 PNG 及 RGBA 哈希；
 - 视觉审核、编码检查与受控实机证据的不同状态。
 
-“官方日文”指日版实际使用的原图，图内本来可以含英文。不能只看图中文字语言判断槽位。
+“官方日文版用图／官方英文版用图”按语言映射与对象引用确定，不按图中文字判断；日版图可以含英文，英文版对应图也不保证全图已英译。目录保留既有字段名，`english_localization` 在这里描述独立资源或沿用关系，不是文字英译程度。共用对象需要引用依据，不同对象即使像素相同也保留各自身份。
 同样的图片出现在两个物理对象时不能合并掉写入目标。三列的层数与尺寸不同也不人为补齐。
 
 导出器核对原始语言配对及完整物理用途，并重新解码实际中文记录逐层比对像素；
@@ -41,3 +41,15 @@
 本选集中的 90 个官方对象没有外部图片成员，不能据此推断全部 CRmt 都如此。历史“56＋811”解码子集、20,650 主要图片去重清单和本目录的 49 个审核组有不同用途，不互相替代。
 
 运行时组件身份见 [runtime-summary.json](runtime-summary.json)，具体复用方法与限制见[家族指南](../../../docs/crmt-family.md)。清单的摘要用于绑定本地输入，不能让无游戏副本的人还原图片，也不能直接充当发布白名单。
+
+## English: edition correspondence
+
+Edition roles follow language mappings and object references, not the language
+visible in an image. Separate English-edition resources do not prove fully
+translated English text. In this verified catalog only, `official_english: null`
+means English reuse of the Japanese-edition image, not an unknown or missing peer;
+do not generalize that convention to unverified catalogs. The legacy field
+`english_localization` describes separate resources versus reuse, not how much
+text was translated. Shared-object claims need reference evidence; equal pixels
+in different objects retain separate identities. The counts and catalog data
+are unchanged.
