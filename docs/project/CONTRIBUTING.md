@@ -17,7 +17,7 @@
 | 参考译法／来源调查 | [本地化参考与研究工具](../research/localization/README.md)，与现行制作清单区分 |
 | 新语言 | [新语言指南](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md)，建立独立目标，不覆盖现有日文依据或中文 |
 
-不熟悉目录可以先提 Issue，维护者协助定位和整理。尚未完成的工具或研究结论也可以发 draft PR，说明可用范围与剩余问题；不要把未验证的功能写成已经支持。
+不熟悉目录可以先用[问题咨询与建议表单](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=question.yml)，维护者协助定位和整理。咨询、研究交流与文档建议不要求提供补丁版本、游戏复现步骤或拥有游戏的声明。尚未完成的工具或研究结论也可以发 draft PR，说明可用范围与剩余问题；不要把未验证的功能写成已经支持。
 
 ## PR 需要说明什么
 
@@ -72,6 +72,6 @@ Photon 原生代码构建按 [runtime README](../../rUGP/runtime/README.md)使�
 
 For player download tables, feedback options and new release notes, show the Chinese community name or abbreviation first, followed by the full Steam title. Use the [game-name guide](../player/game-names.md) to identify the matching store app. Tables may put the two names on separate lines; subsequent prose may use the short name. Keep identifying details such as `Muv-Luv Unlimited`, episode numbers, edition names and the `♮` in photonmelodies. A display-name change does not require renaming existing release tags, attachments, game IDs or resource paths.
 
-Small, reviewable corrections are welcome. There is no prerequisite to finish a chapter, run every engine suite or provide a patch package. Explain the problem, resulting behavior and relevant verification; document real limitations. Start with affected tests and expand only for a concrete dependency or risk. Draft PRs can share incomplete research with a clear scope. Write public guides for their readers: explain use, reusable methods and real limitations. Keep per-run logs local; preserve necessary manifests, data contracts and regression inputs. Unresolved defects retain their affected scope and status. Preserve stable resource identity and control codes, and do not submit proprietary dumps, private material or credentials.
+For usage questions, research discussion and documentation suggestions, use the [general question form](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=question.yml); no patch version, game reproduction steps or ownership declaration is required. Small, reviewable corrections are welcome. There is no prerequisite to finish a chapter, run every engine suite or provide a patch package. Explain the problem, resulting behavior and relevant verification; document real limitations. Start with affected tests and expand only for a concrete dependency or risk. Draft PRs can share incomplete research with a clear scope. Write public guides for their readers: explain use, reusable methods and real limitations. Keep per-run logs local; preserve necessary manifests, data contracts and regression inputs. Unresolved defects retain their affected scope and status. Preserve stable resource identity and control codes, and do not submit proprietary dumps, private material or credentials.
 
 </details>

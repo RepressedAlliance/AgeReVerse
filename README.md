@@ -14,35 +14,11 @@
   <a href="#问题反馈">问题反馈</a>
 </p>
 
-提供 Muv-Luv 系列《TDA00—03》《帝都燃烧篇》《光子之花（PF）》《光子旋律（PM）》的 Steam 简体中文汉化补丁；《君望／你所期望的永远》Steam 版汉化正在制作中。
+本项目提供 **TDA00—03、帝都燃烧篇、光子之花（PF）、光子旋律（PM）** 的 Steam 简体中文汉化补丁，七作均有 BETA 版本可下载。**君望／你所期望的永远本篇与附加篇正在制作中，尚未发布补丁。**
 
-**七部作品已有 BETA 补丁下载，君望 Steam 版正在制作中**，持续完善译文、中文界面、字体与排版，并通过玩家反馈和协作校对更新。
+汉化包含剧情正文、菜单与设置、字幕和图片文字，同时处理中文字体、换行与排版。各作仍可能有遗漏或显示问题，持续接受反馈；详见[汉化范围、实机截图与已知限制](docs/player/screenshots.md)。
 
-**以完整汉化为目标，已发布补丁接近完整覆盖：剧情正文、菜单与设置、字幕，以及标题、按钮、说明、地图、年表、地点提示、手写道具和演出素材中的文字，一并进行中文化。**
-汉化范围包含可编辑文本与嵌在图片中的文字，同时处理中文字体、换行、长字幕和原作的特殊排版。
-
-补丁仍为 BETA，可能存在遗漏、原文残留或显示问题；发现后会继续修正、补齐，更新到后续版本。
-各作的覆盖情况与已知问题不同，详见[汉化范围与实机截图](docs/player/screenshots.md)。
-
-本项目非官方、非商业；另收录主任保护协会制作的 ATE 汉化原发布入口，方便查找。
-
-当前提供 **TDA00—03（Muv-Luv UNLIMITED: The Day After）、帝都燃烧篇
-（The Imperial Capital Burns）、光子之花（photonflowers\*）、光子旋律（photonmelodies♮）**
-的独立补丁。系列日文名为 **マブラヴ**，也常写作 **MuvLuv / Muv Luv**；各作适用版本与安装方式不同。
-见[作品名称与版本对照](docs/player/game-names.md)。补丁仍为 BETA，持续接受反馈与协作校对。
-
-Unofficial Simplified Chinese (zh-Hans) patches for the Windows Steam releases of
-Muv-Luv UNLIMITED: The Day After episodes 00–03, The Imperial Capital Burns,
-Muv-Luv photonflowers* and photonmelodies♮. See the download table below for each game's release.
-Kimi ga Nozomu Eien: Enhanced Edition and its Another Episode Collection+ are also in development; no Kiminozo patch has been released.
-These are Chinese localization patches, not English patches or full games.
-Localization covers dialogue, menus, settings, subtitles and text embedded in images,
-aiming for comprehensive Chinese coverage while remaining omissions and display issues are corrected.
-
-> [!IMPORTANT]
-> 使用补丁必须拥有对应游戏正版。本仓库不提供游戏本体、破解或完整原始资源。
-> TDA00–03 与帝都燃烧现提供新版 BETA 安装程序。安装与恢复步骤见
-> [完整玩家指南](docs/player/README.md)；请保留存档，勿混用不同作品的补丁。
+> 补丁免费、非官方、非商业，使用前须拥有对应正版游戏。本仓库不提供游戏本体或破解；请按下表选择对应作品，安装与恢复见[玩家指南](docs/player/README.md)。
 
 ## 第一部分 · 玩家下载与反馈
 
@@ -234,6 +210,7 @@ TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含
 不熟悉 GitHub 也可以直接进群反馈，尽量附上游戏名、补丁版本、截图和前后台词。
 
 - [报告安装、启动、文本、图片或字体问题](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)
+- [问题咨询、研究交流或文档建议](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=question.yml)
 - [提交有日文原文依据的翻译修正](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)
 - [查看参与方式、贡献者与致谢](.github/CONTRIBUTING.md)
 
@@ -293,6 +270,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 
 | 内容 | 入口 |
 | --- | --- |
+| 第一次使用公开工具：查一个词的现行译法 | [十分钟入门：查术语并看懂结果](docs/research/quick-start.md) |
 | 全部公开成果与研究索引 | **[制作与研究入口](docs/research/README.md)** |
 | 学习并复用文本、图片、字体、一致性和多人校对方法 | **[游戏本地化｜让游戏说你的语言](Localization-MakeGamesSpeak/README.md)** |
 | TDA／帝都的 AGE2、FPD、EGPACK 与松散覆盖 | [AGE2 工作区](AGE2/README.md) |
@@ -308,10 +286,11 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 
 This repository publishes localization tools, maintained translation tables, terminology,
 image and font workflows, and reverse-engineering findings for the Muv-Luv series.
-The Chinese player downloads are listed in the first part of this README.
+The downloadable patches localize the Windows Steam games into Simplified Chinese. English documentation here explains reusable workflows, tools and research for other teams. Kiminozo and its additional episodes remain in development, with no patch released.
 
 | Topic | English-friendly starting point |
 | --- | --- |
+| Try a public tool without game files | [First ten minutes: look up a term and understand the result](docs/research/quick-start.md) |
 | Learn and adapt the localization method | **[Game Localization — Make Games Speak Your Language](Localization-MakeGamesSpeak/README.md)** |
 | Public results and current limitations | [Research index](docs/en/research-index.md) · [AGE2 limits](AGE2/docs/limitations.md) · [Photon limits](rUGP/docs/limitations.md) |
 | Text, image, font and tool locations | [Asset map](docs/en/asset-map.md) |
