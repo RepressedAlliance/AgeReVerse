@@ -31,6 +31,8 @@ Keep meaning evidence and delivery targets linked separately under the
 
 按[最高原则](../principles.md)分别关联原意依据、制作底稿和交付目标。身份和哈希校验只证明声明的字段或资源；新语言导出器处理受支持的文本表，不生成语音／图片对应。图片像素检查以选定底稿为准，不能用这些技术结果替代原意与中文呈现判断。
 
+第一次用仓库工具，可以先试[十分钟入门](../../docs/research/quick-start.md)：只用公开术语表查询“戦術機”的现行译法，不需要游戏资源。
+
 ## 按任务选工具
 
 | 我需要做什么 | 工具 | 提供什么 | 得到什么 |

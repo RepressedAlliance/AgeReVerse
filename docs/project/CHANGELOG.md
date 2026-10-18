@@ -1,11 +1,29 @@
 # 变更记录 / Changelog
 
-This file records repository and public-patch changes. Downloadable packages and their checksums remain attached to [GitHub Releases](https://github.com/RepressedAlliance/AgeReVerse/releases).
+本页区分**当前可下载补丁、公开仓库成果和历史测试包**。下载、安装及各作已知问题请以[玩家指南](../player/README.md)和对应发布说明为准。
 
-## Unreleased — repository architecture
+This page distinguishes current player packages, repository work and historical test packages. Repository changes reach players only when included in a published package.
+
+## 当前可下载补丁 / Current player packages
+
+| 作品 / Game | 当前版本 / Version | 说明 / Notes |
+| --- | --- | --- |
+| **TDA00**<br><sub>[\[TDA00\] Muv-Luv Unlimited: THE DAY AFTER - Episode 00 REMASTERED](https://store.steampowered.com/app/1407100/)</sub> | **BETA 0.2.1** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-BETA-0.2.1) |
+| **TDA01**<br><sub>[\[TDA01\] Muv-Luv Unlimited: THE DAY AFTER - Episode 01 REMASTERED](https://store.steampowered.com/app/1407090/)</sub> | **BETA 0.3.3** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-BETA-0.3.3) |
+| **TDA02**<br><sub>[\[TDA02\] Muv-Luv Unlimited: THE DAY AFTER - Episode 02 REMASTERED](https://store.steampowered.com/app/1342410/)</sub> | **BETA 0.2.1** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda02-BETA-0.2.1) |
+| **TDA03**<br><sub>[\[TDA03\] Muv-Luv Unlimited: THE DAY AFTER - Episode 03 REMASTERED](https://store.steampowered.com/app/789830/)</sub> | **BETA 0.2.7** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-BETA-0.2.7) |
+| **帝都燃烧篇**<br><sub>[The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse](https://store.steampowered.com/app/2630300/)</sub> | **BETA 0.2.1** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
+| **光子之花（PF）**<br><sub>[Muv-Luv photonflowers\*](https://store.steampowered.com/app/889700/)</sub> | **BETA 0.1.2** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
+| **光子旋律（PM）**<br><sub>[Muv-Luv photonmelodies♮](https://store.steampowered.com/app/889710/)</sub> | **BETA 0.1.2** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
+
+君望 Steam 本篇及附加篇仍在制作，尚未发布补丁。公开仓库中的新文本、图片、视频或运行时改动，不会自动更新玩家已经下载的版本。
+
+Kiminozo and its additional episodes remain in development. New text, images, videos or runtime work in Git is not automatically part of an existing download.
+
+## 公开仓库中的制作与研究成果 / Repository work
 
 - 完成光子之花／光子旋律全量 CRsa 漏项复核：补译并写回 40 处对白／提示，逐项审校 265 个批注字段，保持 260 个兵装名参数不变；加入哈希锁定的光子旋律固定长度分卷构建器，并记录光子之花／光子旋律实机字体、排版和 831／8311 验收。
-- 将仓库首页收束为普通玩家与研究/本地化制作者两个独立入口，下载细节完整下沉到玩家 README，并加入可见的中英文切换按钮。
+- 首页优先呈现玩家下载：中文常用名与完整 Steam 名称对应；制作与研究另设第二部分，英文说明可原地展开。安装、恢复与已知问题由玩家指南补充。
 - 新增中英文文本/术语/图片/字体资产地图，明确 `Localization-MakeGamesSpeak/`、各游戏目录、本仓库 Releases 与本地忽略工作区的边界，并同时索引五作 730 个 AGE2 WebP 路径与光子之花/光子旋律 1,490 项图片权威。
 - 新增完整英文两轮本地化工作流，使韩语、俄语等团队不必依赖中文摘要即可复现剧情/术语、初译、`keep/revise/question`、写回、QA 与玩家反馈闭环。
 - 更新 Codex 贡献说明为 GitHub 可识别的 `Co-authored-by: Codex <codex@openai.com>`，并重写对主任保护协会的致谢，准确表达其 AGES 汉化思路是本项目开始制作补丁的起点。
@@ -13,7 +31,7 @@ This file records repository and public-patch changes. Downloadable packages and
 - 建立中文优先的四类入口：玩家、AGE2 研究者、rUGP 研究者和其他语言本地化制作者。
 - 为七部游戏加入统一 `project.toml`，明确引擎、Steam App ID、文本、图片与字体权威。
 - 从五个 AGE2 历史 Release 机械生成 730 个 WebP 路径的可复核清单；光子之花/光子旋律继续分别索引 636/854 项共用 Photon 图片权威。
-- 公开“剧情与术语 → 第一次翻译 → 第二次 `keep/revise/question` 审核 → 技术写回 → 实机与玩家反馈”的完整工作流。
+- 公开五阶段文本本地化工作流，说明独立复核、疑点处理、技术与实机检查，以及发布前维护者的人工修改；发布后通过 ParaTranz 校对和玩家反馈继续修订。
 - 新增贡献者与具体致谢页，记录人类维护责任、OpenAI Codex 的受监督辅助，以及主任保护协会、GARbro、AFHook、rugptools 与 FatePackageManager 的准确贡献边界。
 - 将活动证据目录改为稳定语义路径，版本留在 schema、Git 历史和 Release tag 中。
 - 规定新表的规范字段，同时保留已有哈希封存表的历史表头，避免为表面统一破坏来源证明。
@@ -45,16 +63,18 @@ This file records repository and public-patch changes. Downloadable packages and
 - Replaced Imperial telop and event-card Japanese prose with exact source hashes and line-count evidence while retaining stable resource identities and localized copy.
 - Made Photon package timestamps explicit, recorded the Python/NumPy/zlib build environment, and added CI smoke tests for every documented public CLI entry point.
 - Hardened repository policy against force-added local/generated roots, binary payloads, symlinks, unsafe Release identifiers, hidden download links, workstation paths, and high-confidence credential patterns.
-- Retired obsolete public development branches after preserving a verified local recovery bundle; historical Release tags and hidden pull-request refs still require a separately authorized migration/purge.
+- Historical source-bearing Release tags and cached GitHub references still require separately authorized public-scope review; current source-tree cleanup does not establish their removal.
 
-## Published Simplified Chinese test patches
+## 历史测试包 / Historical test packages
 
 | Release | Notable scope |
 | --- | --- |
 | The Imperial Capital Burns beta0.1 | Dialogue, speakers, choices, system UI, image text, name/date/location cards, font and loose-overlay installer |
-| TDA03 beta0.1.6 | Current TDA03 package, including achievement-related fixes |
+| TDA03 beta0.1.6 | Historical package with achievement-related fixes; superseded by the current BETA listed above |
 | TDA02 beta0.1 | Dialogue, visible UI, subtitle/name images and font |
 | TDA01 beta0.2.2 | Consolidated dialogue, terminology, image and display feedback fixes |
 | TDA00 beta0.1 | JP-baseline workflow with speaker, ruby and XML-call-order auditing |
 
-Older test versions remain visible on the Releases page for provenance and are now marked superseded or do-not-install. Even the latest historical packages remain distribution-remediation pending and are not recommended as new policy-compliant builds.
+以上为历史测试包，不是当前下载列表。保留其版本身份、技术范围与已知分发问题，详见[历史包说明](../player/historical-age2.md)；这些历史问题不自动适用于后来的版本。
+
+These entries are historical packages, not the current download list. Their identities and recorded distribution limitations remain documented in the [historical package guide](../player/historical-age2.md); those findings are not blanket claims about later releases.

@@ -1,6 +1,6 @@
 # 光子旋律（PM）Steam 简体中文汉化补丁
 
-Muv-Luv photonmelodies*／マブラヴ photonmelodies*。AgeReVerse · 压抑同盟作品项目。
+[Muv-Luv photonmelodies♮](https://store.steampowered.com/app/889710/)／マブラヴ photonmelodies♮。AgeReVerse · 压抑同盟作品项目。
 
 [返回 rUGP 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/) · [术语与基线](terminology/README.md) · [图片](images/) · [完整工作流](../../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md)
 

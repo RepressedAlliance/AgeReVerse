@@ -262,6 +262,91 @@ def secret_marker_labels(text: str) -> list[str]:
     return [label for label, pattern in SECRET_PATTERNS if pattern.search(text)]
 
 
+def check_current_player_releases(
+    document: dict, guides: dict[str, str], errors: list[str]
+) -> None:
+    """Check current download facts without freezing release versions or bytes."""
+    download_base = "https://github.com/RepressedAlliance/AgeReVerse/releases/download/"
+    notes_base = "https://github.com/RepressedAlliance/AgeReVerse/releases/tag/"
+    expected: dict[str, tuple[str, str, str]] = {}
+    games: set[str] = set()
+    for section in ("age2_player_packages", "photon_player_packages"):
+        packages = document.get(section)
+        if not isinstance(packages, list) or not packages:
+            fail(errors, f"release-index.json: current section {section} is missing or empty")
+            continue
+        for index, package in enumerate(packages):
+            label = f"release-index.json: {section}[{index}]"
+            if not isinstance(package, dict):
+                fail(errors, f"{label}: expected a package object")
+                continue
+            game, version, tag, name, url = (
+                package.get(key) for key in
+                ("game_id", "version", "release_tag", "asset_name", "asset_url")
+            )
+            if not all(isinstance(value, str) and value.strip() for value in (game, version, tag, name, url)):
+                fail(errors, f"{label}: missing current game/version/tag/asset information")
+                continue
+            if not SAFE_RELEASE_TAG.fullmatch(tag) or not SAFE_RELEASE_COMPONENT.fullmatch(name) or not name.lower().endswith('.zip'):
+                fail(errors, f"{label}: invalid release tag or ZIP asset name")
+                continue
+            if game in games or tag in expected:
+                fail(errors, f"{label}: duplicate current game or release tag")
+                continue
+            games.add(game)
+            asset_url = f"{download_base}{tag}/{name}"
+            if url != asset_url:
+                fail(errors, f"{label}: asset URL does not match its tag and filename")
+            expected[tag] = (game, version, asset_url)
+
+    historical_tags = {
+        item.get("release_tag")
+        for section in ("player_packages", "obsolete_releases", "research_assets")
+        for item in document.get(section, [])
+        if isinstance(item, dict)
+    }
+    for relative, text in guides.items():
+        visible = INLINE_CODE.sub("", FENCED_CODE.sub("", HTML_COMMENT.sub("", text)))
+        seen: set[str] = set()
+        version_column = None
+        for line in visible.splitlines():
+            if not line.lstrip().startswith('|'):
+                continue
+            cells = [cell.strip() for cell in line.strip().strip('|').split('|')]
+            for index, cell in enumerate(cells):
+                if cell.casefold() in ("版本", "version", "当前公开版本", "当前版本 / version"):
+                    version_column = index
+            targets = markdown_link_targets(line)
+            tags = {
+                target[len(prefix):].split('/', 1)[0]
+                for target in targets
+                for prefix in (download_base, notes_base)
+                if target.startswith(prefix)
+            } - historical_tags
+            if not tags:
+                continue
+            if len(tags) != 1:
+                fail(errors, f"{relative}: one current row mixes release tags: {sorted(tags)}")
+            for tag in sorted(tags):
+                if tag not in expected:
+                    fail(errors, f"{relative}: current release {tag} is not in the release index")
+                    continue
+                game, version, asset_url = expected[tag]
+                if tag in seen:
+                    fail(errors, f"{relative}: duplicate current row for {game}")
+                seen.add(tag)
+                actual = cells[version_column].strip('* ') if version_column is not None and version_column < len(cells) else None
+                if actual != version:
+                    fail(errors, f"{relative}: {game} version is {actual!r}; release index says {version!r}")
+                required = {f"{notes_base}{tag}"}
+                if relative != "docs/project/CHANGELOG.md":
+                    required.add(asset_url)
+                if not required.issubset(targets):
+                    fail(errors, f"{relative}: {game} needs matching visible release/download links")
+        for tag in sorted(expected.keys() - seen):
+            fail(errors, f"{relative}: missing current row for {expected[tag][0]} ({tag})")
+
+
 def check_release_index(errors: list[str]) -> None:
     relative = "docs/player/release-index.json"
     path = ROOT / relative
@@ -277,6 +362,11 @@ def check_release_index(errors: list[str]) -> None:
         fail(errors, f"{relative}: unsupported schema")
     if document.get("scope") != "current-listed-player-packages-and-research-assets":
         fail(errors, f"{relative}: release-index scope is missing or ambiguous")
+    current_guides = {
+        name: (ROOT / name).read_text(encoding="utf-8-sig")
+        for name in ("README.md", "docs/player/README.md", "docs/en/player-guide.md", "docs/project/CHANGELOG.md")
+    }
+    check_current_player_releases(document, current_guides, errors)
     distribution_review = document.get("distribution_review")
     if not isinstance(distribution_review, dict):
         fail(errors, f"{relative}: distribution review is missing")

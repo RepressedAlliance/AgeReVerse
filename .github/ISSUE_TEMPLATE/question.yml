@@ -1,0 +1,29 @@
+name: 问题咨询、研究与建议 / Questions & suggestions
+description: 询问用法、交流本地化或工具研究、报告文档问题、提出建议。Ask about usage, research or documentation.
+title: "[Question] "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提问。无需填写补丁版本、游戏复现步骤或拥有游戏的声明；知道多少就写多少。
+        安装或运行故障请用 Bug 表单，具体译文修改请用翻译修正表单。不熟悉 GitHub 也可以加入 QQ 群 **273626767**。
+
+        Questions about usage, localization, tools and documentation are welcome. No patch version, game reproduction steps or ownership declaration is required. Use the bug or translation form when it fits your request.
+  - type: textarea
+    id: question
+    attributes:
+      label: 想问什么，或希望改进什么？ / Your question or suggestion
+      description: 写清你想了解或完成的事情即可。Describe what you want to understand or achieve.
+    validations:
+      required: true
+  - type: input
+    id: related
+    attributes:
+      label: 相关页面、工具或作品（可选） / Related page, tool or game (optional)
+      placeholder: 可以粘贴链接或名称；不涉及具体作品可以留空。
+  - type: textarea
+    id: tried
+    attributes:
+      label: 补充信息（可选） / Additional context (optional)
+      description: 可以写已尝试的方法、错误信息或附截图；不要上传账号信息或完整游戏资源。Share attempts, errors or screenshots if useful; omit account information and complete game assets.

@@ -2,7 +2,7 @@
 
 [Player downloads](../player/README.md) · [Localization guide](../../Localization-MakeGamesSpeak/README.md) · [Research index](../en/research-index.md)
 
-TDA00–03, The Imperial Capital Burns, photonflowers* and photonmelodies* have
+TDA00–03, The Imperial Capital Burns, photonflowers* and photonmelodies♮ have
 published Chinese player packages. Current versions and installation instructions
 are maintained in the player guide. Kiminozo ~Enhanced Edition~ and Another
 Episode Collection+ are in development, with no player package released.

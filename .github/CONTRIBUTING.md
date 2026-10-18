@@ -31,8 +31,7 @@
   Cr6Ti 图片编解码行为参考。
 - [rugptools](https://github.com/osmium76/rugptools)：历史 rUGP 格式与对象行为参考。
 - **alterdec**：早期 rUGP 对象与图片行为资料，包含 Cr6Ti 解码状态机参考。
-- **RioX**：早期 rUGP 对象与图片行为的历史资料；现有记录未固定具体版本与原始来源链接，
-  不将其列为当前工具依赖。详见[研究参考](../docs/research/references.md)。
+- **RioX／muzhi 1.2.143.810**：CRmti 位流、透明段与颜色预测行为的反汇编参考。版本及文件身份已确认，原始下载渠道尚未查实，不列为当前构建依赖。详见[研究参考](../docs/research/references.md)。
 - [FatePackageManager](https://github.com/DaZombieKiller/FatePackageManager)：FPD v2 与
   `pack.bin` 结构参考。
 - thcrap、07th-Mod、Committee of Zero、Tsukihimates、VNTranslationTools、Kuriimu2 等成熟
@@ -54,6 +53,7 @@
 即使不懂日语，也欢迎反馈错字、语句不通顺、显示异常或游玩问题，加入 **QQ 群：273626767** 交流。
 
 - [报告补丁或运行问题](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)
+- [问题咨询、研究交流或文档建议](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=question.yml)
 - [提交翻译修正](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)
 - [阅读代码、文档和翻译贡献要求](../docs/project/CONTRIBUTING.md)
 
@@ -67,5 +67,5 @@ under maintainer supervision. The project thanks 主任保护协会 for demonstr
 that started our localization journey. Subsequent extraction, translation, tool development and patch
 production are our own work, with specific references documented separately. We credit GARbro,
 AFHook/AFEditor, rugptools, alterdec, RioX, FatePackageManager, and the other
-listed patch projects for specific public technical precedents. See the
+listed patch projects for specific public technical precedents. The RioX reference version is confirmed as 1.2.143.810; its original download channel remains unconfirmed, and it is not a build dependency. For usage questions, research discussions or documentation suggestions, use the [general question form](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=question.yml). See the
 [full contribution guide](../docs/project/CONTRIBUTING.md) before opening a pull request.

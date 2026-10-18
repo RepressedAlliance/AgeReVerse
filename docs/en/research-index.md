@@ -4,6 +4,8 @@
 
 For a practical guide to translation, images, fonts, consistency, collaboration and reusable tools, start with **[Game Localization — Make Games Speak Your Language](../../Localization-MakeGamesSpeak/README.md)**. Its English overview and section explanations expand in place.
 
+Try the [first ten minutes: terminology lookup](../research/quick-start.md) to run a public tool using only this repository and Python, with an explanation of each output field. No game files, fonts or AI account are needed for that example.
+
 This index separates three different claims:
 
 1. **Documented observation** — a result was seen on an exact legal game build and its reusable conclusion was recorded.

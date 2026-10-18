@@ -17,7 +17,7 @@
 | 参考译法／来源调查 | [本地化参考与研究工具](../research/localization/README.md)，与现行制作清单区分 |
 | 新语言 | [新语言指南](../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md)，建立独立目标，不覆盖现有日文依据或中文 |
 
-不熟悉目录可以先提 Issue，维护者协助定位和整理。尚未完成的工具或研究结论也可以发 draft PR，说明可用范围与剩余问题；不要把未验证的功能写成已经支持。
+不熟悉目录可以先用[问题咨询与建议表单](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=question.yml)，维护者协助定位和整理。咨询、研究交流与文档建议不要求提供补丁版本、游戏复现步骤或拥有游戏的声明。尚未完成的工具或研究结论也可以发 draft PR，说明可用范围与剩余问题；不要把未验证的功能写成已经支持。
 
 ## PR 需要说明什么
 
@@ -46,6 +46,8 @@ CI 的必要检查仍需通过；[检查范围](ci-checks.md)按文件类型区�
 
 按读者需要说明用途、用法、主要结果和必要限制。资产说明写清资源身份、来源与许可、使用位置及维护方式；技术案例说明现象、原因、解决方法和适用版本。
 
+玩家下载表、反馈选项和新发布说明采用“中文圈常用名或简称＋完整 Steam 名称”，以[作品名称对照](../player/game-names.md)中的商店入口核对。表格可将两者分行显示，正文在首次对应后使用简称。保留作品线、篇章、版本和标题符号等识别信息，例如 TDA 的 `Muv-Luv Unlimited`、`Episode 00–03 REMASTERED` 和 PM 的 `♮`。显示名称调整不要求重命名既有 Release tag、下载附件、游戏 ID 或资源路径。
+
 逐次核查命令、会话经过、进程号、私人截图和临时候选清单留在本地忽略目录。有价值的方法整理为可复用指南，例如字幕按可见字形居中、固定字距与 ruby 分开处理。构建清单、稳定身份、输入约束和仍被工具或测试使用的数据继续随项目维护。
 
 真实问题不能随流水一起消失：保留触发条件、受影响版本、当前状态和剩余限制。旧候选的问题注明历史范围；未确定影响哪个玩家版本时如实说明。
@@ -68,6 +70,8 @@ Photon 原生代码构建按 [runtime README](../../rUGP/runtime/README.md)使�
 <details>
 <summary>English · contributing</summary>
 
-Small, reviewable corrections are welcome. There is no prerequisite to finish a chapter, run every engine suite or provide a patch package. Explain the problem, resulting behavior and relevant verification; document real limitations. Start with affected tests and expand only for a concrete dependency or risk. Draft PRs can share incomplete research with a clear scope. Write public guides for their readers: explain use, reusable methods and real limitations. Keep per-run logs local; preserve necessary manifests, data contracts and regression inputs. Unresolved defects retain their affected scope and status. Preserve stable resource identity and control codes, and do not submit proprietary dumps, private material or credentials.
+For player download tables, feedback options and new release notes, show the Chinese community name or abbreviation first, followed by the full Steam title. Use the [game-name guide](../player/game-names.md) to identify the matching store app. Tables may put the two names on separate lines; subsequent prose may use the short name. Keep identifying details such as `Muv-Luv Unlimited`, episode numbers, edition names and the `♮` in photonmelodies. A display-name change does not require renaming existing release tags, attachments, game IDs or resource paths.
+
+For usage questions, research discussion and documentation suggestions, use the [general question form](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=question.yml); no patch version, game reproduction steps or ownership declaration is required. Small, reviewable corrections are welcome. There is no prerequisite to finish a chapter, run every engine suite or provide a patch package. Explain the problem, resulting behavior and relevant verification; document real limitations. Start with affected tests and expand only for a concrete dependency or risk. Draft PRs can share incomplete research with a clear scope. Write public guides for their readers: explain use, reusable methods and real limitations. Keep per-run logs local; preserve necessary manifests, data contracts and regression inputs. Unresolved defects retain their affected scope and status. Preserve stable resource identity and control codes, and do not submit proprietary dumps, private material or credentials.
 
 </details>

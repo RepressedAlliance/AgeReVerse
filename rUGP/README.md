@@ -39,8 +39,8 @@ CRsi 影片的帧间预测、颜色编码及原生交叉验证见[专项规格](
 
 | 游戏 | 已审校文本 | 精确运行时绑定表 | 图片资产状态 | 玩家包 |
 | --- | --- | --- | --- | --- |
-| [光子之花](games/photonflowers/) | [13,025 条章节文本](games/photonflowers/translations/) | [69 行历史合同](games/photonflowers/text-data/runtime/zh-Hans.csv) | [636 项](games/photonflowers/images/) | [BETA 0.1.2](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
-| [光子旋律](games/photonmelodies/) | [44,698 条章节文本](games/photonmelodies/translations/) | [151 行历史合同](games/photonmelodies/text-data/runtime/zh-Hans.csv) | [854 项](games/photonmelodies/images/) | [BETA 0.1.2](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
+| **[光子之花（PF）](games/photonflowers/)**<br><sub>[Muv-Luv photonflowers\*](https://store.steampowered.com/app/889700/)</sub> | [13,025 条章节文本](games/photonflowers/translations/) | [69 行历史合同](games/photonflowers/text-data/runtime/zh-Hans.csv) | [636 项](games/photonflowers/images/) | [BETA 0.1.2](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
+| **[光子旋律（PM）](games/photonmelodies/)**<br><sub>[Muv-Luv photonmelodies♮](https://store.steampowered.com/app/889710/)</sub> | [44,698 条章节文本](games/photonmelodies/translations/) | [151 行历史合同](games/photonmelodies/text-data/runtime/zh-Hans.csv) | [854 项](games/photonmelodies/images/) | [BETA 0.1.2](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
 
 上表图片数为 V6 历史集合。另见[当前 1,791 项静态审核选集](evidence/photon/images/static-review-20260909/README.md)
 及[审核页／长图工具](tools/images/README.md)：保留最新人工稿与待安装修订，不能与历史数相加。
