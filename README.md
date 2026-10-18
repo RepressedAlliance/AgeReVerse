@@ -27,7 +27,7 @@
 本项目非官方、非商业；另收录主任保护协会制作的 ATE 汉化原发布入口，方便查找。
 
 当前提供 **TDA00—03（Muv-Luv UNLIMITED: The Day After）、帝都燃烧篇
-（The Imperial Capital Burns）、光子之花（photonflowers*）、光子旋律（photonmelodies♮）**
+（The Imperial Capital Burns）、光子之花（photonflowers\*）、光子旋律（photonmelodies♮）**
 的独立补丁。系列日文名为 **マブラヴ**，也常写作 **MuvLuv / Muv Luv**；各作适用版本与安装方式不同。
 见[作品名称与版本对照](docs/player/game-names.md)。补丁仍为 BETA，持续接受反馈与协作校对。
 
