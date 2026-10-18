@@ -27,14 +27,14 @@
 本项目非官方、非商业；另收录主任保护协会制作的 ATE 汉化原发布入口，方便查找。
 
 当前提供 **TDA00—03（Muv-Luv UNLIMITED: The Day After）、帝都燃烧篇
-（The Imperial Capital Burns）、光子之花（photonflowers*）、光子旋律（photonmelodies*）**
+（The Imperial Capital Burns）、光子之花（photonflowers*）、光子旋律（photonmelodies♮）**
 的独立补丁。系列日文名为 **マブラヴ**，也常写作 **MuvLuv / Muv Luv**；各作适用版本与安装方式不同。
 见[作品名称与版本对照](docs/player/game-names.md)。补丁仍为 BETA，持续接受反馈与协作校对。
 
 Unofficial Simplified Chinese (zh-Hans) patches for the Windows Steam releases of
 Muv-Luv UNLIMITED: The Day After episodes 00–03, The Imperial Capital Burns,
-Muv-Luv photonflowers* and photonmelodies*. See the download table below for each game's release.
-Kimi ga Nozomu Eien ~Enhanced Edition~ and its Another Episode Collection+ are also in development; no Kiminozo patch has been released.
+Muv-Luv photonflowers* and photonmelodies♮. See the download table below for each game's release.
+Kimi ga Nozomu Eien: Enhanced Edition and its Another Episode Collection+ are also in development; no Kiminozo patch has been released.
 These are Chinese localization patches, not English patches or full games.
 Localization covers dialogue, menus, settings, subtitles and text embedded in images,
 aiming for comprehensive Chinese coverage while remaining omissions and display issues are corrected.
@@ -50,18 +50,19 @@ aiming for comprehensive Chinese coverage while remaining omissions and display 
 
 ### 补丁下载
 
-请选择与你拥有的游戏完全对应的补丁。点击下表“下载汉化补丁”，解压后按安装说明操作；不要下载 GitHub 自动生成的 Source code ZIP。
+请选择与你拥有的游戏完全对应的补丁。**每行上方是中文圈常用名或简称，下方是完整 Steam 名称**；点击作品名称可打开 Steam 商店核对，下载补丁请点最右列“下载汉化补丁”。解压后按安装说明操作，不要下载 GitHub 自动生成的 Source code ZIP。
 
 | 游戏 | 当前公开版本 | 下载与说明 |
 | --- | --- | --- |
-| TDA00 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda00-BETA-0.2.1/TDA00-CN-BETA-0.2.1-Complete.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-BETA-0.2.1) |
-| TDA01 | **BETA 0.3.3** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda01-BETA-0.3.3/TDA01-CN-BETA-0.3.3-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-BETA-0.3.3) |
-| TDA02 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda02-BETA-0.2.1/TDA02-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda02-BETA-0.2.1) |
-| TDA03 | **BETA 0.2.7** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda03-BETA-0.2.7/TDA03-CN-BETA-0.2.7-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-BETA-0.2.7) |
-| 帝都燃烧篇 | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-BETA-0.2.1/TM-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
-| 光子之花 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
-| 光子旋律 | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
-| 君望（含 Another Episode Collection+） | **制作中，尚未发布** | [项目介绍与进度](AGE2/games/kiminozo/README.md) |
+| **TDA00**<br><sub>[\[TDA00\] Muv-Luv Unlimited: THE DAY AFTER - Episode 00 REMASTERED](https://store.steampowered.com/app/1407100/)</sub> | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda00-BETA-0.2.1/TDA00-CN-BETA-0.2.1-Complete.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-BETA-0.2.1) |
+| **TDA01**<br><sub>[\[TDA01\] Muv-Luv Unlimited: THE DAY AFTER - Episode 01 REMASTERED](https://store.steampowered.com/app/1407090/)</sub> | **BETA 0.3.3** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda01-BETA-0.3.3/TDA01-CN-BETA-0.3.3-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda01-BETA-0.3.3) |
+| **TDA02**<br><sub>[\[TDA02\] Muv-Luv Unlimited: THE DAY AFTER - Episode 02 REMASTERED](https://store.steampowered.com/app/1342410/)</sub> | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda02-BETA-0.2.1/TDA02-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda02-BETA-0.2.1) |
+| **TDA03**<br><sub>[\[TDA03\] Muv-Luv Unlimited: THE DAY AFTER - Episode 03 REMASTERED](https://store.steampowered.com/app/789830/)</sub> | **BETA 0.2.7** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/tda03-BETA-0.2.7/TDA03-CN-BETA-0.2.7-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-BETA-0.2.7) |
+| **帝都燃烧篇**<br><sub>[The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse](https://store.steampowered.com/app/2630300/)</sub> | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-BETA-0.2.1/TM-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
+| **光子之花（PF）**<br><sub>[Muv-Luv photonflowers\*](https://store.steampowered.com/app/889700/)</sub> | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
+| **光子旋律（PM）**<br><sub>[Muv-Luv photonmelodies♮](https://store.steampowered.com/app/889710/)</sub> | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
+| **君望／你所期望的永远**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)</sub> | **制作中，尚未发布** | [项目介绍与进度](AGE2/games/kiminozo/README.md) |
+| **君望附加篇**<br><sub>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **制作中，尚未发布** | [附加篇范围与进度](AGE2/games/kiminozo/README.md) |
 
 > **也想让喜欢的游戏说你的语言？** [游戏本地化｜让游戏说你的语言 · Make Games Speak Your Language](Localization-MakeGamesSpeak/README.md)：公开 AI 辅助文本翻译、图片汉化、字体排版、全文一致性和多人校对的方法，各入口可原地展开英文说明。
 
@@ -182,9 +183,9 @@ TDA00 展示“地球／故乡”的双层表达；光子之花展示剧情正�
 | --- | --- |
 | TDA00、TDA01、TDA02、TDA03 | Muv-Luv UNLIMITED: The Day After；TDA 00–03、episode:00–03；マブラヴ アンリミテッド ザ・デイアフター |
 | 帝都燃烧、帝都燃烧篇 | The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse；帝都燃ゆ；Teito Moyu |
-| 光子之花、PF | Muv-Luv photonflowers*；マブラヴ photonflowers* |
-| 光子旋律、PM | Muv-Luv photonmelodies*；マブラヴ photonmelodies* |
-| 君望、你所期望的永远、Kiminozo | Kimi ga Nozomu Eien ~Enhanced Edition~；君が望む永遠；附加篇 Another Episode Collection+ |
+| 光子之花、PF | Muv-Luv photonflowers\*；マブラヴ photonflowers\* |
+| 光子旋律、PM | Muv-Luv photonmelodies♮；マブラヴ photonmelodies♮ |
+| 君望、你所期望的永远、Kiminozo | Kimi ga Nozomu Eien: Enhanced Edition；君が望む永遠；附加篇 Another Episode Collection+ |
 
 各作对应不同补丁，请按作品下载。[完整名称与版本区别](docs/player/game-names.md)。
 

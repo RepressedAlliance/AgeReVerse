@@ -1,6 +1,6 @@
 # 帝都燃烧篇 Steam 简体中文汉化补丁
 
-The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse／帝都燃ゆ（Teito Moyu）。
+[The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse](https://store.steampowered.com/app/2630300/)／帝都燃ゆ（Teito Moyu）。
 
 [返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [正文与 UI](translations/) · [术语与基线](terminology/README.md) · [图片](images/) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-beta0.1)
 

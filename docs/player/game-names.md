@@ -3,15 +3,19 @@
 [补丁下载与项目状态](../../README.md#游戏下载) · [安装、恢复与排错](README.md)
 
 本项目提供非官方、免费的 Steam 简体中文补丁，不提供游戏本体。下载前请核对完整作品名。
-本页名称用于对应游戏和查找资料，不表示不同发行版本的资源可以混用。
+本页按“中文圈常用名或简称 → 完整 Steam 名称”对应游戏。Steam 库可能只显示英文名，中文常用名不一定是商店名称。名称下方同时列出 Steam App ID，便于区分篇章和本篇／附加篇；名称对应不表示不同发行版本的资源可以混用。
 
-| 中文名或简称 | 英文名称 | 日文名称或检索词 | 本项目补丁范围 |
+| 中文圈常用名或简称 | Steam 名称（点击核对） | 日文名称或检索词 | 本项目补丁范围 |
 | --- | --- | --- | --- |
-| TDA00、TDA01、TDA02、TDA03 | Muv-Luv UNLIMITED: The Day After / TDA, episodes 00–03 | マブラヴ アンリミテッド ザ・デイアフター | Windows x64 Steam，四作分别安装 |
-| 帝都燃烧、帝都燃烧篇 | The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse | マブラヴ オルタネイティヴ トータル・イクリプス 帝都燃ゆ / Teito Moyu | Windows x64 Steam 独立作品 |
-| 光子之花、PF | Muv-Luv photonflowers* | マブラヴ photonflowers* | Windows Steam，安装前设为 English |
-| 光子旋律、PM | Muv-Luv photonmelodies* | マブラヴ photonmelodies* | Windows Steam，安装前设为 English |
-| 君望、你所期望的永远、Kiminozo | Kimi ga Nozomu Eien ~Enhanced Edition~ / Another Episode Collection+ | 君が望む永遠 | Steam 本篇与附加篇，制作中，[尚未发布补丁](../../AGE2/games/kiminozo/README.md) |
+| TDA00 | [\[TDA00\] Muv-Luv Unlimited: THE DAY AFTER - Episode 00 REMASTERED](https://store.steampowered.com/app/1407100/)<br>App ID：`1407100` | マブラヴ アンリミテッド ザ・デイアフター episode:00 | Windows x64 Steam，四作分别下载、安装 |
+| TDA01 | [\[TDA01\] Muv-Luv Unlimited: THE DAY AFTER - Episode 01 REMASTERED](https://store.steampowered.com/app/1407090/)<br>App ID：`1407090` | マブラヴ アンリミテッド ザ・デイアフター episode:01 | Windows x64 Steam，四作分别下载、安装 |
+| TDA02 | [\[TDA02\] Muv-Luv Unlimited: THE DAY AFTER - Episode 02 REMASTERED](https://store.steampowered.com/app/1342410/)<br>App ID：`1342410` | マブラヴ アンリミテッド ザ・デイアフター episode:02 | Windows x64 Steam，四作分别下载、安装 |
+| TDA03 | [\[TDA03\] Muv-Luv Unlimited: THE DAY AFTER - Episode 03 REMASTERED](https://store.steampowered.com/app/789830/)<br>App ID：`789830` | マブラヴ アンリミテッド ザ・デイアフター episode:03 | Windows x64 Steam，四作分别下载、安装 |
+| 帝都燃烧、帝都燃烧篇 | [The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse](https://store.steampowered.com/app/2630300/)<br>App ID：`2630300` | マブラヴ オルタネイティヴ トータル・イクリプス 帝都燃ゆ / Teito Moyu | Windows x64 Steam 独立作品，不是 ATE 正篇 |
+| 光子之花（PF） | [Muv-Luv photonflowers\*](https://store.steampowered.com/app/889700/)<br>App ID：`889700` | マブラヴ photonflowers\* | Windows Steam，安装前设为 English |
+| 光子旋律（PM） | [Muv-Luv photonmelodies♮](https://store.steampowered.com/app/889710/)<br>App ID：`889710` | マブラヴ photonmelodies♮ | Windows Steam，安装前设为 English |
+| 君望、你所期望的永远、Kiminozo | [Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>App ID：`1777440` | 君が望む永遠 | Steam 本篇，制作中，尚未发布补丁 |
+| 君望附加篇 | [Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)<br>App ID：`3112140` | 君が望む永遠 another episode collection+ | Steam 附加篇，制作中，尚未发布补丁 |
 
 Muv-Luv 也常写成 MuvLuv、muvluv 或 Muv Luv，日文系列名为マブラヴ。搜索补丁时，可使用完整作品名加
 “汉化补丁”“简体中文”或 “Simplified Chinese patch”。日文检索可使用作品名加“中国語化”。
