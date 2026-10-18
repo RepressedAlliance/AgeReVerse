@@ -14,35 +14,11 @@
   <a href="#问题反馈">问题反馈</a>
 </p>
 
-提供 Muv-Luv 系列《TDA00—03》《帝都燃烧篇》《光子之花（PF）》《光子旋律（PM）》的 Steam 简体中文汉化补丁；《君望／你所期望的永远》Steam 版汉化正在制作中。
+本项目提供 **TDA00—03、帝都燃烧篇、光子之花（PF）、光子旋律（PM）** 的 Steam 简体中文汉化补丁，七作均有 BETA 版本可下载。**君望／你所期望的永远本篇与附加篇正在制作中，尚未发布补丁。**
 
-**七部作品已有 BETA 补丁下载，君望 Steam 版正在制作中**，持续完善译文、中文界面、字体与排版，并通过玩家反馈和协作校对更新。
+汉化包含剧情正文、菜单与设置、字幕和图片文字，同时处理中文字体、换行与排版。各作仍可能有遗漏或显示问题，持续接受反馈；详见[汉化范围、实机截图与已知限制](docs/player/screenshots.md)。
 
-**以完整汉化为目标，已发布补丁接近完整覆盖：剧情正文、菜单与设置、字幕，以及标题、按钮、说明、地图、年表、地点提示、手写道具和演出素材中的文字，一并进行中文化。**
-汉化范围包含可编辑文本与嵌在图片中的文字，同时处理中文字体、换行、长字幕和原作的特殊排版。
-
-补丁仍为 BETA，可能存在遗漏、原文残留或显示问题；发现后会继续修正、补齐，更新到后续版本。
-各作的覆盖情况与已知问题不同，详见[汉化范围与实机截图](docs/player/screenshots.md)。
-
-本项目非官方、非商业；另收录主任保护协会制作的 ATE 汉化原发布入口，方便查找。
-
-当前提供 **TDA00—03（Muv-Luv UNLIMITED: The Day After）、帝都燃烧篇
-（The Imperial Capital Burns）、光子之花（photonflowers\*）、光子旋律（photonmelodies♮）**
-的独立补丁。系列日文名为 **マブラヴ**，也常写作 **MuvLuv / Muv Luv**；各作适用版本与安装方式不同。
-见[作品名称与版本对照](docs/player/game-names.md)。补丁仍为 BETA，持续接受反馈与协作校对。
-
-Unofficial Simplified Chinese (zh-Hans) patches for the Windows Steam releases of
-Muv-Luv UNLIMITED: The Day After episodes 00–03, The Imperial Capital Burns,
-Muv-Luv photonflowers* and photonmelodies♮. See the download table below for each game's release.
-Kimi ga Nozomu Eien: Enhanced Edition and its Another Episode Collection+ are also in development; no Kiminozo patch has been released.
-These are Chinese localization patches, not English patches or full games.
-Localization covers dialogue, menus, settings, subtitles and text embedded in images,
-aiming for comprehensive Chinese coverage while remaining omissions and display issues are corrected.
-
-> [!IMPORTANT]
-> 使用补丁必须拥有对应游戏正版。本仓库不提供游戏本体、破解或完整原始资源。
-> TDA00–03 与帝都燃烧现提供新版 BETA 安装程序。安装与恢复步骤见
-> [完整玩家指南](docs/player/README.md)；请保留存档，勿混用不同作品的补丁。
+> 补丁免费、非官方、非商业，使用前须拥有对应正版游戏。本仓库不提供游戏本体或破解；请按下表选择对应作品，安装与恢复见[玩家指南](docs/player/README.md)。
 
 ## 第一部分 · 玩家下载与反馈
 
@@ -234,28 +210,53 @@ TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含
 不熟悉 GitHub 也可以直接进群反馈，尽量附上游戏名、补丁版本、截图和前后台词。
 
 - [报告安装、启动、文本、图片或字体问题](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=bug-report.yml)
+- [问题咨询、研究交流或文档建议](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=question.yml)
 - [提交有日文原文依据的翻译修正](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)
 - [查看参与方式、贡献者与致谢](.github/CONTRIBUTING.md)
 
-### 关于 AI 翻译与人工校对
+<a name="关于-ai-翻译与人工校对"></a>
 
-**本项目各作的汉化文本均有 AI 参与翻译，但不是 AI 直出。**
-我们先以日文原文为依据，通读剧情、梳理人物关系并建立术语基线，再按场景初译；
-随后独立进行第二轮日文对照复核，记录保留、修改和待确认项，解决疑点、统一术语，
-随后进行资源写回、技术检查和实机验证；**制作流程的最后一步是由我人工检查、修改发现的
-错误，确认修改结果后再发布对应版本。** AI 复核与人工审核分别记录，不能互相替代。
+### 关于 AI 翻译、图片汉化与人工审核
 
-**玩家目前下载到的补丁，已经包含我在相应版本发布前参与审核、确认并落实的修改。**
-从译文措辞、人物称谓和术语取舍，到文本缺漏、换行排版、图片文字和游戏内显示问题，
-我在制作和测试过程中结合原文依据、校对意见与实际反馈检查问题，提出修改要求、确认
-采用方案，并跟进修正结果，再将修改纳入对应发布包。AI 协助分析与执行，具体取舍和
-最终发布由我负责；发布后也会继续收集反馈、修正问题。
+**本项目各作的汉化文本均有 AI 参与翻译，但不是 AI 直出。** 图片汉化也结合人工制作、
+工具处理与 AI 辅助，具体方法按素材选择。下面分别说明文本与图片如何从制作走到发布。
 
-已确认的审核与纠错会纳入对应发布包；具体变化见各作当前发布说明。
+#### 文本翻译：从理解剧情到发布
+
+1. **理解剧情，建立术语基线。** 以日文原作与日语语音为依据，结合画面和前后文梳理人物关系、称谓与术语；官方英文有则用于对照参考。
+
+2. **按场景初译。** 在完整剧情语境中生成中文候选，沿用术语基线，并标出疑点与需要保留的原文。
+
+3. **独立对照复核。** 第二轮重新核对日文／日语，分别记录保留、修改和待确认项，检查含义、人物语气与遗漏。
+
+4. **解决疑点，写回并测试。** 确认译法、统一术语，反查关联文本，再写回游戏资源，检查控制符、中文字体、换行排版和实机显示。
+
+5. **由我人工检查、修改后发布。** 我结合原文、校对意见与实际反馈审核，提出和确认修改，复查修正结果，再发布对应版本。AI 复核与人工审核分别记录，不能互相替代。
 
 详细步骤见 **[按顺序阅读的翻译规范](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/README.md)** 和
-[完整工作流](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md)。这些是制作流程，不代表每个历史测试包都已完成
-全文人工校对或全路线验证，译文仍可能存在错误。
+[完整文本工作流](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md)。
+
+#### 图片汉化：从分类到人工审核
+
+1. **提取与分类。** 盘点 UI、字幕、地图、场景文字等资源，先找已有成品与源文件，确认哪些需要汉化、哪些可以复用或有依据地保留。
+
+2. **确认文案、字体与样式。** 核对文字含义，确定中文表达、制作底稿、用字来源与画面风格，先确认代表图的效果。
+
+3. **制作或修订图片。** 按素材去除需替换的原文字、修复底图并制作中文，让字形、透视、材质和光影融入画面，保留无关画面与已确认效果。
+
+4. **自检与返修。** 逐图、逐组检查文字、简体中文字形、排版与画面；涉及图层或动画时检查合成与播放，发现问题后修订。
+
+5. **由我审核，接入游戏后交付。** 用原作依据、当前中文，以及有则提供的官方英文／旧中文作对照，附上易懂的修改说明；我确认后接入游戏、检查实际显示，并在发布前完成最后的人工修改与复查。
+
+详细步骤见 **[图片汉化的五个阶段](Localization-MakeGamesSpeak/Images-MakeItLookNative/README.md#五个阶段)**。
+
+**很多图片是我早期制作的，后来又陆续修改、补做和返修。** 现行图片流程是在这些实践中逐步完善、整理出来的，
+并不表示所有历史图片从一开始就按今天的流程或使用今天的模型制作。已有合适成品会继续复用，
+需要改进的部分回到相应阶段修订；旧图中已知的文字或显示问题仍需处理，不能因是旧素材就视为合格。
+
+**玩家目前下载到的补丁，已经包含我在相应版本发布前参与审核、确认并落实的修改。**
+AI 协助分析与执行，具体取舍和最终发布由我负责；发布后还会继续收集反馈，修正问题并纳入后续版本。
+具体变化与仍未解决的问题见各作发布说明。上述流程不代表每个历史测试包都已完成全文人工校对或全路线验证。
 
 TDA 的部分文本已经过人工校对。已发布版本包含上述审核与修正；此后新增的校对和修改
 会继续同步到可维护文本中，是否进入某个下载包以对应发布说明为准。
@@ -293,6 +294,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 
 | 内容 | 入口 |
 | --- | --- |
+| 第一次使用公开工具：查一个词的现行译法 | [十分钟入门：查术语并看懂结果](docs/research/quick-start.md) |
 | 全部公开成果与研究索引 | **[制作与研究入口](docs/research/README.md)** |
 | 学习并复用文本、图片、字体、一致性和多人校对方法 | **[游戏本地化｜让游戏说你的语言](Localization-MakeGamesSpeak/README.md)** |
 | TDA／帝都的 AGE2、FPD、EGPACK 与松散覆盖 | [AGE2 工作区](AGE2/README.md) |
@@ -308,10 +310,11 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 
 This repository publishes localization tools, maintained translation tables, terminology,
 image and font workflows, and reverse-engineering findings for the Muv-Luv series.
-The Chinese player downloads are listed in the first part of this README.
+The downloadable patches localize the Windows Steam games into Simplified Chinese. English documentation here explains reusable workflows, tools and research for other teams. Kiminozo and its additional episodes remain in development, with no patch released.
 
 | Topic | English-friendly starting point |
 | --- | --- |
+| Try a public tool without game files | [First ten minutes: look up a term and understand the result](docs/research/quick-start.md) |
 | Learn and adapt the localization method | **[Game Localization — Make Games Speak Your Language](Localization-MakeGamesSpeak/README.md)** |
 | Public results and current limitations | [Research index](docs/en/research-index.md) · [AGE2 limits](AGE2/docs/limitations.md) · [Photon limits](rUGP/docs/limitations.md) |
 | Text, image, font and tool locations | [Asset map](docs/en/asset-map.md) |
@@ -323,11 +326,39 @@ The Chinese player downloads are listed in the first part of this README.
 | Photon: ICI, RIO, RUO and runtime tooling | [rUGP workspace](rUGP/README.md) |
 | Proofreading synchronization | [ParaTranz workflow](Localization-MakeGamesSpeak/ParaTranz-KeepImprovingTogether/README.md) |
 
-AI participates in translation across the project. The workflow establishes Japanese story context
-and terminology before a first translation, then independently reviews each candidate, resolves
-questions, and performs engine-specific checks. AI review is not human proofreading or proof of
-full-route in-game validation. Some TDA passages have been human-proofread; some text in
-*Before the Cherry Blossoms Bloom* was provided by 红桃皇后假说.
+### Translation, image production and human review
+
+AI participates in text translation across the project; its output is reviewed and revised before
+publication. Image work combines manual production, tools and AI assistance as appropriate to each asset.
+
+**Text translation — five main stages:**
+
+1. Understand the Japanese story, audio and visual context; establish character relationships and terminology, using official English as a reference where available.
+2. Draft Chinese by scene, recording questions and intentional source-language retention.
+3. Independently review against Japanese text/audio, recording what to keep, revise or clarify.
+4. Resolve questions, align terminology and related passages, then write back and check engine constraints, fonts, layout and in-game display.
+5. The maintainer checks and corrects issues, verifies the revisions and releases the version. AI review and human review remain separate.
+
+**Image localization — five stages:**
+
+1. Extract and classify resources; find existing outputs and sources, then decide what to localize, reuse or intentionally retain.
+2. Confirm copy, fonts and style, including the authoring base, font sources and representative samples.
+3. Produce or revise images, replacing the intended lettering and matching the artwork while preserving unrelated content and approved effects.
+4. Self-review and repair each image and related group, including Simplified Chinese glyphs, layout, and layer composition or animation where applicable.
+5. Present source evidence and current Chinese, with official English and previous Chinese where available, plus clear explanations. After maintainer approval, bind the images to the game, check actual display and complete final human corrections and verification before release.
+
+Many images were first made by the maintainer earlier and later revised, supplemented or repaired.
+Today's workflow grew from that work; it does not mean every historical image used today's process
+or models. Suitable outputs are reused, while affected stages are revisited for repairs. Known issues
+in older assets remain issues to address.
+
+Published patches already include the maintainer's reviews and corrections implemented before that
+version's release. Later feedback and ParaTranz edits feed future versions. This does not imply every
+historical test package has had full human proofreading or full-route validation. Some TDA passages
+have been human-proofread; some text in *Before the Cherry Blossoms Bloom* was provided by 红桃皇后假说.
+
+See the [complete text workflow](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.en.md)
+and [five-stage image workflow](Localization-MakeGamesSpeak/Images-MakeItLookNative/README.md).
 
 To work on another language, reconstruct Japanese source from your own lawful game copy, preserve
 stable identities and source hashes, and create separate target-language files. The current tools

@@ -14,6 +14,8 @@
 
 ## 本地化制作者
 
+- [第一次使用公开工具：查术语并看懂结果](research/quick-start.md)
+
 - [通用本地化工作区](../Localization-MakeGamesSpeak/README.md)：文本、术语、图片、字体与审核
 - [第一次翻译—第二次审核—玩家反馈完整流程](../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.md)
 - [Complete English localization workflow](../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/workflow.en.md)
