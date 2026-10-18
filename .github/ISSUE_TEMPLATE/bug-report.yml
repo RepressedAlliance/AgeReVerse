@@ -7,16 +7,17 @@ body:
     id: game
     attributes:
       label: 游戏 / Game
+      description: 前面是中文圈常用名或简称，后面是完整 Steam 名称，请与游戏库核对。Chinese community name first, then the full Steam title.
       options:
-        - TDA00
-        - TDA01
-        - TDA02
-        - TDA03
-        - The Imperial Capital Burns
-        - 光子之花
-        - 光子旋律
-        - 君望 Enhanced Edition（制作中 / In development）
-        - 君望 Another Episode Collection+（制作中 / In development）
+        - "TDA00｜[TDA00] Muv-Luv Unlimited: THE DAY AFTER - Episode 00 REMASTERED"
+        - "TDA01｜[TDA01] Muv-Luv Unlimited: THE DAY AFTER - Episode 01 REMASTERED"
+        - "TDA02｜[TDA02] Muv-Luv Unlimited: THE DAY AFTER - Episode 02 REMASTERED"
+        - "TDA03｜[TDA03] Muv-Luv Unlimited: THE DAY AFTER - Episode 03 REMASTERED"
+        - "帝都燃烧篇｜The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse"
+        - "光子之花（PF）｜Muv-Luv photonflowers*"
+        - "光子旋律（PM）｜Muv-Luv photonmelodies♮"
+        - "君望／你所期望的永远｜Kimi ga Nozomu Eien: Enhanced Edition（制作中 / In development）"
+        - "君望附加篇｜Kimi ga Nozomu Eien Enhanced Edition another episode collection+（制作中 / In development）"
     validations:
       required: true
   - type: input

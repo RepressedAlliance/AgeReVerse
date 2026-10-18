@@ -2,8 +2,8 @@
 
 [返回首页](../../../README.md) · [AGE2 项目](../README.md) · [项目清单](project.toml)
 
-《君望》（Kimi ga Nozomu Eien ~Enhanced Edition~）Steam 版简体中文汉化正在制作中，
-范围包括本篇及 Another Episode Collection+。**本项目尚未发布君望补丁，暂时没有安装包。**
+《君望／你所期望的永远》Steam 版简体中文汉化正在制作中，
+范围包括本篇 [Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/) 及附加篇 [Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)。**本项目尚未发布君望补丁，暂时没有安装包。**
 GitHub 的 Source code ZIP 不能安装汉化，其他作品的安装器也不适用于君望。
 
 ## 当前进度

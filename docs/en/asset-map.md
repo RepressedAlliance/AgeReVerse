@@ -13,7 +13,7 @@ do not all belong in `Localization-MakeGamesSpeak/`.
 | --- | --- | --- |
 | Two-pass method, review states, locale naming, shared terminology, generic image/font tools | `Localization-MakeGamesSpeak/` | Reusable without a particular engine or resource slot |
 | A game's dialogue, choices, speakers, UI translation, and game-only terms | `AGE2/games/<game>/` or `rUGP/games/<game>/` | Stable IDs, hashes, scenes, locale slots, and writer contracts are game-bound |
-| Image copy, paths, dimensions, source locks, and localized identities | The game's `images/`; joint 光子之花/光子旋律 authority under `rUGP/evidence/photon/` | Display depends on game paths, parents, locale endpoints, and codecs |
+| Image copy, paths, dimensions, source locks, and localized identities | The game's `images/`; joint PF/PM authority under `rUGP/evidence/photon/` | Display depends on game paths, parents, locale endpoints, and codecs |
 | FPD, EGPACK, ICI, RIO, CRsa, RUO, Cr6Ti, CRip, and Hook code | The corresponding `AGE2/` or `rUGP/` tree | They are unrelated format/runtime families |
 | Large approved redistributable image bundles and player packages | This repository's Releases, with manifests/hashes in Git | Keeps versioning and downloads in one project without bloating Git history with thousands of binaries |
 | Complete official text/images, containers, temporary candidates, failed batches, raw model responses | Ignored local work directories | Lawful inputs and scratch output are not public project assets; durable results become tools, manifests, recipes, or postmortems |
@@ -32,8 +32,8 @@ by identity and hash.
 | TDA02 | [`translations/ja-zh-Hans.csv`](../../AGE2/games/tda02/translations/ja-zh-Hans.csv) | 6,589 rows |
 | TDA03 | [`translations/ja-zh-Hans.csv`](../../AGE2/games/tda03/translations/ja-zh-Hans.csv) | 6,913 rows |
 | The Imperial Capital Burns | [`translations/`](../../AGE2/games/imperial-capital-burns/translations/) | 5,564 main rows, plus auxiliary, choice, speaker, and UI tables |
-| 光子之花 | [`translations/`](../../rUGP/games/photonflowers/translations/) | 13,025 maintained chapter/system rows; earlier reviewed/runtime bindings are historical evidence |
-| 光子旋律 | [`translations/`](../../rUGP/games/photonmelodies/translations/) | 44,698 maintained chapter/system rows; earlier reviewed/runtime bindings are historical evidence |
+| 光子之花 / Muv-Luv photonflowers* (PF) | [`translations/`](../../rUGP/games/photonflowers/translations/) | 13,025 maintained chapter/system rows; earlier reviewed/runtime bindings are historical evidence |
+| 光子旋律 / Muv-Luv photonmelodies♮ (PM) | [`translations/`](../../rUGP/games/photonmelodies/translations/) | 44,698 maintained chapter/system rows; earlier reviewed/runtime bindings are historical evidence |
 | Kiminozo and Another Episode Collection+ | [Text](../../AGE2/games/kiminozo/translations/README.md) and [terminology/baselines](../../AGE2/games/kiminozo/terminology/README.md) | In review; no public dialogue tables yet |
 
 Counts describe public records, not unique spoken lines, full in-game approval,
@@ -53,11 +53,11 @@ Game-only terms remain with that game.
 | TDA02 | 100 / 80 | Historical player Release and [manifest](../../AGE2/games/tda02/images/) |
 | TDA03 | 152 / 90 | Historical player Release and [manifest](../../AGE2/games/tda03/images/) |
 | The Imperial Capital Burns | 315 / 232 | Historical player Release plus [manifest and maintained copy](../../AGE2/games/imperial-capital-burns/images/) |
-| 光子之花 | 636 authorities | Photon V6 research Release and [manifest](../../rUGP/evidence/photon/images/) |
-| 光子旋律 | 854 authorities | Photon V6 research Release and [manifest](../../rUGP/evidence/photon/images/) |
+| 光子之花 / Muv-Luv photonflowers* (PF) | 636 authorities | Photon V6 research Release and [manifest](../../rUGP/evidence/photon/images/) |
+| 光子旋律 / Muv-Luv photonmelodies♮ (PM) | 854 authorities | Photon V6 research Release and [manifest](../../rUGP/evidence/photon/images/) |
 | Kiminozo and Another Episode Collection+ | In development; no published inventory | [UI, images and fonts](../../AGE2/games/kiminozo/images/README.md); no player package |
 
-The five AGE2 packages contain 730 historical WebP paths; 光子之花/光子旋律 contain 1,490
+The five AGE2 packages contain 730 historical WebP paths; PF/PM contain 1,490
 image authorities. A path count is not a count of independently redrawn images:
 multiple locale suffixes or states may share content, and some entries are
 official fallbacks. Photon V6 still contains 19 PNGs byte-identical to official

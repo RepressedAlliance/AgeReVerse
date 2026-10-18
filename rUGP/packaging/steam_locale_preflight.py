@@ -60,7 +60,7 @@ CONFIRMED_GAME_POLICIES: Mapping[str, GameLocalePolicy] = {
     ),
     "pm": GameLocalePolicy(
         key="pm",
-        title="Muv-Luv photonmelodies♬",
+        title="Muv-Luv photonmelodies♮",
         appid="889710",
         required_locale="english",
     ),

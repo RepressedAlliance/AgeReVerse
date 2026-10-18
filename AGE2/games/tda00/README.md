@@ -1,6 +1,6 @@
 # Muv-Luv TDA00 Steam 简体中文汉化补丁
 
-Muv-Luv UNLIMITED: The Day After episode:00／マブラヴ アンリミテッド ザ・デイアフター。
+[\[TDA00\] Muv-Luv Unlimited: THE DAY AFTER - Episode 00 REMASTERED](https://store.steampowered.com/app/1407100/)／マブラヴ アンリミテッド ザ・デイアフター。
 
 [返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/ja-zh-Hans.csv) · [术语与基线](terminology/README.md) · [图片](images/) · [历史补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda00-beta0.1)
 
