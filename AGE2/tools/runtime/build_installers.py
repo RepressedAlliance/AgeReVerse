@@ -33,7 +33,8 @@ def main():
                  '/reference:System.Windows.Forms.dll','/reference:System.Drawing.dll',
                  '/reference:System.Web.Extensions.dll','/reference:System.IO.Compression.dll',
                  '/reference:System.IO.Compression.FileSystem.dll',
-                 str(source/'Age2Installer.cs'),str(source/'Age2InstallEngine.cs')]
+                 *[str(source/name) for name in ('Age2Installer.cs','Age2InstallEngine.cs',
+                                                'Age2BundleInstallEngine.cs','Age2KimiUnifiedInstallEngine.cs')]]
         subprocess.run(command,check=True)
         report[game]={'installer':str(output.resolve()),'bytes':output.stat().st_size,
                       'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'status':'BETA' if args.release else 'review-candidate'}
