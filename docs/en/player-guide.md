@@ -4,14 +4,24 @@
 
 Each current download row shows the Chinese community name or abbreviation first, followed by the full Steam title linked to its store page. See the [game-name and edition guide (Chinese)](../player/game-names.md) for aliases and compatibility. These are unofficial Simplified Chinese patches.
 
-## Kiminozo in development
+## Kiminozo Steam edition
 
-| Game | Status | Project |
+The unified **1.0.0「再会」** installer supports EE, optional community EER 1.0, and installed AEC+ episodes.
+
+| Game | Version | Download |
 | --- | --- | --- |
-| **君望／你所期望的永远**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)</sub> | **In development; no patch released** | [Main-game scope and progress](../../AGE2/games/kiminozo/README.md) |
-| **君望附加篇**<br><sub>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **In development; no patch released** | [Additional-episode scope and progress](../../AGE2/games/kiminozo/README.md) |
+| **君望／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [Download Chinese patch](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip) · [Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
 
-Text review and UI/image localization are ongoing. The installation instructions for released games below do not apply to Kiminozo.
+1. Install/update the Steam game and any owned AEC+ DLC, then exit the game.
+2. **Skip this step for ordinary EE.** Only players wanting the restored cut content need the optional community EER Patch from [Muv-Luv Verse](https://kiminozo.life/) ([upstream Steam EER 1.0 ZIP](https://files.kiminozo.life/Patches/Kiminozo_EER_Patch_EN_Steam_1.0.zip)). Follow its instructions and merge `obb` into the main game's `kiminozs` folder first.
+3. Extract `KimiNozo-CN-1.0.0.zip` and run `KimiNozo-CN-1.0.0-Setup.exe`. If detection fails, select `kiminozs`, containing `kiminozs-win64vc14-release.exe`.
+4. Choose “安装汉化”. The installer selects EE or the exact complete EER 1.0 and includes adjacent installed AEC+. Partial/unknown EER files are rejected before writes. Start through Steam and select Chinese in the in-game settings.
+
+Supported input: Windows x64, Steam build 18634794 and matching AEC+. Executable and optional EER inputs are hash checked. LE, other EER editions and Proton are unsupported/unverified. New/adjusted text received human proofreading; this is not a claim of full-route runtime testing.
+
+To restore, select English/Japanese, exit, preserve `data/user`, move aside each component's localized AppData `data/root` plus `FridaGadget.dll`, `FridaGadget.config`, `age2-cn.js`, and `COPYING-frida.txt`, then restore its own `.age2-cn/original.exe`. Returning from EER to ordinary EE additionally requires removing only the upstream-added three `obb/patch*.bin` files, following upstream instructions. Preserve official `pack*.bin` and existing backups. Steam Verify does not remove extra overlays or EER files.
+
+Credits: **木之** — LE translation and proofreading; **压抑同盟** — revision, porting, localized images and coordination; **Muv-Luv Verse Team · Lemonov · TotSamiyMisha** — community EER Patch. Legacy translation reuse and community EER Chinese adaptation have the relevant permissions; no official IP authorization is implied. Complete dialogue tables and private correspondence are not published in Git.
 
 ## AGE2 BETA · 2026-09-20
 

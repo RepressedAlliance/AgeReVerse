@@ -34,7 +34,7 @@ by identity and hash.
 | The Imperial Capital Burns | [`translations/`](../../AGE2/games/imperial-capital-burns/translations/) | 5,564 main rows, plus auxiliary, choice, speaker, and UI tables |
 | 光子之花 / Muv-Luv photonflowers* (PF) | [`translations/`](../../rUGP/games/photonflowers/translations/) | 13,025 maintained chapter/system rows; earlier reviewed/runtime bindings are historical evidence |
 | 光子旋律 / Muv-Luv photonmelodies♮ (PM) | [`translations/`](../../rUGP/games/photonmelodies/translations/) | 44,698 maintained chapter/system rows; earlier reviewed/runtime bindings are historical evidence |
-| Kiminozo and Another Episode Collection+ | [Text](../../AGE2/games/kiminozo/translations/README.md) and [terminology/baselines](../../AGE2/games/kiminozo/terminology/README.md) | In review; no public dialogue tables yet |
+| Kiminozo and Another Episode Collection+ | [Text](../../AGE2/games/kiminozo/translations/README.md) and [terminology/baselines](../../AGE2/games/kiminozo/terminology/README.md) | Human proofreading complete; complete dialogue tables remain private by agreement |
 
 Counts describe public records, not unique spoken lines, full in-game approval,
 or automatic writer authorization. Each game README states whether a table is a
@@ -55,7 +55,7 @@ Game-only terms remain with that game.
 | The Imperial Capital Burns | 315 / 232 | Historical player Release plus [manifest and maintained copy](../../AGE2/games/imperial-capital-burns/images/) |
 | 光子之花 / Muv-Luv photonflowers* (PF) | 636 authorities | Photon V6 research Release and [manifest](../../rUGP/evidence/photon/images/) |
 | 光子旋律 / Muv-Luv photonmelodies♮ (PM) | 854 authorities | Photon V6 research Release and [manifest](../../rUGP/evidence/photon/images/) |
-| Kiminozo and Another Episode Collection+ | In development; no published inventory | [UI, images and fonts](../../AGE2/games/kiminozo/images/README.md); no player package |
+| Kiminozo and Another Episode Collection+ | Per-file output manifests in the 1.0.0 release | [UI, images and fonts](../../AGE2/games/kiminozo/images/README.md); unified EE / optional EER / AEC+ player installer |
 
 The five AGE2 packages contain 730 historical WebP paths; PF/PM contain 1,490
 image authorities. A path count is not a count of independently redrawn images:

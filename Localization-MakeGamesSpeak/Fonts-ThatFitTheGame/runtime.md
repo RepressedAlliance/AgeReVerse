@@ -54,6 +54,16 @@
 
 它们不是补丁另附的一整套 TTF。实际游戏字号、粗细和选字要观察请求，不能凭 PNG 或菜单外观反推。此目录完整登记发布包所附的字体，不声称已识别每张官方图片的原始排字字体。
 
-## 在制作品
+## 君望 1.0.0「再会」
 
-君望本篇／附加篇有独立的五角色选型与 UI 方案，不能沿用上述七作的实际配置。状态见[君望字体与图片](../../AGE2/games/kiminozo/images/README.md)；图片流程可以复用，实际字体选择按该作已确认结果登记。
+EE、可选社区 EER 1.0 与 AEC+ 使用相同中文角色配置，不能沿用上述七作的配置。EER 的姓名字体字节与 EE／AEC+ 不同，同名不可混用；精确文件摘要、家族、版本与许可文件分别记录于[君望发布字体清单](../../AGE2/games/kiminozo/images/release-fonts.json)。
+
+| 用途 | 包内文件 | 来源／处理 |
+| --- | --- | --- |
+| Common 系统 | `AGE2UISansSC-Dash.otf` | IBM Plex Sans SC 派生，U+2015 字形笔画修正 |
+| Message 正文 | `AGE2MessageSC-Bold.ttf` | 狮尾圆体 Swei Curve Sans SC Bold 派生，补 U+00B7 映射 |
+| Speaker 姓名 | `AGE2SpeakerSC-Regular.ttf` | GenWa Kocha TC 基础，汉字换为 Swei Spring Sugar SC SemiBold 字形 |
+| Hud、sub | `SourceHanSansCN-Medium.otf` | 思源黑体 CN Medium |
+| StaffCN 中文署名 | `SourceHanSerifCN-Regular.otf` | 思源宋体 CN Regular |
+
+框架自身的标题／数字／Common 配置使用 `SourceHanSansCN-Medium.otf`。运行时只将中文请求路由至对应配置，日英仍走原配置。补丁亦保留派生基础字体及完整许可；随包存在不等于当前中文角色实际选用。菜单等图片文字独立制作，见[君望图片说明](../../AGE2/games/kiminozo/images/README.md)。

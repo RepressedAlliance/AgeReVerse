@@ -8,7 +8,7 @@
 
 - [安装、卸载与排错](player/README.md)
 - [汉化范围与中文实机截图](player/screenshots.md)
-- [君望 Steam 版及附加篇的制作进度](../AGE2/games/kiminozo/README.md)：尚未发布补丁
+- [君望 EE／可选 EER／AEC+ 正式版](../AGE2/games/kiminozo/README.md)：1.0.0「再会」与安装说明
 - [机器可读的当前版本与历史包身份索引](player/release-index.json)
 - [GitHub Releases](https://github.com/RepressedAlliance/AgeReVerse/releases)
 

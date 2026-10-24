@@ -42,7 +42,7 @@ You can contribute a single well-explained correction. If you cannot read Japane
 
 现有四个线上项目在 2026-10-05 逐个核对过；文件映射、当日计数及同步范围见[维护者同步说明](sync.md)，以项目实际文件为准。平台翻译率或“已审核”计数不能反推发布前维护者是否修改过文本。TDA 的原生空结构保持空白，不当成漏译填充。
 
-君望本篇与附加篇仍在制作和文本审核，尚未开放公开全文 ParaTranz 校对，也未接入这四个项目的同步范围；[状态入口](../../AGE2/games/kiminozo/README.md)。
+君望 EE／可选社区 EER 1.0／AEC+ 已发布 1.0.0「再会」，新增／调整文本已完成人工校对。完整译文按许可约定不公开，尚未开放全文 ParaTranz 校对，也未接入这四个项目的同步范围；[项目与反馈入口](../../AGE2/games/kiminozo/README.md)。
 
 ## 怎么参与
 

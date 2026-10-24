@@ -14,7 +14,7 @@
   <a href="#问题反馈">问题反馈</a>
 </p>
 
-本项目提供 **TDA00—03、帝都燃烧篇、光子之花（PF）、光子旋律（PM）** 的 Steam 简体中文汉化补丁，七作均有 BETA 版本可下载。**君望／你所期望的永远本篇与附加篇正在制作中，尚未发布补丁。**
+本项目提供 **TDA00—03、帝都燃烧篇、光子之花（PF）、光子旋律（PM）** 的 Steam 简体中文汉化补丁，七作均有 BETA 版本可下载。**君望本篇 EE、可选社区 EER 1.0 适配与 AEC+ 已推出 1.0.0「再会」正式版。**
 
 汉化包含剧情正文、菜单与设置、字幕和图片文字，同时处理中文字体、换行与排版。各作仍可能有遗漏或显示问题，持续接受反馈；详见[汉化范围、实机截图与已知限制](docs/player/screenshots.md)。
 
@@ -37,8 +37,9 @@
 | **帝都燃烧篇**<br><sub>[The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse](https://store.steampowered.com/app/2630300/)</sub> | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-BETA-0.2.1/TM-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
 | **光子之花（PF）**<br><sub>[Muv-Luv photonflowers\*](https://store.steampowered.com/app/889700/)</sub> | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
 | **光子旋律（PM）**<br><sub>[Muv-Luv photonmelodies♮](https://store.steampowered.com/app/889710/)</sub> | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
-| **君望／你所期望的永远**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)</sub> | **制作中，尚未发布** | [项目介绍与进度](AGE2/games/kiminozo/README.md) |
-| **君望附加篇**<br><sub>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **制作中，尚未发布** | [附加篇范围与进度](AGE2/games/kiminozo/README.md) |
+| **君望／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
+
+君望正式版名为 **1.0.0「再会」**。普通 EE 直接安装中文补丁；希望补全删减内容时，才先安装 **[Muv-Luv Verse 的社区 EER Patch（可选）](https://kiminozo.life/)**，再运行同一中文安装器。[安装说明](docs/player/README.md#君望-steam-版)。
 
 > **也想让喜欢的游戏说你的语言？** [游戏本地化｜让游戏说你的语言 · Make Games Speak Your Language](Localization-MakeGamesSpeak/README.md)：公开 AI 辅助文本翻译、图片汉化、字体排版、全文一致性和多人校对的方法，各入口可原地展开英文说明。
 
@@ -197,7 +198,7 @@ TDA00—03 与帝都燃烧均支持一键安装和手动复制。解压后包含
 
 ### 项目状态
 
-- **[《君望》Steam版](AGE2/games/kiminozo/README.md)：**汉化正在制作中，目前在做文本校对和UI、图片汉化，暂未发布补丁。项目范围、目录与进度见[君望项目入口](AGE2/games/kiminozo/README.md)。
+- **[《君望》Steam版](AGE2/games/kiminozo/README.md)：**1.0.0「再会」覆盖 EE、可选社区 EER 1.0 及 AEC+ 的正文、UI 与图片文字；新增／调整文本已由木之全文校对。普通 EE 可直接安装，EER 不是前置要求。
 
 光子之花／光子旋律的技术来源分类、上游版本、82 项技术职责与完整路线演变，详细请见 **[技术来源分类与完整蓝图](docs/research/photon/README.md)**。
 
@@ -298,7 +299,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 | 全部公开成果与研究索引 | **[制作与研究入口](docs/research/README.md)** |
 | 学习并复用文本、图片、字体、一致性和多人校对方法 | **[游戏本地化｜让游戏说你的语言](Localization-MakeGamesSpeak/README.md)** |
 | TDA／帝都的 AGE2、FPD、EGPACK 与松散覆盖 | [AGE2 工作区](AGE2/README.md) |
-| 君望本篇与附加篇的文本、术语和 UI 图片制作 | [君望项目（制作中）](AGE2/games/kiminozo/README.md) |
+| 君望本篇与附加篇的文本、术语和 UI 图片制作 | [君望项目与正式版](AGE2/games/kiminozo/README.md) |
 | Photon 的 RIO、RUO、CRsa、图片和运行时 | [rUGP 工作区](rUGP/README.md) |
 | 文本、图片、字体和工具的具体位置 | [资产地图](docs/research/asset-map.md) |
 | 实用技术案例与未解决事项 | [AGE2 案例](AGE2/docs/postmortems/README.md) · [AGE2 限制](AGE2/docs/limitations.md) · [Photon 案例](rUGP/docs/postmortems/README.md) · [Photon 限制](rUGP/docs/limitations.md) |
@@ -310,7 +311,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 
 This repository publishes localization tools, maintained translation tables, terminology,
 image and font workflows, and reverse-engineering findings for the Muv-Luv series.
-The downloadable patches localize the Windows Steam games into Simplified Chinese. English documentation here explains reusable workflows, tools and research for other teams. Kiminozo and its additional episodes remain in development, with no patch released.
+The downloadable patches localize the Windows Steam games into Simplified Chinese. English documentation here explains reusable workflows, tools and research for other teams. Kiminozo EE, optional community EER 1.0 compatibility and AEC+ are available in the unified 1.0.0 release. The complete legacy translation remains private by agreement.
 
 | Topic | English-friendly starting point |
 | --- | --- |
@@ -322,7 +323,7 @@ The downloadable patches localize the Windows Steam games into Simplified Chines
 | Korean, Russian or another target language | [Starting a new language](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/new-locale.md) |
 | Ordered standards | [Standards and reading order](Localization-MakeGamesSpeak/Text-AITranslationWorthReading/README.md) |
 | TDA / Imperial: FPD, EGPACK and loose overlays | [AGE2 workspace](AGE2/README.md) |
-| Kiminozo and Another Episode Collection+: work in progress | [Project scope and structure](AGE2/games/kiminozo/README.md) |
+| Kiminozo EE / optional EER / AEC+: 1.0.0 | [Project scope and structure](AGE2/games/kiminozo/README.md) |
 | Photon: ICI, RIO, RUO and runtime tooling | [rUGP workspace](rUGP/README.md) |
 | Proofreading synchronization | [ParaTranz workflow](Localization-MakeGamesSpeak/ParaTranz-KeepImprovingTogether/README.md) |
 
@@ -376,7 +377,7 @@ are reusable components; they do not yet provide a universal one-command finishe
 及其他成熟补丁项目提供公开技术先例。OpenAI Codex 和图像模型
 在维护者指挥与审核下参与了部分代码、文档、分析、检查和图片工作。
 
-感谢 **ScRm** 对 TDA00 的审核与校对，以及 **ScRm、骁飞、Tsubaki-G** 对各篇文本的纠错与修订；感谢 **柚子コショウ** 参与 PF／PM 校对并提供修正建议，**红桃皇后假说** 提供《樱花盛开之前》的部分文本，**子冰** 对 TDA01 提供反馈，以及 **木之老师** 对君望旧译、术语和用典核对的帮助。ParaTranz 记录中的 ScRemilia、Tsubaki-G、X1AOFEI 也在[贡献者总表](docs/project/CONTRIBUTORS.md)中保留署名。
+感谢 **ScRm** 对 TDA00 的审核与校对，以及 **ScRm、骁飞、Tsubaki-G** 对各篇文本的纠错与修订；感谢 **柚子コショウ** 参与 PF／PM 校对并提供修正建议，**红桃皇后假说** 提供《樱花盛开之前》的部分文本，**子冰** 对 TDA01 提供反馈，以及 **木之** 授权复用君望 LE 原译并参与全文校对与修订，及 **Muv-Luv Verse Team · Lemonov · TotSamiyMisha** 制作社区 EER Patch。ParaTranz 记录中的 ScRemilia、Tsubaki-G、X1AOFEI 也在[贡献者总表](docs/project/CONTRIBUTORS.md)中保留署名。
 
 完整贡献范围、责任边界与参考项目见 **[贡献者与致谢](docs/project/CONTRIBUTORS.md)** 和
 [研究参考](docs/research/references.md)。

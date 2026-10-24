@@ -7,7 +7,7 @@
 
 **AgeReVerse · RepressedAlliance / 压抑同盟**
 
-Steam Simplified Chinese patches for Muv-Luv UNLIMITED: The Day After (TDA00–03), The Imperial Capital Burns, Muv-Luv photonflowers* (PF), and Muv-Luv photonmelodies♮ (PM). Kimi ga Nozomu Eien: Enhanced Edition (Kiminozo) and Another Episode Collection+ are in development, with no patch released yet.
+Steam Simplified Chinese patches for Muv-Luv UNLIMITED: The Day After (TDA00–03), The Imperial Capital Burns, Muv-Luv photonflowers* (PF), and Muv-Luv photonmelodies♮ (PM). Kimi ga Nozomu Eien: Enhanced Edition (Kiminozo), optional community EER 1.0 compatibility and Another Episode Collection+ are available in unified 1.0.0「再会」.
 
 Reverse engineering, tooling, and Chinese localization for âge games.
 
@@ -32,7 +32,7 @@ cracks, complete original assets, or an original Steam `pack.bin`.
 | --- | --- | --- |
 | TDA00–03 and The Imperial Capital Burns | Current BETA installers published on 2026-09-20; see the [player guide](player-guide.md) for per-game versions and installation | Maintained text, inventories for 730 historical WebP paths, Imperial image copy, FPD/EGPACK tools, and loose-overlay findings |
 | 光子之花 / Muv-Luv photonflowers* (PF) and 光子旋律 / Muv-Luv photonmelodies♮ (PM) | **BETA 0.1.2** ordinary releases, separate installers; see the [player guide](player-guide.md) | Maintained text, a 1,490-image PF/PM authority and route map, ICI/RIO/CRsa/RUO/Cr6Ti/CRip tools, guarded runtime components, and postmortems |
-| Kimi ga Nozomu Eien: Enhanced Edition and Another Episode Collection+ | **In development; no player package** | [Project structure, text review, terminology and UI/image work](../../AGE2/games/kiminozo/README.md) |
+| Kimi ga Nozomu Eien: Enhanced Edition and Another Episode Collection+ | **[1.0.0「再会」](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0)** | [Project structure, text review, terminology and UI/image work](../../AGE2/games/kiminozo/README.md) |
 
 Use the current packages linked in the [player guide](player-guide.md).
 Older AGE2 packages and their limitations are retained as historical records. The 1,490-image Photon Release is a research and
@@ -80,7 +80,7 @@ and the [reference comparison](../research/references.md).
 · [Suggest a translation correction](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)
 · [Contribute](../project/CONTRIBUTING.md)
 
-Human proofreading and feedback credits include ScRm, 骁飞, Tsubaki-G, 柚子コショウ and 子冰; ParaTranz records also credit ScRemilia and X1AOFEI. 红桃皇后假说 provided part of the text for *Before the Cherry Blossoms Bloom*, and 木之 assists with Kiminozo legacy translation review. See the [contributor list](../project/CONTRIBUTORS.md) for scope and sources.
+Human proofreading and feedback credits include ScRm, 骁飞, Tsubaki-G, 柚子コショウ and 子冰; ParaTranz records also credit ScRemilia and X1AOFEI. 红桃皇后假说 provided part of the text for *Before the Cherry Blossoms Bloom*, and 木之 authorized reuse of the Kiminozo LE translation and proofread the new/adjusted text; 压抑同盟 handled revision, porting, localized images and coordination; Muv-Luv Verse Team, Lemonov and TotSamiyMisha created the optional community EER Patch. See the [contributor list](../project/CONTRIBUTORS.md) for scope and sources.
 
 Original code is under the [MIT License](../../LICENSE). MIT does not
 automatically license game content, translation text, fonts, derivative images,

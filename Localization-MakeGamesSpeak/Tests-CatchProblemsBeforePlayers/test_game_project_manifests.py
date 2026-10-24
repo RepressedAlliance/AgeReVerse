@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import tomllib
 import unittest
 from pathlib import Path
@@ -40,9 +41,20 @@ class GameProjectManifestTests(unittest.TestCase):
                 self.assertEqual(manifest["target_locales"], ["zh-Hans"])
                 relative_paths = list(manifest["translation_authorities"])
                 if game_id == "kiminozo":
-                    self.assertEqual(manifest["development_status"], "in-development")
+                    self.assertEqual(manifest["development_status"], "published")
                     self.assertEqual(manifest["translation_authorities"], [])
-                    self.assertNotIn("player_release_tag", manifest)
+                    release_index = json.loads(
+                        (ROOT / "docs/player/release-index.json").read_text(encoding="utf-8")
+                    )
+                    current = [
+                        item for item in release_index["age2_player_packages"]
+                        if item["game_id"] == game_id
+                    ]
+                    self.assertEqual(len(current), 1)
+                    self.assertEqual(manifest["player_release_tag"], current[0]["release_tag"])
+                    self.assertEqual(manifest["release_version"], current[0]["version"])
+                    self.assertFalse(current[0]["prerelease"])
+                    self.assertTrue(current[0]["player_installable"])
                     self.assertNotIn("image_authority", manifest)
                     self.assertEqual(manifest["steam_app_id"], 1777440)
                     self.assertEqual(manifest["components"]["main"]["resource_root"], "kiminozs")

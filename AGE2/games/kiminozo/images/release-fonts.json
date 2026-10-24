@@ -1,0 +1,223 @@
+{
+  "schema": "kiminozo-release-fonts/v1",
+  "release_tag": "kiminozo-1.0.0",
+  "scope": "EE, optional community EER 1.0 and AEC+; identical role configuration, per-component font bytes recorded separately",
+  "config_sha256": "4aa21a658ed865cd4c880ca822f4c4133bbff3836e1c54a77867cfedeafafd61",
+  "roles": [
+    {
+      "role": "Common",
+      "file": "AGE2UISansSC-Dash.otf"
+    },
+    {
+      "role": "Message",
+      "file": "AGE2MessageSC-Bold.ttf"
+    },
+    {
+      "role": "Speaker",
+      "file": "AGE2SpeakerSC-Regular.ttf"
+    },
+    {
+      "role": "Hud",
+      "file": "SourceHanSansCN-Medium.otf"
+    },
+    {
+      "role": "StaffCN",
+      "file": "SourceHanSerifCN-Regular.otf"
+    },
+    {
+      "role": "sub",
+      "file": "SourceHanSansCN-Medium.otf"
+    }
+  ],
+  "component_fonts": {
+    "variants/ee": [
+      {
+        "file": "AGE2MessageSC-Bold.ttf",
+        "bytes": 12183716,
+        "sha256": "c28cf8c74008f01dcb418d8e3593e794e8b50ae05b157ba8b745af7aaf0e7ace",
+        "family": "AGE2 Message SC",
+        "version": "Version 2.129 "
+      },
+      {
+        "file": "AGE2SpeakerSC-Regular.ttf",
+        "bytes": 25220060,
+        "sha256": "034b317218cd731c6befce5471dbdb3ae075e34effedbf70b05c6c2fb9fb6560",
+        "family": "AGE2 Speaker SC",
+        "version": "Version 1.101"
+      },
+      {
+        "file": "AGE2UISansSC-Dash.otf",
+        "bytes": 6975252,
+        "sha256": "50c9ae65fa238862e1374d399655e2168f4d1e8964fb40ef7174b533c0fcc098",
+        "family": "AGE2 UI Sans SC Dash",
+        "version": "Version 1.000"
+      },
+      {
+        "file": "GenWaKochaTC-Regular.ttf",
+        "bytes": 25274876,
+        "sha256": "ffc2da1a3109166ce51c942a566d77816cc1cbdaff0bcf2694616ed1372219f9",
+        "family": "GenWa Kocha TC Regular",
+        "version": "Version 1.101"
+      },
+      {
+        "file": "IBMPlexSansSC-Regular.otf",
+        "bytes": 6975144,
+        "sha256": "fc42109cec4e0af7efd4d4d7f6de138d00e87b8b48987432808e43af33580530",
+        "family": "IBM Plex Sans SC",
+        "version": "Version 1.000"
+      },
+      {
+        "file": "SourceHanSansCN-Medium.otf",
+        "bytes": 8406556,
+        "sha256": "a94e558a2fe972bee4f46bce0843abff37063fd68c33f1e7d9058f6f09432b01",
+        "family": "Source Han Sans CN Medium",
+        "version": "Version 2.005;addfeatures 5.0.0b21"
+      },
+      {
+        "file": "SourceHanSerifCN-Regular.otf",
+        "bytes": 11626108,
+        "sha256": "3754ea669c530e2473354f8f6d9f79680a44d7e26ec7d00eeabee4a7e0753c5d",
+        "family": "Source Han Serif CN",
+        "version": "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0"
+      },
+      {
+        "file": "SweiCurveSansCJKsc-Bold.ttf",
+        "bytes": 12237824,
+        "sha256": "fec1707ec0f7d6c36f738ca99b53aa5ff62e6da671aa30cc3fabede3e7ba7d52",
+        "family": "Swei Curve Sans CJK SC",
+        "version": "Version 2.129 "
+      }
+    ],
+    "variants/eer": [
+      {
+        "file": "AGE2MessageSC-Bold.ttf",
+        "bytes": 12183716,
+        "sha256": "c28cf8c74008f01dcb418d8e3593e794e8b50ae05b157ba8b745af7aaf0e7ace",
+        "family": "AGE2 Message SC",
+        "version": "Version 2.129 "
+      },
+      {
+        "file": "AGE2SpeakerSC-Regular.ttf",
+        "bytes": 25221616,
+        "sha256": "b1a2f9c2081680ef898e289685f5637ed74731f0d508e87e18f5799865b80f41",
+        "family": "AGE2 Speaker SC",
+        "version": "Version 1.101"
+      },
+      {
+        "file": "AGE2UISansSC-Dash.otf",
+        "bytes": 6975252,
+        "sha256": "50c9ae65fa238862e1374d399655e2168f4d1e8964fb40ef7174b533c0fcc098",
+        "family": "AGE2 UI Sans SC Dash",
+        "version": "Version 1.000"
+      },
+      {
+        "file": "GenWaKochaTC-Regular.ttf",
+        "bytes": 25274876,
+        "sha256": "ffc2da1a3109166ce51c942a566d77816cc1cbdaff0bcf2694616ed1372219f9",
+        "family": "GenWa Kocha TC Regular",
+        "version": "Version 1.101"
+      },
+      {
+        "file": "IBMPlexSansSC-Regular.otf",
+        "bytes": 6975144,
+        "sha256": "fc42109cec4e0af7efd4d4d7f6de138d00e87b8b48987432808e43af33580530",
+        "family": "IBM Plex Sans SC",
+        "version": "Version 1.000"
+      },
+      {
+        "file": "SourceHanSansCN-Medium.otf",
+        "bytes": 8406556,
+        "sha256": "a94e558a2fe972bee4f46bce0843abff37063fd68c33f1e7d9058f6f09432b01",
+        "family": "Source Han Sans CN Medium",
+        "version": "Version 2.005;addfeatures 5.0.0b21"
+      },
+      {
+        "file": "SourceHanSerifCN-Regular.otf",
+        "bytes": 11626108,
+        "sha256": "3754ea669c530e2473354f8f6d9f79680a44d7e26ec7d00eeabee4a7e0753c5d",
+        "family": "Source Han Serif CN",
+        "version": "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0"
+      },
+      {
+        "file": "SweiCurveSansCJKsc-Bold.ttf",
+        "bytes": 12237824,
+        "sha256": "fec1707ec0f7d6c36f738ca99b53aa5ff62e6da671aa30cc3fabede3e7ba7d52",
+        "family": "Swei Curve Sans CJK SC",
+        "version": "Version 2.129 "
+      }
+    ],
+    "kiminoaz": [
+      {
+        "file": "AGE2MessageSC-Bold.ttf",
+        "bytes": 12183716,
+        "sha256": "c28cf8c74008f01dcb418d8e3593e794e8b50ae05b157ba8b745af7aaf0e7ace",
+        "family": "AGE2 Message SC",
+        "version": "Version 2.129 "
+      },
+      {
+        "file": "AGE2SpeakerSC-Regular.ttf",
+        "bytes": 25220060,
+        "sha256": "034b317218cd731c6befce5471dbdb3ae075e34effedbf70b05c6c2fb9fb6560",
+        "family": "AGE2 Speaker SC",
+        "version": "Version 1.101"
+      },
+      {
+        "file": "AGE2UISansSC-Dash.otf",
+        "bytes": 6975252,
+        "sha256": "50c9ae65fa238862e1374d399655e2168f4d1e8964fb40ef7174b533c0fcc098",
+        "family": "AGE2 UI Sans SC Dash",
+        "version": "Version 1.000"
+      },
+      {
+        "file": "GenWaKochaTC-Regular.ttf",
+        "bytes": 25274876,
+        "sha256": "ffc2da1a3109166ce51c942a566d77816cc1cbdaff0bcf2694616ed1372219f9",
+        "family": "GenWa Kocha TC Regular",
+        "version": "Version 1.101"
+      },
+      {
+        "file": "IBMPlexSansSC-Regular.otf",
+        "bytes": 6975144,
+        "sha256": "fc42109cec4e0af7efd4d4d7f6de138d00e87b8b48987432808e43af33580530",
+        "family": "IBM Plex Sans SC",
+        "version": "Version 1.000"
+      },
+      {
+        "file": "SourceHanSansCN-Medium.otf",
+        "bytes": 8406556,
+        "sha256": "a94e558a2fe972bee4f46bce0843abff37063fd68c33f1e7d9058f6f09432b01",
+        "family": "Source Han Sans CN Medium",
+        "version": "Version 2.005;addfeatures 5.0.0b21"
+      },
+      {
+        "file": "SourceHanSerifCN-Regular.otf",
+        "bytes": 11626108,
+        "sha256": "3754ea669c530e2473354f8f6d9f79680a44d7e26ec7d00eeabee4a7e0753c5d",
+        "family": "Source Han Serif CN",
+        "version": "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0"
+      },
+      {
+        "file": "SweiCurveSansCJKsc-Bold.ttf",
+        "bytes": 12237824,
+        "sha256": "fec1707ec0f7d6c36f738ca99b53aa5ff62e6da671aa30cc3fabede3e7ba7d52",
+        "family": "Swei Curve Sans CJK SC",
+        "version": "Version 2.129 "
+      }
+    ]
+  },
+  "license_notices": [
+    "common-LICENSE.txt",
+    "hud-LICENSE.txt",
+    "message-LICENSE.txt",
+    "message-sc-LICENSE.txt",
+    "speaker-base-LICENSE.txt",
+    "speaker-LICENSE.txt",
+    "speaker-sc-source-LICENSE.txt",
+    "staff-LICENSE.txt"
+  ],
+  "derivative_notes": {
+    "AGE2MessageSC-Bold.ttf": "Swei Curve Sans CJK SC Bold; adds U+00B7 mapped to the centered-dot outline with native CJK advance.",
+    "AGE2SpeakerSC-Regular.ttf": "GenWa Kocha TC Regular with SC Han outlines from Swei Spring Sugar SC SemiBold; licenses retained. EER uses a distinct binary; do not interchange by filename.",
+    "AGE2UISansSC-Dash.otf": "Renamed IBM Plex Sans SC derivative; U+2015 stroke thickened from 50 to 70 font units."
+  }
+}

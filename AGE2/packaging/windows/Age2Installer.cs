@@ -14,7 +14,7 @@ using System.Web.Script.Serialization;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
-// One executable per game; the release builder embeds that game's ZIP only.
+// The embedded manifest selects a single game or the KimiNozo two-part bundle.
 class Age2Installer : Form {
     [DllImport("kernel32.dll", CharSet=CharSet.Unicode, SetLastError=true)]
     static extern uint GetFinalPathNameByHandle(Microsoft.Win32.SafeHandles.SafeFileHandle handle, StringBuilder path, uint count, uint flags);
@@ -25,6 +25,15 @@ class Age2Installer : Form {
     readonly ProgressBar progress = new ProgressBar();
     bool busy;
     static string Engine(string package, string action, string root, Action<string> report) {
+        var doc=new JavaScriptSerializer().Deserialize<Dictionary<string,object>>(File.ReadAllText(Path.Combine(package,"manifest.json"),Encoding.UTF8));
+        if((string)doc["format"]=="age2-cn-variants-1") {
+            if(action=="VerifyPackage"){Age2KimiUnifiedInstallEngine.Verify(package);return "verified";}
+            return Age2KimiUnifiedInstallEngine.Install(package,root,Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),report);
+        }
+        if((string)doc["format"]=="age2-cn-bundle-1") {
+            if(action=="VerifyPackage"){Age2BundleInstallEngine.Verify(package);return "verified";}
+            return Age2BundleInstallEngine.Install(package,root,Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),report);
+        }
         if(action == "VerifyPackage") { Age2InstallEngine.Verify(package); return "verified"; }
         return Age2InstallEngine.Install(package, root, Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), report);
     }
@@ -32,8 +41,11 @@ class Age2Installer : Form {
         package=content;
         var doc=new JavaScriptSerializer().Deserialize<Dictionary<string,object>>(File.ReadAllText(Path.Combine(package,"manifest.json"),Encoding.UTF8));
         title=(string)doc["title"];directory=(string)doc["game"];exe=(string)doc["exe"];
+        if(directory=="kiminozo")exe=Path.Combine("kiminozs",exe);
         string version=(string)doc["version"];
-        if(!version.StartsWith("BETA ",StringComparison.Ordinal))version+=" 验收版";
+        string channel=doc.ContainsKey("release_channel") ? (string)doc["release_channel"] : "";
+        if(!version.StartsWith("BETA",StringComparison.Ordinal) && channel!="stable")version+=" 验收版";
+        if(channel=="stable" && doc.ContainsKey("release_name"))version+="「"+(string)doc["release_name"]+"」";
         Text=title+" 汉化补丁 · "+version;ClientSize=new Size(590,275);FormBorderStyle=FormBorderStyle.FixedDialog;MaximizeBox=false;StartPosition=FormStartPosition.CenterScreen;
         Font=new Font("Microsoft YaHei UI",10);BackColor=Color.FromArgb(248,249,251);
         var heading=new Label{Text=title+"\n汉化补丁 "+version,Location=new Point(25,20),Size=new Size(535,58),Font=new Font(Font.FontFamily,15,FontStyle.Bold)};Controls.Add(heading);
@@ -55,7 +67,16 @@ class Age2Installer : Form {
         roots.Add(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86),"Steam"));
         var libraries=new HashSet<string>(roots,StringComparer.OrdinalIgnoreCase);
         foreach(var root in roots) {var vdf=Path.Combine(root,"steamapps","libraryfolders.vdf");if(File.Exists(vdf))foreach(Match m in Regex.Matches(File.ReadAllText(vdf),"\"path\"\\s+\"([^\"]+)\""))libraries.Add(m.Groups[1].Value.Replace("\\\\","\\"));}
-        foreach(var library in libraries) { var common=Path.Combine(library,"steamapps","common");if(!Directory.Exists(common))continue;foreach(var game in Directory.EnumerateDirectories(common))if(File.Exists(Path.Combine(game,exe)))return PhysicalGameDirectory(game); }
+        foreach(var library in libraries) {
+            var common=Path.Combine(library,"steamapps","common");if(!Directory.Exists(common))continue;
+            foreach(var game in Directory.EnumerateDirectories(common)) {
+                if(File.Exists(Path.Combine(game,exe)))return PhysicalGameDirectory(game);
+                if(directory=="kiminozs" || directory=="kiminoaz") {
+                    var component=Path.Combine(game,directory);
+                    if(File.Exists(Path.Combine(component,exe)))return PhysicalGameDirectory(component);
+                }
+            }
+        }
         return "";
     }
     string PhysicalGameDirectory(string game) {
@@ -68,16 +89,17 @@ class Age2Installer : Form {
             string resolved=path.ToString();
             if(resolved.StartsWith(@"\\?\UNC\",StringComparison.OrdinalIgnoreCase))resolved=@"\\"+resolved.Substring(8);
             else if(resolved.StartsWith(@"\\?\",StringComparison.Ordinal))resolved=resolved.Substring(4);
-            return Path.GetDirectoryName(resolved);
+            return directory=="kiminozo" ? Path.GetDirectoryName(Path.GetDirectoryName(resolved)) : Path.GetDirectoryName(resolved);
         }
     }
     async Task Run(string action) {
+        if(directory=="kiminozo" && !String.IsNullOrWhiteSpace(path.Text))path.Text=Age2BundleInstallEngine.NormalizeRoot(path.Text);
         if(!File.Exists(Path.Combine(path.Text,exe))){MessageBox.Show(this,"请选择 "+title+" 的游戏目录。","未找到游戏");return;}
         busy=true;install.Enabled=browse.Enabled=path.Enabled=false;progress.Visible=true;status.Text="正在安装，请稍候…";
         var root=path.Text;
         try {
-            await Task.Run(()=>Engine(package,action,root,line=> { if(!IsDisposed && line.Length>0 && !line.TrimStart().StartsWith("\"") && !line.StartsWith("{") && !line.StartsWith("}"))BeginInvoke((Action)(()=>{status.Text=line.Length>65?line.Substring(0,65)+"…":line;})); }));
-            status.Text="安装完成。请在游戏设置中选择中文。";
+            string result=await Task.Run(()=>Engine(package,action,root,line=> { if(!IsDisposed && line.Length>0 && !line.TrimStart().StartsWith("\"") && !line.StartsWith("{") && !line.StartsWith("}"))BeginInvoke((Action)(()=>{status.Text=line.Length>65?line.Substring(0,65)+"…":line;})); }));
+            status.Text=directory=="kiminozo" ? result : "安装完成。请在游戏设置中选择中文。";
             MessageBox.Show(this,status.Text,"完成",MessageBoxButtons.OK,MessageBoxIcon.Information);
         } catch(Exception e) {
             status.Text="未完成：请按提示处理后重试。";
@@ -137,7 +159,7 @@ class Age2Installer : Form {
                 return 0;
             }
             if(args.Length==2 && args[0]=="--inspect") {
-                Age2InstallEngine.Verify(content);
+                Engine(content,"VerifyPackage",null,null);
                 using(var form=new Age2Installer(content)) {
                     File.WriteAllText(args[1],new JavaScriptSerializer().Serialize(new {title=form.Text,detectedRoot=form.path.Text,controls=form.Controls.Count,package=content}),Encoding.UTF8);
                 }

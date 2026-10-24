@@ -25,3 +25,27 @@ python AGE2/tools/runtime/build_installers.py --staging <五部候选包目录> 
 私有合法资源工作区的整理入口已公开为 `AGE2/tools/runtime/stage_packages.py --workspace <研究资源根目录> --versions AGE2/packaging/releases/2026-09-20.json`。它读取每部现有运行配置、候选资源和合法提取的原程序，在新的 staging 目录创建清单、程序差分及资源副本；公开仓库不包含原游戏资源或研究工作区。
 
 开场单页源模板见 `AGE2/tools/images/boot_notice_template.py`。用 Noto Sans SC 在 Chrome 的 1920×1080 视口渲染后，`package_boot_notice.py` 保持横屏文字像素不变，居中放入原生 1920×1440 画布；竖屏资源保持完整页面和原生画布尺寸。
+
+## 君望 EE／社区 EER／AEC+ 统一安装器
+
+`build_kiminozo_unified_installer.py` 接受已经冻结并核对的完整私有资源目录，顶层为 `age2-cn-variants-1` 清单，包含 `variants/ee`、`variants/eer`、`kiminoaz` 三部分。各部分使用独立的 `zh_hans` 中文资源，版本须一致。这个目录及游戏资源不随维护源码提交。
+
+```powershell
+python AGE2/tools/runtime/build_kiminozo_unified_installer.py --staging <完整候选资源目录> --output <新的输出目录>
+```
+
+正式版使用稳定版本号及可选的中文名称，不以人工校对完成与否推断程序测试状态：
+
+```powershell
+python AGE2/tools/runtime/build_kiminozo_unified_installer.py --staging <完整候选资源目录> --output <新的输出目录> --version 1.0.0 --release-name 再会
+```
+
+此模式仅统一包清单的版本与发布渠道，保持经核验的文本、图片、字体和运行负载不变。安装界面显示 `1.0.0「再会」`；稳定渠道不附加“验收版”。未指定稳定版本时，继续保留 staging 中的版本和原有渠道行为。
+
+构建器逐项核对大小及 SHA-256，内嵌完整负载，记录四份编译输入的摘要。仅有改图覆盖层的目录不能作为完整输入。
+
+玩家选择 Steam 游戏根目录或本篇／追加篇目录。统一安装器检查本篇的三份指定 EER BIN：全无时选 EE；三份均符合清单时选受支持的社区 EER 1.0；部分存在或内容不符时停止，避免把不完整 EER 当成 EE。此识别不代表支持其他社区补丁或商业日文 EER。
+
+AEC+ 未安装时仅处理本篇；已存在时先核对本篇和追加篇，全部通过才开始写入。合并安装中断时，按各组件记录恢复已经完成的组件，保留事务记录。程序使用实际包内清单校验，不运行游戏，不替玩家进行版本转换。
+
+合成目录测试入口为 `python AGE2/tests/packaging/run_kiminozo_installer_tests.py`。这些测试与通用引擎测试不触及真实 Steam、AppData 或存档，保留新建测试目录；不能代替用户对安装器界面和游戏显示的实际验证。

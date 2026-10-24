@@ -422,9 +422,45 @@
         "Manual copy does not enforce the target executable version",
         "No new live-game test for this packaging update; translation content unchanged from BETA 0.2.0"
       ]
+    },
+    {
+      "game_id": "kiminozo",
+      "version": "1.0.0",
+      "release_name": "再会",
+      "release_tag": "kiminozo-1.0.0",
+      "asset_name": "KimiNozo-CN-1.0.0.zip",
+      "asset_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip",
+      "asset_bytes": 951586614,
+      "asset_sha256": "9ddba1c665fe2c099fb445064f6c17e67c6ab2a400a371c6cb46227a22c6680b",
+      "source_commit": "01de2c2256ac2eb658497c28c56339787ad16505",
+      "installer_target": "Steam game directory + %LOCALAPPDATA%\\ancr\\kiminozs\\data\\root and kiminoaz\\data\\root",
+      "overlay_root": "%LOCALAPPDATA%\\ancr\\kiminozs\\data\\root; %LOCALAPPDATA%\\ancr\\kiminoaz\\data\\root",
+      "status": "stable",
+      "prerelease": false,
+      "player_installable": true,
+      "checksum_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/kiminozo-SHA256SUMS.txt",
+      "manifest_url": "https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/kiminozo-release-manifest.json",
+      "steam_input": {
+        "appid": "1777440",
+        "dlc_appid": "3112140",
+        "buildid": "18634794",
+        "main_exe_sha256": "7b09ff380da94331c96ad113c390d34816fd3cb8bb84263132befcc8d381c3c8",
+        "aec_exe_sha256": "bd6ccf77dfd72330d1fd66cf9289040bc953b9fe62f034fd5ed04d52e378a248"
+      },
+      "optional_eer": {
+        "version": "1.0",
+        "upstream_homepage": "https://kiminozo.life/",
+        "upstream_steam_zip": "https://files.kiminozo.life/Patches/Kiminozo_EER_Patch_EN_Steam_1.0.zip",
+        "required": false
+      },
+      "known_limitations": [
+        "Windows x64 Steam build 18634794 and matching AEC+ only",
+        "Optional community EER 1.0 requires three exact upstream BIN hashes; other versions rejected",
+        "No full-route runtime playthrough; Steam Deck/Proton unverified"
+      ]
     }
   ],
-  "age2_updated_date": "2026-09-21",
+  "age2_updated_date": "2026-10-24",
   "photon_updated_date": "2026-09-26",
   "section_usage": {
     "age2_player_packages": "Current AGE2 packages; see age2_updated_date and the player guide.",
