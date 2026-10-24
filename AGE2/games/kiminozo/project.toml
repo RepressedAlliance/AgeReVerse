@@ -4,14 +4,17 @@ display_name = "君望 / Kimi ga Nozomu Eien ~Enhanced Edition~"
 engine = "AGE2"
 steam_app_id = 1777440
 target_locales = ["zh-Hans"]
-development_status = "in-development"
+development_status = "released"
+release_version = "1.0.0"
+release_name = "再会"
+release_tag = "kiminozo-1.0.0"
 translation_authorities = []
 font_policy = "../../../Localization-MakeGamesSpeak/Fonts-ThatFitTheGame/README.md"
 terminology_authority = "../../../Localization-MakeGamesSpeak/Glossaries-KeepItConsistent/kiminozo.ja-zh-Hans.csv"
 terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
 terminology_evidence = "terminology/history/evidence-20261009.csv"
 
-# A release tag will be added when the patch is ready.
+# Complete dialogue authorities remain private by agreement with the translator.
 # Documentation directories are not translation or image authority files.
 [components.main]
 resource_root = "kiminozs"

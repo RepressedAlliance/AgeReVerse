@@ -4,16 +4,17 @@
 
 TDA00–03, The Imperial Capital Burns, photonflowers* and photonmelodies♮ have
 published Chinese player packages. Current versions and installation instructions
-are maintained in the player guide. Kiminozo ~Enhanced Edition~ and Another
-Episode Collection+ are in development, with no player package released.
+are maintained in the player guide. Kiminozo EE, optional community EER 1.0
+compatibility and AEC+ are available in unified 1.0.0「再会」.
 
 ## Kiminozo
 
-Complete the maintainer's final text review, consultation with the legacy
-translator, UI/image work, resource integration, packaging and in-game validation.
-The [project entry](../../AGE2/games/kiminozo/README.md) distinguishes these tasks
-and the material that may be published. Full legacy translations and private
-correspondence remain outside the public repository.
+Text proofreading, localized UI/images and unified packaging are complete for
+1.0.0. Continue runtime checks across routes, resolutions, old saves and language
+changes, and address player feedback with exact scene/resource identities.
+The [project entry](../../AGE2/games/kiminozo/README.md) records support and
+publication scope. Full dialogue tables, private correspondence and internal
+review attachments remain outside the public repository.
 
 ## Make the existing tools easier to reuse
 

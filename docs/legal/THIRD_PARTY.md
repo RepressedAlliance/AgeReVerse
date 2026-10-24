@@ -32,6 +32,12 @@ alterdec 与 RioX 也在[历史研究参考](../research/references.md)中留有
 TDA 汉化，并要求在发布时致谢其提供汉化思路。该公开补丁页面同时禁止拆解、二次修改和
 移植，因此本仓库不复制其补丁文件、译文、字体、图片或代码。
 
+## 君望原译与可选社区 EER
+
+木之允许在非商业、非官方的 Steam EE 及相关版本中文补丁中复用 LE 原译，并参与译文校对。完整旧译及调整后全文不作为公开 Git 数据表发布；必要校对样例、术语和技术工具与全文公开分开处理。私人邮件、聊天和内部审校附件不发布。
+
+[Muv-Luv Verse](https://kiminozo.life/) 的社区 EER Patch 补全 EE 删减内容；制作署名 **Muv-Luv Verse Team · Lemonov · TotSamiyMisha**。本项目已获得其中文适配许可。EER 可选，上游包由玩家从原站获取，不在本仓库镜像。两项许可均不表示取得原作 IP 官方授权。原作版权归原权利人。
+
 ## 仓库与工作流参考
 
 [thcrap](https://github.com/thpatch/thcrap)、

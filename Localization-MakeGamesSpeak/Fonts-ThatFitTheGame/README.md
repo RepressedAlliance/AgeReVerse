@@ -26,6 +26,7 @@ This guide separates runtime text fonts from lettering baked into images. The re
 | 帝都燃烧 | BETA 0.2.1 | 同上 |
 | PF | BETA 0.1.2 | PF 专用 `PhotonR2-Regular.ttf` |
 | PM | BETA 0.1.2 | PM 专用 `PhotonR2-Regular.ttf` |
+| 君望 EE／可选 EER／AEC+ | 1.0.0「再会」 | [君望独立中文配置与精确字体清单](../../AGE2/games/kiminozo/images/release-fonts.json) |
 
 AGE2 中文实际配置是：系统 **AGE2 UI Sans SC Dash**、正文 **白无常可可体粗**、姓名 **美呗嘿嘿体**、HUD **Noto Sans SC 500**、语言选择 **IBM Plex Sans SC Regular**、备用 **AGE2 Fallback SC Dash**。具体配置、随包附带但未被当前中文配置选用的文件，见[运行时对应表](runtime.md)。
 

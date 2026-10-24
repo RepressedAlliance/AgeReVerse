@@ -15,10 +15,19 @@ This page distinguishes current player packages, repository work and historical 
 | **帝都燃烧篇**<br><sub>[The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse](https://store.steampowered.com/app/2630300/)</sub> | **BETA 0.2.1** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
 | **光子之花（PF）**<br><sub>[Muv-Luv photonflowers\*](https://store.steampowered.com/app/889700/)</sub> | **BETA 0.1.2** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
 | **光子旋律（PM）**<br><sub>[Muv-Luv photonmelodies♮](https://store.steampowered.com/app/889710/)</sub> | **BETA 0.1.2** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
+| **君望／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [发布说明 / Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
 
-君望 Steam 本篇及附加篇仍在制作，尚未发布补丁。公开仓库中的新文本、图片、视频或运行时改动，不会自动更新玩家已经下载的版本。
+君望 1.0.0「再会」覆盖 EE、可选社区 EER 1.0 及 AEC+。公开仓库中的新文本、图片、视频或运行时改动，不会自动更新玩家已经下载的版本。
 
-Kiminozo and its additional episodes remain in development. New text, images, videos or runtime work in Git is not automatically part of an existing download.
+Kiminozo EE, optional community EER 1.0 and AEC+ are available in 1.0.0. New text, images, videos or runtime work in Git is not automatically part of an existing download.
+
+## 2026-10-24 · 君望 1.0.0「再会」
+
+发布 EE、可选社区 EER 1.0 与 AEC+ 统一中文安装器，完成文本人工校对、UI 与图片汉化，以及中文菜单共同字号、基线与左缘修正。普通 EE 无需安装 EER；完整 EER 1.0 由三个依赖文件摘要自动识别，未知／残缺版本在写入前拒绝。
+
+复用木之 LE 原译并由木之人工校对；无对应旧译的新增／调整文本采用 GPT-6 Sol × GPT-6 Astra 工作流，压抑同盟与木之讨论处理疑点后，由木之全文校对这批文本。三版合计 4,886 处新增／调整，另有 874 条误译／表达修正、128 条错字修正；类别可交叠。完整正文与私人审校资料继续不公开。
+
+安装包附输入／输出摘要、字体及运行组件许可证、恢复说明和实际验证范围。正式版命名不代表已人工走遍所有路线；具体限制见 Release。
 
 ## 公开仓库中的制作与研究成果 / Repository work
 

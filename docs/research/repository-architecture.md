@@ -5,7 +5,7 @@
 
 公开仓库是一棵可维护、可复核的源码树，不是开发工作站的镜像。
 
-君望 Steam 本篇及附加篇的项目位置为 [`AGE2/games/kiminozo/`](../../AGE2/games/kiminozo/README.md)，分别组织文本、术语与基线、UI 图片和字体。当前为制作中项目，尚无公开正文表或安装包。
+君望 Steam 本篇及附加篇的项目位置为 [`AGE2/games/kiminozo/`](../../AGE2/games/kiminozo/README.md)，分别组织文本、术语与基线、UI 图片和字体。已发布 1.0.0「再会」统一安装包；完整正文表因许可约定不公开。
 
 ## 五层结构
 
@@ -13,7 +13,7 @@
 README.md                 中文玩家首页，研究者内容在独立部分
 docs/                     玩家、研究、项目维护、法律与英文入口
 Localization-MakeGamesSpeak/  跨引擎的本地化方法、工具和测试
-AGE2/                     TDA / 帝都技术与游戏资产；君望在制项目
+AGE2/                     TDA / 帝都技术与游戏资产；君望项目
 rUGP/                     Photon 的完整独立技术与游戏资产树
 ```
 
