@@ -14,16 +14,37 @@ The private asset map is a JSON object mapping each uppercase SHA-256 to a local
 filename (absolute, or relative to that map). Generate it with the
 [provenance exporter](../provenance/export_static_review.py). Do not commit it.
 
-Missing, changed or wrongly sized inputs and falsely declared shared language
+The `official.jp`/`official.en` labels identify edition use, not visible language.
+Verify them against language slots, indices/script selection and shared/fallback
+routes before export; the renderer authenticates files, dimensions and pixels,
+not language-route provenance. Provide lettering, partial translation/romanization,
+reuse and Chinese-scope explanations in existing notes or attachments.
+For verified English reuse, `official.en` may reference the actual reused Japanese/
+shared image identity; no separate file or invented object is needed. Retain the
+route explanation, and never fill a missing English role by copying Japanese
+merely because the mapping is unknown.
+The legacy `shared_native` flag validates equal decoded pixels only. Both edition
+roles remain visible with an equality label; this does not prove shared resource
+identity. Missing or unclassified counterparts remain explicitly unresolved.
+
+Missing, changed or wrongly sized inputs and falsely declared equal-pixel
 images fail validation before rendering. Existing output directories are rejected.
 If generation fails, its partial output directory is not a finished review: use
 a new directory on retry and require `verification.json`. Cards retain equal scale
-across each row's language panels but are thumbnails, not native-resolution QA.
+across each row's edition panels but are thumbnails, not native-resolution QA.
 An additional unclassified official image is shown in a fourth panel when a
 confirmed Japanese reference already occupies the first one. Declared counts
 must match the complete row set; an omitted row cannot silently retain stale totals.
 The atlas streams horizontal strips; `--columns` accepts 1–10. Derived PNGs and
 HTML are local-only artifacts. The HTML uses no external service or library.
+
+版本归属先按语言槽、索引／脚本选择和共用／回退关系核实，不根据图内文字填写
+`official.jp`／`official.en`。此工具核对文件、尺寸和像素，不自动验证语言路由。
+`shared_native` 沿用旧字段名，仅验证解码像素相同；页面保留日英两个版本用途，
+不将同像素升级为共用同一资源。图内语言、局部英译／罗马字、沿用关系与中文处理范围
+可用现有备注或附件补充，未核实对应不能写成不存在。
+已核实英文路由沿用日版／共用图时，`official.en` 可引用实际沿用的图片身份，不必另造
+文件或对象；说明对应路由依据。关系未确认时不能自动复制日文身份来补英文栏。
 
 The 光子旋律 regression requires Windows and Zig 0.16.0. It exercises real production
 admission and sidecar surface transactions; it does not execute the proprietary

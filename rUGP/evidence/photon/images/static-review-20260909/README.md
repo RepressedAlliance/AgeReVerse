@@ -18,14 +18,15 @@
 
 ## 如何读取条目
 
-- `official.jp`／`official.en` 表示已确认的官方语言对应；`shared_native` 表示已确认共用画面；`unknown` 保留语言未确认的来源。缺少配对项不证明另一语言不存在。
+- `official.jp`／`official.en` 表示官方日文版／英文版用图的对应角色，归属按语言槽、索引与引用关系核实，不表示图中文字都是日文或英文；`unknown` 保留版本归属待核的来源。缺少配对项不证明另一版本没有对应图。
+- `shared_native` 沿用既有字段名，生成工具据此核对解码像素相同；这不证明两版共用同一资源。不同资源的身份与调用仍分别保留，已核实的共用／沿用关系、图内语言和局部本地化处理在现有说明中写清。生成工具不自动验证语言槽映射。
 - `refs` 记录分卷与资源位置，`source_resource_catalog_sha256` 绑定资源目录；图片 `sha256`／`size` 绑定对应成图，不能直接替代运行时 payload FNV。
 - 制作登记、候选图、安装采用和实际显示分别记录。历史选集中的 `candidate` 不自动表示当前仍未发布，最终采用以相应包清单为准。
 - 角色卡有 18 人的无圈／白圈／黄圈，以及彩峰、柏木、纯夏、霞四个暗态，共 58 态。见[状态矩阵](oval-state-matrix.json)，不为其他角色臆造暗态；解锁条件另查。
 
 ## 从本地输入生成审阅页
 
-先用 [export_static_review.py](../../../../tools/provenance/export_static_review.py) 投影资源身份，再用 [build_static_review.py](../../../../tools/images/build_static_review.py) 和显式资产映射生成分类页与长 PNG。摘要、尺寸或共用像素不符会拒绝生成；缩略概览仍需配合原尺寸画面。
+先用 [export_static_review.py](../../../../tools/provenance/export_static_review.py) 投影资源身份，再用 [build_static_review.py](../../../../tools/images/build_static_review.py) 和显式资产映射生成分类页与长 PNG。摘要、尺寸或声明的同像素关系不符会拒绝生成；缩略概览仍需配合原尺寸画面。
 
 ## 供工具使用的数据
 
@@ -40,4 +41,4 @@
 
 ## English
 
-This dated catalog separates image origin, authoring state, runtime identity and package adoption. Language slots describe official ownership, not the language visible in the pixels. Use the tools with locally supplied assets; build manifests and regression data describe their fixed snapshot, not a live installation.
+This dated catalog separates image origin, authoring state, runtime identity and package adoption. `official.jp`/`official.en` identify edition use established through language slots, indices and references, not visible lettering; `unknown` preserves unresolved edition provenance. The legacy `shared_native` flag checks decoded pixel equality, not shared resource identity. Keep separate resource identities and document verified reuse, visible language and partial localization through existing notes. The renderer does not verify language-route provenance, and a missing peer is not proof of absence. Use the tools with locally supplied assets; build manifests and regression data describe their fixed snapshot, not a live installation.

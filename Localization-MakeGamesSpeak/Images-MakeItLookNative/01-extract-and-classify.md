@@ -24,7 +24,17 @@
 
 复用现有清单或备注，分别关联原意依据、中文呈现、制作底稿、当前成品和预期交付对象。原作含义以日文文本、日语语音、画面和语境确认；图片通常以日文版适用原图制作，英文设计供参考；确需复用英文版具体画布或模板时，说明用途与理由，不凭 `_ja`／`_en` 后缀推定素材角色。先确定中文用途并规划实现，不要求任务已经在中文版生效。rUGP 的现有 `translation` 槽可以是实际目标；真正新增信息按[总则](../principles.md#官方版本差异怎么处理)确认来源、用途和范围，不统一强制听译。用途或对应关系不明则说明待确认事项，最后交付阶段验证实际绑定。
 
-有日英版本时，清单保留**官方日文、官方英文、中文候选**的对应与共用关系。英文图即使不制作，也能帮助发现不同设计、字幕和调用；不要删掉这种对照，也不要把每张对照图自动计成制作任务。例如 [Photon HUD 的英文](../../rUGP/docs/postmortems/pending-hook-entry-points-20260909.md)在日文图片模式也能出现，不能直接归成英文版遗漏；[AGE2 菜单](../../AGE2/docs/postmortems/image-layout.md)则可以保留原英文主体、只替换日文副标题。具体应译区域仍须逐图判断。
+有日英版本时，清单保留**官方日文版用图、官方英文版用图、中文候选**的对应关系。按[版本归属规则](../principles.md#图片属于哪个版本)，先查日文版原包与已有提取记录，再按该游戏已核实的语言槽、索引／脚本选择和资源映射确认各版用图，并追到共用或回退资源。记录对应版本、资源身份与采用依据即可；槽位来源不能由图内语言、OCR 或未经核实的文件名决定。未能确定则保留来源待核，不能因为日文版图里有英文就挪到英文栏。
+
+| 已确认的关系 | 怎样登记 |
+| --- | --- |
+| 日英路由引用同一资源 | 日英共用资源，保留两版用途与引用 |
+| 不同资源的解码像素相同 | 日英像素相同，保留各自资源身份；不能据此推定共用同一对象 |
+| 英文路由沿用日版／共用图，没有独立差分 | 标明沿用及依据，不当作缺少英文版画面 |
+| 日英有不同像素或独立差分 | 关联同场景、同状态，另检查哪些区域英译、保留日文或仅作罗马字转写；不同图不代表全图已英译 |
+| 对应图未取得、未解码或关系未核实 | 说明具体缺口，不直接写不存在，也不拿其他图凑配对 |
+
+图内语言和中文处理范围在上述归属之外逐区识别。英文版用图即使不制作，也能帮助发现设计、字幕和调用差异，不自动计为制作任务。例如 [Photon HUD 的英文](../../rUGP/docs/postmortems/pending-hook-entry-points-20260909.md)在日文图片模式也能出现，画面有英文不能直接归成英文版遗漏；[AGE2 菜单](../../AGE2/docs/postmortems/image-layout.md)可保留原英文主体、只替换日文副标题。来源、像素比较与最终实机状态分别说明，复用适用的已有映射，不为送审重复启动每个场景。
 
 提取和查看的资源总数、中文版待制作项及已完成成品分别统计，并说明计数单位：资源路径、去重图片、文字区域、素材组或帧数，不能混着相减或计算完成率。仅供参考的差分保留在对照清单中，不计入待制作数量或完成成果；复用同一成品的多个目标不重复算作新制作图片。去重检查仍保留各语言和调用关系，不能把同像素的所有路径都自动列为中文交付目标。
 
@@ -88,8 +98,21 @@ Readability, identity or decoration alone is insufficient. Inspect actual glyphs
 not just OCR or character codes. Reassess old decisions based only on those weak
 reasons or tool limits: known defects need repair, uncertain cases need review.
 Reuse still-valid decisions without treating historical compromises as complete.
-Where Japanese and English editions exist, retain Japanese/English/Chinese
-correspondence and shared relationships even for comparison-only images.
+Where Japanese and English editions exist, retain official Japanese-edition and
+English-edition image roles alongside Chinese candidates. Establish provenance
+from verified slots, indices/script selection and resource mappings, following
+shared objects and fallback; visible language, OCR or unverified filenames do not
+determine the edition. Search original Japanese packages and existing extracts
+first. Retain version, identity and the existing mapping evidence; unknown origin
+remains unresolved rather than being guessed from English lettering.
+Distinguish a shared resource from equal decoded pixels in separate resources;
+retain both roles and all resource identities. Verified English reuse without a
+separate variant is not a missing English-edition view. Independent/different
+English images may still contain Japanese, partial translations or romanization.
+Distinguish unfetched, undecoded and unresolved counterparts from confirmed
+absence. Assess visible language and Chinese treatment separately by region.
+Keep static provenance, pixel comparison and final in-game status distinct;
+reuse valid mappings rather than replaying each scene just to prepare review.
 The [Photon HUD case](../../rUGP/docs/postmortems/pending-hook-entry-points-20260909.md)
 contains English in Japanese image mode too; [AGE2 menus](../../AGE2/docs/postmortems/image-layout.md)
 keep original English main lettering while replacing Japanese subtitles. These
