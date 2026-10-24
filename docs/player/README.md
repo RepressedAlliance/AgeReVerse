@@ -18,6 +18,8 @@
 
 **《君望／愿此刻永恒／你所期望的永远》中文补丁 1.0.0「再会」**：本篇 EE、可选社区 EER 1.0 与 AEC+ 使用同一个安装器。
 
+中文主体承接木之 LE 人工原译；旧译由 AI 协助核错，再由木之审核改稿。少量新增／调整文本经过 GPT-6 Sol × GPT-6 Astra 工作流，并由木之全文校对这批文本。[译文来源与制作说明](../../AGE2/games/kiminozo/README.md#翻译与制作)。
+
 | 游戏 | 版本 | 下载 |
 | --- | --- | --- |
 | **君望／愿此刻永恒／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
