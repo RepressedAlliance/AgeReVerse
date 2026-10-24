@@ -13,7 +13,7 @@
 | **[TDA02](tda02/)**<br><sub>[\[TDA02\] Muv-Luv Unlimited: THE DAY AFTER - Episode 02 REMASTERED](https://store.steampowered.com/app/1342410/)</sub> | 1342410 | 6,589 行 | [100 项](tda02/images/) | [BETA 0.2.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda02-BETA-0.2.1) |
 | **[TDA03](tda03/)**<br><sub>[\[TDA03\] Muv-Luv Unlimited: THE DAY AFTER - Episode 03 REMASTERED](https://store.steampowered.com/app/789830/)</sub> | 789830 | 6,913 行 | [152 项](tda03/images/) | [BETA 0.2.7](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/tda03-BETA-0.2.7) |
 | **[帝都燃烧篇](imperial-capital-burns/)**<br><sub>[The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse](https://store.steampowered.com/app/2630300/)</sub> | 2630300 | 5,564 行正文及辅助表 | [315 项](imperial-capital-burns/images/) | [BETA 0.2.1](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
-| **[君望／你所期望的永远](kiminozo/)**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)</sub> | 1777440 | 新增／调整文本人工校对完成，全文不公开 | [UI、图片与字体](kiminozo/images/) | [1.0.0「再会」](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
+| **[君望／愿此刻永恒／你所期望的永远](kiminozo/)**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)</sub> | 1777440 | 新增／调整文本人工校对完成，全文不公开 | [UI、图片与字体](kiminozo/images/) | [1.0.0「再会」](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
 
 君望项目同时整理附加篇 [Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)（App ID 3112140）；本篇与附加篇分别管理。
 详见[项目范围与安装说明](kiminozo/README.md)。君望全文不公开；其空白公开权威列表体现许可边界，不代表译文未完成。EE、可选社区 EER 1.0 与 AEC+ 由统一安装器处理。

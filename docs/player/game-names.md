@@ -14,11 +14,13 @@
 | 帝都燃烧、帝都燃烧篇 | [The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse](https://store.steampowered.com/app/2630300/)<br>App ID：`2630300` | マブラヴ オルタネイティヴ トータル・イクリプス 帝都燃ゆ / Teito Moyu | Windows x64 Steam 独立作品，不是 ATE 正篇 |
 | 光子之花（PF） | [Muv-Luv photonflowers\*](https://store.steampowered.com/app/889700/)<br>App ID：`889700` | マブラヴ photonflowers\* | Windows Steam，安装前设为 English |
 | 光子旋律（PM） | [Muv-Luv photonmelodies♮](https://store.steampowered.com/app/889710/)<br>App ID：`889710` | マブラヴ photonmelodies♮ | Windows Steam，安装前设为 English |
-| 君望、你所期望的永远、Kiminozo | [Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>App ID：`1777440` | 君が望む永遠 | Steam 本篇，1.0.0「再会」；可选社区 EER 1.0 适配 |
+| 君望、愿此刻永恒、你所期望的永远、Kiminozo／KimiNozo | [Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>App ID：`1777440` | 君が望む永遠 | Steam 本篇，1.0.0「再会」；可选社区 EER 1.0 适配 |
 | 君望附加篇 | [Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)<br>App ID：`3112140` | 君が望む永遠 another episode collection+ | Steam 附加篇，由 1.0.0 统一安装器处理 |
 
 Muv-Luv 也常写成 MuvLuv、muvluv 或 Muv Luv，日文系列名为マブラヴ。搜索补丁时，可使用完整作品名加
 “汉化补丁”“简体中文”或 “Simplified Chinese patch”。日文检索可使用作品名加“中国語化”。
+
+《君望》也常称《愿此刻永恒》《你所期望的永远》，英文常写 Kiminozo／KimiNozo，日文名为「君が望む永遠」。可用这些名称加“Steam 汉化补丁”检索。本篇 EE、可选社区 EER 1.0 与附加篇 AEC+ 的中文补丁统一为 [1.0.0「再会」](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0)；普通 EE 可以直接安装，EER 不是前置要求。
 
 ## 容易混淆的版本
 
@@ -38,6 +40,6 @@ ATE／TE／全蚀／全蚀篇对应 Muv-Luv Alternative Total Eclipse Remastered
 中各作发布说明为准：版本、支持环境、安装文件、已知限制与校验信息分别列出。
 不要使用 `/releases/latest` 作为某一作品的固定入口：同一个仓库发布多部作品。
 
-AI 参与翻译，人工审核、纠错和协作校对持续进行；不宣称全文已完成人工校对或全路线验证。
+AI 参与翻译，人工审核、纠错和协作校对持续进行。各作校对范围分别说明：君望新增／调整文本已由木之全文校对，旧译修正由木之审核；这不代表全路线实机遍历，也不将同一校对程度套用于其他作品。
 TDA00 审核校对：ScRm；各篇文本纠错与修订：ScRm、骁飞、Tsubaki-G。
 问题反馈请附作品名、补丁版本、截图与前后台词，见[反馈入口](../../README.md#问题反馈)。

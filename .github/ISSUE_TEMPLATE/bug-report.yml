@@ -16,15 +16,15 @@ body:
         - "帝都燃烧篇｜The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse"
         - "光子之花（PF）｜Muv-Luv photonflowers*"
         - "光子旋律（PM）｜Muv-Luv photonmelodies♮"
-        - "君望／你所期望的永远｜Kimi ga Nozomu Eien: Enhanced Edition（制作中 / In development）"
-        - "君望附加篇｜Kimi ga Nozomu Eien Enhanced Edition another episode collection+（制作中 / In development）"
+        - "君望／愿此刻永恒／你所期望的永远｜Kimi ga Nozomu Eien: Enhanced Edition（EE／可选社区 EER 1.0）"
+        - "君望附加篇 AEC+｜Kimi ga Nozomu Eien Enhanced Edition another episode collection+"
     validations:
       required: true
   - type: input
     id: release
     attributes:
       label: 补丁版本或源码提交 / Release tag or source commit
-      description: 已发布的补丁填写版本或 Release tag；开发版本填写完整 commit SHA；君望尚未发布补丁，仅受理本项目开发版本或文档问题。Use the patch version or Release tag, or a full commit SHA for a development build.
+      description: 已发布的补丁填写版本或 Release tag；开发版本填写完整 commit SHA；君望请同时注明 EE／社区 EER 1.0／AEC+。Use the patch version or Release tag, or a full commit SHA for a development build.
       placeholder: 补丁的 Release tag，或开发版本／文档对应的完整 commit SHA
     validations:
       required: true

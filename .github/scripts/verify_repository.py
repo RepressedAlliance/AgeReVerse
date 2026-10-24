@@ -44,8 +44,10 @@ TEXT_SUFFIXES = {
     ".toml", ".tsv", ".txt", ".yaml", ".yml",
 }
 ALLOWED_EXTENSIONLESS = {".gitattributes", ".gitignore", "LICENSE"}
-# Selected player-facing captures, not a general permission for game images.
+# Selected player-facing captures and labeled static previews; not a general image allowance.
 APPROVED_PLAYER_SCREENSHOTS = {
+    "docs/player/previews/kiminozo/festival-localized.jpg",
+    "docs/player/previews/kiminozo/handwritten-menu-localized.jpg",
     "docs/player/screenshots/tda00/title.jpg",
     "docs/player/screenshots/tda00/settings.jpg",
     "docs/player/screenshots/tda00/subtitles-long.jpg",

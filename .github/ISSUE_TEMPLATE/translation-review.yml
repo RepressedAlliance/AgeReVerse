@@ -8,7 +8,7 @@ body:
     attributes:
       label: 游戏、章节与场景 / Game, chapter and scene
       placeholder: 例如 TDA01 / Muv-Luv Unlimited… Episode 01；光子旋律 / Muv-Luv photonmelodies♮，再填写章节与场景
-      description: 君望请注明本篇 kiminozs 或附加篇 kiminoaz；目前尚无公开全文表，请仅引用本项目已公开样例。For Kiminozo, identify the component and use public project samples only.
+      description: 君望请注明 EE／EER／AEC+ 与补丁版本，提供必要短句、截图及上下文，不要上传完整译文或批量脚本。For Kiminozo, identify EE/EER/AEC+ and the patch version; include only the short passage needed to explain the issue.
     validations:
       required: true
   - type: input
