@@ -14,11 +14,11 @@
 
 ## 君望 Steam 版
 
-**君望中文补丁 1.0.0「再会」**：本篇 EE、可选社区 EER 1.0 与 AEC+ 使用同一个安装器。
+**《君望／愿此刻永恒／你所期望的永远》中文补丁 1.0.0「再会」**：本篇 EE、可选社区 EER 1.0 与 AEC+ 使用同一个安装器。
 
 | 游戏 | 版本 | 下载 |
 | --- | --- | --- |
-| **君望／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
+| **君望／愿此刻永恒／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
 
 1. 在 Steam 安装本篇及你拥有的 AEC+，等待更新完成并退出游戏。
 2. **普通 EE 跳过此步。**想补全 EE 删减内容时，从 [Muv-Luv Verse 上游主页](https://kiminozo.life/) 或[上游 Steam EER 1.0 ZIP](https://files.kiminozo.life/Patches/Kiminozo_EER_Patch_EN_Steam_1.0.zip) 获取可选 EER。按上游说明，将 ZIP 中的 `obb` 合并至本篇 `kiminozs` 目录。
@@ -29,7 +29,7 @@
 
 恢复原版时先切回英语／日语并退出游戏。保留两篇 `%LOCALAPPDATA%\ancr\<kiminozs或kiminoaz>\data\user`，只移走中文 `data\root` 及各自游戏目录的 `FridaGadget.dll`、`FridaGadget.config`、`age2-cn.js`、`COPYING-frida.txt`，以各自 `.age2-cn/original.exe` 恢复程序。EER 是另一层可选补丁：想回到普通 EE 时，另按上游说明移走其三个 `obb/patch*.bin`，不要动 Steam 原有 `pack*.bin`。Steam 验证不会清除 AppData 覆盖或额外 EER 文件。旧安装器保留的备份不要一并删除。
 
-LE 原译及校对：**木之**；修订、移植、图片制作与统筹：**压抑同盟**；社区 EER：**Muv-Luv Verse Team · Lemonov · TotSamiyMisha**。旧译复用及社区 EER 中文适配均已获得相应许可。详细[制作说明与公开范围](../../AGE2/games/kiminozo/README.md)。
+LE 原译及校对：**木之**；修订、移植、图片制作与统筹：**压抑同盟**；社区 EER：**Muv-Luv Verse Team · Lemonov · TotSamiyMisha**。本次中文化承接木之的 LE 汉化，并得到木之与社区 EER 制作者的支持。测试与反馈：**垃圾站麻婆、一般路过咖喱**。详细[制作说明与公开范围](../../AGE2/games/kiminozo/README.md)。
 
 ## AGE2 BETA · 安装方式更新 2026-09-21
 

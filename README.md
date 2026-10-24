@@ -14,7 +14,7 @@
   <a href="#问题反馈">问题反馈</a>
 </p>
 
-本项目提供 **TDA00—03、帝都燃烧篇、光子之花（PF）、光子旋律（PM）** 的 Steam 简体中文汉化补丁，七作均有 BETA 版本可下载。**君望本篇 EE、可选社区 EER 1.0 适配与 AEC+ 已推出 1.0.0「再会」正式版。**
+本项目提供 **TDA00—03、帝都燃烧篇、光子之花（PF）、光子旋律（PM）** 的 Steam 简体中文汉化补丁，七作均有 BETA 版本可下载。**《君望／愿此刻永恒／你所期望的永远》本篇 EE、可选社区 EER 1.0 适配与 AEC+ 已推出 1.0.0「再会」正式版。**
 
 汉化包含剧情正文、菜单与设置、字幕和图片文字，同时处理中文字体、换行与排版。各作仍可能有遗漏或显示问题，持续接受反馈；详见[汉化范围、实机截图与已知限制](docs/player/screenshots.md)。
 
@@ -37,7 +37,7 @@
 | **帝都燃烧篇**<br><sub>[The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse](https://store.steampowered.com/app/2630300/)</sub> | **BETA 0.2.1** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/imperial-capital-burns-BETA-0.2.1/TM-CN-BETA-0.2.1-Patch.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/imperial-capital-burns-BETA-0.2.1) |
 | **光子之花（PF）**<br><sub>[Muv-Luv photonflowers\*](https://store.steampowered.com/app/889700/)</sub> | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pf-BETA-0.1.2/MuvLuv_PF_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pf-BETA-0.1.2) |
 | **光子旋律（PM）**<br><sub>[Muv-Luv photonmelodies♮](https://store.steampowered.com/app/889710/)</sub> | **BETA 0.1.2** | **[下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/pm-BETA-0.1.2/MuvLuv_PM_CN_Patch_BETA_0.1.2.zip)** · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/pm-BETA-0.1.2) |
-| **君望／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
+| **君望／愿此刻永恒／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [下载汉化补丁](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip) · [发布说明](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
 
 君望正式版名为 **1.0.0「再会」**。普通 EE 直接安装中文补丁；希望补全删减内容时，才先安装 **[Muv-Luv Verse 的社区 EER Patch（可选）](https://kiminozo.life/)**，再运行同一中文安装器。[安装说明](docs/player/README.md#君望-steam-版)。
 
@@ -162,7 +162,7 @@ TDA00 展示“地球／故乡”的双层表达；光子之花展示剧情正�
 | 帝都燃烧、帝都燃烧篇 | The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse；帝都燃ゆ；Teito Moyu |
 | 光子之花、PF | Muv-Luv photonflowers\*；マブラヴ photonflowers\* |
 | 光子旋律、PM | Muv-Luv photonmelodies♮；マブラヴ photonmelodies♮ |
-| 君望、你所期望的永远、Kiminozo | Kimi ga Nozomu Eien: Enhanced Edition；君が望む永遠；附加篇 Another Episode Collection+ |
+| 君望、愿此刻永恒、你所期望的永远、Kiminozo／KimiNozo | Kimi ga Nozomu Eien: Enhanced Edition；君が望む永遠；附加篇 Another Episode Collection+ |
 
 各作对应不同补丁，请按作品下载。[完整名称与版本区别](docs/player/game-names.md)。
 
@@ -282,7 +282,7 @@ TDA 的部分文本已经过人工校对。已发布版本包含上述审核与�
 | 帝都燃烧篇 | [加入帝都燃烧篇校对](https://paratranz.cn/projects/20659) |
 | 光子之花 | [加入光子之花校对](https://paratranz.cn/projects/20660) |
 | 光子旋律 | [加入光子旋律校对](https://paratranz.cn/projects/20661) |
-| 君望本篇与附加篇 | 尚未开放公开全文校对；[查看制作进度](AGE2/games/kiminozo/README.md) |
+| 君望本篇与附加篇 | 尚未开放公开全文校对；[正式版与反馈说明](AGE2/games/kiminozo/README.md) |
 
 ---
 
@@ -377,7 +377,9 @@ are reusable components; they do not yet provide a universal one-command finishe
 及其他成熟补丁项目提供公开技术先例。OpenAI Codex 和图像模型
 在维护者指挥与审核下参与了部分代码、文档、分析、检查和图片工作。
 
-感谢 **ScRm** 对 TDA00 的审核与校对，以及 **ScRm、骁飞、Tsubaki-G** 对各篇文本的纠错与修订；感谢 **柚子コショウ** 参与 PF／PM 校对并提供修正建议，**红桃皇后假说** 提供《樱花盛开之前》的部分文本，**子冰** 对 TDA01 提供反馈，以及 **木之** 授权复用君望 LE 原译并参与全文校对与修订，及 **Muv-Luv Verse Team · Lemonov · TotSamiyMisha** 制作社区 EER Patch。ParaTranz 记录中的 ScRemilia、Tsubaki-G、X1AOFEI 也在[贡献者总表](docs/project/CONTRIBUTORS.md)中保留署名。
+感谢 **ScRm** 对 TDA00 的审核与校对，以及 **ScRm、骁飞、Tsubaki-G** 对各篇文本的纠错与修订；感谢 **柚子コショウ** 参与 PF／PM 校对并提供修正建议，**红桃皇后假说** 提供《樱花盛开之前》的部分文本，**子冰** 对 TDA01 提供反馈，以及 **木之** 提供君望 LE 原译并审核旧译修正、全文校对新增／调整文本，以及 **Muv-Luv Verse Team · Lemonov · TotSamiyMisha** 制作社区 EER Patch，并支持中文适配。ParaTranz 记录中的 ScRemilia、Tsubaki-G、X1AOFEI 也在[贡献者总表](docs/project/CONTRIBUTORS.md)中保留署名。
+
+《君望》测试与反馈：**垃圾站麻婆、一般路过咖喱**。
 
 完整贡献范围、责任边界与参考项目见 **[贡献者与致谢](docs/project/CONTRIBUTORS.md)** 和
 [研究参考](docs/research/references.md)。

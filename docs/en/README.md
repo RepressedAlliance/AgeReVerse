@@ -43,7 +43,7 @@ localization asset, not an installer.
 | Directory | Responsibility |
 | --- | --- |
 | **[Game Localization — Make Games Speak Your Language](../../Localization-MakeGamesSpeak/README.md)** | Practical text, image, typography, consistency and community-proofreading guides, plus reusable tools and their tests |
-| [`AGE2/`](../../AGE2/README.md) | TDA/Imperial game-bound text and image identities, plus the in-development Kiminozo project, FPD, EGPACK, WebP, loose overlays, tests, and postmortems |
+| [`AGE2/`](../../AGE2/README.md) | TDA/Imperial game-bound text and image identities, plus the released Kiminozo EE / optional EER / AEC+ project, FPD, EGPACK, WebP, loose overlays, tests, and postmortems |
 | [`rUGP/`](../../rUGP/README.md) | Photon game-bound text and image identities, ICI, RIO, CRsa, RUO, Cr6Ti, CRip, runtime, and postmortems |
 | [`docs/`](../README.md) | Player, research, maintenance, legal, and English documentation |
 
@@ -80,7 +80,7 @@ and the [reference comparison](../research/references.md).
 · [Suggest a translation correction](https://github.com/RepressedAlliance/AgeReVerse/issues/new?template=translation-review.yml)
 · [Contribute](../project/CONTRIBUTING.md)
 
-Human proofreading and feedback credits include ScRm, 骁飞, Tsubaki-G, 柚子コショウ and 子冰; ParaTranz records also credit ScRemilia and X1AOFEI. 红桃皇后假说 provided part of the text for *Before the Cherry Blossoms Bloom*, and 木之 authorized reuse of the Kiminozo LE translation and proofread the new/adjusted text; 压抑同盟 handled revision, porting, localized images and coordination; Muv-Luv Verse Team, Lemonov and TotSamiyMisha created the optional community EER Patch. See the [contributor list](../project/CONTRIBUTORS.md) for scope and sources.
+Human proofreading and feedback credits include ScRm, 骁飞, Tsubaki-G, 柚子コショウ and 子冰; ParaTranz records also credit ScRemilia and X1AOFEI. 红桃皇后假说 provided part of the text for *Before the Cherry Blossoms Bloom*, and 木之 provided the Kiminozo LE translation, reviewed legacy-translation corrections and proofread the new/adjusted text; 压抑同盟 handled revision, porting, localized images and coordination; Muv-Luv Verse Team, Lemonov and TotSamiyMisha created the optional community EER Patch. Kiminozo testing and feedback: 垃圾站麻婆 and 一般路过咖喱. See the [contributor list](../project/CONTRIBUTORS.md) for scope and sources.
 
 Original code is under the [MIT License](../../LICENSE). MIT does not
 automatically license game content, translation text, fonts, derivative images,

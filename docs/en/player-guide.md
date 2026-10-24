@@ -10,7 +10,7 @@ The unified **1.0.0「再会」** installer supports EE, optional community EER 
 
 | Game | Version | Download |
 | --- | --- | --- |
-| **君望／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [Download Chinese patch](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip) · [Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
+| **君望／愿此刻永恒／你所期望的永远 + AEC+**<br><sub>[Kimi ga Nozomu Eien: Enhanced Edition](https://store.steampowered.com/app/1777440/)<br>[Kimi ga Nozomu Eien Enhanced Edition another episode collection+](https://store.steampowered.com/app/3112140/)</sub> | **1.0.0** | [Download Chinese patch](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip) · [Release notes](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) |
 
 1. Install/update the Steam game and any owned AEC+ DLC, then exit the game.
 2. **Skip this step for ordinary EE.** Only players wanting the restored cut content need the optional community EER Patch from [Muv-Luv Verse](https://kiminozo.life/) ([upstream Steam EER 1.0 ZIP](https://files.kiminozo.life/Patches/Kiminozo_EER_Patch_EN_Steam_1.0.zip)). Follow its instructions and merge `obb` into the main game's `kiminozs` folder first.

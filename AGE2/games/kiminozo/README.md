@@ -1,4 +1,4 @@
-# 君望／你所期望的永远 Steam 简体中文补丁
+# 君望／愿此刻永恒／你所期望的永远 Steam 简体中文补丁
 
 [返回首页](../../../README.md) · [玩家安装指南](../../../docs/player/README.md#君望-steam-版) · [项目清单](project.toml)
 
@@ -20,7 +20,7 @@
 
 ## 翻译与制作
 
-**已获木之许可复用 LE 旧译，并获准进行 Muv-Luv Verse 社区 EER 的中文适配。**这是相关译文与社区补丁适配的许可，不是原作 IP 的官方授权。
+**本次中文化承接木之的 LE 汉化，并得到木之与 Muv-Luv Verse 社区 EER 制作者的支持。**木之负责原译与译文校对，压抑同盟负责修订、移植、图片制作与统筹；具体许可对象和公开范围见[第三方来源说明](../../../docs/legal/THIRD_PARTY.md)。本项目为非官方中文补丁。
 
 有 LE 对应旧译的内容先承接木之译文，由 AI 协助复查错字、错译与表达，再由木之人工审核修订。没有对应旧译的新增／调整文本，使用 [GPT-6 Sol × GPT-6 Astra 工作流](../../../Localization-MakeGamesSpeak/Text-AITranslationWorthReading/README.md)：梳理人物、上下文及专名，整场翻译，独立回读日文二审并提出 `revise` 与 `question`；压抑同盟与木之讨论处理，最后由木之全文校对这批新增／调整文本并修改。
 
@@ -33,6 +33,7 @@
 - **木之**：LE 原译、译文校对。
 - **压抑同盟**：译文修订、移植、图片制作与统筹。
 - **Muv-Luv Verse Team · Lemonov · TotSamiyMisha**：社区 EER Patch。
+- **测试与反馈**：垃圾站麻婆、一般路过咖喱。
 - 原作：© KimiNozo / Developed by aNCHOR, fuzz, Inc.，以游戏原有版权标识为准。
 
 ## 公开资料与构建
