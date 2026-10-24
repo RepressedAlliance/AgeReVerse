@@ -34,6 +34,14 @@ python AGE2/tools/runtime/build_installers.py --staging <五部候选包目录> 
 python AGE2/tools/runtime/build_kiminozo_unified_installer.py --staging <完整候选资源目录> --output <新的输出目录>
 ```
 
+正式版使用稳定版本号及可选的中文名称，不以人工校对完成与否推断程序测试状态：
+
+```powershell
+python AGE2/tools/runtime/build_kiminozo_unified_installer.py --staging <完整候选资源目录> --output <新的输出目录> --version 1.0.0 --release-name 再会
+```
+
+此模式仅统一包清单的版本与发布渠道，保持经核验的文本、图片、字体和运行负载不变。安装界面显示 `1.0.0「再会」`；稳定渠道不附加“验收版”。未指定稳定版本时，继续保留 staging 中的版本和原有渠道行为。
+
 构建器逐项核对大小及 SHA-256，内嵌完整负载，记录四份编译输入的摘要。仅有改图覆盖层的目录不能作为完整输入。
 
 玩家选择 Steam 游戏根目录或本篇／追加篇目录。统一安装器检查本篇的三份指定 EER BIN：全无时选 EE；三份均符合清单时选受支持的社区 EER 1.0；部分存在或内容不符时停止，避免把不完整 EER 当成 EE。此识别不代表支持其他社区补丁或商业日文 EER。

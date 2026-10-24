@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import subprocess
 import zipfile
 
@@ -17,22 +18,35 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--staging', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--version', help='Stable semantic version; leave unset to preserve the staged channel')
+    parser.add_argument('--release-name', help='Optional player-facing name for a stable release')
     args = parser.parse_args()
+    if args.version and not re.fullmatch(r'(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)', args.version):
+        parser.error('--version must be a stable major.minor.patch version')
+    if args.release_name and not args.version:
+        parser.error('--release-name requires --version')
     manifest = json.loads((args.staging / 'manifest.json').read_text(encoding='utf-8'))
     if manifest['format'] != 'age2-cn-variants-1' or manifest['game'] != 'kiminozo':
         raise ValueError('Expected the automatic KimiNozo variant manifest')
+    staged_version = manifest['version']
+    if args.version:
+        manifest.update(version=args.version, release_channel='stable', status='release')
+        if args.release_name:
+            manifest['release_name'] = args.release_name
     args.output.mkdir(parents=True, exist_ok=False)
     payload = args.output / 'kiminozo-payload.zip'
     counts = {}
     with zipfile.ZipFile(payload, 'x', zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
-        archive.write(args.staging / 'manifest.json', 'manifest.json')
+        archive.writestr('manifest.json', json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
         for relative, game in [('variants/ee', 'kiminozs'), ('variants/eer', 'kiminozs'), ('kiminoaz', 'kiminoaz')]:
             package = args.staging / relative
             part = json.loads((package / 'manifest.json').read_text(encoding='utf-8'))
-            if part['game'] != game or part['display_channel'] != 'zh_hans' or part['version'] != manifest['version']:
+            if part['game'] != game or part['display_channel'] != 'zh_hans' or part['version'] != staged_version:
                 raise ValueError('Mismatched component or release version')
-            for name in ['manifest.json', 'exe.delta.json']:
-                archive.write(package / name, relative + '/' + name)
+            if args.version:
+                part.update(version=args.version, release_channel='stable')
+            archive.writestr(relative + '/manifest.json', json.dumps(part, ensure_ascii=False, indent=2) + '\n')
+            archive.write(package / 'exe.delta.json', relative + '/exe.delta.json')
             for entry in part['files']:
                 path = package / entry['path']
                 if path.stat().st_size != entry['size'] or digest(path) != entry['sha256']:

@@ -43,7 +43,9 @@ class Age2Installer : Form {
         title=(string)doc["title"];directory=(string)doc["game"];exe=(string)doc["exe"];
         if(directory=="kiminozo")exe=Path.Combine("kiminozs",exe);
         string version=(string)doc["version"];
-        if(!version.StartsWith("BETA",StringComparison.Ordinal))version+=" 验收版";
+        string channel=doc.ContainsKey("release_channel") ? (string)doc["release_channel"] : "";
+        if(!version.StartsWith("BETA",StringComparison.Ordinal) && channel!="stable")version+=" 验收版";
+        if(channel=="stable" && doc.ContainsKey("release_name"))version+="「"+(string)doc["release_name"]+"」";
         Text=title+" 汉化补丁 · "+version;ClientSize=new Size(590,275);FormBorderStyle=FormBorderStyle.FixedDialog;MaximizeBox=false;StartPosition=FormStartPosition.CenterScreen;
         Font=new Font("Microsoft YaHei UI",10);BackColor=Color.FromArgb(248,249,251);
         var heading=new Label{Text=title+"\n汉化补丁 "+version,Location=new Point(25,20),Size=new Size(535,58),Font=new Font(Font.FontFamily,15,FontStyle.Bold)};Controls.Add(heading);
