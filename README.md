@@ -45,11 +45,28 @@
 
 <a id="部分作品实机预览"></a>
 
-### 接近完整汉化 · 实机展示
+### 汉化效果 · 实机与图片展示
 
 **正文、界面、字幕与图片文字一并汉化，目标是游戏内可见内容的完整中文化。**
 下面选取 **TDA00、TDA03、光子之花（PF）与光子旋律（PM）** 的十八张实机画面，
-展示菜单、设置、手绘道具、地图与战术说明、地点提示、演出画面文字和振假名的中文处理。
+展示菜单、设置、手绘道具、地图与战术说明、地点提示、演出画面文字和振假名的中文处理。另列君望正式版的图片汉化成品预览，注明素材类型。
+
+#### 君望／愿此刻永恒 · 图片汉化成品预览
+
+**君望 1.0.0「再会」按完整中文化范围制作，正文、菜单、设置与场景内图片文字一并处理。**
+本次中文化承接木之 LE 汉化，并得到木之与 Muv-Luv Verse 社区 EER 制作者的支持。
+下方展示祭典摊位与店内手写菜单的中文成品，包含透视、遮挡和原有材质的处理。
+**两张均为静态中文图片成品预览，不是实机截图。**
+
+<table>
+  <tr><th width="50%">君望 · 祭典摊位与招牌</th><th width="50%">君望 · 店内手写菜单</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/player/previews/kiminozo/festival-localized.jpg"><img src="docs/player/previews/kiminozo/festival-localized.jpg" alt="君望祭典摊位与招牌的中文图片成品，静态资源预览" width="100%"></a></td>
+    <td width="50%"><a href="docs/player/previews/kiminozo/handwritten-menu-localized.jpg"><img src="docs/player/previews/kiminozo/handwritten-menu-localized.jpg" alt="君望店内手写菜单的中文图片成品，静态资源预览" width="100%"></a></td>
+  </tr>
+</table>
+
+[君望正式版下载与安装](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0) · [图片来源与展示说明](docs/player/previews/kiminozo/README.md)。普通 EE 直接安装，社区 EER 完全可选；AEC+ 由同一中文安装器处理。
 
 #### 图片文字：地图、图解、年表与手写道具
 
@@ -150,9 +167,9 @@ TDA00 展示“地球／故乡”的双层表达；光子之花展示剧情正�
   </tr>
 </table>
 
-以上画面采集于 **2026-09-30**，点击图片可查看原图。
+以上十八张 Muv-Luv 实机画面采集于 **2026-09-30**；君望两张为另列的静态中文图片成品。点击图片可放大查看。
 **接近完整汉化，持续补完遗漏。** 各作仍可能有原文残留或显示问题，发现后继续修正、补齐。
-[查看全部二十三张截图、各作已知限制与图片说明](docs/player/screenshots.md)。
+[查看二十三张实机截图、君望图片预览与各作已知限制](docs/player/screenshots.md)。
 
 ### 作品名称与常用简称
 

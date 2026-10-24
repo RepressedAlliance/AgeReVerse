@@ -6,6 +6,8 @@
 
 **[下载统一安装包](https://github.com/RepressedAlliance/AgeReVerse/releases/download/kiminozo-1.0.0/KimiNozo-CN-1.0.0.zip)** · [发布说明、校验值及适用版本](https://github.com/RepressedAlliance/AgeReVerse/releases/tag/kiminozo-1.0.0)。解压运行 `KimiNozo-CN-1.0.0-Setup.exe`；GitHub 的 Source code ZIP 不能安装汉化。
 
+[查看祭典摊位与手写菜单的图片汉化成品](../../../docs/player/screenshots.md#君望图片预览)（静态资源预览，非实机截图）。
+
 ## EE、可选 EER 与 AEC+
 
 | 部分 | 适用版本 | 安装方式 |
