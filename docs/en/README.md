@@ -56,7 +56,15 @@ and are never committed.
 
 ## Localization workflow
 
-The maintained process is: establish story context and terminology; produce a
+Kiminozo primarily carries forward Muzhi's human LE translation. AI-assisted
+corrections to that legacy text were reviewed and revised by Muzhi. Only the
+limited new/adjusted material uses the GPT-6 Sol / GPT-6 Astra translation and
+independent-review workflow, followed by Muzhi's full human proofreading of that
+material. The other seven patches primarily use AI-first translation and review,
+with the maintainer's human decisions and subsequent community corrections;
+separately supplied human translations are credited where applicable.
+
+For text requiring an AI-first translation, the maintained process is: establish story context and terminology; produce a
 first translation; independently classify every row as
 `keep`/`revise`/`question`; resolve questions; bind through the correct engine;
 run in-game QA; and feed player reports back into maintained source.
