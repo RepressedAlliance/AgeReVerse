@@ -28,6 +28,8 @@
 
 疑问集中展示图片、具体位置、已识读原文、拟定中文、不确定原因与建议。能自行解决的问题先解决；已经认可的保留项和效果不用反复询问。需要“通过／待改”或只收建议的形式按本次送审安排选择，不把界面勾选强加给审核者。
 
+维护者授权制作方主审时，制作方先完成批量检查、返修和独立复核。送审入口默认打开仍需维护者判断的图片，并提供原图、修前、当前稿及具体疑点。已复核成稿按素材组提供快速浏览入口，附实际检查范围。把首页和图片加载一并在交付入口验证。
+
 **审核确认的是这一次具体成品。** 保存当前采用版本的路径／摘要与修改意见；返修后更新送审和交付引用，避免已批准新图而打包仍取旧候选。未经确认的生成稿不冒充人工定稿。
 
 每条反馈关联稳定图片编号和本次候选版本，说明如何填写及交回意见；可使用批注、意见文件或页面导出，不强制某种审核界面。页面若只在本机保存意见，明确提示保存／导出并交回，不把本机保存当作已发送。收到意见后核对对应版本再修改，保留已确认结论，避免将旧稿意见套到新图。
@@ -48,6 +50,11 @@
 **输出：**维护者确认的成品、明确保留项、对应版本的绑定与实机结论，以及实际发布状态。未解决问题返回相关阶段；后续玩家反馈回到文案、成品和源映射修正，再进入下一版。
 
 ## English summary
+
+When the maintainer delegates primary review, the production team reviews and fixes
+confirmed issues and verifies revisions independently. Open the delivery page on
+the reviewer's device and verify that the images load. Put decisions that still
+need the maintainer first and offer a grouped overview of the checked work.
 
 Review the exact candidate with evidence suited to each question: text/audio/
 scene for meaning, selected base/borrowed design for appearance, and actual
