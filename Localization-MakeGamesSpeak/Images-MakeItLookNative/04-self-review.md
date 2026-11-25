@@ -24,6 +24,14 @@
 
 检查同套菜单、按钮全状态、连续日期、昼夜、裁切和其他差分，防止只改一张、错复用日期或带错底图。自动尺寸／像素／字体覆盖检查用来发现技术问题，不能证明视觉、语义或实机质量。
 
+## 大批量复审
+
+以实际待交付版本和原图为基准，按用途组织同族素材。旧稿、缺稿、共用素材、不同状态和裁切一并登记。另查脚本引用的背景、图层和差分，核对是否有绕过原清单的文字。
+
+- 按钮、页码等规则明确的整组，批量核对版本、画布、字形和状态，再看覆盖各状态的实际画面。样本出现问题时，扩大到同族受影响的成员。记录批查范围和实际看过的样本。
+- 招牌、海报、书页、带字道具和场景小字逐张复核。把同一张复杂图分别交给不同审核者，一位查原意、漏译和术语，一位查字形、字号、字重和排版，一位查透视、光影、材质、遮挡与修补边缘。各自先看整图、原尺寸和必要的局部，独立指出问题位置及证据，再由主审汇总。OCR 和像素差提供定位线索。
+- 有问题的成员返修后，由未参与制作的审核者对着原图和旧稿复核新版。还要检查受影响的同组尺寸、状态和显示入口。结论绑定实际看过的版本，分歧回到原图和实际语境核实，仍拿不准的项目保留依据和待定点。
+
 图层素材按实际组合查看，检查叠放顺序、透明度、文字与背景的关系；连续帧按正确顺序和时机播放，检查字形、位置、颜色与边缘是否稳定，有无闪烁、漂移或接缝。单层、单帧检查仍须保留，但不能代替合成与连续播放检查，也不能由一帧效果推定整段通过。
 
 按缺陷回到对应阶段：错译或来源问题回 02，残字、排版和融合问题回 03。保留已通过部分；返修后看本图和受影响同组，已有检查仍有效时不扩大成全批重做。
@@ -31,6 +39,13 @@
 **输出：**已自检候选、未决问题及准确的当前版本引用。不能只检查缩略图、图片链接或解码成功，就写“视觉通过”。
 
 ## English summary
+
+For large reviews, group related artwork by use and keep variants together. Check
+routine groups in batches, sample the distinct layouts and states, and expand
+review when a sample reveals an issue. Assign complex images to separate reviewers
+for source meaning, typography, and integration into the scene. Each reports
+observations and locations independently. A reviewer who did not produce the
+revision checks the exact repaired version and the affected variants.
 
 Check task scope and targets, then review meaning, Chinese presentation and
 production constraints separately. Original meaning returns to Japanese
